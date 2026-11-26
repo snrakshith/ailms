@@ -27,7 +27,7 @@ jobs:
       CACHE_ENABLED: 'false'
       QUEUE_ENABLED: 'false'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with: {persist-credentials: false}
       - uses: pnpm/action-setup@v4
         with: {version: 10.20.0}
