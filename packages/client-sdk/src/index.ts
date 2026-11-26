@@ -48,7 +48,7 @@ export function createAiQuestClient(transport:ApiTransport){
 }
 /** Native apps should pass an authenticated token-aware fetch; web apps may use cookie/CSRF transport. */
 export function createFetchTransport(baseUrl:string,fetcher:typeof fetch,headers:()=>Record<string,string> = ()=>({})):ApiTransport {
- return {async request<T>(path:string,init){
+ return {async request<T>(path:string,init?:{method?:'GET'|'POST'|'PUT'|'DELETE';body?:unknown}){
   const response=await fetcher(`${baseUrl}${path}`,{method:init?.method??'GET',headers:{...headers(),...(init?.body!==undefined?{'content-type':'application/json'}:{})},body:init?.body===undefined?undefined:JSON.stringify(init.body)});
   if(!response.ok)throw new Error(`API request failed: ${response.status}`);
   if(response.status===204)return undefined as T;

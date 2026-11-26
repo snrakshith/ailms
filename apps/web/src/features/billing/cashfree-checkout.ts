@@ -6,7 +6,7 @@ let sdkLoad:Promise<void>|undefined;
 export function loadCashfree():Promise<void>{
  if(window.Cashfree)return Promise.resolve();
  if(sdkLoad)return sdkLoad;
- sdkLoad=new Promise((resolve,reject)=>{
+ sdkLoad=new Promise<void>((resolve,reject)=>{
   const script=document.createElement('script');script.src='https://sdk.cashfree.com/js/v3/cashfree.js';
   script.async=true;script.onload=()=>window.Cashfree?resolve():reject(new Error('Cashfree SDK unavailable'));
   script.onerror=()=>reject(new Error('Could not load secure checkout'));
