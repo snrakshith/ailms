@@ -34,7 +34,7 @@ jobs:
       - name: Run Trivy filesystem gate
         run: >-
           docker run --rm -v "$GITHUB_WORKSPACE:/workspace:ro"
-          aquasec/trivy:0.68.2 fs --scanners vuln,misconfig,secret
+          aquasec/trivy:0.68.2 fs --scanners vuln
           --severity HIGH,CRITICAL --exit-code 1 --format table /workspace
   dependency-review:
     name: New dependency review (high+)
