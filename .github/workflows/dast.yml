@@ -27,14 +27,14 @@ jobs:
       VITE_MIXPANEL_TOKEN: ''
       VITE_SENTRY_DSN: ''
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with: {persist-credentials: false}
       - name: Require reproducible dependency graph
         run: test -s pnpm-lock.yaml
       - name: Scan only the isolated CI stack
         run: bash scripts/security/run-zap.sh
       - if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: zap-dast-reports
           path: reports/zap/

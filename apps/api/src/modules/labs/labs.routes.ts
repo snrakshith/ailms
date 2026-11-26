@@ -11,7 +11,7 @@ export const codingChallenges=[
 export function createLabsRouter(){const router=Router();router.use(requireAuth);
  router.get('/challenges',(_req,res)=>res.json({data:codingChallenges}));
  router.post('/compare',validateBody(playgroundCompareSchema),(req,res)=>res.json({data:{...compareTexts(req.body.a,req.body.b),engine:'local-tf-vectorizer',disclaimer:'Educational lexical vectors, not a neural embedding model.'}}));
- router.post('/confusion',(_req,res)=>{
+ router.post('/confusion',(req,res)=>{
   const {actual,predicted}=req.body as {actual?:unknown;predicted?:unknown};
   if(!Array.isArray(actual)||!Array.isArray(predicted)||actual.length>200||!actual.every(v=>typeof v==='boolean')||!predicted.every(v=>typeof v==='boolean')){res.status(422).json({error:'Boolean arrays required (max 200)'});return;}
   try{res.json({data:confusionMatrix(actual,predicted)});}catch{res.status(422).json({error:'Non-empty, equal-length boolean arrays required'});}
