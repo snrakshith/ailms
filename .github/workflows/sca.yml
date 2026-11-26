@@ -1,11 +1,11 @@
 name: SCA — dependencies and vulnerabilities
 on:
-  push: {branches: [main]}
+  push: { branches: [main] }
   pull_request: {}
   schedule:
     - cron: '30 3 * * 2'
   workflow_dispatch: {}
-permissions: {contents: read}
+permissions: { contents: read }
 jobs:
   audit:
     name: pnpm advisory audit (high+)
@@ -13,11 +13,11 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - uses: pnpm/action-setup@v6
-        with: {version: 10.20.0}
+        with: { version: 10.20.0 }
       - uses: actions/setup-node@v7
-        with: {node-version-file: .nvmrc, cache: pnpm}
+        with: { node-version-file: .nvmrc, cache: pnpm }
       - name: A resolved lockfile is mandatory
         run: test -s pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
@@ -28,7 +28,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - name: Require dependency lockfile
         run: test -s pnpm-lock.yaml
       - uses: aquasecurity/trivy-action@0.36.0
@@ -43,11 +43,11 @@ jobs:
     name: New dependency review (high+)
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    permissions: {contents: read}
+    permissions: { contents: read, pull-requests: write }
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - uses: actions/dependency-review-action@v5
         with:
           fail-on-severity: high

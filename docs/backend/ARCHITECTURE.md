@@ -1,6 +1,7 @@
 # Backend architecture and implementation
 
 ## A–L capabilities delivered together
+
 A. Observability: request IDs, JSON logs, histogram metrics, optional OpenTelemetry and trace context.
 B. Security: signed cookie sessions, CSRF, Zod, rate limiting, access guards, sensitive-field redaction.
 C. API: Express 5 routers, standardized problem+json errors, OpenAPI and typed contracts.
@@ -15,7 +16,9 @@ K. Performance: bounded DB pool, request size ceilings, tenant cache, event-loop
 L. Governance: versioning, API docs, security review and runbooks.
 
 ## Module conventions
+
 A simple feature has `routes`, `service`, and `repository` files. Introduce richer DDD domain and application layers only when business complexity requires them. Technical providers live under `infrastructure`; framework-independent errors/context/contracts under `core`.
 
 ## Reliability guarantees
+
 Tenant filtering is performed at the database level, not in browser state. Task write, audit insert and BullMQ event publishing are **not transactional**. When designing money movement or business-critical workflows, implement Mongo transactions, transactional outbox, and worker idempotency.

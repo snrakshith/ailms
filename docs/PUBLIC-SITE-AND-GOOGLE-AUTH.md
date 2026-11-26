@@ -4,20 +4,20 @@
 
 ## Route map
 
-| URL | Accessibility | Source |
-| --- | --- | --- |
-| `/` | Public | React landing page — hero, curriculum, features, lesson preview, FAQ, journal, beta header/footer |
-| `/pricing` | Public | Free Explorer and one-time GenAI pass offer |
-| `/faq` | Public | FAQ list using native accessible `<details>` |
-| `/blog` | Public | Editorial index |
-| `/blog/:slug` | Public | Static article in content file; three substantial starter articles |
-| `/login`, `/register` | Public | Responsive email/password and Google Identity Services authentication |
-| `/showcase/:slug` | Public | Previously implemented opt-in public learner showcase |
-| `/app` | Authenticated + onboarded | Learning dashboard, including a free lesson teaser |
-| `/onboarding` | Authenticated | Learner background, learning goal, daily minutes |
-| `/paths`, `/paths/:pathId`, `/learn/:lessonId` | Authenticated + onboarded | Existing curriculum and lessons |
-| `/billing`, `/billing/return` | Authenticated + onboarded | Server-owned Cashfree payments |
-| `/progress`, `/review`, `/labs`, `/portfolio`, `/studio`, `/settings`, `/privacy` | Authenticated + onboarded | Existing learning tools and account sections |
+| URL                                                                               | Accessibility             | Source                                                                                            |
+| --------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- |
+| `/`                                                                               | Public                    | React landing page — hero, curriculum, features, lesson preview, FAQ, journal, beta header/footer |
+| `/pricing`                                                                        | Public                    | Free Explorer and one-time GenAI pass offer                                                       |
+| `/faq`                                                                            | Public                    | FAQ list using native accessible `<details>`                                                      |
+| `/blog`                                                                           | Public                    | Editorial index                                                                                   |
+| `/blog/:slug`                                                                     | Public                    | Static article in content file; three substantial starter articles                                |
+| `/login`, `/register`                                                             | Public                    | Responsive email/password and Google Identity Services authentication                             |
+| `/showcase/:slug`                                                                 | Public                    | Previously implemented opt-in public learner showcase                                             |
+| `/app`                                                                            | Authenticated + onboarded | Learning dashboard, including a free lesson teaser                                                |
+| `/onboarding`                                                                     | Authenticated             | Learner background, learning goal, daily minutes                                                  |
+| `/paths`, `/paths/:pathId`, `/learn/:lessonId`                                    | Authenticated + onboarded | Existing curriculum and lessons                                                                   |
+| `/billing`, `/billing/return`                                                     | Authenticated + onboarded | Server-owned Cashfree payments                                                                    |
+| `/progress`, `/review`, `/labs`, `/portfolio`, `/studio`, `/settings`, `/privacy` | Authenticated + onboarded | Existing learning tools and account sections                                                      |
 
 A protected-route request sends a logged-out visitor to `/login?next=...`. The redirect target is restricted to an explicit list of internal learner routes, eliminating arbitrary external redirects. New users are sent through onboarding before accessing the learning dashboard.
 
@@ -49,7 +49,7 @@ The articles are editorial drafts to review before publication. Market-outlook a
 ## Security and operational notes
 
 - A server-verified Google ID token is required; email or profile data supplied directly by a browser is never sufficient.
-- Google's stable `sub` claim is used as the federated login identifier. MongoDB enforces a unique sparse index. Verified email comparison is only used during *explicit*, already-authenticated account linking.
+- Google's stable `sub` claim is used as the federated login identifier. MongoDB enforces a unique sparse index. Verified email comparison is only used during _explicit_, already-authenticated account linking.
 - Login/register/Google endpoints share auth rate limits; state-changing web API requests use CSRF validation. Sessions are HttpOnly, `SameSite=Lax`, and `Secure` in production.
 - Nginx CSP permits Google's `gsi/client` script and Google iframe, while retaining the existing Cashfree, Python lab and general CSP protections. Review actual CSP browser reports with the deployed domains before launch.
 - Google provider initialization and configuration require a network connection, an OAuth client ID, and a Google-hosted JavaScript library. Without configuration, email sign-in remains functional and the UI explicitly says Google is unconfigured.

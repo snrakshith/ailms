@@ -4,12 +4,12 @@
 
 Quality checks run **both locally and in CI**. Git hooks are defense-in-depth: developers can skip hooks, so branch protection must require CI.
 
-| Stage | Controls | Typical cost |
-| --- | --- | --- |
-| `pre-commit` | zero-dependency staged secret detector, lint-staged, ESLint `--fix`, Prettier | seconds |
-| `pre-push` | format, lint, types, Vitest unit, static security, TruffleHog committed-history scan | minutes |
-| CI PR | frozen pnpm, format, lint, types, unit coverage, build, audit, CodeQL, TruffleHog, Mongo integration tests, Playwright | full verification |
-| Deployment gate | provider sandbox validations, security review, backup restoration, smoke tests | release-specific |
+| Stage           | Controls                                                                                                               | Typical cost      |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| `pre-commit`    | zero-dependency staged secret detector, lint-staged, ESLint `--fix`, Prettier                                          | seconds           |
+| `pre-push`      | format, lint, types, Vitest unit, static security, TruffleHog committed-history scan                                   | minutes           |
+| CI PR           | frozen pnpm, format, lint, types, unit coverage, build, audit, CodeQL, TruffleHog, Mongo integration tests, Playwright | full verification |
+| Deployment gate | provider sandbox validations, security review, backup restoration, smoke tests                                         | release-specific  |
 
 ## Install
 

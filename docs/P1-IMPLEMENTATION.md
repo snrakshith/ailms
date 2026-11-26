@@ -4,15 +4,15 @@
 
 This release extends the supplied React + Node.js Sapling starter. It is a development implementation with meaningful vertical slices for all five selected P1 workstreams and two additional requested features. **It has not undergone production deployment or complete E2E verification in this execution environment.**
 
-| Workstream | Implementation included | Limitations / verification needed |
-| --- | --- | --- |
-| P1-01 Reliability & Content Management | Staff-only content studio, strict Zod content schema, draft → independent review → immutable published release, versioned snapshot persistence, refreshed Docker/CI, offline checks, expanded tests | Enable separate author/reviewer emails; concurrency and MongoDB transaction resilience should be load-tested; no rich WYSIWYG editor |
-| P1-02 Interactive Labs | Three Python coding challenges with formative test execution in opaque-origin sandboxed iframe and disposable Web Worker, Pyodide v0.27.7; existing gradient experiment; confusion matrix, cosine similarity lab | Requires access to pinned Pyodide CDN; browser code execution is NOT an authoritative grader; GPU or server-side execution is not provisioned |
-| P1-03 Adaptive Learning | Spaced review schedule (SM2-inspired), due feed, progression insights, score-driven revision recommendation, deterministic per-learner assessment ordering | Question pool expansion, detailed concept-level diagnostic assessment, A/B evaluation of spaced schedules still future work |
-| P1-04 AI Tutor | Contextual progressive hints, curriculum fallback, optional OpenAI-compatible provider, provider timeouts, per-learner daily cap, minimal usage audit | LLM requires operator-provided key/model; live model behavior, safety efficacy, cost, and content evaluation must be validated |
-| P1-05 Production Hardening | Native rotating auth tokens, CSRF for web + signed bearer for mobile, account export/delete, input validation, ownership checks, backup/restore scripts, container security baseline, quality workflow, strict content permissions | Not a penetration test or SOC audit; backup encryption/retention and real recovery tests are operator requirements; SLOs and accessibility need real user/browser verification |
-| EXTRA-01 Model Playground | Text-vector cosine experiment, threshold/metrics simulator, optional side-by-side live provider model comparison with daily quota and latency/token feedback | Text vectors are educational lexical vectors, **not neural embeddings**; live models require two configured model IDs |
-| EXTRA-02 Capstones & Portfolio | Draft/edit/submit/self-publish/unpublish/delete projects; HTTPS link validation, skill tags, reflection, public read-only share page, opt-in publication | Public projects are explicitly **self-published/unverified**; no independent expert review, project repository execution or anti-plagiarism evaluation |
+| Workstream                             | Implementation included                                                                                                                                                                                                            | Limitations / verification needed                                                                                                                                              |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| P1-01 Reliability & Content Management | Staff-only content studio, strict Zod content schema, draft → independent review → immutable published release, versioned snapshot persistence, refreshed Docker/CI, offline checks, expanded tests                                | Enable separate author/reviewer emails; concurrency and MongoDB transaction resilience should be load-tested; no rich WYSIWYG editor                                           |
+| P1-02 Interactive Labs                 | Three Python coding challenges with formative test execution in opaque-origin sandboxed iframe and disposable Web Worker, Pyodide v0.27.7; existing gradient experiment; confusion matrix, cosine similarity lab                   | Requires access to pinned Pyodide CDN; browser code execution is NOT an authoritative grader; GPU or server-side execution is not provisioned                                  |
+| P1-03 Adaptive Learning                | Spaced review schedule (SM2-inspired), due feed, progression insights, score-driven revision recommendation, deterministic per-learner assessment ordering                                                                         | Question pool expansion, detailed concept-level diagnostic assessment, A/B evaluation of spaced schedules still future work                                                    |
+| P1-04 AI Tutor                         | Contextual progressive hints, curriculum fallback, optional OpenAI-compatible provider, provider timeouts, per-learner daily cap, minimal usage audit                                                                              | LLM requires operator-provided key/model; live model behavior, safety efficacy, cost, and content evaluation must be validated                                                 |
+| P1-05 Production Hardening             | Native rotating auth tokens, CSRF for web + signed bearer for mobile, account export/delete, input validation, ownership checks, backup/restore scripts, container security baseline, quality workflow, strict content permissions | Not a penetration test or SOC audit; backup encryption/retention and real recovery tests are operator requirements; SLOs and accessibility need real user/browser verification |
+| EXTRA-01 Model Playground              | Text-vector cosine experiment, threshold/metrics simulator, optional side-by-side live provider model comparison with daily quota and latency/token feedback                                                                       | Text vectors are educational lexical vectors, **not neural embeddings**; live models require two configured model IDs                                                          |
+| EXTRA-02 Capstones & Portfolio         | Draft/edit/submit/self-publish/unpublish/delete projects; HTTPS link validation, skill tags, reflection, public read-only share page, opt-in publication                                                                           | Public projects are explicitly **self-published/unverified**; no independent expert review, project repository execution or anti-plagiarism evaluation                         |
 
 ## Software architecture
 
@@ -51,17 +51,17 @@ Tutor fallback works without an external key. To enable live AI, set `AIQUEST_LL
 
 ## Verification matrix
 
-| Check | Execution status in this environment |
-| --- | --- |
-| Source parsing for React + API + portable packages | Passed (112 TypeScript / TSX files at implementation time) |
-| Deterministic grade, XP prerequisites, streak, review algorithm | Passed with offline checks |
-| Lexical vectors, confusion metrics, gradient steps | Passed with offline checks |
-| Transport-injected client API and keyless domain package | Passed with offline checks |
-| Browser iframe/worker JS syntax | Parsed |
-| `pnpm run typecheck`, full Vitest, Vite production build | **Not run successfully** (npm registry unavailable, dependencies not installed) |
-| Mongo-backed P1 integration smoke | Script provided, **not executed** |
-| Docker, mobile runtime, external LLM API, Pyodide runtime | **Not runtime-verified** |
-| Penetration test, accessibility audit, production SLO | **Not performed** |
+| Check                                                           | Execution status in this environment                                            |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Source parsing for React + API + portable packages              | Passed (112 TypeScript / TSX files at implementation time)                      |
+| Deterministic grade, XP prerequisites, streak, review algorithm | Passed with offline checks                                                      |
+| Lexical vectors, confusion metrics, gradient steps              | Passed with offline checks                                                      |
+| Transport-injected client API and keyless domain package        | Passed with offline checks                                                      |
+| Browser iframe/worker JS syntax                                 | Parsed                                                                          |
+| `pnpm run typecheck`, full Vitest, Vite production build        | **Not run successfully** (npm registry unavailable, dependencies not installed) |
+| Mongo-backed P1 integration smoke                               | Script provided, **not executed**                                               |
+| Docker, mobile runtime, external LLM API, Pyodide runtime       | **Not runtime-verified**                                                        |
+| Penetration test, accessibility audit, production SLO           | **Not performed**                                                               |
 
 Run these on a network-enabled machine before declaring release readiness:
 

@@ -28,7 +28,6 @@ Estimated **product/architecture maturity: 75/100**, **production readiness: 55/
 
 **Do not claim production ready until these gates pass.** Code integration and security architecture are not equivalent to operational and merchant readiness.
 
-
 ## Public marketing / Google identity launch gate
 
 - Verify the real Google OAuth Web client ID and allowed JavaScript origins for each environment.

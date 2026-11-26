@@ -15,18 +15,18 @@ Email/password authentication is retained; optional Google sign-in and explicit 
 
 ## Features
 
-| Feature | What is included |
-| --- | --- |
-| Identity and onboarding | Web cookie/CSRF auth, 30-minute mobile bearer with rotating 30-day refresh token, developer goals |
-| Curriculum | Three paths, nine starter lessons, 27 initial assessment questions, prerequisite unlocking, published content releases |
-| Mastery and progress | Deterministic API grading, retries, once-only XP, completion, streak and mastered paths |
-| Content studio | Email-allowlisted author/reviewer workflow, draft review, versioned release, editable structured content |
-| Practice labs | Gradient descent, browser Python challenges, confusion metrics, lexical vectors |
-| Adaptive learning | Spaced-review queue, repetition ratings, insight cards, stable per-learner quiz ordering |
-| AI tutor | Contextual progressive hints, optional OpenAI-compatible LLM, curriculum fallback, 12-hints/day usage cap |
-| Model playground | Compare educational text similarity and metrics; optional side-by-side hosted model comparison |
-| Capstone portfolio | Create/edit/submit projects, explicitly opt into publication, public showcase, unpublish/delete |
-| Privacy and operations | Export/delete learner data, backup/restore scripts, test plan, CI build and audit scaffolds |
+| Feature                 | What is included                                                                                                       |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Identity and onboarding | Web cookie/CSRF auth, 30-minute mobile bearer with rotating 30-day refresh token, developer goals                      |
+| Curriculum              | Three paths, nine starter lessons, 27 initial assessment questions, prerequisite unlocking, published content releases |
+| Mastery and progress    | Deterministic API grading, retries, once-only XP, completion, streak and mastered paths                                |
+| Content studio          | Email-allowlisted author/reviewer workflow, draft review, versioned release, editable structured content               |
+| Practice labs           | Gradient descent, browser Python challenges, confusion metrics, lexical vectors                                        |
+| Adaptive learning       | Spaced-review queue, repetition ratings, insight cards, stable per-learner quiz ordering                               |
+| AI tutor                | Contextual progressive hints, optional OpenAI-compatible LLM, curriculum fallback, 12-hints/day usage cap              |
+| Model playground        | Compare educational text similarity and metrics; optional side-by-side hosted model comparison                         |
+| Capstone portfolio      | Create/edit/submit projects, explicitly opt into publication, public showcase, unpublish/delete                        |
+| Privacy and operations  | Export/delete learner data, backup/restore scripts, test plan, CI build and audit scaffolds                            |
 
 ## Getting started
 
@@ -107,7 +107,6 @@ The inherited `/tasks` feature remains in the API for template backward compatib
 Generative AI Engineering is the initial paid path, using Cashfree PG hosted checkout. Free AI Foundations and ML tracks are unaffected. The server controls price and grants the pass only after verified payment. To configure it, follow [Cashfree payment runbook](docs/CASHFREE-PAYMENTS.md). Without credentials the payment UI is visible but checkout is disabled. One-time pass price is an **illustrative value** of INR 499 and can be set using `GENAI_PASS_PRICE_PAISE`.
 
 The CI workflows gate on **Prettier, ESLint, TypeScript, Vitest, builds, SAST (CodeQL), SCA (pnpm audit, Dependency Review and Trivy), DAST (OWASP ZAP), TruffleHog and Playwright E2E**; Trivy also checks both Docker images. See [Quality and launch gates](docs/QUALITY-AND-LAUNCH-GATES.md). The inherited starter had no lockfile, and dependency-backed CI must be run and green before deployment.
-
 
 ## Quality and security improvements (v1.4)
 

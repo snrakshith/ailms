@@ -7,6 +7,7 @@ The optional Docker observability stack provisions collector, Tempo, Prometheus 
 Production logs are emitted to stdout for a platform log shipper (e.g. Alloy/Fluent Bit -> Loki). A log-shipper deployment and pager/alert destination are environment-specific and not preconfigured. Grafana dashboards and alerting require production-specific sources and credential management.
 
 ## Optional Compose profile
+
 From the repository root, with `GRAFANA_ADMIN_PASSWORD` exported and `docker/metrics.token` created, run:
 
 ```bash

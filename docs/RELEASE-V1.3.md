@@ -2,19 +2,19 @@
 
 ## Scope (source implementation)
 
-| Capability | Code / route | Validation boundary |
-|---|---|---|
-| Static marketing SEO | `scripts/seo/generate.mjs` | Seven build-time HTML routes; canonical metadata, robots, sitemap, JSON-LD, Open Graph; uses `site-content.ts` |
-| LLM discovery content | `/llms.txt`, `/llms-full.txt` after build | Advisory convention, not a search-ranking guarantee |
-| Service status | `/status`, `/health/live`, `/health/ready` | Browser-side health checks; separate hosted incident history not provisioned |
-| PostHog experiments | `core/analytics`, `use-experiment` | Opt-in, one illustrative feature flag `homepage-hero-copy`, variants `control`/`practical` |
-| Mixpanel | `core/analytics` | Opt-in named event capture with anonymous or authenticated ID; consent revocable in Settings |
-| Sentry browser + API | `core/observability/browser.ts`, `infrastructure/observability/sentry.ts` | Configurable DSNs; JS error capture; no source map upload yet |
-| SES email notifications | `modules/notifications` | Optional provider, transactional templates, BullMQ retry worker when enabled |
-| Referrals | `/api/v1/referrals/me`, `/api/v1/referrals/claim`, `/referrals` | User-owned stable code, registration attribution, qualification after first completed lesson |
-| Download receipt | `/api/v1/billing/orders/:id/invoice` | Owner-only, paid-only PDF receipt, **not** a statutory GST invoice |
-| Alert banner | `siteContent.alert` | Dismissible on marketing and protected pages, accessible controls |
-| pnpm migration | `pnpm-workspace.yaml`, `packageManager`, CI, Docker, scripts | Unlocked until an actual `pnpm-lock.yaml` is generated |
+| Capability              | Code / route                                                              | Validation boundary                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Static marketing SEO    | `scripts/seo/generate.mjs`                                                | Seven build-time HTML routes; canonical metadata, robots, sitemap, JSON-LD, Open Graph; uses `site-content.ts` |
+| LLM discovery content   | `/llms.txt`, `/llms-full.txt` after build                                 | Advisory convention, not a search-ranking guarantee                                                            |
+| Service status          | `/status`, `/health/live`, `/health/ready`                                | Browser-side health checks; separate hosted incident history not provisioned                                   |
+| PostHog experiments     | `core/analytics`, `use-experiment`                                        | Opt-in, one illustrative feature flag `homepage-hero-copy`, variants `control`/`practical`                     |
+| Mixpanel                | `core/analytics`                                                          | Opt-in named event capture with anonymous or authenticated ID; consent revocable in Settings                   |
+| Sentry browser + API    | `core/observability/browser.ts`, `infrastructure/observability/sentry.ts` | Configurable DSNs; JS error capture; no source map upload yet                                                  |
+| SES email notifications | `modules/notifications`                                                   | Optional provider, transactional templates, BullMQ retry worker when enabled                                   |
+| Referrals               | `/api/v1/referrals/me`, `/api/v1/referrals/claim`, `/referrals`           | User-owned stable code, registration attribution, qualification after first completed lesson                   |
+| Download receipt        | `/api/v1/billing/orders/:id/invoice`                                      | Owner-only, paid-only PDF receipt, **not** a statutory GST invoice                                             |
+| Alert banner            | `siteContent.alert`                                                       | Dismissible on marketing and protected pages, accessible controls                                              |
+| pnpm migration          | `pnpm-workspace.yaml`, `packageManager`, CI, Docker, scripts              | Unlocked until an actual `pnpm-lock.yaml` is generated                                                         |
 
 ## Developer start (Node 22+)
 

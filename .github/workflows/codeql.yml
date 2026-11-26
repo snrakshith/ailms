@@ -1,6 +1,6 @@
 name: SAST — CodeQL (security-extended)
 on:
-  push: {branches: [main]}
+  push: { branches: [main] }
   pull_request: {}
   schedule:
     - cron: '0 4 * * 1'
@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - uses: github/codeql-action/init@v4
         with:
           languages: javascript-typescript
