@@ -21,7 +21,7 @@
     "@sapling/contracts": "workspace:*",
     "@hookform/resolvers": "^5.0.1",
     "@tanstack/react-query": "^5.72.1",
-    "@sentry/react": "^9.13.0",
+    "@sentry/react": "^11.16.0",
     "lucide-react": "^0.468.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
