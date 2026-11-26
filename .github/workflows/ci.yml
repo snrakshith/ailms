@@ -1,9 +1,9 @@
 name: Quality and Build
 on:
-  push: {branches: [main]}
+  push: { branches: [main] }
   pull_request: {}
   workflow_dispatch: {}
-permissions: {contents: read}
+permissions: { contents: read }
 concurrency:
   group: quality-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -14,11 +14,11 @@ jobs:
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - uses: pnpm/action-setup@v6
-        with: {version: 10.20.0}
+        with: { version: 10.20.0 }
       - uses: actions/setup-node@v7
-        with: {node-version-file: .nvmrc, cache: pnpm}
+        with: { node-version-file: .nvmrc, cache: pnpm }
       - run: test -s pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: pnpm run format:check
@@ -27,19 +27,19 @@ jobs:
       - run: pnpm run test:secrets && pnpm run test:marketing && pnpm run test:release && pnpm run test:core
       - run: pnpm run test:coverage
       - run: pnpm run build
-        env: {PUBLIC_SITE_URL: 'https://example.org'}
+        env: { PUBLIC_SITE_URL: 'https://example.org' }
       - run: pnpm run security:static
       - run: pnpm audit --audit-level=high
       - if: always()
         uses: actions/upload-artifact@v7
-        with: {name: unit-coverage, path: coverage/, if-no-files-found: ignore}
+        with: { name: unit-coverage, path: coverage/, if-no-files-found: ignore }
   integration:
     name: Auth, learning and billing HTTP + Mongo contracts
     runs-on: ubuntu-latest
     timeout-minutes: 25
     services:
-      mongo: {image: 'mongo:8', ports: ['27017:27017']}
-      redis: {image: 'redis:7-alpine', ports: ['6379:6379']}
+      mongo: { image: 'mongo:8', ports: ['27017:27017'] }
+      redis: { image: 'redis:7-alpine', ports: ['6379:6379'] }
     env:
       NODE_ENV: test
       MONGODB_URI: mongodb://localhost:27017/aiquest_v14_integration
@@ -52,11 +52,11 @@ jobs:
       SES_ENABLED: 'false'
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - uses: pnpm/action-setup@v6
-        with: {version: 10.20.0}
+        with: { version: 10.20.0 }
       - uses: actions/setup-node@v7
-        with: {node-version-file: .nvmrc, cache: pnpm}
+        with: { node-version-file: .nvmrc, cache: pnpm }
       - run: test -s pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec wait-on tcp:127.0.0.1:27017 tcp:127.0.0.1:6379
@@ -68,22 +68,16 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - run: docker build -f docker/api.Dockerfile -t aiquest-api:test .
       - run: docker build --build-arg PUBLIC_SITE_URL=https://example.org -f docker/web.Dockerfile -t aiquest-web:test .
       - name: Trivy API container high/critical vulnerability gate
-        uses: aquasecurity/trivy-action@0.36.0
-        with:
-          image-ref: aiquest-api:test
-          format: table
-          vuln-type: os,library
-          severity: HIGH,CRITICAL
-          exit-code: '1'
+        run: >-
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock
+          aquasec/trivy:0.68.2 image --scanners vuln
+          --severity HIGH,CRITICAL --exit-code 1 --format table aiquest-api:test
       - name: Trivy Web container high/critical vulnerability gate
-        uses: aquasecurity/trivy-action@0.36.0
-        with:
-          image-ref: aiquest-web:test
-          format: table
-          vuln-type: os,library
-          severity: HIGH,CRITICAL
-          exit-code: '1'
+        run: >-
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock
+          aquasec/trivy:0.68.2 image --scanners vuln
+          --severity HIGH,CRITICAL --exit-code 1 --format table aiquest-web:test

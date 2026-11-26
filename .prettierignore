@@ -16,3 +16,4 @@ DELIVERY_MANIFEST.json
 **/playwright-report
 **/test-results
 reports/zap
+deploy/helm/**/templates

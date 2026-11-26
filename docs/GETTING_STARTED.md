@@ -56,7 +56,6 @@ Cashfree is disabled by default, so local learners can access all course content
 
 Before merging, run `pnpm run format` once for the inherited source, and commit the formatting diff; then use `pnpm run verify` for formatting, lint, type safety, tests, security rules and builds. CI includes the same quality gates, plus CodeQL and Playwright workflows. See [Quality and release requirements](QUALITY-AND-LAUNCH-GATES.md).
 
-
 ## Public marketing website and Google login
 
 The marketing pages are implemented in React and backed only by `apps/web/src/features/marketing/content/site-content.ts`. Update that file for all text, navigation, FAQ, pricing copy and full journal articles. Routes: `/`, `/pricing`, `/faq`, `/blog` and `/blog/:slug`.

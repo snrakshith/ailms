@@ -10,7 +10,7 @@ Each lesson should be **8–13 minutes**, connect to a concept familiar to worki
 2. Two or more practical learning objectives and short educational sections.
 3. At least one software or systems analogy, or a clear example of trade-offs.
 4. Three unambiguous application/reasoning questions, each with three plausible options.
-5. A factual explanation describing *why* the correct option is appropriate.
+5. A factual explanation describing _why_ the correct option is appropriate.
 6. An explicit version number and stable slug; never reuse a slug for a different idea.
 
 ## Authoring new content
@@ -24,13 +24,22 @@ Each lesson should be **8–13 minutes**, connect to a concept familiar to worki
 ## Example
 
 ```typescript
-lesson('train-test-split','Train, validate, test','...',11,
+lesson(
+  'train-test-split',
+  'Train, validate, test',
+  '...',
+  11,
   ['Explain why test data must be held out'],
-  [{heading:'Treat test data like a final exam',body:'...'}],
-  [question('What is held-out data for?',
-    ['Independent evaluation','Changing UI color','More logging'],0,
-    'Held-out observations estimate generalization.')]
-)
+  [{ heading: 'Treat test data like a final exam', body: '...' }],
+  [
+    question(
+      'What is held-out data for?',
+      ['Independent evaluation', 'Changing UI color', 'More logging'],
+      0,
+      'Held-out observations estimate generalization.',
+    ),
+  ],
+);
 ```
 
 The example shows structure only; the implemented catalog intentionally uses exactly three questions per lesson. Do not add single-question lessons without updating grading policy.

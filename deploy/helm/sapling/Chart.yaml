@@ -1,5 +1,5 @@
 apiVersion: v2
 name: sapling-fullstack
 version: 0.1.0
-appVersion: "1.0.0"
+appVersion: '1.0.0'
 description: Example chart for stateless Sapling web, API and worker deployments

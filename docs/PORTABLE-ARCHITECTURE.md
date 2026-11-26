@@ -24,33 +24,34 @@ packages/client-sdk             Portable transport-injected API actions
 
 ### Package responsibilities
 
-| Package | Permitted dependencies | Key exports |
-| --- | --- | --- |
-| `@sapling/contracts` | Zod, TypeScript | Login/onboarding/lesson types, editor, capstones, reviews validation |
-| `@aiquest/learning-core` | TypeScript only | `gradeAnswers`, `lessonUnlocked`, `calculateUtcStreak`, `planReview`, `compareTexts`, `confusionMatrix`, `presentQuestions`, `gradientSteps` |
-| `@aiquest/client-sdk` | TypeScript types only | `createAiQuestClient`, `createFetchTransport`, native identity methods |
-| `apps/api` | Node.js, Express, Mongoose | Private answer keys, persisted grading, XP, editors, AI gateway |
-| `apps/web` | React, Vite | Browser views, cookies/CSRF, Pyodide iframe, navigation |
+| Package                  | Permitted dependencies     | Key exports                                                                                                                                  |
+| ------------------------ | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `@sapling/contracts`     | Zod, TypeScript            | Login/onboarding/lesson types, editor, capstones, reviews validation                                                                         |
+| `@aiquest/learning-core` | TypeScript only            | `gradeAnswers`, `lessonUnlocked`, `calculateUtcStreak`, `planReview`, `compareTexts`, `confusionMatrix`, `presentQuestions`, `gradientSteps` |
+| `@aiquest/client-sdk`    | TypeScript types only      | `createAiQuestClient`, `createFetchTransport`, native identity methods                                                                       |
+| `apps/api`               | Node.js, Express, Mongoose | Private answer keys, persisted grading, XP, editors, AI gateway                                                                              |
+| `apps/web`               | React, Vite                | Browser views, cookies/CSRF, Pyodide iframe, navigation                                                                                      |
 
 ### React Native consumption example (illustrative)
 
 ```ts
-import {createAiQuestClient,createFetchTransport} from '@aiquest/client-sdk';
-import {planReview,confusionMatrix} from '@aiquest/learning-core';
+import { createAiQuestClient, createFetchTransport } from '@aiquest/client-sdk';
+import { planReview, confusionMatrix } from '@aiquest/learning-core';
 
 // Supply SecureStore/Keychain (e.g. Expo SecureStore) from the mobile app.
-let accessToken = '';  // Load from a secure device keystore on app startup.
-const transport=createFetchTransport('https://api.example.com/api/v1',fetch,
-  ()=>accessToken?{Authorization:`Bearer ${accessToken}`}:{})
-const api=createAiQuestClient(transport);
+let accessToken = ''; // Load from a secure device keystore on app startup.
+const transport = createFetchTransport('https://api.example.com/api/v1', fetch, () =>
+  accessToken ? { Authorization: `Bearer ${accessToken}` } : {},
+);
+const api = createAiQuestClient(transport);
 
-const auth=await api.nativeLogin('developer@example.com','password-from-login-screen');
-accessToken=auth.accessToken;
+const auth = await api.nativeLogin('developer@example.com', 'password-from-login-screen');
+accessToken = auth.accessToken;
 // Store auth.accessToken and auth.refreshToken in iOS Keychain / Android Keystore.
 // Before expiry: const updated=await api.nativeRefresh(savedRefreshToken);
-const paths=await api.paths();
-const lesson=await api.lesson(paths.data[0].lessons![0].id);
-const due=await api.dueReviews();
+const paths = await api.paths();
+const lesson = await api.lesson(paths.data[0].lessons![0].id);
+const due = await api.dueReviews();
 ```
 
 **Never** store refresh tokens in AsyncStorage, logs, crash reports, or unencrypted local caches. Access tokens expire in 30 minutes; rotating refresh tokens expire after 30 days and must be replaced atomically in secure storage. The refresh token cannot be used twice. Re-authentication is required after expiry, logout or revocation. Public mobile releases also require a real sign-in abuse-control and device-security review.
@@ -79,7 +80,6 @@ const due=await api.dueReviews();
 6. Add end-to-end mobile automation and offline recovery only when tested.
 
 The shared logic and API are implemented; an actual React Native application is **not** included in this ZIP.
-
 
 ## Portable billing
 
