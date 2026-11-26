@@ -1,0 +1,6 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+# Allows pnpm deploy --filter @sapling/api --prod for small runtime Docker images.
+injectWorkspacePackages: true

@@ -1,0 +1,53 @@
+name: SCA — dependencies and vulnerabilities
+on:
+  push: {branches: [main]}
+  pull_request: {}
+  schedule:
+    - cron: '30 3 * * 2'
+  workflow_dispatch: {}
+permissions: {contents: read}
+jobs:
+  audit:
+    name: pnpm advisory audit (high+)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - uses: pnpm/action-setup@v4
+        with: {version: 10.20.0}
+      - uses: actions/setup-node@v4
+        with: {node-version-file: .nvmrc, cache: pnpm}
+      - name: A resolved lockfile is mandatory
+        run: test -s pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm audit --audit-level=high
+  trivy:
+    name: Trivy filesystem (high/critical)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - name: Require dependency lockfile
+        run: test -s pnpm-lock.yaml
+      - uses: aquasecurity/trivy-action@0.36.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          scanners: vuln,misconfig,secret
+          severity: HIGH,CRITICAL
+          exit-code: '1'
+          format: table
+  dependency-review:
+    name: New dependency review (high+)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - uses: actions/dependency-review-action@v4
+        with:
+          fail-on-severity: high

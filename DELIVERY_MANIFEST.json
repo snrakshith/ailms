@@ -1,0 +1,132 @@
+{
+  "product": "AI Quest — Developer-to-AI Learning Platform",
+  "release": "v1.5 — DevSecOps SAST/SCA/DAST, Playwright cross-browser E2E",
+  "releaseDate": "2026-11-23",
+  "stack": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Redis/BullMQ",
+    "pnpm"
+  ],
+  "architecture": [
+    "@sapling/contracts",
+    "@aiquest/learning-core",
+    "@aiquest/client-sdk",
+    "@sapling/api",
+    "@sapling/web"
+  ],
+  "newFeatures": {
+    "seo": [
+      "Seven prerendered marketing pages",
+      "route metadata and JSON-LD",
+      "robots.txt",
+      "sitemap.xml",
+      "llms.txt",
+      "llms-full.txt"
+    ],
+    "status": [
+      "/status",
+      "/health/live",
+      "/health/ready",
+      "VITE_STATUS_PAGE_URL for external hosted status"
+    ],
+    "analytics": [
+      "PostHog A/B feature flag",
+      "Mixpanel events",
+      "opt-in consent and revocation in Settings"
+    ],
+    "errors": [
+      "Optional Sentry browser DSN",
+      "Optional Sentry Node DSN"
+    ],
+    "notifications": [
+      "AWS SESv2",
+      "BullMQ worker",
+      "welcome",
+      "lesson-complete",
+      "purchase-confirmation",
+      "referral-qualified"
+    ],
+    "referrals": [
+      "unique referral code",
+      "registration attribution",
+      "first lesson qualification",
+      "/referrals portal"
+    ],
+    "billing": [
+      "User-scoped PDF payment receipt for confirmed Cashfree orders",
+      "Receipt is not GST tax invoice"
+    ],
+    "ui": [
+      "Centralized dismissible alert banner",
+      "Minimal public/learner visual system retained"
+    ],
+    "tooling": [
+      "pnpm workspace",
+      "pnpm GitHub Actions",
+      "pnpm Docker builds",
+      "prettier/eslint/types/tests/build gates"
+    ],
+    "qualityAndSecurity": [
+      "Husky pre-commit/pre-push",
+      "lint-staged and Prettier/ESLint",
+      "TruffleHog pre-push and GitHub Actions",
+      "staged secret checker",
+      "Vitest HTTP+Mongo integration scenarios",
+      "session version revocation including outstanding native refresh tokens",
+      "unit coverage collection",
+      "frozen lockfile policy in CI/Docker",
+      "AWS security and deployment checklist",
+      "Playwright instead of Cypress (Chromium, Firefox, WebKit)",
+      "CodeQL SAST security-extended",
+      "Trivy and pnpm audit SCA",
+      "Dependency Review PR gate",
+      "Trivy API/web container vulnerability gates",
+      "OWASP ZAP disposable-stack DAST with medium/high JSON report gate"
+    ]
+  },
+  "configurationRequired": [
+    "Cashfree credentials for live payment",
+    "Google OAuth client ID for Google login",
+    "SES verified domain/sender/IAM credentials",
+    "Sentry DSNs",
+    "PostHog project key and experiment",
+    "Mixpanel token",
+    "External status provider account",
+    "PUBLIC_SITE_URL"
+  ],
+  "verifiedOffline": [
+    "153 TypeScript/TSX source-file syntax checks",
+    "learning rules and shared core checks",
+    "public marketing content checks",
+    "release integration contract checks",
+    "static security invariant checks",
+    "staged-secret scanner tests",
+    "GitHub workflow YAML parse",
+    "shell hook syntax",
+    "archive integrity"
+  ],
+  "notVerified": [
+    "full pnpm install and real lockfile generation (registry unreachable)",
+    "Vitest unit and Mongo integration runtime",
+    "Vitest coverage thresholds",
+    "Prettier and ESLint pipelines",
+    "browser E2E suite",
+    "TruffleHog live/history scan",
+    "provider sandboxes and production deployment"
+  ],
+  "productionReady": false,
+  "documentation": [
+    "docs/RELEASE-V1.3.md",
+    "docs/SEO-AND-STATUS.md",
+    "docs/ANALYTICS-AND-ERROR-MONITORING.md",
+    "docs/EMAIL-REFERRALS-RECEIPTS.md",
+    "docs/QUALITY-AND-LAUNCH-GATES.md",
+    "docs/PORTABLE-ARCHITECTURE.md"
+  ],
+  "verificationStatus": "Offline tests and syntax/workflow checks only; missing lockfile, no dependency-backed CI or browser/DAST runs"
+}

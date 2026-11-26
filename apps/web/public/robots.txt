@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /app
+Disallow: /learn/
+Disallow: /billing
+Disallow: /login
+Disallow: /register
+Disallow: /referrals
+# Production build regenerates this file with the canonical PUBLIC_SITE_URL.

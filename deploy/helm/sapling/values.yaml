@@ -1,0 +1,28 @@
+nameOverride: sapling
+api:
+  image: ghcr.io/example/sapling-api:1.0.0
+  replicas: 2
+  port: 4000
+  resources:
+    requests: {cpu: 100m, memory: 256Mi}
+    limits: {cpu: "1", memory: 768Mi}
+web:
+  image: ghcr.io/example/sapling-web:1.0.0
+  replicas: 2
+  port: 8080
+  resources:
+    requests: {cpu: 50m, memory: 64Mi}
+    limits: {cpu: 250m, memory: 128Mi}
+worker:
+  enabled: true
+  replicas: 1
+origin: https://sapling.example.com
+cookieSecure: true
+secretsName: sapling-runtime
+# Create an external Kubernetes Secret with JWT_SECRET, METRICS_TOKEN,
+# MONGODB_URI and REDIS_URL. Use External Secrets Operator in production.
+ingress:
+  enabled: true
+  className: nginx
+  host: sapling.example.com
+  tlsSecretName: sapling-tls

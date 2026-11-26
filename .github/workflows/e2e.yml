@@ -1,0 +1,52 @@
+name: Playwright E2E (Chromium, Firefox, WebKit)
+on:
+  pull_request: {}
+  push: {branches: [main]}
+  workflow_dispatch: {}
+permissions: {contents: read}
+concurrency:
+  group: browser-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  playwright:
+    name: Playwright cross-browser tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    services:
+      mongo: {image: 'mongo:8', ports: ['27017:27017']}
+      redis: {image: 'redis:7-alpine', ports: ['6379:6379']}
+    env:
+      CI: 'true'
+      NODE_ENV: test
+      MONGODB_URI: mongodb://localhost:27017/aiquest_playwright_e2e
+      JWT_SECRET: playwright-ci-test-only-secret-not-for-production-0123456789
+      METRICS_TOKEN: playwright-ci-metrics-only-token-0123456789
+      WEB_ORIGIN: http://127.0.0.1:5173
+      CASHFREE_ENABLED: 'false'
+      SES_ENABLED: 'false'
+      CACHE_ENABLED: 'false'
+      QUEUE_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: false}
+      - uses: pnpm/action-setup@v4
+        with: {version: 10.20.0}
+      - uses: actions/setup-node@v4
+        with: {node-version-file: .nvmrc, cache: pnpm}
+      - run: test -s pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec wait-on tcp:127.0.0.1:27017 tcp:127.0.0.1:6379
+      - run: pnpm run build:shared
+      - name: Install browser runtimes and OS dependencies
+        run: pnpm --filter @sapling/web exec playwright install --with-deps chromium firefox webkit
+      - name: Run Playwright browser tests
+        run: pnpm run e2e
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-results
+          path: |
+            apps/web/playwright-report/
+            apps/web/test-results/
+          retention-days: 7
+          if-no-files-found: ignore

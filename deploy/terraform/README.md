@@ -1,0 +1,1 @@
+Example Terraform provisions private AWS ECR repositories, not an entire Kubernetes cluster. Cluster networking, storage, secrets, ingress, certificate automation and backup policy depend on the target cloud account. Do not apply before reviewing regional cost and account policy.

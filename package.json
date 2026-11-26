@@ -1,0 +1,73 @@
+{
+  "name": "aiquest-learning-platform",
+  "private": true,
+  "version": "1.5.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "pnpm run build:shared && concurrently -k -n api,web \"pnpm --filter @sapling/api dev\" \"pnpm --filter @sapling/web dev\"",
+    "build": "pnpm run build:shared && pnpm --filter @sapling/api build && pnpm --filter @sapling/web build",
+    "typecheck": "pnpm run build:shared && pnpm --filter @sapling/api typecheck && pnpm --filter @sapling/web typecheck",
+    "test": "pnpm run test:unit",
+    "lint": "pnpm --filter @sapling/api lint && pnpm --filter @sapling/web lint",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "e2e": "pnpm run build:shared && pnpm --filter @sapling/web e2e",
+    "docker:up": "docker compose -f docker/compose.yaml up -d --build",
+    "docker:down": "docker compose -f docker/compose.yaml down",
+    "infra:up": "docker compose -f docker/compose.yaml up -d mongo redis",
+    "verify": "pnpm run format:check && pnpm run lint && pnpm run test:marketing && pnpm run test:core && pnpm run test:release && pnpm run security:static && pnpm run typecheck && pnpm run test:unit && pnpm run build && pnpm run test:secrets",
+    "smoke:integration": "node tests/integration/fullstack-smoke.mjs",
+    "smoke:contract": "node tests/contract/openapi-smoke.mjs",
+    "perf:k6": "k6 run tests/performance/k6-smoke.js",
+    "test:core": "node tests/core/offline-check.mjs",
+    "test:portable": "node tests/core/offline-check.mjs",
+    "test:marketing": "node --experimental-strip-types tests/public/marketing-content.test.mjs",
+    "security:static": "node scripts/security/static-p1-check.mjs",
+    "build:shared": "pnpm --filter @sapling/contracts build && pnpm --filter @aiquest/learning-core build && pnpm --filter @aiquest/client-sdk build",
+    "test:release": "node --experimental-strip-types tests/release/integration-contracts.test.mjs",
+    "prepare": "husky",
+    "check:staged-secrets": "node scripts/security/staged-secrets.mjs",
+    "security:secrets": "bash scripts/security/trufflehog-check.sh",
+    "test:unit": "pnpm run build:shared && pnpm --filter @sapling/api test:unit && pnpm --filter @sapling/web test",
+    "test:integration": "pnpm run build:shared && pnpm --filter @sapling/api test:integration",
+    "test:coverage": "pnpm run build:shared && pnpm --filter @sapling/api test:coverage && pnpm --filter @sapling/web test:coverage",
+    "quality:push": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run test:unit && pnpm run test:secrets && pnpm run security:static && pnpm run security:secrets",
+    "test:secrets": "node --test tests/security/staged-secrets.test.mjs tests/security/zap-report.test.mjs tests/security/pipeline.test.mjs",
+    "security:zap-gate": "node scripts/security/zap-report-gate.mjs",
+    "security:workflow": "node --test tests/security/pipeline.test.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.9.2",
+    "wait-on": "^8.0.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "lint-staged": {
+    "apps/api/**/*.{ts,tsx}": [
+      "pnpm --dir apps/api exec eslint --fix",
+      "prettier --write"
+    ],
+    "apps/web/**/*.{ts,tsx}": [
+      "pnpm --dir apps/web exec eslint --fix",
+      "prettier --write"
+    ],
+    "packages/**/*.{ts,tsx}": [
+      "prettier --write"
+    ],
+    "*.{js,mjs,cjs,json,md,yml,yaml,css,html}": [
+      "prettier --write"
+    ],
+    "apps/**/*.{js,mjs,cjs,json,md,yml,yaml,css,html}": [
+      "prettier --write"
+    ],
+    "docs/**/*.{md,json,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

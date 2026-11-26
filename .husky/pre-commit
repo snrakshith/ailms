@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+pnpm run check:staged-secrets
+pnpm exec lint-staged

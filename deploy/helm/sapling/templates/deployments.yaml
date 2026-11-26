@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: {{ .Release.Name }}-api}
+spec:
+  replicas: {{ .Values.api.replicas }}
+  selector: {matchLabels: {app: {{ .Release.Name }}-api}}
+  template:
+    metadata: {labels: {app: {{ .Release.Name }}-api}}
+    spec:
+      securityContext: {runAsNonRoot: true, runAsUser: 1000, seccompProfile: {type: RuntimeDefault}}
+      containers:
+        - name: api
+          image: {{ .Values.api.image | quote }}
+          ports: [{containerPort: 4000}]
+          env:
+            - {name: NODE_ENV, value: production}
+            - {name: COOKIE_SECURE, value: {{ .Values.cookieSecure | quote }}}
+            - {name: WEB_ORIGIN, value: {{ .Values.origin | quote }}}
+            - {name: CACHE_ENABLED, value: "true"}
+            - {name: QUEUE_ENABLED, value: "true"}
+            - {name: API_PORT, value: "4000"}
+            - name: MONGODB_URI
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: MONGODB_URI}}
+            - name: REDIS_URL
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: REDIS_URL}}
+            - name: JWT_SECRET
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: JWT_SECRET}}
+            - name: METRICS_TOKEN
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: METRICS_TOKEN}}
+          readinessProbe: {httpGet: {path: /health/ready, port: 4000}, periodSeconds: 10}
+          livenessProbe: {httpGet: {path: /health/live, port: 4000}, periodSeconds: 20}
+          resources:
+            {{- toYaml .Values.api.resources | nindent 12 }}
+          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: {{ .Release.Name }}-web}
+spec:
+  replicas: {{ .Values.web.replicas }}
+  selector: {matchLabels: {app: {{ .Release.Name }}-web}}
+  template:
+    metadata: {labels: {app: {{ .Release.Name }}-web}}
+    spec:
+      containers:
+        - name: web
+          image: {{ .Values.web.image | quote }}
+          ports: [{containerPort: 8080}]
+          readinessProbe: {httpGet: {path: /, port: 8080}, periodSeconds: 10}
+          livenessProbe: {httpGet: {path: /, port: 8080}, periodSeconds: 20}
+          resources:
+            {{- toYaml .Values.web.resources | nindent 12 }}
+          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}}
+{{- if .Values.worker.enabled }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: {{ .Release.Name }}-worker}
+spec:
+  replicas: {{ .Values.worker.replicas }}
+  selector: {matchLabels: {app: {{ .Release.Name }}-worker}}
+  template:
+    metadata: {labels: {app: {{ .Release.Name }}-worker}}
+    spec:
+      securityContext: {runAsNonRoot: true, runAsUser: 1000, seccompProfile: {type: RuntimeDefault}}
+      containers:
+        - name: worker
+          image: {{ .Values.api.image | quote }}
+          command: ["node", "apps/api/dist/workers/worker.js"]
+          env:
+            - {name: NODE_ENV, value: production}
+            - {name: COOKIE_SECURE, value: "true"}
+            - {name: QUEUE_ENABLED, value: "true"}
+            - name: MONGODB_URI
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: MONGODB_URI}}
+            - name: REDIS_URL
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: REDIS_URL}}
+            - name: JWT_SECRET
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: JWT_SECRET}}
+            - name: METRICS_TOKEN
+              valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: METRICS_TOKEN}}
+          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}}
+{{- end }}
