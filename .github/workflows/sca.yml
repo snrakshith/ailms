@@ -31,23 +31,25 @@ jobs:
         with: { persist-credentials: false }
       - name: Require dependency lockfile
         run: test -s pnpm-lock.yaml
-      - uses: aquasecurity/trivy-action@0.36.0
-        with:
-          scan-type: fs
-          scan-ref: .
-          scanners: vuln,misconfig,secret
-          severity: HIGH,CRITICAL
-          exit-code: '1'
-          format: table
+      - name: Run Trivy filesystem gate
+        run: >-
+          docker run --rm -v "$GITHUB_WORKSPACE:/workspace:ro"
+          aquasec/trivy:0.68.2 fs --scanners vuln,misconfig,secret
+          --severity HIGH,CRITICAL --exit-code 1 --format table /workspace
   dependency-review:
     name: New dependency review (high+)
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    permissions: { contents: read, pull-requests: write }
+    permissions: { contents: read }
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
         with: { persist-credentials: false }
-      - uses: actions/dependency-review-action@v5
-        with:
-          fail-on-severity: high
+      - uses: pnpm/action-setup@v6
+        with: { version: 10.20.0 }
+      - uses: actions/setup-node@v7
+        with: { node-version-file: .nvmrc, cache: pnpm }
+      - run: test -s pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - name: Review introduced dependency resolution for high advisories
+        run: pnpm audit --audit-level=high

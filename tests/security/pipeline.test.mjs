@@ -13,7 +13,7 @@ test('Cypress is fully removed and Playwright is wired', () => {
 });
 test('security jobs include explicit SAST, SCA, DAST and credential scanning', () => {
   assert.match(get('.github/workflows/codeql.yml'), /security-extended/);
-  assert.match(get('.github/workflows/sca.yml'), /trivy-action/);
+  assert.match(get('.github/workflows/sca.yml'), /(trivy-action|aquasec\/trivy)/);
   assert.match(get('.github/workflows/sca.yml'), /pnpm audit/);
   assert.match(get('.github/workflows/dast.yml'), /run-zap\.sh/);
   assert.match(get('.github/workflows/secrets.yml'), /trufflehog-check/);

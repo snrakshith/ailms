@@ -72,18 +72,12 @@ jobs:
       - run: docker build -f docker/api.Dockerfile -t aiquest-api:test .
       - run: docker build --build-arg PUBLIC_SITE_URL=https://example.org -f docker/web.Dockerfile -t aiquest-web:test .
       - name: Trivy API container high/critical vulnerability gate
-        uses: aquasecurity/trivy-action@0.36.0
-        with:
-          image-ref: aiquest-api:test
-          format: table
-          vuln-type: os,library
-          severity: HIGH,CRITICAL
-          exit-code: '1'
+        run: >-
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock
+          aquasec/trivy:0.68.2 image --scanners vuln
+          --severity HIGH,CRITICAL --exit-code 1 --format table aiquest-api:test
       - name: Trivy Web container high/critical vulnerability gate
-        uses: aquasecurity/trivy-action@0.36.0
-        with:
-          image-ref: aiquest-web:test
-          format: table
-          vuln-type: os,library
-          severity: HIGH,CRITICAL
-          exit-code: '1'
+        run: >-
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock
+          aquasec/trivy:0.68.2 image --scanners vuln
+          --severity HIGH,CRITICAL --exit-code 1 --format table aiquest-web:test
