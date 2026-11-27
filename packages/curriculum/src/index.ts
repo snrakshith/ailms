@@ -86,14 +86,25 @@ type RawQuestion = {
 };
 
 const data = (name: string) => new URL(`../data/${name}`, import.meta.url);
-const curriculum = JSON.parse(readFileSync(data('curriculum.json'), 'utf8')) as RawCurriculum;
-const rawLessons = readFileSync(data('lessons.jsonl'), 'utf8')
+const curriculum = JSON.parse(
+  readFileSync(data('catalog/curriculum.json'), 'utf8'),
+) as RawCurriculum;
+const rawLessons = readFileSync(data('catalog/lessons.jsonl'), 'utf8')
   .trim()
   .split('\n')
   .map((line) => JSON.parse(line) as RawLesson);
 const rawQuestions = JSON.parse(
-  readFileSync(data('learner-questions.json'), 'utf8'),
+  readFileSync(data('assessments/learner-questions.json'), 'utf8'),
 ) as RawQuestion[];
+
+const contentDirectories: Record<string, string> = {
+  F: 'foundations',
+  M: 'machine-learning',
+  D: 'deep-learning',
+  C: 'computer-vision',
+  G: 'generative-ai-agent-engineering',
+  P: 'production-ai-engineering',
+};
 
 export const course = {
   id: curriculum.curriculum_id,
@@ -137,6 +148,9 @@ export const course = {
         prompt: question.question,
         points: question.points,
       })),
-    contentPath: lesson.content_path,
+    contentPath: lesson.content_path.replace(
+      /^content\/[A-Z]\//,
+      `lesson-content/${contentDirectories[lesson.track_id]}/`,
+    ),
   })),
 } as const;
