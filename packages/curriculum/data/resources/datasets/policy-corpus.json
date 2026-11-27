@@ -1,0 +1,68 @@
+[
+  {
+    "id": "PUB01",
+    "tenant": "A",
+    "question": "return window",
+    "answer": "Returns accepted within 30 days."
+  },
+  {
+    "id": "PUB02",
+    "tenant": "A",
+    "question": "shipping time",
+    "answer": "Standard shipping takes 5 business days."
+  },
+  {
+    "id": "PUB03",
+    "tenant": "A",
+    "question": "warranty period",
+    "answer": "Warranty lasts 12 months."
+  },
+  {
+    "id": "PUB04",
+    "tenant": "A",
+    "question": "support hours",
+    "answer": "Support is open 9 to 5 weekdays."
+  },
+  {
+    "id": "PUB05",
+    "tenant": "A",
+    "question": "invoice copy",
+    "answer": "Download invoices from account billing."
+  },
+  {
+    "id": "PUB06",
+    "tenant": "A",
+    "question": "refund method",
+    "answer": "Refunds return to the original payment method."
+  },
+  {
+    "id": "PUB07",
+    "tenant": "A",
+    "question": "password reset",
+    "answer": "Use the reset link on sign-in."
+  },
+  {
+    "id": "PUB08",
+    "tenant": "A",
+    "question": "cancel order",
+    "answer": "Cancel before dispatch."
+  },
+  {
+    "id": "PUB09",
+    "tenant": "A",
+    "question": "exchange process",
+    "answer": "Submit exchange request in account."
+  },
+  {
+    "id": "PUB10",
+    "tenant": "A",
+    "question": "delivery tracking",
+    "answer": "Use the tracking ID in dispatch email."
+  },
+  {
+    "id": "PRIVATE01",
+    "tenant": "B",
+    "question": "return window",
+    "answer": "Returns accepted within 7 days."
+  }
+]

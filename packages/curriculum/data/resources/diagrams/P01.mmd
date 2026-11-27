@@ -1,0 +1,12 @@
+flowchart TD
+    N1["Code + data + config"]
+    N2["CI tests"]
+    N3["Train and evaluate"]
+    N4["Registry"]
+    N5["Approval"]
+    N6["Staged deploy"]
+    N1 --> N2
+    N2 --> N3
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6

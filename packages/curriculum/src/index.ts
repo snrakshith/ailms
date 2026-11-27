@@ -21,6 +21,25 @@ export type CourseLesson = {
   exercise: { task: string; acceptanceCriteria: string };
   knowledgeChecks: CourseQuestion[];
   contentPath: string;
+  codeExamples: CourseCodeExample[];
+};
+
+export type CourseCodeExample = {
+  id: string;
+  moduleId: string;
+  title: string;
+  path: string;
+  dependencies: string[];
+  executionMode: string;
+  source: string;
+};
+
+export type CourseNotebook = {
+  id: string;
+  trackId: string;
+  title: string;
+  path: string;
+  source: string;
 };
 
 export type CourseModule = {
@@ -85,6 +104,14 @@ type RawQuestion = {
   points: number;
 };
 
+type RawCodeExample = {
+  module_id: string;
+  path: string;
+  name: string;
+  dependencies: string[];
+  execution_mode: string;
+};
+
 const data = (name: string) => new URL(`../data/${name}`, import.meta.url);
 const curriculum = JSON.parse(
   readFileSync(data('catalog/curriculum.json'), 'utf8'),
@@ -96,6 +123,38 @@ const rawLessons = readFileSync(data('catalog/lessons.jsonl'), 'utf8')
 const rawQuestions = JSON.parse(
   readFileSync(data('assessments/learner-questions.json'), 'utf8'),
 ) as RawQuestion[];
+const rawCodeExamples = JSON.parse(
+  readFileSync(data('resources/data/code-index.json'), 'utf8'),
+) as RawCodeExample[];
+
+const codeExamples = rawCodeExamples.map((example): CourseCodeExample => ({
+  id: `${example.module_id}:${example.name}`,
+  moduleId: example.module_id,
+  title: example.name,
+  path: `resources/${example.path}`,
+  dependencies: example.dependencies,
+  executionMode: example.execution_mode,
+  source: readFileSync(data(`resources/${example.path}`), 'utf8'),
+}));
+
+const notebookTracks: Record<string, string> = {
+  F: 'Foundations',
+  M: 'Machine Learning',
+  D: 'Deep Learning',
+  C: 'Computer Vision',
+  G: 'Generative AI and Agent Engineering',
+  P: 'Production AI Engineering',
+};
+const notebooks = Object.entries(notebookTracks).map(([trackId, title]): CourseNotebook => {
+  const path = `resources/notebooks/${trackId}-offline-labs.ipynb`;
+  return {
+    id: `notebook:${trackId}`,
+    trackId,
+    title: `${title} offline labs notebook`,
+    path,
+    source: readFileSync(data(path), 'utf8'),
+  };
+});
 
 const contentDirectories: Record<string, string> = {
   F: 'foundations',
@@ -125,6 +184,8 @@ export const course = {
     durationMinutes: module.estimated_minutes,
     prerequisiteModuleIds: module.prerequisite_module_ids,
   })),
+  codeExamples,
+  notebooks,
   lessons: rawLessons.map((lesson): CourseLesson => ({
     id: lesson.id,
     moduleId: lesson.module_id,
@@ -152,5 +213,6 @@ export const course = {
       /^content\/[A-Z]\//,
       `lesson-content/${contentDirectories[lesson.track_id]}/`,
     ),
+    codeExamples: codeExamples.filter((example) => example.moduleId === lesson.module_id),
   })),
 } as const;

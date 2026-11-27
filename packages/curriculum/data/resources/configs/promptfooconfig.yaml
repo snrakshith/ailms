@@ -1,0 +1,14 @@
+# Template: replace provider ID with one from official Promptfoo docs.
+prompts:
+  - "Classify as leave or travel. Return only the label. Input: {{query}}"
+providers:
+  - id: REPLACE_WITH_PROVIDER
+tests:
+  - vars: {query: "How many annual leave days?"}
+    assert:
+      - type: equals
+        value: leave
+  - vars: {query: "Do I need receipts for flights?"}
+    assert:
+      - type: equals
+        value: travel

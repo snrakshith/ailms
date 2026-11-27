@@ -5,6 +5,7 @@ import {
   ArrowRight,
   CheckCircle2,
   Clock3,
+  Download,
   Lightbulb,
   RotateCcw,
   Sparkles,
@@ -107,6 +108,30 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
             </section>
           ))}
           {lesson.id === 'gradient-descent' && <GradientDescentLab />}
+          {lesson.resources.length > 0 && (
+            <section className="aq-resource-section" aria-labelledby="resource-title">
+              <span className="aq-kicker">COURSE FILES</span>
+              <h2 id="resource-title">Code and offline notebooks</h2>
+              <p>Download the exact learner-facing files bundled with this curriculum.</p>
+              <div className="aq-resource-list">
+                {lesson.resources.map((resource) => (
+                  <a
+                    key={resource.id}
+                    className="aq-resource-link"
+                    href={`/api/v1/learning/resources/${resource.id}`}
+                  >
+                    <span>
+                      <strong>
+                        {resource.kind === 'notebook' ? 'Jupyter notebook' : 'Python example'}
+                      </strong>
+                      <small>{resource.title}</small>
+                    </span>
+                    <Download size={17} />
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
           <section className="aq-quiz" aria-labelledby="quiz-title">
             <span className="aq-kicker">PUT KNOWLEDGE TO WORK</span>
             <h2 id="quiz-title">Knowledge check</h2>

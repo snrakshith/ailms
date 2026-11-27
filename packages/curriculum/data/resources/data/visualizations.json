@@ -1,0 +1,90 @@
+[
+  {
+    "id": "VIS01",
+    "lesson_id": "F02-L05",
+    "title": "Gradient descent",
+    "path": "visualizations/VIS01.html",
+    "mode": "offline_html",
+    "controls": [
+      "Learning rate"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  },
+  {
+    "id": "VIS02",
+    "lesson_id": "M02-L02",
+    "title": "Classification threshold",
+    "path": "visualizations/VIS02.html",
+    "mode": "offline_html",
+    "controls": [
+      "Threshold"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  },
+  {
+    "id": "VIS03",
+    "lesson_id": "D03-L03",
+    "title": "Softmax and attention temperature",
+    "path": "visualizations/VIS03.html",
+    "mode": "offline_html",
+    "controls": [
+      "Temperature"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  },
+  {
+    "id": "VIS04",
+    "lesson_id": "C03-L01",
+    "title": "Intersection over union",
+    "path": "visualizations/VIS04.html",
+    "mode": "offline_html",
+    "controls": [
+      "Horizontal shift"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  },
+  {
+    "id": "VIS05",
+    "lesson_id": "G01-L02",
+    "title": "Context budget",
+    "path": "visualizations/VIS05.html",
+    "mode": "offline_html",
+    "controls": [
+      "Retrieved tokens"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  },
+  {
+    "id": "VIS06",
+    "lesson_id": "G04-L02",
+    "title": "Corrective RAG routing",
+    "path": "visualizations/VIS06.html",
+    "mode": "offline_html",
+    "controls": [
+      "Evidence quality"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  },
+  {
+    "id": "VIS07",
+    "lesson_id": "G11-L01",
+    "title": "LoRA parameter budget",
+    "path": "visualizations/VIS07.html",
+    "mode": "offline_html",
+    "controls": [
+      "Rank"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  },
+  {
+    "id": "VIS08",
+    "lesson_id": "P01-L03",
+    "title": "Release quality gate",
+    "path": "visualizations/VIS08.html",
+    "mode": "offline_html",
+    "controls": [
+      "Accuracy"
+    ],
+    "security": "sandboxed iframe; scripts only; no network"
+  }
+]

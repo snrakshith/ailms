@@ -1,0 +1,242 @@
+[
+  {
+    "id": "LAB01-CH",
+    "lesson_id": "F01-L03",
+    "lab_id": "LAB01",
+    "title": "Standardization without NaN",
+    "task": "Implement column statistics and zero-variance guard. Compare output with a constant column and assert shape, mean and variance.",
+    "starter_path": "labs/starters/LAB01.py",
+    "acceptance_criteria": "Constant column output is zero; other columns have mean 0 and std 1.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB02-CH",
+    "lesson_id": "M02-L02",
+    "lab_id": "LAB02",
+    "title": "Capacity-aware classification",
+    "task": "Load Wisconsin benchmark and select threshold under validation review capacity. Compare validation precision/recall at several thresholds, freeze threshold, evaluate test once.",
+    "starter_path": "labs/starters/LAB02.py",
+    "acceptance_criteria": "Validation review fraction <= 0.4; test may differ. Educational benchmark only, not clinical use.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB03-CH",
+    "lesson_id": "M03-L02",
+    "lab_id": "LAB03",
+    "title": "Cross-validated regression",
+    "task": "Compare median baseline with ridge penalties using development folds. Record CV MAE, selected candidate and independent test MAE.",
+    "starter_path": "labs/starters/LAB03.py",
+    "acceptance_criteria": "Select minimum development MAE; no test-based selection. Educational benchmark only.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB04-CH",
+    "lesson_id": "D01-L02",
+    "lab_id": "LAB04",
+    "title": "XOR and nonlinear networks",
+    "task": "Fit linear and nonlinear classifiers to the four XOR points. Record both accuracies and explain representational limits.",
+    "starter_path": "labs/starters/LAB04.py",
+    "acceptance_criteria": "MLP fits all four points; linear model cannot. This is not a generalization benchmark.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB05-CH",
+    "lesson_id": "C02-L02",
+    "lab_id": "LAB05",
+    "title": "CPU CNN on handwritten digits",
+    "task": "Train a small CNN on 8x8 digit images and save best validation checkpoint. Record validation and holdout macro F1, parameter count, and confusion analysis extension.",
+    "starter_path": "labs/starters/LAB05.py",
+    "acceptance_criteria": "Model returns 10 logits; test F1 between 0 and 1. Compare architecture on validation only.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB06-CH",
+    "lesson_id": "C03-L01",
+    "lab_id": "LAB06",
+    "title": "Bounding box IoU and class-aware NMS",
+    "task": "Calculate overlap and suppress duplicate same-class detections. Verify identical, disjoint, partial overlap, and different classes.",
+    "starter_path": "labs/starters/LAB06.py",
+    "acceptance_criteria": "Partial overlap 1/7; duplicate same class suppressed; other class retained.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB07-CH",
+    "lesson_id": "G03-L04",
+    "lab_id": "LAB07",
+    "title": "Grounded retrieval and abstention",
+    "task": "Use lexical retrieval against synthetic tenant-scoped policy corpus. Run fixture queries; add paraphrases and inspect false abstains. Compare a better retriever on a new holdout.",
+    "starter_path": "labs/starters/LAB07.py",
+    "acceptance_criteria": "16 known fixtures pass; exact-match-like lexical benchmark is not real semantic evaluation.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB08-CH",
+    "lesson_id": "G04-L02",
+    "lab_id": "LAB08",
+    "title": "Bounded corrective retrieval and claim verification",
+    "task": "Implement three evidence routes and retry-bounded fact verifier. Test weak/ambiguous/strong evidence, missing fallback and permanent failure.",
+    "starter_path": "labs/starters/LAB08.py",
+    "acceptance_criteria": "Max 3 attempts; evidence mismatch abstains or corrects. Inspired by CRAG, not paper reproduction.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB09-CH",
+    "lesson_id": "G06-L04",
+    "lab_id": "LAB09",
+    "title": "HITL and idempotency contract",
+    "task": "Use SQLite receipt keys to reject unauthorized writes and replay duplicate requests. Verify deny, approve, duplicate, conflicting payload and stored row count.",
+    "starter_path": "labs/starters/LAB09.py",
+    "acceptance_criteria": "Only one authorized fixture receipt persisted; actual external exactly-once not claimed.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB10-CH",
+    "lesson_id": "G09-L01",
+    "lab_id": "LAB10",
+    "title": "FastAPI validation and streaming",
+    "task": "Create a fake inference API and SSE endpoint. Exercise successful request, invalid body, timeout, unavailable provider and event framing.",
+    "starter_path": "labs/starters/LAB10.py",
+    "acceptance_criteria": "200,422,504,503 and valid SSE; live cancellation is a separate exercise.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB11-CH",
+    "lesson_id": "G11-L01",
+    "lab_id": "LAB11",
+    "title": "LoRA adapter mechanics",
+    "task": "Train rank-2 adapter on a frozen linear layer. Compare loss and confirm base tensor unchanged; calculate parameter count for larger layer.",
+    "starter_path": "labs/starters/LAB11.py",
+    "acceptance_criteria": "Training loss decreases, base weight unchanged; tiny toy rank is not parameter-efficient.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB12-CH",
+    "lesson_id": "P01-L03",
+    "lab_id": "LAB12",
+    "title": "Fail-closed deployment gate",
+    "task": "Evaluate candidate metrics against explicit quality and latency thresholds. Test good candidate, regression, missing metrics and emit manifest.",
+    "starter_path": "labs/starters/LAB12.py",
+    "acceptance_criteria": "Bad or incomplete candidate cannot promote.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB13-CH",
+    "lesson_id": "M05-L01",
+    "lab_id": "LAB13",
+    "title": "Rolling demand forecast",
+    "task": "Use synthetic retail CSV for three chronological backtests. Compare seasonal-naive and moving-average MAE at fixed horizons.",
+    "starter_path": "labs/starters/LAB13.py",
+    "acceptance_criteria": "Every forecast follows training cutoff; no future features.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB14-CH",
+    "lesson_id": "G08-L02",
+    "lab_id": "LAB14",
+    "title": "Scoped memory lifecycle",
+    "task": "Implement isolated memory records and expiry. Test add/update/search/delete, expiry and cross-tenant denial.",
+    "starter_path": "labs/starters/LAB14.py",
+    "acceptance_criteria": "No cross-tenant access; expired/deleted entries excluded. Not a vector DB or Mem0 test.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB15-CH",
+    "lesson_id": "G07-L02",
+    "lab_id": "LAB15",
+    "title": "Tool contract before MCP transport",
+    "task": "Build strict read-only catalog tool dispatch. Test valid input, invalid schema, unknown tool, missing scope and record not found.",
+    "starter_path": "labs/starters/LAB15.py",
+    "acceptance_criteria": "Five contract cases pass. Actual MCP integration remains separate.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  },
+  {
+    "id": "LAB16-CH",
+    "lesson_id": "G10-L01",
+    "lab_id": "LAB16",
+    "title": "RAG evaluation metric decomposition",
+    "task": "Calculate evidence recall, abstention and human-labeled claim support separately. Use three fixture cases and explain why metrics diverge.",
+    "starter_path": "labs/starters/LAB16.py",
+    "acceptance_criteria": "Recall .5, abstention 1, support 1/3; no model judge.",
+    "points": 10,
+    "rubric": {
+      "implementation": 5,
+      "tests": 3,
+      "explanation": 2
+    }
+  }
+]

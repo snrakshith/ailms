@@ -1,0 +1,16 @@
+flowchart TD
+    N1["Client"]
+    N2["FastAPI"]
+    N3["Input policy"]
+    N4["LiteLLM gateway"]
+    N5["Model"]
+    N6["Output checks"]
+    N7["SSE client"]
+    N8["Human approval for writes"]
+    N1 --> N2
+    N2 --> N3
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6
+    N6 --> N7
+    N3 --> N8

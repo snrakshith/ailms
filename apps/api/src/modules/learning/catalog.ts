@@ -1,6 +1,14 @@
 import { course } from '@aiquest/curriculum';
 import type { LessonQuestion, LessonSection } from '@sapling/contracts';
 
+export type CatalogResource = {
+  id: string;
+  title: string;
+  kind: 'code' | 'notebook';
+  filename: string;
+  source: string;
+};
+
 type Question = {
   id: string;
   prompt: string;
@@ -20,6 +28,7 @@ export type CatalogLesson = {
   objectives: string[];
   sections: LessonSection[];
   questions: Question[];
+  resources: CatalogResource[];
 };
 
 export type CatalogPath = {
@@ -77,6 +86,12 @@ const toSection = (heading: string, body: string, callout?: string): LessonSecti
   body,
   ...(callout ? { callout } : {}),
 });
+const toCodeSection = (heading: string, code: string, callout: string): LessonSection => ({
+  heading,
+  body: 'Read the complete learner-facing example below. Run it locally with the listed dependencies.',
+  code,
+  callout,
+});
 
 export const catalog: CatalogPath[] = course.tracks.map((track) => {
   const meta = presentation[track.id];
@@ -96,6 +111,13 @@ export const catalog: CatalogPath[] = course.tracks.map((track) => {
         toSection('Worked scenario', lesson.workedExample),
         toSection('Practice exercise', lesson.exercise.task, lesson.exercise.acceptanceCriteria),
         toSection('Common mistake', lesson.commonPitfall),
+        ...lesson.codeExamples.map((example) =>
+          toCodeSection(
+            `Code example: ${example.title}.py`,
+            example.source,
+            `${example.executionMode} example · Dependencies: ${example.dependencies.join(', ') || 'standard library'}.`,
+          ),
+        ),
         ...(lesson.knowledgeChecks.length
           ? [
               toSection(
@@ -107,6 +129,24 @@ export const catalog: CatalogPath[] = course.tracks.map((track) => {
           : []),
       ],
       questions: [],
+      resources: [
+        ...lesson.codeExamples.map((example) => ({
+          id: `code:${example.id}`,
+          title: `${example.title}.py`,
+          kind: 'code' as const,
+          filename: example.path.split('/').at(-1)!,
+          source: example.source,
+        })),
+        ...course.notebooks
+          .filter((notebook) => notebook.trackId === lesson.trackId)
+          .map((notebook) => ({
+            id: notebook.id,
+            title: notebook.title,
+            kind: 'notebook' as const,
+            filename: notebook.path.split('/').at(-1)!,
+            source: notebook.source,
+          })),
+      ],
     }));
   return {
     id: meta.id,

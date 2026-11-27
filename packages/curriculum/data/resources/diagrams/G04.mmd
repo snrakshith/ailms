@@ -1,0 +1,18 @@
+flowchart TD
+    N1["Query"]
+    N2["Retrieve"]
+    N3["Grade evidence"]
+    N4["Rewrite or fallback"]
+    N5["Generate"]
+    N6["Verify"]
+    N7["Answer"]
+    N8["Abstain"]
+    N1 --> N2
+    N2 --> N3
+    N3 -->|weak| N4
+    N4 --> N2
+    N3 -->|strong| N5
+    N5 --> N6
+    N6 -->|unsupported| N4
+    N6 -->|pass| N7
+    N6 -->|budget exhausted| N8

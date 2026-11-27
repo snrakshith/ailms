@@ -1,0 +1,12 @@
+flowchart TD
+    N1["Batched data"]
+    N2["Train mode"]
+    N3["Gradient update"]
+    N4["Eval mode"]
+    N5["Validation"]
+    N6["Best checkpoint"]
+    N1 --> N2
+    N2 --> N3
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6

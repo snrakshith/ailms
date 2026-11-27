@@ -1,0 +1,12 @@
+flowchart TD
+    N1["Image"]
+    N2["Feature extractor"]
+    N3["Boxes or masks"]
+    N4["Postprocess"]
+    N5["Match ground truth"]
+    N6["AP or IoU"]
+    N1 --> N2
+    N2 --> N3
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6

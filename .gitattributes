@@ -1,0 +1,2 @@
+packages/curriculum/data/resources/**/*.csv text eol=lf
+packages/curriculum/data/resources/**/*.tsv text eol=lf
