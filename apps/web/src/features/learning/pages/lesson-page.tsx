@@ -1,16 +1,21 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import {
   ArrowLeft,
   ArrowRight,
   CheckCircle2,
+  Check,
+  Code2,
+  Copy,
   Clock3,
   Download,
+  Eye,
   Lightbulb,
   RotateCcw,
   Sparkles,
   Target,
   ThumbsUp,
+  X,
 } from 'lucide-react';
 import type { SubmissionResult } from '@sapling/contracts';
 import { useLearningLesson, useSubmitLesson } from '../api/learning';
@@ -18,11 +23,106 @@ import { GradientDescentLab } from '../components/gradient-lab';
 import { TutorHints } from '../../experience/components/tutor-hints';
 import { Loading } from '../../../shared/components/ui/loading';
 import { useDocumentTitle } from '../../../shared/hooks/use-document-title';
+
+type NotebookCell = { cell_type?: string; source?: string[] | string };
+function sourceText(source: NotebookCell['source']) {
+  return Array.isArray(source) ? source.join('') : (source ?? '');
+}
+function CodeEditor({ code, filename = 'example.py' }: { code: string; filename?: string }) {
+  const [copied, setCopied] = useState(false);
+  const lines = code.replace(/\n$/, '').split('\n');
+  const copy = async () => {
+    await navigator.clipboard.writeText(code);
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 1600);
+  };
+  return (
+    <div className="aq-code-editor">
+      <header>
+        <span>
+          <Code2 size={15} />
+          {filename}
+        </span>
+        <button type="button" onClick={() => void copy()}>
+          {copied ? <Check size={14} /> : <Copy size={14} />} {copied ? 'Copied' : 'Copy'}
+        </button>
+      </header>
+      <pre>
+        <code>
+          {lines.map((line, index) => (
+            <span key={`${index}-${line}`}>
+              <i>{index + 1}</i>
+              {line || ' '}
+              {'\n'}
+            </span>
+          ))}
+        </code>
+      </pre>
+    </div>
+  );
+}
+function NotebookPreview({
+  resource,
+  onClose,
+}: {
+  resource: { id: string; title: string };
+  onClose: () => void;
+}) {
+  const [cells, setCells] = useState<NotebookCell[] | null>(null);
+  const [error, setError] = useState('');
+  useEffect(() => {
+    void fetch(`/api/v1/learning/resources/${resource.id}`)
+      .then(async (response) => {
+        if (!response.ok) throw new Error('Unable to load notebook');
+        const notebook = (await response.json()) as { cells?: NotebookCell[] };
+        setCells(notebook.cells ?? []);
+      })
+      .catch((reason) =>
+        setError(reason instanceof Error ? reason.message : 'Unable to load notebook'),
+      );
+  }, [resource.id]);
+  return (
+    <div className="aq-notebook-backdrop" role="presentation">
+      <section
+        className="aq-notebook-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="notebook-title"
+      >
+        <header>
+          <div>
+            <span className="aq-kicker">READ-ONLY NOTEBOOK</span>
+            <h2 id="notebook-title">{resource.title}</h2>
+          </div>
+          <button type="button" aria-label="Close notebook preview" onClick={onClose}>
+            <X size={19} />
+          </button>
+        </header>
+        {error && (
+          <p role="alert" className="aq-error">
+            {error}
+          </p>
+        )}
+        {!cells && !error && <p className="aq-muted">Loading notebook cells…</p>}
+        {cells?.map((cell, index) =>
+          cell.cell_type === 'code' ? (
+            <CodeEditor key={index} code={sourceText(cell.source)} filename={`Cell ${index + 1}`} />
+          ) : (
+            <section key={index} className="aq-notebook-markdown">
+              {sourceText(cell.source)}
+            </section>
+          ),
+        )}
+      </section>
+    </div>
+  );
+}
 function LessonScreen({ lessonId }: { lessonId: string }) {
   const { data, isPending, error } = useLearningLesson(lessonId);
   const submission = useSubmitLesson(lessonId);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [result, setResult] = useState<SubmissionResult | null>(null);
+  const [notebook, setNotebook] = useState<{ id: string; title: string } | null>(null);
   useDocumentTitle(data?.data.title ?? 'Lesson');
   const lesson = data?.data;
   const answered = useMemo(
@@ -95,9 +195,13 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
               <h2>{section.heading}</h2>
               <p>{section.body}</p>
               {section.code && (
-                <pre className="aq-code">
-                  <code>{section.code}</code>
-                </pre>
+                <CodeEditor
+                  code={section.code}
+                  filename={section.heading
+                    .replace('Code example: ', '')
+                    .replace(/\s+/g, '-')
+                    .toLowerCase()}
+                />
               )}
               {section.callout && (
                 <div className="aq-tip">
@@ -115,19 +219,24 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
               <p>Download the exact learner-facing files bundled with this curriculum.</p>
               <div className="aq-resource-list">
                 {lesson.resources.map((resource) => (
-                  <a
-                    key={resource.id}
-                    className="aq-resource-link"
-                    href={`/api/v1/learning/resources/${resource.id}`}
-                  >
+                  <div key={resource.id} className="aq-resource-link">
                     <span>
                       <strong>
                         {resource.kind === 'notebook' ? 'Jupyter notebook' : 'Python example'}
                       </strong>
                       <small>{resource.title}</small>
                     </span>
-                    <Download size={17} />
-                  </a>
+                    <span className="aq-resource-actions">
+                      {resource.kind === 'notebook' && (
+                        <button type="button" onClick={() => setNotebook(resource)}>
+                          <Eye size={16} /> Preview
+                        </button>
+                      )}
+                      <a href={`/api/v1/learning/resources/${resource.id}`}>
+                        <Download size={17} /> Download
+                      </a>
+                    </span>
+                  </div>
                 ))}
               </div>
             </section>
@@ -283,6 +392,7 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
           </div>
         </aside>
       </div>
+      {notebook && <NotebookPreview resource={notebook} onClose={() => setNotebook(null)} />}
     </div>
   );
 }
