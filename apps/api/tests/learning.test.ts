@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { catalog, findLesson, publicQuestions } from '../src/modules/learning/catalog.js';
+import { course } from '@aiquest/curriculum';
 import {
   calculateStreak,
   formatPaths,
@@ -22,6 +23,13 @@ describe('catalog contracts', () => {
     expect(lesson.questions).toEqual([]);
     expect(JSON.stringify(publicQuestions(lesson.questions))).not.toContain('correctOptionId');
     expect(JSON.stringify(publicQuestions(lesson.questions))).not.toContain('explanation');
+  });
+  it('indexes learner resources without exposing instructor material', () => {
+    expect(course.assets.length).toBeGreaterThan(200);
+    expect(course.assets.some((asset) => asset.kind === 'notebook')).toBe(true);
+    expect(course.assets.some((asset) => asset.kind === 'visualization')).toBe(true);
+    expect(course.assets.some((asset) => asset.path.includes('instructor-material'))).toBe(false);
+    expect(course.flashcards).toHaveLength(212);
   });
 });
 describe('assessment and progression', () => {

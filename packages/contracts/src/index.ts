@@ -96,9 +96,39 @@ export type LessonSection = { heading: string; body: string; code?: string; call
 export type LessonResource = {
   id: string;
   title: string;
-  kind: 'code' | 'notebook';
+  kind:
+    | 'code'
+    | 'notebook'
+    | 'reading'
+    | 'diagram'
+    | 'visualization'
+    | 'lab'
+    | 'flashcards'
+    | 'dataset'
+    | 'pathway'
+    | 'capstone'
+    | 'other';
   filename: string;
 };
+export type LibraryResource = LessonResource & {
+  pathId: string;
+  lessonId?: string;
+  moduleId?: string;
+  trackId?: string;
+};
+export type Flashcard = {
+  id: string;
+  front: string;
+  back: string;
+  tags: string[];
+  moduleId?: string;
+  dueAt?: string;
+  repetitions: number;
+};
+export const flashcardReviewSchema = z
+  .object({ rating: z.enum(['again', 'hard', 'good', 'easy']) })
+  .strict();
+export type FlashcardReviewInput = z.infer<typeof flashcardReviewSchema>;
 export type LessonSummary = {
   id: string;
   title: string;

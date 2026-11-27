@@ -1,10 +1,10 @@
-import { course } from '@aiquest/curriculum';
+import { course, type CourseAssetKind } from '@aiquest/curriculum';
 import type { LessonQuestion, LessonSection } from '@sapling/contracts';
 
 export type CatalogResource = {
   id: string;
   title: string;
-  kind: 'code' | 'notebook';
+  kind: CourseAssetKind;
   filename: string;
   source: string;
 };
@@ -129,24 +129,20 @@ export const catalog: CatalogPath[] = course.tracks.map((track) => {
           : []),
       ],
       questions: [],
-      resources: [
-        ...lesson.codeExamples.map((example) => ({
-          id: `code:${example.id}`,
-          title: `${example.title}.py`,
-          kind: 'code' as const,
-          filename: example.path.split('/').at(-1)!,
-          source: example.source,
+      resources: course.assets
+        .filter(
+          (asset) =>
+            asset.lessonId === lesson.id ||
+            asset.moduleId === lesson.moduleId ||
+            (asset.kind === 'notebook' && asset.trackId === lesson.trackId),
+        )
+        .map((asset) => ({
+          id: asset.id,
+          title: asset.title,
+          kind: asset.kind,
+          filename: asset.path.split('/').at(-1)!,
+          source: asset.source,
         })),
-        ...course.notebooks
-          .filter((notebook) => notebook.trackId === lesson.trackId)
-          .map((notebook) => ({
-            id: notebook.id,
-            title: notebook.title,
-            kind: 'notebook' as const,
-            filename: notebook.path.split('/').at(-1)!,
-            source: notebook.source,
-          })),
-      ],
     }));
   return {
     id: meta.id,

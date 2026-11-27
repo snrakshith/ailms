@@ -10,6 +10,7 @@ import {
   Clock3,
   Download,
   Eye,
+  FileText,
   Lightbulb,
   RotateCcw,
   Sparkles,
@@ -222,7 +223,19 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
                   <div key={resource.id} className="aq-resource-link">
                     <span>
                       <strong>
-                        {resource.kind === 'notebook' ? 'Jupyter notebook' : 'Python example'}
+                        {resource.kind === 'notebook'
+                          ? 'Jupyter notebook'
+                          : resource.kind === 'code'
+                            ? 'Code example'
+                            : resource.kind === 'lab'
+                              ? 'Lab guide or starter'
+                              : resource.kind === 'diagram'
+                                ? 'Architecture diagram'
+                                : resource.kind === 'visualization'
+                                  ? 'Interactive visualization'
+                                  : resource.kind === 'reading'
+                                    ? 'Course reading'
+                                    : 'Course resource'}
                       </strong>
                       <small>{resource.title}</small>
                     </span>
@@ -232,8 +245,22 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
                           <Eye size={16} /> Preview
                         </button>
                       )}
+                      {(resource.kind === 'diagram' || resource.kind === 'visualization') && (
+                        <a
+                          href={`/api/v1/learning/resources/${resource.id}/view`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <Eye size={16} /> View
+                        </a>
+                      )}
                       <a href={`/api/v1/learning/resources/${resource.id}`}>
-                        <Download size={17} /> Download
+                        {resource.kind === 'reading' ? (
+                          <FileText size={17} />
+                        ) : (
+                          <Download size={17} />
+                        )}{' '}
+                        Download
                       </a>
                     </span>
                   </div>

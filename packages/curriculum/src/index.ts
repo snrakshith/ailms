@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync } from 'node:fs';
 
 export type CourseQuestion = {
   id: string;
@@ -40,6 +40,37 @@ export type CourseNotebook = {
   title: string;
   path: string;
   source: string;
+};
+
+export type CourseAssetKind =
+  | 'code'
+  | 'notebook'
+  | 'reading'
+  | 'diagram'
+  | 'visualization'
+  | 'lab'
+  | 'flashcards'
+  | 'dataset'
+  | 'pathway'
+  | 'capstone'
+  | 'other';
+export type CourseAsset = {
+  id: string;
+  title: string;
+  kind: CourseAssetKind;
+  path: string;
+  trackId?: string;
+  moduleId?: string;
+  lessonId?: string;
+  source: string;
+};
+export type CourseFlashcard = {
+  id: string;
+  front: string;
+  back: string;
+  tags: string[];
+  trackId?: string;
+  moduleId?: string;
 };
 
 export type CourseModule = {
@@ -111,6 +142,14 @@ type RawCodeExample = {
   dependencies: string[];
   execution_mode: string;
 };
+type RawLinkedAsset = {
+  id: string;
+  lesson_id: string;
+  title: string;
+  path?: string;
+  guide_path?: string;
+  starter_path?: string;
+};
 
 const data = (name: string) => new URL(`../data/${name}`, import.meta.url);
 const curriculum = JSON.parse(
@@ -156,6 +195,72 @@ const notebooks = Object.entries(notebookTracks).map(([trackId, title]): CourseN
   };
 });
 
+const assetRoot = data('resources/');
+const assetKind = (path: string): CourseAssetKind => {
+  if (path.startsWith('code/') || path.includes('/starters/') || path.startsWith('starter-code/'))
+    return 'code';
+  if (path.startsWith('notebooks/')) return 'notebook';
+  if (path.startsWith('diagrams/')) return 'diagram';
+  if (path.startsWith('visualizations/')) return 'visualization';
+  if (path.startsWith('labs/')) return 'lab';
+  if (path.startsWith('flashcards/')) return 'flashcards';
+  if (path.startsWith('datasets/')) return 'dataset';
+  if (path.startsWith('pathways/')) return 'pathway';
+  if (path.startsWith('projects/')) return 'capstone';
+  if (/^(chapters|cheatsheets|guides|cases|assessments)\//.test(path)) return 'reading';
+  return 'other';
+};
+const rawLabs = JSON.parse(
+  readFileSync(data('resources/data/labs.json'), 'utf8'),
+) as RawLinkedAsset[];
+const rawVisualizations = JSON.parse(
+  readFileSync(data('resources/data/visualizations.json'), 'utf8'),
+) as RawLinkedAsset[];
+const linkedAssets = new Map<string, string>();
+for (const item of [...rawLabs, ...rawVisualizations])
+  for (const path of [item.path, item.guide_path, item.starter_path])
+    if (path) linkedAssets.set(path, item.lesson_id);
+const assetPaths = readdirSync(assetRoot, { recursive: true, encoding: 'utf8' }).filter(
+  (path): path is string => typeof path === 'string' && statSync(new URL(path, assetRoot)).isFile(),
+);
+const assets = assetPaths.map((path): CourseAsset => {
+  const moduleId = path.match(/(?:code|chapters|cheatsheets|diagrams)\/([FMDCPG]\d{2})/)?.[1];
+  const trackId = path
+    .match(/^notebooks\/([FMDCPG])-|(?:^|\/)([FMDCPG])\d{2}/)
+    ?.slice(1)
+    .find(Boolean);
+  return {
+    id: `asset:${path}`,
+    title: path
+      .split('/')
+      .at(-1)!
+      .replace(/\.(md|py|ipynb|svg|html|mmd|json|csv|tsv)$/, ''),
+    kind: assetKind(path),
+    path,
+    trackId,
+    moduleId,
+    lessonId: linkedAssets.get(path),
+    source: readFileSync(new URL(path, assetRoot), 'utf8'),
+  };
+});
+const flashcards = readFileSync(data('resources/flashcards/anki.tsv'), 'utf8')
+  .trim()
+  .split('\n')
+  .slice(1)
+  .map((line, index): CourseFlashcard => {
+    const [front, back, tags = ''] = line.replace(/\r$/, '').split('\t');
+    const parts = tags.split(/\s+/).filter(Boolean);
+    const moduleId = parts.find((tag) => /^[FMDCPG]\d{2}$/.test(tag));
+    return {
+      id: `flashcard:${index + 1}`,
+      front,
+      back,
+      tags: parts,
+      trackId: parts.find((tag) => /^[FMDCPG]$/.test(tag)),
+      moduleId,
+    };
+  });
+
 const contentDirectories: Record<string, string> = {
   F: 'foundations',
   M: 'machine-learning',
@@ -186,6 +291,8 @@ export const course = {
   })),
   codeExamples,
   notebooks,
+  assets,
+  flashcards,
   lessons: rawLessons.map((lesson): CourseLesson => ({
     id: lesson.id,
     moduleId: lesson.module_id,

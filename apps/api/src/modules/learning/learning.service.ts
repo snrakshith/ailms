@@ -1,13 +1,20 @@
 import type {
+  LibraryResource,
   LessonDetail,
   LearningOverview,
   LearningStats,
   SubmissionInput,
   SubmissionResult,
   User,
+  Flashcard,
+  FlashcardReviewInput,
 } from '@sapling/contracts';
 import { HttpError } from '../../core/errors/http-error.js';
-import { LessonCompletionModel, LessonAttemptModel } from './learning.models.js';
+import {
+  FlashcardReviewModel,
+  LessonCompletionModel,
+  LessonAttemptModel,
+} from './learning.models.js';
 import { allLessons, findPath, publicQuestions } from './catalog.js';
 import { presentQuestions } from '@aiquest/learning-core';
 import { effectiveLesson } from '../content/content.service.js';
@@ -26,6 +33,7 @@ import {
 import { markReferralQualified } from '../referrals/referral.service.js';
 import { queueEmail } from '../notifications/notifications.service.js';
 import { UserModel } from '../../infrastructure/database/mongodb/models.js';
+import { course } from '@aiquest/curriculum';
 
 async function completionsFor(userId: string): Promise<CompletedRecord[]> {
   const rows = await LessonCompletionModel.find({ userId }).lean();
@@ -96,6 +104,75 @@ export async function getLearningResource(userId: string, resourceId: string) {
   if (!lesson) throw new HttpError(404, 'Learning resource not found', 'not_found');
   await assertLearningEntitlement(userId, lesson.pathId);
   return lesson.resources.find((item) => item.id === resourceId)!;
+}
+export async function listLearningResources(userId: string): Promise<LibraryResource[]> {
+  const owned = await hasPremium(userId);
+  const seen = new Set<string>();
+  const rows: LibraryResource[] = [];
+  for (const lesson of allLessons) {
+    const premium = cashfreeEnabled() && requiresPremium(lesson.pathId);
+    if (premium && !owned) continue;
+    for (const resource of lesson.resources) {
+      if (seen.has(resource.id)) continue;
+      seen.add(resource.id);
+      rows.push({
+        id: resource.id,
+        title: resource.title,
+        kind: resource.kind,
+        filename: resource.filename,
+        pathId: lesson.pathId,
+        lessonId: lesson.id,
+        moduleId: lesson.id.split('-')[0],
+        trackId: lesson.id[0],
+      });
+    }
+  }
+  return rows.sort((a, b) => a.kind.localeCompare(b.kind) || a.title.localeCompare(b.title));
+}
+export async function dueFlashcards(userId: string): Promise<Flashcard[]> {
+  const reviews = await FlashcardReviewModel.find({ userId }).lean();
+  const byId = new Map(reviews.map((review) => [review.flashcardId, review]));
+  const now = new Date();
+  return course.flashcards
+    .filter((card) => !byId.get(card.id) || byId.get(card.id)!.dueAt <= now)
+    .slice(0, 30)
+    .map((card) => {
+      const review = byId.get(card.id);
+      return {
+        ...card,
+        repetitions: review?.repetitions ?? 0,
+        dueAt: review?.dueAt?.toISOString(),
+      };
+    });
+}
+export async function reviewFlashcard(
+  userId: string,
+  flashcardId: string,
+  input: FlashcardReviewInput,
+): Promise<void> {
+  if (!course.flashcards.some((card) => card.id === flashcardId))
+    throw new HttpError(404, 'Flashcard not found', 'not_found');
+  const previous = await FlashcardReviewModel.findOne({ userId, flashcardId }).lean();
+  const base = previous?.intervalDays ?? 0;
+  const days =
+    input.rating === 'again'
+      ? 0
+      : input.rating === 'hard'
+        ? Math.max(1, base || 1)
+        : input.rating === 'good'
+          ? Math.max(2, base * 2 || 2)
+          : Math.max(4, base * 3 || 4);
+  const dueAt = new Date();
+  dueAt.setDate(dueAt.getDate() + days);
+  await FlashcardReviewModel.findOneAndUpdate(
+    { userId, flashcardId },
+    {
+      $set: { dueAt, intervalDays: days, lastRating: input.rating, reviewedAt: new Date() },
+      $inc: { repetitions: 1 },
+      $setOnInsert: { userId, flashcardId },
+    },
+    { upsert: true },
+  );
 }
 export async function learningOverview(user: User): Promise<LearningOverview> {
   const completions = await completionsFor(user.id);
