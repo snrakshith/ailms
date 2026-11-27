@@ -1,23 +1,299 @@
-import {Link} from 'react-router-dom';
-import {ArrowRight,ArrowUpRight,BookOpen,Check,Code2,Layers3,BrainCircuit,Sparkles,MoveUpRight,PlayCircle,CheckCircle2} from 'lucide-react';
-import {PublicLayout} from '../components/public-layout';
-import {siteContent} from '../content/site-content';
-import {useDocumentTitle} from '../../../shared/hooks/use-document-title';
-import {FaqList} from './faq-page';
-import {useExperiment} from '../../../core/analytics/use-experiment';
+import { Link } from 'react-router-dom';
+import {
+  ArrowRight,
+  ArrowUpRight,
+  BookOpen,
+  Check,
+  Code2,
+  Layers3,
+  BrainCircuit,
+  Sparkles,
+  MoveUpRight,
+  PlayCircle,
+  CheckCircle2,
+} from 'lucide-react';
+import { PublicLayout } from '../components/public-layout';
+import { siteContent } from '../content/site-content';
+import { useDocumentTitle } from '../../../shared/hooks/use-document-title';
+import { FaqList } from './faq-page';
+import { useExperiment } from '../../../core/analytics/use-experiment';
 
-const icons=[<Code2 size={23}/>,<Layers3 size={23}/>,<BrainCircuit size={23}/>];
-export function HomePage(){useDocumentTitle('Learn AI for developers',siteContent.hero.description);const {hero,steps,paths,benefits,preview,faqs}=siteContent;const variant=useExperiment('homepage-hero-copy');
- return <PublicLayout>
-  <section className="mkt-hero"><div className="mkt-container mkt-hero-grid"><div className="mkt-hero-copy"><div className="mkt-eyebrow"><span className="mkt-eyebrow-line"/>{hero.eyebrow}</div><h1>{hero.title}<br/><em>{variant==='practical'?'Build real AI skills through practice.':hero.accent}</em></h1><p>{hero.description}</p><div className="mkt-hero-actions"><Link className="mkt-button mkt-button-dark" to="/register">{hero.primary}<ArrowRight size={18}/></Link><a className="mkt-button mkt-button-outline" href="#paths">{hero.secondary}<MoveUpRight size={16}/></a></div><div className="mkt-assurance"><CheckCircle2 size={16}/>{hero.note}</div></div>
-  <div className="mkt-hero-visual" aria-label="Illustration of a learning experience"><div className="mkt-visual-top"><span><span className="mkt-visual-signal"/>LEARNING IN PROGRESS</span><span>01 / 03</span></div><div className="mkt-visual-badge">FOUNDATIONS <span>·</span> LESSON 01</div><h2>From rules<br/>to <span>learning.</span></h2><p>Traditional software follows instructions. ML learns patterns from data.</p><div className="mkt-code-card"><div className="mkt-code-top"><span><i/><i/><i/></span>learning.ts</div><code><span className="mkt-code-comment">// The rules you write</span><br/><span className="mkt-code-purple">const</span> answer = <span className="mkt-code-green">rules</span>(input);<br/><br/><span className="mkt-code-comment">// The patterns it learns</span><br/><span className="mkt-code-purple">const</span> prediction = model.<span className="mkt-code-green">predict</span>(data);</code></div><div className="mkt-visual-progress"><div><Check size={15}/>Concept understood</div><span>+50 XP</span></div></div></div></section>
-  <section className="mkt-value-strip"><div className="mkt-container"><p>{siteContent.trust.eyebrow}</p><div>{siteContent.trust.items.map(item=><span key={item}><Check size={15}/>{item}</span>)}</div></div></section>
-  <section id="how-it-works" className="mkt-section mkt-steps"><div className="mkt-container"><div className="mkt-section-lead"><span className="mkt-eyebrow">{steps.eyebrow}</span><h2>{steps.title}</h2><p>{steps.description}</p></div><div className="mkt-three-grid">{steps.items.map(step=><article key={step.number} className="mkt-step-card"><div className="mkt-step-number">{step.number}</div><h3>{step.title}</h3><p>{step.description}</p></article>)}</div></div></section>
-  <section id="paths" className="mkt-section mkt-paths"><div className="mkt-container"><div className="mkt-section-header"><div><span className="mkt-eyebrow">{paths.eyebrow}</span><h2>{paths.title}</h2><p>{paths.description}</p></div><Link to="/register" className="mkt-inline-link">Explore courses <ArrowUpRight size={17}/></Link></div><div className="mkt-three-grid">{paths.items.map((path,i)=><article className="mkt-path-card" key={path.title}><div className="mkt-path-top"><div className="mkt-path-icon">{icons[i]}</div><span className={`mkt-chip ${path.type==='Free'?'mkt-chip-free':''}`}>{path.type}</span></div><div className="mkt-path-index">PATH {path.number} <span>·</span> {path.duration}</div><h3>{path.title}</h3><p>{path.description}</p><div className="mkt-tags">{path.topics.map(topic=><span key={topic}>{topic}</span>)}</div><Link to="/register" className="mkt-path-link">Explore path <ArrowRight size={17}/></Link></article>)}</div></div></section>
-  <section className="mkt-section mkt-benefits"><div className="mkt-container mkt-benefit-layout"><div><span className="mkt-eyebrow">{benefits.eyebrow}</span><h2>{benefits.title}</h2><p>Built around practice, thoughtful feedback, and the small wins that lead to real understanding.</p><Link to="/register" className="mkt-inline-link">Start learning <ArrowRight size={17}/></Link></div><div className="mkt-benefit-grid">{benefits.items.map((item,i)=><div key={item.title} className="mkt-benefit-item"><span>0{i+1}</span><h3>{item.title}</h3><p>{item.description}</p></div>)}</div></div></section>
-  <section className="mkt-section"><div className="mkt-container"><div className="mkt-preview"><div><span className="mkt-eyebrow">{preview.eyebrow}</span><h2>{preview.title}</h2><p>{preview.description}</p><div className="mkt-preview-points">{preview.topics.map(item=><span key={item}><Check size={16}/>{item}</span>)}</div><Link to="/register?next=%2Flearn%2Fai-vs-software" className="mkt-button mkt-button-dark">{preview.cta} <ArrowRight size={17}/></Link></div><div className="mkt-preview-panel"><div className="mkt-preview-symbol"><BookOpen size={27}/></div><span>FREE LESSON · {preview.duration}</span><h3>What makes a model different from a function?</h3><div className="mkt-preview-option"><span>A</span> It uses a brighter interface</div><div className="mkt-preview-option mkt-preview-correct"><span>B</span> It learns parameters from examples <Check size={16}/></div><div className="mkt-preview-option"><span>C</span> It never needs testing</div><div className="mkt-preview-bottom"><PlayCircle size={15}/> Hands-on knowledge checks</div></div></div></div></section>
-  <section className="mkt-section mkt-article-strip"><div className="mkt-container"><div className="mkt-section-header"><div><span className="mkt-eyebrow">THE JOURNAL</span><h2>Ideas for your next chapter.</h2></div><Link to="/blog" className="mkt-inline-link">All articles <ArrowUpRight size={17}/></Link></div><div className="mkt-three-grid">{siteContent.articles.slice(0,3).map(article=><Link key={article.slug} className="mkt-article-card" to={`/blog/${article.slug}`}><span className="mkt-article-category">{article.category} · {article.minutes} min read</span><h3>{article.title}</h3><p>{article.description}</p><span className="mkt-article-arrow">Read article <ArrowRight size={16}/></span></Link>)}</div></div></section>
-  <section className="mkt-section mkt-home-faq"><div className="mkt-container mkt-faq-layout"><div><span className="mkt-eyebrow">GOOD QUESTIONS</span><h2>Everything you need to know.</h2><p>Clear answers, no confusing fine print.</p><Link className="mkt-inline-link" to="/faq">See all FAQs <ArrowUpRight size={17}/></Link></div><FaqList items={faqs.slice(0,4)}/></div></section>
-  <section className="mkt-last-cta"><div className="mkt-container"><div className="mkt-cta-inner"><Sparkles size={27}/><h2>Ready to build your next skill?</h2><p>Start with the fundamentals, make meaningful progress, and discover what you can create with AI.</p><Link className="mkt-button mkt-button-light" to="/register">Create your free account <ArrowRight size={17}/></Link></div></div></section>
- </PublicLayout>;
+const icons = [<Code2 size={23} />, <Layers3 size={23} />, <BrainCircuit size={23} />];
+export function HomePage() {
+  useDocumentTitle('Learn AI for developers', siteContent.hero.description);
+  const { hero, steps, paths, benefits, preview, faqs } = siteContent;
+  const variant = useExperiment('homepage-hero-copy');
+  return (
+    <PublicLayout>
+      <section className="mkt-hero">
+        <div className="mkt-container mkt-hero-grid">
+          <div className="mkt-hero-copy">
+            <div className="mkt-eyebrow">
+              <span className="mkt-eyebrow-line" />
+              {hero.eyebrow}
+            </div>
+            <h1>
+              {hero.title}
+              <br />
+              <em>
+                {variant === 'practical' ? 'Build real AI skills through practice.' : hero.accent}
+              </em>
+            </h1>
+            <p>{hero.description}</p>
+            <div className="mkt-hero-actions">
+              <Link className="mkt-button mkt-button-dark" to="/register">
+                {hero.primary}
+                <ArrowRight size={18} />
+              </Link>
+              <a className="mkt-button mkt-button-outline" href="#paths">
+                {hero.secondary}
+                <MoveUpRight size={16} />
+              </a>
+            </div>
+            <div className="mkt-assurance">
+              <CheckCircle2 size={16} />
+              {hero.note}
+            </div>
+          </div>
+          <div className="mkt-hero-visual" aria-label="Illustration of a learning experience">
+            <div className="mkt-visual-top">
+              <span>
+                <span className="mkt-visual-signal" />
+                LEARNING IN PROGRESS
+              </span>
+              <span>01 / 03</span>
+            </div>
+            <div className="mkt-visual-badge">
+              FOUNDATIONS <span>·</span> LESSON 01
+            </div>
+            <h2>
+              From rules
+              <br />
+              to <span>learning.</span>
+            </h2>
+            <p>Traditional software follows instructions. ML learns patterns from data.</p>
+            <div className="mkt-code-card">
+              <div className="mkt-code-top">
+                <span>
+                  <i />
+                  <i />
+                  <i />
+                </span>
+                learning.ts
+              </div>
+              <code>
+                <span className="mkt-code-comment">// The rules you write</span>
+                <br />
+                <span className="mkt-code-purple">const</span> answer ={' '}
+                <span className="mkt-code-green">rules</span>(input);
+                <br />
+                <br />
+                <span className="mkt-code-comment">// The patterns it learns</span>
+                <br />
+                <span className="mkt-code-purple">const</span> prediction = model.
+                <span className="mkt-code-green">predict</span>(data);
+              </code>
+            </div>
+            <div className="mkt-visual-progress">
+              <div>
+                <Check size={15} />
+                Concept understood
+              </div>
+              <span>+50 XP</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mkt-value-strip">
+        <div className="mkt-container">
+          <p>{siteContent.trust.eyebrow}</p>
+          <div>
+            {siteContent.trust.items.map((item) => (
+              <span key={item}>
+                <Check size={15} />
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" className="mkt-section mkt-steps">
+        <div className="mkt-container">
+          <div className="mkt-section-lead">
+            <span className="mkt-eyebrow">{steps.eyebrow}</span>
+            <h2>{steps.title}</h2>
+            <p>{steps.description}</p>
+          </div>
+          <div className="mkt-three-grid">
+            {steps.items.map((step) => (
+              <article key={step.number} className="mkt-step-card">
+                <div className="mkt-step-number">{step.number}</div>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="paths" className="mkt-section mkt-paths">
+        <div className="mkt-container">
+          <div className="mkt-section-header">
+            <div>
+              <span className="mkt-eyebrow">{paths.eyebrow}</span>
+              <h2>{paths.title}</h2>
+              <p>{paths.description}</p>
+            </div>
+            <Link to="/register" className="mkt-inline-link">
+              Explore courses <ArrowUpRight size={17} />
+            </Link>
+          </div>
+          <div className="mkt-three-grid">
+            {paths.items.map((path, i) => (
+              <article className="mkt-path-card" key={path.title}>
+                <div className="mkt-path-top">
+                  <div className="mkt-path-icon">{icons[i]}</div>
+                  <span className={`mkt-chip ${path.type === 'Free' ? 'mkt-chip-free' : ''}`}>
+                    {path.type}
+                  </span>
+                </div>
+                <div className="mkt-path-index">
+                  PATH {path.number} <span>·</span> {path.duration}
+                </div>
+                <h3>{path.title}</h3>
+                <p>{path.description}</p>
+                <div className="mkt-tags">
+                  {path.topics.map((topic) => (
+                    <span key={topic}>{topic}</span>
+                  ))}
+                </div>
+                <Link to="/register" className="mkt-path-link">
+                  Explore path <ArrowRight size={17} />
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="mkt-section mkt-benefits">
+        <div className="mkt-container mkt-benefit-layout">
+          <div>
+            <span className="mkt-eyebrow">{benefits.eyebrow}</span>
+            <h2>{benefits.title}</h2>
+            <p>
+              Built around practice, thoughtful feedback, and the small wins that lead to real
+              understanding.
+            </p>
+            <Link to="/register" className="mkt-inline-link">
+              Start learning <ArrowRight size={17} />
+            </Link>
+          </div>
+          <div className="mkt-benefit-grid">
+            {benefits.items.map((item, i) => (
+              <div key={item.title} className="mkt-benefit-item">
+                <span>0{i + 1}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="mkt-section">
+        <div className="mkt-container">
+          <div className="mkt-preview">
+            <div>
+              <span className="mkt-eyebrow">{preview.eyebrow}</span>
+              <h2>{preview.title}</h2>
+              <p>{preview.description}</p>
+              <div className="mkt-preview-points">
+                {preview.topics.map((item) => (
+                  <span key={item}>
+                    <Check size={16} />
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <Link to="/register?next=%2Flearn%2FF01-L01" className="mkt-button mkt-button-dark">
+                {preview.cta} <ArrowRight size={17} />
+              </Link>
+            </div>
+            <div className="mkt-preview-panel">
+              <div className="mkt-preview-symbol">
+                <BookOpen size={27} />
+              </div>
+              <span>FOUNDATIONS · {preview.duration}</span>
+              <h3>How do isolated environments support reproducible Python work?</h3>
+              <div className="mkt-preview-option">
+                <span>A</span> They keep project dependencies separate
+              </div>
+              <div className="mkt-preview-option mkt-preview-correct">
+                <span>B</span> They make the project repeatable <Check size={16} />
+              </div>
+              <div className="mkt-preview-option">
+                <span>C</span> They remove the need for tests
+              </div>
+              <div className="mkt-preview-bottom">
+                <PlayCircle size={15} /> Practice and reflection
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mkt-section mkt-article-strip">
+        <div className="mkt-container">
+          <div className="mkt-section-header">
+            <div>
+              <span className="mkt-eyebrow">THE JOURNAL</span>
+              <h2>Ideas for your next chapter.</h2>
+            </div>
+            <Link to="/blog" className="mkt-inline-link">
+              All articles <ArrowUpRight size={17} />
+            </Link>
+          </div>
+          <div className="mkt-three-grid">
+            {siteContent.articles.slice(0, 3).map((article) => (
+              <Link key={article.slug} className="mkt-article-card" to={`/blog/${article.slug}`}>
+                <span className="mkt-article-category">
+                  {article.category} · {article.minutes} min read
+                </span>
+                <h3>{article.title}</h3>
+                <p>{article.description}</p>
+                <span className="mkt-article-arrow">
+                  Read article <ArrowRight size={16} />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="mkt-section mkt-home-faq">
+        <div className="mkt-container mkt-faq-layout">
+          <div>
+            <span className="mkt-eyebrow">GOOD QUESTIONS</span>
+            <h2>Everything you need to know.</h2>
+            <p>Clear answers, no confusing fine print.</p>
+            <Link className="mkt-inline-link" to="/faq">
+              See all FAQs <ArrowUpRight size={17} />
+            </Link>
+          </div>
+          <FaqList items={faqs.slice(0, 4)} />
+        </div>
+      </section>
+      <section className="mkt-last-cta">
+        <div className="mkt-container">
+          <div className="mkt-cta-inner">
+            <Sparkles size={27} />
+            <h2>Ready to build your next skill?</h2>
+            <p>
+              Start with the fundamentals, make meaningful progress, and discover what you can
+              create with AI.
+            </p>
+            <Link className="mkt-button mkt-button-light" to="/register">
+              Create your free account <ArrowRight size={17} />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </PublicLayout>
+  );
 }

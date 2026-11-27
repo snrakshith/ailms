@@ -33,6 +33,9 @@ importers:
       '@aiquest/client-sdk':
         specifier: workspace:*
         version: link:../../packages/client-sdk
+      '@aiquest/curriculum':
+        specifier: workspace:*
+        version: link:../../packages/curriculum
       '@aiquest/learning-core':
         specifier: workspace:*
         version: link:../../packages/learning-core
@@ -298,6 +301,15 @@ importers:
         specifier: ^3.24.2
         version: 3.25.76
     devDependencies:
+      typescript:
+        specifier: ^5.9.2
+        version: 5.9.3
+
+  packages/curriculum:
+    devDependencies:
+      '@types/node':
+        specifier: ^22.14.0
+        version: 22.20.7
       typescript:
         specifier: ^5.9.2
         version: 5.9.3

@@ -1,51 +1,112 @@
 #!/usr/bin/env node
 /** Full P1 happy-path + isolation smoke. Requires running API, MongoDB, and frontend optional. */
 import assert from 'node:assert/strict';
-import {randomUUID} from 'node:crypto';
-const base=(process.env.API_ORIGIN??'http://127.0.0.1:4000')+'/api/v1';
-let accessToken='';
-async function call(url,method='GET',body=undefined,auth=true){
- const headers={'content-type':'application/json',...(auth&&accessToken?{authorization:`Bearer ${accessToken}`}:{})};
- const response=await fetch(base+url,{method,headers,body:body===undefined?undefined:JSON.stringify(body)});
- const json=response.status===204?null:await response.json();return {status:response.status,json};
+import { randomUUID } from 'node:crypto';
+const base = (process.env.API_ORIGIN ?? 'http://127.0.0.1:4000') + '/api/v1';
+let accessToken = '';
+async function call(url, method = 'GET', body = undefined, auth = true) {
+  const headers = {
+    'content-type': 'application/json',
+    ...(auth && accessToken ? { authorization: `Bearer ${accessToken}` } : {}),
+  };
+  const response = await fetch(base + url, {
+    method,
+    headers,
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+  const json = response.status === 204 ? null : await response.json();
+  return { status: response.status, json };
 }
-const password='integration-test-password-2026';
-const register=await call('/native-auth/register','POST',{name:'Portable Learner',email:`p1-${randomUUID()}@example.test`,password},false);
-assert.equal(register.status,201,JSON.stringify(register.json));
-accessToken=register.json.accessToken;
-const refresh=register.json.refreshToken;assert.ok(refresh.length>40);
-const refreshed=await call('/native-auth/refresh','POST',{refreshToken:refresh},false);
-assert.equal(refreshed.status,200);accessToken=refreshed.json.accessToken;
-assert.equal((await call('/native-auth/refresh','POST',{refreshToken:refresh},false)).status,401);
-const rotatedRefresh=refreshed.json.refreshToken;
-assert.equal((await call('/auth/onboarding','PUT',{background:'fullstack',familiarity:'exploring',goal:'genai-engineering',dailyMinutes:20})).status,200);
-assert.equal((await call('/content/me')).json.canAuthor,false);
-assert.equal((await call('/content/lessons')).status,403);
-const lesson=await call('/learning/lessons/ai-vs-software');assert.equal(lesson.status,200);
-assert.equal(JSON.stringify(lesson.json).includes('correctOptionId'),false);
-const grade=await call('/learning/lessons/ai-vs-software/submit','POST',{idempotencyKey:randomUUID(),answers:{q1:'a',q2:'b',q3:'c'}});
-assert.equal(grade.status,200,JSON.stringify(grade.json));assert.equal(grade.json.data.passed,true);
-assert.equal(grade.json.data.awardedXp,50);
-const reviewKey=randomUUID(),rating={rating:'good',idempotencyKey:reviewKey};
-const review=await call('/reviews/ai-vs-software','POST',rating);assert.equal(review.status,200,JSON.stringify(review.json));
-const retry=await call('/reviews/ai-vs-software','POST',rating);assert.equal(retry.status,200);
-assert.deepEqual(retry.json.data,review.json.data);
-assert.equal((await call('/reviews/insights')).status,200);
-assert.equal((await call('/labs/challenges')).json.data.length,3);
-const vector=await call('/labs/compare','POST',{a:'hello machine',b:'hello machine'});
-assert.equal(vector.status,200);assert.equal(vector.json.data.similarity,1);
-const tutor=await call('/tutor/hints','POST',{lessonId:'ai-vs-software',question:'What is the difference between rules and learning?',stage:2});
-assert.equal(tutor.status,200);assert.ok(tutor.json.data.answer.length>10);
-const projectBody={title:'A practical machine learning notebook',summary:'Build a transparent baseline classifier using a reproducible workflow.',repositoryUrl:'https://github.com/example/test',demoUrl:'',track:'machine-learning',skills:['Python','ML'],reflection:'I learned that baseline evaluation and honest metrics matter more than novelty.'};
-const project=await call('/portfolio/projects','POST',projectBody);assert.equal(project.status,201,JSON.stringify(project.json));
-const id=project.json.data.id,slug=project.json.data.slug;
-assert.equal((await call(`/portfolio/projects/${id}/submit`,'POST')).status,200);
-assert.equal((await call(`/portfolio/projects/${id}/publish`,'POST')).status,200);
-assert.equal((await call(`/public/portfolio/${slug}`,'GET',undefined,false)).status,200);
-assert.equal((await call(`/portfolio/projects/${id}/unpublish`,'POST')).status,200);
-assert.equal((await call(`/public/portfolio/${slug}`,'GET',undefined,false)).status,404);
-assert.equal((await call('/privacy/export')).status,200);
-assert.equal((await call('/privacy/account','DELETE',{password,confirmation:'DELETE MY ACCOUNT'})).status,204);
-assert.equal((await call('/auth/me')).status,401);
-assert.equal((await call('/native-auth/refresh','POST',{refreshToken:rotatedRefresh},false)).status,401);
-console.log('PASS: native auth rotation, learner isolation, grading, reviews, labs, hints, capstone publishing and privacy lifecycle');
+const password = 'integration-test-password-2026';
+const register = await call(
+  '/native-auth/register',
+  'POST',
+  { name: 'Portable Learner', email: `p1-${randomUUID()}@example.test`, password },
+  false,
+);
+assert.equal(register.status, 201, JSON.stringify(register.json));
+accessToken = register.json.accessToken;
+const refresh = register.json.refreshToken;
+assert.ok(refresh.length > 40);
+const refreshed = await call('/native-auth/refresh', 'POST', { refreshToken: refresh }, false);
+assert.equal(refreshed.status, 200);
+accessToken = refreshed.json.accessToken;
+assert.equal(
+  (await call('/native-auth/refresh', 'POST', { refreshToken: refresh }, false)).status,
+  401,
+);
+const rotatedRefresh = refreshed.json.refreshToken;
+assert.equal(
+  (
+    await call('/auth/onboarding', 'PUT', {
+      background: 'fullstack',
+      familiarity: 'exploring',
+      goal: 'genai-engineering',
+      dailyMinutes: 20,
+    })
+  ).status,
+  200,
+);
+assert.equal((await call('/content/me')).json.canAuthor, false);
+assert.equal((await call('/content/lessons')).status, 403);
+const lesson = await call('/learning/lessons/F01-L01');
+assert.equal(lesson.status, 200);
+assert.equal(JSON.stringify(lesson.json).includes('correctOptionId'), false);
+const grade = await call('/learning/lessons/F01-L01/submit', 'POST', {
+  idempotencyKey: randomUUID(),
+  answers: {},
+});
+assert.equal(grade.status, 200, JSON.stringify(grade.json));
+assert.equal(grade.json.data.passed, true);
+assert.equal(grade.json.data.awardedXp, 50);
+const reviewKey = randomUUID(),
+  rating = { rating: 'good', idempotencyKey: reviewKey };
+const review = await call('/reviews/F01-L01', 'POST', rating);
+assert.equal(review.status, 200, JSON.stringify(review.json));
+const retry = await call('/reviews/F01-L01', 'POST', rating);
+assert.equal(retry.status, 200);
+assert.deepEqual(retry.json.data, review.json.data);
+assert.equal((await call('/reviews/insights')).status, 200);
+assert.equal((await call('/labs/challenges')).json.data.length, 3);
+const vector = await call('/labs/compare', 'POST', { a: 'hello machine', b: 'hello machine' });
+assert.equal(vector.status, 200);
+assert.equal(vector.json.data.similarity, 1);
+const tutor = await call('/tutor/hints', 'POST', {
+  lessonId: 'F01-L01',
+  question: 'How do isolated environments support reproducibility?',
+  stage: 2,
+});
+assert.equal(tutor.status, 200);
+assert.ok(tutor.json.data.answer.length > 10);
+const projectBody = {
+  title: 'A practical machine learning notebook',
+  summary: 'Build a transparent baseline classifier using a reproducible workflow.',
+  repositoryUrl: 'https://github.com/example/test',
+  demoUrl: '',
+  track: 'machine-learning',
+  skills: ['Python', 'ML'],
+  reflection: 'I learned that baseline evaluation and honest metrics matter more than novelty.',
+};
+const project = await call('/portfolio/projects', 'POST', projectBody);
+assert.equal(project.status, 201, JSON.stringify(project.json));
+const id = project.json.data.id,
+  slug = project.json.data.slug;
+assert.equal((await call(`/portfolio/projects/${id}/submit`, 'POST')).status, 200);
+assert.equal((await call(`/portfolio/projects/${id}/publish`, 'POST')).status, 200);
+assert.equal((await call(`/public/portfolio/${slug}`, 'GET', undefined, false)).status, 200);
+assert.equal((await call(`/portfolio/projects/${id}/unpublish`, 'POST')).status, 200);
+assert.equal((await call(`/public/portfolio/${slug}`, 'GET', undefined, false)).status, 404);
+assert.equal((await call('/privacy/export')).status, 200);
+assert.equal(
+  (await call('/privacy/account', 'DELETE', { password, confirmation: 'DELETE MY ACCOUNT' }))
+    .status,
+  204,
+);
+assert.equal((await call('/auth/me')).status, 401);
+assert.equal(
+  (await call('/native-auth/refresh', 'POST', { refreshToken: rotatedRefresh }, false)).status,
+  401,
+);
+console.log(
+  'PASS: native auth rotation, learner isolation, grading, reviews, labs, hints, capstone publishing and privacy lifecycle',
+);
