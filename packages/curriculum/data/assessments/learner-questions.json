@@ -1,0 +1,2928 @@
+[
+  {
+    "id": "F01-L01-Q01",
+    "lesson_id": "F01-L01",
+    "type": "short_answer",
+    "question": "Why restart and run all cells before sharing?",
+    "points": 1
+  },
+  {
+    "id": "F01-L01-Q02",
+    "lesson_id": "F01-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create an environment, run a notebook from a fresh kernel and record Python/package versions.",
+    "points": 2
+  },
+  {
+    "id": "F01-L02-Q01",
+    "lesson_id": "F01-L02",
+    "type": "short_answer",
+    "question": "Does a Python type hint validate runtime values?",
+    "points": 1
+  },
+  {
+    "id": "F01-L02-Q02",
+    "lesson_id": "F01-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a count-by-category function handling empty input and missing labels.",
+    "points": 2
+  },
+  {
+    "id": "F01-L03-Q01",
+    "lesson_id": "F01-L03",
+    "type": "short_answer",
+    "question": "What dimensions can broadcast?",
+    "points": 1
+  },
+  {
+    "id": "F01-L03-Q02",
+    "lesson_id": "F01-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Standardize a 3-column matrix including a constant column, preserving its shape.",
+    "points": 2
+  },
+  {
+    "id": "F01-L04-Q01",
+    "lesson_id": "F01-L04",
+    "type": "short_answer",
+    "question": "Why inspect join cardinality?",
+    "points": 1
+  },
+  {
+    "id": "F01-L04-Q02",
+    "lesson_id": "F01-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a data-quality report with missing counts, duplicate keys and label distribution.",
+    "points": 2
+  },
+  {
+    "id": "F01-L05-Q01",
+    "lesson_id": "F01-L05",
+    "type": "short_answer",
+    "question": "What should an experiment record besides the seed?",
+    "points": 1
+  },
+  {
+    "id": "F01-L05-Q02",
+    "lesson_id": "F01-L05",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Write three tests for a numerical feature transformer and document a run command.",
+    "points": 2
+  },
+  {
+    "id": "F02-L01-Q01",
+    "lesson_id": "F02-L01",
+    "type": "short_answer",
+    "question": "When is cosine similarity undefined?",
+    "points": 1
+  },
+  {
+    "id": "F02-L01-Q02",
+    "lesson_id": "F02-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compute batch scores by hand for two rows and verify with NumPy.",
+    "points": 2
+  },
+  {
+    "id": "F02-L02-Q01",
+    "lesson_id": "F02-L02",
+    "type": "short_answer",
+    "question": "What does PCA maximize?",
+    "points": 1
+  },
+  {
+    "id": "F02-L02-Q02",
+    "lesson_id": "F02-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Reconstruct a matrix with ranks 1 and 2; calculate Frobenius error.",
+    "points": 2
+  },
+  {
+    "id": "F02-L03-Q01",
+    "lesson_id": "F02-L03",
+    "type": "short_answer",
+    "question": "Why does prevalence matter?",
+    "points": 1
+  },
+  {
+    "id": "F02-L03-Q02",
+    "lesson_id": "F02-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Use prevalence 1%, sensitivity 90% and specificity 95% to calculate posterior.",
+    "points": 2
+  },
+  {
+    "id": "F02-L04-Q01",
+    "lesson_id": "F02-L04",
+    "type": "short_answer",
+    "question": "What does 95% confidence mean?",
+    "points": 1
+  },
+  {
+    "id": "F02-L04-Q02",
+    "lesson_id": "F02-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Generate bootstrap intervals for sample sizes 20 and 200 from the same distribution.",
+    "points": 2
+  },
+  {
+    "id": "F02-L05-Q01",
+    "lesson_id": "F02-L05",
+    "type": "short_answer",
+    "question": "Why is the chain rule essential to neural networks?",
+    "points": 1
+  },
+  {
+    "id": "F02-L05-Q02",
+    "lesson_id": "F02-L05",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare trajectories for learning rates 0.1, 0.9 and 1.1.",
+    "points": 2
+  },
+  {
+    "id": "F02-L06-Q01",
+    "lesson_id": "F02-L06",
+    "type": "short_answer",
+    "question": "Is KL divergence symmetric?",
+    "points": 1
+  },
+  {
+    "id": "F02-L06-Q02",
+    "lesson_id": "F02-L06",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compute negative log likelihood for both probabilities and explain the penalty.",
+    "points": 2
+  },
+  {
+    "id": "M01-L01-Q01",
+    "lesson_id": "M01-L01",
+    "type": "short_answer",
+    "question": "Why use a baseline?",
+    "points": 1
+  },
+  {
+    "id": "M01-L01-Q02",
+    "lesson_id": "M01-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Write a problem statement for demand forecasting with an explicit baseline and business metric.",
+    "points": 2
+  },
+  {
+    "id": "M01-L02-Q01",
+    "lesson_id": "M01-L02",
+    "type": "short_answer",
+    "question": "Should scalers be fit before the split?",
+    "points": 1
+  },
+  {
+    "id": "M01-L02-Q02",
+    "lesson_id": "M01-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Design splits for transactions from repeat users and for chronological demand data.",
+    "points": 2
+  },
+  {
+    "id": "M01-L03-Q01",
+    "lesson_id": "M01-L03",
+    "type": "short_answer",
+    "question": "Why put preprocessing inside cross-validation?",
+    "points": 1
+  },
+  {
+    "id": "M01-L03-Q02",
+    "lesson_id": "M01-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a pipeline and predict a row with a missing number and unseen category.",
+    "points": 2
+  },
+  {
+    "id": "M02-L01-Q01",
+    "lesson_id": "M02-L01",
+    "type": "short_answer",
+    "question": "What does a residual represent?",
+    "points": 1
+  },
+  {
+    "id": "M02-L01-Q02",
+    "lesson_id": "M02-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Fit degrees 1, 3 and 10 and compare validation RMSE.",
+    "points": 2
+  },
+  {
+    "id": "M02-L02-Q01",
+    "lesson_id": "M02-L02",
+    "type": "short_answer",
+    "question": "What changes when the threshold changes?",
+    "points": 1
+  },
+  {
+    "id": "M02-L02-Q02",
+    "lesson_id": "M02-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Plot precision and recall for several thresholds and pick one for a review capacity.",
+    "points": 2
+  },
+  {
+    "id": "M02-L03-Q01",
+    "lesson_id": "M02-L03",
+    "type": "short_answer",
+    "question": "Which models are sensitive to feature scale?",
+    "points": 1
+  },
+  {
+    "id": "M02-L03-Q02",
+    "lesson_id": "M02-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Cross-validate three models using identical folds and report score and fit time.",
+    "points": 2
+  },
+  {
+    "id": "M02-L04-Q01",
+    "lesson_id": "M02-L04",
+    "type": "short_answer",
+    "question": "How does bagging reduce variance?",
+    "points": 1
+  },
+  {
+    "id": "M02-L04-Q02",
+    "lesson_id": "M02-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare train and validation scores across tree depths and forest sizes.",
+    "points": 2
+  },
+  {
+    "id": "M02-L05-Q01",
+    "lesson_id": "M02-L05",
+    "type": "short_answer",
+    "question": "What is the key difference between bagging and boosting?",
+    "points": 1
+  },
+  {
+    "id": "M02-L05-Q02",
+    "lesson_id": "M02-L05",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare sklearn histogram boosting and one external booster on the same split.",
+    "points": 2
+  },
+  {
+    "id": "M02-L06-Q01",
+    "lesson_id": "M02-L06",
+    "type": "short_answer",
+    "question": "Does regularization always improve performance?",
+    "points": 1
+  },
+  {
+    "id": "M02-L06-Q02",
+    "lesson_id": "M02-L06",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Plot learning curves and validation error for several penalty strengths.",
+    "points": 2
+  },
+  {
+    "id": "M03-L01-Q01",
+    "lesson_id": "M03-L01",
+    "type": "short_answer",
+    "question": "Why can accuracy be misleading under imbalance?",
+    "points": 1
+  },
+  {
+    "id": "M03-L01-Q02",
+    "lesson_id": "M03-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Calculate confusion metrics and choose a metric for fraud review, demand forecast and search ranking.",
+    "points": 2
+  },
+  {
+    "id": "M03-L02-Q01",
+    "lesson_id": "M03-L02",
+    "type": "short_answer",
+    "question": "What is nested CV for?",
+    "points": 1
+  },
+  {
+    "id": "M03-L02-Q02",
+    "lesson_id": "M03-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Run randomized search and report mean, standard deviation and final holdout performance once.",
+    "points": 2
+  },
+  {
+    "id": "M03-L03-Q01",
+    "lesson_id": "M03-L03",
+    "type": "short_answer",
+    "question": "What does a calibrated 0.8 probability mean?",
+    "points": 1
+  },
+  {
+    "id": "M03-L03-Q02",
+    "lesson_id": "M03-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare precision-recall, Brier score and calibration curves on a natural-prevalence holdout.",
+    "points": 2
+  },
+  {
+    "id": "M03-L04-Q01",
+    "lesson_id": "M03-L04",
+    "type": "short_answer",
+    "question": "Can SHAP prove a feature causes an outcome?",
+    "points": 1
+  },
+  {
+    "id": "M03-L04-Q02",
+    "lesson_id": "M03-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Produce an error slice report with subgroup sizes, metrics and limitations.",
+    "points": 2
+  },
+  {
+    "id": "M04-L01-Q01",
+    "lesson_id": "M04-L01",
+    "type": "short_answer",
+    "question": "Why might DBSCAN label points as noise?",
+    "points": 1
+  },
+  {
+    "id": "M04-L01-Q02",
+    "lesson_id": "M04-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare silhouette scores and visual structure across algorithms.",
+    "points": 2
+  },
+  {
+    "id": "M04-L02-Q01",
+    "lesson_id": "M04-L02",
+    "type": "short_answer",
+    "question": "Should t-SNE cluster distances be treated as exact original distances?",
+    "points": 1
+  },
+  {
+    "id": "M04-L02-Q02",
+    "lesson_id": "M04-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare PCA explained variance and multiple nonlinear embeddings.",
+    "points": 2
+  },
+  {
+    "id": "M04-L03-Q01",
+    "lesson_id": "M04-L03",
+    "type": "short_answer",
+    "question": "What is novelty detection?",
+    "points": 1
+  },
+  {
+    "id": "M04-L03-Q02",
+    "lesson_id": "M04-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Evaluate precision at a fixed daily alert budget using labeled anomalies.",
+    "points": 2
+  },
+  {
+    "id": "M05-L01-Q01",
+    "lesson_id": "M05-L01",
+    "type": "short_answer",
+    "question": "Why use rolling-origin evaluation?",
+    "points": 1
+  },
+  {
+    "id": "M05-L01-Q02",
+    "lesson_id": "M05-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build three expanding-window backtests and compare MAE to seasonal naive.",
+    "points": 2
+  },
+  {
+    "id": "M05-L02-Q01",
+    "lesson_id": "M05-L02",
+    "type": "short_answer",
+    "question": "Why use candidate retrieval before ranking?",
+    "points": 1
+  },
+  {
+    "id": "M05-L02-Q02",
+    "lesson_id": "M05-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare popularity baseline with nearest-neighbor recommendations.",
+    "points": 2
+  },
+  {
+    "id": "M05-L03-Q01",
+    "lesson_id": "M05-L03",
+    "type": "short_answer",
+    "question": "Can accurate prediction establish causality?",
+    "points": 1
+  },
+  {
+    "id": "M05-L03-Q02",
+    "lesson_id": "M05-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Specify unit of randomization, primary outcome, guardrail metrics and analysis plan.",
+    "points": 2
+  },
+  {
+    "id": "D01-L01-Q01",
+    "lesson_id": "D01-L01",
+    "type": "short_answer",
+    "question": "Why zero gradients before a training step?",
+    "points": 1
+  },
+  {
+    "id": "D01-L01-Q02",
+    "lesson_id": "D01-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compute an analytic gradient and compare with autograd.",
+    "points": 2
+  },
+  {
+    "id": "D01-L02-Q01",
+    "lesson_id": "D01-L02",
+    "type": "short_answer",
+    "question": "Why are nonlinear activations needed?",
+    "points": 1
+  },
+  {
+    "id": "D01-L02-Q02",
+    "lesson_id": "D01-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare a linear model with an MLP on XOR.",
+    "points": 2
+  },
+  {
+    "id": "D01-L03-Q01",
+    "lesson_id": "D01-L03",
+    "type": "short_answer",
+    "question": "Does backpropagation update weights itself?",
+    "points": 1
+  },
+  {
+    "id": "D01-L03-Q02",
+    "lesson_id": "D01-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Hand-derive gradients for a scalar linear prediction and squared loss.",
+    "points": 2
+  },
+  {
+    "id": "D01-L04-Q01",
+    "lesson_id": "D01-L04",
+    "type": "short_answer",
+    "question": "What does AdamW decouple?",
+    "points": 1
+  },
+  {
+    "id": "D01-L04-Q02",
+    "lesson_id": "D01-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Train short runs at several learning rates and log loss curves.",
+    "points": 2
+  },
+  {
+    "id": "D02-L01-Q01",
+    "lesson_id": "D02-L01",
+    "type": "short_answer",
+    "question": "Why use model.eval() plus no_grad or inference_mode?",
+    "points": 1
+  },
+  {
+    "id": "D02-L01-Q02",
+    "lesson_id": "D02-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement train_epoch and evaluate functions with sample-weighted losses.",
+    "points": 2
+  },
+  {
+    "id": "D02-L02-Q01",
+    "lesson_id": "D02-L02",
+    "type": "short_answer",
+    "question": "Why can dropout predictions differ in training mode?",
+    "points": 1
+  },
+  {
+    "id": "D02-L02-Q02",
+    "lesson_id": "D02-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare baseline, dropout and weight decay using validation curves.",
+    "points": 2
+  },
+  {
+    "id": "D02-L03-Q01",
+    "lesson_id": "D02-L03",
+    "type": "short_answer",
+    "question": "What is data-parallel training?",
+    "points": 1
+  },
+  {
+    "id": "D02-L03-Q02",
+    "lesson_id": "D02-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare throughput and validation loss on available hardware; if CPU-only, calculate memory estimates.",
+    "points": 2
+  },
+  {
+    "id": "D03-L01-Q01",
+    "lesson_id": "D03-L01",
+    "type": "short_answer",
+    "question": "Why use weight sharing in CNNs?",
+    "points": 1
+  },
+  {
+    "id": "D03-L01-Q02",
+    "lesson_id": "D03-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Design a CNN and calculate the shape after each layer before running it.",
+    "points": 2
+  },
+  {
+    "id": "D03-L02-Q01",
+    "lesson_id": "D03-L02",
+    "type": "short_answer",
+    "question": "What do recurrent gates control?",
+    "points": 1
+  },
+  {
+    "id": "D03-L02-Q02",
+    "lesson_id": "D03-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Train a small GRU on synthetic sequences and compare to a naive baseline.",
+    "points": 2
+  },
+  {
+    "id": "D03-L03-Q01",
+    "lesson_id": "D03-L03",
+    "type": "short_answer",
+    "question": "Why divide attention logits by sqrt(d)?",
+    "points": 1
+  },
+  {
+    "id": "D03-L03-Q02",
+    "lesson_id": "D03-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement small causal attention with a triangular mask and test future-token invariance.",
+    "points": 2
+  },
+  {
+    "id": "D03-L04-Q01",
+    "lesson_id": "D03-L04",
+    "type": "short_answer",
+    "question": "Which architecture is typical for autoregressive chat LLMs?",
+    "points": 1
+  },
+  {
+    "id": "D03-L04-Q02",
+    "lesson_id": "D03-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Diagram the three architectures and label attention connections and objectives.",
+    "points": 2
+  },
+  {
+    "id": "D04-L01-Q01",
+    "lesson_id": "D04-L01",
+    "type": "short_answer",
+    "question": "What is self-supervised learning?",
+    "points": 1
+  },
+  {
+    "id": "D04-L01-Q02",
+    "lesson_id": "D04-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare frozen and partially unfrozen models on a small validation set.",
+    "points": 2
+  },
+  {
+    "id": "D04-L02-Q01",
+    "lesson_id": "D04-L02",
+    "type": "short_answer",
+    "question": "What is GAN mode collapse?",
+    "points": 1
+  },
+  {
+    "id": "D04-L02-Q02",
+    "lesson_id": "D04-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare reconstruction on normal and shifted samples; explain how VAE sampling differs.",
+    "points": 2
+  },
+  {
+    "id": "D04-L03-Q01",
+    "lesson_id": "D04-L03",
+    "type": "short_answer",
+    "question": "What does latent diffusion change?",
+    "points": 1
+  },
+  {
+    "id": "D04-L03-Q02",
+    "lesson_id": "D04-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Visualize a simple noising schedule and compare denoising errors across timesteps.",
+    "points": 2
+  },
+  {
+    "id": "D04-L04-Q01",
+    "lesson_id": "D04-L04",
+    "type": "short_answer",
+    "question": "Why is reward design important?",
+    "points": 1
+  },
+  {
+    "id": "D04-L04-Q02",
+    "lesson_id": "D04-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a two-armed bandit and report cumulative regret across seeds.",
+    "points": 2
+  },
+  {
+    "id": "C01-L01-Q01",
+    "lesson_id": "C01-L01",
+    "type": "short_answer",
+    "question": "What color order does cv2.imread normally use?",
+    "points": 1
+  },
+  {
+    "id": "C01-L01-Q02",
+    "lesson_id": "C01-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a synthetic color image, convert spaces and verify channel values.",
+    "points": 2
+  },
+  {
+    "id": "C01-L02-Q01",
+    "lesson_id": "C01-L02",
+    "type": "short_answer",
+    "question": "What is morphological opening?",
+    "points": 1
+  },
+  {
+    "id": "C01-L02-Q02",
+    "lesson_id": "C01-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare masks for multiple kernel sizes and quantify foreground area.",
+    "points": 2
+  },
+  {
+    "id": "C01-L03-Q01",
+    "lesson_id": "C01-L03",
+    "type": "short_answer",
+    "question": "What does RANSAC do?",
+    "points": 1
+  },
+  {
+    "id": "C01-L03-Q02",
+    "lesson_id": "C01-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Apply a perspective transform and quantify inlier matches or reprojection error.",
+    "points": 2
+  },
+  {
+    "id": "C02-L01-Q01",
+    "lesson_id": "C02-L01",
+    "type": "short_answer",
+    "question": "Why split videos by source rather than frames?",
+    "points": 1
+  },
+  {
+    "id": "C02-L01-Q02",
+    "lesson_id": "C02-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a dataset audit with class counts, duplicates, split groups and annotation examples.",
+    "points": 2
+  },
+  {
+    "id": "C02-L02-Q01",
+    "lesson_id": "C02-L02",
+    "type": "short_answer",
+    "question": "What does freezing a backbone do?",
+    "points": 1
+  },
+  {
+    "id": "C02-L02-Q02",
+    "lesson_id": "C02-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare a scratch CNN and pretrained backbone using the same split.",
+    "points": 2
+  },
+  {
+    "id": "C03-L01-Q01",
+    "lesson_id": "C03-L01",
+    "type": "short_answer",
+    "question": "What does IoU measure?",
+    "points": 1
+  },
+  {
+    "id": "C03-L01-Q02",
+    "lesson_id": "C03-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement IoU and class-aware NMS for a few predicted boxes.",
+    "points": 2
+  },
+  {
+    "id": "C03-L02-Q01",
+    "lesson_id": "C03-L02",
+    "type": "short_answer",
+    "question": "How does DETR differ from many traditional detectors?",
+    "points": 1
+  },
+  {
+    "id": "C03-L02-Q02",
+    "lesson_id": "C03-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Train or fine-tune a detector on a small custom dataset; profile latency and mAP.",
+    "points": 2
+  },
+  {
+    "id": "C03-L03-Q01",
+    "lesson_id": "C03-L03",
+    "type": "short_answer",
+    "question": "What is the difference between semantic and instance segmentation?",
+    "points": 1
+  },
+  {
+    "id": "C03-L03-Q02",
+    "lesson_id": "C03-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement mask metrics and evaluate per-class scores on synthetic masks.",
+    "points": 2
+  },
+  {
+    "id": "C03-L04-Q01",
+    "lesson_id": "C03-L04",
+    "type": "short_answer",
+    "question": "Why are U-Net skip connections useful?",
+    "points": 1
+  },
+  {
+    "id": "C03-L04-Q02",
+    "lesson_id": "C03-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Evaluate segmentation quality for difficult cases such as occlusion or small objects.",
+    "points": 2
+  },
+  {
+    "id": "C04-L01-Q01",
+    "lesson_id": "C04-L01",
+    "type": "short_answer",
+    "question": "What is an identity switch?",
+    "points": 1
+  },
+  {
+    "id": "C04-L01-Q02",
+    "lesson_id": "C04-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a synthetic video sequence with crossing objects and compare identity errors.",
+    "points": 2
+  },
+  {
+    "id": "C04-L02-Q01",
+    "lesson_id": "C04-L02",
+    "type": "short_answer",
+    "question": "How does CLIP enable zero-shot classification?",
+    "points": 1
+  },
+  {
+    "id": "C04-L02-Q02",
+    "lesson_id": "C04-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Evaluate two prompt templates and inspect misclassified images.",
+    "points": 2
+  },
+  {
+    "id": "C04-L03-Q01",
+    "lesson_id": "C04-L03",
+    "type": "short_answer",
+    "question": "Why preserve original image coordinates?",
+    "points": 1
+  },
+  {
+    "id": "C04-L03-Q02",
+    "lesson_id": "C04-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build an OCR or image inference mini-pipeline with latency and error tests.",
+    "points": 2
+  },
+  {
+    "id": "G01-L01-Q01",
+    "lesson_id": "G01-L01",
+    "type": "short_answer",
+    "question": "What is a next-token language model trained to predict?",
+    "points": 1
+  },
+  {
+    "id": "G01-L01-Q02",
+    "lesson_id": "G01-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Classify five business use cases by generation, retrieval or deterministic computation.",
+    "points": 2
+  },
+  {
+    "id": "G01-L02-Q01",
+    "lesson_id": "G01-L02",
+    "type": "short_answer",
+    "question": "Are tokens equivalent to words?",
+    "points": 1
+  },
+  {
+    "id": "G01-L02-Q02",
+    "lesson_id": "G01-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Measure token counts for three strings and implement a context-budget check.",
+    "points": 2
+  },
+  {
+    "id": "G01-L03-Q01",
+    "lesson_id": "G01-L03",
+    "type": "short_answer",
+    "question": "What does lower temperature generally do?",
+    "points": 1
+  },
+  {
+    "id": "G01-L03-Q02",
+    "lesson_id": "G01-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Record five generations per setting and compare format compliance and diversity.",
+    "points": 2
+  },
+  {
+    "id": "G01-L04-Q01",
+    "lesson_id": "G01-L04",
+    "type": "short_answer",
+    "question": "Why pin a model revision?",
+    "points": 1
+  },
+  {
+    "id": "G01-L04-Q02",
+    "lesson_id": "G01-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare three model cards for task fit, license, size and known limitations.",
+    "points": 2
+  },
+  {
+    "id": "G02-L01-Q01",
+    "lesson_id": "G02-L01",
+    "type": "short_answer",
+    "question": "Does one-shot prompting guarantee deterministic output?",
+    "points": 1
+  },
+  {
+    "id": "G02-L01-Q02",
+    "lesson_id": "G02-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a labeled holdout and compare all three prompt variants with fixed decoding settings.",
+    "points": 2
+  },
+  {
+    "id": "G02-L02-Q01",
+    "lesson_id": "G02-L02",
+    "type": "short_answer",
+    "question": "Why validate even when a provider offers structured output?",
+    "points": 1
+  },
+  {
+    "id": "G02-L02-Q02",
+    "lesson_id": "G02-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Define a strict Pydantic schema and test malformed, missing and extra fields.",
+    "points": 2
+  },
+  {
+    "id": "G02-L03-Q01",
+    "lesson_id": "G02-L03",
+    "type": "short_answer",
+    "question": "Why are generated explanations insufficient as proof?",
+    "points": 1
+  },
+  {
+    "id": "G02-L03-Q02",
+    "lesson_id": "G02-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare persona vs neutral prompts and test input that asks to ignore instructions.",
+    "points": 2
+  },
+  {
+    "id": "G02-L04-Q01",
+    "lesson_id": "G02-L04",
+    "type": "short_answer",
+    "question": "Are ChatML, Alpaca and INST universal standards?",
+    "points": 1
+  },
+  {
+    "id": "G02-L04-Q02",
+    "lesson_id": "G02-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Render two actual model templates and identify role and generation markers.",
+    "points": 2
+  },
+  {
+    "id": "G02-L05-Q01",
+    "lesson_id": "G02-L05",
+    "type": "short_answer",
+    "question": "What should a prompt version record include?",
+    "points": 1
+  },
+  {
+    "id": "G02-L05-Q02",
+    "lesson_id": "G02-L05",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a prompt registry record with model revision, template hash and evaluation results.",
+    "points": 2
+  },
+  {
+    "id": "G03-L01-Q01",
+    "lesson_id": "G03-L01",
+    "type": "short_answer",
+    "question": "Is a vector database itself an embedding model?",
+    "points": 1
+  },
+  {
+    "id": "G03-L01-Q02",
+    "lesson_id": "G03-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement brute-force cosine retrieval, then compare one vector backend.",
+    "points": 2
+  },
+  {
+    "id": "G03-L02-Q01",
+    "lesson_id": "G03-L02",
+    "type": "short_answer",
+    "question": "Why store source metadata alongside chunks?",
+    "points": 1
+  },
+  {
+    "id": "G03-L02-Q02",
+    "lesson_id": "G03-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a chunker with stable IDs and test document update/deletion behavior.",
+    "points": 2
+  },
+  {
+    "id": "G03-L03-Q01",
+    "lesson_id": "G03-L03",
+    "type": "short_answer",
+    "question": "What is the purpose of a reranker?",
+    "points": 1
+  },
+  {
+    "id": "G03-L03-Q02",
+    "lesson_id": "G03-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Measure recall@k before/after hybrid retrieval and manually inspect citations.",
+    "points": 2
+  },
+  {
+    "id": "G03-L04-Q01",
+    "lesson_id": "G03-L04",
+    "type": "short_answer",
+    "question": "Can an answer be correct but unfaithful?",
+    "points": 1
+  },
+  {
+    "id": "G03-L04-Q02",
+    "lesson_id": "G03-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create ten answerable and five unanswerable queries and report retrieval and answer metrics.",
+    "points": 2
+  },
+  {
+    "id": "G04-L01-Q01",
+    "lesson_id": "G04-L01",
+    "type": "short_answer",
+    "question": "How does original Self-RAG differ from a generic RAG critique loop?",
+    "points": 1
+  },
+  {
+    "id": "G04-L01-Q02",
+    "lesson_id": "G04-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a bounded grade-and-retry loop with a deterministic mock grader and evaluate false accepts.",
+    "points": 2
+  },
+  {
+    "id": "G04-L02-Q01",
+    "lesson_id": "G04-L02",
+    "type": "short_answer",
+    "question": "What does CRAG primarily correct?",
+    "points": 1
+  },
+  {
+    "id": "G04-L02-Q02",
+    "lesson_id": "G04-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a three-way retrieval-quality router with an offline fallback corpus.",
+    "points": 2
+  },
+  {
+    "id": "G04-L03-Q01",
+    "lesson_id": "G04-L03",
+    "type": "short_answer",
+    "question": "How is answer correction different from retrieval correction?",
+    "points": 1
+  },
+  {
+    "id": "G04-L03-Q02",
+    "lesson_id": "G04-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a verifier with max three attempts and an explicit abstain state.",
+    "points": 2
+  },
+  {
+    "id": "G04-L04-Q01",
+    "lesson_id": "G04-L04",
+    "type": "short_answer",
+    "question": "When is simple RAG preferable?",
+    "points": 1
+  },
+  {
+    "id": "G04-L04-Q02",
+    "lesson_id": "G04-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Compare deterministic routing with a bounded agent on a mixed question set.",
+    "points": 2
+  },
+  {
+    "id": "G05-L01-Q01",
+    "lesson_id": "G05-L01",
+    "type": "short_answer",
+    "question": "Who actually executes a tool call?",
+    "points": 1
+  },
+  {
+    "id": "G05-L01-Q02",
+    "lesson_id": "G05-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a tool registry, argument validation and unknown-tool error handling.",
+    "points": 2
+  },
+  {
+    "id": "G05-L02-Q01",
+    "lesson_id": "G05-L02",
+    "type": "short_answer",
+    "question": "What distinguishes ReAct from a fixed chain?",
+    "points": 1
+  },
+  {
+    "id": "G05-L02-Q02",
+    "lesson_id": "G05-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a mock loop that stops after four actions or a valid final result.",
+    "points": 2
+  },
+  {
+    "id": "G05-L03-Q01",
+    "lesson_id": "G05-L03",
+    "type": "short_answer",
+    "question": "When should reflection stop?",
+    "points": 1
+  },
+  {
+    "id": "G05-L03-Q02",
+    "lesson_id": "G05-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a mock rubric checker and compare one-pass versus iterative outputs.",
+    "points": 2
+  },
+  {
+    "id": "G05-L04-Q01",
+    "lesson_id": "G05-L04",
+    "type": "short_answer",
+    "question": "Why not use multiple agents for every task?",
+    "points": 1
+  },
+  {
+    "id": "G05-L04-Q02",
+    "lesson_id": "G05-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a supervisor with two mock specialists and bounded fan-out.",
+    "points": 2
+  },
+  {
+    "id": "G06-L01-Q01",
+    "lesson_id": "G06-L01",
+    "type": "short_answer",
+    "question": "What is the benefit of an adapter boundary?",
+    "points": 1
+  },
+  {
+    "id": "G06-L01-Q02",
+    "lesson_id": "G06-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement an adapter and swap a fake for one configured model.",
+    "points": 2
+  },
+  {
+    "id": "G06-L02-Q01",
+    "lesson_id": "G06-L02",
+    "type": "short_answer",
+    "question": "When is a sequential graph appropriate?",
+    "points": 1
+  },
+  {
+    "id": "G06-L02-Q02",
+    "lesson_id": "G06-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a two-node offline graph and test the final state.",
+    "points": 2
+  },
+  {
+    "id": "G06-L03-Q01",
+    "lesson_id": "G06-L03",
+    "type": "short_answer",
+    "question": "Why are reducers needed for some parallel state fields?",
+    "points": 1
+  },
+  {
+    "id": "G06-L03-Q02",
+    "lesson_id": "G06-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Construct a mock router and two parallel branches with a deterministic reducer.",
+    "points": 2
+  },
+  {
+    "id": "G06-L04-Q01",
+    "lesson_id": "G06-L04",
+    "type": "short_answer",
+    "question": "Why is idempotency important for resumable workflows?",
+    "points": 1
+  },
+  {
+    "id": "G06-L04-Q02",
+    "lesson_id": "G06-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a review gate and test approve, reject and resume cases.",
+    "points": 2
+  },
+  {
+    "id": "G07-L01-Q01",
+    "lesson_id": "G07-L01",
+    "type": "short_answer",
+    "question": "What does MCP standardize?",
+    "points": 1
+  },
+  {
+    "id": "G07-L01-Q02",
+    "lesson_id": "G07-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Diagram host/client/server and define schemas and permissions for two capabilities.",
+    "points": 2
+  },
+  {
+    "id": "G07-L02-Q01",
+    "lesson_id": "G07-L02",
+    "type": "short_answer",
+    "question": "Why prefer typed tool schemas?",
+    "points": 1
+  },
+  {
+    "id": "G07-L02-Q02",
+    "lesson_id": "G07-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a read-only server, list tools and test valid/invalid invocation.",
+    "points": 2
+  },
+  {
+    "id": "G07-L03-Q01",
+    "lesson_id": "G07-L03",
+    "type": "short_answer",
+    "question": "Does a tool's advertised description establish trust?",
+    "points": 1
+  },
+  {
+    "id": "G07-L03-Q02",
+    "lesson_id": "G07-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Write a threat model and tests for cross-tenant requests and malformed resource IDs.",
+    "points": 2
+  },
+  {
+    "id": "G08-L01-Q01",
+    "lesson_id": "G08-L01",
+    "type": "short_answer",
+    "question": "How does episodic memory differ from semantic memory?",
+    "points": 1
+  },
+  {
+    "id": "G08-L01-Q02",
+    "lesson_id": "G08-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Design a memory schema with type, source, timestamp, scope and expiry.",
+    "points": 2
+  },
+  {
+    "id": "G08-L02-Q01",
+    "lesson_id": "G08-L02",
+    "type": "short_answer",
+    "question": "Why store timestamps and provenance?",
+    "points": 1
+  },
+  {
+    "id": "G08-L02-Q02",
+    "lesson_id": "G08-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement a scoped in-memory store with update and delete operations, then add vector retrieval.",
+    "points": 2
+  },
+  {
+    "id": "G08-L03-Q01",
+    "lesson_id": "G08-L03",
+    "type": "short_answer",
+    "question": "Does a memory library replace an application retention policy?",
+    "points": 1
+  },
+  {
+    "id": "G08-L03-Q02",
+    "lesson_id": "G08-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Connect Mem0 in a sandbox or implement an adapter with a fake backend; test add/search/update/delete.",
+    "points": 2
+  },
+  {
+    "id": "G09-L01-Q01",
+    "lesson_id": "G09-L01",
+    "type": "short_answer",
+    "question": "Does async automatically speed up CPU-bound work?",
+    "points": 1
+  },
+  {
+    "id": "G09-L01-Q02",
+    "lesson_id": "G09-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a FastAPI service with health and validated inference endpoints.",
+    "points": 2
+  },
+  {
+    "id": "G09-L02-Q01",
+    "lesson_id": "G09-L02",
+    "type": "short_answer",
+    "question": "Why include a completion event?",
+    "points": 1
+  },
+  {
+    "id": "G09-L02-Q02",
+    "lesson_id": "G09-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Implement SSE events for delta, done and error and test a canceled client.",
+    "points": 2
+  },
+  {
+    "id": "G09-L03-Q01",
+    "lesson_id": "G09-L03",
+    "type": "short_answer",
+    "question": "Why use an LLM gateway?",
+    "points": 1
+  },
+  {
+    "id": "G09-L03-Q02",
+    "lesson_id": "G09-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a gateway configuration template and test mock fallback behavior.",
+    "points": 2
+  },
+  {
+    "id": "G09-L04-Q01",
+    "lesson_id": "G09-L04",
+    "type": "short_answer",
+    "question": "Why enforce permissions outside the LLM?",
+    "points": 1
+  },
+  {
+    "id": "G09-L04-Q02",
+    "lesson_id": "G09-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Threat-model an agent and build tests for injection, unauthorized actions and sensitive output.",
+    "points": 2
+  },
+  {
+    "id": "G10-L01-Q01",
+    "lesson_id": "G10-L01",
+    "type": "short_answer",
+    "question": "Why randomize answer order in pairwise judging?",
+    "points": 1
+  },
+  {
+    "id": "G10-L01-Q02",
+    "lesson_id": "G10-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a rubric with anchors, run pairwise comparisons in both orders and review disagreements.",
+    "points": 2
+  },
+  {
+    "id": "G10-L02-Q01",
+    "lesson_id": "G10-L02",
+    "type": "short_answer",
+    "question": "Why separate offline and judge-backed tests?",
+    "points": 1
+  },
+  {
+    "id": "G10-L02-Q02",
+    "lesson_id": "G10-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Write an offline exact-match test and a separate opt-in DeepEval semantic test.",
+    "points": 2
+  },
+  {
+    "id": "G10-L03-Q01",
+    "lesson_id": "G10-L03",
+    "type": "short_answer",
+    "question": "What does faithfulness aim to measure?",
+    "points": 1
+  },
+  {
+    "id": "G10-L03-Q02",
+    "lesson_id": "G10-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Prepare a dataset with user input, retrieved contexts, response and reference; select appropriate metrics.",
+    "points": 2
+  },
+  {
+    "id": "G10-L04-Q01",
+    "lesson_id": "G10-L04",
+    "type": "short_answer",
+    "question": "Why test prompts against a fixed fixture set?",
+    "points": 1
+  },
+  {
+    "id": "G10-L04-Q02",
+    "lesson_id": "G10-L04",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a local evaluation configuration for normal and adversarial inputs with pass criteria.",
+    "points": 2
+  },
+  {
+    "id": "G10-L05-Q01",
+    "lesson_id": "G10-L05",
+    "type": "short_answer",
+    "question": "What does p95 latency mean?",
+    "points": 1
+  },
+  {
+    "id": "G10-L05-Q02",
+    "lesson_id": "G10-L05",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Define an evaluation dashboard and a CI gate for four metrics with rollback criteria.",
+    "points": 2
+  },
+  {
+    "id": "G11-L01-Q01",
+    "lesson_id": "G11-L01",
+    "type": "short_answer",
+    "question": "What is LoRA's central idea?",
+    "points": 1
+  },
+  {
+    "id": "G11-L01-Q02",
+    "lesson_id": "G11-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create a small licensed instruction dataset, split it, configure LoRA and plan a baseline comparison.",
+    "points": 2
+  },
+  {
+    "id": "G11-L02-Q01",
+    "lesson_id": "G11-L02",
+    "type": "short_answer",
+    "question": "What does the KV cache store?",
+    "points": 1
+  },
+  {
+    "id": "G11-L02-Q02",
+    "lesson_id": "G11-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Estimate weight and KV-cache memory and benchmark a compatible serving configuration if hardware is available.",
+    "points": 2
+  },
+  {
+    "id": "G11-L03-Q01",
+    "lesson_id": "G11-L03",
+    "type": "short_answer",
+    "question": "When is RAG preferable to fine-tuning for changing facts?",
+    "points": 1
+  },
+  {
+    "id": "G11-L03-Q02",
+    "lesson_id": "G11-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Design a benchmark and choose an architecture for document QA versus image generation.",
+    "points": 2
+  },
+  {
+    "id": "P01-L01-Q01",
+    "lesson_id": "P01-L01",
+    "type": "short_answer",
+    "question": "Why package preprocessing with a model?",
+    "points": 1
+  },
+  {
+    "id": "P01-L01-Q02",
+    "lesson_id": "P01-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Build a container and run a health check and prediction contract test.",
+    "points": 2
+  },
+  {
+    "id": "P01-L02-Q01",
+    "lesson_id": "P01-L02",
+    "type": "short_answer",
+    "question": "What is the difference between a run and a model version?",
+    "points": 1
+  },
+  {
+    "id": "P01-L02-Q02",
+    "lesson_id": "P01-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Track a baseline and candidate; record why one is promoted.",
+    "points": 2
+  },
+  {
+    "id": "P01-L03-Q01",
+    "lesson_id": "P01-L03",
+    "type": "short_answer",
+    "question": "Why gate deployment on model quality as well as code tests?",
+    "points": 1
+  },
+  {
+    "id": "P01-L03-Q02",
+    "lesson_id": "P01-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Design CI for a model service and simulate a failed quality threshold.",
+    "points": 2
+  },
+  {
+    "id": "P02-L01-Q01",
+    "lesson_id": "P02-L01",
+    "type": "short_answer",
+    "question": "Can data drift occur without concept drift?",
+    "points": 1
+  },
+  {
+    "id": "P02-L01-Q02",
+    "lesson_id": "P02-L01",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Create drift and service alerts, escalation thresholds and a rollback plan.",
+    "points": 2
+  },
+  {
+    "id": "P02-L02-Q01",
+    "lesson_id": "P02-L02",
+    "type": "short_answer",
+    "question": "What should a model card communicate?",
+    "points": 1
+  },
+  {
+    "id": "P02-L02-Q02",
+    "lesson_id": "P02-L02",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Draft data inventory, model limitations, approval checkpoints and incident procedure.",
+    "points": 2
+  },
+  {
+    "id": "P02-L03-Q01",
+    "lesson_id": "P02-L03",
+    "type": "short_answer",
+    "question": "Why separate ingestion and online inference?",
+    "points": 1
+  },
+  {
+    "id": "P02-L03-Q02",
+    "lesson_id": "P02-L03",
+    "type": "scenario",
+    "question": "How would you implement and verify this exercise? Diagram architecture, forecast cost drivers and define rollback and recovery objectives.",
+    "points": 2
+  },
+  {
+    "id": "F01-L01-Q03",
+    "lesson_id": "F01-L01",
+    "type": "debugging",
+    "question": "A notebook succeeds only after running cell 9 first. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F01-L02-Q03",
+    "lesson_id": "F01-L02",
+    "type": "debugging",
+    "question": "A default argument `out={}` accumulates previous calls. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F01-L03-Q03",
+    "lesson_id": "F01-L03",
+    "type": "debugging",
+    "question": "A zero variance feature produces NaN; using axis=1 instead of axis=0 normalizes samples, not features. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F01-L04-Q03",
+    "lesson_id": "F01-L04",
+    "type": "debugging",
+    "question": "A many-to-many merge doubles positive cases and inflates apparent performance. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F01-L05-Q03",
+    "lesson_id": "F01-L05",
+    "type": "debugging",
+    "question": "A test passes alone but fails in the suite due to mutable global state. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F02-L01-Q03",
+    "lesson_id": "F02-L01",
+    "type": "debugging",
+    "question": "Elementwise X*w returns a matrix, not scores. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F02-L02-Q03",
+    "lesson_id": "F02-L02",
+    "type": "debugging",
+    "question": "Applying PCA to uncentered data measures variation around the origin; center using train statistics when variance around the mean is the goal.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F02-L03-Q03",
+    "lesson_id": "F02-L03",
+    "type": "debugging",
+    "question": "Confusing sensitivity with positive predictive value gives 90%. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F02-L04-Q03",
+    "lesson_id": "F02-L04",
+    "type": "debugging",
+    "question": "Resampling individual time points breaks autocorrelation; use appropriate blocks or model-based intervals, and distinguish sample size from resample count.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F02-L05-Q03",
+    "lesson_id": "F02-L05",
+    "type": "debugging",
+    "question": "Looking only at loss hides sign oscillation. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F02-L06-Q03",
+    "lesson_id": "F02-L06",
+    "type": "debugging",
+    "question": "Exponentiating large logits returns inf; avoid probabilities rounded to zero and use logits-based losses where possible.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M01-L01-Q03",
+    "lesson_id": "M01-L01",
+    "type": "debugging",
+    "question": "A feature contains actual future inventory adjustment. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M01-L02-Q03",
+    "lesson_id": "M01-L02",
+    "type": "debugging",
+    "question": "Duplicate rows appear across splits; group by source entity or deduplicate before split, and audit timestamp ranges.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M01-L03-Q03",
+    "lesson_id": "M01-L03",
+    "type": "debugging",
+    "question": "Fitting the encoder before split leaks category information; put it inside the pipeline passed to cross-validation.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M02-L01-Q03",
+    "lesson_id": "M02-L01",
+    "type": "debugging",
+    "question": "Selecting degree 10 from training error encourages overfit; plot validation error and investigate extrapolation outside training range.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M02-L02-Q03",
+    "lesson_id": "M02-L02",
+    "type": "debugging",
+    "question": "Using .5 regardless of imbalance/cost may exceed budget or miss positives. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M02-L03-Q03",
+    "lesson_id": "M02-L03",
+    "type": "debugging",
+    "question": "Distance model dominated by an unscaled income feature; inspect scaled distributions and use same folds for fair comparison.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M02-L04-Q03",
+    "lesson_id": "M02-L04",
+    "type": "debugging",
+    "question": "Training accuracy reaches 1.0 but validation declines; reduce depth, min_samples_leaf or use a forest and verify on unseen data.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M02-L05-Q03",
+    "lesson_id": "M02-L05",
+    "type": "debugging",
+    "question": "Using test as early-stopping eval_set leaks labels. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M02-L06-Q03",
+    "lesson_id": "M02-L06",
+    "type": "debugging",
+    "question": "Feature selection performed using all labels leaks information; put SelectKBest inside pipeline and rerun cross-validation.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M03-L01-Q03",
+    "lesson_id": "M03-L01",
+    "type": "debugging",
+    "question": "Accuracy .97 masks rare-event errors; inspect confusion counts and business capacity rather than reporting accuracy alone.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M03-L02-Q03",
+    "lesson_id": "M03-L02",
+    "type": "debugging",
+    "question": "Search iterations increase after seeing test performance. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M03-L03-Q03",
+    "lesson_id": "M03-L03",
+    "type": "debugging",
+    "question": "Oversampling before split duplicates positives into holdout; resample inside training only and do not change test prevalence.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M03-L04-Q03",
+    "lesson_id": "M03-L04",
+    "type": "debugging",
+    "question": "A subgroup with two examples has 100% error; report support and intervals, avoid broad claims or targeting based on unstable estimates.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M04-L01-Q03",
+    "lesson_id": "M04-L01",
+    "type": "debugging",
+    "question": "Treating DBSCAN noise as an ordinary cluster distorts silhouette. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M04-L02-Q03",
+    "lesson_id": "M04-L02",
+    "type": "debugging",
+    "question": "Interpreting distances between t-SNE islands as real distances is unjustified; check original-space neighbors and repeat seeds.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M04-L03-Q03",
+    "lesson_id": "M04-L03",
+    "type": "debugging",
+    "question": "Training on contaminated data or reversing score sign hides real anomalies. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M05-L01-Q03",
+    "lesson_id": "M05-L01",
+    "type": "debugging",
+    "question": "Random split permits future leakage; use ordered windows and avoid centered rolling features.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M05-L02-Q03",
+    "lesson_id": "M05-L02",
+    "type": "debugging",
+    "question": "Including held-out interactions in similarity matrix leaks targets. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "M05-L03-Q03",
+    "lesson_id": "M05-L03",
+    "type": "debugging",
+    "question": "Randomizing sessions when users see both experiences contaminates effects. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D01-L01-Q03",
+    "lesson_id": "D01-L01",
+    "type": "debugging",
+    "question": "Calling `.detach()` or converting to NumPy before loss disconnects the gradient; inspect requires_grad and grad_fn.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D01-L02-Q03",
+    "lesson_id": "D01-L02",
+    "type": "debugging",
+    "question": "Applying sigmoid before BCEWithLogitsLoss applies sigmoid twice. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D01-L03-Q03",
+    "lesson_id": "D01-L03",
+    "type": "debugging",
+    "question": "Mistaking sum for mean loss changes effective step scale with batch size. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D01-L04-Q03",
+    "lesson_id": "D01-L04",
+    "type": "debugging",
+    "question": "Reusing optimizer moments across trials invalidates comparison; initialize weights and optimizer consistently.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D02-L01-Q03",
+    "lesson_id": "D02-L01",
+    "type": "debugging",
+    "question": "Averaging three batch means equally weights the final three examples too much; sum weighted losses and divide by count.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D02-L02-Q03",
+    "lesson_id": "D02-L02",
+    "type": "debugging",
+    "question": "Saving `best=model.state_dict()` without copying may retain references to changing tensors; deepcopy or serialize checkpoint immediately.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D02-L03-Q03",
+    "lesson_id": "D02-L03",
+    "type": "debugging",
+    "question": "Comparing asynchronous GPU timings without synchronization misreports throughput; warm up and synchronize around measurements.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D03-L01-Q03",
+    "lesson_id": "D03-L01",
+    "type": "debugging",
+    "question": "Flatten size mismatch occurs when stride/padding changes. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D03-L02-Q03",
+    "lesson_id": "D03-L02",
+    "type": "debugging",
+    "question": "Using padded last timestep instead of true sequence end corrupts representation; gather last valid state or pack sequences.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D03-L03-Q03",
+    "lesson_id": "D03-L03",
+    "type": "debugging",
+    "question": "Applying mask after softmax leaves incorrect normalization; mask scores before softmax, avoid fully masked rows or define safe handling.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D03-L04-Q03",
+    "lesson_id": "D03-L04",
+    "type": "debugging",
+    "question": "Allowing target positions to attend to future target tokens during training creates leakage; use causal target mask.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D04-L01-Q03",
+    "lesson_id": "D04-L01",
+    "type": "debugging",
+    "question": "Frozen parameters do not guarantee batch-norm running stats stay fixed; set frozen modules to eval if required.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D04-L02-Q03",
+    "lesson_id": "D04-L02",
+    "type": "debugging",
+    "question": "Good reconstruction does not ensure useful generation or anomaly detection; validate shift cases and avoid interpreting reconstruction score as calibrated probability.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D04-L03-Q03",
+    "lesson_id": "D04-L03",
+    "type": "debugging",
+    "question": "Confusing α_t and cumulative ᾱ_t mis-scales noise; check endpoints and use scheduler-consistent prediction parameterization.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "D04-L04-Q03",
+    "lesson_id": "D04-L04",
+    "type": "debugging",
+    "question": "Evaluating one seed can reward lucky initialization; average across seeds and distinguish observed reward from expected regret.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C01-L01-Q03",
+    "lesson_id": "C01-L01",
+    "type": "debugging",
+    "question": "Displaying BGR as RGB swaps red and blue. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C01-L02-Q03",
+    "lesson_id": "C01-L02",
+    "type": "debugging",
+    "question": "Large erosion removes thin defects; evaluate object retention and noise reduction against annotated examples.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C01-L03-Q03",
+    "lesson_id": "C01-L03",
+    "type": "debugging",
+    "question": "A homography fitted to four points exactly may be wrong for nonplanar scenes; inspect additional correspondences and camera geometry.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C02-L01-Q03",
+    "lesson_id": "C02-L01",
+    "type": "debugging",
+    "question": "Applying random augmentation to validation changes reported metric across runs; use deterministic transforms and preserve labels.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C02-L02-Q03",
+    "lesson_id": "C02-L02",
+    "type": "debugging",
+    "question": "Using pretrained model with wrong channel order or normalization silently hurts accuracy; follow model card and verify sample inputs.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C03-L01-Q03",
+    "lesson_id": "C03-L01",
+    "type": "debugging",
+    "question": "Class-agnostic NMS removes overlapping different objects. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C03-L02-Q03",
+    "lesson_id": "C03-L02",
+    "type": "debugging",
+    "question": "Mixing normalized center-width-height with pixel corners corrupts training. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C03-L03-Q03",
+    "lesson_id": "C03-L03",
+    "type": "debugging",
+    "question": "Pixel accuracy can be high on mostly background images; report class-specific overlap and object-level failure cases.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C03-L04-Q03",
+    "lesson_id": "C03-L04",
+    "type": "debugging",
+    "question": "Comparing SAM with ground-truth box prompts to fully automatic U-Net is not equivalent; disclose prompt information and report separate tracks.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C04-L01-Q03",
+    "lesson_id": "C04-L01",
+    "type": "debugging",
+    "question": "Nearest-neighbor association swaps IDs at crossings; add motion prediction/appearance and evaluate on crossing cases.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C04-L02-Q03",
+    "lesson_id": "C04-L02",
+    "type": "debugging",
+    "question": "Choosing prompts after seeing test labels overfits benchmark. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "C04-L03-Q03",
+    "lesson_id": "C04-L03",
+    "type": "debugging",
+    "question": "Comparing normalized vs original-size boxes breaks source citations; retain page coordinates and transformation metadata.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G01-L01-Q03",
+    "lesson_id": "G01-L01",
+    "type": "debugging",
+    "question": "Using a free-form model for arithmetic or authorization introduces avoidable errors; delegate deterministic decisions to verified functions.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G01-L02-Q03",
+    "lesson_id": "G01-L02",
+    "type": "debugging",
+    "question": "Counting words underestimates chat overhead; measure rendered messages with actual tokenizer and check provider context limit separately.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G01-L03-Q03",
+    "lesson_id": "G01-L03",
+    "type": "debugging",
+    "question": "A consistently wrong answer looks reproducible; evaluate correctness and schema compliance, not just identical outputs.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G01-L04-Q03",
+    "lesson_id": "G01-L04",
+    "type": "debugging",
+    "question": "Comparing advertised benchmarks across different datasets or prompts misleads. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G02-L01-Q03",
+    "lesson_id": "G02-L01",
+    "type": "debugging",
+    "question": "An example copies test content or contains incorrect labels, inflating performance or teaching wrong patterns. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G02-L02-Q03",
+    "lesson_id": "G02-L02",
+    "type": "debugging",
+    "question": "Valid JSON can have invented evidence or unsupported confidence. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G02-L03-Q03",
+    "lesson_id": "G02-L03",
+    "type": "debugging",
+    "question": "A persona says it may ignore access policy; enforce permission in application code, not a prompt claim.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G02-L04-Q03",
+    "lesson_id": "G02-L04",
+    "type": "debugging",
+    "question": "Manually concatenating a generic INST prompt for an incompatible model yields malformed role boundaries. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G02-L05-Q03",
+    "lesson_id": "G02-L05",
+    "type": "debugging",
+    "question": "Changing model and prompt simultaneously makes attribution impossible; isolate changes and repeat stochastic runs.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G03-L01-Q03",
+    "lesson_id": "G03-L01",
+    "type": "debugging",
+    "question": "Mixing embeddings from different model revisions or returning results before applying tenant filter yields wrong or unauthorized evidence.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G03-L02-Q03",
+    "lesson_id": "G03-L02",
+    "type": "debugging",
+    "question": "Appending revised chunks without deleting stale records creates conflicting evidence. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G03-L03-Q03",
+    "lesson_id": "G03-L03",
+    "type": "debugging",
+    "question": "A valid citation ID does not imply the cited text supports the claim. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G03-L04-Q03",
+    "lesson_id": "G03-L04",
+    "type": "debugging",
+    "question": "A single average conceals no-answer failures; stratify by answerability and report denominators and per-query traces.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G04-L01-Q03",
+    "lesson_id": "G04-L01",
+    "type": "debugging",
+    "question": "Letting a model approve its own unsupported answer can reinforce hallucination. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G04-L02-Q03",
+    "lesson_id": "G04-L02",
+    "type": "debugging",
+    "question": "A fallback leaks confidential queries to an external service or inserts stale documents. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G04-L03-Q03",
+    "lesson_id": "G04-L03",
+    "type": "debugging",
+    "question": "An unbounded verifier loop increases cost while never resolving a missing document. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G04-L04-Q03",
+    "lesson_id": "G04-L04",
+    "type": "debugging",
+    "question": "Agent repeatedly searches irrelevant indices and misses SLA; impose route/tool budget, timeouts and explicit terminal conditions.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G05-L01-Q03",
+    "lesson_id": "G05-L01",
+    "type": "debugging",
+    "question": "A valid JSON argument references another tenant's record. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G05-L02-Q03",
+    "lesson_id": "G05-L02",
+    "type": "debugging",
+    "question": "A model repeats the same tool indefinitely; detect repeated calls, budget attempts and terminate with a useful error.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G05-L03-Q03",
+    "lesson_id": "G05-L03",
+    "type": "debugging",
+    "question": "A judge gives higher score to verbose but wrong answers; anchor rubric to facts and run blind human review of disagreements.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G05-L04-Q03",
+    "lesson_id": "G05-L04",
+    "type": "debugging",
+    "question": "Giving each specialist every tool defeats least privilege. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G06-L01-Q03",
+    "lesson_id": "G06-L01",
+    "type": "debugging",
+    "question": "Leaking provider exceptions or message classes into business logic makes migration and error handling brittle; normalize at boundary.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G06-L02-Q03",
+    "lesson_id": "G06-L02",
+    "type": "debugging",
+    "question": "Mutating shared state in place obscures replay behavior. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G06-L03-Q03",
+    "lesson_id": "G06-L03",
+    "type": "debugging",
+    "question": "Parallel nodes writing same key without reducer may error or overwrite. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G06-L04-Q03",
+    "lesson_id": "G06-L04",
+    "type": "debugging",
+    "question": "Performing a write before interrupt can duplicate it after resume. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G07-L01-Q03",
+    "lesson_id": "G07-L01",
+    "type": "debugging",
+    "question": "Treating all MCP servers as trusted extensions permits instruction injection or excessive access. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G07-L02-Q03",
+    "lesson_id": "G07-L02",
+    "type": "debugging",
+    "question": "A public-looking resource returns private fields; return minimal approved schema and assert no internal keys in response.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G07-L03-Q03",
+    "lesson_id": "G07-L03",
+    "type": "debugging",
+    "question": "Passing user-supplied tenant as authorization context permits cross-tenant access. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G08-L01-Q03",
+    "lesson_id": "G08-L01",
+    "type": "debugging",
+    "question": "A temporary request becomes permanent preference without consent; distinguish session-only from persistable and permit correction/deletion.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G08-L02-Q03",
+    "lesson_id": "G08-L02",
+    "type": "debugging",
+    "question": "Post-filtering results after cross-tenant retrieval may leak via logs or caches; enforce authorization in data access and test isolation.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G08-L03-Q03",
+    "lesson_id": "G08-L03",
+    "type": "debugging",
+    "question": "A delete only removes display record but leaves vector entry; test retrieval and storage-level deletion, including cache behavior.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G09-L01-Q03",
+    "lesson_id": "G09-L01",
+    "type": "debugging",
+    "question": "Calling blocking inference directly inside async endpoint stalls event loop; move CPU work to appropriate executor or separate inference service.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G09-L02-Q03",
+    "lesson_id": "G09-L02",
+    "type": "debugging",
+    "question": "A generator catches cancellation as generic error and keeps generating; ensure cleanup in finally and test canceled iteration.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G09-L03-Q03",
+    "lesson_id": "G09-L03",
+    "type": "debugging",
+    "question": "Fallback silently changes model capabilities or data region. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G09-L04-Q03",
+    "lesson_id": "G09-L04",
+    "type": "debugging",
+    "question": "Using model decision as sole authorization creates bypass. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G10-L01-Q03",
+    "lesson_id": "G10-L01",
+    "type": "debugging",
+    "question": "A judge rewards longer answer without checking evidence. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G10-L02-Q03",
+    "lesson_id": "G10-L02",
+    "type": "debugging",
+    "question": "Treating judge-dependent tests as offline makes CI flaky and costly. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G10-L03-Q03",
+    "lesson_id": "G10-L03",
+    "type": "debugging",
+    "question": "Passing reference text as retrieved context artificially improves faithfulness; keep actual retrieval evidence separate from reference answer.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G10-L04-Q03",
+    "lesson_id": "G10-L04",
+    "type": "debugging",
+    "question": "Only evaluating happy paths overlooks injection and format failures; keep adversarial holdouts and fail closed on protected action.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G10-L05-Q03",
+    "lesson_id": "G10-L05",
+    "type": "debugging",
+    "question": "Averages hide tail latency and failures; use percentiles and per-slice results, redact prompt/response logs and limit retention.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G11-L01-Q03",
+    "lesson_id": "G11-L01",
+    "type": "debugging",
+    "question": "Using test examples in training or wrong chat format invalidates benchmark; inspect rendered examples and data provenance.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G11-L02-Q03",
+    "lesson_id": "G11-L02",
+    "type": "debugging",
+    "question": "Estimating only weights undercounts memory and can cause OOM at long contexts; include KV cache, workspaces and concurrency.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "G11-L03-Q03",
+    "lesson_id": "G11-L03",
+    "type": "debugging",
+    "question": "Using an image generator for factual document extraction is mismatched; test OCR fidelity and citation geometry instead.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "P01-L01-Q03",
+    "lesson_id": "P01-L01",
+    "type": "debugging",
+    "question": "Loading untrusted pickle/joblib can execute code; restrict artifact origin and integrity verification.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "P01-L02-Q03",
+    "lesson_id": "P01-L02",
+    "type": "debugging",
+    "question": "Comparing runs trained on different splits conflates data change and model change; align manifests and evaluation datasets.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "P01-L03-Q03",
+    "lesson_id": "P01-L03",
+    "type": "debugging",
+    "question": "Treating retraining as automatic deployment can promote degraded models; require independent quality/safety gates and rollback.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "P02-L01-Q03",
+    "lesson_id": "P02-L01",
+    "type": "debugging",
+    "question": "Automatically retraining on every drift alert may worsen performance; investigate data integrity, seasonality and actual quality first.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "P02-L02-Q03",
+    "lesson_id": "P02-L02",
+    "type": "debugging",
+    "question": "A checklist with no test evidence or owner cannot demonstrate effectiveness; require concrete evidence and signoff.. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "P02-L03-Q03",
+    "lesson_id": "P02-L03",
+    "type": "debugging",
+    "question": "Autoscaling workers without provider quota or budget limits amplifies failures/cost. Diagnose the issue and propose a verification or mitigation strategy.",
+    "points": 3
+  },
+  {
+    "id": "F01-L01-Q04",
+    "lesson_id": "F01-L01",
+    "type": "multiple_choice",
+    "question": "Which check best detects a notebook using the wrong environment?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Check only the terminal prompt"
+      },
+      {
+        "id": "B",
+        "text": "Read the notebook filename"
+      },
+      {
+        "id": "C",
+        "text": "Count executed cells"
+      },
+      {
+        "id": "D",
+        "text": "Print sys.executable from the running kernel"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "F02-L03-Q04",
+    "lesson_id": "F02-L03",
+    "type": "multiple_choice",
+    "question": "With prevalence 1%, sensitivity 90%, specificity 95%, what is P(disease given positive)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "About 1%"
+      },
+      {
+        "id": "B",
+        "text": "95%"
+      },
+      {
+        "id": "C",
+        "text": "About 15.4%"
+      },
+      {
+        "id": "D",
+        "text": "90%"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "M01-L02-Q04",
+    "lesson_id": "M01-L02",
+    "type": "multiple_choice",
+    "question": "Which split best tests generalization to unseen customers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Random row split"
+      },
+      {
+        "id": "B",
+        "text": "Duplicate records across folds"
+      },
+      {
+        "id": "C",
+        "text": "Split by label only"
+      },
+      {
+        "id": "D",
+        "text": "Group split by customer ID"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "M02-L02-Q04",
+    "lesson_id": "M02-L02",
+    "type": "multiple_choice",
+    "question": "When should the classification decision threshold be selected?",
+    "options": [
+      {
+        "id": "A",
+        "text": "After optimizing final test accuracy"
+      },
+      {
+        "id": "B",
+        "text": "Always at 0.5"
+      },
+      {
+        "id": "C",
+        "text": "Using validation data and operating cost"
+      },
+      {
+        "id": "D",
+        "text": "From training label balance alone"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "M03-L03-Q04",
+    "lesson_id": "M03-L03",
+    "type": "multiple_choice",
+    "question": "What does a Brier score measure?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Average number of false negatives"
+      },
+      {
+        "id": "B",
+        "text": "Model inference speed"
+      },
+      {
+        "id": "C",
+        "text": "Area under ROC curve"
+      },
+      {
+        "id": "D",
+        "text": "Mean squared error of predicted probabilities"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "M04-L01-Q04",
+    "lesson_id": "M04-L01",
+    "type": "multiple_choice",
+    "question": "Which algorithm can naturally mark sparse points as noise?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ordinary k-means"
+      },
+      {
+        "id": "B",
+        "text": "Linear regression"
+      },
+      {
+        "id": "C",
+        "text": "PCA"
+      },
+      {
+        "id": "D",
+        "text": "DBSCAN"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "M05-L01-Q04",
+    "lesson_id": "M05-L01",
+    "type": "multiple_choice",
+    "question": "Which evaluation avoids look-ahead in demand forecasting?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Training on all dates first"
+      },
+      {
+        "id": "B",
+        "text": "Random shuffled folds"
+      },
+      {
+        "id": "C",
+        "text": "Expanding chronological windows"
+      },
+      {
+        "id": "D",
+        "text": "Centered rolling mean including future demand"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "D01-L03-Q04",
+    "lesson_id": "D01-L03",
+    "type": "multiple_choice",
+    "question": "For w=2, b=1, x=3, y=4 and squared loss, what is dL/dw?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "18"
+      },
+      {
+        "id": "D",
+        "text": "9"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "D02-L01-Q04",
+    "lesson_id": "D02-L01",
+    "type": "multiple_choice",
+    "question": "Why weight batch losses by number of examples?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To estimate the per-example mean with unequal batch sizes"
+      },
+      {
+        "id": "B",
+        "text": "To disable gradients"
+      },
+      {
+        "id": "C",
+        "text": "To make the final batch count twice"
+      },
+      {
+        "id": "D",
+        "text": "To change label distribution"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "D03-L03-Q04",
+    "lesson_id": "D03-L03",
+    "type": "multiple_choice",
+    "question": "At what step is a causal attention mask applied?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To token IDs only"
+      },
+      {
+        "id": "B",
+        "text": "To optimizer learning rates"
+      },
+      {
+        "id": "C",
+        "text": "Before softmax on attention scores"
+      },
+      {
+        "id": "D",
+        "text": "After computing final predictions"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "D04-L03-Q04",
+    "lesson_id": "D04-L03",
+    "type": "multiple_choice",
+    "question": "In forward diffusion, what generally happens to signal-to-noise as t increases?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It stays exactly constant"
+      },
+      {
+        "id": "B",
+        "text": "It increases without limit"
+      },
+      {
+        "id": "C",
+        "text": "It depends only on text prompt length"
+      },
+      {
+        "id": "D",
+        "text": "It decreases under the usual noising schedule"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "C01-L01-Q04",
+    "lesson_id": "C01-L01",
+    "type": "multiple_choice",
+    "question": "What RGB value represents a pure red BGR pixel [0,0,255]?",
+    "options": [
+      {
+        "id": "A",
+        "text": "[255,255,255]"
+      },
+      {
+        "id": "B",
+        "text": "[0,255,0]"
+      },
+      {
+        "id": "C",
+        "text": "[0,0,255]"
+      },
+      {
+        "id": "D",
+        "text": "[255,0,0]"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "C02-L01-Q04",
+    "lesson_id": "C02-L01",
+    "type": "multiple_choice",
+    "question": "Which validation augmentation policy is most reproducible?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Augment labels but not images"
+      },
+      {
+        "id": "B",
+        "text": "Independent random flips each evaluation"
+      },
+      {
+        "id": "C",
+        "text": "Deterministic inference transforms"
+      },
+      {
+        "id": "D",
+        "text": "Untracked random crops"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "C03-L01-Q04",
+    "lesson_id": "C03-L01",
+    "type": "multiple_choice",
+    "question": "What is IoU for two boxes of area 4 overlapping in area 1?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1/8"
+      },
+      {
+        "id": "B",
+        "text": "2/7"
+      },
+      {
+        "id": "C",
+        "text": "1/4"
+      },
+      {
+        "id": "D",
+        "text": "1/7"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "C04-L01-Q04",
+    "lesson_id": "C04-L01",
+    "type": "multiple_choice",
+    "question": "What is a tracking ID switch?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A tracked identity is assigned to a different object"
+      },
+      {
+        "id": "B",
+        "text": "A pixel changes color"
+      },
+      {
+        "id": "C",
+        "text": "A frame rate changes"
+      },
+      {
+        "id": "D",
+        "text": "A detection gains confidence"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G01-L02-Q04",
+    "lesson_id": "G01-L02",
+    "type": "multiple_choice",
+    "question": "Which items count against a model context budget?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only generated text"
+      },
+      {
+        "id": "B",
+        "text": "Rendered messages, tool schemas, retrieved context and reserved output"
+      },
+      {
+        "id": "C",
+        "text": "Only raw word count"
+      },
+      {
+        "id": "D",
+        "text": "Only the last user sentence"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G02-L02-Q04",
+    "lesson_id": "G02-L02",
+    "type": "multiple_choice",
+    "question": "What does a strict JSON schema not establish?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Whether fields have required types"
+      },
+      {
+        "id": "B",
+        "text": "Whether extra fields are rejected if forbidden"
+      },
+      {
+        "id": "C",
+        "text": "Whether required fields exist"
+      },
+      {
+        "id": "D",
+        "text": "Whether the factual claims are supported"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G03-L03-Q04",
+    "lesson_id": "G03-L03",
+    "type": "multiple_choice",
+    "question": "What does a citation ID validation alone establish?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Every claim is factually supported"
+      },
+      {
+        "id": "B",
+        "text": "The answer is complete"
+      },
+      {
+        "id": "C",
+        "text": "The ID is in an allowed evidence set"
+      },
+      {
+        "id": "D",
+        "text": "The source is always current"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G04-L02-Q04",
+    "lesson_id": "G04-L02",
+    "type": "multiple_choice",
+    "question": "What is the immediate focus of CRAG-style routing?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Changing API serialization"
+      },
+      {
+        "id": "B",
+        "text": "Optimizing adapter rank"
+      },
+      {
+        "id": "C",
+        "text": "Increasing temperature"
+      },
+      {
+        "id": "D",
+        "text": "Quality of retrieved evidence"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G05-L01-Q04",
+    "lesson_id": "G05-L01",
+    "type": "multiple_choice",
+    "question": "Who should authorize a tool invocation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Application policy using authenticated context"
+      },
+      {
+        "id": "B",
+        "text": "The model's generated role label"
+      },
+      {
+        "id": "C",
+        "text": "Any user-supplied tenant ID"
+      },
+      {
+        "id": "D",
+        "text": "The tool description alone"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G06-L04-Q04",
+    "lesson_id": "G06-L04",
+    "type": "multiple_choice",
+    "question": "Where should a protected side effect happen?",
+    "options": [
+      {
+        "id": "A",
+        "text": "After approval, with durable idempotency"
+      },
+      {
+        "id": "B",
+        "text": "Whenever a checkpoint exists"
+      },
+      {
+        "id": "C",
+        "text": "In every replay of a node"
+      },
+      {
+        "id": "D",
+        "text": "Before interrupt to save latency"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G07-L01-Q04",
+    "lesson_id": "G07-L01",
+    "type": "multiple_choice",
+    "question": "What is a key distinction between MCP resources and tools?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Resources expose contextual data; tools execute operations"
+      },
+      {
+        "id": "B",
+        "text": "Both automatically bypass authorization"
+      },
+      {
+        "id": "C",
+        "text": "Tools cannot return data"
+      },
+      {
+        "id": "D",
+        "text": "Resources always perform writes"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G08-L02-Q04",
+    "lesson_id": "G08-L02",
+    "type": "multiple_choice",
+    "question": "When should tenant access constraints be applied?",
+    "options": [
+      {
+        "id": "A",
+        "text": "After displaying all search results"
+      },
+      {
+        "id": "B",
+        "text": "Only in the LLM prompt"
+      },
+      {
+        "id": "C",
+        "text": "Only when a result looks private"
+      },
+      {
+        "id": "D",
+        "text": "At authorized storage/query boundaries before exposing results"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G09-L02-Q04",
+    "lesson_id": "G09-L02",
+    "type": "multiple_choice",
+    "question": "What separates SSE events?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Python list index"
+      },
+      {
+        "id": "B",
+        "text": "A new TCP connection per event"
+      },
+      {
+        "id": "C",
+        "text": "A blank line"
+      },
+      {
+        "id": "D",
+        "text": "A comma only"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G10-L01-Q04",
+    "lesson_id": "G10-L01",
+    "type": "multiple_choice",
+    "question": "How can position bias in a pairwise judge be detected?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Only increase token budget"
+      },
+      {
+        "id": "B",
+        "text": "Evaluate both answer orders and compare results"
+      },
+      {
+        "id": "C",
+        "text": "Always put candidate first"
+      },
+      {
+        "id": "D",
+        "text": "Use judge scores without labels"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "G11-L01-Q04",
+    "lesson_id": "G11-L01",
+    "type": "multiple_choice",
+    "question": "How many LoRA weights are added to a 4096×4096 layer at rank 8, excluding bias?",
+    "options": [
+      {
+        "id": "A",
+        "text": "16,777,216"
+      },
+      {
+        "id": "B",
+        "text": "32,768"
+      },
+      {
+        "id": "C",
+        "text": "65,536"
+      },
+      {
+        "id": "D",
+        "text": "4,096"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "P01-L03-Q04",
+    "lesson_id": "P01-L03",
+    "type": "multiple_choice",
+    "question": "What should happen when a candidate fails an agreed model quality gate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Change the threshold after failure"
+      },
+      {
+        "id": "B",
+        "text": "Delete all tests"
+      },
+      {
+        "id": "C",
+        "text": "Deploy and tune later without review"
+      },
+      {
+        "id": "D",
+        "text": "Block promotion and retain the prior approved artifact"
+      }
+    ],
+    "points": 1
+  },
+  {
+    "id": "P02-L01-Q04",
+    "lesson_id": "P02-L01",
+    "type": "multiple_choice",
+    "question": "Does input distribution drift prove concept drift?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, always"
+      },
+      {
+        "id": "B",
+        "text": "Only if model size decreases"
+      },
+      {
+        "id": "C",
+        "text": "No; the relationship with target must be assessed separately"
+      },
+      {
+        "id": "D",
+        "text": "Only if p95 latency rises"
+      }
+    ],
+    "points": 1
+  }
+]

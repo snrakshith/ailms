@@ -6,7 +6,7 @@ export async function findUserById(id:string) {return UserModel.findById(id);}
 export async function createUser(value:{name:string;email:string;passwordHash:string;tenantId:string}) {
   return UserModel.create({...value,role:'owner'});
 }
-export function publicUser(value:{_id:unknown;name:string;email:string;tenantId:string;role:string;googleSubject?:string;onboarding?:unknown}):User {
+export function publicUser(value:{_id:unknown;name:string;email:string;tenantId:string;role:string;googleSubject?:string|null;onboarding?:unknown}):User {
   const onboarding=onboardingSchema.safeParse(value.onboarding);
   return {id:String(value._id),name:value.name,email:value.email,tenantId:value.tenantId,role:value.role as User['role'],googleLinked:Boolean(value.googleSubject),onboarding:onboarding.success?onboarding.data:null};
 }

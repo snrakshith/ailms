@@ -1,0 +1,13 @@
+flowchart TD
+    N1["Golden fixtures"]
+    N2["Candidate system"]
+    N3["Deterministic checks"]
+    N4["Calibrated judge"]
+    N5["Release gate"]
+    N6["Human review"]
+    N1 --> N2
+    N2 --> N3
+    N2 --> N4
+    N3 --> N5
+    N4 --> N5
+    N6 --> N5

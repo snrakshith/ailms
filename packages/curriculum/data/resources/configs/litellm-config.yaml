@@ -1,0 +1,8 @@
+# Template: replace model and configure credentials.
+model_list:
+  - model_name: course-chat
+    litellm_params:
+      model: REPLACE_WITH_PROVIDER_MODEL
+      api_key: os.environ/LLM_PROVIDER_API_KEY
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY

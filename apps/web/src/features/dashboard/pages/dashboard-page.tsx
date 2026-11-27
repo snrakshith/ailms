@@ -1,23 +1,192 @@
-import {Link} from 'react-router-dom';
-import {ArrowRight,BookOpen,CheckCircle2,Clock3,Flame,Sparkles,Target,TrendingUp,Zap} from 'lucide-react';
-import {useAuth} from '../../../core/auth/auth-context';
-import {useLearningOverview} from '../../learning/api/learning';
-import {PathCard} from '../../learning/components/path-card';
-import {Loading} from '../../../shared/components/ui/loading';
-import {useDocumentTitle} from '../../../shared/hooks/use-document-title';
-export function DashboardPage(){
- const {user}=useAuth();const {data,isPending,error}=useLearningOverview();useDocumentTitle('Your learning dashboard');
- if(isPending)return <Loading/>;
- if(error||!data)return <div className="aq-page"><p role="alert" className="aq-error">{error?.message??'Unable to load learning progress'}</p></div>;
- const {stats,recommendedPath,paths}=data;
- const next=recommendedPath.lessons?.find(v=>v.unlocked&&!v.completed);
- const continueLesson=next??paths.flatMap(p=>p.lessons??[]).find(v=>v.unlocked&&!v.completed);
- return <div className="aq-page"><header className="aq-dashboard-welcome"><span className="aq-kicker"><span className="aq-live-dot"/> YOUR AI JOURNEY</span><h1>Hey, {user?.name.split(' ')[0]}. <span>Ready to level up?</span></h1><p>Turn the engineering skills you already have into the AI skills you want to build.</p></header>
- <section className="aq-hero"><div className="aq-hero-copy"><span className="aq-pill aq-pill-hero"><Sparkles size={14}/> YOUR NEXT MISSION</span><h2>{continueLesson?`Keep your momentum going.`:'You’ve mastered every lesson!'}</h2><p>{continueLesson?`Continue with “${continueLesson.title}” — a small step toward becoming an AI builder.`:'You’ve completed the current curriculum. Review any path to reinforce your skills.'}</p><div className="aq-hero-actions">{continueLesson?<Link className="aq-primary aq-primary-dark" to={`/learn/${continueLesson.id}`}>Continue learning <ArrowRight size={17}/></Link>:<Link className="aq-primary aq-primary-dark" to="/paths">Review paths <ArrowRight size={17}/></Link>}<span><Clock3 size={15}/> {user?.onboarding?.dailyMinutes??10} min daily goal</span></div></div><div className="aq-hero-art" aria-hidden="true"><div className="aq-orbit aq-orbit-one"/><div className="aq-orbit aq-orbit-two"/><div className="aq-brain"><Zap size={52} strokeWidth={1.5}/></div><div className="aq-floating-chip aq-chip-top">AI</div><div className="aq-floating-chip aq-chip-bottom">ML</div></div></section>
- <section className="aq-stat-grid" aria-label="Learning statistics"><div className="aq-stat"><div className="aq-stat-label">Total XP <Zap size={17}/></div><strong>{stats.totalXp}</strong><span>earned through mastery</span></div><div className="aq-stat"><div className="aq-stat-label">Lessons mastered <CheckCircle2 size={17}/></div><strong>{stats.completedLessons}<small>/{stats.totalLessons}</small></strong><span>real knowledge checks</span></div><div className="aq-stat"><div className="aq-stat-label">Learning streak <Flame size={17}/></div><strong>{stats.streakDays}<small> days</small></strong><span>consecutive UTC days</span></div><div className="aq-stat"><div className="aq-stat-label">Time invested <Clock3 size={17}/></div><strong>{stats.timeInvestedMinutes}<small> min</small></strong><span>estimated lesson time</span></div></section>
- <div className="aq-section-heading"><div><span className="aq-kicker">THE PATH AHEAD</span><h2>Build your AI skill stack</h2><p>Learning paths designed to get you from software developer to confident AI builder.</p></div><Link to="/paths" className="aq-text-link">All paths <ArrowRight size={16}/></Link></div>
- <div className="aq-path-grid">{paths.map(path=><PathCard key={path.id} path={path}/>)}</div>
- <div className="aq-free-teaser"><div><span className="aq-kicker">FREE COURSE PREVIEW</span><h2>Curious how machine learning differs from regular code?</h2><p>Try the first AI Foundations lesson: eight minutes, three practice questions, and instant feedback. No payment required.</p></div><Link className="aq-outline" to="/learn/ai-vs-software">Explore the free lesson <ArrowRight size={17}/></Link></div>
- <div className="aq-dashboard-bottom"><section className="aq-panel"><div className="aq-panel-heading"><span className="aq-kicker">YOUR CURRENT FOCUS</span><Target size={19}/></div><h3>{recommendedPath.title}</h3><p>{recommendedPath.subtitle}</p><div className="aq-progress-track"><div style={{width:`${recommendedPath.progressPercent}%`}}/></div><div className="aq-panel-footer"><span>{recommendedPath.progressPercent}% complete</span><Link className="aq-text-link" to={`/paths/${recommendedPath.id}`}>Explore roadmap <ArrowRight size={15}/></Link></div></section>
- <section className="aq-panel"><div className="aq-panel-heading"><span className="aq-kicker">RECENT MILESTONES</span><TrendingUp size={19}/></div>{data.recentCompletions.length>0?<ul className="aq-recent-list">{data.recentCompletions.map(item=><li key={item.lessonId}><BookOpen size={16}/><span>{item.title}<small>{new Date(item.completedAt).toLocaleDateString()}</small></span><strong>+{item.xp} XP</strong></li>)}</ul>:<div className="aq-empty-state"><h3>Your first milestone is waiting.</h3><p>Complete a lesson to start building your learning history.</p></div>}</section></div></div>;
+import { Link } from 'react-router-dom';
+import {
+  ArrowRight,
+  BookOpen,
+  CheckCircle2,
+  Clock3,
+  Flame,
+  Sparkles,
+  Target,
+  TrendingUp,
+  Zap,
+} from 'lucide-react';
+import { useAuth } from '../../../core/auth/auth-context';
+import { useLearningOverview } from '../../learning/api/learning';
+import { PathCard } from '../../learning/components/path-card';
+import { Loading } from '../../../shared/components/ui/loading';
+import { useDocumentTitle } from '../../../shared/hooks/use-document-title';
+export function DashboardPage() {
+  const { user } = useAuth();
+  const { data, isPending, error } = useLearningOverview();
+  useDocumentTitle('Your learning dashboard');
+  if (isPending) return <Loading />;
+  if (error || !data)
+    return (
+      <div className="aq-page">
+        <p role="alert" className="aq-error">
+          {error?.message ?? 'Unable to load learning progress'}
+        </p>
+      </div>
+    );
+  const { stats, recommendedPath, paths } = data;
+  const next = recommendedPath.lessons?.find((v) => v.unlocked && !v.completed);
+  const continueLesson =
+    next ?? paths.flatMap((p) => p.lessons ?? []).find((v) => v.unlocked && !v.completed);
+  return (
+    <div className="aq-page">
+      <header className="aq-dashboard-welcome">
+        <span className="aq-kicker">
+          <span className="aq-live-dot" /> YOUR AI JOURNEY
+        </span>
+        <h1>
+          Hey, {user?.name.split(' ')[0]}. <span>Ready to level up?</span>
+        </h1>
+        <p>Turn the engineering skills you already have into the AI skills you want to build.</p>
+      </header>
+      <section className="aq-hero">
+        <div className="aq-hero-copy">
+          <span className="aq-pill aq-pill-hero">
+            <Sparkles size={14} /> YOUR NEXT MISSION
+          </span>
+          <h2>{continueLesson ? `Keep your momentum going.` : 'You’ve mastered every lesson!'}</h2>
+          <p>
+            {continueLesson
+              ? `Continue with “${continueLesson.title}” — a small step toward becoming an AI builder.`
+              : 'You’ve completed the current curriculum. Review any path to reinforce your skills.'}
+          </p>
+          <div className="aq-hero-actions">
+            {continueLesson ? (
+              <Link className="aq-primary aq-primary-dark" to={`/learn/${continueLesson.id}`}>
+                Continue learning <ArrowRight size={17} />
+              </Link>
+            ) : (
+              <Link className="aq-primary aq-primary-dark" to="/paths">
+                Review paths <ArrowRight size={17} />
+              </Link>
+            )}
+            <span>
+              <Clock3 size={15} /> {user?.onboarding?.dailyMinutes ?? 10} min daily goal
+            </span>
+          </div>
+        </div>
+        <div className="aq-hero-art" aria-hidden="true">
+          <div className="aq-orbit aq-orbit-one" />
+          <div className="aq-orbit aq-orbit-two" />
+          <div className="aq-brain">
+            <Zap size={52} strokeWidth={1.5} />
+          </div>
+          <div className="aq-floating-chip aq-chip-top">AI</div>
+          <div className="aq-floating-chip aq-chip-bottom">ML</div>
+        </div>
+      </section>
+      <section className="aq-stat-grid" aria-label="Learning statistics">
+        <div className="aq-stat">
+          <div className="aq-stat-label">
+            Total XP <Zap size={17} />
+          </div>
+          <strong>{stats.totalXp}</strong>
+          <span>earned through mastery</span>
+        </div>
+        <div className="aq-stat">
+          <div className="aq-stat-label">
+            Lessons mastered <CheckCircle2 size={17} />
+          </div>
+          <strong>
+            {stats.completedLessons}
+            <small>/{stats.totalLessons}</small>
+          </strong>
+          <span>real knowledge checks</span>
+        </div>
+        <div className="aq-stat">
+          <div className="aq-stat-label">
+            Learning streak <Flame size={17} />
+          </div>
+          <strong>
+            {stats.streakDays}
+            <small> days</small>
+          </strong>
+          <span>consecutive UTC days</span>
+        </div>
+        <div className="aq-stat">
+          <div className="aq-stat-label">
+            Time invested <Clock3 size={17} />
+          </div>
+          <strong>
+            {stats.timeInvestedMinutes}
+            <small> min</small>
+          </strong>
+          <span>estimated lesson time</span>
+        </div>
+      </section>
+      <div className="aq-section-heading">
+        <div>
+          <span className="aq-kicker">THE PATH AHEAD</span>
+          <h2>Build your AI skill stack</h2>
+          <p>Learning paths designed to get you from software developer to confident AI builder.</p>
+        </div>
+        <Link to="/paths" className="aq-text-link">
+          All paths <ArrowRight size={16} />
+        </Link>
+      </div>
+      <div className="aq-path-grid">
+        {paths.map((path) => (
+          <PathCard key={path.id} path={path} />
+        ))}
+      </div>
+      <div className="aq-free-teaser">
+        <div>
+          <span className="aq-kicker">CURRICULUM START</span>
+          <h2>Set up a reproducible Python workflow.</h2>
+          <p>Begin with Python environments and notebooks from the canonical Foundations track.</p>
+        </div>
+        <Link className="aq-outline" to="/learn/F01-L01">
+          Start Foundations <ArrowRight size={17} />
+        </Link>
+      </div>
+      <div className="aq-dashboard-bottom">
+        <section className="aq-panel">
+          <div className="aq-panel-heading">
+            <span className="aq-kicker">YOUR CURRENT FOCUS</span>
+            <Target size={19} />
+          </div>
+          <h3>{recommendedPath.title}</h3>
+          <p>{recommendedPath.subtitle}</p>
+          <div className="aq-progress-track">
+            <div style={{ width: `${recommendedPath.progressPercent}%` }} />
+          </div>
+          <div className="aq-panel-footer">
+            <span>{recommendedPath.progressPercent}% complete</span>
+            <Link className="aq-text-link" to={`/paths/${recommendedPath.id}`}>
+              Explore roadmap <ArrowRight size={15} />
+            </Link>
+          </div>
+        </section>
+        <section className="aq-panel">
+          <div className="aq-panel-heading">
+            <span className="aq-kicker">RECENT MILESTONES</span>
+            <TrendingUp size={19} />
+          </div>
+          {data.recentCompletions.length > 0 ? (
+            <ul className="aq-recent-list">
+              {data.recentCompletions.map((item) => (
+                <li key={item.lessonId}>
+                  <BookOpen size={16} />
+                  <span>
+                    {item.title}
+                    <small>{new Date(item.completedAt).toLocaleDateString()}</small>
+                  </span>
+                  <strong>+{item.xp} XP</strong>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <div className="aq-empty-state">
+              <h3>Your first milestone is waiting.</h3>
+              <p>Complete a lesson to start building your learning history.</p>
+            </div>
+          )}
+        </section>
+      </div>
+    </div>
+  );
 }

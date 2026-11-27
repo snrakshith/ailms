@@ -1,0 +1,531 @@
+# Interview preparation
+
+### F01-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Create a Python 3.11 environment, install NumPy and restart the kernel before running all cells.
+
+**Answer guidance:** An environment isolates dependencies; a notebook keeps code and outputs in cells but execution order can hide state. uv can manage environments and lock dependencies; pip installs packages into the active interpreter. Avoid: Installing into the wrong interpreter or relying on stale notebook variables.
+
+### F01-L02-IV01 — beginner
+**Question:** Explain your approach to this scenario: Turn a list of measurement records into a dictionary of counts by category.
+
+**Answer guidance:** Functions encapsulate transformations. Mutable lists and dictionaries can be modified in place; tuples are immutable containers. Type hints document expected inputs but do not enforce them at runtime. Avoid: Mutable default arguments can retain state across calls.
+
+### F01-L03-IV01 — beginner
+**Question:** Explain your approach to this scenario: Normalize each feature of a matrix using column means and standard deviations.
+
+**Answer guidance:** An ndarray stores homogeneous values; broadcasting aligns dimensions from the right when sizes match or one is 1. Vectorized operations avoid Python loops and exploit compiled kernels. Avoid: Dividing by zero or silently broadcasting along the wrong axis.
+
+### F01-L04-IV01 — beginner
+**Question:** Explain your approach to this scenario: Inspect a customer table, flag missing ages, join transactions by customer ID and plot label frequency.
+
+**Answer guidance:** DataFrames associate named columns with rows. Missingness, duplicates, types and join cardinality affect downstream analysis. Exploratory data analysis (EDA) uses summaries and plots to discover patterns, not to establish causation. Avoid: Many-to-many joins can unexpectedly multiply rows; test-set exploration can bias model selection.
+
+### F01-L05-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Commit a feature transformer and test empty, missing and valid values with pytest.
+
+**Answer guidance:** Git tracks source changes; dependency locks and data/model versions record experimental context. Unit tests verify small functions, while integration tests cover interfaces. Random seeds improve repeatability but do not guarantee identical GPU computation. Avoid: Committing credentials or assuming seeds alone guarantee reproducibility.
+
+### F02-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Calculate scores Xw+b for a batch with shape (n,d) and weights (d,).
+
+**Answer guidance:** A vector is an ordered set of coordinates; matrix multiplication composes linear transformations. Dot products combine magnitude and alignment, while cosine similarity normalizes by vector norms. Avoid: Confusing elementwise multiplication with matrix multiplication or ignoring zero norms.
+
+### F02-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Approximate a small matrix using its largest singular value and compare reconstruction errors.
+
+**Answer guidance:** Eigenvectors preserve direction under a square linear transform; singular value decomposition factors a rectangular matrix into orthogonal directions and singular values. PCA projects centered data onto directions with greatest variance. Avoid: PCA components depend on scaling and do not necessarily preserve predictive information.
+
+### F02-L03-IV01 — beginner
+**Question:** Explain your approach to this scenario: A rare condition has a positive test; combine sensitivity, specificity and prevalence to calculate posterior probability.
+
+**Answer guidance:** Conditional probability measures an event given observed information. Bayes rule updates a prior with a likelihood and normalizes by evidence. Bernoulli, binomial and normal distributions model different types of random variables. Avoid: Confusing P(test positive given condition) with P(condition given test positive).
+
+### F02-L04-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Bootstrap a mean from independent observations and estimate a percentile interval.
+
+**Answer guidance:** A statistic summarizes a sample; sampling variability describes how it changes across samples. Bootstrap resampling approximates estimator uncertainty under appropriate sampling assumptions. A frequentist confidence interval has coverage under repeated sampling, not a posterior probability for one fixed interval. Avoid: Ignoring dependence, selection bias or nonrepresentative samples.
+
+### F02-L05-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Minimize (w-3)^2 using updates w = w - lr*2*(w-3).
+
+**Answer guidance:** A derivative measures local sensitivity; gradients collect partial derivatives. Gradient descent subtracts a learning-rate-scaled gradient from parameters. The chain rule propagates derivatives through composed operations. Avoid: A learning rate that is too large can overshoot or diverge.
+
+### F02-L06-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare cross entropy for correct-class probabilities 0.9 and 0.1.
+
+**Answer guidance:** Entropy measures uncertainty of a distribution; cross entropy penalizes predicted probabilities under a target distribution. KL divergence measures distribution mismatch and is asymmetric. Log-sum-exp stabilizes exponential calculations. Avoid: Taking log(0) or applying softmax twice before a logits-based loss.
+
+### M01-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: For churn prediction, define the observation window, target window and a majority-class baseline.
+
+**Answer guidance:** Supervised models learn from targets; unsupervised methods discover structure; reinforcement learning learns decisions from rewards. A simple baseline establishes whether complexity is justified. Define the prediction time, unit and consequence of errors. Avoid: Choosing an algorithm before defining the target or using information unavailable at prediction time.
+
+### M01-L02-IV01 — beginner
+**Question:** Explain your approach to this scenario: Split patient-level measurements by patient, not individual row.
+
+**Answer guidance:** Training fits parameters, validation selects configurations, and test estimates final generalization. Preprocessing must be fit within training folds. Time, entity and group boundaries often matter more than random splitting. Avoid: Feature leakage from future data, repeated entities or target-derived columns.
+
+### M01-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Combine median imputation, standardization and one-hot encoding for mixed customer features.
+
+**Answer guidance:** Imputation handles missingness; one-hot encoding maps categories to indicators; scaling changes numerical magnitude. ColumnTransformer applies different transforms by column and Pipeline keeps transformations together with the estimator. Avoid: Unknown categories at inference or fitting preprocessing using the whole dataset.
+
+### M02-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Predict house prices and plot residuals against fitted values.
+
+**Answer guidance:** Ordinary least squares minimizes squared residuals. Polynomial features add nonlinear basis functions while coefficients remain linear. Residual diagnostics reveal systematic errors; extrapolation can be unreliable. Avoid: High-degree polynomials can overfit; correlation is not causal effect.
+
+### M02-L02-IV01 — beginner
+**Question:** Explain your approach to this scenario: Change a fraud threshold from 0.5 to 0.2 and observe recall and false alarms.
+
+**Answer guidance:** Logistic regression maps a linear score to a probability using the sigmoid for binary outcomes. Training often minimizes log loss; deployment chooses a decision threshold based on error costs. Avoid: Treating probabilities as calibrated without checking or optimizing accuracy for rare positives.
+
+### M02-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare all three on a standardized small classification dataset.
+
+**Answer guidance:** kNN predicts using nearby samples; naive Bayes factorizes features conditionally on class; SVM optimizes a margin and may use kernels. Their inductive biases and scaling behavior differ. Avoid: Unscaled features dominate distances; kernel SVM can be expensive on large data.
+
+### M02-L04-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Train a shallow tree and random forest on a nonlinear classification task.
+
+**Answer guidance:** A tree greedily partitions feature space using impurity or loss reduction. A random forest aggregates trees trained on resampled data and random feature subsets, reducing variance compared with many individual trees. Avoid: Unconstrained trees memorize training data; impurity importance can favor high-cardinality features.
+
+### M02-L05-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Train a histogram gradient boosting baseline before trying external libraries.
+
+**Answer guidance:** Boosting builds an additive model by fitting successive learners to loss gradients or related targets. Learning rate, tree complexity and iterations trade bias, variance and computation. Libraries differ in categorical handling and histogram strategies. Avoid: Using early stopping on test data or encoding categories inconsistently.
+
+### M02-L06-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare Ridge and Lasso across penalty strengths on correlated features.
+
+**Answer guidance:** L1 penalties can produce sparse coefficients; L2 shrinks coefficients. Feature selection reduces dimensionality but must be part of training folds. Bias is systematic approximation error; variance reflects sensitivity to the sample. Avoid: Selecting features using all targets before cross-validation leaks information.
+
+### M03-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare two fraud systems with equal accuracy but different minority recall.
+
+**Answer guidance:** Precision measures positive prediction correctness; recall measures positive coverage. ROC-AUC evaluates ranking across thresholds, while PR curves highlight rare-positive trade-offs. MAE and RMSE measure regression errors; nDCG rewards relevant ranked results near the top. Avoid: AUC does not identify an operating threshold and accuracy can hide minority failures.
+
+### M03-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Tune forest depth and leaf size with grouped folds.
+
+**Answer guidance:** Cross-validation rotates validation folds; grouped or time-aware variants respect dependencies. Grid/random search explores parameter configurations; nested CV separates tuning from performance estimation. Bayesian optimization chooses promising candidates adaptively. Avoid: Repeatedly tuning against the final test set invalidates it.
+
+### M03-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Use class weighting for rare events, then compare reliability diagrams before and after calibration.
+
+**Answer guidance:** Class weights alter training loss; resampling changes the training distribution. Calibration compares predicted probability with observed frequency and can use held-out sigmoid or isotonic fitting. Prediction intervals or conformal methods quantify uncertainty under stated assumptions. Avoid: Oversampling before splitting leaks duplicate or related rows; calibration requires separate data or folds.
+
+### M03-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: Compare recall and false-positive rate across relevant consented groups and investigate proxy features.
+
+**Answer guidance:** Permutation importance measures score changes when a feature is shuffled; SHAP attributes model output relative to a baseline. Explanations are not causal evidence. Fairness metrics can conflict, so choose context-appropriate definitions and examine subgroups. Avoid: Treating feature attribution as causality or reporting only aggregate accuracy.
+
+### M04-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Cluster synthetic crescent-shaped data using k-means and DBSCAN.
+
+**Answer guidance:** k-means minimizes squared distance to centroids; hierarchical clustering builds nested groups; DBSCAN uses density connectivity and can mark noise. Scale and geometry strongly affect results. Avoid: Treating clusters as true labels or relying on a single internal score.
+
+### M04-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Reduce handwritten digit vectors to two dimensions and compare stability across seeds.
+
+**Answer guidance:** PCA is a linear projection; t-SNE and UMAP construct nonlinear embeddings emphasizing aspects of neighborhood structure. Low-dimensional plots may distort global distances, density and cluster separation. Avoid: Interpreting all distances and cluster sizes in t-SNE as meaningful.
+
+### M04-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Detect rare sensor spikes with a model trained on normal historical data.
+
+**Answer guidance:** Isolation Forest isolates observations via random splits; one-class methods estimate a normal region. Anomaly scores require thresholds and operational review; anomalies may be benign or reflect data quality. Avoid: Training on future incidents or assuming every anomaly is malicious.
+
+### M05-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Forecast weekly demand using last week's value and lagged features.
+
+**Answer guidance:** Forecasting predicts future values with temporal dependence, seasonality and trends. Rolling-origin backtests preserve order; features must be available at forecast creation. Seasonal naive and exponential smoothing provide useful baselines. Avoid: Random splitting or calculating rolling features that include future observations.
+
+### M05-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Recommend items by user-item similarity, then evaluate recall@k on held-out events.
+
+**Answer guidance:** Collaborative filtering learns from user-item interactions; content-based methods use item features. Two-stage systems retrieve candidates then rank them. Offline evaluation must avoid future interactions and account for exposure bias. Avoid: Random negative sampling can misrepresent unseen relevance and cold-start performance.
+
+### M05-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Design an experiment comparing two recommendation interfaces.
+
+**Answer guidance:** Random assignment supports estimating treatment effects under assumptions; observational causal inference requires identification assumptions such as exchangeability and positivity. Confounders affect treatment and outcome. A/B tests need prespecified metrics and stopping rules. Avoid: Conditioning on post-treatment variables or repeatedly peeking at p-values without adjustment.
+
+### D01-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Differentiate y=(x**2).sum() for a vector with requires_grad enabled.
+
+**Answer guidance:** Tensors have shape, dtype and device. Autograd records differentiable operations to compute gradients. Gradients accumulate by default and must be cleared between optimizer updates. Avoid: In-place mutation of tracked tensors or mixing CPU and GPU tensors.
+
+### D01-L02-IV01 — beginner
+**Question:** Explain your approach to this scenario: Train a two-layer MLP on XOR or a small tabular classification dataset.
+
+**Answer guidance:** An affine layer maps x to Wx+b. Nonlinear activations such as ReLU or GELU allow composition to model nonlinear functions. Without nonlinearities, stacked affine layers remain affine. Avoid: Applying sigmoid to logits before BCEWithLogitsLoss or using incompatible target shape.
+
+### D01-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compute gradients for a tiny scalar two-layer network and compare to autograd.
+
+**Answer guidance:** Forward propagation produces predictions and loss; backpropagation applies the chain rule to compute parameter gradients. Cross entropy for multiclass logits, BCE for binary and MSE for regression require appropriate target formats. Avoid: Detaching a tensor breaks its gradient path; incorrect logits/target shapes can silently mislead.
+
+### D01-L04-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare AdamW and SGD on the same architecture and seed budget.
+
+**Answer guidance:** SGD updates using minibatch gradients; momentum smooths updates; AdamW adapts coordinate step sizes with decoupled weight decay. Initialization and schedules influence optimization stability and convergence. Avoid: Confusing L2 regularization with decoupled weight decay for adaptive optimizers.
+
+### D02-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Train a classifier on generated features with batches and validation metrics.
+
+**Answer guidance:** Datasets define sample access; DataLoaders batch and optionally shuffle. A training loop runs forward, loss, backward and optimizer step. Evaluation uses model.eval() and disables gradient recording. Avoid: Forgetting eval mode changes dropout and batch normalization behavior.
+
+### D02-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Train a model with dropout and compare train/eval outputs on identical inputs.
+
+**Answer guidance:** Batch normalization uses batch statistics in training and running statistics in evaluation; layer normalization normalizes within examples across selected dimensions. Dropout randomly masks activations during training. Early stopping selects a checkpoint from validation. Avoid: Evaluating with dropout active or selecting checkpoints using test loss.
+
+### D02-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Estimate memory used by parameters, gradients and optimizer state before scaling training.
+
+**Answer guidance:** Mixed precision uses lower precision where safe while retaining stability for sensitive calculations. Data parallelism replicates models and synchronizes gradients; model parallelism partitions computation or parameters. Profiling reveals actual bottlenecks. Avoid: Assuming lower precision is always faster or forgetting effective batch size changes.
+
+### D03-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Apply a 3x3 edge kernel and calculate output dimensions for stride 2.
+
+**Answer guidance:** Convolution slides kernels over spatial input with shared weights. Stride, padding and dilation control output dimensions and receptive field. Pooling summarizes neighborhoods and may reduce resolution. Avoid: Confusing channels-first and channels-last layout or shrinking spatial dimensions unexpectedly.
+
+### D03-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Predict the next symbol in a toy sequence with a GRU.
+
+**Answer guidance:** RNNs update hidden state from current input and previous state. LSTM and GRU gates help control information flow and mitigate some long-range gradient issues. Padding and masks matter for variable-length sequences. Avoid: Shuffling tokens within a sequence or treating padding as real observations.
+
+### D03-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compute attention weights for three tokens and compare masked versus unmasked output.
+
+**Answer guidance:** Scaled dot-product attention computes softmax(QK^T/sqrt(d))V. Multihead attention captures different projections. Transformers combine attention, feedforward layers, residuals, normalization and position information; causal masks prevent attending to future tokens. Avoid: Mask polarity errors and quadratic attention memory for long sequences.
+
+### D03-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: Compare BERT-like classification, GPT-like generation and T5-like summarization.
+
+**Answer guidance:** Encoders typically use bidirectional context for representations; decoder-only language models use causal attention for next-token generation; encoder-decoder models condition decoding on encoded input. Architecture choice affects masking and training objectives. Avoid: Assuming every transformer has identical masking or can generate text autoregressively.
+
+### D04-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Freeze a backbone, train a classification head, then selectively unfreeze layers.
+
+**Answer guidance:** Transfer learning adapts a pretrained model through frozen feature extraction or fine-tuning. Self-supervised learning constructs training signals from raw data, such as masked tokens or contrastive views. Embeddings map items into a representation space. Avoid: Training too aggressively can destroy useful pretrained features; domain shift can limit transfer.
+
+### D04-L02-IV01 — advanced
+**Question:** Explain your approach to this scenario: Train a small autoencoder and inspect reconstruction error and latent structure.
+
+**Answer guidance:** Autoencoders reconstruct inputs through a latent representation; VAEs learn probabilistic latents with reconstruction and KL terms. GANs train a generator against a discriminator in an adversarial objective. Avoid: A good reconstruction score does not guarantee useful generation; GANs may collapse modes.
+
+### D04-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Add Gaussian noise at several steps and train a toy noise predictor.
+
+**Answer guidance:** Diffusion models corrupt data with noise according to a schedule and learn a reverse process or equivalent prediction target. Sampling iteratively denoises; conditioning guides generation. Latent diffusion operates in a learned compressed space. Avoid: Confusing training noising with inference denoising or assuming fewer steps always preserve quality.
+
+### D04-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: Compare random and epsilon-greedy policies on a toy bandit; relate preferences to language-model adaptation.
+
+**Answer guidance:** An agent interacts with an environment to optimize expected return. Value functions estimate future return; policy gradients optimize a parameterized policy. RLHF may use learned reward models; DPO directly optimizes preferences under its assumptions. Avoid: Reward hacking, biased preference data and conflating reward with real user value.
+
+### C01-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Convert a BGR image to grayscale and HSV; inspect channel histograms.
+
+**Answer guidance:** Images are arrays of pixels with spatial dimensions and channels. OpenCV commonly reads color images in BGR order; RGB, grayscale and HSV serve different tasks. Data range and dtype affect arithmetic. Avoid: Displaying BGR as RGB or overflowing uint8 during arithmetic.
+
+### C01-L02-IV01 — beginner
+**Question:** Explain your approach to this scenario: Clean a noisy binary mask and detect edges around a shape.
+
+**Answer guidance:** Convolution filters alter local neighborhoods. Gaussian blur reduces high-frequency noise; Sobel and Canny detect edges; erosion and dilation change binary regions. Opening removes small foreground structures, closing fills small gaps. Avoid: Over-smoothing removes important detail; morphology depends on kernel and polarity.
+
+### C01-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Match features between a synthetic image and a rotated version, then estimate a homography with RANSAC.
+
+**Answer guidance:** Affine transforms preserve parallelism; homographies model planar projective mappings. Camera intrinsics and distortion parameters support calibration. ORB detects and describes local features for matching. Avoid: Homographies fail for many nonplanar scenes; feature matches can contain outliers.
+
+### C02-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Build transforms for classification and bounding boxes; split by video source.
+
+**Answer guidance:** Augmentations simulate plausible variation such as crop, flip or lighting change. Labels must be transformed consistently with images for detection and segmentation. Group splits prevent leakage across near-duplicate frames or patients. Avoid: Applying random training augmentations to validation or flipping labels with directional meaning.
+
+### C02-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Fine-tune a small pretrained model on an image dataset or use a synthetic offline baseline.
+
+**Answer guidance:** ResNet uses residual connections to ease deep optimization; EfficientNet scales architecture dimensions systematically. Replace a pretrained classifier head and use model-specific normalization. Avoid: Forgetting pretrained input normalization or evaluating only overall accuracy.
+
+### C03-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Calculate IoU for two boxes and inspect duplicate detections after NMS.
+
+**Answer guidance:** A detector predicts bounding boxes, class scores and confidence. Intersection over union (IoU) measures box overlap; nonmaximum suppression removes redundant detections in many pipelines. Average precision integrates a precision-recall curve under matching rules; mAP averages specified AP values. Avoid: Mixing xyxy and xywh coordinates or comparing mAP computed under different IoU settings.
+
+### C03-L02-IV01 — advanced
+**Question:** Explain your approach to this scenario: Benchmark a small detector with a fixed image size and a representative labeled set.
+
+**Answer guidance:** YOLO-style detectors typically predict dense detections in one pass; Faster R-CNN uses region proposals then classification/refinement; DETR treats detection as set prediction with matching. Accuracy, latency and small-object performance depend on setup. Avoid: Comparing published speed numbers from different hardware or resolution.
+
+### C03-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare a predicted binary mask with ground truth and calculate Dice and IoU.
+
+**Answer guidance:** Semantic segmentation assigns a class per pixel; instance segmentation distinguishes objects of the same class; panoptic segmentation combines stuff and thing labels. Dice and IoU quantify mask overlap with stated averaging rules. Avoid: Including ignored pixels in metrics or using bilinear interpolation for discrete labels.
+
+### C03-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: Segment objects from point or box prompts and compare against labeled masks.
+
+**Answer guidance:** U-Net combines an encoder and decoder with skip connections; Mask R-CNN adds instance mask prediction to region-based detection; SAM-style models produce masks from prompts. Promptable models still need domain evaluation and possibly adaptation. Avoid: Assuming promptable models are accurate for every domain or using unlicensed imagery.
+
+### C04-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Track moving shapes across frames with simple centroid matching.
+
+**Answer guidance:** Optical flow estimates apparent motion; tracking links detections through time using motion and appearance. Kalman filters estimate state under uncertainty; assignment methods associate observations. Tracking metrics measure detection and identity continuity. Avoid: Ignoring frame-rate variation, occlusion or identity switches.
+
+### C04-L02-IV01 — advanced
+**Question:** Explain your approach to this scenario: Compare class text prompts for a small image set and measure prompt sensitivity.
+
+**Answer guidance:** Vision Transformers tokenize image patches and use attention. CLIP-style models align image and text embeddings through contrastive learning; zero-shot classification compares image embeddings with textual class descriptions. Avoid: Assuming zero-shot scores are calibrated or ignoring training-data bias.
+
+### C04-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Extract text from synthetic receipts and benchmark an exported classifier.
+
+**Answer guidance:** OCR often combines text detection and recognition; document AI adds layout and structure. Depth can come from stereo geometry or learned models. Deployment uses batching, quantization and export formats such as ONNX; preprocessing must match training. Avoid: Logging sensitive documents or ignoring coordinate transforms during resizing.
+
+### G01-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Compare a language-model completion, embedding lookup and classifier on a support task.
+
+**Answer guidance:** Autoregressive LLMs predict next tokens; pretraining learns broad statistical patterns; instruction tuning and preference optimization adapt behavior. Generative output is probabilistic and may be unsupported even when fluent. Avoid: Equating fluency with factual accuracy or assuming model knowledge is current.
+
+### G01-L02-IV01 — beginner
+**Question:** Explain your approach to this scenario: Compare token counts of code, English and multilingual text with a chosen tokenizer.
+
+**Answer guidance:** Tokenizers convert text to integer IDs using schemes such as BPE, WordPiece or unigram. Special tokens represent boundaries or roles. Context limits include model-specific input and generated token accounting; token counts vary by model and language. Avoid: Counting words as tokens or truncating away required evidence and role markers.
+
+### G01-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Generate several responses under greedy and sampled settings and compare diversity.
+
+**Answer guidance:** Greedy chooses a highest-probability token; temperature rescales logits; top-k limits candidate count; top-p retains a probability mass. Stops, output limits and constrained decoding influence completion behavior. Determinism is not guaranteed across serving systems. Avoid: Using low temperature as a correctness guarantee or confusing top-p with top-k.
+
+### G01-L04-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Load a small permitted model and use its tokenizer and generation config.
+
+**Answer guidance:** The Hub distributes model artifacts and metadata; Transformers provides model and tokenizer APIs. A model card describes intended use, limits and evaluation, but should be verified. Choose base versus instruction model, context, memory and license. Avoid: Executing untrusted remote model code or assuming all licenses permit commercial use.
+
+### G02-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Classify support messages using zero, one and several examples and compare held-out accuracy.
+
+**Answer guidance:** Zero-shot uses instructions without examples; one-shot supplies one demonstration; few-shot uses multiple representative examples. Examples guide output style and decision boundaries but do not guarantee deterministic inference or generalization. Avoid: Example contamination, order sensitivity and assuming one-shot makes output deterministic.
+
+### G02-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Extract an invoice object with required currency, total and item fields.
+
+**Answer guidance:** Structured generation may use JSON schema constraints or tool arguments; few-shot examples illustrate semantic mappings. Pydantic validates typed Python objects, can reject extra fields and express constraints. Valid structure does not guarantee truthful content. Avoid: Accepting parseable JSON as factual truth or silently coercing invalid values.
+
+### G02-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Ask a tutor to return an answer plus a short evidence-based explanation, then test adversarial user text.
+
+**Answer guidance:** Persona prompts establish tone, audience and constraints, not genuine expertise. Chain-of-thought prompting is a research approach to eliciting intermediate reasoning; applications can instead request concise justification, verifiable calculations or structured plans. Untrusted content must remain data. Avoid: Trusting a plausible explanation as evidence of correctness or exposing hidden reasoning or secrets.
+
+### G02-L04-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Inspect tokenizer.apply_chat_template on system, user and assistant messages and compare conceptual templates.
+
+**Answer guidance:** ChatML-style formats use role delimiters; Alpaca-style templates often use Instruction/Input/Response sections; [INST]-style formats mark instruction boundaries in certain model families. Exact control tokens and role rules vary by tokenizer and model revision. Avoid: Manually applying the wrong template, duplicating special tokens or concatenating untrusted messages as instructions.
+
+### G02-L05-IV01 — advanced
+**Question:** Explain your approach to this scenario: Version two prompts with a dataset of normal, ambiguous and injection attempts.
+
+**Answer guidance:** A prompt includes instructions, examples, retrieved evidence and output contracts. Context engineering selects, orders and truncates inputs; tests track behavior across model or prompt changes. Stable schemas and adversarial fixtures support regression testing. Avoid: Changing model and prompt simultaneously makes attribution difficult.
+
+### G03-L01-IV01 — beginner
+**Question:** Explain your approach to this scenario: Embed short documents and compare semantic search with exact keyword search.
+
+**Answer guidance:** Embeddings represent text or images as vectors. Cosine, dot-product and Euclidean similarity rank candidates differently depending on normalization. Vector stores index embeddings with metadata and support filtering; examples include FAISS, Qdrant, Chroma and pgvector. Avoid: Mixing embedding models in one index or missing tenant filters.
+
+### G03-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Chunk a small set of policy documents, preserving section headings and source IDs.
+
+**Answer guidance:** RAG retrieves external evidence at inference. Ingestion parses, cleans, chunks, embeds and indexes source content with provenance. Chunk size and overlap affect recall, noise and cost. Incremental indexing needs stable document IDs and deletion handling. Avoid: Indexing private content without access metadata or dropping document boundaries.
+
+### G03-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Retrieve top candidates for an acronym query, rerank and build a bounded context.
+
+**Answer guidance:** Sparse search such as BM25 matches lexical terms; dense retrieval captures semantic similarity. Hybrid fusion combines signals; reranking scores candidate-query relevance more expensively. Answers should cite evidence and abstain when evidence is insufficient. Avoid: Using similarity as proof of factual support or citing sources not actually retrieved.
+
+### G03-L04-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare two chunk sizes on a golden query-document set and identify retrieval versus generation failures.
+
+**Answer guidance:** Retrieval metrics include recall@k, precision@k, MRR and nDCG; generation metrics include correctness, faithfulness and citation precision. Reference data and human review are necessary for reliable interpretation. Avoid: Evaluating only final answer similarity can hide retrieval failure or unsupported claims.
+
+### G04-L01-IV01 — advanced
+**Question:** Explain your approach to this scenario: Retrieve evidence, grade relevance, generate and run a grounding check before returning an answer.
+
+**Answer guidance:** Self-RAG is a research method using learned reflection tokens to control retrieval and critique generations. Application-level self-reflective RAG may instead use separate graders for evidence relevance, grounding and answer usefulness; these are related but not identical. Avoid: Calling any retry loop the original Self-RAG algorithm or trusting a self-grader without validation.
+
+### G04-L02-IV01 — advanced
+**Question:** Explain your approach to this scenario: Grade retrieval as strong, weak or ambiguous; route weak cases to a second trusted corpus.
+
+**Answer guidance:** The CRAG research approach evaluates retrieved-document quality and triggers corrective actions, including knowledge refinement and possible external search. An application-inspired implementation may route to rewrite, alternate index or approved search when evidence is weak. Avoid: Sending sensitive queries to unapproved search or using corrective results without provenance.
+
+### G04-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Detect missing citation support in a generated answer and regenerate only unsupported claims.
+
+**Answer guidance:** Self-corrective RAG is a broad application pattern rather than a single universal algorithm. Verify claims against evidence, revise or retrieve again and stop when quality gates pass or budget is exhausted. Avoid: Infinite loops and a judge repeatedly approving its own hallucination.
+
+### G04-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: Route a policy question to internal search and a product question to a catalog tool.
+
+**Answer guidance:** Agentic RAG uses a model or controller to choose retrieval actions, sources or subqueries. It can support multi-hop questions, but introduces extra latency, cost and failure modes. Authorization must be enforced outside the model. Avoid: Unbounded tool calls, cross-tenant retrieval or unnecessary agency for simple questions.
+
+### G05-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Expose a read-only inventory lookup with typed item ID and structured result.
+
+**Answer guidance:** A tool call is structured data requesting an external operation. The application validates arguments, authorizes execution, returns results and manages timeouts. Read and write tools have different risk profiles; side effects need idempotency and approvals. Avoid: Executing arbitrary model-generated code or treating tool output as trusted instructions.
+
+### G05-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Use a controller to choose between lookup, calculator and final answer based on observations.
+
+**Answer guidance:** ReAct is a research pattern interleaving reasoning with actions and environment observations. An application can expose concise action decisions and tool results rather than private reasoning traces. State, stop conditions and budgets control the loop. Avoid: Infinite repeated actions, stale observations and blindly following tool text.
+
+### G05-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Generate a short summary, grade missing required facts, then revise once.
+
+**Answer guidance:** A reflection loop creates a candidate, critiques it against a rubric and revises. An evaluator-optimizer workflow separates generation from grading; a deterministic validator may be better for objective constraints. Bound iterations and compare with one-pass baseline. Avoid: Self-critique can reinforce errors and add unnecessary cost.
+
+### G05-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: A research coordinator delegates retrieval and verification to separate workers then merges evidence.
+
+**Answer guidance:** Multiple agents can divide tasks or specialize tools; a supervisor coordinates routing and state, while handoff transfers responsibility. Coordination costs and inconsistent state can outweigh benefits. Shared contracts and permissions are necessary. Avoid: Recursive delegation, conflicting writes and sharing unnecessary private context.
+
+### G06-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Build a prompt-to-model-to-validated-output pipeline with a mock model first.
+
+**Answer guidance:** LangChain integrates providers, retrievers, messages and agent components. Separate domain logic from framework adapters so tests can use fakes and migration is easier. Keep configuration and secrets outside prompts. Avoid: Tightly coupling business logic to provider-specific responses or using deprecated examples uncritically.
+
+### G06-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Build validate -> retrieve -> generate -> finish using typed state.
+
+**Answer guidance:** LangGraph represents stateful workflows as nodes and edges. Nodes return state updates; edges define transitions. A sequential workflow follows a known order and is appropriate when the steps are predictable. Avoid: Mutating shared state unexpectedly or placing unrelated data in the graph.
+
+### G06-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Route invalid inputs to rejection; run keyword and vector retrieval in parallel and merge IDs.
+
+**Answer guidance:** Conditional edges choose a destination using state; parallel branches execute independent work and need reducers or explicit merge contracts for concurrent state updates. Fan-out and fan-in should be bounded. Avoid: Multiple branches updating the same state key without merge semantics.
+
+### G06-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: Pause a proposed write action for approval, then resume only if authorized.
+
+**Answer guidance:** Iterative graphs revisit nodes until a quality or budget condition; checkpointing persists graph state by thread. Human-in-the-loop interrupts pause at controlled points and resume with a decision. Side effects must be idempotent across replay. Avoid: Re-executing a side effect on resume or storing secrets in checkpoint state.
+
+### G07-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Design a server exposing read-only document search and a resource URI.
+
+**Answer guidance:** MCP standardizes how AI applications connect to external context and capabilities. A host coordinates clients; servers expose tools, resources and prompts. Transport and authorization depend on deployment and protocol revision. MCP does not grant permission automatically. Avoid: Equating MCP with an agent framework or trusting every discovered capability.
+
+### G07-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Implement a local add or catalog lookup tool with FastMCP and invoke using a client.
+
+**Answer guidance:** FastMCP provides Python decorators and client abstractions for MCP. Typed function signatures expose tool schemas; resource and prompt definitions expose context or reusable templates. Local stdio is useful for development; remote deployments require transport-aware security. Avoid: Exposing filesystem or shell tools without restrictions, or assuming SDK and standalone FastMCP APIs are interchangeable.
+
+### G07-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Integrate a remote document server behind tenant-scoped permissions and explicit write approval.
+
+**Answer guidance:** Remote MCP servers need authenticated and authorized access, validated resource identifiers, timeouts and audit logging. Tool descriptions and results are untrusted content. Review server provenance, restrict outbound requests and pin protocol/library versions. Avoid: Token passthrough without audience validation, prompt injection and SSRF through arbitrary URLs.
+
+### G08-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Store a preference as a fact, a past support interaction as an episode and current task variables in working state.
+
+**Answer guidance:** Working memory is current context and state. Long-term semantic memory stores general knowledge or meaning, factual memory stores discrete facts and is often treated as a subset of semantic memory, and episodic memory records events or experiences. Procedural memory can store reusable actions or policies. Avoid: Treating every conversation as durable memory or conflating factual and semantic categories as universally disjoint.
+
+### G08-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare raw chat history, rolling summary and retrieved memory on a follow-up question.
+
+**Answer guidance:** Memory pipelines select candidates, resolve duplicates, store provenance, retrieve by relevance and recency, and inject only authorized context. Summaries compress history but may omit important details; vector search does not guarantee correct recall. Avoid: Stale preferences, accidental cross-user retrieval and treating retrieved memory as instructions.
+
+### G08-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Add a user-authorized preference under a test user ID and retrieve it for a later query.
+
+**Answer guidance:** Mem0 supports extraction, storage and retrieval of memory using configured models and vector stores. Application policy determines consent, scope, update rules and deletion. Evaluate memory precision, recall, freshness and false memories separately from answer quality. Avoid: Using defaults without understanding external data flow, retaining sensitive data or failing to remove stale memory.
+
+### G09-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Expose a typed prediction or chat endpoint and test malformed inputs.
+
+**Answer guidance:** FastAPI maps HTTP requests to typed Python handlers; Pydantic defines data contracts. Async I/O helps concurrent network-bound calls; blocking CPU/GPU operations may require workers or separate inference services. Authentication, limits and timeouts belong at service boundaries. Avoid: Blocking an async event loop, returning secrets in exceptions or accepting unbounded requests.
+
+### G09-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Stream a mock token sequence using FastAPI StreamingResponse and detect disconnect.
+
+**Answer guidance:** Server-sent events use text/event-stream and framed events; clients should handle partial content, error and completion events. Provider streaming, application streaming and UI rendering are separate layers. Cancellation and backpressure limit wasted resources. Avoid: Assuming each chunk is valid JSON or leaking unsafe content before moderation completes.
+
+### G09-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Route two configured model deployments behind a common alias and simulate rate limiting.
+
+**Answer guidance:** LiteLLM offers a Python SDK and proxy gateway with provider abstraction, routing, virtual keys, budgets and observability features. Retry/fallback policies must distinguish transient failures from invalid requests. Models and providers have different capabilities and token accounting. Avoid: Retrying non-idempotent side effects or switching models that do not support the required schema.
+
+### G09-L04-IV01 — advanced
+**Question:** Explain your approach to this scenario: Block unauthorized writes even when a model claims approval and mask sensitive fields in logs.
+
+**Answer guidance:** Input validation, output schema checks, tool authorization, PII handling, content policy checks and human review provide complementary defenses. Prompt injection treats untrusted content as attempted instructions; no single filter guarantees protection. Streaming may require buffering or incremental checks. Avoid: Relying solely on an LLM judge or releasing unreviewed streamed content.
+
+### G10-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Compare an answer judge with human labels and measure agreement on a held-out set.
+
+**Answer guidance:** Evaluate task success, tool selection, arguments, trajectory, latency, cost, safety and human intervention. LLM-as-judge uses a model to score a rubric; position bias, verbosity bias and correlated errors require human calibration and deterministic checks where possible. Avoid: Using the same model as generator and uncalibrated sole evaluator or exposing private traces to judges.
+
+### G10-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Create cases for grounded answers and unsupported claims using a configured evaluator.
+
+**Answer guidance:** DeepEval provides evaluation constructs for model outputs and various task-specific metrics. Use synthetic and human-authored cases, deterministic assertions for tool contracts and configured model judges for semantic metrics. Judge calls may incur cost. Avoid: Confusing metric thresholds with universal quality standards or depending on live models for all unit tests.
+
+### G10-L03-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Evaluate retrieval evidence against reference answers for a small question set.
+
+**Answer guidance:** Ragas offers metrics for retrieval and answer assessment, with metric-specific required fields and judge/embedding dependencies. Use human-reviewed examples to calibrate and distinguish context recall, precision and faithfulness. Avoid: Using an unavailable reference field or comparing metrics across changed evaluator configurations.
+
+### G10-L04-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Evaluate two support prompts with regex/schema assertions and a rubric.
+
+**Answer guidance:** Promptfoo supports declarative evaluation configurations, provider/prompt matrices and assertions. Some checks are deterministic; judge-based assertions use a configured model. Security testing needs permission, scoped targets and non-sensitive fixtures. Avoid: Storing API keys in YAML or attacking systems without authorization.
+
+### G10-L05-IV01 — advanced
+**Question:** Explain your approach to this scenario: Compare two RAG versions by recall@k, grounded answer rate, p95 latency and token cost.
+
+**Answer guidance:** Trace spans connect model calls, retrieval and tools; metrics include latency percentiles, token usage, cost, success and safety violations. Release gates compare quality and operational budgets against a baseline. Redact sensitive input/output and restrict trace retention. Avoid: Logging secrets or using aggregate metrics that hide high-risk failures.
+
+### G11-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Inspect trainable parameter counts for a small model before and after applying LoRA.
+
+**Answer guidance:** SFT trains on curated instruction-response examples. LoRA freezes base weights and learns low-rank updates to selected matrices, reducing trainable parameters. PEFT libraries implement adaptation; evaluate on a disjoint holdout and document base-model license. Avoid: Training on benchmark answers, poor data formatting or assuming fine-tuning adds reliable current facts.
+
+### G11-L02-IV01 — advanced
+**Question:** Explain your approach to this scenario: Compare memory estimates for FP16 and 4-bit weights before adapter overhead.
+
+**Answer guidance:** QLoRA combines quantized frozen base weights with trainable adapters. Quantization reduces memory but may affect accuracy and requires compatible kernels. Serving optimizations include KV caching, batching, speculative decoding and runtime choices such as vLLM or llama.cpp. Avoid: Assuming four-bit storage equals complete runtime memory or every GPU supports every kernel.
+
+### G11-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Build a document-question-answering design combining OCR, vision and text retrieval.
+
+**Answer guidance:** Multimodal models process inputs such as images and text using modality encoders or joint representations. Image generation uses methods including diffusion. Prompting changes input behavior; RAG supplies evidence; tools perform actions; fine-tuning adapts learned behavior. Evaluate each modality and rights/privacy constraints. Avoid: Treating fine-tuning as a replacement for retrieval or submitting private images to unapproved providers.
+
+### P01-L01-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Package a scikit-learn pipeline behind FastAPI and build a local container.
+
+**Answer guidance:** A deployable model includes preprocessing, weights, schema, dependency metadata and version identifiers. Docker images isolate user-space runtime; non-root users, minimal base images and health probes reduce operational risk. Avoid: Loading untrusted pickle/joblib artifacts or training on service startup.
+
+### P01-L02-IV01 — intermediate
+**Question:** Explain your approach to this scenario: Log two model runs and compare validation metrics and artifacts.
+
+**Answer guidance:** MLflow tracks experiment runs and model metadata; DVC or object-store versioning can track data artifacts. A registry can record model versions and promotion decisions. Reproducibility requires immutable references and environment metadata. Avoid: Storing sensitive data in experiment metadata or promoting based on training score.
+
+### P01-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Create a pipeline with lint, unit tests, evaluation, dependency scan and approval before deploy.
+
+**Answer guidance:** CI validates source, data contracts, tests and model metrics; CD promotes approved artifacts. Dependency, secret and container scanning reduce supply-chain risk; continuous training requires data and quality gates. Use staged deployment and rollback. Avoid: Automatically promoting a retrained model without comparing it to a baseline.
+
+### P02-L01-IV01 — advanced
+**Question:** Explain your approach to this scenario: Simulate a shifted feature distribution and monitor prediction scores.
+
+**Answer guidance:** Data drift changes input distribution; concept drift changes the relationship between inputs and targets; label delays limit immediate accuracy monitoring. Track latency, errors, resource use and data quality; retrain only after validated diagnosis. Avoid: Treating every detected shift as concept drift or retraining automatically without verification.
+
+### P02-L02-IV01 — advanced
+**Question:** Explain your approach to this scenario: Create a model card and risk register for a support assistant with sensitive data.
+
+**Answer guidance:** Governance covers data rights, consent, access, model cards, risk assessment, evaluation and incident response. Threat models include training-data poisoning, extraction, adversarial inputs and unauthorized agent actions. Requirements depend on jurisdiction and application. Avoid: Assuming public data is always licensed for training or logging full user conversations.
+
+### P02-L03-IV01 — advanced
+**Question:** Explain your approach to this scenario: Design a RAG service with tenant-scoped retrieval, gateway and async ingestion queue.
+
+**Answer guidance:** Separate API, model serving, storage, queueing and observability. Batch processing favors throughput; online inference favors latency. AWS examples include S3, ECS/EKS, SageMaker and managed databases; equivalent services exist on other clouds. Avoid: Overprovisioning GPUs, exposing indexes publicly or scaling without measurement.

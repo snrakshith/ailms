@@ -26,7 +26,7 @@
     "test:portable": "node tests/core/offline-check.mjs",
     "test:marketing": "node --experimental-strip-types tests/public/marketing-content.test.mjs",
     "security:static": "node scripts/security/static-p1-check.mjs",
-    "build:shared": "pnpm --filter @sapling/contracts build && pnpm --filter @aiquest/learning-core build && pnpm --filter @aiquest/client-sdk build",
+    "build:shared": "pnpm --filter @sapling/contracts build && pnpm --filter @aiquest/learning-core build && pnpm --filter @aiquest/curriculum build && pnpm --filter @aiquest/client-sdk build",
     "test:release": "node --experimental-strip-types tests/release/integration-contracts.test.mjs",
     "prepare": "husky",
     "check:staged-secrets": "node scripts/security/staged-secrets.mjs",

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "E01",
+    "query": "return window",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB01"
+    ]
+  },
+  {
+    "id": "E02",
+    "query": "shipping time",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB02"
+    ]
+  },
+  {
+    "id": "E03",
+    "query": "warranty period",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB03"
+    ]
+  },
+  {
+    "id": "E04",
+    "query": "support hours",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB04"
+    ]
+  },
+  {
+    "id": "E05",
+    "query": "invoice copy",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB05"
+    ]
+  },
+  {
+    "id": "E06",
+    "query": "refund method",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB06"
+    ]
+  },
+  {
+    "id": "E07",
+    "query": "password reset",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB07"
+    ]
+  },
+  {
+    "id": "E08",
+    "query": "cancel order",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB08"
+    ]
+  },
+  {
+    "id": "E09",
+    "query": "exchange process",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB09"
+    ]
+  },
+  {
+    "id": "E10",
+    "query": "delivery tracking",
+    "tenant": "A",
+    "gold_ids": [
+      "PUB10"
+    ]
+  },
+  {
+    "id": "E11",
+    "query": "return window",
+    "tenant": "B",
+    "gold_ids": [
+      "PRIVATE01"
+    ]
+  },
+  {
+    "id": "N1",
+    "query": "weather forecast",
+    "tenant": "A",
+    "gold_ids": []
+  },
+  {
+    "id": "N2",
+    "query": "medical appointment",
+    "tenant": "A",
+    "gold_ids": []
+  },
+  {
+    "id": "N3",
+    "query": "office parking",
+    "tenant": "A",
+    "gold_ids": []
+  },
+  {
+    "id": "N4",
+    "query": "product temperature",
+    "tenant": "A",
+    "gold_ids": []
+  },
+  {
+    "id": "N5",
+    "query": "bank transfer limit",
+    "tenant": "A",
+    "gold_ids": []
+  }
+]

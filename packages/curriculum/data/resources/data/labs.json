@@ -1,0 +1,234 @@
+[
+  {
+    "id": "LAB01",
+    "lesson_id": "F01-L03",
+    "title": "Standardization without NaN",
+    "dependencies": [
+      "numpy"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB01.md",
+    "starter_path": "labs/starters/LAB01.py",
+    "solution_path": "labs/solutions/LAB01.py",
+    "expected": "Constant column output is zero; other columns have mean 0 and std 1.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB01.ipynb"
+  },
+  {
+    "id": "LAB02",
+    "lesson_id": "M02-L02",
+    "title": "Capacity-aware classification",
+    "dependencies": [
+      "scikit-learn",
+      "numpy"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB02.md",
+    "starter_path": "labs/starters/LAB02.py",
+    "solution_path": "labs/solutions/LAB02.py",
+    "expected": "Validation review fraction <= 0.4; test may differ. Educational benchmark only, not clinical use.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB02.ipynb"
+  },
+  {
+    "id": "LAB03",
+    "lesson_id": "M03-L02",
+    "title": "Cross-validated regression",
+    "dependencies": [
+      "scikit-learn"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB03.md",
+    "starter_path": "labs/starters/LAB03.py",
+    "solution_path": "labs/solutions/LAB03.py",
+    "expected": "Select minimum development MAE; no test-based selection. Educational benchmark only.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB03.ipynb"
+  },
+  {
+    "id": "LAB04",
+    "lesson_id": "D01-L02",
+    "title": "XOR and nonlinear networks",
+    "dependencies": [
+      "torch"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB04.md",
+    "starter_path": "labs/starters/LAB04.py",
+    "solution_path": "labs/solutions/LAB04.py",
+    "expected": "MLP fits all four points; linear model cannot. This is not a generalization benchmark.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB04.ipynb"
+  },
+  {
+    "id": "LAB05",
+    "lesson_id": "C02-L02",
+    "title": "CPU CNN on handwritten digits",
+    "dependencies": [
+      "torch",
+      "scikit-learn"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB05.md",
+    "starter_path": "labs/starters/LAB05.py",
+    "solution_path": "labs/solutions/LAB05.py",
+    "expected": "Model returns 10 logits; test F1 between 0 and 1. Compare architecture on validation only.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB05.ipynb"
+  },
+  {
+    "id": "LAB06",
+    "lesson_id": "C03-L01",
+    "title": "Bounding box IoU and class-aware NMS",
+    "dependencies": [
+      "numpy"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB06.md",
+    "starter_path": "labs/starters/LAB06.py",
+    "solution_path": "labs/solutions/LAB06.py",
+    "expected": "Partial overlap 1/7; duplicate same class suppressed; other class retained.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB06.ipynb"
+  },
+  {
+    "id": "LAB07",
+    "lesson_id": "G03-L04",
+    "title": "Grounded retrieval and abstention",
+    "dependencies": [],
+    "mode": "offline",
+    "guide_path": "labs/LAB07.md",
+    "starter_path": "labs/starters/LAB07.py",
+    "solution_path": "labs/solutions/LAB07.py",
+    "expected": "16 known fixtures pass; exact-match-like lexical benchmark is not real semantic evaluation.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB07.ipynb"
+  },
+  {
+    "id": "LAB08",
+    "lesson_id": "G04-L02",
+    "title": "Bounded corrective retrieval and claim verification",
+    "dependencies": [],
+    "mode": "offline",
+    "guide_path": "labs/LAB08.md",
+    "starter_path": "labs/starters/LAB08.py",
+    "solution_path": "labs/solutions/LAB08.py",
+    "expected": "Max 3 attempts; evidence mismatch abstains or corrects. Inspired by CRAG, not paper reproduction.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB08.ipynb"
+  },
+  {
+    "id": "LAB09",
+    "lesson_id": "G06-L04",
+    "title": "HITL and idempotency contract",
+    "dependencies": [],
+    "mode": "offline",
+    "guide_path": "labs/LAB09.md",
+    "starter_path": "labs/starters/LAB09.py",
+    "solution_path": "labs/solutions/LAB09.py",
+    "expected": "Only one authorized fixture receipt persisted; actual external exactly-once not claimed.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB09.ipynb"
+  },
+  {
+    "id": "LAB10",
+    "lesson_id": "G09-L01",
+    "title": "FastAPI validation and streaming",
+    "dependencies": [
+      "fastapi",
+      "pydantic",
+      "httpx"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB10.md",
+    "starter_path": "labs/starters/LAB10.py",
+    "solution_path": "labs/solutions/LAB10.py",
+    "expected": "200,422,504,503 and valid SSE; live cancellation is a separate exercise.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB10.ipynb"
+  },
+  {
+    "id": "LAB11",
+    "lesson_id": "G11-L01",
+    "title": "LoRA adapter mechanics",
+    "dependencies": [
+      "torch"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB11.md",
+    "starter_path": "labs/starters/LAB11.py",
+    "solution_path": "labs/solutions/LAB11.py",
+    "expected": "Training loss decreases, base weight unchanged; tiny toy rank is not parameter-efficient.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB11.ipynb"
+  },
+  {
+    "id": "LAB12",
+    "lesson_id": "P01-L03",
+    "title": "Fail-closed deployment gate",
+    "dependencies": [],
+    "mode": "offline",
+    "guide_path": "labs/LAB12.md",
+    "starter_path": "labs/starters/LAB12.py",
+    "solution_path": "labs/solutions/LAB12.py",
+    "expected": "Bad or incomplete candidate cannot promote.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB12.ipynb"
+  },
+  {
+    "id": "LAB13",
+    "lesson_id": "M05-L01",
+    "title": "Rolling demand forecast",
+    "dependencies": [
+      "numpy"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB13.md",
+    "starter_path": "labs/starters/LAB13.py",
+    "solution_path": "labs/solutions/LAB13.py",
+    "expected": "Every forecast follows training cutoff; no future features.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB13.ipynb"
+  },
+  {
+    "id": "LAB14",
+    "lesson_id": "G08-L02",
+    "title": "Scoped memory lifecycle",
+    "dependencies": [],
+    "mode": "offline",
+    "guide_path": "labs/LAB14.md",
+    "starter_path": "labs/starters/LAB14.py",
+    "solution_path": "labs/solutions/LAB14.py",
+    "expected": "No cross-tenant access; expired/deleted entries excluded. Not a vector DB or Mem0 test.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB14.ipynb"
+  },
+  {
+    "id": "LAB15",
+    "lesson_id": "G07-L02",
+    "title": "Tool contract before MCP transport",
+    "dependencies": [
+      "pydantic"
+    ],
+    "mode": "offline",
+    "guide_path": "labs/LAB15.md",
+    "starter_path": "labs/starters/LAB15.py",
+    "solution_path": "labs/solutions/LAB15.py",
+    "expected": "Five contract cases pass. Actual MCP integration remains separate.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB15.ipynb"
+  },
+  {
+    "id": "LAB16",
+    "lesson_id": "G10-L01",
+    "title": "RAG evaluation metric decomposition",
+    "dependencies": [],
+    "mode": "offline",
+    "guide_path": "labs/LAB16.md",
+    "starter_path": "labs/starters/LAB16.py",
+    "solution_path": "labs/solutions/LAB16.py",
+    "expected": "Recall .5, abstention 1, support 1/3; no model judge.",
+    "solution_visibility": "instructor_or_post_submission",
+    "solution_notebook_path": "notebooks/solution-LAB16.ipynb"
+  }
+]

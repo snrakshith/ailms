@@ -1,0 +1,213 @@
+Front	Back	Tags
+Why restart and run all cells before sharing?	To detect hidden execution-order dependencies and missing setup.	F F01 beginner
+Python environments and notebooks: name a common failure to avoid.	Installing into the wrong interpreter or relying on stale notebook variables.	F F01 beginner
+Does a Python type hint validate runtime values?	No; explicit validation or a library is needed.	F F01 beginner
+Python data types, control flow and functions: name a common failure to avoid.	Mutable default arguments can retain state across calls.	F F01 beginner
+What dimensions can broadcast?	Equal dimensions or a dimension of size one, aligned from the right.	F F01 beginner
+NumPy arrays, broadcasting and vectorization: name a common failure to avoid.	Dividing by zero or silently broadcasting along the wrong axis.	F F01 beginner
+Why inspect join cardinality?	To prevent accidental row multiplication or lost records.	F F01 beginner
+Pandas, data cleaning and EDA: name a common failure to avoid.	Many-to-many joins can unexpectedly multiply rows; test-set exploration can bias model selection.	F F01 beginner
+What should an experiment record besides the seed?	Code version, data version, dependency versions, parameters and metrics.	F F01 intermediate
+Git, testing and reproducible experiments: name a common failure to avoid.	Committing credentials or assuming seeds alone guarantee reproducibility.	F F01 intermediate
+When is cosine similarity undefined?	When either vector has zero norm.	F F02 beginner
+Linear algebra: vectors, matrices and dot products: name a common failure to avoid.	Confusing elementwise multiplication with matrix multiplication or ignoring zero norms.	F F02 beginner
+What does PCA maximize?	Variance captured by orthogonal components of centered data.	F F02 intermediate
+Eigenvalues, SVD and projections: name a common failure to avoid.	PCA components depend on scaling and do not necessarily preserve predictive information.	F F02 intermediate
+Why does prevalence matter?	The posterior combines the likelihood with the prior probability.	F F02 beginner
+Probability, distributions and Bayes rule: name a common failure to avoid.	Confusing P(test positive given condition) with P(condition given test positive).	F F02 beginner
+What does 95% confidence mean?	Under repeated valid sampling, the interval procedure covers the parameter about 95% of the time.	F F02 intermediate
+Statistics, sampling and confidence intervals: name a common failure to avoid.	Ignoring dependence, selection bias or nonrepresentative samples.	F F02 intermediate
+Why is the chain rule essential to neural networks?	It propagates gradients through composed layers.	F F02 intermediate
+Calculus, gradients and optimization: name a common failure to avoid.	A learning rate that is too large can overshoot or diverge.	F F02 intermediate
+Is KL divergence symmetric?	No, swapping the distributions generally changes the result.	F F02 intermediate
+Information theory and numerical stability: name a common failure to avoid.	Taking log(0) or applying softmax twice before a logits-based loss.	F F02 intermediate
+Why use a baseline?	To quantify whether additional modeling complexity improves outcomes.	M M01 beginner
+ML problem framing and baselines: name a common failure to avoid.	Choosing an algorithm before defining the target or using information unavailable at prediction time.	M M01 beginner
+Should scalers be fit before the split?	No, fit them on training data only.	M M01 beginner
+Train, validation, test and leakage: name a common failure to avoid.	Feature leakage from future data, repeated entities or target-derived columns.	M M01 beginner
+Why put preprocessing inside cross-validation?	Each fold must learn preprocessing only from its training partition.	M M01 intermediate
+Preprocessing and feature pipelines: name a common failure to avoid.	Unknown categories at inference or fitting preprocessing using the whole dataset.	M M01 intermediate
+What does a residual represent?	Observed target minus predicted target.	M M02 beginner
+Linear and polynomial regression: name a common failure to avoid.	High-degree polynomials can overfit; correlation is not causal effect.	M M02 beginner
+What changes when the threshold changes?	Class decisions and confusion-matrix metrics, not the fitted probability model.	M M02 beginner
+Logistic regression and classification thresholds: name a common failure to avoid.	Treating probabilities as calibrated without checking or optimizing accuracy for rare positives.	M M02 beginner
+Which models are sensitive to feature scale?	Distance-based kNN and many SVM configurations.	M M02 intermediate
+k-nearest neighbors, naive Bayes and SVM: name a common failure to avoid.	Unscaled features dominate distances; kernel SVM can be expensive on large data.	M M02 intermediate
+How does bagging reduce variance?	It averages diverse estimators whose errors are not perfectly correlated.	M M02 intermediate
+Decision trees and random forests: name a common failure to avoid.	Unconstrained trees memorize training data; impurity importance can favor high-cardinality features.	M M02 intermediate
+What is the key difference between bagging and boosting?	Bagging aggregates independently trained models; boosting fits learners sequentially to improve the current ensemble.	M M02 intermediate
+Gradient boosting: XGBoost, LightGBM and CatBoost: name a common failure to avoid.	Using early stopping on test data or encoding categories inconsistently.	M M02 intermediate
+Does regularization always improve performance?	No; excessive regularization can cause underfitting.	M M02 intermediate
+Regularization, feature selection and bias-variance: name a common failure to avoid.	Selecting features using all targets before cross-validation leaks information.	M M02 intermediate
+Why can accuracy be misleading under imbalance?	A majority-class predictor can score highly while missing nearly all positives.	M M03 intermediate
+Classification, regression and ranking metrics: name a common failure to avoid.	AUC does not identify an operating threshold and accuracy can hide minority failures.	M M03 intermediate
+What is nested CV for?	Estimating generalization of a model-selection procedure without using outer folds for tuning.	M M03 intermediate
+Cross-validation and hyperparameter search: name a common failure to avoid.	Repeatedly tuning against the final test set invalidates it.	M M03 intermediate
+What does a calibrated 0.8 probability mean?	Among comparable predictions near 0.8, roughly 80% should be positive.	M M03 advanced
+Imbalanced learning, calibration and uncertainty: name a common failure to avoid.	Oversampling before splitting leaks duplicate or related rows; calibration requires separate data or folds.	M M03 advanced
+Can SHAP prove a feature causes an outcome?	No, model attribution is not causal identification.	M M03 advanced
+Interpretability, fairness and error analysis: name a common failure to avoid.	Treating feature attribution as causality or reporting only aggregate accuracy.	M M03 advanced
+Why might DBSCAN label points as noise?	They are not density-reachable under the selected parameters.	M M04 intermediate
+Clustering: k-means, hierarchical and DBSCAN: name a common failure to avoid.	Treating clusters as true labels or relying on a single internal score.	M M04 intermediate
+Should t-SNE cluster distances be treated as exact original distances?	No; global geometry can be distorted.	M M04 intermediate
+Dimensionality reduction: PCA, t-SNE and UMAP: name a common failure to avoid.	Interpreting all distances and cluster sizes in t-SNE as meaningful.	M M04 intermediate
+What is novelty detection?	Scoring new observations against a model of normal training data.	M M04 intermediate
+Anomaly detection and novelty detection: name a common failure to avoid.	Training on future incidents or assuming every anomaly is malicious.	M M04 intermediate
+Why use rolling-origin evaluation?	It simulates repeated forecasts using only historical information.	M M05 intermediate
+Time series, forecasting and backtesting: name a common failure to avoid.	Random splitting or calculating rolling features that include future observations.	M M05 intermediate
+Why use candidate retrieval before ranking?	It reduces the number of items requiring expensive ranking.	M M05 intermediate
+Recommendation and learning to rank: name a common failure to avoid.	Random negative sampling can misrepresent unseen relevance and cold-start performance.	M M05 intermediate
+Can accurate prediction establish causality?	No; causal claims need a valid identification strategy.	M M05 advanced
+Causal inference and experimentation: name a common failure to avoid.	Conditioning on post-treatment variables or repeatedly peeking at p-values without adjustment.	M M05 advanced
+Why zero gradients before a training step?	PyTorch accumulates gradients rather than replacing them automatically.	D D01 beginner
+Tensors, autograd and PyTorch fundamentals: name a common failure to avoid.	In-place mutation of tracked tensors or mixing CPU and GPU tensors.	D D01 beginner
+Why are nonlinear activations needed?	Without them, stacked linear layers cannot represent nonlinear decision boundaries.	D D01 beginner
+Perceptrons, MLPs and activation functions: name a common failure to avoid.	Applying sigmoid to logits before BCEWithLogitsLoss or using incompatible target shape.	D D01 beginner
+Does backpropagation update weights itself?	No; it computes gradients that an optimizer uses to update weights.	D D01 intermediate
+Forward pass, backpropagation and loss functions: name a common failure to avoid.	Detaching a tensor breaks its gradient path; incorrect logits/target shapes can silently mislead.	D D01 intermediate
+What does AdamW decouple?	Weight decay from the adaptive gradient update.	D D01 intermediate
+Optimizers, initialization and learning-rate schedules: name a common failure to avoid.	Confusing L2 regularization with decoupled weight decay for adaptive optimizers.	D D01 intermediate
+Why use model.eval() plus no_grad or inference_mode?	They control module behavior and gradient recording separately.	D D02 intermediate
+Datasets, DataLoaders and training loops: name a common failure to avoid.	Forgetting eval mode changes dropout and batch normalization behavior.	D D02 intermediate
+Why can dropout predictions differ in training mode?	Random activation masks are sampled during training.	D D02 intermediate
+Normalization, dropout and early stopping: name a common failure to avoid.	Evaluating with dropout active or selecting checkpoints using test loss.	D D02 intermediate
+What is data-parallel training?	Replicas process different data batches and synchronize gradients.	D D02 advanced
+Mixed precision, GPUs and distributed training: name a common failure to avoid.	Assuming lower precision is always faster or forgetting effective batch size changes.	D D02 advanced
+Why use weight sharing in CNNs?	It reduces parameters and applies the same local feature detector across positions.	D D03 intermediate
+CNN foundations and receptive fields: name a common failure to avoid.	Confusing channels-first and channels-last layout or shrinking spatial dimensions unexpectedly.	D D03 intermediate
+What do recurrent gates control?	How information is retained, updated and exposed in hidden state.	D D03 intermediate
+RNNs, LSTMs, GRUs and sequence modeling: name a common failure to avoid.	Shuffling tokens within a sequence or treating padding as real observations.	D D03 intermediate
+Why divide attention logits by sqrt(d)?	To moderate score magnitude as key dimension grows.	D D03 intermediate
+Attention and transformers: name a common failure to avoid.	Mask polarity errors and quadratic attention memory for long sequences.	D D03 intermediate
+Which architecture is typical for autoregressive chat LLMs?	Decoder-only transformers, though other architectures exist.	D D03 advanced
+Encoder, decoder and encoder-decoder architectures: name a common failure to avoid.	Assuming every transformer has identical masking or can generate text autoregressively.	D D03 advanced
+What is self-supervised learning?	Learning from supervision constructed from the data itself rather than manual labels.	D D04 intermediate
+Transfer learning, embeddings and self-supervised learning: name a common failure to avoid.	Training too aggressively can destroy useful pretrained features; domain shift can limit transfer.	D D04 intermediate
+What is GAN mode collapse?	The generator produces insufficiently diverse outputs despite plausible individual samples.	D D04 advanced
+Autoencoders, VAEs and GANs: name a common failure to avoid.	A good reconstruction score does not guarantee useful generation; GANs may collapse modes.	D D04 advanced
+What does latent diffusion change?	It performs the diffusion process in a compressed representation rather than directly in pixels.	D D04 advanced
+Diffusion and score-based generative models: name a common failure to avoid.	Confusing training noising with inference denoising or assuming fewer steps always preserve quality.	D D04 advanced
+Why is reward design important?	Optimizing a proxy can yield undesirable behavior if it differs from the intended goal.	D D04 advanced
+Reinforcement learning and preference optimization: name a common failure to avoid.	Reward hacking, biased preference data and conflating reward with real user value.	D D04 advanced
+What color order does cv2.imread normally use?	BGR for default color images.	C C01 beginner
+Image representation, color spaces and OpenCV: name a common failure to avoid.	Displaying BGR as RGB or overflowing uint8 during arithmetic.	C C01 beginner
+What is morphological opening?	Erosion followed by dilation using a structuring element.	C C01 beginner
+Filtering, edges and morphology: name a common failure to avoid.	Over-smoothing removes important detail; morphology depends on kernel and polarity.	C C01 beginner
+What does RANSAC do?	Fits a model robustly by testing candidate subsets and selecting strong inlier support.	C C01 intermediate
+Geometric transforms, calibration and features: name a common failure to avoid.	Homographies fail for many nonplanar scenes; feature matches can contain outliers.	C C01 intermediate
+Why split videos by source rather than frames?	Neighboring frames can be near duplicates, inflating validation performance.	C C02 intermediate
+Image datasets, augmentation and labeling: name a common failure to avoid.	Applying random training augmentations to validation or flipping labels with directional meaning.	C C02 intermediate
+What does freezing a backbone do?	Prevents its parameters from updating while the head learns.	C C02 intermediate
+Image classification and pretrained CNNs: name a common failure to avoid.	Forgetting pretrained input normalization or evaluating only overall accuracy.	C C02 intermediate
+What does IoU measure?	Intersection area divided by union area.	C C03 intermediate
+Object detection: boxes, IoU, NMS and mAP: name a common failure to avoid.	Mixing xyxy and xywh coordinates or comparing mAP computed under different IoU settings.	C C03 intermediate
+How does DETR differ from many traditional detectors?	It learns set prediction with matching and commonly avoids conventional NMS.	C C03 advanced
+YOLO, Faster R-CNN, DETR and detection training: name a common failure to avoid.	Comparing published speed numbers from different hardware or resolution.	C C03 advanced
+What is the difference between semantic and instance segmentation?	Instance segmentation separates individual objects of the same class.	C C03 intermediate
+Semantic, instance and panoptic segmentation: name a common failure to avoid.	Including ignored pixels in metrics or using bilinear interpolation for discrete labels.	C C03 intermediate
+Why are U-Net skip connections useful?	They recover spatial detail from earlier encoder features.	C C03 advanced
+U-Net, Mask R-CNN, SAM and foundation vision models: name a common failure to avoid.	Assuming promptable models are accurate for every domain or using unlicensed imagery.	C C03 advanced
+What is an identity switch?	A tracker assigns a different identity to an object previously tracked under another identity.	C C04 intermediate
+Video, optical flow and object tracking: name a common failure to avoid.	Ignoring frame-rate variation, occlusion or identity switches.	C C04 intermediate
+How does CLIP enable zero-shot classification?	It scores image embeddings against text embeddings for candidate classes.	C C04 advanced
+Vision transformers, CLIP and multimodal vision: name a common failure to avoid.	Assuming zero-shot scores are calibrated or ignoring training-data bias.	C C04 advanced
+Why preserve original image coordinates?	Detected regions must map correctly back to the source image.	C C04 advanced
+OCR, document AI, 3D and deployment: name a common failure to avoid.	Logging sensitive documents or ignoring coordinate transforms during resizing.	C C04 advanced
+What is a next-token language model trained to predict?	A distribution over the next token given preceding context.	G G01 beginner
+Generative AI landscape and LLM fundamentals: name a common failure to avoid.	Equating fluency with factual accuracy or assuming model knowledge is current.	G G01 beginner
+Are tokens equivalent to words?	No; a token may be part of a word, punctuation or another text unit.	G G01 beginner
+Tokens, tokenizers and context windows: name a common failure to avoid.	Counting words as tokens or truncating away required evidence and role markers.	G G01 beginner
+What does lower temperature generally do?	Concentrates probability mass on higher-scoring tokens.	G G01 intermediate
+Decoding, sampling and inference constraints: name a common failure to avoid.	Using low temperature as a correctness guarantee or confusing top-p with top-k.	G G01 intermediate
+Why pin a model revision?	To make the artifact and behavior more reproducible.	G G01 intermediate
+Hugging Face Hub, Transformers and model selection: name a common failure to avoid.	Executing untrusted remote model code or assuming all licenses permit commercial use.	G G01 intermediate
+Does one-shot prompting guarantee deterministic output?	No; decoding, infrastructure and model behavior also matter.	G G02 beginner
+Zero-shot, one-shot and few-shot prompting: name a common failure to avoid.	Example contamination, order sensitivity and assuming one-shot makes output deterministic.	G G02 beginner
+Why validate even when a provider offers structured output?	Application rules, data provenance and semantic constraints still need checking.	G G02 intermediate
+Structured output, few-shot schemas and Pydantic: name a common failure to avoid.	Accepting parseable JSON as factual truth or silently coercing invalid values.	G G02 intermediate
+Why are generated explanations insufficient as proof?	They can be plausible but inconsistent with the actual facts or computations.	G G02 intermediate
+Persona prompting, reasoning prompts and prompt injection: name a common failure to avoid.	Trusting a plausible explanation as evidence of correctness or exposing hidden reasoning or secrets.	G G02 intermediate
+Are ChatML, Alpaca and INST universal standards?	No; they are model-family conventions with variations.	G G02 intermediate
+Prompt serialization: ChatML, Alpaca and INST: name a common failure to avoid.	Manually applying the wrong template, duplicating special tokens or concatenating untrusted messages as instructions.	G G02 intermediate
+What should a prompt version record include?	Template, model configuration, schema, evaluation dataset and results.	G G02 advanced
+Prompt versioning, testing and context engineering: name a common failure to avoid.	Changing model and prompt simultaneously makes attribution difficult.	G G02 advanced
+Is a vector database itself an embedding model?	No; it stores and indexes vectors generated elsewhere.	G G03 beginner
+Embeddings, similarity and vector databases: name a common failure to avoid.	Mixing embedding models in one index or missing tenant filters.	G G03 beginner
+Why store source metadata alongside chunks?	To enforce access and provide verifiable citations and lifecycle control.	G G03 intermediate
+RAG ingestion, chunking and indexing: name a common failure to avoid.	Indexing private content without access metadata or dropping document boundaries.	G G03 intermediate
+What is the purpose of a reranker?	Improve relevance ordering among retrieved candidates.	G G03 intermediate
+RAG retrieval, reranking and answer grounding: name a common failure to avoid.	Using similarity as proof of factual support or citing sources not actually retrieved.	G G03 intermediate
+Can an answer be correct but unfaithful?	Yes; it may be correct from prior knowledge without support from retrieved evidence.	G G03 intermediate
+RAG evaluation and retrieval diagnostics: name a common failure to avoid.	Evaluating only final answer similarity can hide retrieval failure or unsupported claims.	G G03 intermediate
+How does original Self-RAG differ from a generic RAG critique loop?	It incorporates learned reflection tokens in the trained model.	G G04 advanced
+Self-reflective RAG and Self-RAG: name a common failure to avoid.	Calling any retry loop the original Self-RAG algorithm or trusting a self-grader without validation.	G G04 advanced
+What does CRAG primarily correct?	Poor or uncertain retrieved evidence before generation.	G G04 advanced
+Corrective RAG (CRAG): name a common failure to avoid.	Sending sensitive queries to unapproved search or using corrective results without provenance.	G G04 advanced
+How is answer correction different from retrieval correction?	It targets the generated claims rather than only the retrieved documents.	G G04 advanced
+Self-corrective RAG and iterative verification: name a common failure to avoid.	Infinite loops and a judge repeatedly approving its own hallucination.	G G04 advanced
+When is simple RAG preferable?	When one predictable retrieval path handles the task reliably.	G G04 advanced
+Agentic RAG and routing: name a common failure to avoid.	Unbounded tool calls, cross-tenant retrieval or unnecessary agency for simple questions.	G G04 advanced
+Who actually executes a tool call?	The application/runtime, after validation and authorization.	G G05 intermediate
+Tool calling and tool-use agent pattern: name a common failure to avoid.	Executing arbitrary model-generated code or treating tool output as trusted instructions.	G G05 intermediate
+What distinguishes ReAct from a fixed chain?	It chooses successive actions based on intermediate observations.	G G05 intermediate
+ReAct, planning and action-observation loops: name a common failure to avoid.	Infinite repeated actions, stale observations and blindly following tool text.	G G05 intermediate
+When should reflection stop?	When acceptance criteria pass, budget expires or escalation is needed.	G G05 intermediate
+Reflection and evaluator-optimizer agents: name a common failure to avoid.	Self-critique can reinforce errors and add unnecessary cost.	G G05 intermediate
+Why not use multiple agents for every task?	They introduce coordination, latency, cost and failure complexity.	G G05 advanced
+Multi-agent systems and orchestration: name a common failure to avoid.	Recursive delegation, conflicting writes and sharing unnecessary private context.	G G05 advanced
+What is the benefit of an adapter boundary?	It isolates provider/framework changes from domain logic and tests.	G G06 intermediate
+LangChain components and integration boundaries: name a common failure to avoid.	Tightly coupling business logic to provider-specific responses or using deprecated examples uncritically.	G G06 intermediate
+When is a sequential graph appropriate?	When required stages and their order are known in advance.	G G06 intermediate
+LangGraph state, nodes, edges and sequential workflow: name a common failure to avoid.	Mutating shared state unexpectedly or placing unrelated data in the graph.	G G06 intermediate
+Why are reducers needed for some parallel state fields?	They define how concurrent updates combine rather than overwrite or conflict.	G G06 intermediate
+LangGraph conditional and parallel workflows: name a common failure to avoid.	Multiple branches updating the same state key without merge semantics.	G G06 intermediate
+Why is idempotency important for resumable workflows?	Replayed steps must not repeat harmful external effects.	G G06 advanced
+LangGraph iterative workflows, checkpointing and HITL: name a common failure to avoid.	Re-executing a side effect on resume or storing secrets in checkpoint state.	G G06 advanced
+What does MCP standardize?	Interfaces for AI applications to discover and access external capabilities and context.	G G07 intermediate
+Model Context Protocol (MCP) fundamentals: name a common failure to avoid.	Equating MCP with an agent framework or trusting every discovered capability.	G G07 intermediate
+Why prefer typed tool schemas?	They communicate the input contract and enable validation.	G G07 intermediate
+FastMCP server and client development: name a common failure to avoid.	Exposing filesystem or shell tools without restrictions, or assuming SDK and standalone FastMCP APIs are interchangeable.	G G07 intermediate
+Does a tool's advertised description establish trust?	No; server identity, authorization and runtime enforcement establish trust boundaries.	G G07 advanced
+MCP security, remote deployment and interoperability: name a common failure to avoid.	Token passthrough without audience validation, prompt injection and SSRF through arbitrary URLs.	G G07 advanced
+How does episodic memory differ from semantic memory?	It represents particular experiences/events rather than general knowledge.	G G08 intermediate
+Memory taxonomy: working, factual, episodic and semantic: name a common failure to avoid.	Treating every conversation as durable memory or conflating factual and semantic categories as universally disjoint.	G G08 intermediate
+Why store timestamps and provenance?	To resolve stale/conflicting facts and support auditing and deletion.	G G08 intermediate
+Memory retrieval, summarization and vector storage: name a common failure to avoid.	Stale preferences, accidental cross-user retrieval and treating retrieved memory as instructions.	G G08 intermediate
+Does a memory library replace an application retention policy?	No; the application must enforce purpose, consent and retention requirements.	G G08 advanced
+Mem0 and persistent agent memory: name a common failure to avoid.	Using defaults without understanding external data flow, retaining sensitive data or failing to remove stale memory.	G G08 advanced
+Does async automatically speed up CPU-bound work?	No; it mainly helps overlap waiting for I/O.	G G09 intermediate
+FastAPI, Pydantic and async inference APIs: name a common failure to avoid.	Blocking an async event loop, returning secrets in exceptions or accepting unbounded requests.	G G09 intermediate
+Why include a completion event?	It helps clients distinguish a finished response from an interrupted connection.	G G09 intermediate
+Streaming responses: SSE, chunks and cancellation: name a common failure to avoid.	Assuming each chunk is valid JSON or leaking unsafe content before moderation completes.	G G09 intermediate
+Why use an LLM gateway?	Centralize access, routing, quotas, cost tracking and cross-provider integration.	G G09 intermediate
+LiteLLM gateway, routing and fallback: name a common failure to avoid.	Retrying non-idempotent side effects or switching models that do not support the required schema.	G G09 intermediate
+Why enforce permissions outside the LLM?	The model can be manipulated or mistaken; runtime authorization is authoritative.	G G09 advanced
+Guardrails, prompt injection, privacy and HITL: name a common failure to avoid.	Relying solely on an LLM judge or releasing unreviewed streamed content.	G G09 advanced
+Why randomize answer order in pairwise judging?	To detect or reduce position bias.	G G10 intermediate
+Agent evaluation, datasets and LLM-as-judge: name a common failure to avoid.	Using the same model as generator and uncalibrated sole evaluator or exposing private traces to judges.	G G10 intermediate
+Why separate offline and judge-backed tests?	Offline tests are stable and inexpensive; semantic judging is variable and may cost money.	G G10 intermediate
+DeepEval for LLM and agent regression tests: name a common failure to avoid.	Confusing metric thresholds with universal quality standards or depending on live models for all unit tests.	G G10 intermediate
+What does faithfulness aim to measure?	Whether answer claims are supported by supplied context.	G G10 intermediate
+Ragas for RAG evaluation: name a common failure to avoid.	Using an unavailable reference field or comparing metrics across changed evaluator configurations.	G G10 intermediate
+Why test prompts against a fixed fixture set?	To detect regressions when templates or providers change.	G G10 intermediate
+Promptfoo for prompt/model evaluation and red teaming: name a common failure to avoid.	Storing API keys in YAML or attacking systems without authorization.	G G10 intermediate
+What does p95 latency mean?	95% of measured requests complete at or below that duration.	G G10 advanced
+Observability, traces, evaluation gates and cost: name a common failure to avoid.	Logging secrets or using aggregate metrics that hide high-risk failures.	G G10 advanced
+What is LoRA's central idea?	Learn a low-rank weight update while keeping the base weights frozen.	G G11 intermediate
+Fine-tuning datasets, SFT and PEFT/LoRA: name a common failure to avoid.	Training on benchmark answers, poor data formatting or assuming fine-tuning adds reliable current facts.	G G11 intermediate
+What does the KV cache store?	Attention key/value states for previously processed tokens to avoid recomputation.	G G11 advanced
+QLoRA, quantization, serving and model optimization: name a common failure to avoid.	Assuming four-bit storage equals complete runtime memory or every GPU supports every kernel.	G G11 advanced
+When is RAG preferable to fine-tuning for changing facts?	When facts must be retrieved and updated independently with traceable evidence.	G G11 advanced
+Multimodal LLMs, diffusion apps and fine-tuning decisions: name a common failure to avoid.	Treating fine-tuning as a replacement for retrieval or submitting private images to unapproved providers.	G G11 advanced
+Why package preprocessing with a model?	To avoid train-serving skew.	P P01 intermediate
+Model packaging, APIs and Docker: name a common failure to avoid.	Loading untrusted pickle/joblib artifacts or training on service startup.	P P01 intermediate
+What is the difference between a run and a model version?	A run records an experiment; a version identifies a registered model artifact.	P P01 intermediate
+MLflow, data versioning and experiment tracking: name a common failure to avoid.	Storing sensitive data in experiment metadata or promoting based on training score.	P P01 intermediate
+Why gate deployment on model quality as well as code tests?	Correct software can still serve a degraded or unsafe model.	P P01 advanced
+CI/CD, continuous training and DevSecOps: name a common failure to avoid.	Automatically promoting a retrained model without comparing it to a baseline.	P P01 advanced
+Can data drift occur without concept drift?	Yes; input distribution can change while the target relationship stays stable.	P P02 advanced
+Monitoring, drift, reliability and retraining: name a common failure to avoid.	Treating every detected shift as concept drift or retraining automatically without verification.	P P02 advanced
+What should a model card communicate?	Intended use, evaluation, limitations, data considerations and known risks.	P P02 advanced
+Responsible AI, governance and security: name a common failure to avoid.	Assuming public data is always licensed for training or logging full user conversations.	P P02 advanced
+Why separate ingestion and online inference?	They have different resource, latency and scaling characteristics.	P P02 advanced
+Cloud architecture, scaling and deployment trade-offs: name a common failure to avoid.	Overprovisioning GPUs, exposing indexes publicly or scaling without measurement.	P P02 advanced

@@ -1,0 +1,1486 @@
+[
+  {
+    "lesson_id": "F01-L01",
+    "exercise_id": "F01-L01-EX01",
+    "solution_path": "solutions/F/F01-L01.md",
+    "worked_approach": "Run `uv venv --python 3.11`, then `uv pip install --python .venv/bin/python numpy ipykernel` (Windows: `.venv\\Scripts\\python.exe`). Register the kernel with `python -m ipykernel install --user --name ai-lab` using the environment interpreter. In the first cell print `sys.executable` and `np.__version__`; restart and run all cells. Record the package versions with `uv pip freeze` targeting the same environment.",
+    "failure_analysis": "A notebook succeeds only after running cell 9 first. Move definitions before use, restart, then run all; check executable rather than blindly reinstalling.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F01-L02",
+    "exercise_id": "F01-L02-EX01",
+    "solution_path": "solutions/F/F01-L02.md",
+    "worked_approach": "Define `def count(rows):` and create `out = {}` inside it. For each row use `key = row.get('label') or 'unknown'`, then `out[key] = out.get(key, 0) + 1`. Return out. For `[{'label':'a'}, {}, {'label':'a'}]` expect `{'a':2,'unknown':1}`; empty input returns `{}`. If numeric or empty labels are legitimate, use an explicit None check instead.",
+    "failure_analysis": "A default argument `out={}` accumulates previous calls. Move initialization into the function; call twice and verify independent results.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F01-L03",
+    "exercise_id": "F01-L03-EX01",
+    "solution_path": "solutions/F/F01-L03.md",
+    "worked_approach": "Use `X=np.array([[1,2,7],[3,4,7],[5,6,7]],float)`. Compute `mu=X.mean(0); s=X.std(0); z=(X-mu)/np.where(s==0,1,s)`. Assert z.shape==(3,3), first two column means are zero and stds one, last column all zero. Reuse mu and s on future data.",
+    "failure_analysis": "A zero variance feature produces NaN; using axis=1 instead of axis=0 normalizes samples, not features. Verify shape and axis explicitly.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F01-L04",
+    "exercise_id": "F01-L04-EX01",
+    "solution_path": "solutions/F/F01-L04.md",
+    "worked_approach": "Create a table with ids [1,2,2], labels [0,1,1] and one missing numeric value. Use `df.isna().sum()`, `df.duplicated('id',keep=False)`, `df.label.value_counts(dropna=False,normalize=True)`. Inspect key counts on both tables; use `merge(...,validate='many_to_one')` when the right side is unique. Log before/after rows and investigate any unexpected multiplication.",
+    "failure_analysis": "A many-to-many merge doubles positive cases and inflates apparent performance. Assert expected cardinality and audit duplicated keys before training.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F01-L05",
+    "exercise_id": "F01-L05-EX01",
+    "solution_path": "solutions/F/F01-L05.md",
+    "worked_approach": "Implement `scale(x,lo,hi)` with an explicit error for hi<=lo. Assert endpoints map to 0 and 1, midpoint maps to .5, invalid range raises ValueError. Run `python -m unittest` or pytest; record interpreter, seed, data hash and Git commit. Add `.env` and generated artifacts to ignore rules; scan staged files.",
+    "failure_analysis": "A test passes alone but fails in the suite due to mutable global state. Create fixtures per test and remove shared mutation; rotate any credential accidentally committed.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F02-L01",
+    "exercise_id": "F02-L01-EX01",
+    "solution_path": "solutions/F/F02-L01.md",
+    "worked_approach": "For X=[[1,2],[3,4]], w=[2,-1], b=0.5, compute row scores 0.5 and 2.5 by hand. Verify `np.array(X) @ np.array(w)+.5`, assert shape (2,) and values. Interpret positive weights as increasing score conditional on other features.",
+    "failure_analysis": "Elementwise X*w returns a matrix, not scores. Sum along feature axis or use @, and check dimensions.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F02-L02",
+    "exercise_id": "F02-L02-EX01",
+    "solution_path": "solutions/F/F02-L02.md",
+    "worked_approach": "Use `X=np.diag([4.,2.,1.]); u,s,vt=np.linalg.svd(X,full_matrices=False)`. For k=1,2 reconstruct `(u[:,:k]*s[:k])@vt[:k]`; compute `np.linalg.norm(X-Xk)`. Expected errors √5 and 1. Compare singular energy retained (16/21 and 20/21).",
+    "failure_analysis": "Applying PCA to uncentered data measures variation around the origin; center using train statistics when variance around the mean is the goal.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F02-L03",
+    "exercise_id": "F02-L03-EX01",
+    "solution_path": "solutions/F/F02-L03.md",
+    "worked_approach": "Among 10,000 cases expect 100 positives of which 90 test positive; 9,900 negatives yield 495 false positives. Posterior 90/(90+495)=0.153846. Verify with a probability expression and repeat for 10% prevalence to see the base-rate effect.",
+    "failure_analysis": "Confusing sensitivity with positive predictive value gives 90%. Draw a frequency table and compute the denominator across both classes.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F02-L04",
+    "exercise_id": "F02-L04-EX01",
+    "solution_path": "solutions/F/F02-L04.md",
+    "worked_approach": "Generate n=20 and n=200 standard normal samples with `default_rng(7)`. For each use 2000 resamples via `rng.choice(x,(2000,n),replace=True).mean(1)` and percentiles [2.5,97.5]. Report interval widths, repeat across seeds, and compare with theoretical standard error. Use block bootstrap for serial dependence.",
+    "failure_analysis": "Resampling individual time points breaks autocorrelation; use appropriate blocks or model-based intervals, and distinguish sample size from resample count.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F02-L05",
+    "exercise_id": "F02-L05-EX01",
+    "solution_path": "solutions/F/F02-L05.md",
+    "worked_approach": "Start x=3, iterate 12 times at η=.1,.9,1.1 and record x². Multipliers .8, −.8, −1.2 respectively: first converges monotonically in x, second changes sign while loss decreases, third grows. Plot loss on a log scale; handle zero carefully.",
+    "failure_analysis": "Looking only at loss hides sign oscillation. Plot parameters and loss together and check gradient magnitude.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "F02-L06",
+    "exercise_id": "F02-L06-EX01",
+    "solution_path": "solutions/F/F02-L06.md",
+    "worked_approach": "For p=.9 and .1, loss ≈.10536 and 2.30259. Use `-np.log(np.clip(p,1e-12,1))` as a teaching approximation; for logits use framework cross-entropy directly. Verify softmax([1000,1001]) after subtracting max is approximately [.269,.731].",
+    "failure_analysis": "Exponentiating large logits returns inf; avoid probabilities rounded to zero and use logits-based losses where possible.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M01-L01",
+    "exercise_id": "M01-L01-EX01",
+    "solution_path": "solutions/M/M01-L01.md",
+    "worked_approach": "Define next-7-day SKU demand from data available at cutoff midnight. Use prior same-weekday demand or trailing seasonal average as baseline. Train on older periods, validate on later periods, hold out latest period. Report MAE and shortage/overstock cost separately, noting unknown future promotions cannot be features.",
+    "failure_analysis": "A feature contains actual future inventory adjustment. Remove it or use only the planned value available at prediction time.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M01-L02",
+    "exercise_id": "M01-L02-EX01",
+    "solution_path": "solutions/M/M01-L02.md",
+    "worked_approach": "For repeated customers use GroupShuffleSplit or GroupKFold with customer ID; assert disjoint customer sets. For demand sort by timestamp, assign first 70% train, next 15% validation, last 15% test; add gap if labels overlap horizons. Fit transforms on train only and retain split manifests.",
+    "failure_analysis": "Duplicate rows appear across splits; group by source entity or deduplicate before split, and audit timestamp ranges.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M01-L03",
+    "exercise_id": "M01-L03-EX01",
+    "solution_path": "solutions/M/M01-L03.md",
+    "worked_approach": "Create numeric SimpleImputer(strategy='median') plus StandardScaler; categorical SimpleImputer(strategy='most_frequent') plus OneHotEncoder(handle_unknown='ignore'). Combine via ColumnTransformer, then LogisticRegression. Fit a training DataFrame with numeric and category columns; predict a row with NaN and unseen 'new'. Check output shape and input schema.",
+    "failure_analysis": "Fitting the encoder before split leaks category information; put it inside the pipeline passed to cross-validation.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M02-L01",
+    "exercise_id": "M02-L01-EX01",
+    "solution_path": "solutions/M/M02-L01.md",
+    "worked_approach": "Generate x uniform [-1,1], y=1+2x−x²+noise. Split before fitting. For degrees 1,3,10 use PolynomialFeatures(include_bias=False), scaling and linear regression or ridge. Record train and validation RMSE, choose smallest validation error and assess test once; degree 3 should often suffice but results vary.",
+    "failure_analysis": "Selecting degree 10 from training error encourages overfit; plot validation error and investigate extrapolation outside training range.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M02-L02",
+    "exercise_id": "M02-L02-EX01",
+    "solution_path": "solutions/M/M02-L02.md",
+    "worked_approach": "Fit a pipeline on train; obtain validation probabilities. For thresholds .2,.4,.6,.8 compute precision, recall and count selected. If reviewers can handle K cases, sort by score and select top K or choose a threshold that satisfies capacity. Freeze selection then evaluate holdout.",
+    "failure_analysis": "Using .5 regardless of imbalance/cost may exceed budget or miss positives. Calibrate scores and pick threshold on validation, not test.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M02-L03",
+    "exercise_id": "M02-L03-EX01",
+    "solution_path": "solutions/M/M02-L03.md",
+    "worked_approach": "Use the same stratified five folds for scaled KNeighborsClassifier, GaussianNB and scaled SVC. Use cross_validate with scoring='balanced_accuracy', return_train_score=True. Record mean, spread, fit_time and inference constraints. Keep each estimator's preprocessing within its pipeline.",
+    "failure_analysis": "Distance model dominated by an unscaled income feature; inspect scaled distributions and use same folds for fair comparison.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M02-L04",
+    "exercise_id": "M02-L04-EX01",
+    "solution_path": "solutions/M/M02-L04.md",
+    "worked_approach": "Compare max_depth [2,5,None] for DecisionTreeClassifier and RandomForestClassifier with n_estimators [20,100], same split and seed. Record train/validation accuracy, gap and runtime. Prefer stable validation performance; optionally use repeated folds.",
+    "failure_analysis": "Training accuracy reaches 1.0 but validation declines; reduce depth, min_samples_leaf or use a forest and verify on unseen data.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M02-L05",
+    "exercise_id": "M02-L05-EX01",
+    "solution_path": "solutions/M/M02-L05.md",
+    "worked_approach": "Fit HistGradientBoostingClassifier on the same train data as an optional external booster. Choose max_iter or n_estimators via validation/early stopping using that package's documented interface. Report score, elapsed time and selected iteration. If package absent, record skipped, not equivalence.",
+    "failure_analysis": "Using test as early-stopping eval_set leaks labels. Use validation; preserve a final test and exact package version.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M02-L06",
+    "exercise_id": "M02-L06-EX01",
+    "solution_path": "solutions/M/M02-L06.md",
+    "worked_approach": "Use pipeline StandardScaler and Ridge with alpha [.001,.1,10,100]. Plot mean train and validation error over sample fractions via learning_curve, choose alpha using validation. High errors on both suggest bias; low train/high validation suggests variance. Repeat folds to avoid overinterpreting noise.",
+    "failure_analysis": "Feature selection performed using all labels leaks information; put SelectKBest inside pipeline and rerun cross-validation.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M03-L01",
+    "exercise_id": "M03-L01-EX01",
+    "solution_path": "solutions/M/M03-L01.md",
+    "worked_approach": "For TP=30, FP=20, FN=10, TN=940, precision=.6, recall=.75, F1=.667. For fraud use precision at review capacity plus recall; for demand MAE and asymmetric cost; for search NDCG@k when graded relevance matters. Report per-region or segment denominators.",
+    "failure_analysis": "Accuracy .97 masks rare-event errors; inspect confusion counts and business capacity rather than reporting accuracy alone.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M03-L02",
+    "exercise_id": "M03-L02-EX01",
+    "solution_path": "solutions/M/M03-L02.md",
+    "worked_approach": "Split a final test, then RandomizedSearchCV over a pipeline with n_iter=10, stratified 5-fold CV, fixed seed and scoring. Record candidate means/stds, selected params, refit on development data, score test once. For groups pass groups to group-aware CV.",
+    "failure_analysis": "Search iterations increase after seeing test performance. Retire that test as selection data and obtain a fresh holdout.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M03-L03",
+    "exercise_id": "M03-L03-EX01",
+    "solution_path": "solutions/M/M03-L03.md",
+    "worked_approach": "Fit imbalanced classifier with class_weight as an option. On natural-prevalence validation compare average precision, Brier score and reliability bins with counts; use CalibratedClassifierCV on development folds if needed. Select operating threshold on separate validation and evaluate natural-prevalence test.",
+    "failure_analysis": "Oversampling before split duplicates positives into holdout; resample inside training only and do not change test prevalence.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M03-L04",
+    "exercise_id": "M03-L04-EX01",
+    "solution_path": "solutions/M/M03-L04.md",
+    "worked_approach": "Group predictions by relevant audited segment, compute support, false-negative rate and precision with denominator guards; mark small n as uncertain. Inspect error examples and feature provenance, then test one mitigation on validation. Document trade-offs and privacy constraints.",
+    "failure_analysis": "A subgroup with two examples has 100% error; report support and intervals, avoid broad claims or targeting based on unstable estimates.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M04-L01",
+    "exercise_id": "M04-L01-EX01",
+    "solution_path": "solutions/M/M04-L01.md",
+    "worked_approach": "Generate blobs and moons; scale features. Run KMeans(n_clusters=2), AgglomerativeClustering and DBSCAN with several eps values. Plot labels and compute silhouette when at least two nontrivial clusters exist; treat noise separately and report coverage. Compare geometry, not just score.",
+    "failure_analysis": "Treating DBSCAN noise as an ordinary cluster distorts silhouette. Report noise rate and explain score calculation.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M04-L02",
+    "exercise_id": "M04-L02-EX01",
+    "solution_path": "solutions/M/M04-L02.md",
+    "worked_approach": "Scale digits features; fit PCA and report cumulative explained variance for first components. Run t-SNE with two seeds and perplexities below sample size; optionally UMAP with fixed seed. Compare nearest-neighbor preservation and plots, and record parameters.",
+    "failure_analysis": "Interpreting distances between t-SNE islands as real distances is unjustified; check original-space neighbors and repeat seeds.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M04-L03",
+    "exercise_id": "M04-L03-EX01",
+    "solution_path": "solutions/M/M04-L03.md",
+    "worked_approach": "Fit IsolationForest on reference data, compute anomaly scores on labeled future data, rank most anomalous, select top daily K. Calculate precision@K and recall, repeat under a shifted baseline. Record legitimate seasonal shifts as false alarms.",
+    "failure_analysis": "Training on contaminated data or reversing score sign hides real anomalies. Inspect score direction and review labeled examples.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M05-L01",
+    "exercise_id": "M05-L01-EX01",
+    "solution_path": "solutions/M/M05-L01.md",
+    "worked_approach": "Generate or load daily series; pick 3 cutoffs separated by horizon h=7. At each use only data through cutoff, predict next 7 using seasonal naive and a candidate such as moving average. Compute per-window MAE and mean, retaining all origins. Verify indices strictly follow train.",
+    "failure_analysis": "Random split permits future leakage; use ordered windows and avoid centered rolling features.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M05-L02",
+    "exercise_id": "M05-L02-EX01",
+    "solution_path": "solutions/M/M05-L02.md",
+    "worked_approach": "Construct implicit interaction table with user,item,time. Hold each eligible user's latest interaction out. Compute popularity from train, compare nearest-neighbor/co-occurrence scores excluding seen items. Recall@k = relevant retrieved / relevant held out, separately for warm and cold items; record unsupported cases.",
+    "failure_analysis": "Including held-out interactions in similarity matrix leaks targets. Rebuild every feature from training interactions.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "M05-L03",
+    "exercise_id": "M05-L03-EX01",
+    "solution_path": "solutions/M/M05-L03.md",
+    "worked_approach": "For recommendation experiment randomize by user, measure 14-day conversion per assigned user (intention to treat), guardrails latency and complaints. Set minimum detectable effect, compute sample-size plan, define missing-event handling and fixed stopping rule. Check balance and spillover risks.",
+    "failure_analysis": "Randomizing sessions when users see both experiences contaminates effects. Randomize by stable user or cluster, document interference.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D01-L01",
+    "exercise_id": "D01-L01-EX01",
+    "solution_path": "solutions/D/D01-L01.md",
+    "worked_approach": "Use `x=torch.tensor([1.,2.,3.],requires_grad=True); loss=(x*x).sum(); loss.backward()`. Expect grad [2,4,6]. Compare `torch.allclose(x.grad,2*x.detach())`. Clear x.grad before another backward pass and rebuild the graph.",
+    "failure_analysis": "Calling `.detach()` or converting to NumPy before loss disconnects the gradient; inspect requires_grad and grad_fn.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D01-L02",
+    "exercise_id": "D01-L02-EX01",
+    "solution_path": "solutions/D/D01-L02.md",
+    "worked_approach": "Use four XOR points and binary targets, train Linear(2,1) vs Sequential(Linear(2,8),Tanh(),Linear(8,1)) using BCEWithLogitsLoss and a fixed seed. Evaluate sigmoid > .5 on all four; MLP can reach 4/4, linear cannot. Try multiple seeds and log convergence.",
+    "failure_analysis": "Applying sigmoid before BCEWithLogitsLoss applies sigmoid twice. Feed raw logits and threshold only for evaluation.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D01-L03",
+    "exercise_id": "D01-L03-EX01",
+    "solution_path": "solutions/D/D01-L03.md",
+    "worked_approach": "Let w=2,b=1,x=3,y=4: ŷ=7, loss=9, gradients 18 and 6. Create scalar torch weights with requires_grad, compute loss, backward and compare. For batched mean loss divide summed per-example gradients by n.",
+    "failure_analysis": "Mistaking sum for mean loss changes effective step scale with batch size. Match reduction in manual derivation.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D01-L04",
+    "exercise_id": "D01-L04-EX01",
+    "solution_path": "solutions/D/D01-L04.md",
+    "worked_approach": "Use one fixed train/validation split and clone initial weights for runs at lr=[.001,.01,.1]. Train same epochs, log train/validation loss and nonfinite gradients. Choose best stable validation score; optionally try warmup or decay. Reset optimizer state for each run.",
+    "failure_analysis": "Reusing optimizer moments across trials invalidates comparison; initialize weights and optimizer consistently.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D02-L01",
+    "exercise_id": "D02-L01-EX01",
+    "solution_path": "solutions/D/D02-L01.md",
+    "worked_approach": "Build TensorDataset and DataLoader with 11 samples, batch 4. In train_epoch call zero_grad, forward, loss.backward, step; add loss.item()*len(y). Evaluate similarly without step under no_grad. Divide total by samples. Snapshot parameters before/after evaluate and assert equal.",
+    "failure_analysis": "Averaging three batch means equally weights the final three examples too much; sum weighted losses and divide by count.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D02-L02",
+    "exercise_id": "D02-L02-EX01",
+    "solution_path": "solutions/D/D02-L02.md",
+    "worked_approach": "Train baseline, dropout and weight-decay variants using same data/seed. Each epoch track validation loss, deep-copy best state_dict, stop after e.g. five non-improving epochs. Restore best state, switch eval and evaluate test once. Compare gaps and runtime.",
+    "failure_analysis": "Saving `best=model.state_dict()` without copying may retain references to changing tensors; deepcopy or serialize checkpoint immediately.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D02-L03",
+    "exercise_id": "D02-L03-EX01",
+    "solution_path": "solutions/D/D02-L03.md",
+    "worked_approach": "On CPU estimate 10M fp32 parameters as 40 MB weights, another 40 MB gradients, roughly 80 MB Adam moments, excluding activations. If compatible GPU exists, compare autocast vs fp32 at same batch and synchronized timing, check finite gradients and validation loss. Report actual peak memory and hardware.",
+    "failure_analysis": "Comparing asynchronous GPU timings without synchronization misreports throughput; warm up and synchronize around measurements.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D03-L01",
+    "exercise_id": "D03-L01-EX01",
+    "solution_path": "solutions/D/D03-L01.md",
+    "worked_approach": "Input N×3×32×32, Conv2d(3,8,3,padding=1) yields N×8×32×32; MaxPool2d(2) yields 16×16; second conv 8→16 kernel3 stride2 padding1 gives 8×8. Run torch layers, assert each shape, flatten 16*8*8 before linear head.",
+    "failure_analysis": "Flatten size mismatch occurs when stride/padding changes. Print intermediate shapes or infer feature dimension with a dummy pass.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D03-L02",
+    "exercise_id": "D03-L02-EX01",
+    "solution_path": "solutions/D/D03-L02.md",
+    "worked_approach": "Generate independent sequences of length 8 with target sign of sum or next value. Train GRU(batch_first=True), linear head on final valid state; compare mean/last-value naive baseline on unseen sequences. Record accuracy/MAE and inspect long sequences and noise.",
+    "failure_analysis": "Using padded last timestep instead of true sequence end corrupts representation; gather last valid state or pack sequences.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D03-L03",
+    "exercise_id": "D03-L03-EX01",
+    "solution_path": "solutions/D/D03-L03.md",
+    "worked_approach": "Use torch random Q,K,V (1,4,8), scores=Q@K.transpose(-2,-1)/sqrt(8), mask upper triangle above diagonal, softmax then @V. Change final token K,V and confirm first three outputs unchanged. Also test all valid rows have sum 1.",
+    "failure_analysis": "Applying mask after softmax leaves incorrect normalization; mask scores before softmax, avoid fully masked rows or define safe handling.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D03-L04",
+    "exercise_id": "D03-L04-EX01",
+    "solution_path": "solutions/D/D03-L04.md",
+    "worked_approach": "Draw encoder input→bidirectional self-attention→representations (classification/MLM); decoder tokens→causal self-attention→next-token logits; encoder-decoder source→encoder, target prefix→causal decoder with cross-attention→target logits. Label allowed attention directions and compare translation vs completion.",
+    "failure_analysis": "Allowing target positions to attend to future target tokens during training creates leakage; use causal target mask.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D04-L01",
+    "exercise_id": "D04-L01-EX01",
+    "solution_path": "solutions/D/D04-L01.md",
+    "worked_approach": "Choose small dataset, split first. Fit classifier on frozen backbone embeddings; then unfreeze last block with smaller lr, train same budget. Count sum(p.numel() for p in model.parameters() if p.requires_grad); compare validation metric and test once after selection. Record model revision.",
+    "failure_analysis": "Frozen parameters do not guarantee batch-norm running stats stay fixed; set frozen modules to eval if required.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D04-L02",
+    "exercise_id": "D04-L02-EX01",
+    "solution_path": "solutions/D/D04-L02.md",
+    "worked_approach": "Train simple autoencoder on normal synthetic vectors; score reconstruction MSE on normal vs shifted holdout and inspect cases. For VAE calculate z=mu+exp(.5*logvar)*eps and KL=−.5 sum(1+logvar−mu²−exp(logvar)); explain how sampling differs. GAN comparison is conceptual unless trained.",
+    "failure_analysis": "Good reconstruction does not ensure useful generation or anomaly detection; validate shift cases and avoid interpreting reconstruction score as calibrated probability.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D04-L03",
+    "exercise_id": "D04-L03-EX01",
+    "solution_path": "solutions/D/D04-L03.md",
+    "worked_approach": "Choose x0 and fixed epsilon, beta schedule from .001 to .02, alpha_bar=cumprod(1-beta). Visualize x_t at selected indices, compute clean-signal and noise amplitudes; use oracle epsilon to reconstruct x0 and a perturbed epsilon to compare error. Explain that oracle is not a trained denoiser.",
+    "failure_analysis": "Confusing α_t and cumulative ᾱ_t mis-scales noise; check endpoints and use scheduler-consistent prediction parameterization.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "D04-L04",
+    "exercise_id": "D04-L04-EX01",
+    "solution_path": "solutions/D/D04-L04.md",
+    "worked_approach": "Simulate Bernoulli arms p=.3,.7 over 1000 trials; epsilon-greedy selects random arm with probability .1 else largest empirical mean; update counts and means. Compare epsilon=0,.1,.5 across seeds, regret sum(.7−p[action]). Report means/spread. Relate only conceptually to LLM preferences.",
+    "failure_analysis": "Evaluating one seed can reward lucky initialization; average across seeds and distinguish observed reward from expected regret.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C01-L01",
+    "exercise_id": "C01-L01-EX01",
+    "solution_path": "solutions/C/C01-L01.md",
+    "worked_approach": "Create uint8 array (8,8,3), set BGR pixel [0,0,255] red; cv2.cvtColor(...,COLOR_BGR2RGB) yields [255,0,0]. Convert HSV and inspect hue near 0 with high saturation/value. Assert shape/dtype and label channel order.",
+    "failure_analysis": "Displaying BGR as RGB swaps red and blue. Convert at library boundaries and document normalization ranges.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C01-L02",
+    "exercise_id": "C01-L02-EX01",
+    "solution_path": "solutions/C/C01-L02.md",
+    "worked_approach": "Construct 64×64 binary mask with 20×20 square and isolated pixels. Apply cv2.morphologyEx with 3×3 and 7×7 kernels, compare foreground counts and IoU with clean square. Pick smallest kernel removing noise without damaging shape.",
+    "failure_analysis": "Large erosion removes thin defects; evaluate object retention and noise reduction against annotated examples.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C01-L03",
+    "exercise_id": "C01-L03-EX01",
+    "solution_path": "solutions/C/C01-L03.md",
+    "worked_approach": "Define four source corners and destination quadrilateral; getPerspectiveTransform then perspectiveTransform and calculate mean pixel error on four known correspondences. Add more noisy correspondences and use findHomography(...,RANSAC); report inlier count and error on held-out points if available.",
+    "failure_analysis": "A homography fitted to four points exactly may be wrong for nonplanar scenes; inspect additional correspondences and camera geometry.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C02-L01",
+    "exercise_id": "C02-L01-EX01",
+    "solution_path": "solutions/C/C02-L01.md",
+    "worked_approach": "Build manifest image_id,class,source_group,split. Count by class, hash exact duplicates, group split by camera/object, inspect annotations visually. For training flips update x coordinates (x_min'=W−x_max for half-open boxes); validation resize/normalize deterministically. Assert no group overlap.",
+    "failure_analysis": "Applying random augmentation to validation changes reported metric across runs; use deterministic transforms and preserve labels.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C02-L02",
+    "exercise_id": "C02-L02-EX01",
+    "solution_path": "solutions/C/C02-L02.md",
+    "worked_approach": "Use fixed train/val/test image split. Train small CNN and pretrained backbone head with documented normalization; if weights unavailable, mark pretrained run pending. Report validation macro F1, class confusion, warmed batch-1 latency and parameter count; choose candidate before test.",
+    "failure_analysis": "Using pretrained model with wrong channel order or normalization silently hurts accuracy; follow model card and verify sample inputs.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C03-L01",
+    "exercise_id": "C03-L01-EX01",
+    "solution_path": "solutions/C/C03-L01.md",
+    "worked_approach": "For boxes [0,0,2,2] and [1,1,3,3], intersection=1, union=7, IoU=1/7. Implement max/min overlap with zero guards, sort descending score and suppress same-class boxes with IoU>threshold. Test identical, disjoint and different-class boxes.",
+    "failure_analysis": "Class-agnostic NMS removes overlapping different objects. Use class-aware suppression unless task explicitly needs otherwise.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C03-L02",
+    "exercise_id": "C03-L02-EX01",
+    "solution_path": "solutions/C/C03-L02.md",
+    "worked_approach": "Create small labeled dataset with train/validation split by scene. Convert boxes to detector format and visualize conversions. Fine-tune available model using documented recipe, evaluate AP at stated IoU, latency and failure slices (small/occluded objects). If weights unavailable, deliver dataset audit and test format only.",
+    "failure_analysis": "Mixing normalized center-width-height with pixel corners corrupts training. Round-trip transform annotations and plot on image.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C03-L03",
+    "exercise_id": "C03-L03-EX01",
+    "solution_path": "solutions/C/C03-L03.md",
+    "worked_approach": "Use truth mask with 4 positives, predicted with 3, overlap 2: union=5, IoU=.4, Dice=4/7. Build binary and multiclass examples, report per-class metrics and macro average; choose empty-empty as ignored or 1 and document. Draw two touching objects to illustrate instance vs semantic.",
+    "failure_analysis": "Pixel accuracy can be high on mostly background images; report class-specific overlap and object-level failure cases.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C03-L04",
+    "exercise_id": "C03-L04-EX01",
+    "solution_path": "solutions/C/C03-L04.md",
+    "worked_approach": "Use small image/mask set, train U-Net baseline if compute available, compare with prompted masks from an available SAM checkpoint and instance masks from Mask R-CNN when labels support them. Fix prompt policy, evaluate IoU/Dice, latency and missed small objects. Record revision/weights or pending.",
+    "failure_analysis": "Comparing SAM with ground-truth box prompts to fully automatic U-Net is not equivalent; disclose prompt information and report separate tracks.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C04-L01",
+    "exercise_id": "C04-L01-EX01",
+    "solution_path": "solutions/C/C04-L01.md",
+    "worked_approach": "Generate frames with a moving square; compute centroid displacement and optional Farneback flow, then associate detections by nearest predicted center with distance gate. Test occlusion and reappearance; count ID switches and missed tracks. Real videos require annotated identities for quantitative evaluation.",
+    "failure_analysis": "Nearest-neighbor association swaps IDs at crossings; add motion prediction/appearance and evaluate on crossing cases.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C04-L02",
+    "exercise_id": "C04-L02-EX01",
+    "solution_path": "solutions/C/C04-L02.md",
+    "worked_approach": "Compare two candidate text templates per class on fixed images using a compatible pretrained CLIP model; normalize embeddings, compute cosine similarity, choose highest score. Record prompts, revision, class set, per-class results; if unavailable, use toy normalized vectors only as mechanics demo.",
+    "failure_analysis": "Choosing prompts after seeing test labels overfits benchmark. Tune on development images and freeze templates.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "C04-L03",
+    "exercise_id": "C04-L03-EX01",
+    "solution_path": "solutions/C/C04-L03.md",
+    "worked_approach": "Choose sample document with known transcription; record recognized lines and boxes, compute character error rate via edit distance/reference length. For model export test identical input through original and ONNX runtime with tolerance and timing. For 3D, document camera intrinsics/depth units; unavailable integrations stay pending.",
+    "failure_analysis": "Comparing normalized vs original-size boxes breaks source citations; retain page coordinates and transformation metadata.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G01-L01",
+    "exercise_id": "G01-L01-EX01",
+    "solution_path": "solutions/G/G01-L01.md",
+    "worked_approach": "Compare three tasks: compute tax from explicit rates using normal code; classify ambiguous support messages using supervised or prompted model; answer policy questions with retrieval plus citations. For each define input, output contract, baseline, error cost and abstention path. Benchmark on held-out examples rather than assuming generative capability implies correctness.",
+    "failure_analysis": "Using a free-form model for arithmetic or authorization introduces avoidable errors; delegate deterministic decisions to verified functions.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G01-L02",
+    "exercise_id": "G01-L02-EX01",
+    "solution_path": "solutions/G/G01-L02.md",
+    "worked_approach": "Load AutoTokenizer for a reviewed local model revision, tokenize three texts including code and non-English text. Use apply_chat_template(...,tokenize=True,add_generation_prompt=True) to count complete input; reject if input_tokens+reserved_output>model_limit. Test exact-boundary and over-budget cases; drop lowest-priority chunks rather than silently losing system constraints.",
+    "failure_analysis": "Counting words underestimates chat overhead; measure rendered messages with actual tokenizer and check provider context limit separately.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G01-L03",
+    "exercise_id": "G01-L03-EX01",
+    "solution_path": "solutions/G/G01-L03.md",
+    "worked_approach": "Use one fixed prompt and model revision, generate five times at greedy and sampled configurations (e.g. temperature .7/top_p .9), log seeds if supported. Parse outputs with a schema and compare exact match, semantic correctness and diversity. Treat deterministic settings as separate from one-shot examples.",
+    "failure_analysis": "A consistently wrong answer looks reproducible; evaluate correctness and schema compliance, not just identical outputs.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G01-L04",
+    "exercise_id": "G01-L04-EX01",
+    "solution_path": "solutions/G/G01-L04.md",
+    "worked_approach": "Create table for three candidate models with exact repository, revision hash, license, context, size/precision, benchmark fit, safety limits and hardware. Verify each card and run a fixed task sample if weights are available. Decline unknown licenses or unreviewed remote code; record blocked models and justification.",
+    "failure_analysis": "Comparing advertised benchmarks across different datasets or prompts misleads. Run the same local evaluation and disclose revision and hardware.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G02-L01",
+    "exercise_id": "G02-L01-EX01",
+    "solution_path": "solutions/G/G02-L01.md",
+    "worked_approach": "Build 20 labeled development/test texts with balanced categories, select examples only from development. Compare zero, one and three examples at same model/decoding settings. Parse output labels, count accuracy, invalid labels and per-class errors; run examples in alternate order and keep final test untouched until choices are frozen.",
+    "failure_analysis": "An example copies test content or contains incorrect labels, inflating performance or teaching wrong patterns. Audit overlap and label quality.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G02-L02",
+    "exercise_id": "G02-L02-EX01",
+    "solution_path": "solutions/G/G02-L02.md",
+    "worked_approach": "Define BaseModel with ConfigDict(extra='forbid',strict=True), label Literal['billing','technical'], confidence float constrained ge=0/le=1. Use model_validate_json and catch ValidationError. Test valid JSON, missing label, extra field, string confidence and out-of-range value; cap retries and return controlled error.",
+    "failure_analysis": "Valid JSON can have invented evidence or unsupported confidence. Add business checks and source verification after schema validation.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G02-L03",
+    "exercise_id": "G02-L03-EX01",
+    "solution_path": "solutions/G/G02-L03.md",
+    "worked_approach": "Compare neutral and domain-persona prompts on same labeled questions, scoring accuracy and format. Add inputs containing instruction-like text, delimit data, enforce allowed actions outside model and test output. Require short answer justification or externally computed results; do not require private reasoning traces.",
+    "failure_analysis": "A persona says it may ignore access policy; enforce permission in application code, not a prompt claim.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G02-L04",
+    "exercise_id": "G02-L04-EX01",
+    "solution_path": "solutions/G/G02-L04.md",
+    "worked_approach": "Use two actual reviewed chat tokenizers with pinned revisions. Render a system/user/assistant sequence using apply_chat_template; inspect escaped text and IDs and add_generation_prompt behavior. If a role unsupported, handle according to card rather than invent markers. For conceptual comparison show `<&#124;im_start&#124;>user`, `### Instruction:` and `[INST]` as illustrative markers only.",
+    "failure_analysis": "Manually concatenating a generic INST prompt for an incompatible model yields malformed role boundaries. Use its provided chat template and test round trip.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G02-L05",
+    "exercise_id": "G02-L05-EX01",
+    "solution_path": "solutions/G/G02-L05.md",
+    "worked_approach": "Store prompt_id, version, sha256(template), model revision, temperature, schema version and dataset hash. Compare baseline vs new prompt changing one variable; score accuracy, format failures, token counts, latency and cost. Promote only if gate passes; keep old version and rollback metadata.",
+    "failure_analysis": "Changing model and prompt simultaneously makes attribution impossible; isolate changes and repeat stochastic runs.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G03-L01",
+    "exercise_id": "G03-L01-EX01",
+    "solution_path": "solutions/G/G03-L01.md",
+    "worked_approach": "Use three vectors [1,0],[0,1],[1,1] with query [1,0]; normalized similarities 1,0,~.707. Rank using numpy; test zero vector handling. Compare vector backend top-k to exact search on same corpus with tenant filters; record recall, latency and index revision.",
+    "failure_analysis": "Mixing embeddings from different model revisions or returning results before applying tenant filter yields wrong or unauthorized evidence.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G03-L02",
+    "exercise_id": "G03-L02-EX01",
+    "solution_path": "solutions/G/G03-L02.md",
+    "worked_approach": "Split text into fixed windows (e.g. 100 words, overlap 20) with start/end offsets and sha256(doc_id,version,span,text). Index version 1, replace with version 2 transactionally, delete prior IDs and assert search excludes them. Preserve source location and access policy for each chunk.",
+    "failure_analysis": "Appending revised chunks without deleting stale records creates conflicting evidence. Implement version-aware upsert and tombstone/cleanup.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G03-L03",
+    "exercise_id": "G03-L03-EX01",
+    "solution_path": "solutions/G/G03-L03.md",
+    "worked_approach": "Create labeled queries with exact SKU and paraphrase cases; retrieve dense and lexical candidates, fuse with sum 1/(60+rank), optionally rerank. Compare recall@k and inspect evidence. Generate an answer using only allowed IDs, validate every citation against retrieval and manually check claim support.",
+    "failure_analysis": "A valid citation ID does not imply the cited text supports the claim. Evaluate entailment/faithfulness separately and show source snippets.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G03-L04",
+    "exercise_id": "G03-L04-EX01",
+    "solution_path": "solutions/G/G03-L04.md",
+    "worked_approach": "Build 10 answerable queries with gold evidence IDs and 5 unanswerable cases. For each record retrieved IDs, recall@k, answer, citations and grounded/abstained labels. Compute answerable accuracy and unanswerable abstention separately; inspect errors by chunking, retrieval, reranking or generation stage.",
+    "failure_analysis": "A single average conceals no-answer failures; stratify by answerability and report denominators and per-query traces.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G04-L01",
+    "exercise_id": "G04-L01-EX01",
+    "solution_path": "solutions/G/G04-L01.md",
+    "worked_approach": "Implement retrieve→generate→grade. Mock grader verifies cited IDs and expected fact, returns pass/fail. On failure rewrite query or retrieve alternate evidence, max 3 attempts then abstain. Test false accept (valid ID but unsupported statement), and log evidence, grade and stop reason on every step.",
+    "failure_analysis": "Letting a model approve its own unsupported answer can reinforce hallucination. Use gold examples and external evidence checks; measure false-accept rate.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G04-L02",
+    "exercise_id": "G04-L02-EX01",
+    "solution_path": "solutions/G/G04-L02.md",
+    "worked_approach": "Use scores >=.8 strong, .4–.79 ambiguous and <.4 weak for illustrative mock data. Strong→use current evidence, ambiguous→merge/re-rank trusted corpora, weak→alternate approved corpus. Missing fallback→abstain. Test .9,.6,.1 and unavailable index; record route and source IDs. Thresholds are pedagogical, not calibrated.",
+    "failure_analysis": "A fallback leaks confidential queries to an external service or inserts stale documents. Authorize sources and redact/deny queries before retrieval; retain provenance.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G04-L03",
+    "exercise_id": "G04-L03-EX01",
+    "solution_path": "solutions/G/G04-L03.md",
+    "worked_approach": "Model state includes draft, evidence IDs, attempt, verification failures and status. Verify each claim; remove unsupported claims or retrieve targeted evidence, repeat at most three total attempts. Return validated subset or explicit abstention. Test permanent failure, first-pass success and correction success; assert attempt count <=3.",
+    "failure_analysis": "An unbounded verifier loop increases cost while never resolving a missing document. Add max attempts, evidence-change check and terminal failure state.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G04-L04",
+    "exercise_id": "G04-L04-EX01",
+    "solution_path": "solutions/G/G04-L04.md",
+    "worked_approach": "Create queries for FAQ, product docs, no retrieval and unknown. Baseline routes by explicit rules; adaptive mock chooses allowed tools based on observed evidence, max four actions. Compare route accuracy, evidence recall, tool counts and cost proxy; require abstention for unavailable facts.",
+    "failure_analysis": "Agent repeatedly searches irrelevant indices and misses SLA; impose route/tool budget, timeouts and explicit terminal conditions.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G05-L01",
+    "exercise_id": "G05-L01-EX01",
+    "solution_path": "solutions/G/G05-L01.md",
+    "worked_approach": "Define registry `{'lookup': lookup}` with strict args and allowed scopes. Reject unknown tools, invalid ID and unauthorized user; invoke only after checks, return structured error or data. Add tests that denied calls leave invocation count unchanged. For writes require idempotency and explicit approval.",
+    "failure_analysis": "A valid JSON argument references another tenant's record. Enforce tenant from authenticated context, not caller-supplied fields.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G05-L02",
+    "exercise_id": "G05-L02-EX01",
+    "solution_path": "solutions/G/G05-L02.md",
+    "worked_approach": "Build loop with max 4 actions. Mock policy selects lookup, receives structured observation, then returns final result or next tool. Log action, redacted args, observation status and termination reason; test unknown tool, repeated failure and success. Cap total time and tool count.",
+    "failure_analysis": "A model repeats the same tool indefinitely; detect repeated calls, budget attempts and terminate with a useful error.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G05-L03",
+    "exercise_id": "G05-L03-EX01",
+    "solution_path": "solutions/G/G05-L03.md",
+    "worked_approach": "Use draft answer and rubric requiring cited fact, correct label and schema. Mock evaluator returns missing criteria; optimizer repairs one missing item per revision. Stop on pass, no improvement or max 2 revisions. Compare pass rate and token/tool proxy against baseline, retaining failure reasons.",
+    "failure_analysis": "A judge gives higher score to verbose but wrong answers; anchor rubric to facts and run blind human review of disagreements.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G05-L04",
+    "exercise_id": "G05-L04-EX01",
+    "solution_path": "solutions/G/G05-L04.md",
+    "worked_approach": "Supervisor routes query to at most two specialists (policy and billing), each read-only and scoped. Gather result records containing claims/source IDs; merge by verified source priority, flag conflicts rather than voting. Test missing worker, contradictory results and budget exhaustion.",
+    "failure_analysis": "Giving each specialist every tool defeats least privilege. Restrict capabilities per worker and validate merged provenance.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G06-L01",
+    "exercise_id": "G06-L01-EX01",
+    "solution_path": "solutions/G/G06-L01.md",
+    "worked_approach": "Define `ModelPort.generate(messages)->str` and FakeModel returning fixed text or raising TimeoutError. Wrap configured LangChain model in a separate adapter using its documented invoke API, map results into domain schema, set timeout/retry. Test fake success/failure offline and run real adapter only with explicit configuration.",
+    "failure_analysis": "Leaking provider exceptions or message classes into business logic makes migration and error handling brittle; normalize at boundary.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G06-L02",
+    "exercise_id": "G06-L02-EX01",
+    "solution_path": "solutions/G/G06-L02.md",
+    "worked_approach": "Create TypedDict with `text`, `normalized`, `result`; node A strips/lowercases text, B computes length. Build StateGraph, add nodes, START→A→B→END, compile and invoke. Assert final normalized='hi' and result=2 for ' Hi '. Unit-test node functions directly; runtime integration requires installed LangGraph.",
+    "failure_analysis": "Mutating shared state in place obscures replay behavior. Return explicit updates and type-check state keys.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G06-L03",
+    "exercise_id": "G06-L03-EX01",
+    "solution_path": "solutions/G/G06-L03.md",
+    "worked_approach": "Route 'both' to workers A/B (or a fan-out node), each returns result keyed by worker ID. Merge into sorted mapping, assert one record each. Route invalid input to terminal error. In actual LangGraph use documented conditional edges and Annotated reducer; test concurrency and duplicate keys.",
+    "failure_analysis": "Parallel nodes writing same key without reducer may error or overwrite. Define merge contract and test fan-in under reordered completion.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G06-L04",
+    "exercise_id": "G06-L04-EX01",
+    "solution_path": "solutions/G/G06-L04.md",
+    "worked_approach": "Create state with request_id, status='pending'; review node returns interrupt/approval request. Reject→terminal no write; approve→write with idempotency key request_id; resume duplicate→existing receipt. For actual LangGraph use a checkpointer, thread config and Command(resume=...) per installed version. Test all three outcomes.",
+    "failure_analysis": "Performing a write before interrupt can duplicate it after resume. Place side effects behind approval and transactional idempotency.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G07-L01",
+    "exercise_id": "G07-L01-EX01",
+    "solution_path": "solutions/G/G07-L01.md",
+    "worked_approach": "Diagram host→client→server and define `get_policy(id)` read-only tool with strict ID, plus resource URI `policy://approved/{id}` with access check. List allowed capabilities, user scopes, error responses and transport trust boundaries. Explain read resource versus invoking a tool even if both return data.",
+    "failure_analysis": "Treating all MCP servers as trusted extensions permits instruction injection or excessive access. Validate capabilities, inputs and server identity.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G07-L02",
+    "exercise_id": "G07-L02-EX01",
+    "solution_path": "solutions/G/G07-L02.md",
+    "worked_approach": "Implement `FastMCP('catalog')`, decorate `lookup(sku: str)` and restrict to public fixture records; run local transport. Use matching FastMCP Client or protocol inspector, list tools, call valid SKU and test invalid type/unknown SKU; record exact library version and transport. Offline pure lookup tests are distinct from actual MCP integration.",
+    "failure_analysis": "A public-looking resource returns private fields; return minimal approved schema and assert no internal keys in response.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G07-L03",
+    "exercise_id": "G07-L03-EX01",
+    "solution_path": "solutions/G/G07-L03.md",
+    "worked_approach": "Threat-model client credentials, remote server, tenant boundary, resource URIs and logs. Test invalid token, correct token wrong tenant, malformed path, oversized payload and hostile tool output. Enforce scoped checks server-side, rate limits, TLS and log redaction. Include discovery and capability-change approval.",
+    "failure_analysis": "Passing user-supplied tenant as authorization context permits cross-tenant access. Bind tenant to verified identity and query constraints.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G08-L01",
+    "exercise_id": "G08-L01-EX01",
+    "solution_path": "solutions/G/G08-L01.md",
+    "worked_approach": "Design record `{id,subject_id,type,content,source,created_at,expires_at,scope,consent}`; example factual preference, episodic prior project event, semantic glossary, working current draft. Define update/deletion and retention policy per type, exclude sensitive data by default. Audit retrieval purpose and ownership.",
+    "failure_analysis": "A temporary request becomes permanent preference without consent; distinguish session-only from persistable and permit correction/deletion.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G08-L02",
+    "exercise_id": "G08-L02-EX01",
+    "solution_path": "solutions/G/G08-L02.md",
+    "worked_approach": "Implement store keyed by (user_id,memory_id), filter scope and expiry before scoring; add/update/delete and search with exact lexical or cosine baseline. Add records for two users, assert no cross-user matches, update text and delete then search. Compare optional vector store with same authorization rules.",
+    "failure_analysis": "Post-filtering results after cross-tenant retrieval may leak via logs or caches; enforce authorization in data access and test isolation.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G08-L03",
+    "exercise_id": "G08-L03-EX01",
+    "solution_path": "solutions/G/G08-L03.md",
+    "worked_approach": "Create MemoryPort add/search/update/delete with explicit subject; implement fake backend for offline tests. In sandbox configure reviewed Mem0 version and isolated store, run same contract tests for two test users, verify deleted IDs do not reappear and inspect backing store. Record provider dependencies and retention settings.",
+    "failure_analysis": "A delete only removes display record but leaves vector entry; test retrieval and storage-level deletion, including cache behavior.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G09-L01",
+    "exercise_id": "G09-L01-EX01",
+    "solution_path": "solutions/G/G09-L01.md",
+    "worked_approach": "Define request text with length bounds and response label; POST /infer awaits mock adapter with asyncio.wait_for, maps timeout to 504 and known failure to 503. GET /health returns status. Use TestClient for valid request, malformed body 422, timeout and controlled error. No keys required for fake path.",
+    "failure_analysis": "Calling blocking inference directly inside async endpoint stalls event loop; move CPU work to appropriate executor or separate inference service.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G09-L02",
+    "exercise_id": "G09-L02-EX01",
+    "solution_path": "solutions/G/G09-L02.md",
+    "worked_approach": "Async generator yields `event: delta\\ndata: {json}\\n\\n` for chunks, then done; on controlled error emit error event, on CancelledError close upstream and re-raise. Test frame parsing, event order, mid-stream error and cancellation cleanup with fake generator; use StreamingResponse media_type='text/event-stream'.",
+    "failure_analysis": "A generator catches cancellation as generic error and keeps generating; ensure cleanup in finally and test canceled iteration.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G09-L03",
+    "exercise_id": "G09-L03-EX01",
+    "solution_path": "solutions/G/G09-L03.md",
+    "worked_approach": "Configure two approved model aliases using environment secrets; offline fake router attempts primary then fallback only on timeout/availability error. Record chosen alias, attempt, latency, token/cost metadata and sanitized error. Test primary success, fallback success, all unavailable and nonretryable rejection; live proxy validation is separate.",
+    "failure_analysis": "Fallback silently changes model capabilities or data region. Enforce equivalent policy constraints and disclose chosen model in trace.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G09-L04",
+    "exercise_id": "G09-L04-EX01",
+    "solution_path": "solutions/G/G09-L04.md",
+    "worked_approach": "Define prohibited tool scopes and approval requirement for write. Test injected instructions in user/retrieved data, cross-tenant ID, unapproved write, output containing fixture secret and valid read. Assert deny/escalate states and no side effects; capture sanitized audit event. Test bypass attempts and false positives.",
+    "failure_analysis": "Using model decision as sole authorization creates bypass. Require authenticated policy checks and fail closed on unavailable policy service.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G10-L01",
+    "exercise_id": "G10-L01-EX01",
+    "solution_path": "solutions/G/G10-L01.md",
+    "worked_approach": "Create rubric 0 unsupported, 1 partially supported, 2 fully supported with cited facts and examples. Judge A/B and B/A in blind order, compare with human labels and count order flips/disagreements. Report model revision, prompt hash, temperature and per-slice agreement; adjudicate high-risk cases manually.",
+    "failure_analysis": "A judge rewards longer answer without checking evidence. Require claim-level anchors and independent human sample.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G10-L02",
+    "exercise_id": "G10-L02-EX01",
+    "solution_path": "solutions/G/G10-L02.md",
+    "worked_approach": "Write exact-match/schema assertions in unittest or pytest for fake model output. Add opt-in DeepEval test case with input, actual output, expected output/retrieval context as required by selected metric; log threshold and judge model. Gate optional test behind environment flag and compare failed examples manually.",
+    "failure_analysis": "Treating judge-dependent tests as offline makes CI flaky and costly. Separate jobs and mark skipped explicitly when no credentials.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G10-L03",
+    "exercise_id": "G10-L03-EX01",
+    "solution_path": "solutions/G/G10-L03.md",
+    "worked_approach": "Prepare records with user_input, retrieved_contexts, response, reference, gold source IDs. Choose metrics only after checking required columns in installed docs; compute deterministic source recall offline, run opt-in Ragas evaluation and report sample scores with judge/embedding versions. Analyze missing-context vs unsupported-answer failures.",
+    "failure_analysis": "Passing reference text as retrieved context artificially improves faithfulness; keep actual retrieval evidence separate from reference answer.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G10-L04",
+    "exercise_id": "G10-L04-EX01",
+    "solution_path": "solutions/G/G10-L04.md",
+    "worked_approach": "Use local config with normal question, malformed response case and instruction-injection fixture; assert expected JSON schema or allowed label, no test secret, no protected action. Use mock/local provider when possible; pin tool version and record per-case status. External red-team runs are opt-in and use synthetic data.",
+    "failure_analysis": "Only evaluating happy paths overlooks injection and format failures; keep adversarial holdouts and fail closed on protected action.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G10-L05",
+    "exercise_id": "G10-L05-EX01",
+    "solution_path": "solutions/G/G10-L05.md",
+    "worked_approach": "Define gates for schema pass >=99%, grounded accuracy >=90%, p95 latency <=2s and cost/request <=budget on labeled fixture benchmark (illustrative thresholds). Assign owner, dataset/version and action to each. Simulate failed gate and block promotion; preserve trace IDs and rollback model version.",
+    "failure_analysis": "Averages hide tail latency and failures; use percentiles and per-slice results, redact prompt/response logs and limit retention.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G11-L01",
+    "exercise_id": "G11-L01-EX01",
+    "solution_path": "solutions/G/G11-L01.md",
+    "worked_approach": "Create synthetic or properly licensed messages dataset, deduplicate and split by source. For d_in=d_out=4096,r=8 compute 65,536 vs 16,777,216 weights. Configure reviewed PEFT LoraConfig targeting model-specific modules; train only if compatible weights/compute, compare baseline and adapter on held-out quality/format/safety. Record actual trainable parameter count.",
+    "failure_analysis": "Using test examples in training or wrong chat format invalidates benchmark; inspect rendered examples and data provenance.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G11-L02",
+    "exercise_id": "G11-L02-EX01",
+    "solution_path": "solutions/G/G11-L02.md",
+    "worked_approach": "For 7B weights at 4 bits estimate 3.5 GB decimal raw weights; add quantization metadata, adapters and activations. KV estimate 2×layers×batch×sequence×KV_heads×head_dim×bytes. Benchmark compatible serving setup at fixed prompts, report p50/p95 latency, tokens/s, quality and peak memory, or mark hardware test pending.",
+    "failure_analysis": "Estimating only weights undercounts memory and can cause OOM at long contexts; include KV cache, workspaces and concurrency.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "G11-L03",
+    "exercise_id": "G11-L03-EX01",
+    "solution_path": "solutions/G/G11-L03.md",
+    "worked_approach": "Design document QA benchmark with answer, page/region evidence and unanswerable cases; compare OCR+RAG vs compatible VLM. For image generation specify prompt adherence, artifact/safety review and latency. Choose modality based on evidence requirements, privacy and cost; evaluate baseline before fine-tuning.",
+    "failure_analysis": "Using an image generator for factual document extraction is mismatched; test OCR fidelity and citation geometry instead.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "P01-L01",
+    "exercise_id": "P01-L01-EX01",
+    "solution_path": "solutions/P/P01-L01.md",
+    "worked_approach": "Package trained pipeline and version manifest, build minimal image with pinned dependencies and nonroot user, add health/readiness and prediction contract. Run with fixture input and invalid payload, inspect image history for secrets. Use trusted serialized artifacts only; sign and scan image before promotion. Container execution needs Docker runtime.",
+    "failure_analysis": "Loading untrusted pickle/joblib can execute code; restrict artifact origin and integrity verification.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "P01-L02",
+    "exercise_id": "P01-L02-EX01",
+    "solution_path": "solutions/P/P01-L02.md",
+    "worked_approach": "Train baseline and candidate on same split; record seed, params, validation metrics, dataset hash and commit. In MLflow log parameters/metrics/artifact to local experiment or use offline JSON manifest. Promote candidate only when predefined gate and review pass, record rationale and prior version.",
+    "failure_analysis": "Comparing runs trained on different splits conflates data change and model change; align manifests and evaluation datasets.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "P01-L03",
+    "exercise_id": "P01-L03-EX01",
+    "solution_path": "solutions/P/P01-L03.md",
+    "worked_approach": "Define pipeline lint/unit→secret scan→SCA/SAST→train/evaluate→package/SBOM/image scan→staging DAST/contract→approval→deploy. Simulate score below threshold and assert promotion blocked. Store immutable artifact digest and rollback target; keep provider-specific credentials scoped and short-lived.",
+    "failure_analysis": "Treating retraining as automatic deployment can promote degraded models; require independent quality/safety gates and rollback.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "P02-L01",
+    "exercise_id": "P02-L01-EX01",
+    "solution_path": "solutions/P/P02-L01.md",
+    "worked_approach": "Create baseline vs current feature distributions and score histogram; compute PSI or simple mean shift with stated bins and epsilon, monitor labeled MAE when available and p95 latency/errors. Define thresholds, sustained windows, owner, triage and rollback criteria; simulate a benign seasonal shift and alert review.",
+    "failure_analysis": "Automatically retraining on every drift alert may worsen performance; investigate data integrity, seasonality and actual quality first.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "P02-L02",
+    "exercise_id": "P02-L02-EX01",
+    "solution_path": "solutions/P/P02-L02.md",
+    "worked_approach": "Create inventory of data sources, permissions, sensitive fields, retention, model intended/excluded uses and high-risk decisions. For each risk assign owner, mitigation, test/evidence, residual risk and approval gate; draft incident containment, notification assessment and rollback procedure. Use synthetic fixtures for security tests.",
+    "failure_analysis": "A checklist with no test evidence or owner cannot demonstrate effectiveness; require concrete evidence and signoff.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  },
+  {
+    "lesson_id": "P02-L03",
+    "exercise_id": "P02-L03-EX01",
+    "solution_path": "solutions/P/P02-L03.md",
+    "worked_approach": "Draw AWS example with API gateway/load balancer, private compute (ECS/EKS or managed inference), IAM roles, encrypted S3/registry, secrets, VPC boundaries and telemetry. Estimate cost from requests×tokens or GPU-hours plus storage/egress; define RTO/RPO, canary rollback and load/failure tests. No cloud resources required for design.",
+    "failure_analysis": "Autoscaling workers without provider quota or budget limits amplifies failures/cost. Set concurrency, backpressure, retry budgets and alarms.",
+    "rubric": {
+      "correctness": 4,
+      "verification": 3,
+      "failure_handling": 2,
+      "reproducibility": 1
+    },
+    "visibility": "instructor_or_post_submission"
+  }
+]

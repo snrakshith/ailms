@@ -1,0 +1,12 @@
+flowchart TD
+    N1["Licensed dataset"]
+    N2["Format with chat template"]
+    N3["Frozen base + LoRA"]
+    N4["Adapter training"]
+    N5["Holdout evaluation"]
+    N6["Serving"]
+    N1 --> N2
+    N2 --> N3
+    N3 --> N4
+    N4 --> N5
+    N5 --> N6

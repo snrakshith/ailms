@@ -1,0 +1,2808 @@
+[
+  {
+    "lesson_id": "F01-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F01/python_data.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F01-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F01/python_data.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F01-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F01/python_data.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB01"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F01-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F01/python_data.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F01-L05",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F01/python_data.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F02-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F02/math_basics.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F02-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F02/math_basics.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F02-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F02/math_basics.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F02-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F02/math_basics.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F02-L05",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F02/math_basics.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "F02-L06",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/F02/math_basics.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M01-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M01/preprocessing_pipeline.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M01-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M01/preprocessing_pipeline.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M01-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M01/preprocessing_pipeline.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M02-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M02/supervised_baselines.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M02-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M02/supervised_baselines.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB02"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M02-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M02/supervised_baselines.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M02-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M02/supervised_baselines.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M02-L05",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M02/supervised_baselines.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M02-L06",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M02/supervised_baselines.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M03-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M03/cross_validation.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M03-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M03/cross_validation.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB03"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M03-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M03/cross_validation.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M03-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M03/cross_validation.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M04-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M04/clustering.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M04-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M04/clustering.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M04-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M04/clustering.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M05-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M05/forecast_backtest.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB13"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M05-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M05/forecast_backtest.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "M05-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/M05/forecast_backtest.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D01-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D01/autograd_mlp.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D01-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D01/autograd_mlp.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB04"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D01-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D01/autograd_mlp.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D01-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D01/autograd_mlp.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D02-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D02/train_eval.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D02-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D02/train_eval.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D02-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D02/train_eval.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D03-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D03/causal_attention.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D03-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D03/causal_attention.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D03-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D03/causal_attention.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D03-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D03/causal_attention.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D04-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D04/diffusion_noising.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D04-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D04/diffusion_noising.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D04-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D04/diffusion_noising.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "D04-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/D04/diffusion_noising.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C01-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C01/image_processing.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C01-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C01/image_processing.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C01-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C01/image_processing.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C02-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C02/cnn_shapes.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C02-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C02/cnn_shapes.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB05"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C03-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C03/iou_dice.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB06"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C03-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C03/iou_dice.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C03-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C03/iou_dice.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C03-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C03/iou_dice.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C04-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C04/video_motion.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C04-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C04/video_motion.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "C04-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/C04/video_motion.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G01-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G01/tokenizer_templates.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G01-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G01/tokenizer_templates.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G01-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G01/tokenizer_templates.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G01-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G01/tokenizer_templates.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G02-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G02/structured_output.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G02-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G02/structured_output.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G02-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G02/structured_output.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G02-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G02/structured_output.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G02-L05",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G02/structured_output.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G03-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G03/rag_retrieval.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G03-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G03/rag_retrieval.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G03-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G03/rag_retrieval.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G03-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G03/rag_retrieval.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB07"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G04-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G04/bounded_corrective_rag.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G04-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G04/bounded_corrective_rag.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB08"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G04-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G04/bounded_corrective_rag.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G04-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G04/bounded_corrective_rag.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G05-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G05/tool_agent_loop.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G05-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G05/tool_agent_loop.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G05-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G05/tool_agent_loop.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G05-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G05/tool_agent_loop.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G06-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G06/langgraph_sequence.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_parallel_conditional.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_hitl.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G06-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G06/langgraph_sequence.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_parallel_conditional.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_hitl.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G06-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G06/langgraph_sequence.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_parallel_conditional.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_hitl.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G06-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G06/langgraph_sequence.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_parallel_conditional.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G06/langgraph_hitl.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB09"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G07-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G07/fastmcp_server.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G07/fastmcp_client.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G07-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G07/fastmcp_server.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G07/fastmcp_client.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB15"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G07-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G07/fastmcp_server.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G07/fastmcp_client.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G08-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G08/scoped_memory.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G08/mem0_adapter.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G08-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G08/scoped_memory.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G08/mem0_adapter.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB14"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G08-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G08/scoped_memory.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G08/mem0_adapter.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G09-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G09/fastapi_sse.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G09/litellm_completion.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB10"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G09-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G09/fastapi_sse.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G09/litellm_completion.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G09-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G09/fastapi_sse.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G09/litellm_completion.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G09-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G09/fastapi_sse.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G09/litellm_completion.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G10-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G10/offline_eval.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G10/deepeval_example.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G10/ragas_example.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB16"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G10-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G10/offline_eval.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G10/deepeval_example.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G10/ragas_example.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G10-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G10/offline_eval.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G10/deepeval_example.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G10/ragas_example.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G10-L04",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G10/offline_eval.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G10/deepeval_example.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G10/ragas_example.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G10-L05",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G10/offline_eval.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G10/deepeval_example.py",
+        "status": "not_run"
+      },
+      {
+        "path": "code/G10/ragas_example.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G11-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G11/lora_parameter_count.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G11/peft_lora.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB11"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G11-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G11/lora_parameter_count.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G11/peft_lora.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "G11-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/G11/lora_parameter_count.py",
+        "status": "pass"
+      },
+      {
+        "path": "code/G11/peft_lora.py",
+        "status": "not_run"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "P01-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/P01/model_artifact.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "P01-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/P01/model_artifact.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "P01-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/P01/model_artifact.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [
+      "LAB12"
+    ],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "P02-L01",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/P02/drift_monitoring.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "P02-L02",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/P02/drift_monitoring.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  },
+  {
+    "lesson_id": "P02-L03",
+    "content_version": "2.0.0",
+    "authoring_status": "expanded_draft",
+    "independent_subject_matter_review": "pending",
+    "reviewer": null,
+    "review_date": null,
+    "issues": [],
+    "related_original_example_status": [
+      {
+        "path": "code/P02/drift_monitoring.py",
+        "status": "pass"
+      }
+    ],
+    "related_lab_ids": [],
+    "review_checklist": [
+      "technical correctness",
+      "pedagogical depth",
+      "exercise solution",
+      "assessment quality",
+      "accessibility",
+      "source/license",
+      "security and privacy"
+    ]
+  }
+]

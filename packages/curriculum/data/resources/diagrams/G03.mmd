@@ -1,0 +1,18 @@
+flowchart TD
+    N1["Documents"]
+    N2["Chunk and embed"]
+    N3["Index"]
+    N4["Query"]
+    N5["Retrieve"]
+    N6["Rerank"]
+    N7["Evidence"]
+    N8["Generate"]
+    N9["Cite"]
+    N1 --> N2
+    N2 --> N3
+    N4 --> N5
+    N5 --> N6
+    N6 --> N7
+    N7 --> N8
+    N8 --> N9
+    N3 --> N5
