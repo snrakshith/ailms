@@ -6,7 +6,11 @@ import {
 } from '../../apps/web/src/features/marketing/content/site-content.ts';
 assert.equal(siteContent.pricing.plans.length, 2, 'Expected free and paid plans');
 assert.equal(siteContent.pricing.plans[0].price, '₹0');
-assert.ok(siteContent.paths.items.some((p) => p.type === 'Free'));
+assert.equal(siteContent.paths.items.length, 6, 'Expected the six published AI curriculum tracks');
+assert.ok(
+  siteContent.paths.items.every((path, index) => path.type === `Track ${index + 1}`),
+  'Learning paths must retain their ordered track labels',
+);
 assert.ok(siteContent.faqs.length >= 6);
 assert.ok(siteContent.articles.length >= 3);
 const slugs = siteContent.articles.map((article) => article.slug);

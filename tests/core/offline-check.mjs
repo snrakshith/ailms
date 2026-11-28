@@ -56,6 +56,10 @@ try {
   };
   for (const [file, location] of Object.entries(sources)) {
     let code = await readFile(location, 'utf8');
+    if (file === 'catalog.ts') {
+      const curriculumUrl = pathToFileURL(path.resolve('packages/curriculum/dist/index.js')).href;
+      code = code.replace("from '@aiquest/curriculum'", `from '${curriculumUrl}'`);
+    }
     if (file === 'learning.logic.ts')
       code = code.replace("from '@aiquest/learning-core'", "from './rules.js'");
     const js = ts.transpileModule(code, {
@@ -120,12 +124,16 @@ try {
     'a',
   );
   const paths = catalog.catalog;
-  assert.equal(paths.length, 3);
-  assert.equal(paths.flatMap((p) => p.lessons).length, 9);
+  assert.equal(paths.length, 16);
+  assert.equal(paths.flatMap((p) => p.lessons).length, 217);
   const firstLesson = paths[0].lessons[0];
   const answers = Object.fromEntries(firstLesson.questions.map((q) => [q.id, q.correctOptionId]));
   assert.equal(learning.gradeLesson(firstLesson, answers).passed, true);
-  assert.equal(learning.gradeLesson(firstLesson, {}).passed, false);
+  assert.equal(
+    learning.gradeLesson(firstLesson, {}).passed,
+    firstLesson.questions.length === 0,
+    'Reflective lessons without graded questions should be completable; graded lessons require answers',
+  );
   assert.equal(learning.isUnlocked(paths[0].lessons[0], new Set()), true);
   assert.equal(learning.isUnlocked(paths[0].lessons[1], new Set()), false);
   assert.equal(learning.isUnlocked(paths[0].lessons[1], new Set([firstLesson.id])), true);
