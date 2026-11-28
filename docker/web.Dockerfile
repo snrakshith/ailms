@@ -16,4 +16,5 @@ RUN pnpm run build:shared && pnpm --filter @sapling/web build
 FROM nginxinc/nginx-unprivileged:1.29-alpine
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /workspace/apps/web/dist /usr/share/nginx/html
+USER 101
 EXPOSE 8080
