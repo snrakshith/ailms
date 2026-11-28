@@ -7,23 +7,29 @@ Study in this order; each section contains an independent lesson.
 **Level:** intermediate · **Estimated time:** 105 min · **ID:** `DSA07-L01`
 
 ## Learning objectives
+
 - Explain the mechanism behind Day 28 — Tries.
 - Implement or demonstrate: Implement insert, exact search and prefix search.
 - Identify the failure mode and explain the verification evidence.
 
 ## Concept and design reasoning
+
 A trie shares prefix paths and records terminal markers separately from child maps.
 
 ## Worked example
+
 Insert cat: ca is a prefix but is not a stored word.
 
 ## Common failure mode
+
 An empty dictionary at a leaf is not sufficient to represent terminal status.
 
 ## Complexity and assumptions
+
 O(m) per operation, O(total characters) space. Auxiliary space excludes output where noted. Explain why the invariant holds and when it fails.
 
 ## Implementation snippet
+
 Try the lab before opening the solution.
 
 ```python
@@ -66,23 +72,28 @@ class trie:
 Executable reference: see lab and solution files.
 
 ## Hands-on exercise
+
 Implement insert, exact search and prefix search.
 
 ## Completion checklist
+
 - [ ] Meet the stated input/output or operational contract.
 - [ ] Demonstrate one normal and one boundary/failure case.
 - [ ] Explain the invariant or evidence and the limitation.
 - [ ] Explain: What invariant or recurrence makes `trie` correct, and what are its time and space costs?
 
 ## Knowledge check
+
 1. What invariant or recurrence makes `trie` correct, and what are its time and space costs?
 2. What failure should you watch for in Day 28 — Tries, and how would you detect or prevent it?
 
 ## Review resources
+
 - https://docs.python.org/3/library/
 - https://leetcode.com/problemset/
 
 ## Source-aligned practice (after the lab)
+
 - LeetCode #208 — Medium (as printed)
 - LeetCode #211 — Medium (as printed)
 - LeetCode #212 — Hard (as printed)
@@ -92,7 +103,6 @@ Implement insert, exact search and prefix search.
 
 Attempt first without answers; record time, approach, complexity and Green/Yellow/Red status. IDs refer to the attached source; exercise statements are not republished.
 
-
 ---
 
 # Day 29 — Heaps & Priority Queues
@@ -100,23 +110,29 @@ Attempt first without answers; record time, approach, complexity and Green/Yello
 **Level:** intermediate · **Estimated time:** 105 min · **ID:** `DSA07-L02`
 
 ## Learning objectives
+
 - Explain the mechanism behind Day 29 — Heaps & Priority Queues.
 - Implement or demonstrate: Maintain online median for nonempty integer stream.
 - Identify the failure mode and explain the verification evidence.
 
 ## Concept and design reasoning
+
 Two heaps partition a stream into lower and upper halves, with sizes differing by at most one and ordered boundary values.
 
 ## Worked example
+
 Insert 3,1,2: medians 3,2,2.
 
 ## Common failure mode
+
 Python heapq is a min-heap; negate lower-half values.
 
 ## Complexity and assumptions
+
 O(log n) insert, O(1) median, O(n) space. Auxiliary space excludes output where noted. Explain why the invariant holds and when it fails.
 
 ## Implementation snippet
+
 Try the lab before opening the solution.
 
 ```python
@@ -153,23 +169,28 @@ class median_stream:
 Executable reference: see lab and solution files.
 
 ## Hands-on exercise
+
 Maintain online median for nonempty integer stream.
 
 ## Completion checklist
+
 - [ ] Meet the stated input/output or operational contract.
 - [ ] Demonstrate one normal and one boundary/failure case.
 - [ ] Explain the invariant or evidence and the limitation.
 - [ ] Explain: What invariant or recurrence makes `median_stream` correct, and what are its time and space costs?
 
 ## Knowledge check
+
 1. What invariant or recurrence makes `median_stream` correct, and what are its time and space costs?
 2. What failure should you watch for in Day 29 — Heaps & Priority Queues, and how would you detect or prevent it?
 
 ## Review resources
+
 - https://docs.python.org/3/library/
 - https://leetcode.com/problemset/
 
 ## Source-aligned practice (after the lab)
+
 - LeetCode #215 — Medium (as printed)
 - LeetCode #703 — Easy (as printed)
 - LeetCode #295 — Hard (as printed)

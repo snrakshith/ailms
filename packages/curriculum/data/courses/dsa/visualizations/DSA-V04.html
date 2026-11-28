@@ -1,2 +1,78 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>0/1 knapsack DP</title><style>body{font:17px system-ui;max-width:760px;margin:32px auto;padding:0 16px;color:#172554;background:#f8fafc}main{border:1px solid #cbd5e1;border-radius:12px;background:white;padding:24px}h1{font-size:26px}label{display:block;margin-top:20px;font-weight:600}input{width:100%}output{float:right}pre{white-space:pre-wrap;background:#e0f2fe;padding:18px;border-radius:8px}button{padding:8px 14px}</style><main><h1>0/1 knapsack DP</h1><p>Descending capacity prevents reusing an item during the same row update.</p><label for="capacity">Capacity <output id="capacityout"></output></label><input type="range" id="capacity" min="0" max="12" step="1" value="6"><pre id="result" aria-live="polite"></pre><button id="reset">Reset</button></main><script>function update(){const capacity=Number(document.getElementById("capacity").value);document.getElementById("capacityout").textContent=capacity;let d=Array(capacity+1).fill(0),rows=[];for(let [w,v] of [[2,3],[3,4],[4,7]]){for(let c=capacity;c>=w;c--)d[c]=Math.max(d[c],d[c-w]+v);rows.push(`After weight ${w}, value ${v}: ${d.join(' ')}`);}document.getElementById('result').textContent=`${rows.join('\n')}
-Best value: ${d[capacity]}`;}document.querySelectorAll('input').forEach(e=>e.addEventListener('input',update));document.getElementById('reset').addEventListener('click',()=>{document.getElementById("capacity").value=6;update()});update();</script></html>
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>0/1 knapsack DP</title
+  ><style>
+    body {
+      font: 17px system-ui;
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 16px;
+      color: #172554;
+      background: #f8fafc;
+    }
+    main {
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      background: white;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+    }
+    output {
+      float: right;
+    }
+    pre {
+      white-space: pre-wrap;
+      background: #e0f2fe;
+      padding: 18px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 8px 14px;
+    }
+  </style>
+  <main>
+    <h1>0/1 knapsack DP</h1>
+    <p>Descending capacity prevents reusing an item during the same row update.</p>
+    <label for="capacity">Capacity <output id="capacityout"></output></label
+    ><input type="range" id="capacity" min="0" max="12" step="1" value="6" />
+    <pre id="result" aria-live="polite"></pre>
+    <button id="reset">Reset</button>
+  </main>
+  <script>
+    function update() {
+      const capacity = Number(document.getElementById('capacity').value);
+      document.getElementById('capacityout').textContent = capacity;
+      let d = Array(capacity + 1).fill(0),
+        rows = [];
+      for (let [w, v] of [
+        [2, 3],
+        [3, 4],
+        [4, 7],
+      ]) {
+        for (let c = capacity; c >= w; c--) d[c] = Math.max(d[c], d[c - w] + v);
+        rows.push(`After weight ${w}, value ${v}: ${d.join(' ')}`);
+      }
+      document.getElementById('result').textContent = `${rows.join('\n')}
+Best value: ${d[capacity]}`;
+    }
+    document.querySelectorAll('input').forEach((e) => e.addEventListener('input', update));
+    document.getElementById('reset').addEventListener('click', () => {
+      document.getElementById('capacity').value = 6;
+      update();
+    });
+    update();
+  </script>
+</html>

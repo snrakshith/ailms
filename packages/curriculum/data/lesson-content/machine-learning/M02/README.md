@@ -1,6 +1,7 @@
 # M02: Supervised learning algorithms
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Training data"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Linear and polynomial regression](M02-L01.md) — beginner
 - [Logistic regression and classification thresholds](M02-L02.md) — beginner
 - [k-nearest neighbors, naive Bayes and SVM](M02-L03.md) — intermediate
@@ -25,4 +27,5 @@ flowchart TD
 Complete each exercise and demonstrate the related module examples.
 
 ## Extended study guide
+
 [ ML algorithm selection and formulas ](../../../guides/M02-deep-dive.md)

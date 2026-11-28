@@ -3,6 +3,7 @@
 Complete foundations and security modules, demonstrate gates and supply-chain evidence.
 
 ## Suggested sequence
+
 1. Linux & shell
 2. Version control
 3. Continuous integration

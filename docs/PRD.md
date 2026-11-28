@@ -18,23 +18,23 @@ The differentiation is **learning quality first**, not gamification for its own 
 
 ## P0 implementation scope and acceptance criteria
 
-| ID | Capability | Acceptance criteria | Implementation |
-|---|---|---|---|
-| P0-01 | Identity | User can register, sign in/out and resume saved history | `/auth` session APIs and AuthProvider |
-| P0-02 | Personalization | User selects developer background, familiarity, initial track and daily minutes | `/auth/onboarding`, onboarding UI |
-| P0-03 | Discoverability | See all paths, with estimated time and completed lesson count | `/learning/paths`, path grid |
-| P0-04 | Structured curriculum | Ordered lessons, learning objectives, text and optional code illustrations | `learning/catalog.ts` |
-| P0-05 | Learning progression | Previous lesson completion unlocks next lesson *within a path* | `isUnlocked` enforced on GET and POST |
-| P0-06 | Assessment | Three canonical questions per lesson, ≥ 2/3 correct required to pass | Server `gradeLesson`, feedback in response |
-| P0-07 | Durable completion | Completion persists, retry does not double-award XP | MongoDB unique completion and attempt indexes |
-| P0-08 | Progress | XP, number of completed lessons, estimated time, UTC streak, mastered tracks | `/learning/overview`, `/learning/progress` |
-| P0-09 | Feedback | Explain correct answers; failed submissions are retryable | Lesson player result state |
-| P0-10 | Account isolation | A learner cannot read/update another learner's progress | User identity from verified HttpOnly session |
-| P0-11 | Operations baseline | Containerization, env validation, health, telemetry and CI infrastructure | Retained from Sapling template |
+| ID    | Capability            | Acceptance criteria                                                             | Implementation                                |
+| ----- | --------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
+| P0-01 | Identity              | User can register, sign in/out and resume saved history                         | `/auth` session APIs and AuthProvider         |
+| P0-02 | Personalization       | User selects developer background, familiarity, initial track and daily minutes | `/auth/onboarding`, onboarding UI             |
+| P0-03 | Discoverability       | See all paths, with estimated time and completed lesson count                   | `/learning/paths`, path grid                  |
+| P0-04 | Structured curriculum | Ordered lessons, learning objectives, text and optional code illustrations      | `learning/catalog.ts`                         |
+| P0-05 | Learning progression  | Previous lesson completion unlocks next lesson _within a path_                  | `isUnlocked` enforced on GET and POST         |
+| P0-06 | Assessment            | Three canonical questions per lesson, ≥ 2/3 correct required to pass            | Server `gradeLesson`, feedback in response    |
+| P0-07 | Durable completion    | Completion persists, retry does not double-award XP                             | MongoDB unique completion and attempt indexes |
+| P0-08 | Progress              | XP, number of completed lessons, estimated time, UTC streak, mastered tracks    | `/learning/overview`, `/learning/progress`    |
+| P0-09 | Feedback              | Explain correct answers; failed submissions are retryable                       | Lesson player result state                    |
+| P0-10 | Account isolation     | A learner cannot read/update another learner's progress                         | User identity from verified HttpOnly session  |
+| P0-11 | Operations baseline   | Containerization, env validation, health, telemetry and CI infrastructure       | Retained from Sapling template                |
 
 ## Initial curriculum
 
-Nine learning modules (three per path), 27 graded questions: 
+Nine learning modules (three per path), 27 graded questions:
 
 - **AI Foundations:** From rules to learning; Data is your new API; The model lifecycle.
 - **Machine Learning:** Supervised learning; Train, validate, test; Gradient descent intuition.

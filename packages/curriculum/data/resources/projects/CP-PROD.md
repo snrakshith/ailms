@@ -3,6 +3,7 @@
 Deploy a model or assistant as an observable, reproducible service.
 
 ## Deliverables
+
 - [ ] Container and API
 - [ ] CI tests and evaluation gates
 - [ ] version manifest
@@ -11,9 +12,11 @@ Deploy a model or assistant as an observable, reproducible service.
 - [ ] rollback runbook
 
 ## Acceptance criteria
+
 Failed gates block deploy; rollback tested locally; logs omit secrets.
 
 ## Grading rubric (100 points)
+
 - Functional Correctness: 30
 - Evaluation And Evidence: 30
 - Reproducibility And Documentation: 20

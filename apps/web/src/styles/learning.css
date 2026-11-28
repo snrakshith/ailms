@@ -631,11 +631,21 @@
   background: var(--aq-panel-soft);
   overflow: hidden;
 }
-.aq-progress-track > div {
+.aq-progress-track > progress {
+  display: block;
+  width: 100%;
   height: 100%;
+  appearance: none;
+  border: 0;
+  background: transparent;
+}
+.aq-progress-track > progress::-webkit-progress-bar {
+  background: transparent;
+}
+.aq-progress-track > progress::-webkit-progress-value,
+.aq-progress-track > progress::-moz-progress-bar {
   background: linear-gradient(90deg, #65dab2, #a4d5ff);
   border-radius: inherit;
-  transition: width 0.3s;
 }
 .aq-path-footer {
   display: flex;

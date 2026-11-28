@@ -1,6 +1,7 @@
 # C03: Detection and segmentation
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Image"]
@@ -17,6 +18,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Object detection: boxes, IoU, NMS and mAP](C03-L01.md) — intermediate
 - [YOLO, Faster R-CNN, DETR and detection training](C03-L02.md) — advanced
 - [Semantic, instance and panoptic segmentation](C03-L03.md) — intermediate
@@ -25,4 +27,5 @@ flowchart TD
 Complete each exercise and demonstrate the related module examples.
 
 ## Extended study guide
+
 [ Detection and segmentation metric walkthrough ](../../../guides/C03-deep-dive.md)

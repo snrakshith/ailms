@@ -63,9 +63,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB01"
-    ],
+    "related_lab_ids": ["LAB01"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -390,9 +388,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB02"
-    ],
+    "related_lab_ids": ["LAB02"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -542,9 +538,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB03"
-    ],
+    "related_lab_ids": ["LAB03"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -694,9 +688,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB13"
-    ],
+    "related_lab_ids": ["LAB13"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -796,9 +788,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB04"
-    ],
+    "related_lab_ids": ["LAB04"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -1248,9 +1238,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB05"
-    ],
+    "related_lab_ids": ["LAB05"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -1275,9 +1263,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB06"
-    ],
+    "related_lab_ids": ["LAB06"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -1752,9 +1738,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB07"
-    ],
+    "related_lab_ids": ["LAB07"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -1804,9 +1788,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB08"
-    ],
+    "related_lab_ids": ["LAB08"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -2088,9 +2070,7 @@
         "status": "not_run"
       }
     ],
-    "related_lab_ids": [
-      "LAB09"
-    ],
+    "related_lab_ids": ["LAB09"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -2148,9 +2128,7 @@
         "status": "not_run"
       }
     ],
-    "related_lab_ids": [
-      "LAB15"
-    ],
+    "related_lab_ids": ["LAB15"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -2237,9 +2215,7 @@
         "status": "not_run"
       }
     ],
-    "related_lab_ids": [
-      "LAB14"
-    ],
+    "related_lab_ids": ["LAB14"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -2297,9 +2273,7 @@
         "status": "not_run"
       }
     ],
-    "related_lab_ids": [
-      "LAB10"
-    ],
+    "related_lab_ids": ["LAB10"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -2419,9 +2393,7 @@
         "status": "not_run"
       }
     ],
-    "related_lab_ids": [
-      "LAB16"
-    ],
+    "related_lab_ids": ["LAB16"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -2582,9 +2554,7 @@
         "status": "not_run"
       }
     ],
-    "related_lab_ids": [
-      "LAB11"
-    ],
+    "related_lab_ids": ["LAB11"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",
@@ -2717,9 +2687,7 @@
         "status": "pass"
       }
     ],
-    "related_lab_ids": [
-      "LAB12"
-    ],
+    "related_lab_ids": ["LAB12"],
     "review_checklist": [
       "technical correctness",
       "pedagogical depth",

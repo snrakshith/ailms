@@ -152,7 +152,11 @@ export function DashboardPage() {
           <h3>{recommendedPath.title}</h3>
           <p>{recommendedPath.subtitle}</p>
           <div className="aq-progress-track">
-            <div style={{ width: `${recommendedPath.progressPercent}%` }} />
+            <progress
+              value={recommendedPath.progressPercent}
+              max="100"
+              aria-label={`${recommendedPath.title} progress`}
+            />
           </div>
           <div className="aq-panel-footer">
             <span>{recommendedPath.progressPercent}% complete</span>

@@ -1,6 +1,7 @@
 # G05: Agent design patterns
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Goal"]
@@ -20,6 +21,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Tool calling and tool-use agent pattern](G05-L01.md) — intermediate
 - [ReAct, planning and action-observation loops](G05-L02.md) — intermediate
 - [Reflection and evaluator-optimizer agents](G05-L03.md) — intermediate

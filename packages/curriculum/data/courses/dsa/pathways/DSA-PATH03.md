@@ -3,6 +3,7 @@
 For learners already comfortable with arrays, pointers, trees and heaps; pass diagnostic before skipping prerequisites.
 
 ## Suggested sequence
+
 1. Graph traversal and algorithms
 2. Backtracking
 3. DP foundations and grids

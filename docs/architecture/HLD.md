@@ -29,16 +29,16 @@ flowchart TD
 
 ## Major components
 
-| Module | Responsibility | State |
-|---|---|---|
-| `modules/users` | Identity, profile and onboarding | MongoDB `User` |
-| `modules/learning/catalog.ts` | Immutable curated content and answer key | Code (v1) |
-| `modules/learning/learning.logic.ts` | Pure grading, unlock, streak, XP projection | Pure functions |
-| `modules/learning/learning.service.ts` | Learner-specific progress, submission, completion | MongoDB |
-| `modules/learning/learning.routes.ts` | REST interface with required authentication | Express |
-| `apps/web/src/features/learning` | Path cards, detailed path, lesson/quiz player | React + React Query |
-| `apps/web/src/features/progress` | Mastery, XP, badges | React |
-| `apps/web/src/features/onboarding` | Audience/goals targeting | React |
+| Module                                 | Responsibility                                    | State               |
+| -------------------------------------- | ------------------------------------------------- | ------------------- |
+| `modules/users`                        | Identity, profile and onboarding                  | MongoDB `User`      |
+| `modules/learning/catalog.ts`          | Immutable curated content and answer key          | Code (v1)           |
+| `modules/learning/learning.logic.ts`   | Pure grading, unlock, streak, XP projection       | Pure functions      |
+| `modules/learning/learning.service.ts` | Learner-specific progress, submission, completion | MongoDB             |
+| `modules/learning/learning.routes.ts`  | REST interface with required authentication       | Express             |
+| `apps/web/src/features/learning`       | Path cards, detailed path, lesson/quiz player     | React + React Query |
+| `apps/web/src/features/progress`       | Mastery, XP, badges                               | React               |
+| `apps/web/src/features/onboarding`     | Audience/goals targeting                          | React               |
 
 ## Primary flow
 
@@ -108,7 +108,6 @@ Authoritative grading, publishing and XP are server-only. `learning-core` holds 
 The optional LLM provider is a server-side adapter with timeouts, response-size limits and quotas. When the provider is not configured or unavailable, tutor hints fall back to curriculum text. Hosted model comparison is unavailable without explicit two-model configuration rather than returning fake LLM outputs.
 
 Operational caveat: opaque-origin sandboxing and a capped browser worker are a defensive first layer, **not a substitute for adversarial browser sandbox testing**. Production requires encrypted backups, an observed recovery-time objective, controlled content staff onboarding, and stronger rate/abuse monitoring.
-
 
 ## Commerce domain (Cashfree PG)
 

@@ -1,6 +1,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
-metadata: {name: learning-api, namespace: argocd}
+metadata: { name: learning-api, namespace: argocd }
 spec:
   project: REPLACE_WITH_RESTRICTED_PROJECT
   source:

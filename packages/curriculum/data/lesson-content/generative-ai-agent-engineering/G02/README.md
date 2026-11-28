@@ -1,6 +1,7 @@
 # G02: Prompt and context engineering
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Instructions + examples"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Zero-shot, one-shot and few-shot prompting](G02-L01.md) — beginner
 - [Structured output, few-shot schemas and Pydantic](G02-L02.md) — intermediate
 - [Persona prompting, reasoning prompts and prompt injection](G02-L03.md) — intermediate
@@ -24,4 +26,5 @@ flowchart TD
 Complete each exercise and demonstrate the related module examples.
 
 ## Extended study guide
+
 [ Prompt engineering pattern library ](../../../guides/G02-deep-dive.md)

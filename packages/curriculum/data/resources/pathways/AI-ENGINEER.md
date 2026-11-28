@@ -5,6 +5,7 @@ Entry: Complete omitted prerequisites or pass instructor diagnostic; canonical p
 Estimated lesson and extension hours: 205.8 (excludes capstone).
 
 ## Ordered modules
+
 1. F01: Python and developer tooling
 2. F02: Mathematics for AI
 3. M01: ML lifecycle and data preparation
@@ -26,13 +27,17 @@ Estimated lesson and extension hours: 205.8 (excludes capstone).
 19. P02: Production reliability and responsible AI
 
 ## Diagnostic
+
 Demonstrate Python environment and reproducibility, vector operations, leakage-free evaluation and relevant model architecture. Review omitted prerequisite IDs: C04-L03, D02-L03, M02-L06, M05-L03.
 
 ## Capstone
+
 Deliver a grounded tool-using assistant with bounded RAG, HITL and evaluation.
 
 ## Exit criteria
+
 Evidence recall, abstention, tool authorization, replay and cost/latency tests.
 
 ## Portfolio evidence
+
 Submit reproducible source, tests, metrics, failure analysis, version manifest and a short design review.

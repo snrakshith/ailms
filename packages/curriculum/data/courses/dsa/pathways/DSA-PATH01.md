@@ -3,6 +3,7 @@
 Follow all days, keep the source practice log, complete mock interviews.
 
 ## Suggested sequence
+
 1. Optional beginner prerequisites
 2. Arrays & hashing
 3. Two pointers & sliding window

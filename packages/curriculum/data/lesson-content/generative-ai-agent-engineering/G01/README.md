@@ -1,6 +1,7 @@
 # G01: LLM foundations and Hugging Face
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Text messages"]
@@ -17,6 +18,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Generative AI landscape and LLM fundamentals](G01-L01.md) — beginner
 - [Tokens, tokenizers and context windows](G01-L02.md) — beginner
 - [Decoding, sampling and inference constraints](G01-L03.md) — intermediate

@@ -1,3 +1,78 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SLO error-budget burn</title><style>body{font:17px system-ui;max-width:760px;margin:32px auto;padding:0 16px;color:#172554;background:#f8fafc}main{border:1px solid #cbd5e1;border-radius:12px;background:white;padding:24px}h1{font-size:26px}label{display:block;margin-top:20px;font-weight:600}input{width:100%}output{float:right}pre{white-space:pre-wrap;background:#e0f2fe;padding:18px;border-radius:8px}button{padding:8px 14px}</style><main><h1>SLO error-budget burn</h1><p>Burn above 1 means the observed error rate exceeds the long-term allowed rate.</p><label for="errors">Errors in 10,000 requests <output id="errorsout"></output></label><input type="range" id="errors" min="0" max="100" step="1" value="20"><label for="slo">SLO (%) <output id="sloout"></output></label><input type="range" id="slo" min="99" max="99.99" step="0.01" value="99.9"><pre id="result" aria-live="polite"></pre><button id="reset">Reset</button></main><script>function update(){const errors=Number(document.getElementById("errors").value);document.getElementById("errorsout").textContent=errors;const slo=Number(document.getElementById("slo").value);document.getElementById("sloout").textContent=slo;let observed=errors/10000,allowed=1-slo/100,burn=observed/allowed;document.getElementById('result').textContent=`Observed error rate: ${(observed*100).toFixed(2)}%
-Allowed error rate: ${(allowed*100).toFixed(3)}%
-Burn: ${burn.toFixed(2)}x`;}document.querySelectorAll('input').forEach(e=>e.addEventListener('input',update));document.getElementById('reset').addEventListener('click',()=>{document.getElementById("errors").value=20;document.getElementById("slo").value=99.9;update()});update();</script></html>
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>SLO error-budget burn</title
+  ><style>
+    body {
+      font: 17px system-ui;
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 16px;
+      color: #172554;
+      background: #f8fafc;
+    }
+    main {
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      background: white;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+    }
+    output {
+      float: right;
+    }
+    pre {
+      white-space: pre-wrap;
+      background: #e0f2fe;
+      padding: 18px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 8px 14px;
+    }
+  </style>
+  <main>
+    <h1>SLO error-budget burn</h1>
+    <p>Burn above 1 means the observed error rate exceeds the long-term allowed rate.</p>
+    <label for="errors">Errors in 10,000 requests <output id="errorsout"></output></label
+    ><input type="range" id="errors" min="0" max="100" step="1" value="20" /><label for="slo"
+      >SLO (%) <output id="sloout"></output></label
+    ><input type="range" id="slo" min="99" max="99.99" step="0.01" value="99.9" />
+    <pre id="result" aria-live="polite"></pre>
+    <button id="reset">Reset</button>
+  </main>
+  <script>
+    function update() {
+      const errors = Number(document.getElementById('errors').value);
+      document.getElementById('errorsout').textContent = errors;
+      const slo = Number(document.getElementById('slo').value);
+      document.getElementById('sloout').textContent = slo;
+      let observed = errors / 10000,
+        allowed = 1 - slo / 100,
+        burn = observed / allowed;
+      document.getElementById('result').textContent =
+        `Observed error rate: ${(observed * 100).toFixed(2)}%
+Allowed error rate: ${(allowed * 100).toFixed(3)}%
+Burn: ${burn.toFixed(2)}x`;
+    }
+    document.querySelectorAll('input').forEach((e) => e.addEventListener('input', update));
+    document.getElementById('reset').addEventListener('click', () => {
+      document.getElementById('errors').value = 20;
+      document.getElementById('slo').value = 99.9;
+      update();
+    });
+    update();
+  </script>
+</html>

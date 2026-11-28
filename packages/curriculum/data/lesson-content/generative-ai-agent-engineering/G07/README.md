@@ -1,6 +1,7 @@
 # G07: MCP and FastMCP
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Host"]
@@ -19,6 +20,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Model Context Protocol (MCP) fundamentals](G07-L01.md) — intermediate
 - [FastMCP server and client development](G07-L02.md) — intermediate
 - [MCP security, remote deployment and interoperability](G07-L03.md) — advanced

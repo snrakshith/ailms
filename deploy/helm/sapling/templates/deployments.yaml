@@ -31,7 +31,7 @@ spec:
           livenessProbe: {httpGet: {path: /health/live, port: 4000}, periodSeconds: 20}
           resources:
             {{- toYaml .Values.api.resources | nindent 12 }}
-          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}}
+          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}, readOnlyRootFilesystem: true}
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -42,6 +42,7 @@ spec:
   template:
     metadata: {labels: {app: {{ .Release.Name }}-web}}
     spec:
+      securityContext: {runAsNonRoot: true, runAsUser: 101, seccompProfile: {type: RuntimeDefault}}
       containers:
         - name: web
           image: {{ .Values.web.image | quote }}
@@ -50,7 +51,7 @@ spec:
           livenessProbe: {httpGet: {path: /, port: 8080}, periodSeconds: 20}
           resources:
             {{- toYaml .Values.web.resources | nindent 12 }}
-          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}}
+          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}, readOnlyRootFilesystem: true}
 {{- if .Values.worker.enabled }}
 ---
 apiVersion: apps/v1
@@ -79,5 +80,5 @@ spec:
               valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: JWT_SECRET}}
             - name: METRICS_TOKEN
               valueFrom: {secretKeyRef: {name: {{ .Values.secretsName }}, key: METRICS_TOKEN}}
-          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}}
+          securityContext: {allowPrivilegeEscalation: false, capabilities: {drop: [ALL]}, readOnlyRootFilesystem: true}
 {{- end }}

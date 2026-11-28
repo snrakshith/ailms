@@ -1,6 +1,7 @@
 # G06: LangChain and LangGraph orchestration
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Start"]
@@ -22,6 +23,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [LangChain components and integration boundaries](G06-L01.md) — intermediate
 - [LangGraph state, nodes, edges and sequential workflow](G06-L02.md) — intermediate
 - [LangGraph conditional and parallel workflows](G06-L03.md) — intermediate
@@ -30,4 +32,5 @@ flowchart TD
 Complete each exercise and demonstrate the related module examples.
 
 ## Extended study guide
+
 [ Workflow patterns and state contracts ](../../../guides/G06-deep-dive.md)

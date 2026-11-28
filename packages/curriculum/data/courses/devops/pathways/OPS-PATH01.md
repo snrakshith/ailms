@@ -3,6 +3,7 @@
 Linux, Git, CI/CD, containers, AWS/Terraform, Kubernetes, Helm, GitOps and observability. Study security fundamentals before real deployment.
 
 ## Suggested sequence
+
 1. Linux & shell
 2. Version control
 3. Continuous integration

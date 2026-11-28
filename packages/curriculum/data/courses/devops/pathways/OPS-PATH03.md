@@ -3,6 +3,7 @@
 Emphasize SLO, telemetry, incident handling, infrastructure and golden paths; demonstrate operational readiness.
 
 ## Suggested sequence
+
 1. Linux & shell
 2. Version control
 3. Continuous integration

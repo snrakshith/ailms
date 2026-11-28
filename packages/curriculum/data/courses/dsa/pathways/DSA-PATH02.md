@@ -3,6 +3,7 @@
 Prioritize core structures, graph traversal and common optimization. Return to DP and interview sprint afterward; this is not a substitute for completing all prerequisites.
 
 ## Suggested sequence
+
 1. Optional beginner prerequisites
 2. Arrays & hashing
 3. Two pointers & sliding window

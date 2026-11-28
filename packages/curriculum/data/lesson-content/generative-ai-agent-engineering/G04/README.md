@@ -1,6 +1,7 @@
 # G04: Advanced RAG patterns
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Query"]
@@ -23,6 +24,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Self-reflective RAG and Self-RAG](G04-L01.md) — advanced
 - [Corrective RAG (CRAG)](G04-L02.md) — advanced
 - [Self-corrective RAG and iterative verification](G04-L03.md) — advanced
@@ -31,4 +33,5 @@ flowchart TD
 Complete each exercise and demonstrate the related module examples.
 
 ## Extended study guide
+
 [ RAG pattern comparison and worked trace ](../../../guides/G04-deep-dive.md)

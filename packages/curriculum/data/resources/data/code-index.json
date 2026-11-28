@@ -3,167 +3,126 @@
     "module_id": "F01",
     "path": "code/F01/python_data.py",
     "name": "python_data",
-    "dependencies": [
-      "numpy",
-      "pandas"
-    ],
+    "dependencies": ["numpy", "pandas"],
     "execution_mode": "offline"
   },
   {
     "module_id": "F02",
     "path": "code/F02/math_basics.py",
     "name": "math_basics",
-    "dependencies": [
-      "numpy"
-    ],
+    "dependencies": ["numpy"],
     "execution_mode": "offline"
   },
   {
     "module_id": "M01",
     "path": "code/M01/preprocessing_pipeline.py",
     "name": "preprocessing_pipeline",
-    "dependencies": [
-      "numpy",
-      "scikit-learn"
-    ],
+    "dependencies": ["numpy", "scikit-learn"],
     "execution_mode": "offline"
   },
   {
     "module_id": "M02",
     "path": "code/M02/supervised_baselines.py",
     "name": "supervised_baselines",
-    "dependencies": [
-      "scikit-learn"
-    ],
+    "dependencies": ["scikit-learn"],
     "execution_mode": "offline"
   },
   {
     "module_id": "M03",
     "path": "code/M03/cross_validation.py",
     "name": "cross_validation",
-    "dependencies": [
-      "scikit-learn"
-    ],
+    "dependencies": ["scikit-learn"],
     "execution_mode": "offline"
   },
   {
     "module_id": "M04",
     "path": "code/M04/clustering.py",
     "name": "clustering",
-    "dependencies": [
-      "scikit-learn"
-    ],
+    "dependencies": ["scikit-learn"],
     "execution_mode": "offline"
   },
   {
     "module_id": "M05",
     "path": "code/M05/forecast_backtest.py",
     "name": "forecast_backtest",
-    "dependencies": [
-      "numpy"
-    ],
+    "dependencies": ["numpy"],
     "execution_mode": "offline"
   },
   {
     "module_id": "D01",
     "path": "code/D01/autograd_mlp.py",
     "name": "autograd_mlp",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "execution_mode": "offline"
   },
   {
     "module_id": "D02",
     "path": "code/D02/train_eval.py",
     "name": "train_eval",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "execution_mode": "offline"
   },
   {
     "module_id": "D03",
     "path": "code/D03/causal_attention.py",
     "name": "causal_attention",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "execution_mode": "offline"
   },
   {
     "module_id": "D04",
     "path": "code/D04/diffusion_noising.py",
     "name": "diffusion_noising",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "execution_mode": "offline"
   },
   {
     "module_id": "C01",
     "path": "code/C01/image_processing.py",
     "name": "image_processing",
-    "dependencies": [
-      "numpy",
-      "opencv-python-headless"
-    ],
+    "dependencies": ["numpy", "opencv-python-headless"],
     "execution_mode": "offline"
   },
   {
     "module_id": "C02",
     "path": "code/C02/cnn_shapes.py",
     "name": "cnn_shapes",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "execution_mode": "offline"
   },
   {
     "module_id": "C03",
     "path": "code/C03/iou_dice.py",
     "name": "iou_dice",
-    "dependencies": [
-      "numpy"
-    ],
+    "dependencies": ["numpy"],
     "execution_mode": "offline"
   },
   {
     "module_id": "C04",
     "path": "code/C04/video_motion.py",
     "name": "video_motion",
-    "dependencies": [
-      "numpy",
-      "opencv-python-headless"
-    ],
+    "dependencies": ["numpy", "opencv-python-headless"],
     "execution_mode": "offline"
   },
   {
     "module_id": "G01",
     "path": "code/G01/tokenizer_templates.py",
     "name": "tokenizer_templates",
-    "dependencies": [
-      "transformers"
-    ],
+    "dependencies": ["transformers"],
     "execution_mode": "external"
   },
   {
     "module_id": "G02",
     "path": "code/G02/structured_output.py",
     "name": "structured_output",
-    "dependencies": [
-      "pydantic>=2"
-    ],
+    "dependencies": ["pydantic>=2"],
     "execution_mode": "offline"
   },
   {
     "module_id": "G03",
     "path": "code/G03/rag_retrieval.py",
     "name": "rag_retrieval",
-    "dependencies": [
-      "numpy",
-      "scikit-learn"
-    ],
+    "dependencies": ["numpy", "scikit-learn"],
     "execution_mode": "offline"
   },
   {
@@ -184,45 +143,35 @@
     "module_id": "G06",
     "path": "code/G06/langgraph_sequence.py",
     "name": "langgraph_sequence",
-    "dependencies": [
-      "langgraph"
-    ],
+    "dependencies": ["langgraph"],
     "execution_mode": "optional"
   },
   {
     "module_id": "G06",
     "path": "code/G06/langgraph_parallel_conditional.py",
     "name": "langgraph_parallel_conditional",
-    "dependencies": [
-      "langgraph"
-    ],
+    "dependencies": ["langgraph"],
     "execution_mode": "optional"
   },
   {
     "module_id": "G06",
     "path": "code/G06/langgraph_hitl.py",
     "name": "langgraph_hitl",
-    "dependencies": [
-      "langgraph"
-    ],
+    "dependencies": ["langgraph"],
     "execution_mode": "optional"
   },
   {
     "module_id": "G07",
     "path": "code/G07/fastmcp_server.py",
     "name": "fastmcp_server",
-    "dependencies": [
-      "fastmcp"
-    ],
+    "dependencies": ["fastmcp"],
     "execution_mode": "server"
   },
   {
     "module_id": "G07",
     "path": "code/G07/fastmcp_client.py",
     "name": "fastmcp_client",
-    "dependencies": [
-      "fastmcp"
-    ],
+    "dependencies": ["fastmcp"],
     "execution_mode": "optional"
   },
   {
@@ -236,29 +185,21 @@
     "module_id": "G08",
     "path": "code/G08/mem0_adapter.py",
     "name": "mem0_adapter",
-    "dependencies": [
-      "mem0ai"
-    ],
+    "dependencies": ["mem0ai"],
     "execution_mode": "external"
   },
   {
     "module_id": "G09",
     "path": "code/G09/fastapi_sse.py",
     "name": "fastapi_sse",
-    "dependencies": [
-      "fastapi",
-      "uvicorn",
-      "pydantic>=2"
-    ],
+    "dependencies": ["fastapi", "uvicorn", "pydantic>=2"],
     "execution_mode": "server"
   },
   {
     "module_id": "G09",
     "path": "code/G09/litellm_completion.py",
     "name": "litellm_completion",
-    "dependencies": [
-      "litellm"
-    ],
+    "dependencies": ["litellm"],
     "execution_mode": "external"
   },
   {
@@ -272,57 +213,42 @@
     "module_id": "G10",
     "path": "code/G10/deepeval_example.py",
     "name": "deepeval_example",
-    "dependencies": [
-      "deepeval"
-    ],
+    "dependencies": ["deepeval"],
     "execution_mode": "external"
   },
   {
     "module_id": "G10",
     "path": "code/G10/ragas_example.py",
     "name": "ragas_example",
-    "dependencies": [
-      "ragas"
-    ],
+    "dependencies": ["ragas"],
     "execution_mode": "optional"
   },
   {
     "module_id": "G11",
     "path": "code/G11/lora_parameter_count.py",
     "name": "lora_parameter_count",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "execution_mode": "offline"
   },
   {
     "module_id": "G11",
     "path": "code/G11/peft_lora.py",
     "name": "peft_lora",
-    "dependencies": [
-      "transformers",
-      "peft",
-      "torch"
-    ],
+    "dependencies": ["transformers", "peft", "torch"],
     "execution_mode": "external"
   },
   {
     "module_id": "P01",
     "path": "code/P01/model_artifact.py",
     "name": "model_artifact",
-    "dependencies": [
-      "scikit-learn",
-      "joblib"
-    ],
+    "dependencies": ["scikit-learn", "joblib"],
     "execution_mode": "offline"
   },
   {
     "module_id": "P02",
     "path": "code/P02/drift_monitoring.py",
     "name": "drift_monitoring",
-    "dependencies": [
-      "numpy"
-    ],
+    "dependencies": ["numpy"],
     "execution_mode": "offline"
   }
 ]

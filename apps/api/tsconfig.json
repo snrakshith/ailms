@@ -9,15 +9,9 @@
     "rootDir": "src",
     "outDir": "dist",
     "sourceMap": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "resolveJsonModule": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "tests"
-  ]
+  "include": ["src"],
+  "exclude": ["tests"]
 }

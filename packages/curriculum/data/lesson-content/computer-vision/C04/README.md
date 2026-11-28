@@ -1,6 +1,7 @@
 # C04: Advanced vision and multimodal perception
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Video frames"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Video, optical flow and object tracking](C04-L01.md) — intermediate
 - [Vision transformers, CLIP and multimodal vision](C04-L02.md) — advanced
 - [OCR, document AI, 3D and deployment](C04-L03.md) — advanced

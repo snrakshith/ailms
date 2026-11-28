@@ -1,28 +1,9 @@
 {
-  "nodes": [
-    "compile",
-    "test",
-    "package",
-    "deploy"
-  ],
+  "nodes": ["compile", "test", "package", "deploy"],
   "edges": [
-    [
-      "compile",
-      "test"
-    ],
-    [
-      "test",
-      "package"
-    ],
-    [
-      "package",
-      "deploy"
-    ]
+    ["compile", "test"],
+    ["test", "package"],
+    ["package", "deploy"]
   ],
-  "cycle_variant": [
-    [
-      "deploy",
-      "compile"
-    ]
-  ]
+  "cycle_variant": [["deploy", "compile"]]
 }

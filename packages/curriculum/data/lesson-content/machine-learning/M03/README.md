@@ -1,6 +1,7 @@
 # M03: Evaluation and reliable model selection
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Training folds"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Classification, regression and ranking metrics](M03-L01.md) — intermediate
 - [Cross-validation and hyperparameter search](M03-L02.md) — intermediate
 - [Imbalanced learning, calibration and uncertainty](M03-L03.md) — advanced

@@ -3,29 +3,30 @@ kind: Deployment
 metadata:
   name: learning-api
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: { { .Values.replicaCount } }
   selector:
-    matchLabels: {app: learning-api}
+    matchLabels: { app: learning-api }
   template:
     metadata:
-      labels: {app: learning-api}
+      labels: { app: learning-api }
     spec:
       automountServiceAccountToken: false
       securityContext:
         runAsNonRoot: true
         runAsUser: 10001
-        seccompProfile: {type: RuntimeDefault}
+        seccompProfile: { type: RuntimeDefault }
       containers:
         - name: api
-          image: {{ required "Verified image digest required" .Values.image | quote }}
-          ports: [{name: http, containerPort: 8080}]
+          image: { { required "Verified image digest required" .Values.image | quote } }
+          ports: [{ name: http, containerPort: 8080 }]
           securityContext:
             allowPrivilegeEscalation: false
             readOnlyRootFilesystem: true
-            capabilities: {drop: [ALL]}
+            capabilities: { drop: [ALL] }
           resources:
-            requests: {cpu: 100m, memory: 64Mi}
-            limits: {cpu: 250m, memory: 128Mi}
-          readinessProbe: {httpGet: {path: /ready, port: http}, periodSeconds: 5}
-          livenessProbe: {httpGet: {path: /health, port: http}, periodSeconds: 10}
-          startupProbe: {httpGet: {path: /health, port: http}, failureThreshold: 12, periodSeconds: 5}
+            requests: { cpu: 100m, memory: 64Mi }
+            limits: { cpu: 250m, memory: 128Mi }
+          readinessProbe: { httpGet: { path: /ready, port: http }, periodSeconds: 5 }
+          livenessProbe: { httpGet: { path: /health, port: http }, periodSeconds: 10 }
+          startupProbe:
+            { httpGet: { path: /health, port: http }, failureThreshold: 12, periodSeconds: 5 }

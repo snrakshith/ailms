@@ -1,18 +1,7 @@
-node_modules
-**/dist
-**/coverage
-**/.vite
-**/.turbo
+# Helm uses Go-template syntax, which is not valid standalone YAML for Prettier.
+deploy/helm/**/templates/**
+
+# These are generated lock/manifest files or third-party curriculum source assets.
 pnpm-lock.yaml
-*.zip
-*.png
-*.svg
-*.ico
-*.webp
-*.jpg
-*.jpeg
-*.pdf
 DELIVERY_MANIFEST.json
-**/playwright-report
-**/test-results
-reports/zap
+packages/curriculum/data/courses/**

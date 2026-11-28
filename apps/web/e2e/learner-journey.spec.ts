@@ -8,6 +8,7 @@ test('new developer can register, complete a lesson, and use learning tools', as
   await page.getByLabel('Create password').fill('this-is-a-test-passphrase-2026');
   await page.getByRole('button', { name: 'Create free account' }).click();
   await expect(page.getByText('Build on the developer you already are')).toBeVisible();
+  await page.getByRole('button', { name: 'Decline' }).click();
   await page.getByRole('button', { name: 'Explore my learning journey' }).click();
   await expect(page.getByText('Ready to level up?')).toBeVisible();
   await page.getByRole('link', { name: 'Foundations' }).first().click();

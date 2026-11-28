@@ -13,7 +13,8 @@ ARG PUBLIC_SITE_URL
 ARG SEO_REQUIRE_SITE_URL=0
 ENV VITE_GOOGLE_CLIENT_ID=${VITE_GOOGLE_CLIENT_ID} VITE_POSTHOG_KEY=${VITE_POSTHOG_KEY} VITE_POSTHOG_HOST=${VITE_POSTHOG_HOST} VITE_MIXPANEL_TOKEN=${VITE_MIXPANEL_TOKEN} VITE_SENTRY_DSN=${VITE_SENTRY_DSN} VITE_STATUS_PAGE_URL=${VITE_STATUS_PAGE_URL} PUBLIC_SITE_URL=${PUBLIC_SITE_URL} SEO_REQUIRE_SITE_URL=${SEO_REQUIRE_SITE_URL}
 RUN pnpm run build:shared && pnpm --filter @sapling/web build
-FROM nginxinc/nginx-unprivileged:1.27-alpine
+FROM nginxinc/nginx-unprivileged:1.29-alpine
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /workspace/apps/web/dist /usr/share/nginx/html
+USER 101
 EXPOSE 8080
