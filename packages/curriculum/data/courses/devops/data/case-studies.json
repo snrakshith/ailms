@@ -1,0 +1,22 @@
+[
+  {
+    "id": "OPS-CASE01",
+    "title": "E-commerce canary regression",
+    "content_path": "cases/OPS-CASE01.md"
+  },
+  {
+    "id": "OPS-CASE02",
+    "title": "Compromised dependency",
+    "content_path": "cases/OPS-CASE02.md"
+  },
+  {
+    "id": "OPS-CASE03",
+    "title": "Kubernetes service outage",
+    "content_path": "cases/OPS-CASE03.md"
+  },
+  {
+    "id": "OPS-CASE04",
+    "title": "Credential exposure tabletop",
+    "content_path": "cases/OPS-CASE04.md"
+  }
+]

@@ -1,0 +1,3314 @@
+[
+  {
+    "id": "DSA-D01-P01",
+    "day": 1,
+    "problem_id": 1,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D01-P02",
+    "day": 1,
+    "problem_id": 217,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D01-P03",
+    "day": 1,
+    "problem_id": 242,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D01-P04",
+    "day": 1,
+    "problem_id": 49,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D01-P05",
+    "day": 1,
+    "problem_id": 347,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D01-P06",
+    "day": 1,
+    "problem_id": 238,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D02-P01",
+    "day": 2,
+    "problem_id": 560,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D02-P02",
+    "day": 2,
+    "problem_id": 523,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D02-P03",
+    "day": 2,
+    "problem_id": 525,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D02-P04",
+    "day": 2,
+    "problem_id": 128,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D02-P05",
+    "day": 2,
+    "problem_id": 659,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D02-P06",
+    "day": 2,
+    "problem_id": 41,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 8,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D03-P01",
+    "day": 3,
+    "problem_id": 15,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 9,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D03-P02",
+    "day": 3,
+    "problem_id": 18,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 9,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D03-P03",
+    "day": 3,
+    "problem_id": 75,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 9,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D03-P04",
+    "day": 3,
+    "problem_id": 280,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 9,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D03-P05",
+    "day": 3,
+    "problem_id": 315,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 9,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D03-P06",
+    "day": 3,
+    "problem_id": 324,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 9,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D04-P01",
+    "day": 4,
+    "problem_id": 48,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D04-P02",
+    "day": 4,
+    "problem_id": 54,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D04-P03",
+    "day": 4,
+    "problem_id": 73,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D04-P04",
+    "day": 4,
+    "problem_id": 304,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D04-P05",
+    "day": 4,
+    "problem_id": 289,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D04-P06",
+    "day": 4,
+    "problem_id": 36,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D05-P01",
+    "day": 5,
+    "problem_id": 42,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D05-P02",
+    "day": 5,
+    "problem_id": 84,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D05-P03",
+    "day": 5,
+    "problem_id": 239,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D05-P04",
+    "day": 5,
+    "problem_id": 169,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D05-P05",
+    "day": 5,
+    "problem_id": 229,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D05-P06",
+    "day": 5,
+    "problem_id": 134,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 10,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D06-P01",
+    "day": 6,
+    "problem_id": 167,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 11,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D06-P02",
+    "day": 6,
+    "problem_id": 125,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 11,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D06-P03",
+    "day": 6,
+    "problem_id": 680,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 11,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D06-P04",
+    "day": 6,
+    "problem_id": 11,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 11,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D06-P05",
+    "day": 6,
+    "problem_id": 16,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 11,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D06-P06",
+    "day": 6,
+    "problem_id": 844,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 11,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D07-P01",
+    "day": 7,
+    "problem_id": 26,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 12,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D07-P02",
+    "day": 7,
+    "problem_id": 80,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 12,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D07-P03",
+    "day": 7,
+    "problem_id": 27,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 12,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D07-P04",
+    "day": 7,
+    "problem_id": 283,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 12,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D07-P05",
+    "day": 7,
+    "problem_id": 905,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 12,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D07-P06",
+    "day": 7,
+    "problem_id": 977,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 12,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D08-P01",
+    "day": 8,
+    "problem_id": 643,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D08-P02",
+    "day": 8,
+    "problem_id": 1052,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D08-P03",
+    "day": 8,
+    "problem_id": 1343,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D08-P04",
+    "day": 8,
+    "problem_id": 567,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D08-P05",
+    "day": 8,
+    "problem_id": 438,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D08-P06",
+    "day": 8,
+    "problem_id": 1876,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D09-P01",
+    "day": 9,
+    "problem_id": 3,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D09-P02",
+    "day": 9,
+    "problem_id": 76,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D09-P03",
+    "day": 9,
+    "problem_id": 424,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D09-P04",
+    "day": 9,
+    "problem_id": 904,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D09-P05",
+    "day": 9,
+    "problem_id": 1004,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D09-P06",
+    "day": 9,
+    "problem_id": 1838,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 13,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D10-P01",
+    "day": 10,
+    "problem_id": 704,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 14,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D10-P02",
+    "day": 10,
+    "problem_id": 35,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 14,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D10-P03",
+    "day": 10,
+    "problem_id": 34,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 14,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D10-P04",
+    "day": 10,
+    "problem_id": 153,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 14,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D10-P05",
+    "day": 10,
+    "problem_id": 33,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 14,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D10-P06",
+    "day": 10,
+    "problem_id": 81,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 14,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D11-P01",
+    "day": 11,
+    "problem_id": 875,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 15,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D11-P02",
+    "day": 11,
+    "problem_id": 1011,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 15,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D11-P03",
+    "day": 11,
+    "problem_id": 410,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 15,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D11-P04",
+    "day": 11,
+    "problem_id": 774,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 15,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D11-P05",
+    "day": 11,
+    "problem_id": 1283,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 15,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D11-P06",
+    "day": 11,
+    "problem_id": 2064,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 15,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D12-P01",
+    "day": 12,
+    "problem_id": 162,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D12-P02",
+    "day": 12,
+    "problem_id": 74,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D12-P03",
+    "day": 12,
+    "problem_id": 240,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D12-P04",
+    "day": 12,
+    "problem_id": 658,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D12-P05",
+    "day": 12,
+    "problem_id": 719,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D12-P06",
+    "day": 12,
+    "problem_id": 4,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D13-P01",
+    "day": 13,
+    "problem_id": 378,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D13-P02",
+    "day": 13,
+    "problem_id": 668,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D13-P03",
+    "day": 13,
+    "problem_id": 1201,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D13-P04",
+    "day": 13,
+    "problem_id": 793,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D13-P05",
+    "day": 13,
+    "problem_id": 354,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D13-P06",
+    "day": 13,
+    "problem_id": 300,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 16,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D14-P01",
+    "day": 14,
+    "problem_id": 20,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 17,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D14-P02",
+    "day": 14,
+    "problem_id": 394,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 17,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D14-P03",
+    "day": 14,
+    "problem_id": 71,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 17,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D14-P04",
+    "day": 14,
+    "problem_id": 155,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 17,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D14-P05",
+    "day": 14,
+    "problem_id": 150,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 17,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D14-P06",
+    "day": 14,
+    "problem_id": 227,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 17,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D15-P01",
+    "day": 15,
+    "problem_id": 496,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 18,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D15-P02",
+    "day": 15,
+    "problem_id": 503,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 18,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D15-P03",
+    "day": 15,
+    "problem_id": 739,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 18,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D15-P04",
+    "day": 15,
+    "problem_id": 901,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 18,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D15-P05",
+    "day": 15,
+    "problem_id": 85,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 18,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D15-P06",
+    "day": 15,
+    "problem_id": 402,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 18,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D16-P01",
+    "day": 16,
+    "problem_id": 42,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D16-P02",
+    "day": 16,
+    "problem_id": 907,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D16-P03",
+    "day": 16,
+    "problem_id": 1856,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D16-P04",
+    "day": 16,
+    "problem_id": 456,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D16-P05",
+    "day": 16,
+    "problem_id": 1019,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D16-P06",
+    "day": 16,
+    "problem_id": 84,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D17-P01",
+    "day": 17,
+    "problem_id": 206,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D17-P02",
+    "day": 17,
+    "problem_id": 21,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D17-P03",
+    "day": 17,
+    "problem_id": 141,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D17-P04",
+    "day": 17,
+    "problem_id": 142,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D17-P05",
+    "day": 17,
+    "problem_id": 876,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D17-P06",
+    "day": 17,
+    "problem_id": 19,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 19,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D18-P01",
+    "day": 18,
+    "problem_id": 92,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 20,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D18-P02",
+    "day": 18,
+    "problem_id": 25,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 20,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D18-P03",
+    "day": 18,
+    "problem_id": 234,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 20,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D18-P04",
+    "day": 18,
+    "problem_id": 143,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 20,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D18-P05",
+    "day": 18,
+    "problem_id": 61,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 20,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D18-P06",
+    "day": 18,
+    "problem_id": 24,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 20,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D19-P01",
+    "day": 19,
+    "problem_id": 23,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D19-P02",
+    "day": 19,
+    "problem_id": 148,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D19-P03",
+    "day": 19,
+    "problem_id": 82,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D19-P04",
+    "day": 19,
+    "problem_id": 86,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D19-P05",
+    "day": 19,
+    "problem_id": 138,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D19-P06",
+    "day": 19,
+    "problem_id": 160,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D20-P01",
+    "day": 20,
+    "problem_id": 146,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D20-P02",
+    "day": 20,
+    "problem_id": 432,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D20-P03",
+    "day": 20,
+    "problem_id": 460,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D20-P04",
+    "day": 20,
+    "problem_id": 445,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D20-P05",
+    "day": 20,
+    "problem_id": 2,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D20-P06",
+    "day": 20,
+    "problem_id": 430,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 21,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D21-P01",
+    "day": 21,
+    "problem_id": 104,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 22,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D21-P02",
+    "day": 21,
+    "problem_id": 226,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 22,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D21-P03",
+    "day": 21,
+    "problem_id": 543,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 22,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D21-P04",
+    "day": 21,
+    "problem_id": 110,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 22,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D21-P05",
+    "day": 21,
+    "problem_id": 100,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 22,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D21-P06",
+    "day": 21,
+    "problem_id": 572,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 22,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D22-P01",
+    "day": 22,
+    "problem_id": 102,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D22-P02",
+    "day": 22,
+    "problem_id": 103,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D22-P03",
+    "day": 22,
+    "problem_id": 199,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D22-P04",
+    "day": 22,
+    "problem_id": 116,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D22-P05",
+    "day": 22,
+    "problem_id": 117,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D22-P06",
+    "day": 22,
+    "problem_id": 993,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D23-P01",
+    "day": 23,
+    "problem_id": 112,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D23-P02",
+    "day": 23,
+    "problem_id": 113,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D23-P03",
+    "day": 23,
+    "problem_id": 437,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D23-P04",
+    "day": 23,
+    "problem_id": 124,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D23-P05",
+    "day": 23,
+    "problem_id": 129,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D23-P06",
+    "day": 23,
+    "problem_id": 257,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 23,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D24-P01",
+    "day": 24,
+    "problem_id": 236,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 24,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D24-P02",
+    "day": 24,
+    "problem_id": 235,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 24,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D24-P03",
+    "day": 24,
+    "problem_id": 105,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 24,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D24-P04",
+    "day": 24,
+    "problem_id": 106,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 24,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D24-P05",
+    "day": 24,
+    "problem_id": 297,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 24,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D24-P06",
+    "day": 24,
+    "problem_id": 1123,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 24,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D25-P01",
+    "day": 25,
+    "problem_id": 98,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D25-P02",
+    "day": 25,
+    "problem_id": 230,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D25-P03",
+    "day": 25,
+    "problem_id": 538,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D25-P04",
+    "day": 25,
+    "problem_id": 450,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D25-P05",
+    "day": 25,
+    "problem_id": 701,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D25-P06",
+    "day": 25,
+    "problem_id": 669,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D26-P01",
+    "day": 26,
+    "problem_id": 968,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D26-P02",
+    "day": 26,
+    "problem_id": 1448,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D26-P03",
+    "day": 26,
+    "problem_id": 366,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D26-P04",
+    "day": 26,
+    "problem_id": 863,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D26-P05",
+    "day": 26,
+    "problem_id": 987,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D26-P06",
+    "day": 26,
+    "problem_id": 1110,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 25,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D27-P01",
+    "day": 27,
+    "problem_id": 337,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 26,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D27-P02",
+    "day": 27,
+    "problem_id": 222,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 26,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D27-P03",
+    "day": 27,
+    "problem_id": 958,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 26,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D27-P04",
+    "day": 27,
+    "problem_id": 114,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 26,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D27-P05",
+    "day": 27,
+    "problem_id": 1008,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 26,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D27-P06",
+    "day": 27,
+    "problem_id": 652,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 26,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D28-P01",
+    "day": 28,
+    "problem_id": 208,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 27,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D28-P02",
+    "day": 28,
+    "problem_id": 211,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 27,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D28-P03",
+    "day": 28,
+    "problem_id": 212,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 27,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D28-P04",
+    "day": 28,
+    "problem_id": 1268,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 27,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D28-P05",
+    "day": 28,
+    "problem_id": 336,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 27,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D28-P06",
+    "day": 28,
+    "problem_id": 421,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 27,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D29-P01",
+    "day": 29,
+    "problem_id": 215,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 28,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D29-P02",
+    "day": 29,
+    "problem_id": 703,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 28,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D29-P03",
+    "day": 29,
+    "problem_id": 295,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 28,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D29-P04",
+    "day": 29,
+    "problem_id": 973,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 28,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D29-P05",
+    "day": 29,
+    "problem_id": 1046,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 28,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D29-P06",
+    "day": 29,
+    "problem_id": 621,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 28,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D29-P07",
+    "day": 29,
+    "problem_id": 23,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 28,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D30-P01",
+    "day": 30,
+    "problem_id": 200,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D30-P02",
+    "day": 30,
+    "problem_id": 695,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D30-P03",
+    "day": 30,
+    "problem_id": 133,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D30-P04",
+    "day": 30,
+    "problem_id": 417,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D30-P05",
+    "day": 30,
+    "problem_id": 130,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D30-P06",
+    "day": 30,
+    "problem_id": 1020,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D31-P01",
+    "day": 31,
+    "problem_id": 994,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D31-P02",
+    "day": 31,
+    "problem_id": 1162,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D31-P03",
+    "day": 31,
+    "problem_id": 127,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D31-P04",
+    "day": 31,
+    "problem_id": 126,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D31-P05",
+    "day": 31,
+    "problem_id": 542,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D31-P06",
+    "day": 31,
+    "problem_id": 1926,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 29,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D32-P01",
+    "day": 32,
+    "problem_id": 547,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 30,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D32-P02",
+    "day": 32,
+    "problem_id": 684,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 30,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D32-P03",
+    "day": 32,
+    "problem_id": 685,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 30,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D32-P04",
+    "day": 32,
+    "problem_id": 1135,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 30,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D32-P05",
+    "day": 32,
+    "problem_id": 959,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 30,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D32-P06",
+    "day": 32,
+    "problem_id": 990,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 30,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D33-P01",
+    "day": 33,
+    "problem_id": 207,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 31,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D33-P02",
+    "day": 33,
+    "problem_id": 210,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 31,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D33-P03",
+    "day": 33,
+    "problem_id": 269,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 31,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D33-P04",
+    "day": 33,
+    "problem_id": 310,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 31,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D33-P05",
+    "day": 33,
+    "problem_id": 444,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 31,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D33-P06",
+    "day": 33,
+    "problem_id": 2115,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 31,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D34-P01",
+    "day": 34,
+    "problem_id": 743,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D34-P02",
+    "day": 34,
+    "problem_id": 1631,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D34-P03",
+    "day": 34,
+    "problem_id": 787,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D34-P04",
+    "day": 34,
+    "problem_id": 1514,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D34-P05",
+    "day": 34,
+    "problem_id": 778,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D34-P06",
+    "day": 34,
+    "problem_id": 1976,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D35-P01",
+    "day": 35,
+    "problem_id": 261,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D35-P02",
+    "day": 35,
+    "problem_id": 323,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D35-P03",
+    "day": 35,
+    "problem_id": 1059,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D35-P04",
+    "day": 35,
+    "problem_id": 1192,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D35-P05",
+    "day": 35,
+    "problem_id": 332,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D35-P06",
+    "day": 35,
+    "problem_id": 753,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 32,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D36-P01",
+    "day": 36,
+    "problem_id": 286,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 33,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D36-P02",
+    "day": 36,
+    "problem_id": 1091,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 33,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D36-P03",
+    "day": 36,
+    "problem_id": 934,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 33,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D36-P04",
+    "day": 36,
+    "problem_id": 1293,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 33,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D36-P05",
+    "day": 36,
+    "problem_id": 490,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 33,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D36-P06",
+    "day": 36,
+    "problem_id": 505,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 33,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D37-P01",
+    "day": 37,
+    "problem_id": 78,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 34,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D37-P02",
+    "day": 37,
+    "problem_id": 90,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 34,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D37-P03",
+    "day": 37,
+    "problem_id": 77,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 34,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D37-P04",
+    "day": 37,
+    "problem_id": 39,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 34,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D37-P05",
+    "day": 37,
+    "problem_id": 40,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 34,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D37-P06",
+    "day": 37,
+    "problem_id": 216,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 34,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D38-P01",
+    "day": 38,
+    "problem_id": 46,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D38-P02",
+    "day": 38,
+    "problem_id": 47,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D38-P03",
+    "day": 38,
+    "problem_id": 784,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D38-P04",
+    "day": 38,
+    "problem_id": 17,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D38-P05",
+    "day": 38,
+    "problem_id": 22,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D38-P06",
+    "day": 38,
+    "problem_id": 320,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D39-P01",
+    "day": 39,
+    "problem_id": 79,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D39-P02",
+    "day": 39,
+    "problem_id": 51,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D39-P03",
+    "day": 39,
+    "problem_id": 52,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D39-P04",
+    "day": 39,
+    "problem_id": 37,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D39-P05",
+    "day": 39,
+    "problem_id": 980,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D39-P06",
+    "day": 39,
+    "problem_id": 489,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 35,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D40-P01",
+    "day": 40,
+    "problem_id": 131,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 36,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D40-P02",
+    "day": 40,
+    "problem_id": 132,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 36,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D40-P03",
+    "day": 40,
+    "problem_id": 93,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 36,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D40-P04",
+    "day": 40,
+    "problem_id": 140,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 36,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D40-P05",
+    "day": 40,
+    "problem_id": 139,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 36,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D40-P06",
+    "day": 40,
+    "problem_id": 282,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 36,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D41-P01",
+    "day": 41,
+    "problem_id": 70,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 37,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D41-P02",
+    "day": 41,
+    "problem_id": 198,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 37,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D41-P03",
+    "day": 41,
+    "problem_id": 213,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 37,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D41-P04",
+    "day": 41,
+    "problem_id": 746,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 37,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D41-P05",
+    "day": 41,
+    "problem_id": 91,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 37,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D41-P06",
+    "day": 41,
+    "problem_id": 322,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 37,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D42-P01",
+    "day": 42,
+    "problem_id": 300,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D42-P02",
+    "day": 42,
+    "problem_id": 674,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D42-P03",
+    "day": 42,
+    "problem_id": 673,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D42-P04",
+    "day": 42,
+    "problem_id": 1143,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D42-P05",
+    "day": 42,
+    "problem_id": 368,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D42-P06",
+    "day": 42,
+    "problem_id": 376,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D43-P01",
+    "day": 43,
+    "problem_id": 416,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D43-P02",
+    "day": 43,
+    "problem_id": 494,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D43-P03",
+    "day": 43,
+    "problem_id": 474,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D43-P04",
+    "day": 43,
+    "problem_id": 518,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D43-P05",
+    "day": 43,
+    "problem_id": 1049,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D43-P06",
+    "day": 43,
+    "problem_id": 879,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 38,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D44-P01",
+    "day": 44,
+    "problem_id": 1143,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 39,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D44-P02",
+    "day": 44,
+    "problem_id": 72,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 39,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D44-P03",
+    "day": 44,
+    "problem_id": 115,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 39,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D44-P04",
+    "day": 44,
+    "problem_id": 583,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 39,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D44-P05",
+    "day": 44,
+    "problem_id": 1092,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 39,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D44-P06",
+    "day": 44,
+    "problem_id": 97,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 39,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D45-P01",
+    "day": 45,
+    "problem_id": 62,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 40,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D45-P02",
+    "day": 45,
+    "problem_id": 63,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 40,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D45-P03",
+    "day": 45,
+    "problem_id": 64,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 40,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D45-P04",
+    "day": 45,
+    "problem_id": 174,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 40,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D45-P05",
+    "day": 45,
+    "problem_id": 741,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 40,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D45-P06",
+    "day": 45,
+    "problem_id": 1463,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 40,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D46-P01",
+    "day": 46,
+    "problem_id": 312,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D46-P02",
+    "day": 46,
+    "problem_id": 1000,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D46-P03",
+    "day": 46,
+    "problem_id": 516,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D46-P04",
+    "day": 46,
+    "problem_id": 647,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D46-P05",
+    "day": 46,
+    "problem_id": 5,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D46-P06",
+    "day": 46,
+    "problem_id": 87,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D47-P01",
+    "day": 47,
+    "problem_id": 121,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D47-P02",
+    "day": 47,
+    "problem_id": 122,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D47-P03",
+    "day": 47,
+    "problem_id": 123,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D47-P04",
+    "day": 47,
+    "problem_id": 188,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D47-P05",
+    "day": 47,
+    "problem_id": 309,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D47-P06",
+    "day": 47,
+    "problem_id": 714,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 41,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D48-P01",
+    "day": 48,
+    "problem_id": 96,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 42,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D48-P02",
+    "day": 48,
+    "problem_id": 95,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 42,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D48-P03",
+    "day": 48,
+    "problem_id": 688,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 42,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D48-P04",
+    "day": 48,
+    "problem_id": 935,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 42,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D48-P05",
+    "day": 48,
+    "problem_id": 576,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 42,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D48-P06",
+    "day": 48,
+    "problem_id": 1269,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 42,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D49-P01",
+    "day": 49,
+    "problem_id": 10,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D49-P02",
+    "day": 49,
+    "problem_id": 44,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D49-P03",
+    "day": 49,
+    "problem_id": 392,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D49-P04",
+    "day": 49,
+    "problem_id": 115,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D49-P05",
+    "day": 49,
+    "problem_id": 1092,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D49-P06",
+    "day": 49,
+    "problem_id": 1062,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D50-P01",
+    "day": 50,
+    "problem_id": 337,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D50-P02",
+    "day": 50,
+    "problem_id": 968,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D50-P03",
+    "day": 50,
+    "problem_id": 1245,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D50-P04",
+    "day": 50,
+    "problem_id": 543,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D50-P05",
+    "day": 50,
+    "problem_id": 124,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D50-P06",
+    "day": 50,
+    "problem_id": 1339,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 43,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D51-P01",
+    "day": 51,
+    "problem_id": 847,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 44,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D51-P02",
+    "day": 51,
+    "problem_id": 691,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 44,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D51-P03",
+    "day": 51,
+    "problem_id": 1125,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 44,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D51-P04",
+    "day": 51,
+    "problem_id": 1494,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 44,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D51-P05",
+    "day": 51,
+    "problem_id": 943,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 44,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D51-P06",
+    "day": 51,
+    "problem_id": 526,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 44,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D52-P01",
+    "day": 52,
+    "problem_id": 32,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 45,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D52-P02",
+    "day": 52,
+    "problem_id": 1411,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 45,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D52-P03",
+    "day": 52,
+    "problem_id": 629,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 45,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D52-P04",
+    "day": 52,
+    "problem_id": 1866,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 45,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D52-P05",
+    "day": 52,
+    "problem_id": 1531,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 45,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D52-P06",
+    "day": 52,
+    "problem_id": 174,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 45,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D53-P01",
+    "day": 53,
+    "problem_id": 455,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D53-P02",
+    "day": 53,
+    "problem_id": 860,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D53-P03",
+    "day": 53,
+    "problem_id": 135,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D53-P04",
+    "day": 53,
+    "problem_id": 406,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D53-P05",
+    "day": 53,
+    "problem_id": 45,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D53-P06",
+    "day": 53,
+    "problem_id": 55,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D54-P01",
+    "day": 54,
+    "problem_id": 56,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D54-P02",
+    "day": 54,
+    "problem_id": 57,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D54-P03",
+    "day": 54,
+    "problem_id": 435,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D54-P04",
+    "day": 54,
+    "problem_id": 452,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D54-P05",
+    "day": 54,
+    "problem_id": 253,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D54-P06",
+    "day": 54,
+    "problem_id": 1851,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 46,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D55-P01",
+    "day": 55,
+    "problem_id": 621,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 47,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D55-P02",
+    "day": 55,
+    "problem_id": 1353,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 47,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D55-P03",
+    "day": 55,
+    "problem_id": 1665,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 47,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D55-P04",
+    "day": 55,
+    "problem_id": 630,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 47,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D55-P05",
+    "day": 55,
+    "problem_id": 1029,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 47,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D55-P06",
+    "day": 55,
+    "problem_id": 1710,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 47,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D56-P01",
+    "day": 56,
+    "problem_id": 136,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 48,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D56-P02",
+    "day": 56,
+    "problem_id": 137,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 48,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D56-P03",
+    "day": 56,
+    "problem_id": 260,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 48,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D56-P04",
+    "day": 56,
+    "problem_id": 338,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 48,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D56-P05",
+    "day": 56,
+    "problem_id": 191,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 48,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D56-P06",
+    "day": 56,
+    "problem_id": 190,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 48,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D56-P07",
+    "day": 56,
+    "problem_id": 268,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 48,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D57-P01",
+    "day": 57,
+    "problem_id": 204,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 49,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D57-P02",
+    "day": 57,
+    "problem_id": 372,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 49,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D57-P03",
+    "day": 57,
+    "problem_id": 365,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 49,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D57-P04",
+    "day": 57,
+    "problem_id": 858,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 49,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D57-P05",
+    "day": 57,
+    "problem_id": 1015,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 49,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D57-P06",
+    "day": 57,
+    "problem_id": 50,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 49,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D57-P07",
+    "day": 57,
+    "problem_id": 149,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 49,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D58-P01",
+    "day": 58,
+    "problem_id": 295,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D58-P02",
+    "day": 58,
+    "problem_id": 68,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D58-P03",
+    "day": 58,
+    "problem_id": 41,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D58-P04",
+    "day": 58,
+    "problem_id": 218,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D58-P05",
+    "day": 58,
+    "problem_id": 233,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D58-P06",
+    "day": 58,
+    "problem_id": 4,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P01",
+    "day": 59,
+    "problem_id": 843,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P02",
+    "day": 59,
+    "problem_id": 1229,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P03",
+    "day": 59,
+    "problem_id": 760,
+    "difficulty_as_printed": "Easy",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P04",
+    "day": 59,
+    "problem_id": 146,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P05",
+    "day": 59,
+    "problem_id": 1650,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P06",
+    "day": 59,
+    "problem_id": 1235,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P07",
+    "day": 59,
+    "problem_id": 939,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D59-P08",
+    "day": 59,
+    "problem_id": 1060,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 50,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P01",
+    "day": 60,
+    "problem_id": 1268,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P02",
+    "day": 60,
+    "problem_id": 759,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P03",
+    "day": 60,
+    "problem_id": 253,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P04",
+    "day": 60,
+    "problem_id": 188,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P05",
+    "day": 60,
+    "problem_id": 1029,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P06",
+    "day": 60,
+    "problem_id": 218,
+    "difficulty_as_printed": "Hard",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P07",
+    "day": 60,
+    "problem_id": 146,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P08",
+    "day": 60,
+    "problem_id": 347,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  },
+  {
+    "id": "DSA-D60-P09",
+    "day": 60,
+    "problem_id": 621,
+    "difficulty_as_printed": "Medium",
+    "source_start_page": 51,
+    "source": "DSA_60_Day_Mastery_Plan.pdf",
+    "problemset_url": "https://leetcode.com/problemset/"
+  }
+]

@@ -1,0 +1,11 @@
+flowchart TD
+  a["Deployment spec"]
+  b["ReplicaSet controller"]
+  c["Ready Pod A"]
+  d["Ready Pod B"]
+  e["Service / endpoints"]
+  a -->|reconcile| b
+  b --> c
+  b --> d
+  c -->|ready| e
+  d -->|ready| e

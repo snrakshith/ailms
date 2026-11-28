@@ -1,0 +1,11 @@
+flowchart TD
+  a["Internet clients"]
+  b["Public ALB (two AZs)"]
+  c["Private app AZ A"]
+  d["Private app AZ B"]
+  e["Private data tier"]
+  a -->|HTTPS| b
+  b -->|app port| c
+  b -->|app port| d
+  c -->|db port| e
+  d -->|db port| e

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "OPS-V01",
+    "title": "SLO error-budget burn",
+    "content_path": "visualizations/OPS-V01.html",
+    "offline": true
+  },
+  {
+    "id": "OPS-V02",
+    "title": "Canary release decision",
+    "content_path": "visualizations/OPS-V02.html",
+    "offline": true
+  },
+  {
+    "id": "OPS-V03",
+    "title": "Replica capacity and headroom",
+    "content_path": "visualizations/OPS-V03.html",
+    "offline": true
+  },
+  {
+    "id": "OPS-V04",
+    "title": "Fail-closed delivery gate",
+    "content_path": "visualizations/OPS-V04.html",
+    "offline": true
+  }
+]

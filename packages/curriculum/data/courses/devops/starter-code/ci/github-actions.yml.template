@@ -1,0 +1,17 @@
+name: learning-ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@REPLACE_WITH_VERIFIED_FULL_SHA
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tests -v
+  # Add separately reviewed scanner jobs, verified installers, explicit fail gates.
+  # Never give untrusted PR jobs deployment secrets or privileged credentials.

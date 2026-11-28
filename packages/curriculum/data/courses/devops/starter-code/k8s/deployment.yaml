@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learning-api
+  namespace: learning
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: learning-api}
+  template:
+    metadata:
+      labels: {app: learning-api}
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: {type: RuntimeDefault}
+      containers:
+        - name: api
+          image: REPLACE_WITH_VERIFIED_REGISTRY_IMAGE_AT_DIGEST
+          ports: [{name: http, containerPort: 8080}]
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          resources:
+            requests: {cpu: 100m, memory: 64Mi}
+            limits: {cpu: 250m, memory: 128Mi}
+          readinessProbe: {httpGet: {path: /ready, port: http}, periodSeconds: 5}
+          livenessProbe: {httpGet: {path: /health, port: http}, periodSeconds: 10}
+          startupProbe: {httpGet: {path: /health, port: http}, failureThreshold: 12, periodSeconds: 5}

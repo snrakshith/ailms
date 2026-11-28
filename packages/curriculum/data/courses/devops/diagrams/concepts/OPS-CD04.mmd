@@ -1,0 +1,11 @@
+flowchart TD
+  a["Reviewed Git desired state"]
+  b["Argo CD compare"]
+  c["Live cluster state"]
+  d["Approved sync"]
+  e["Health and drift status"]
+  a --> b
+  c -->|observe| b
+  b -->|drift| d
+  d --> e
+  c --> e

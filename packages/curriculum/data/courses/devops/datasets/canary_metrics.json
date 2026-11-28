@@ -1,0 +1,11 @@
+{
+  "baseline": {
+    "requests": 10000,
+    "errors": 10
+  },
+  "candidate": {
+    "requests": 1000,
+    "errors": 20
+  },
+  "slo": 0.999
+}

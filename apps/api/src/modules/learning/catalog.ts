@@ -1,4 +1,10 @@
-import { course, type CourseAssetKind } from '@aiquest/curriculum';
+import {
+  course,
+  devopsCourse,
+  dsaCourse,
+  type CourseAssetKind,
+  type CurriculumCourse,
+} from '@aiquest/curriculum';
 import type { LessonQuestion, LessonSection } from '@sapling/contracts';
 
 export type CatalogResource = {
@@ -93,7 +99,7 @@ const toCodeSection = (heading: string, code: string, callout: string): LessonSe
   callout,
 });
 
-export const catalog: CatalogPath[] = course.tracks.map((track) => {
+const aiCatalog: CatalogPath[] = course.tracks.map((track) => {
   const meta = presentation[track.id];
   const lessons = course.lessons
     .filter((lesson) => lesson.trackId === track.id)
@@ -155,6 +161,78 @@ export const catalog: CatalogPath[] = course.tracks.map((track) => {
     lessons,
   };
 });
+
+const externalPresentation: Record<
+  string,
+  { prefix: string; subtitle: string; icon: string; color: string }
+> = {
+  [devopsCourse.id]: {
+    prefix: 'devops',
+    subtitle: 'Infrastructure, secure delivery and production operations',
+    icon: 'rocket',
+    color: 'blue',
+  },
+  [dsaCourse.id]: {
+    prefix: 'dsa',
+    subtitle: 'Patterns, problem solving and interview practice',
+    icon: 'chart',
+    color: 'violet',
+  },
+};
+function externalCatalog(subject: CurriculumCourse): CatalogPath[] {
+  const meta = externalPresentation[subject.id];
+  return subject.tracks.map((track) => ({
+    id: `${meta.prefix}-${track.id.toLowerCase()}`,
+    title: track.title,
+    subtitle: meta.subtitle,
+    description: `${subject.title}: ${track.title}. Learner materials include lessons, practical labs and reference files.`,
+    icon: meta.icon,
+    level: `Track ${track.order} · ${track.suggestedWeeks} weeks`,
+    color: meta.color,
+    lessons: subject.lessons
+      .filter((lesson) => lesson.trackId === track.id)
+      .map((lesson) => ({
+        id: lesson.id,
+        pathId: `${meta.prefix}-${track.id.toLowerCase()}`,
+        title: lesson.title,
+        description: lesson.concepts,
+        durationMinutes: lesson.durationMinutes,
+        xp: Math.max(50, Math.round(lesson.durationMinutes / 15) * 10),
+        version: 1,
+        objectives: lesson.objectives,
+        sections: [
+          toSection('Concept notes', lesson.concepts),
+          toSection('Worked scenario', lesson.workedExample),
+          toSection('Practice exercise', lesson.exercise.task, lesson.exercise.acceptanceCriteria),
+          toSection('Common mistake', lesson.commonPitfall),
+        ],
+        questions: [],
+        resources: subject.assets
+          .filter(
+            (asset) =>
+              asset.lessonId === lesson.id ||
+              asset.moduleId === lesson.moduleId ||
+              (asset.kind === 'notebook' && asset.trackId === lesson.trackId) ||
+              (!asset.moduleId &&
+                !asset.lessonId &&
+                track.order === 1 &&
+                lesson.moduleId === track.moduleIds[0]),
+          )
+          .map((asset) => ({
+            id: asset.id,
+            title: asset.title,
+            kind: asset.kind,
+            filename: asset.path.split('/').at(-1)!,
+            source: asset.source,
+          })),
+      })),
+  }));
+}
+export const catalog: CatalogPath[] = [
+  ...aiCatalog,
+  ...externalCatalog(devopsCourse),
+  ...externalCatalog(dsaCourse),
+];
 
 export const allLessons = catalog.flatMap((path) => path.lessons);
 

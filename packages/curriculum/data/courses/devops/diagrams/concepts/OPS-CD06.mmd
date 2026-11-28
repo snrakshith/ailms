@@ -1,0 +1,11 @@
+flowchart TD
+  a["Trusted build output"]
+  b["Immutable image digest"]
+  c["SBOM and scan report"]
+  d["Signature + provenance"]
+  e["Deployment verifies digest"]
+  a --> b
+  b -->|inventory| c
+  b -->|sign| d
+  c -->|policy| e
+  d -->|identity| e

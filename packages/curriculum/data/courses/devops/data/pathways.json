@@ -1,0 +1,65 @@
+[
+  {
+    "id": "OPS-PATH01",
+    "title": "DevOps engineer",
+    "module_ids": [
+      "OPSF01",
+      "OPSF02",
+      "OPSF03",
+      "OPSF04",
+      "OPSF05",
+      "OPSF06",
+      "OPSF07",
+      "OPSF08",
+      "OPSP01"
+    ],
+    "content_path": "pathways/OPS-PATH01.md",
+    "estimated_minutes": 2910
+  },
+  {
+    "id": "OPS-PATH02",
+    "title": "DevSecOps engineer",
+    "module_ids": [
+      "OPSF01",
+      "OPSF02",
+      "OPSF03",
+      "OPSF04",
+      "OPSF05",
+      "OPSF06",
+      "OPSF07",
+      "OPSF08",
+      "OPSS01",
+      "OPSS02",
+      "OPSS03",
+      "OPSS04",
+      "OPSS05",
+      "OPSS06",
+      "OPSP01"
+    ],
+    "content_path": "pathways/OPS-PATH02.md",
+    "estimated_minutes": 4830
+  },
+  {
+    "id": "OPS-PATH03",
+    "title": "SRE & platform engineer",
+    "module_ids": [
+      "OPSF01",
+      "OPSF02",
+      "OPSF03",
+      "OPSF04",
+      "OPSF05",
+      "OPSF06",
+      "OPSF07",
+      "OPSF08",
+      "OPSS01",
+      "OPSS02",
+      "OPSS03",
+      "OPSS04",
+      "OPSS05",
+      "OPSS06",
+      "OPSP01"
+    ],
+    "content_path": "pathways/OPS-PATH03.md",
+    "estimated_minutes": 4830
+  }
+]

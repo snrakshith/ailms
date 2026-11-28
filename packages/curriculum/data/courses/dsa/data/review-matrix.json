@@ -1,0 +1,386 @@
+[
+  {
+    "lesson_id": "DSA00-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA00-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA00-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA00-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA01-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA01-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA01-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA01-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA01-L05",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA02-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA02-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA02-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA02-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA03-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA03-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA03-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA03-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA04-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA04-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA04-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA05-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA05-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA05-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA05-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA06-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA06-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA06-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA06-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA06-L05",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA06-L06",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA06-L07",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA07-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA07-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA08-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA08-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA08-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA08-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA08-L05",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA08-L06",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA08-L07",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA09-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA09-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA09-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA09-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA10-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA10-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA10-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA10-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA10-L05",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA11-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA11-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA11-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA11-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA11-L05",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA11-L06",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA11-L07",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA12-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA12-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA12-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA13-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA13-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA14-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA14-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "DSA14-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  }
+]

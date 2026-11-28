@@ -1,0 +1,1 @@
+{"spec":{"containers":[{"name":"demo","securityContext":{"privileged":true}}]}}

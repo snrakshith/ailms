@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: {name: learning-api, namespace: argocd}
+spec:
+  project: REPLACE_WITH_RESTRICTED_PROJECT
+  source:
+    repoURL: https://example.invalid/learning.git
+    targetRevision: REPLACE_WITH_REVIEWED_BRANCH_OR_COMMIT
+    path: starter-code/helm/learning-api
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: learning
+  syncPolicy: {}

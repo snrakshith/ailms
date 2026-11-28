@@ -1,0 +1,6 @@
+rules:
+  - id: learning-unsafe-query
+    languages: [python]
+    message: Use parameter binding rather than concatenation
+    severity: ERROR
+    pattern: $CUR.execute("SELECT " + $X)

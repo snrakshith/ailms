@@ -1,0 +1,28 @@
+{
+  "nodes": [
+    "compile",
+    "test",
+    "package",
+    "deploy"
+  ],
+  "edges": [
+    [
+      "compile",
+      "test"
+    ],
+    [
+      "test",
+      "package"
+    ],
+    [
+      "package",
+      "deploy"
+    ]
+  ],
+  "cycle_variant": [
+    [
+      "deploy",
+      "compile"
+    ]
+  ]
+}

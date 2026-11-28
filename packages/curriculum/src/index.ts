@@ -81,6 +81,17 @@ export type CourseModule = {
   durationMinutes: number;
   prerequisiteModuleIds: string[];
 };
+export type CurriculumCourse = {
+  id: string;
+  title: string;
+  tracks: CourseTrack[];
+  modules: CourseModule[];
+  lessons: CourseLesson[];
+  assets: CourseAsset[];
+  flashcards: CourseFlashcard[];
+  codeExamples?: CourseCodeExample[];
+  notebooks?: CourseNotebook[];
+};
 
 export type CourseTrack = {
   id: string;
@@ -270,7 +281,138 @@ const contentDirectories: Record<string, string> = {
   P: 'production-ai-engineering',
 };
 
-export const course = {
+type ExternalRawLesson = Omit<RawLesson, 'concepts'> & {
+  concepts: string[];
+  exercise: { task: string; acceptance_criteria: string[] };
+};
+type ExternalCurriculum = Omit<RawCurriculum, 'tracks' | 'modules'> & {
+  tracks: Array<
+    Omit<RawCurriculum['tracks'][number], 'suggested_weeks'> & { suggested_weeks?: number }
+  >;
+  modules: RawCurriculum['modules'];
+};
+function externalAssetKind(path: string): CourseAssetKind {
+  if (
+    path.startsWith('content/') ||
+    /^(chapters|cheatsheets|guides|cases|assessments)\//.test(path)
+  )
+    return 'reading';
+  if (path.startsWith('labs/') || path.startsWith('starter-code/'))
+    return path.includes('/starters/') || path.startsWith('starter-code/') ? 'code' : 'lab';
+  return assetKind(path);
+}
+function loadExternalCourse(folder: string): CurriculumCourse {
+  const root = data(`courses/${folder}/`);
+  const external = JSON.parse(
+    readFileSync(new URL('data/curriculum.json', root), 'utf8'),
+  ) as ExternalCurriculum;
+  const lessons = readFileSync(new URL('data/lessons.jsonl', root), 'utf8')
+    .trim()
+    .split('\n')
+    .map((line) => JSON.parse(line) as ExternalRawLesson);
+  const labs = JSON.parse(
+    readFileSync(new URL('data/labs.json', root), 'utf8'),
+  ) as RawLinkedAsset[];
+  const visualizations = JSON.parse(
+    readFileSync(new URL('data/visualizations.json', root), 'utf8'),
+  ) as RawLinkedAsset[];
+  const linked = new Map<string, string>();
+  for (const item of [...labs, ...visualizations])
+    for (const path of [
+      item.path,
+      item.guide_path,
+      item.starter_path,
+      (item as { notebook_path?: string }).notebook_path,
+      (item as { content_path?: string }).content_path,
+    ])
+      if (path) linked.set(path, item.lesson_id);
+  const paths = readdirSync(root, { recursive: true, encoding: 'utf8' }).filter(
+    (path): path is string =>
+      typeof path === 'string' &&
+      !path.startsWith('data/') &&
+      statSync(new URL(path, root)).isFile(),
+  );
+  const assets = paths.map((path): CourseAsset => {
+    const moduleId = path.match(
+      /(?:content\/[^/]+\/|chapters\/|cheatsheets\/|diagrams\/)([A-Z]+\d{2})/,
+    )?.[1];
+    const trackId = external.modules.find((module) => module.id === moduleId)?.track_id;
+    return {
+      id: `asset:${folder}:${path}`,
+      title: path
+        .split('/')
+        .at(-1)!
+        .replace(/\.(md|py|ipynb|svg|html|mmd|json|csv|tsv|ya?ml|tf|rego)$/, ''),
+      kind: externalAssetKind(path),
+      path: `courses/${folder}/${path}`,
+      trackId,
+      moduleId,
+      lessonId: linked.get(path),
+      source: readFileSync(new URL(path, root), 'utf8'),
+    };
+  });
+  const flashcards = readFileSync(new URL('flashcards/anki.tsv', root), 'utf8')
+    .trim()
+    .split('\n')
+    .slice(1)
+    .map((line, index): CourseFlashcard => {
+      const [front, back, tags = ''] = line.replace(/\r$/, '').split('\t');
+      const parts = tags.split(/\s+/).filter(Boolean);
+      const moduleId = parts.find((tag) => external.modules.some((module) => module.id === tag));
+      return {
+        id: `flashcard:${folder}:${index + 1}`,
+        front,
+        back,
+        tags: parts,
+        moduleId,
+        trackId: external.modules.find((module) => module.id === moduleId)?.track_id,
+      };
+    });
+  return {
+    id: external.curriculum_id,
+    title: external.title,
+    tracks: external.tracks.map((track) => ({
+      id: track.id,
+      title: track.title,
+      order: track.order,
+      moduleIds: track.module_ids,
+      suggestedWeeks:
+        track.suggested_weeks ?? Math.max(1, Math.round(track.estimated_minutes / 180)),
+      durationMinutes: track.estimated_minutes,
+    })),
+    modules: external.modules.map((module) => ({
+      id: module.id,
+      trackId: module.track_id,
+      title: module.title,
+      lessonIds: module.lesson_ids,
+      durationMinutes: module.estimated_minutes,
+      prerequisiteModuleIds: module.prerequisite_module_ids,
+    })),
+    lessons: lessons.map((lesson) => ({
+      id: lesson.id,
+      moduleId: lesson.module_id,
+      trackId: lesson.track_id,
+      title: lesson.title,
+      level: lesson.level,
+      durationMinutes: lesson.estimated_minutes,
+      objectives: lesson.learning_objectives,
+      concepts: lesson.concepts.join('\n\n'),
+      workedExample: lesson.worked_example,
+      commonPitfall: lesson.common_pitfall,
+      exercise: {
+        task: lesson.exercise.task,
+        acceptanceCriteria: lesson.exercise.acceptance_criteria.join('\n'),
+      },
+      knowledgeChecks: [],
+      contentPath: `courses/${folder}/${lesson.content_path}`,
+      codeExamples: [],
+    })),
+    assets,
+    flashcards,
+  };
+}
+
+export const course: CurriculumCourse = {
   id: curriculum.curriculum_id,
   title: curriculum.title,
   tracks: curriculum.tracks.map((track): CourseTrack => ({
@@ -322,4 +464,7 @@ export const course = {
     ),
     codeExamples: codeExamples.filter((example) => example.moduleId === lesson.module_id),
   })),
-} as const;
+};
+export const devopsCourse = loadExternalCourse('devops');
+export const dsaCourse = loadExternalCourse('dsa');
+export const courses = [course, devopsCourse, dsaCourse] as const;

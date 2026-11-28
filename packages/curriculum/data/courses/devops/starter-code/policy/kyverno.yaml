@@ -1,0 +1,19 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata: {name: learning-nonroot}
+spec:
+  validationFailureAction: Audit
+  background: true
+  rules:
+    - name: require-nonroot
+      match:
+        any:
+          - resources:
+              kinds: [Pod]
+              namespaces: [learning]
+      validate:
+        message: "Run as non-root."
+        pattern:
+          spec:
+            securityContext:
+              runAsNonRoot: true

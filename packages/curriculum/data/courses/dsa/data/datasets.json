@@ -1,0 +1,27 @@
+[
+  {
+    "path": "datasets/autocomplete.json",
+    "format": "json",
+    "synthetic": true
+  },
+  {
+    "path": "datasets/practice-log-template.csv",
+    "format": "csv",
+    "synthetic": false
+  },
+  {
+    "path": "datasets/practice-schedule.csv",
+    "format": "csv",
+    "synthetic": false
+  },
+  {
+    "path": "datasets/sample_graph.json",
+    "format": "json",
+    "synthetic": true
+  },
+  {
+    "path": "datasets/stream_events.json",
+    "format": "json",
+    "synthetic": true
+  }
+]

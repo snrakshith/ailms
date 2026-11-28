@@ -1,0 +1,519 @@
+[
+  {
+    "id": "OPSF01-L01-EX",
+    "lesson_id": "OPSF01-L01",
+    "task": "Create a local temporary config, set owner-only permissions and verify them.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF01-L01.md"
+  },
+  {
+    "id": "OPSF01-L02-EX",
+    "lesson_id": "OPSF01-L02",
+    "task": "Write a script that rejects missing input and emits a deterministic artifact.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF01-L02.md"
+  },
+  {
+    "id": "OPSF01-L03-EX",
+    "lesson_id": "OPSF01-L03",
+    "task": "Trace a local HTTP endpoint and distinguish connection error from HTTP error.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF01-L03.md"
+  },
+  {
+    "id": "OPSF02-L01-EX",
+    "lesson_id": "OPSF02-L01",
+    "task": "Create a disposable Git repository, commit a change, inspect diff and revert it.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF02-L01.md"
+  },
+  {
+    "id": "OPSF02-L02-EX",
+    "lesson_id": "OPSF02-L02",
+    "task": "Configure a disposable repository ruleset with tests and independent review.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF02-L02.md"
+  },
+  {
+    "id": "OPSF03-L01-EX",
+    "lesson_id": "OPSF03-L01",
+    "task": "Design a pipeline with build, test, scan, publish, deploy and rollback.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF03-L01.md"
+  },
+  {
+    "id": "OPSF03-L02-EX",
+    "lesson_id": "OPSF03-L02",
+    "task": "Create a CI workflow and show that a failing test stops downstream jobs.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF03-L02.md"
+  },
+  {
+    "id": "OPSF03-L03-EX",
+    "lesson_id": "OPSF03-L03",
+    "task": "Create a Jenkinsfile with test and archive stages on a disposable agent.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF03-L03.md"
+  },
+  {
+    "id": "OPSF03-L04-EX",
+    "lesson_id": "OPSF03-L04",
+    "task": "Hash a build artifact and detect a changed copy.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF03-L04.md"
+  },
+  {
+    "id": "OPSF04-L01-EX",
+    "lesson_id": "OPSF04-L01",
+    "task": "Build the supplied local service image and run it on loopback.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF04-L01.md"
+  },
+  {
+    "id": "OPSF04-L02-EX",
+    "lesson_id": "OPSF04-L02",
+    "task": "Run the learning API with Compose and inspect its logs and service health.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF04-L02.md"
+  },
+  {
+    "id": "OPSF05-L01-EX",
+    "lesson_id": "OPSF05-L01",
+    "task": "Design a two-AZ VPC with public load balancer, private app subnets and least-privilege role.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF05-L01.md"
+  },
+  {
+    "id": "OPSF05-L02-EX",
+    "lesson_id": "OPSF05-L02",
+    "task": "Initialize the local Terraform exercise and inspect a plan; optionally apply then destroy locally.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF05-L02.md"
+  },
+  {
+    "id": "OPSF05-L03-EX",
+    "lesson_id": "OPSF05-L03",
+    "task": "Design a module contract with explicit variables, outputs and state boundaries.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF05-L03.md"
+  },
+  {
+    "id": "OPSF05-L04-EX",
+    "lesson_id": "OPSF05-L04",
+    "task": "Create a config in a disposable local directory and run playbook twice.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF05-L04.md"
+  },
+  {
+    "id": "OPSF06-L01-EX",
+    "lesson_id": "OPSF06-L01",
+    "task": "Create a disposable kind cluster and deploy the example workload.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF06-L01.md"
+  },
+  {
+    "id": "OPSF06-L02-EX",
+    "lesson_id": "OPSF06-L02",
+    "task": "Diagnose a mismatched service selector using labels and EndpointSlices.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF06-L02.md"
+  },
+  {
+    "id": "OPSF06-L03-EX",
+    "lesson_id": "OPSF06-L03",
+    "task": "Review a Pod manifest for resource requests, secret refs and storage choices.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF06-L03.md"
+  },
+  {
+    "id": "OPSF06-L04-EX",
+    "lesson_id": "OPSF06-L04",
+    "task": "Add distinct health probes and inspect rolling update behavior.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF06-L04.md"
+  },
+  {
+    "id": "OPSF06-L05-EX",
+    "lesson_id": "OPSF06-L05",
+    "task": "Diagnose a forbidden command and reason about allowed traffic in the lab namespace.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF06-L05.md"
+  },
+  {
+    "id": "OPSF07-L01-EX",
+    "lesson_id": "OPSF07-L01",
+    "task": "Render and lint the starter Helm chart with a verified image digest.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF07-L01.md"
+  },
+  {
+    "id": "OPSF07-L02-EX",
+    "lesson_id": "OPSF07-L02",
+    "task": "Draft an Argo Application with a restricted destination and manual sync.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF07-L02.md"
+  },
+  {
+    "id": "OPSF08-L01-EX",
+    "lesson_id": "OPSF08-L01",
+    "task": "Compute request error ratio and design a latency histogram query.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF08-L01.md"
+  },
+  {
+    "id": "OPSF08-L02-EX",
+    "lesson_id": "OPSF08-L02",
+    "task": "Create a RED dashboard for rate, errors and duration with alert annotation.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF08-L02.md"
+  },
+  {
+    "id": "OPSF08-L03-EX",
+    "lesson_id": "OPSF08-L03",
+    "task": "Parse synthetic JSON logs and locate error requests by correlation ID.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF08-L03.md"
+  },
+  {
+    "id": "OPSF08-L04-EX",
+    "lesson_id": "OPSF08-L04",
+    "task": "Draw SDK → collector → backend and configure a local debug exporter.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF08-L04.md"
+  },
+  {
+    "id": "OPSF08-L05-EX",
+    "lesson_id": "OPSF08-L05",
+    "task": "Run a tabletop exercise for an API error spike and calculate budget consumption.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSF08-L05.md"
+  },
+  {
+    "id": "OPSS01-L01-EX",
+    "lesson_id": "OPSS01-L01",
+    "task": "Draw a data-flow threat model for source → CI → registry → cluster.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS01-L01.md"
+  },
+  {
+    "id": "OPSS01-L02-EX",
+    "lesson_id": "OPSS01-L02",
+    "task": "Design a staged-file check and equivalent CI job.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS01-L02.md"
+  },
+  {
+    "id": "OPSS02-L01-EX",
+    "lesson_id": "OPSS02-L01",
+    "task": "Run a local Semgrep rule against synthetic fixture and fix it.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS02-L01.md"
+  },
+  {
+    "id": "OPSS02-L02-EX",
+    "lesson_id": "OPSS02-L02",
+    "task": "Compare results of two scanners on the same synthetic repository and record rule coverage.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS02-L02.md"
+  },
+  {
+    "id": "OPSS03-L01-EX",
+    "lesson_id": "OPSS03-L01",
+    "task": "Triage a synthetic dependency report and propose upgrade plus regression tests.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS03-L01.md"
+  },
+  {
+    "id": "OPSS03-L02-EX",
+    "lesson_id": "OPSS03-L02",
+    "task": "Detect a deliberately fake token with a local custom rule and document incident response.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS03-L02.md"
+  },
+  {
+    "id": "OPSS03-L03-EX",
+    "lesson_id": "OPSS03-L03",
+    "task": "Compare a static secret with a leased credential, including failure on expiry.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS03-L03.md"
+  },
+  {
+    "id": "OPSS04-L01-EX",
+    "lesson_id": "OPSS04-L01",
+    "task": "Scan a verified local image digest and review high/critical findings.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS04-L01.md"
+  },
+  {
+    "id": "OPSS04-L02-EX",
+    "lesson_id": "OPSS04-L02",
+    "task": "Scan the training IaC and manifests; remediate a policy violation and record evidence.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS04-L02.md"
+  },
+  {
+    "id": "OPSS05-L01-EX",
+    "lesson_id": "OPSS05-L01",
+    "task": "Run a baseline against your loopback lab app or approved disposable target.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS05-L01.md"
+  },
+  {
+    "id": "OPSS05-L02-EX",
+    "lesson_id": "OPSS05-L02",
+    "task": "Write a deny policy for privileged containers and evaluate safe and unsafe manifests.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS05-L02.md"
+  },
+  {
+    "id": "OPSS05-L03-EX",
+    "lesson_id": "OPSS05-L03",
+    "task": "Apply the lab policy to a disposable namespace and observe safe/unsafe outcomes.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS05-L03.md"
+  },
+  {
+    "id": "OPSS06-L01-EX",
+    "lesson_id": "OPSS06-L01",
+    "task": "Analyze synthetic Falco events and map alerts to a response runbook.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS06-L01.md"
+  },
+  {
+    "id": "OPSS06-L02-EX",
+    "lesson_id": "OPSS06-L02",
+    "task": "Generate a CycloneDX SBOM for a verified image and compare with a fixture inventory.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS06-L02.md"
+  },
+  {
+    "id": "OPSS06-L03-EX",
+    "lesson_id": "OPSS06-L03",
+    "task": "Design signature verification for an image digest and explicit expected identity.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS06-L03.md"
+  },
+  {
+    "id": "OPSS06-L04-EX",
+    "lesson_id": "OPSS06-L04",
+    "task": "Create a security gate policy with fail-closed scanner errors and time-bound risk exceptions.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSS06-L04.md"
+  },
+  {
+    "id": "OPSP01-L01-EX",
+    "lesson_id": "OPSP01-L01",
+    "task": "Write recovery steps for app and data failure, then tabletop a restore.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSP01-L01.md"
+  },
+  {
+    "id": "OPSP01-L02-EX",
+    "lesson_id": "OPSP01-L02",
+    "task": "Apply a release gate to synthetic metrics with both healthy and unhealthy candidates.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSP01-L02.md"
+  },
+  {
+    "id": "OPSP01-L03-EX",
+    "lesson_id": "OPSP01-L03",
+    "task": "Design a reusable service template with clear owners and onboarding SOP.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSP01-L03.md"
+  },
+  {
+    "id": "OPSP01-L04-EX",
+    "lesson_id": "OPSP01-L04",
+    "task": "Deliver a secure delivery pipeline in a disposable environment, including failure demonstrations.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/OPSP01-L04.md"
+  }
+]

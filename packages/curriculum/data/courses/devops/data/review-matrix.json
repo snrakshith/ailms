@@ -1,0 +1,284 @@
+[
+  {
+    "lesson_id": "OPSF01-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF01-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF01-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF02-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF02-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF03-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF03-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF03-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF03-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF04-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF04-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF05-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF05-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF05-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF05-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF06-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF06-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF06-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF06-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF06-L05",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF07-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF07-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF08-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF08-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF08-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF08-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSF08-L05",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS01-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS01-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS02-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS02-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS03-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS03-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS03-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS04-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS04-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS05-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS05-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS05-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS06-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS06-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS06-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSS06-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSP01-L01",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSP01-L02",
+    "content_review": "pending_independent_review",
+    "technical_status": "see_lab_results",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSP01-L03",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  },
+  {
+    "lesson_id": "OPSP01-L04",
+    "content_review": "pending_independent_review",
+    "technical_status": "illustrative_external_commands",
+    "publication_status": "draft"
+  }
+]

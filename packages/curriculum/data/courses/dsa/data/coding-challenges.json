@@ -1,0 +1,706 @@
+[
+  {
+    "id": "DSA00-L01-EX",
+    "lesson_id": "DSA00-L01",
+    "task": "Build a frequency map, FIFO queue and priority queue.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA00-L01.md"
+  },
+  {
+    "id": "DSA00-L02-EX",
+    "lesson_id": "DSA00-L02",
+    "task": "Compare counts for linear scan and unordered pairs at n=10 and n=20.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA00-L02.md"
+  },
+  {
+    "id": "DSA00-L03-EX",
+    "lesson_id": "DSA00-L03",
+    "task": "Implement recursive prefix sum and iterative equivalent; compare stack costs.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA00-L03.md"
+  },
+  {
+    "id": "DSA00-L04-EX",
+    "lesson_id": "DSA00-L04",
+    "task": "Create a deterministic test table with normal, empty and duplicate cases.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA00-L04.md"
+  },
+  {
+    "id": "DSA01-L01-EX",
+    "lesson_id": "DSA01-L01",
+    "task": "Return two distinct indices for a target sum.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA01-L01.md"
+  },
+  {
+    "id": "DSA01-L02-EX",
+    "lesson_id": "DSA01-L02",
+    "task": "Count subarrays with sum k, including negative elements.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA01-L02.md"
+  },
+  {
+    "id": "DSA01-L03-EX",
+    "lesson_id": "DSA01-L03",
+    "task": "Partition an array containing only 0,1,2 in place.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA01-L03.md"
+  },
+  {
+    "id": "DSA01-L04-EX",
+    "lesson_id": "DSA01-L04",
+    "task": "Rotate a square matrix clockwise without another matrix.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA01-L04.md"
+  },
+  {
+    "id": "DSA01-L05-EX",
+    "lesson_id": "DSA01-L05",
+    "task": "Compute largest histogram rectangle.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA01-L05.md"
+  },
+  {
+    "id": "DSA02-L01-EX",
+    "lesson_id": "DSA02-L01",
+    "task": "Return zero-based indices in sorted input or None.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA02-L01.md"
+  },
+  {
+    "id": "DSA02-L02-EX",
+    "lesson_id": "DSA02-L02",
+    "task": "Move zeroes to the end in place, preserving relative order.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA02-L02.md"
+  },
+  {
+    "id": "DSA02-L03-EX",
+    "lesson_id": "DSA02-L03",
+    "task": "Return maximum sum among windows of size k.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA02-L03.md"
+  },
+  {
+    "id": "DSA02-L04-EX",
+    "lesson_id": "DSA02-L04",
+    "task": "Find longest substring without duplicate characters.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA02-L04.md"
+  },
+  {
+    "id": "DSA03-L01-EX",
+    "lesson_id": "DSA03-L01",
+    "task": "Implement lower bound, including empty arrays.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA03-L01.md"
+  },
+  {
+    "id": "DSA03-L02-EX",
+    "lesson_id": "DSA03-L02",
+    "task": "Find minimum integer speed with sum ceil(pile/speed) <= hours.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA03-L02.md"
+  },
+  {
+    "id": "DSA03-L03-EX",
+    "lesson_id": "DSA03-L03",
+    "task": "Find any peak index in nonempty data with distinct neighbors.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA03-L03.md"
+  },
+  {
+    "id": "DSA03-L04-EX",
+    "lesson_id": "DSA03-L04",
+    "task": "Return length of longest strictly increasing subsequence.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA03-L04.md"
+  },
+  {
+    "id": "DSA04-L01-EX",
+    "lesson_id": "DSA04-L01",
+    "task": "Validate a string of bracket characters.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA04-L01.md"
+  },
+  {
+    "id": "DSA04-L02-EX",
+    "lesson_id": "DSA04-L02",
+    "task": "Return number of days until a warmer temperature.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA04-L02.md"
+  },
+  {
+    "id": "DSA04-L03-EX",
+    "lesson_id": "DSA04-L03",
+    "task": "Compute sum of minimums of all nonempty subarrays, exact integer.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA04-L03.md"
+  },
+  {
+    "id": "DSA05-L01-EX",
+    "lesson_id": "DSA05-L01",
+    "task": "Reverse a singly linked list represented by node objects.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA05-L01.md"
+  },
+  {
+    "id": "DSA05-L02-EX",
+    "lesson_id": "DSA05-L02",
+    "task": "Reverse a valid 1-based inclusive sublist.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA05-L02.md"
+  },
+  {
+    "id": "DSA05-L03-EX",
+    "lesson_id": "DSA05-L03",
+    "task": "Merge k sorted lists of integers into a new list.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA05-L03.md"
+  },
+  {
+    "id": "DSA05-L04-EX",
+    "lesson_id": "DSA05-L04",
+    "task": "Implement get/put LRU using OrderedDict; compare DLL+map in notes.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA05-L04.md"
+  },
+  {
+    "id": "DSA06-L01-EX",
+    "lesson_id": "DSA06-L01",
+    "task": "Compute tree depth using recursion.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA06-L01.md"
+  },
+  {
+    "id": "DSA06-L02-EX",
+    "lesson_id": "DSA06-L02",
+    "task": "Return grouped level-order traversal.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA06-L02.md"
+  },
+  {
+    "id": "DSA06-L03-EX",
+    "lesson_id": "DSA06-L03",
+    "task": "Return whether any root-to-leaf path equals target.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA06-L03.md"
+  },
+  {
+    "id": "DSA06-L04-EX",
+    "lesson_id": "DSA06-L04",
+    "task": "Reconstruct a tree from consistent unique traversals.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA06-L04.md"
+  },
+  {
+    "id": "DSA06-L05-EX",
+    "lesson_id": "DSA06-L05",
+    "task": "Validate a strict binary search tree.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA06-L05.md"
+  },
+  {
+    "id": "DSA06-L06-EX",
+    "lesson_id": "DSA06-L06",
+    "task": "Count good nodes in a tree.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA06-L06.md"
+  },
+  {
+    "id": "DSA06-L07-EX",
+    "lesson_id": "DSA06-L07",
+    "task": "Maximum independent-set weight on a binary tree, permitting empty selection.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA06-L07.md"
+  },
+  {
+    "id": "DSA07-L01-EX",
+    "lesson_id": "DSA07-L01",
+    "task": "Implement insert, exact search and prefix search.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA07-L01.md"
+  },
+  {
+    "id": "DSA07-L02-EX",
+    "lesson_id": "DSA07-L02",
+    "task": "Maintain online median for nonempty integer stream.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA07-L02.md"
+  },
+  {
+    "id": "DSA08-L01-EX",
+    "lesson_id": "DSA08-L01",
+    "task": "Count 4-connected islands without mutating the grid.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA08-L01.md"
+  },
+  {
+    "id": "DSA08-L02-EX",
+    "lesson_id": "DSA08-L02",
+    "task": "Compute distance from nearest source in an adjacency list.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA08-L02.md"
+  },
+  {
+    "id": "DSA08-L03-EX",
+    "lesson_id": "DSA08-L03",
+    "task": "Implement DSU with count of connected components.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA08-L03.md"
+  },
+  {
+    "id": "DSA08-L04-EX",
+    "lesson_id": "DSA08-L04",
+    "task": "Return a topological order or None if cyclic.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA08-L04.md"
+  },
+  {
+    "id": "DSA08-L05-EX",
+    "lesson_id": "DSA08-L05",
+    "task": "Compute shortest distances, leaving unreachable nodes infinite.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA08-L05.md"
+  },
+  {
+    "id": "DSA08-L06-EX",
+    "lesson_id": "DSA08-L06",
+    "task": "Find bridges in an undirected simple graph.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA08-L06.md"
+  },
+  {
+    "id": "DSA08-L07-EX",
+    "lesson_id": "DSA08-L07",
+    "task": "Find shortest 4-neighbor path allowing k blocked-cell entries, with open endpoints.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA08-L07.md"
+  },
+  {
+    "id": "DSA09-L01-EX",
+    "lesson_id": "DSA09-L01",
+    "task": "Enumerate subsets of distinct items.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA09-L01.md"
+  },
+  {
+    "id": "DSA09-L02-EX",
+    "lesson_id": "DSA09-L02",
+    "task": "Generate all permutations of distinct integers.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA09-L02.md"
+  },
+  {
+    "id": "DSA09-L03-EX",
+    "lesson_id": "DSA09-L03",
+    "task": "Test whether a word exists along 4-neighbor cells without reuse.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA09-L03.md"
+  },
+  {
+    "id": "DSA09-L04-EX",
+    "lesson_id": "DSA09-L04",
+    "task": "Enumerate palindrome partitions.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA09-L04.md"
+  },
+  {
+    "id": "DSA10-L01-EX",
+    "lesson_id": "DSA10-L01",
+    "task": "Maximum sum of nonadjacent values, allowing empty selection.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA10-L01.md"
+  },
+  {
+    "id": "DSA10-L02-EX",
+    "lesson_id": "DSA10-L02",
+    "task": "Implement quadratic LIS for comparison with Day 13.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA10-L02.md"
+  },
+  {
+    "id": "DSA10-L03-EX",
+    "lesson_id": "DSA10-L03",
+    "task": "Return best total value within integer capacity.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA10-L03.md"
+  },
+  {
+    "id": "DSA10-L04-EX",
+    "lesson_id": "DSA10-L04",
+    "task": "Compute Levenshtein distance.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA10-L04.md"
+  },
+  {
+    "id": "DSA10-L05-EX",
+    "lesson_id": "DSA10-L05",
+    "task": "Count down/right paths in grid with obstacles.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA10-L05.md"
+  },
+  {
+    "id": "DSA11-L01-EX",
+    "lesson_id": "DSA11-L01",
+    "task": "Maximize burst-balloon score for nonnegative values.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA11-L01.md"
+  },
+  {
+    "id": "DSA11-L02-EX",
+    "lesson_id": "DSA11-L02",
+    "task": "Maximize unlimited-transaction profit with fee and no overlapping holdings.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA11-L02.md"
+  },
+  {
+    "id": "DSA11-L03-EX",
+    "lesson_id": "DSA11-L03",
+    "task": "Count structurally distinct BSTs on n ordered keys.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA11-L03.md"
+  },
+  {
+    "id": "DSA11-L04-EX",
+    "lesson_id": "DSA11-L04",
+    "task": "Implement full-string glob matching for literals, ? and *.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA11-L04.md"
+  },
+  {
+    "id": "DSA11-L05-EX",
+    "lesson_id": "DSA11-L05",
+    "task": "Compute binary-tree diameter in edges.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA11-L05.md"
+  },
+  {
+    "id": "DSA11-L06-EX",
+    "lesson_id": "DSA11-L06",
+    "task": "Find minimum walk length visiting every node in an undirected graph.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA11-L06.md"
+  },
+  {
+    "id": "DSA11-L07-EX",
+    "lesson_id": "DSA11-L07",
+    "task": "Find longest contiguous valid-parenthesis substring.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA11-L07.md"
+  },
+  {
+    "id": "DSA12-L01-EX",
+    "lesson_id": "DSA12-L01",
+    "task": "Decide if last index is reachable with nonnegative jump limits.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA12-L01.md"
+  },
+  {
+    "id": "DSA12-L02-EX",
+    "lesson_id": "DSA12-L02",
+    "task": "Merge closed intervals into sorted disjoint intervals.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA12-L02.md"
+  },
+  {
+    "id": "DSA12-L03-EX",
+    "lesson_id": "DSA12-L03",
+    "task": "Maximize count of courses with durations and deadlines.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA12-L03.md"
+  },
+  {
+    "id": "DSA13-L01-EX",
+    "lesson_id": "DSA13-L01",
+    "task": "Find one unpaired integer using XOR.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA13-L01.md"
+  },
+  {
+    "id": "DSA13-L02-EX",
+    "lesson_id": "DSA13-L02",
+    "task": "Compute integer power for nonnegative exponent.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA13-L02.md"
+  },
+  {
+    "id": "DSA14-L01-EX",
+    "lesson_id": "DSA14-L01",
+    "task": "Find first missing positive integer, mutating input.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA14-L01.md"
+  },
+  {
+    "id": "DSA14-L02-EX",
+    "lesson_id": "DSA14-L02",
+    "task": "Maximize profit from nonoverlapping positive-duration jobs.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA14-L02.md"
+  },
+  {
+    "id": "DSA14-L03-EX",
+    "lesson_id": "DSA14-L03",
+    "task": "Return k most frequent integers ordered by descending frequency then ascending value.",
+    "acceptance_criteria": [
+      "Meet the stated input/output or operational contract.",
+      "Demonstrate one normal and one boundary/failure case.",
+      "Explain the invariant or evidence and the limitation."
+    ],
+    "solution_path": "solutions/DSA14-L03.md"
+  }
+]

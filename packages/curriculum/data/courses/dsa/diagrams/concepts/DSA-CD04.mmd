@@ -1,0 +1,9 @@
+flowchart TD
+  a["Node returns height"]
+  b["Left subtree height"]
+  c["Right subtree height"]
+  d["1 + max(left,right)"]
+  a -->|recurse| b
+  a -->|recurse| c
+  b -->|return| d
+  c -->|return| d

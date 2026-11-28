@@ -1,0 +1,7 @@
+pipeline {
+  agent any
+  stages {
+    stage('Test') { steps { sh 'python3 -m unittest discover -s tests -v' } }
+    stage('Package') { steps { sh 'tar -cf artifact.tar app.py'; archiveArtifacts artifacts: 'artifact.tar', fingerprint: true } }
+  }
+}
