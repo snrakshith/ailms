@@ -44,3 +44,24 @@ jobs:
           name: trivy-filesystem-report
           path: ${{ runner.temp }}/trivy-filesystem.json
           if-no-files-found: warn
+      - name: Summarize blocking Trivy findings
+        if: always()
+        env:
+          TRIVY_REPORT: ${{ runner.temp }}/trivy-filesystem.json
+        run: |
+          node <<'NODE'
+          const { readFileSync } = require('node:fs');
+          const report = JSON.parse(readFileSync(process.env.TRIVY_REPORT, 'utf8'));
+          const blocking = (report.Results ?? []).flatMap((result) => [
+            ...(result.Vulnerabilities ?? [])
+              .filter((finding) => ['HIGH', 'CRITICAL'].includes(finding.Severity))
+              .map((finding) => ({ target: result.Target, type: 'vulnerability', id: finding.VulnerabilityID, package: finding.PkgName, severity: finding.Severity, title: finding.Title })),
+            ...(result.Misconfigurations ?? [])
+              .filter((finding) => ['HIGH', 'CRITICAL'].includes(finding.Severity))
+              .map((finding) => ({ target: result.Target, type: 'misconfiguration', id: finding.ID, severity: finding.Severity, title: finding.Title })),
+            ...(result.Secrets ?? [])
+              .filter((finding) => ['HIGH', 'CRITICAL'].includes(finding.Severity))
+              .map((finding) => ({ target: result.Target, type: 'secret', id: finding.RuleID, severity: finding.Severity, title: finding.Title })),
+          ]);
+          console.log(JSON.stringify({ blocking }, null, 2));
+          NODE
