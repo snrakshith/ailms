@@ -33,6 +33,14 @@ jobs:
         run: test -s pnpm-lock.yaml
       - name: Trivy filesystem high/critical vulnerability gate
         run: >-
-          docker run --rm -v "$PWD:/src:ro" aquasec/trivy:0.67.2
+          docker run --rm -v "$PWD:/src:ro" -v "$RUNNER_TEMP:/output" aquasec/trivy:0.67.2
           fs --scanners vuln,misconfig,secret --severity HIGH,CRITICAL --exit-code 1
-          --skip-dirs packages/curriculum/data --skip-dirs node_modules /src
+          --skip-dirs packages/curriculum/data --skip-dirs node_modules
+          --format json --output /output/trivy-filesystem.json /src
+      - name: Upload Trivy filesystem report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: trivy-filesystem-report
+          path: ${{ runner.temp }}/trivy-filesystem.json
+          if-no-files-found: warn
