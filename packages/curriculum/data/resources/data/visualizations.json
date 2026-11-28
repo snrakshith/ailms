@@ -5,9 +5,7 @@
     "title": "Gradient descent",
     "path": "visualizations/VIS01.html",
     "mode": "offline_html",
-    "controls": [
-      "Learning rate"
-    ],
+    "controls": ["Learning rate"],
     "security": "sandboxed iframe; scripts only; no network"
   },
   {
@@ -16,9 +14,7 @@
     "title": "Classification threshold",
     "path": "visualizations/VIS02.html",
     "mode": "offline_html",
-    "controls": [
-      "Threshold"
-    ],
+    "controls": ["Threshold"],
     "security": "sandboxed iframe; scripts only; no network"
   },
   {
@@ -27,9 +23,7 @@
     "title": "Softmax and attention temperature",
     "path": "visualizations/VIS03.html",
     "mode": "offline_html",
-    "controls": [
-      "Temperature"
-    ],
+    "controls": ["Temperature"],
     "security": "sandboxed iframe; scripts only; no network"
   },
   {
@@ -38,9 +32,7 @@
     "title": "Intersection over union",
     "path": "visualizations/VIS04.html",
     "mode": "offline_html",
-    "controls": [
-      "Horizontal shift"
-    ],
+    "controls": ["Horizontal shift"],
     "security": "sandboxed iframe; scripts only; no network"
   },
   {
@@ -49,9 +41,7 @@
     "title": "Context budget",
     "path": "visualizations/VIS05.html",
     "mode": "offline_html",
-    "controls": [
-      "Retrieved tokens"
-    ],
+    "controls": ["Retrieved tokens"],
     "security": "sandboxed iframe; scripts only; no network"
   },
   {
@@ -60,9 +50,7 @@
     "title": "Corrective RAG routing",
     "path": "visualizations/VIS06.html",
     "mode": "offline_html",
-    "controls": [
-      "Evidence quality"
-    ],
+    "controls": ["Evidence quality"],
     "security": "sandboxed iframe; scripts only; no network"
   },
   {
@@ -71,9 +59,7 @@
     "title": "LoRA parameter budget",
     "path": "visualizations/VIS07.html",
     "mode": "offline_html",
-    "controls": [
-      "Rank"
-    ],
+    "controls": ["Rank"],
     "security": "sandboxed iframe; scripts only; no network"
   },
   {
@@ -82,9 +68,7 @@
     "title": "Release quality gate",
     "path": "visualizations/VIS08.html",
     "mode": "offline_html",
-    "controls": [
-      "Accuracy"
-    ],
+    "controls": ["Accuracy"],
     "security": "sandboxed iframe; scripts only; no network"
   }
 ]

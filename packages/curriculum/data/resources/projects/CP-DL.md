@@ -3,6 +3,7 @@
 Train a PyTorch MLP or CNN and compare two controlled changes.
 
 ## Deliverables
+
 - [ ] Dataset manifest
 - [ ] explicit training/evaluation loops
 - [ ] loss curves
@@ -11,9 +12,11 @@ Train a PyTorch MLP or CNN and compare two controlled changes.
 - [ ] error analysis
 
 ## Acceptance criteria
+
 Validation selects best run; checkpoint reload agrees; record hardware and seed.
 
 ## Grading rubric (100 points)
+
 - Functional Correctness: 30
 - Evaluation And Evidence: 30
 - Reproducibility And Documentation: 20

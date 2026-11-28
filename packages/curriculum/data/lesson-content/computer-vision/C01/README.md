@@ -1,6 +1,7 @@
 # C01: Classical computer vision
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Image"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Image representation, color spaces and OpenCV](C01-L01.md) — beginner
 - [Filtering, edges and morphology](C01-L02.md) — beginner
 - [Geometric transforms, calibration and features](C01-L03.md) — intermediate

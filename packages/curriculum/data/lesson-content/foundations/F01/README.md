@@ -1,6 +1,7 @@
 # F01: Python and developer tooling
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Environment"]
@@ -13,6 +14,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Python environments and notebooks](F01-L01.md) — beginner
 - [Python data types, control flow and functions](F01-L02.md) — beginner
 - [NumPy arrays, broadcasting and vectorization](F01-L03.md) — beginner

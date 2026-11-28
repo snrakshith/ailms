@@ -3,9 +3,7 @@
     "id": "LAB01",
     "lesson_id": "F01-L03",
     "title": "Standardization without NaN",
-    "dependencies": [
-      "numpy"
-    ],
+    "dependencies": ["numpy"],
     "mode": "offline",
     "guide_path": "labs/LAB01.md",
     "starter_path": "labs/starters/LAB01.py",
@@ -18,10 +16,7 @@
     "id": "LAB02",
     "lesson_id": "M02-L02",
     "title": "Capacity-aware classification",
-    "dependencies": [
-      "scikit-learn",
-      "numpy"
-    ],
+    "dependencies": ["scikit-learn", "numpy"],
     "mode": "offline",
     "guide_path": "labs/LAB02.md",
     "starter_path": "labs/starters/LAB02.py",
@@ -34,9 +29,7 @@
     "id": "LAB03",
     "lesson_id": "M03-L02",
     "title": "Cross-validated regression",
-    "dependencies": [
-      "scikit-learn"
-    ],
+    "dependencies": ["scikit-learn"],
     "mode": "offline",
     "guide_path": "labs/LAB03.md",
     "starter_path": "labs/starters/LAB03.py",
@@ -49,9 +42,7 @@
     "id": "LAB04",
     "lesson_id": "D01-L02",
     "title": "XOR and nonlinear networks",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "mode": "offline",
     "guide_path": "labs/LAB04.md",
     "starter_path": "labs/starters/LAB04.py",
@@ -64,10 +55,7 @@
     "id": "LAB05",
     "lesson_id": "C02-L02",
     "title": "CPU CNN on handwritten digits",
-    "dependencies": [
-      "torch",
-      "scikit-learn"
-    ],
+    "dependencies": ["torch", "scikit-learn"],
     "mode": "offline",
     "guide_path": "labs/LAB05.md",
     "starter_path": "labs/starters/LAB05.py",
@@ -80,9 +68,7 @@
     "id": "LAB06",
     "lesson_id": "C03-L01",
     "title": "Bounding box IoU and class-aware NMS",
-    "dependencies": [
-      "numpy"
-    ],
+    "dependencies": ["numpy"],
     "mode": "offline",
     "guide_path": "labs/LAB06.md",
     "starter_path": "labs/starters/LAB06.py",
@@ -134,11 +120,7 @@
     "id": "LAB10",
     "lesson_id": "G09-L01",
     "title": "FastAPI validation and streaming",
-    "dependencies": [
-      "fastapi",
-      "pydantic",
-      "httpx"
-    ],
+    "dependencies": ["fastapi", "pydantic", "httpx"],
     "mode": "offline",
     "guide_path": "labs/LAB10.md",
     "starter_path": "labs/starters/LAB10.py",
@@ -151,9 +133,7 @@
     "id": "LAB11",
     "lesson_id": "G11-L01",
     "title": "LoRA adapter mechanics",
-    "dependencies": [
-      "torch"
-    ],
+    "dependencies": ["torch"],
     "mode": "offline",
     "guide_path": "labs/LAB11.md",
     "starter_path": "labs/starters/LAB11.py",
@@ -179,9 +159,7 @@
     "id": "LAB13",
     "lesson_id": "M05-L01",
     "title": "Rolling demand forecast",
-    "dependencies": [
-      "numpy"
-    ],
+    "dependencies": ["numpy"],
     "mode": "offline",
     "guide_path": "labs/LAB13.md",
     "starter_path": "labs/starters/LAB13.py",
@@ -207,9 +185,7 @@
     "id": "LAB15",
     "lesson_id": "G07-L02",
     "title": "Tool contract before MCP transport",
-    "dependencies": [
-      "pydantic"
-    ],
+    "dependencies": ["pydantic"],
     "mode": "offline",
     "guide_path": "labs/LAB15.md",
     "starter_path": "labs/starters/LAB15.py",

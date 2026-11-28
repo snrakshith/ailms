@@ -1,6 +1,6 @@
 # AI Quest P1 Release Notes — 2026-11-23
 
-Extended the previous AI Quest full-stack ZIP with the complete requested P1 feature *slices* and cross-platform foundations.
+Extended the previous AI Quest full-stack ZIP with the complete requested P1 feature _slices_ and cross-platform foundations.
 
 ## Major additions
 

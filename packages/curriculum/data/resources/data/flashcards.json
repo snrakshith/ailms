@@ -4,2331 +4,1483 @@
     "lesson_id": "F01-L01",
     "front": "Why restart and run all cells before sharing?",
     "back": "To detect hidden execution-order dependencies and missing setup.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L01-FC02",
     "lesson_id": "F01-L01",
     "front": "Python environments and notebooks: name a common failure to avoid.",
     "back": "Installing into the wrong interpreter or relying on stale notebook variables.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L02-FC01",
     "lesson_id": "F01-L02",
     "front": "Does a Python type hint validate runtime values?",
     "back": "No; explicit validation or a library is needed.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L02-FC02",
     "lesson_id": "F01-L02",
     "front": "Python data types, control flow and functions: name a common failure to avoid.",
     "back": "Mutable default arguments can retain state across calls.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L03-FC01",
     "lesson_id": "F01-L03",
     "front": "What dimensions can broadcast?",
     "back": "Equal dimensions or a dimension of size one, aligned from the right.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L03-FC02",
     "lesson_id": "F01-L03",
     "front": "NumPy arrays, broadcasting and vectorization: name a common failure to avoid.",
     "back": "Dividing by zero or silently broadcasting along the wrong axis.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L04-FC01",
     "lesson_id": "F01-L04",
     "front": "Why inspect join cardinality?",
     "back": "To prevent accidental row multiplication or lost records.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L04-FC02",
     "lesson_id": "F01-L04",
     "front": "Pandas, data cleaning and EDA: name a common failure to avoid.",
     "back": "Many-to-many joins can unexpectedly multiply rows; test-set exploration can bias model selection.",
-    "tags": [
-      "F",
-      "F01",
-      "beginner"
-    ]
+    "tags": ["F", "F01", "beginner"]
   },
   {
     "id": "F01-L05-FC01",
     "lesson_id": "F01-L05",
     "front": "What should an experiment record besides the seed?",
     "back": "Code version, data version, dependency versions, parameters and metrics.",
-    "tags": [
-      "F",
-      "F01",
-      "intermediate"
-    ]
+    "tags": ["F", "F01", "intermediate"]
   },
   {
     "id": "F01-L05-FC02",
     "lesson_id": "F01-L05",
     "front": "Git, testing and reproducible experiments: name a common failure to avoid.",
     "back": "Committing credentials or assuming seeds alone guarantee reproducibility.",
-    "tags": [
-      "F",
-      "F01",
-      "intermediate"
-    ]
+    "tags": ["F", "F01", "intermediate"]
   },
   {
     "id": "F02-L01-FC01",
     "lesson_id": "F02-L01",
     "front": "When is cosine similarity undefined?",
     "back": "When either vector has zero norm.",
-    "tags": [
-      "F",
-      "F02",
-      "beginner"
-    ]
+    "tags": ["F", "F02", "beginner"]
   },
   {
     "id": "F02-L01-FC02",
     "lesson_id": "F02-L01",
     "front": "Linear algebra: vectors, matrices and dot products: name a common failure to avoid.",
     "back": "Confusing elementwise multiplication with matrix multiplication or ignoring zero norms.",
-    "tags": [
-      "F",
-      "F02",
-      "beginner"
-    ]
+    "tags": ["F", "F02", "beginner"]
   },
   {
     "id": "F02-L02-FC01",
     "lesson_id": "F02-L02",
     "front": "What does PCA maximize?",
     "back": "Variance captured by orthogonal components of centered data.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "F02-L02-FC02",
     "lesson_id": "F02-L02",
     "front": "Eigenvalues, SVD and projections: name a common failure to avoid.",
     "back": "PCA components depend on scaling and do not necessarily preserve predictive information.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "F02-L03-FC01",
     "lesson_id": "F02-L03",
     "front": "Why does prevalence matter?",
     "back": "The posterior combines the likelihood with the prior probability.",
-    "tags": [
-      "F",
-      "F02",
-      "beginner"
-    ]
+    "tags": ["F", "F02", "beginner"]
   },
   {
     "id": "F02-L03-FC02",
     "lesson_id": "F02-L03",
     "front": "Probability, distributions and Bayes rule: name a common failure to avoid.",
     "back": "Confusing P(test positive given condition) with P(condition given test positive).",
-    "tags": [
-      "F",
-      "F02",
-      "beginner"
-    ]
+    "tags": ["F", "F02", "beginner"]
   },
   {
     "id": "F02-L04-FC01",
     "lesson_id": "F02-L04",
     "front": "What does 95% confidence mean?",
     "back": "Under repeated valid sampling, the interval procedure covers the parameter about 95% of the time.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "F02-L04-FC02",
     "lesson_id": "F02-L04",
     "front": "Statistics, sampling and confidence intervals: name a common failure to avoid.",
     "back": "Ignoring dependence, selection bias or nonrepresentative samples.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "F02-L05-FC01",
     "lesson_id": "F02-L05",
     "front": "Why is the chain rule essential to neural networks?",
     "back": "It propagates gradients through composed layers.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "F02-L05-FC02",
     "lesson_id": "F02-L05",
     "front": "Calculus, gradients and optimization: name a common failure to avoid.",
     "back": "A learning rate that is too large can overshoot or diverge.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "F02-L06-FC01",
     "lesson_id": "F02-L06",
     "front": "Is KL divergence symmetric?",
     "back": "No, swapping the distributions generally changes the result.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "F02-L06-FC02",
     "lesson_id": "F02-L06",
     "front": "Information theory and numerical stability: name a common failure to avoid.",
     "back": "Taking log(0) or applying softmax twice before a logits-based loss.",
-    "tags": [
-      "F",
-      "F02",
-      "intermediate"
-    ]
+    "tags": ["F", "F02", "intermediate"]
   },
   {
     "id": "M01-L01-FC01",
     "lesson_id": "M01-L01",
     "front": "Why use a baseline?",
     "back": "To quantify whether additional modeling complexity improves outcomes.",
-    "tags": [
-      "M",
-      "M01",
-      "beginner"
-    ]
+    "tags": ["M", "M01", "beginner"]
   },
   {
     "id": "M01-L01-FC02",
     "lesson_id": "M01-L01",
     "front": "ML problem framing and baselines: name a common failure to avoid.",
     "back": "Choosing an algorithm before defining the target or using information unavailable at prediction time.",
-    "tags": [
-      "M",
-      "M01",
-      "beginner"
-    ]
+    "tags": ["M", "M01", "beginner"]
   },
   {
     "id": "M01-L02-FC01",
     "lesson_id": "M01-L02",
     "front": "Should scalers be fit before the split?",
     "back": "No, fit them on training data only.",
-    "tags": [
-      "M",
-      "M01",
-      "beginner"
-    ]
+    "tags": ["M", "M01", "beginner"]
   },
   {
     "id": "M01-L02-FC02",
     "lesson_id": "M01-L02",
     "front": "Train, validation, test and leakage: name a common failure to avoid.",
     "back": "Feature leakage from future data, repeated entities or target-derived columns.",
-    "tags": [
-      "M",
-      "M01",
-      "beginner"
-    ]
+    "tags": ["M", "M01", "beginner"]
   },
   {
     "id": "M01-L03-FC01",
     "lesson_id": "M01-L03",
     "front": "Why put preprocessing inside cross-validation?",
     "back": "Each fold must learn preprocessing only from its training partition.",
-    "tags": [
-      "M",
-      "M01",
-      "intermediate"
-    ]
+    "tags": ["M", "M01", "intermediate"]
   },
   {
     "id": "M01-L03-FC02",
     "lesson_id": "M01-L03",
     "front": "Preprocessing and feature pipelines: name a common failure to avoid.",
     "back": "Unknown categories at inference or fitting preprocessing using the whole dataset.",
-    "tags": [
-      "M",
-      "M01",
-      "intermediate"
-    ]
+    "tags": ["M", "M01", "intermediate"]
   },
   {
     "id": "M02-L01-FC01",
     "lesson_id": "M02-L01",
     "front": "What does a residual represent?",
     "back": "Observed target minus predicted target.",
-    "tags": [
-      "M",
-      "M02",
-      "beginner"
-    ]
+    "tags": ["M", "M02", "beginner"]
   },
   {
     "id": "M02-L01-FC02",
     "lesson_id": "M02-L01",
     "front": "Linear and polynomial regression: name a common failure to avoid.",
     "back": "High-degree polynomials can overfit; correlation is not causal effect.",
-    "tags": [
-      "M",
-      "M02",
-      "beginner"
-    ]
+    "tags": ["M", "M02", "beginner"]
   },
   {
     "id": "M02-L02-FC01",
     "lesson_id": "M02-L02",
     "front": "What changes when the threshold changes?",
     "back": "Class decisions and confusion-matrix metrics, not the fitted probability model.",
-    "tags": [
-      "M",
-      "M02",
-      "beginner"
-    ]
+    "tags": ["M", "M02", "beginner"]
   },
   {
     "id": "M02-L02-FC02",
     "lesson_id": "M02-L02",
     "front": "Logistic regression and classification thresholds: name a common failure to avoid.",
     "back": "Treating probabilities as calibrated without checking or optimizing accuracy for rare positives.",
-    "tags": [
-      "M",
-      "M02",
-      "beginner"
-    ]
+    "tags": ["M", "M02", "beginner"]
   },
   {
     "id": "M02-L03-FC01",
     "lesson_id": "M02-L03",
     "front": "Which models are sensitive to feature scale?",
     "back": "Distance-based kNN and many SVM configurations.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M02-L03-FC02",
     "lesson_id": "M02-L03",
     "front": "k-nearest neighbors, naive Bayes and SVM: name a common failure to avoid.",
     "back": "Unscaled features dominate distances; kernel SVM can be expensive on large data.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M02-L04-FC01",
     "lesson_id": "M02-L04",
     "front": "How does bagging reduce variance?",
     "back": "It averages diverse estimators whose errors are not perfectly correlated.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M02-L04-FC02",
     "lesson_id": "M02-L04",
     "front": "Decision trees and random forests: name a common failure to avoid.",
     "back": "Unconstrained trees memorize training data; impurity importance can favor high-cardinality features.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M02-L05-FC01",
     "lesson_id": "M02-L05",
     "front": "What is the key difference between bagging and boosting?",
     "back": "Bagging aggregates independently trained models; boosting fits learners sequentially to improve the current ensemble.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M02-L05-FC02",
     "lesson_id": "M02-L05",
     "front": "Gradient boosting: XGBoost, LightGBM and CatBoost: name a common failure to avoid.",
     "back": "Using early stopping on test data or encoding categories inconsistently.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M02-L06-FC01",
     "lesson_id": "M02-L06",
     "front": "Does regularization always improve performance?",
     "back": "No; excessive regularization can cause underfitting.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M02-L06-FC02",
     "lesson_id": "M02-L06",
     "front": "Regularization, feature selection and bias-variance: name a common failure to avoid.",
     "back": "Selecting features using all targets before cross-validation leaks information.",
-    "tags": [
-      "M",
-      "M02",
-      "intermediate"
-    ]
+    "tags": ["M", "M02", "intermediate"]
   },
   {
     "id": "M03-L01-FC01",
     "lesson_id": "M03-L01",
     "front": "Why can accuracy be misleading under imbalance?",
     "back": "A majority-class predictor can score highly while missing nearly all positives.",
-    "tags": [
-      "M",
-      "M03",
-      "intermediate"
-    ]
+    "tags": ["M", "M03", "intermediate"]
   },
   {
     "id": "M03-L01-FC02",
     "lesson_id": "M03-L01",
     "front": "Classification, regression and ranking metrics: name a common failure to avoid.",
     "back": "AUC does not identify an operating threshold and accuracy can hide minority failures.",
-    "tags": [
-      "M",
-      "M03",
-      "intermediate"
-    ]
+    "tags": ["M", "M03", "intermediate"]
   },
   {
     "id": "M03-L02-FC01",
     "lesson_id": "M03-L02",
     "front": "What is nested CV for?",
     "back": "Estimating generalization of a model-selection procedure without using outer folds for tuning.",
-    "tags": [
-      "M",
-      "M03",
-      "intermediate"
-    ]
+    "tags": ["M", "M03", "intermediate"]
   },
   {
     "id": "M03-L02-FC02",
     "lesson_id": "M03-L02",
     "front": "Cross-validation and hyperparameter search: name a common failure to avoid.",
     "back": "Repeatedly tuning against the final test set invalidates it.",
-    "tags": [
-      "M",
-      "M03",
-      "intermediate"
-    ]
+    "tags": ["M", "M03", "intermediate"]
   },
   {
     "id": "M03-L03-FC01",
     "lesson_id": "M03-L03",
     "front": "What does a calibrated 0.8 probability mean?",
     "back": "Among comparable predictions near 0.8, roughly 80% should be positive.",
-    "tags": [
-      "M",
-      "M03",
-      "advanced"
-    ]
+    "tags": ["M", "M03", "advanced"]
   },
   {
     "id": "M03-L03-FC02",
     "lesson_id": "M03-L03",
     "front": "Imbalanced learning, calibration and uncertainty: name a common failure to avoid.",
     "back": "Oversampling before splitting leaks duplicate or related rows; calibration requires separate data or folds.",
-    "tags": [
-      "M",
-      "M03",
-      "advanced"
-    ]
+    "tags": ["M", "M03", "advanced"]
   },
   {
     "id": "M03-L04-FC01",
     "lesson_id": "M03-L04",
     "front": "Can SHAP prove a feature causes an outcome?",
     "back": "No, model attribution is not causal identification.",
-    "tags": [
-      "M",
-      "M03",
-      "advanced"
-    ]
+    "tags": ["M", "M03", "advanced"]
   },
   {
     "id": "M03-L04-FC02",
     "lesson_id": "M03-L04",
     "front": "Interpretability, fairness and error analysis: name a common failure to avoid.",
     "back": "Treating feature attribution as causality or reporting only aggregate accuracy.",
-    "tags": [
-      "M",
-      "M03",
-      "advanced"
-    ]
+    "tags": ["M", "M03", "advanced"]
   },
   {
     "id": "M04-L01-FC01",
     "lesson_id": "M04-L01",
     "front": "Why might DBSCAN label points as noise?",
     "back": "They are not density-reachable under the selected parameters.",
-    "tags": [
-      "M",
-      "M04",
-      "intermediate"
-    ]
+    "tags": ["M", "M04", "intermediate"]
   },
   {
     "id": "M04-L01-FC02",
     "lesson_id": "M04-L01",
     "front": "Clustering: k-means, hierarchical and DBSCAN: name a common failure to avoid.",
     "back": "Treating clusters as true labels or relying on a single internal score.",
-    "tags": [
-      "M",
-      "M04",
-      "intermediate"
-    ]
+    "tags": ["M", "M04", "intermediate"]
   },
   {
     "id": "M04-L02-FC01",
     "lesson_id": "M04-L02",
     "front": "Should t-SNE cluster distances be treated as exact original distances?",
     "back": "No; global geometry can be distorted.",
-    "tags": [
-      "M",
-      "M04",
-      "intermediate"
-    ]
+    "tags": ["M", "M04", "intermediate"]
   },
   {
     "id": "M04-L02-FC02",
     "lesson_id": "M04-L02",
     "front": "Dimensionality reduction: PCA, t-SNE and UMAP: name a common failure to avoid.",
     "back": "Interpreting all distances and cluster sizes in t-SNE as meaningful.",
-    "tags": [
-      "M",
-      "M04",
-      "intermediate"
-    ]
+    "tags": ["M", "M04", "intermediate"]
   },
   {
     "id": "M04-L03-FC01",
     "lesson_id": "M04-L03",
     "front": "What is novelty detection?",
     "back": "Scoring new observations against a model of normal training data.",
-    "tags": [
-      "M",
-      "M04",
-      "intermediate"
-    ]
+    "tags": ["M", "M04", "intermediate"]
   },
   {
     "id": "M04-L03-FC02",
     "lesson_id": "M04-L03",
     "front": "Anomaly detection and novelty detection: name a common failure to avoid.",
     "back": "Training on future incidents or assuming every anomaly is malicious.",
-    "tags": [
-      "M",
-      "M04",
-      "intermediate"
-    ]
+    "tags": ["M", "M04", "intermediate"]
   },
   {
     "id": "M05-L01-FC01",
     "lesson_id": "M05-L01",
     "front": "Why use rolling-origin evaluation?",
     "back": "It simulates repeated forecasts using only historical information.",
-    "tags": [
-      "M",
-      "M05",
-      "intermediate"
-    ]
+    "tags": ["M", "M05", "intermediate"]
   },
   {
     "id": "M05-L01-FC02",
     "lesson_id": "M05-L01",
     "front": "Time series, forecasting and backtesting: name a common failure to avoid.",
     "back": "Random splitting or calculating rolling features that include future observations.",
-    "tags": [
-      "M",
-      "M05",
-      "intermediate"
-    ]
+    "tags": ["M", "M05", "intermediate"]
   },
   {
     "id": "M05-L02-FC01",
     "lesson_id": "M05-L02",
     "front": "Why use candidate retrieval before ranking?",
     "back": "It reduces the number of items requiring expensive ranking.",
-    "tags": [
-      "M",
-      "M05",
-      "intermediate"
-    ]
+    "tags": ["M", "M05", "intermediate"]
   },
   {
     "id": "M05-L02-FC02",
     "lesson_id": "M05-L02",
     "front": "Recommendation and learning to rank: name a common failure to avoid.",
     "back": "Random negative sampling can misrepresent unseen relevance and cold-start performance.",
-    "tags": [
-      "M",
-      "M05",
-      "intermediate"
-    ]
+    "tags": ["M", "M05", "intermediate"]
   },
   {
     "id": "M05-L03-FC01",
     "lesson_id": "M05-L03",
     "front": "Can accurate prediction establish causality?",
     "back": "No; causal claims need a valid identification strategy.",
-    "tags": [
-      "M",
-      "M05",
-      "advanced"
-    ]
+    "tags": ["M", "M05", "advanced"]
   },
   {
     "id": "M05-L03-FC02",
     "lesson_id": "M05-L03",
     "front": "Causal inference and experimentation: name a common failure to avoid.",
     "back": "Conditioning on post-treatment variables or repeatedly peeking at p-values without adjustment.",
-    "tags": [
-      "M",
-      "M05",
-      "advanced"
-    ]
+    "tags": ["M", "M05", "advanced"]
   },
   {
     "id": "D01-L01-FC01",
     "lesson_id": "D01-L01",
     "front": "Why zero gradients before a training step?",
     "back": "PyTorch accumulates gradients rather than replacing them automatically.",
-    "tags": [
-      "D",
-      "D01",
-      "beginner"
-    ]
+    "tags": ["D", "D01", "beginner"]
   },
   {
     "id": "D01-L01-FC02",
     "lesson_id": "D01-L01",
     "front": "Tensors, autograd and PyTorch fundamentals: name a common failure to avoid.",
     "back": "In-place mutation of tracked tensors or mixing CPU and GPU tensors.",
-    "tags": [
-      "D",
-      "D01",
-      "beginner"
-    ]
+    "tags": ["D", "D01", "beginner"]
   },
   {
     "id": "D01-L02-FC01",
     "lesson_id": "D01-L02",
     "front": "Why are nonlinear activations needed?",
     "back": "Without them, stacked linear layers cannot represent nonlinear decision boundaries.",
-    "tags": [
-      "D",
-      "D01",
-      "beginner"
-    ]
+    "tags": ["D", "D01", "beginner"]
   },
   {
     "id": "D01-L02-FC02",
     "lesson_id": "D01-L02",
     "front": "Perceptrons, MLPs and activation functions: name a common failure to avoid.",
     "back": "Applying sigmoid to logits before BCEWithLogitsLoss or using incompatible target shape.",
-    "tags": [
-      "D",
-      "D01",
-      "beginner"
-    ]
+    "tags": ["D", "D01", "beginner"]
   },
   {
     "id": "D01-L03-FC01",
     "lesson_id": "D01-L03",
     "front": "Does backpropagation update weights itself?",
     "back": "No; it computes gradients that an optimizer uses to update weights.",
-    "tags": [
-      "D",
-      "D01",
-      "intermediate"
-    ]
+    "tags": ["D", "D01", "intermediate"]
   },
   {
     "id": "D01-L03-FC02",
     "lesson_id": "D01-L03",
     "front": "Forward pass, backpropagation and loss functions: name a common failure to avoid.",
     "back": "Detaching a tensor breaks its gradient path; incorrect logits/target shapes can silently mislead.",
-    "tags": [
-      "D",
-      "D01",
-      "intermediate"
-    ]
+    "tags": ["D", "D01", "intermediate"]
   },
   {
     "id": "D01-L04-FC01",
     "lesson_id": "D01-L04",
     "front": "What does AdamW decouple?",
     "back": "Weight decay from the adaptive gradient update.",
-    "tags": [
-      "D",
-      "D01",
-      "intermediate"
-    ]
+    "tags": ["D", "D01", "intermediate"]
   },
   {
     "id": "D01-L04-FC02",
     "lesson_id": "D01-L04",
     "front": "Optimizers, initialization and learning-rate schedules: name a common failure to avoid.",
     "back": "Confusing L2 regularization with decoupled weight decay for adaptive optimizers.",
-    "tags": [
-      "D",
-      "D01",
-      "intermediate"
-    ]
+    "tags": ["D", "D01", "intermediate"]
   },
   {
     "id": "D02-L01-FC01",
     "lesson_id": "D02-L01",
     "front": "Why use model.eval() plus no_grad or inference_mode?",
     "back": "They control module behavior and gradient recording separately.",
-    "tags": [
-      "D",
-      "D02",
-      "intermediate"
-    ]
+    "tags": ["D", "D02", "intermediate"]
   },
   {
     "id": "D02-L01-FC02",
     "lesson_id": "D02-L01",
     "front": "Datasets, DataLoaders and training loops: name a common failure to avoid.",
     "back": "Forgetting eval mode changes dropout and batch normalization behavior.",
-    "tags": [
-      "D",
-      "D02",
-      "intermediate"
-    ]
+    "tags": ["D", "D02", "intermediate"]
   },
   {
     "id": "D02-L02-FC01",
     "lesson_id": "D02-L02",
     "front": "Why can dropout predictions differ in training mode?",
     "back": "Random activation masks are sampled during training.",
-    "tags": [
-      "D",
-      "D02",
-      "intermediate"
-    ]
+    "tags": ["D", "D02", "intermediate"]
   },
   {
     "id": "D02-L02-FC02",
     "lesson_id": "D02-L02",
     "front": "Normalization, dropout and early stopping: name a common failure to avoid.",
     "back": "Evaluating with dropout active or selecting checkpoints using test loss.",
-    "tags": [
-      "D",
-      "D02",
-      "intermediate"
-    ]
+    "tags": ["D", "D02", "intermediate"]
   },
   {
     "id": "D02-L03-FC01",
     "lesson_id": "D02-L03",
     "front": "What is data-parallel training?",
     "back": "Replicas process different data batches and synchronize gradients.",
-    "tags": [
-      "D",
-      "D02",
-      "advanced"
-    ]
+    "tags": ["D", "D02", "advanced"]
   },
   {
     "id": "D02-L03-FC02",
     "lesson_id": "D02-L03",
     "front": "Mixed precision, GPUs and distributed training: name a common failure to avoid.",
     "back": "Assuming lower precision is always faster or forgetting effective batch size changes.",
-    "tags": [
-      "D",
-      "D02",
-      "advanced"
-    ]
+    "tags": ["D", "D02", "advanced"]
   },
   {
     "id": "D03-L01-FC01",
     "lesson_id": "D03-L01",
     "front": "Why use weight sharing in CNNs?",
     "back": "It reduces parameters and applies the same local feature detector across positions.",
-    "tags": [
-      "D",
-      "D03",
-      "intermediate"
-    ]
+    "tags": ["D", "D03", "intermediate"]
   },
   {
     "id": "D03-L01-FC02",
     "lesson_id": "D03-L01",
     "front": "CNN foundations and receptive fields: name a common failure to avoid.",
     "back": "Confusing channels-first and channels-last layout or shrinking spatial dimensions unexpectedly.",
-    "tags": [
-      "D",
-      "D03",
-      "intermediate"
-    ]
+    "tags": ["D", "D03", "intermediate"]
   },
   {
     "id": "D03-L02-FC01",
     "lesson_id": "D03-L02",
     "front": "What do recurrent gates control?",
     "back": "How information is retained, updated and exposed in hidden state.",
-    "tags": [
-      "D",
-      "D03",
-      "intermediate"
-    ]
+    "tags": ["D", "D03", "intermediate"]
   },
   {
     "id": "D03-L02-FC02",
     "lesson_id": "D03-L02",
     "front": "RNNs, LSTMs, GRUs and sequence modeling: name a common failure to avoid.",
     "back": "Shuffling tokens within a sequence or treating padding as real observations.",
-    "tags": [
-      "D",
-      "D03",
-      "intermediate"
-    ]
+    "tags": ["D", "D03", "intermediate"]
   },
   {
     "id": "D03-L03-FC01",
     "lesson_id": "D03-L03",
     "front": "Why divide attention logits by sqrt(d)?",
     "back": "To moderate score magnitude as key dimension grows.",
-    "tags": [
-      "D",
-      "D03",
-      "intermediate"
-    ]
+    "tags": ["D", "D03", "intermediate"]
   },
   {
     "id": "D03-L03-FC02",
     "lesson_id": "D03-L03",
     "front": "Attention and transformers: name a common failure to avoid.",
     "back": "Mask polarity errors and quadratic attention memory for long sequences.",
-    "tags": [
-      "D",
-      "D03",
-      "intermediate"
-    ]
+    "tags": ["D", "D03", "intermediate"]
   },
   {
     "id": "D03-L04-FC01",
     "lesson_id": "D03-L04",
     "front": "Which architecture is typical for autoregressive chat LLMs?",
     "back": "Decoder-only transformers, though other architectures exist.",
-    "tags": [
-      "D",
-      "D03",
-      "advanced"
-    ]
+    "tags": ["D", "D03", "advanced"]
   },
   {
     "id": "D03-L04-FC02",
     "lesson_id": "D03-L04",
     "front": "Encoder, decoder and encoder-decoder architectures: name a common failure to avoid.",
     "back": "Assuming every transformer has identical masking or can generate text autoregressively.",
-    "tags": [
-      "D",
-      "D03",
-      "advanced"
-    ]
+    "tags": ["D", "D03", "advanced"]
   },
   {
     "id": "D04-L01-FC01",
     "lesson_id": "D04-L01",
     "front": "What is self-supervised learning?",
     "back": "Learning from supervision constructed from the data itself rather than manual labels.",
-    "tags": [
-      "D",
-      "D04",
-      "intermediate"
-    ]
+    "tags": ["D", "D04", "intermediate"]
   },
   {
     "id": "D04-L01-FC02",
     "lesson_id": "D04-L01",
     "front": "Transfer learning, embeddings and self-supervised learning: name a common failure to avoid.",
     "back": "Training too aggressively can destroy useful pretrained features; domain shift can limit transfer.",
-    "tags": [
-      "D",
-      "D04",
-      "intermediate"
-    ]
+    "tags": ["D", "D04", "intermediate"]
   },
   {
     "id": "D04-L02-FC01",
     "lesson_id": "D04-L02",
     "front": "What is GAN mode collapse?",
     "back": "The generator produces insufficiently diverse outputs despite plausible individual samples.",
-    "tags": [
-      "D",
-      "D04",
-      "advanced"
-    ]
+    "tags": ["D", "D04", "advanced"]
   },
   {
     "id": "D04-L02-FC02",
     "lesson_id": "D04-L02",
     "front": "Autoencoders, VAEs and GANs: name a common failure to avoid.",
     "back": "A good reconstruction score does not guarantee useful generation; GANs may collapse modes.",
-    "tags": [
-      "D",
-      "D04",
-      "advanced"
-    ]
+    "tags": ["D", "D04", "advanced"]
   },
   {
     "id": "D04-L03-FC01",
     "lesson_id": "D04-L03",
     "front": "What does latent diffusion change?",
     "back": "It performs the diffusion process in a compressed representation rather than directly in pixels.",
-    "tags": [
-      "D",
-      "D04",
-      "advanced"
-    ]
+    "tags": ["D", "D04", "advanced"]
   },
   {
     "id": "D04-L03-FC02",
     "lesson_id": "D04-L03",
     "front": "Diffusion and score-based generative models: name a common failure to avoid.",
     "back": "Confusing training noising with inference denoising or assuming fewer steps always preserve quality.",
-    "tags": [
-      "D",
-      "D04",
-      "advanced"
-    ]
+    "tags": ["D", "D04", "advanced"]
   },
   {
     "id": "D04-L04-FC01",
     "lesson_id": "D04-L04",
     "front": "Why is reward design important?",
     "back": "Optimizing a proxy can yield undesirable behavior if it differs from the intended goal.",
-    "tags": [
-      "D",
-      "D04",
-      "advanced"
-    ]
+    "tags": ["D", "D04", "advanced"]
   },
   {
     "id": "D04-L04-FC02",
     "lesson_id": "D04-L04",
     "front": "Reinforcement learning and preference optimization: name a common failure to avoid.",
     "back": "Reward hacking, biased preference data and conflating reward with real user value.",
-    "tags": [
-      "D",
-      "D04",
-      "advanced"
-    ]
+    "tags": ["D", "D04", "advanced"]
   },
   {
     "id": "C01-L01-FC01",
     "lesson_id": "C01-L01",
     "front": "What color order does cv2.imread normally use?",
     "back": "BGR for default color images.",
-    "tags": [
-      "C",
-      "C01",
-      "beginner"
-    ]
+    "tags": ["C", "C01", "beginner"]
   },
   {
     "id": "C01-L01-FC02",
     "lesson_id": "C01-L01",
     "front": "Image representation, color spaces and OpenCV: name a common failure to avoid.",
     "back": "Displaying BGR as RGB or overflowing uint8 during arithmetic.",
-    "tags": [
-      "C",
-      "C01",
-      "beginner"
-    ]
+    "tags": ["C", "C01", "beginner"]
   },
   {
     "id": "C01-L02-FC01",
     "lesson_id": "C01-L02",
     "front": "What is morphological opening?",
     "back": "Erosion followed by dilation using a structuring element.",
-    "tags": [
-      "C",
-      "C01",
-      "beginner"
-    ]
+    "tags": ["C", "C01", "beginner"]
   },
   {
     "id": "C01-L02-FC02",
     "lesson_id": "C01-L02",
     "front": "Filtering, edges and morphology: name a common failure to avoid.",
     "back": "Over-smoothing removes important detail; morphology depends on kernel and polarity.",
-    "tags": [
-      "C",
-      "C01",
-      "beginner"
-    ]
+    "tags": ["C", "C01", "beginner"]
   },
   {
     "id": "C01-L03-FC01",
     "lesson_id": "C01-L03",
     "front": "What does RANSAC do?",
     "back": "Fits a model robustly by testing candidate subsets and selecting strong inlier support.",
-    "tags": [
-      "C",
-      "C01",
-      "intermediate"
-    ]
+    "tags": ["C", "C01", "intermediate"]
   },
   {
     "id": "C01-L03-FC02",
     "lesson_id": "C01-L03",
     "front": "Geometric transforms, calibration and features: name a common failure to avoid.",
     "back": "Homographies fail for many nonplanar scenes; feature matches can contain outliers.",
-    "tags": [
-      "C",
-      "C01",
-      "intermediate"
-    ]
+    "tags": ["C", "C01", "intermediate"]
   },
   {
     "id": "C02-L01-FC01",
     "lesson_id": "C02-L01",
     "front": "Why split videos by source rather than frames?",
     "back": "Neighboring frames can be near duplicates, inflating validation performance.",
-    "tags": [
-      "C",
-      "C02",
-      "intermediate"
-    ]
+    "tags": ["C", "C02", "intermediate"]
   },
   {
     "id": "C02-L01-FC02",
     "lesson_id": "C02-L01",
     "front": "Image datasets, augmentation and labeling: name a common failure to avoid.",
     "back": "Applying random training augmentations to validation or flipping labels with directional meaning.",
-    "tags": [
-      "C",
-      "C02",
-      "intermediate"
-    ]
+    "tags": ["C", "C02", "intermediate"]
   },
   {
     "id": "C02-L02-FC01",
     "lesson_id": "C02-L02",
     "front": "What does freezing a backbone do?",
     "back": "Prevents its parameters from updating while the head learns.",
-    "tags": [
-      "C",
-      "C02",
-      "intermediate"
-    ]
+    "tags": ["C", "C02", "intermediate"]
   },
   {
     "id": "C02-L02-FC02",
     "lesson_id": "C02-L02",
     "front": "Image classification and pretrained CNNs: name a common failure to avoid.",
     "back": "Forgetting pretrained input normalization or evaluating only overall accuracy.",
-    "tags": [
-      "C",
-      "C02",
-      "intermediate"
-    ]
+    "tags": ["C", "C02", "intermediate"]
   },
   {
     "id": "C03-L01-FC01",
     "lesson_id": "C03-L01",
     "front": "What does IoU measure?",
     "back": "Intersection area divided by union area.",
-    "tags": [
-      "C",
-      "C03",
-      "intermediate"
-    ]
+    "tags": ["C", "C03", "intermediate"]
   },
   {
     "id": "C03-L01-FC02",
     "lesson_id": "C03-L01",
     "front": "Object detection: boxes, IoU, NMS and mAP: name a common failure to avoid.",
     "back": "Mixing xyxy and xywh coordinates or comparing mAP computed under different IoU settings.",
-    "tags": [
-      "C",
-      "C03",
-      "intermediate"
-    ]
+    "tags": ["C", "C03", "intermediate"]
   },
   {
     "id": "C03-L02-FC01",
     "lesson_id": "C03-L02",
     "front": "How does DETR differ from many traditional detectors?",
     "back": "It learns set prediction with matching and commonly avoids conventional NMS.",
-    "tags": [
-      "C",
-      "C03",
-      "advanced"
-    ]
+    "tags": ["C", "C03", "advanced"]
   },
   {
     "id": "C03-L02-FC02",
     "lesson_id": "C03-L02",
     "front": "YOLO, Faster R-CNN, DETR and detection training: name a common failure to avoid.",
     "back": "Comparing published speed numbers from different hardware or resolution.",
-    "tags": [
-      "C",
-      "C03",
-      "advanced"
-    ]
+    "tags": ["C", "C03", "advanced"]
   },
   {
     "id": "C03-L03-FC01",
     "lesson_id": "C03-L03",
     "front": "What is the difference between semantic and instance segmentation?",
     "back": "Instance segmentation separates individual objects of the same class.",
-    "tags": [
-      "C",
-      "C03",
-      "intermediate"
-    ]
+    "tags": ["C", "C03", "intermediate"]
   },
   {
     "id": "C03-L03-FC02",
     "lesson_id": "C03-L03",
     "front": "Semantic, instance and panoptic segmentation: name a common failure to avoid.",
     "back": "Including ignored pixels in metrics or using bilinear interpolation for discrete labels.",
-    "tags": [
-      "C",
-      "C03",
-      "intermediate"
-    ]
+    "tags": ["C", "C03", "intermediate"]
   },
   {
     "id": "C03-L04-FC01",
     "lesson_id": "C03-L04",
     "front": "Why are U-Net skip connections useful?",
     "back": "They recover spatial detail from earlier encoder features.",
-    "tags": [
-      "C",
-      "C03",
-      "advanced"
-    ]
+    "tags": ["C", "C03", "advanced"]
   },
   {
     "id": "C03-L04-FC02",
     "lesson_id": "C03-L04",
     "front": "U-Net, Mask R-CNN, SAM and foundation vision models: name a common failure to avoid.",
     "back": "Assuming promptable models are accurate for every domain or using unlicensed imagery.",
-    "tags": [
-      "C",
-      "C03",
-      "advanced"
-    ]
+    "tags": ["C", "C03", "advanced"]
   },
   {
     "id": "C04-L01-FC01",
     "lesson_id": "C04-L01",
     "front": "What is an identity switch?",
     "back": "A tracker assigns a different identity to an object previously tracked under another identity.",
-    "tags": [
-      "C",
-      "C04",
-      "intermediate"
-    ]
+    "tags": ["C", "C04", "intermediate"]
   },
   {
     "id": "C04-L01-FC02",
     "lesson_id": "C04-L01",
     "front": "Video, optical flow and object tracking: name a common failure to avoid.",
     "back": "Ignoring frame-rate variation, occlusion or identity switches.",
-    "tags": [
-      "C",
-      "C04",
-      "intermediate"
-    ]
+    "tags": ["C", "C04", "intermediate"]
   },
   {
     "id": "C04-L02-FC01",
     "lesson_id": "C04-L02",
     "front": "How does CLIP enable zero-shot classification?",
     "back": "It scores image embeddings against text embeddings for candidate classes.",
-    "tags": [
-      "C",
-      "C04",
-      "advanced"
-    ]
+    "tags": ["C", "C04", "advanced"]
   },
   {
     "id": "C04-L02-FC02",
     "lesson_id": "C04-L02",
     "front": "Vision transformers, CLIP and multimodal vision: name a common failure to avoid.",
     "back": "Assuming zero-shot scores are calibrated or ignoring training-data bias.",
-    "tags": [
-      "C",
-      "C04",
-      "advanced"
-    ]
+    "tags": ["C", "C04", "advanced"]
   },
   {
     "id": "C04-L03-FC01",
     "lesson_id": "C04-L03",
     "front": "Why preserve original image coordinates?",
     "back": "Detected regions must map correctly back to the source image.",
-    "tags": [
-      "C",
-      "C04",
-      "advanced"
-    ]
+    "tags": ["C", "C04", "advanced"]
   },
   {
     "id": "C04-L03-FC02",
     "lesson_id": "C04-L03",
     "front": "OCR, document AI, 3D and deployment: name a common failure to avoid.",
     "back": "Logging sensitive documents or ignoring coordinate transforms during resizing.",
-    "tags": [
-      "C",
-      "C04",
-      "advanced"
-    ]
+    "tags": ["C", "C04", "advanced"]
   },
   {
     "id": "G01-L01-FC01",
     "lesson_id": "G01-L01",
     "front": "What is a next-token language model trained to predict?",
     "back": "A distribution over the next token given preceding context.",
-    "tags": [
-      "G",
-      "G01",
-      "beginner"
-    ]
+    "tags": ["G", "G01", "beginner"]
   },
   {
     "id": "G01-L01-FC02",
     "lesson_id": "G01-L01",
     "front": "Generative AI landscape and LLM fundamentals: name a common failure to avoid.",
     "back": "Equating fluency with factual accuracy or assuming model knowledge is current.",
-    "tags": [
-      "G",
-      "G01",
-      "beginner"
-    ]
+    "tags": ["G", "G01", "beginner"]
   },
   {
     "id": "G01-L02-FC01",
     "lesson_id": "G01-L02",
     "front": "Are tokens equivalent to words?",
     "back": "No; a token may be part of a word, punctuation or another text unit.",
-    "tags": [
-      "G",
-      "G01",
-      "beginner"
-    ]
+    "tags": ["G", "G01", "beginner"]
   },
   {
     "id": "G01-L02-FC02",
     "lesson_id": "G01-L02",
     "front": "Tokens, tokenizers and context windows: name a common failure to avoid.",
     "back": "Counting words as tokens or truncating away required evidence and role markers.",
-    "tags": [
-      "G",
-      "G01",
-      "beginner"
-    ]
+    "tags": ["G", "G01", "beginner"]
   },
   {
     "id": "G01-L03-FC01",
     "lesson_id": "G01-L03",
     "front": "What does lower temperature generally do?",
     "back": "Concentrates probability mass on higher-scoring tokens.",
-    "tags": [
-      "G",
-      "G01",
-      "intermediate"
-    ]
+    "tags": ["G", "G01", "intermediate"]
   },
   {
     "id": "G01-L03-FC02",
     "lesson_id": "G01-L03",
     "front": "Decoding, sampling and inference constraints: name a common failure to avoid.",
     "back": "Using low temperature as a correctness guarantee or confusing top-p with top-k.",
-    "tags": [
-      "G",
-      "G01",
-      "intermediate"
-    ]
+    "tags": ["G", "G01", "intermediate"]
   },
   {
     "id": "G01-L04-FC01",
     "lesson_id": "G01-L04",
     "front": "Why pin a model revision?",
     "back": "To make the artifact and behavior more reproducible.",
-    "tags": [
-      "G",
-      "G01",
-      "intermediate"
-    ]
+    "tags": ["G", "G01", "intermediate"]
   },
   {
     "id": "G01-L04-FC02",
     "lesson_id": "G01-L04",
     "front": "Hugging Face Hub, Transformers and model selection: name a common failure to avoid.",
     "back": "Executing untrusted remote model code or assuming all licenses permit commercial use.",
-    "tags": [
-      "G",
-      "G01",
-      "intermediate"
-    ]
+    "tags": ["G", "G01", "intermediate"]
   },
   {
     "id": "G02-L01-FC01",
     "lesson_id": "G02-L01",
     "front": "Does one-shot prompting guarantee deterministic output?",
     "back": "No; decoding, infrastructure and model behavior also matter.",
-    "tags": [
-      "G",
-      "G02",
-      "beginner"
-    ]
+    "tags": ["G", "G02", "beginner"]
   },
   {
     "id": "G02-L01-FC02",
     "lesson_id": "G02-L01",
     "front": "Zero-shot, one-shot and few-shot prompting: name a common failure to avoid.",
     "back": "Example contamination, order sensitivity and assuming one-shot makes output deterministic.",
-    "tags": [
-      "G",
-      "G02",
-      "beginner"
-    ]
+    "tags": ["G", "G02", "beginner"]
   },
   {
     "id": "G02-L02-FC01",
     "lesson_id": "G02-L02",
     "front": "Why validate even when a provider offers structured output?",
     "back": "Application rules, data provenance and semantic constraints still need checking.",
-    "tags": [
-      "G",
-      "G02",
-      "intermediate"
-    ]
+    "tags": ["G", "G02", "intermediate"]
   },
   {
     "id": "G02-L02-FC02",
     "lesson_id": "G02-L02",
     "front": "Structured output, few-shot schemas and Pydantic: name a common failure to avoid.",
     "back": "Accepting parseable JSON as factual truth or silently coercing invalid values.",
-    "tags": [
-      "G",
-      "G02",
-      "intermediate"
-    ]
+    "tags": ["G", "G02", "intermediate"]
   },
   {
     "id": "G02-L03-FC01",
     "lesson_id": "G02-L03",
     "front": "Why are generated explanations insufficient as proof?",
     "back": "They can be plausible but inconsistent with the actual facts or computations.",
-    "tags": [
-      "G",
-      "G02",
-      "intermediate"
-    ]
+    "tags": ["G", "G02", "intermediate"]
   },
   {
     "id": "G02-L03-FC02",
     "lesson_id": "G02-L03",
     "front": "Persona prompting, reasoning prompts and prompt injection: name a common failure to avoid.",
     "back": "Trusting a plausible explanation as evidence of correctness or exposing hidden reasoning or secrets.",
-    "tags": [
-      "G",
-      "G02",
-      "intermediate"
-    ]
+    "tags": ["G", "G02", "intermediate"]
   },
   {
     "id": "G02-L04-FC01",
     "lesson_id": "G02-L04",
     "front": "Are ChatML, Alpaca and INST universal standards?",
     "back": "No; they are model-family conventions with variations.",
-    "tags": [
-      "G",
-      "G02",
-      "intermediate"
-    ]
+    "tags": ["G", "G02", "intermediate"]
   },
   {
     "id": "G02-L04-FC02",
     "lesson_id": "G02-L04",
     "front": "Prompt serialization: ChatML, Alpaca and INST: name a common failure to avoid.",
     "back": "Manually applying the wrong template, duplicating special tokens or concatenating untrusted messages as instructions.",
-    "tags": [
-      "G",
-      "G02",
-      "intermediate"
-    ]
+    "tags": ["G", "G02", "intermediate"]
   },
   {
     "id": "G02-L05-FC01",
     "lesson_id": "G02-L05",
     "front": "What should a prompt version record include?",
     "back": "Template, model configuration, schema, evaluation dataset and results.",
-    "tags": [
-      "G",
-      "G02",
-      "advanced"
-    ]
+    "tags": ["G", "G02", "advanced"]
   },
   {
     "id": "G02-L05-FC02",
     "lesson_id": "G02-L05",
     "front": "Prompt versioning, testing and context engineering: name a common failure to avoid.",
     "back": "Changing model and prompt simultaneously makes attribution difficult.",
-    "tags": [
-      "G",
-      "G02",
-      "advanced"
-    ]
+    "tags": ["G", "G02", "advanced"]
   },
   {
     "id": "G03-L01-FC01",
     "lesson_id": "G03-L01",
     "front": "Is a vector database itself an embedding model?",
     "back": "No; it stores and indexes vectors generated elsewhere.",
-    "tags": [
-      "G",
-      "G03",
-      "beginner"
-    ]
+    "tags": ["G", "G03", "beginner"]
   },
   {
     "id": "G03-L01-FC02",
     "lesson_id": "G03-L01",
     "front": "Embeddings, similarity and vector databases: name a common failure to avoid.",
     "back": "Mixing embedding models in one index or missing tenant filters.",
-    "tags": [
-      "G",
-      "G03",
-      "beginner"
-    ]
+    "tags": ["G", "G03", "beginner"]
   },
   {
     "id": "G03-L02-FC01",
     "lesson_id": "G03-L02",
     "front": "Why store source metadata alongside chunks?",
     "back": "To enforce access and provide verifiable citations and lifecycle control.",
-    "tags": [
-      "G",
-      "G03",
-      "intermediate"
-    ]
+    "tags": ["G", "G03", "intermediate"]
   },
   {
     "id": "G03-L02-FC02",
     "lesson_id": "G03-L02",
     "front": "RAG ingestion, chunking and indexing: name a common failure to avoid.",
     "back": "Indexing private content without access metadata or dropping document boundaries.",
-    "tags": [
-      "G",
-      "G03",
-      "intermediate"
-    ]
+    "tags": ["G", "G03", "intermediate"]
   },
   {
     "id": "G03-L03-FC01",
     "lesson_id": "G03-L03",
     "front": "What is the purpose of a reranker?",
     "back": "Improve relevance ordering among retrieved candidates.",
-    "tags": [
-      "G",
-      "G03",
-      "intermediate"
-    ]
+    "tags": ["G", "G03", "intermediate"]
   },
   {
     "id": "G03-L03-FC02",
     "lesson_id": "G03-L03",
     "front": "RAG retrieval, reranking and answer grounding: name a common failure to avoid.",
     "back": "Using similarity as proof of factual support or citing sources not actually retrieved.",
-    "tags": [
-      "G",
-      "G03",
-      "intermediate"
-    ]
+    "tags": ["G", "G03", "intermediate"]
   },
   {
     "id": "G03-L04-FC01",
     "lesson_id": "G03-L04",
     "front": "Can an answer be correct but unfaithful?",
     "back": "Yes; it may be correct from prior knowledge without support from retrieved evidence.",
-    "tags": [
-      "G",
-      "G03",
-      "intermediate"
-    ]
+    "tags": ["G", "G03", "intermediate"]
   },
   {
     "id": "G03-L04-FC02",
     "lesson_id": "G03-L04",
     "front": "RAG evaluation and retrieval diagnostics: name a common failure to avoid.",
     "back": "Evaluating only final answer similarity can hide retrieval failure or unsupported claims.",
-    "tags": [
-      "G",
-      "G03",
-      "intermediate"
-    ]
+    "tags": ["G", "G03", "intermediate"]
   },
   {
     "id": "G04-L01-FC01",
     "lesson_id": "G04-L01",
     "front": "How does original Self-RAG differ from a generic RAG critique loop?",
     "back": "It incorporates learned reflection tokens in the trained model.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G04-L01-FC02",
     "lesson_id": "G04-L01",
     "front": "Self-reflective RAG and Self-RAG: name a common failure to avoid.",
     "back": "Calling any retry loop the original Self-RAG algorithm or trusting a self-grader without validation.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G04-L02-FC01",
     "lesson_id": "G04-L02",
     "front": "What does CRAG primarily correct?",
     "back": "Poor or uncertain retrieved evidence before generation.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G04-L02-FC02",
     "lesson_id": "G04-L02",
     "front": "Corrective RAG (CRAG): name a common failure to avoid.",
     "back": "Sending sensitive queries to unapproved search or using corrective results without provenance.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G04-L03-FC01",
     "lesson_id": "G04-L03",
     "front": "How is answer correction different from retrieval correction?",
     "back": "It targets the generated claims rather than only the retrieved documents.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G04-L03-FC02",
     "lesson_id": "G04-L03",
     "front": "Self-corrective RAG and iterative verification: name a common failure to avoid.",
     "back": "Infinite loops and a judge repeatedly approving its own hallucination.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G04-L04-FC01",
     "lesson_id": "G04-L04",
     "front": "When is simple RAG preferable?",
     "back": "When one predictable retrieval path handles the task reliably.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G04-L04-FC02",
     "lesson_id": "G04-L04",
     "front": "Agentic RAG and routing: name a common failure to avoid.",
     "back": "Unbounded tool calls, cross-tenant retrieval or unnecessary agency for simple questions.",
-    "tags": [
-      "G",
-      "G04",
-      "advanced"
-    ]
+    "tags": ["G", "G04", "advanced"]
   },
   {
     "id": "G05-L01-FC01",
     "lesson_id": "G05-L01",
     "front": "Who actually executes a tool call?",
     "back": "The application/runtime, after validation and authorization.",
-    "tags": [
-      "G",
-      "G05",
-      "intermediate"
-    ]
+    "tags": ["G", "G05", "intermediate"]
   },
   {
     "id": "G05-L01-FC02",
     "lesson_id": "G05-L01",
     "front": "Tool calling and tool-use agent pattern: name a common failure to avoid.",
     "back": "Executing arbitrary model-generated code or treating tool output as trusted instructions.",
-    "tags": [
-      "G",
-      "G05",
-      "intermediate"
-    ]
+    "tags": ["G", "G05", "intermediate"]
   },
   {
     "id": "G05-L02-FC01",
     "lesson_id": "G05-L02",
     "front": "What distinguishes ReAct from a fixed chain?",
     "back": "It chooses successive actions based on intermediate observations.",
-    "tags": [
-      "G",
-      "G05",
-      "intermediate"
-    ]
+    "tags": ["G", "G05", "intermediate"]
   },
   {
     "id": "G05-L02-FC02",
     "lesson_id": "G05-L02",
     "front": "ReAct, planning and action-observation loops: name a common failure to avoid.",
     "back": "Infinite repeated actions, stale observations and blindly following tool text.",
-    "tags": [
-      "G",
-      "G05",
-      "intermediate"
-    ]
+    "tags": ["G", "G05", "intermediate"]
   },
   {
     "id": "G05-L03-FC01",
     "lesson_id": "G05-L03",
     "front": "When should reflection stop?",
     "back": "When acceptance criteria pass, budget expires or escalation is needed.",
-    "tags": [
-      "G",
-      "G05",
-      "intermediate"
-    ]
+    "tags": ["G", "G05", "intermediate"]
   },
   {
     "id": "G05-L03-FC02",
     "lesson_id": "G05-L03",
     "front": "Reflection and evaluator-optimizer agents: name a common failure to avoid.",
     "back": "Self-critique can reinforce errors and add unnecessary cost.",
-    "tags": [
-      "G",
-      "G05",
-      "intermediate"
-    ]
+    "tags": ["G", "G05", "intermediate"]
   },
   {
     "id": "G05-L04-FC01",
     "lesson_id": "G05-L04",
     "front": "Why not use multiple agents for every task?",
     "back": "They introduce coordination, latency, cost and failure complexity.",
-    "tags": [
-      "G",
-      "G05",
-      "advanced"
-    ]
+    "tags": ["G", "G05", "advanced"]
   },
   {
     "id": "G05-L04-FC02",
     "lesson_id": "G05-L04",
     "front": "Multi-agent systems and orchestration: name a common failure to avoid.",
     "back": "Recursive delegation, conflicting writes and sharing unnecessary private context.",
-    "tags": [
-      "G",
-      "G05",
-      "advanced"
-    ]
+    "tags": ["G", "G05", "advanced"]
   },
   {
     "id": "G06-L01-FC01",
     "lesson_id": "G06-L01",
     "front": "What is the benefit of an adapter boundary?",
     "back": "It isolates provider/framework changes from domain logic and tests.",
-    "tags": [
-      "G",
-      "G06",
-      "intermediate"
-    ]
+    "tags": ["G", "G06", "intermediate"]
   },
   {
     "id": "G06-L01-FC02",
     "lesson_id": "G06-L01",
     "front": "LangChain components and integration boundaries: name a common failure to avoid.",
     "back": "Tightly coupling business logic to provider-specific responses or using deprecated examples uncritically.",
-    "tags": [
-      "G",
-      "G06",
-      "intermediate"
-    ]
+    "tags": ["G", "G06", "intermediate"]
   },
   {
     "id": "G06-L02-FC01",
     "lesson_id": "G06-L02",
     "front": "When is a sequential graph appropriate?",
     "back": "When required stages and their order are known in advance.",
-    "tags": [
-      "G",
-      "G06",
-      "intermediate"
-    ]
+    "tags": ["G", "G06", "intermediate"]
   },
   {
     "id": "G06-L02-FC02",
     "lesson_id": "G06-L02",
     "front": "LangGraph state, nodes, edges and sequential workflow: name a common failure to avoid.",
     "back": "Mutating shared state unexpectedly or placing unrelated data in the graph.",
-    "tags": [
-      "G",
-      "G06",
-      "intermediate"
-    ]
+    "tags": ["G", "G06", "intermediate"]
   },
   {
     "id": "G06-L03-FC01",
     "lesson_id": "G06-L03",
     "front": "Why are reducers needed for some parallel state fields?",
     "back": "They define how concurrent updates combine rather than overwrite or conflict.",
-    "tags": [
-      "G",
-      "G06",
-      "intermediate"
-    ]
+    "tags": ["G", "G06", "intermediate"]
   },
   {
     "id": "G06-L03-FC02",
     "lesson_id": "G06-L03",
     "front": "LangGraph conditional and parallel workflows: name a common failure to avoid.",
     "back": "Multiple branches updating the same state key without merge semantics.",
-    "tags": [
-      "G",
-      "G06",
-      "intermediate"
-    ]
+    "tags": ["G", "G06", "intermediate"]
   },
   {
     "id": "G06-L04-FC01",
     "lesson_id": "G06-L04",
     "front": "Why is idempotency important for resumable workflows?",
     "back": "Replayed steps must not repeat harmful external effects.",
-    "tags": [
-      "G",
-      "G06",
-      "advanced"
-    ]
+    "tags": ["G", "G06", "advanced"]
   },
   {
     "id": "G06-L04-FC02",
     "lesson_id": "G06-L04",
     "front": "LangGraph iterative workflows, checkpointing and HITL: name a common failure to avoid.",
     "back": "Re-executing a side effect on resume or storing secrets in checkpoint state.",
-    "tags": [
-      "G",
-      "G06",
-      "advanced"
-    ]
+    "tags": ["G", "G06", "advanced"]
   },
   {
     "id": "G07-L01-FC01",
     "lesson_id": "G07-L01",
     "front": "What does MCP standardize?",
     "back": "Interfaces for AI applications to discover and access external capabilities and context.",
-    "tags": [
-      "G",
-      "G07",
-      "intermediate"
-    ]
+    "tags": ["G", "G07", "intermediate"]
   },
   {
     "id": "G07-L01-FC02",
     "lesson_id": "G07-L01",
     "front": "Model Context Protocol (MCP) fundamentals: name a common failure to avoid.",
     "back": "Equating MCP with an agent framework or trusting every discovered capability.",
-    "tags": [
-      "G",
-      "G07",
-      "intermediate"
-    ]
+    "tags": ["G", "G07", "intermediate"]
   },
   {
     "id": "G07-L02-FC01",
     "lesson_id": "G07-L02",
     "front": "Why prefer typed tool schemas?",
     "back": "They communicate the input contract and enable validation.",
-    "tags": [
-      "G",
-      "G07",
-      "intermediate"
-    ]
+    "tags": ["G", "G07", "intermediate"]
   },
   {
     "id": "G07-L02-FC02",
     "lesson_id": "G07-L02",
     "front": "FastMCP server and client development: name a common failure to avoid.",
     "back": "Exposing filesystem or shell tools without restrictions, or assuming SDK and standalone FastMCP APIs are interchangeable.",
-    "tags": [
-      "G",
-      "G07",
-      "intermediate"
-    ]
+    "tags": ["G", "G07", "intermediate"]
   },
   {
     "id": "G07-L03-FC01",
     "lesson_id": "G07-L03",
     "front": "Does a tool's advertised description establish trust?",
     "back": "No; server identity, authorization and runtime enforcement establish trust boundaries.",
-    "tags": [
-      "G",
-      "G07",
-      "advanced"
-    ]
+    "tags": ["G", "G07", "advanced"]
   },
   {
     "id": "G07-L03-FC02",
     "lesson_id": "G07-L03",
     "front": "MCP security, remote deployment and interoperability: name a common failure to avoid.",
     "back": "Token passthrough without audience validation, prompt injection and SSRF through arbitrary URLs.",
-    "tags": [
-      "G",
-      "G07",
-      "advanced"
-    ]
+    "tags": ["G", "G07", "advanced"]
   },
   {
     "id": "G08-L01-FC01",
     "lesson_id": "G08-L01",
     "front": "How does episodic memory differ from semantic memory?",
     "back": "It represents particular experiences/events rather than general knowledge.",
-    "tags": [
-      "G",
-      "G08",
-      "intermediate"
-    ]
+    "tags": ["G", "G08", "intermediate"]
   },
   {
     "id": "G08-L01-FC02",
     "lesson_id": "G08-L01",
     "front": "Memory taxonomy: working, factual, episodic and semantic: name a common failure to avoid.",
     "back": "Treating every conversation as durable memory or conflating factual and semantic categories as universally disjoint.",
-    "tags": [
-      "G",
-      "G08",
-      "intermediate"
-    ]
+    "tags": ["G", "G08", "intermediate"]
   },
   {
     "id": "G08-L02-FC01",
     "lesson_id": "G08-L02",
     "front": "Why store timestamps and provenance?",
     "back": "To resolve stale/conflicting facts and support auditing and deletion.",
-    "tags": [
-      "G",
-      "G08",
-      "intermediate"
-    ]
+    "tags": ["G", "G08", "intermediate"]
   },
   {
     "id": "G08-L02-FC02",
     "lesson_id": "G08-L02",
     "front": "Memory retrieval, summarization and vector storage: name a common failure to avoid.",
     "back": "Stale preferences, accidental cross-user retrieval and treating retrieved memory as instructions.",
-    "tags": [
-      "G",
-      "G08",
-      "intermediate"
-    ]
+    "tags": ["G", "G08", "intermediate"]
   },
   {
     "id": "G08-L03-FC01",
     "lesson_id": "G08-L03",
     "front": "Does a memory library replace an application retention policy?",
     "back": "No; the application must enforce purpose, consent and retention requirements.",
-    "tags": [
-      "G",
-      "G08",
-      "advanced"
-    ]
+    "tags": ["G", "G08", "advanced"]
   },
   {
     "id": "G08-L03-FC02",
     "lesson_id": "G08-L03",
     "front": "Mem0 and persistent agent memory: name a common failure to avoid.",
     "back": "Using defaults without understanding external data flow, retaining sensitive data or failing to remove stale memory.",
-    "tags": [
-      "G",
-      "G08",
-      "advanced"
-    ]
+    "tags": ["G", "G08", "advanced"]
   },
   {
     "id": "G09-L01-FC01",
     "lesson_id": "G09-L01",
     "front": "Does async automatically speed up CPU-bound work?",
     "back": "No; it mainly helps overlap waiting for I/O.",
-    "tags": [
-      "G",
-      "G09",
-      "intermediate"
-    ]
+    "tags": ["G", "G09", "intermediate"]
   },
   {
     "id": "G09-L01-FC02",
     "lesson_id": "G09-L01",
     "front": "FastAPI, Pydantic and async inference APIs: name a common failure to avoid.",
     "back": "Blocking an async event loop, returning secrets in exceptions or accepting unbounded requests.",
-    "tags": [
-      "G",
-      "G09",
-      "intermediate"
-    ]
+    "tags": ["G", "G09", "intermediate"]
   },
   {
     "id": "G09-L02-FC01",
     "lesson_id": "G09-L02",
     "front": "Why include a completion event?",
     "back": "It helps clients distinguish a finished response from an interrupted connection.",
-    "tags": [
-      "G",
-      "G09",
-      "intermediate"
-    ]
+    "tags": ["G", "G09", "intermediate"]
   },
   {
     "id": "G09-L02-FC02",
     "lesson_id": "G09-L02",
     "front": "Streaming responses: SSE, chunks and cancellation: name a common failure to avoid.",
     "back": "Assuming each chunk is valid JSON or leaking unsafe content before moderation completes.",
-    "tags": [
-      "G",
-      "G09",
-      "intermediate"
-    ]
+    "tags": ["G", "G09", "intermediate"]
   },
   {
     "id": "G09-L03-FC01",
     "lesson_id": "G09-L03",
     "front": "Why use an LLM gateway?",
     "back": "Centralize access, routing, quotas, cost tracking and cross-provider integration.",
-    "tags": [
-      "G",
-      "G09",
-      "intermediate"
-    ]
+    "tags": ["G", "G09", "intermediate"]
   },
   {
     "id": "G09-L03-FC02",
     "lesson_id": "G09-L03",
     "front": "LiteLLM gateway, routing and fallback: name a common failure to avoid.",
     "back": "Retrying non-idempotent side effects or switching models that do not support the required schema.",
-    "tags": [
-      "G",
-      "G09",
-      "intermediate"
-    ]
+    "tags": ["G", "G09", "intermediate"]
   },
   {
     "id": "G09-L04-FC01",
     "lesson_id": "G09-L04",
     "front": "Why enforce permissions outside the LLM?",
     "back": "The model can be manipulated or mistaken; runtime authorization is authoritative.",
-    "tags": [
-      "G",
-      "G09",
-      "advanced"
-    ]
+    "tags": ["G", "G09", "advanced"]
   },
   {
     "id": "G09-L04-FC02",
     "lesson_id": "G09-L04",
     "front": "Guardrails, prompt injection, privacy and HITL: name a common failure to avoid.",
     "back": "Relying solely on an LLM judge or releasing unreviewed streamed content.",
-    "tags": [
-      "G",
-      "G09",
-      "advanced"
-    ]
+    "tags": ["G", "G09", "advanced"]
   },
   {
     "id": "G10-L01-FC01",
     "lesson_id": "G10-L01",
     "front": "Why randomize answer order in pairwise judging?",
     "back": "To detect or reduce position bias.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L01-FC02",
     "lesson_id": "G10-L01",
     "front": "Agent evaluation, datasets and LLM-as-judge: name a common failure to avoid.",
     "back": "Using the same model as generator and uncalibrated sole evaluator or exposing private traces to judges.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L02-FC01",
     "lesson_id": "G10-L02",
     "front": "Why separate offline and judge-backed tests?",
     "back": "Offline tests are stable and inexpensive; semantic judging is variable and may cost money.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L02-FC02",
     "lesson_id": "G10-L02",
     "front": "DeepEval for LLM and agent regression tests: name a common failure to avoid.",
     "back": "Confusing metric thresholds with universal quality standards or depending on live models for all unit tests.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L03-FC01",
     "lesson_id": "G10-L03",
     "front": "What does faithfulness aim to measure?",
     "back": "Whether answer claims are supported by supplied context.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L03-FC02",
     "lesson_id": "G10-L03",
     "front": "Ragas for RAG evaluation: name a common failure to avoid.",
     "back": "Using an unavailable reference field or comparing metrics across changed evaluator configurations.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L04-FC01",
     "lesson_id": "G10-L04",
     "front": "Why test prompts against a fixed fixture set?",
     "back": "To detect regressions when templates or providers change.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L04-FC02",
     "lesson_id": "G10-L04",
     "front": "Promptfoo for prompt/model evaluation and red teaming: name a common failure to avoid.",
     "back": "Storing API keys in YAML or attacking systems without authorization.",
-    "tags": [
-      "G",
-      "G10",
-      "intermediate"
-    ]
+    "tags": ["G", "G10", "intermediate"]
   },
   {
     "id": "G10-L05-FC01",
     "lesson_id": "G10-L05",
     "front": "What does p95 latency mean?",
     "back": "95% of measured requests complete at or below that duration.",
-    "tags": [
-      "G",
-      "G10",
-      "advanced"
-    ]
+    "tags": ["G", "G10", "advanced"]
   },
   {
     "id": "G10-L05-FC02",
     "lesson_id": "G10-L05",
     "front": "Observability, traces, evaluation gates and cost: name a common failure to avoid.",
     "back": "Logging secrets or using aggregate metrics that hide high-risk failures.",
-    "tags": [
-      "G",
-      "G10",
-      "advanced"
-    ]
+    "tags": ["G", "G10", "advanced"]
   },
   {
     "id": "G11-L01-FC01",
     "lesson_id": "G11-L01",
     "front": "What is LoRA's central idea?",
     "back": "Learn a low-rank weight update while keeping the base weights frozen.",
-    "tags": [
-      "G",
-      "G11",
-      "intermediate"
-    ]
+    "tags": ["G", "G11", "intermediate"]
   },
   {
     "id": "G11-L01-FC02",
     "lesson_id": "G11-L01",
     "front": "Fine-tuning datasets, SFT and PEFT/LoRA: name a common failure to avoid.",
     "back": "Training on benchmark answers, poor data formatting or assuming fine-tuning adds reliable current facts.",
-    "tags": [
-      "G",
-      "G11",
-      "intermediate"
-    ]
+    "tags": ["G", "G11", "intermediate"]
   },
   {
     "id": "G11-L02-FC01",
     "lesson_id": "G11-L02",
     "front": "What does the KV cache store?",
     "back": "Attention key/value states for previously processed tokens to avoid recomputation.",
-    "tags": [
-      "G",
-      "G11",
-      "advanced"
-    ]
+    "tags": ["G", "G11", "advanced"]
   },
   {
     "id": "G11-L02-FC02",
     "lesson_id": "G11-L02",
     "front": "QLoRA, quantization, serving and model optimization: name a common failure to avoid.",
     "back": "Assuming four-bit storage equals complete runtime memory or every GPU supports every kernel.",
-    "tags": [
-      "G",
-      "G11",
-      "advanced"
-    ]
+    "tags": ["G", "G11", "advanced"]
   },
   {
     "id": "G11-L03-FC01",
     "lesson_id": "G11-L03",
     "front": "When is RAG preferable to fine-tuning for changing facts?",
     "back": "When facts must be retrieved and updated independently with traceable evidence.",
-    "tags": [
-      "G",
-      "G11",
-      "advanced"
-    ]
+    "tags": ["G", "G11", "advanced"]
   },
   {
     "id": "G11-L03-FC02",
     "lesson_id": "G11-L03",
     "front": "Multimodal LLMs, diffusion apps and fine-tuning decisions: name a common failure to avoid.",
     "back": "Treating fine-tuning as a replacement for retrieval or submitting private images to unapproved providers.",
-    "tags": [
-      "G",
-      "G11",
-      "advanced"
-    ]
+    "tags": ["G", "G11", "advanced"]
   },
   {
     "id": "P01-L01-FC01",
     "lesson_id": "P01-L01",
     "front": "Why package preprocessing with a model?",
     "back": "To avoid train-serving skew.",
-    "tags": [
-      "P",
-      "P01",
-      "intermediate"
-    ]
+    "tags": ["P", "P01", "intermediate"]
   },
   {
     "id": "P01-L01-FC02",
     "lesson_id": "P01-L01",
     "front": "Model packaging, APIs and Docker: name a common failure to avoid.",
     "back": "Loading untrusted pickle/joblib artifacts or training on service startup.",
-    "tags": [
-      "P",
-      "P01",
-      "intermediate"
-    ]
+    "tags": ["P", "P01", "intermediate"]
   },
   {
     "id": "P01-L02-FC01",
     "lesson_id": "P01-L02",
     "front": "What is the difference between a run and a model version?",
     "back": "A run records an experiment; a version identifies a registered model artifact.",
-    "tags": [
-      "P",
-      "P01",
-      "intermediate"
-    ]
+    "tags": ["P", "P01", "intermediate"]
   },
   {
     "id": "P01-L02-FC02",
     "lesson_id": "P01-L02",
     "front": "MLflow, data versioning and experiment tracking: name a common failure to avoid.",
     "back": "Storing sensitive data in experiment metadata or promoting based on training score.",
-    "tags": [
-      "P",
-      "P01",
-      "intermediate"
-    ]
+    "tags": ["P", "P01", "intermediate"]
   },
   {
     "id": "P01-L03-FC01",
     "lesson_id": "P01-L03",
     "front": "Why gate deployment on model quality as well as code tests?",
     "back": "Correct software can still serve a degraded or unsafe model.",
-    "tags": [
-      "P",
-      "P01",
-      "advanced"
-    ]
+    "tags": ["P", "P01", "advanced"]
   },
   {
     "id": "P01-L03-FC02",
     "lesson_id": "P01-L03",
     "front": "CI/CD, continuous training and DevSecOps: name a common failure to avoid.",
     "back": "Automatically promoting a retrained model without comparing it to a baseline.",
-    "tags": [
-      "P",
-      "P01",
-      "advanced"
-    ]
+    "tags": ["P", "P01", "advanced"]
   },
   {
     "id": "P02-L01-FC01",
     "lesson_id": "P02-L01",
     "front": "Can data drift occur without concept drift?",
     "back": "Yes; input distribution can change while the target relationship stays stable.",
-    "tags": [
-      "P",
-      "P02",
-      "advanced"
-    ]
+    "tags": ["P", "P02", "advanced"]
   },
   {
     "id": "P02-L01-FC02",
     "lesson_id": "P02-L01",
     "front": "Monitoring, drift, reliability and retraining: name a common failure to avoid.",
     "back": "Treating every detected shift as concept drift or retraining automatically without verification.",
-    "tags": [
-      "P",
-      "P02",
-      "advanced"
-    ]
+    "tags": ["P", "P02", "advanced"]
   },
   {
     "id": "P02-L02-FC01",
     "lesson_id": "P02-L02",
     "front": "What should a model card communicate?",
     "back": "Intended use, evaluation, limitations, data considerations and known risks.",
-    "tags": [
-      "P",
-      "P02",
-      "advanced"
-    ]
+    "tags": ["P", "P02", "advanced"]
   },
   {
     "id": "P02-L02-FC02",
     "lesson_id": "P02-L02",
     "front": "Responsible AI, governance and security: name a common failure to avoid.",
     "back": "Assuming public data is always licensed for training or logging full user conversations.",
-    "tags": [
-      "P",
-      "P02",
-      "advanced"
-    ]
+    "tags": ["P", "P02", "advanced"]
   },
   {
     "id": "P02-L03-FC01",
     "lesson_id": "P02-L03",
     "front": "Why separate ingestion and online inference?",
     "back": "They have different resource, latency and scaling characteristics.",
-    "tags": [
-      "P",
-      "P02",
-      "advanced"
-    ]
+    "tags": ["P", "P02", "advanced"]
   },
   {
     "id": "P02-L03-FC02",
     "lesson_id": "P02-L03",
     "front": "Cloud architecture, scaling and deployment trade-offs: name a common failure to avoid.",
     "back": "Overprovisioning GPUs, exposing indexes publicly or scaling without measurement.",
-    "tags": [
-      "P",
-      "P02",
-      "advanced"
-    ]
+    "tags": ["P", "P02", "advanced"]
   }
 ]

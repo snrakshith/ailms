@@ -1,11 +1,11 @@
 name: DAST — OWASP ZAP disposable stack
 on:
-  push: {branches: [main]}
+  push: { branches: [main] }
   pull_request: {}
   schedule:
     - cron: '0 5 * * 3'
   workflow_dispatch: {}
-permissions: {contents: read}
+permissions: { contents: read }
 concurrency:
   group: dast-${{ github.ref }}
   cancel-in-progress: true
@@ -28,7 +28,7 @@ jobs:
       VITE_SENTRY_DSN: ''
     steps:
       - uses: actions/checkout@v7
-        with: {persist-credentials: false}
+        with: { persist-credentials: false }
       - name: Require reproducible dependency graph
         run: test -s pnpm-lock.yaml
       - name: Scan only the isolated CI stack

@@ -1,3 +1,79 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Replica capacity and headroom</title><style>body{font:17px system-ui;max-width:760px;margin:32px auto;padding:0 16px;color:#172554;background:#f8fafc}main{border:1px solid #cbd5e1;border-radius:12px;background:white;padding:24px}h1{font-size:26px}label{display:block;margin-top:20px;font-weight:600}input{width:100%}output{float:right}pre{white-space:pre-wrap;background:#e0f2fe;padding:18px;border-radius:8px}button{padding:8px 14px}</style><main><h1>Replica capacity and headroom</h1><p>Assumes identical 100 rps replicas; real scaling depends on measured latency, resources and dependency capacity.</p><label for="traffic">Requests per second <output id="trafficout"></output></label><input type="range" id="traffic" min="10" max="1000" step="10" value="300"><label for="replicas">Ready replicas <output id="replicasout"></output></label><input type="range" id="replicas" min="1" max="10" step="1" value="4"><pre id="result" aria-live="polite"></pre><button id="reset">Reset</button></main><script>function update(){const traffic=Number(document.getElementById("traffic").value);document.getElementById("trafficout").textContent=traffic;const replicas=Number(document.getElementById("replicas").value);document.getElementById("replicasout").textContent=replicas;let max=replicas*100;document.getElementById('result').textContent=`Illustrative capacity: ${max} rps
-Utilization: ${(100*traffic/max).toFixed(1)}%
-${traffic>max?'Overloaded':traffic>max*.8?'Low headroom':'Headroom available'}`;}document.querySelectorAll('input').forEach(e=>e.addEventListener('input',update));document.getElementById('reset').addEventListener('click',()=>{document.getElementById("traffic").value=300;document.getElementById("replicas").value=4;update()});update();</script></html>
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Replica capacity and headroom</title
+  ><style>
+    body {
+      font: 17px system-ui;
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 16px;
+      color: #172554;
+      background: #f8fafc;
+    }
+    main {
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      background: white;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+    }
+    output {
+      float: right;
+    }
+    pre {
+      white-space: pre-wrap;
+      background: #e0f2fe;
+      padding: 18px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 8px 14px;
+    }
+  </style>
+  <main>
+    <h1>Replica capacity and headroom</h1>
+    <p>
+      Assumes identical 100 rps replicas; real scaling depends on measured latency, resources and
+      dependency capacity.
+    </p>
+    <label for="traffic">Requests per second <output id="trafficout"></output></label
+    ><input type="range" id="traffic" min="10" max="1000" step="10" value="300" /><label
+      for="replicas"
+      >Ready replicas <output id="replicasout"></output></label
+    ><input type="range" id="replicas" min="1" max="10" step="1" value="4" />
+    <pre id="result" aria-live="polite"></pre>
+    <button id="reset">Reset</button>
+  </main>
+  <script>
+    function update() {
+      const traffic = Number(document.getElementById('traffic').value);
+      document.getElementById('trafficout').textContent = traffic;
+      const replicas = Number(document.getElementById('replicas').value);
+      document.getElementById('replicasout').textContent = replicas;
+      let max = replicas * 100;
+      document.getElementById('result').textContent = `Illustrative capacity: ${max} rps
+Utilization: ${((100 * traffic) / max).toFixed(1)}%
+${traffic > max ? 'Overloaded' : traffic > max * 0.8 ? 'Low headroom' : 'Headroom available'}`;
+    }
+    document.querySelectorAll('input').forEach((e) => e.addEventListener('input', update));
+    document.getElementById('reset').addEventListener('click', () => {
+      document.getElementById('traffic').value = 300;
+      document.getElementById('replicas').value = 4;
+      update();
+    });
+    update();
+  </script>
+</html>

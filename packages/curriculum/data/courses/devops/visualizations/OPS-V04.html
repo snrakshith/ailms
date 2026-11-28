@@ -1,3 +1,74 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fail-closed delivery gate</title><style>body{font:17px system-ui;max-width:760px;margin:32px auto;padding:0 16px;color:#172554;background:#f8fafc}main{border:1px solid #cbd5e1;border-radius:12px;background:white;padding:24px}h1{font-size:26px}label{display:block;margin-top:20px;font-weight:600}input{width:100%}output{float:right}pre{white-space:pre-wrap;background:#e0f2fe;padding:18px;border-radius:8px}button{padding:8px 14px}</style><main><h1>Fail-closed delivery gate</h1><p>Missing scanner evidence is treated as failure rather than as a clean scan.</p><label for="passed">Successful required checks <output id="passedout"></output></label><input type="range" id="passed" min="0" max="7" step="1" value="5"><label for="verified">Signature verification (0/1) <output id="verifiedout"></output></label><input type="range" id="verified" min="0" max="1" step="1" value="1"><pre id="result" aria-live="polite"></pre><button id="reset">Reset</button></main><script>function update(){const passed=Number(document.getElementById("passed").value);document.getElementById("passedout").textContent=passed;const verified=Number(document.getElementById("verified").value);document.getElementById("verifiedout").textContent=verified;document.getElementById('result').textContent=`Checks: ${passed}/7
-Signature: ${verified?'verified':'not verified'}
-${passed===7&&verified?'ELIGIBLE: still requires environment approval':'BLOCKED: required evidence missing or failed'}`;}document.querySelectorAll('input').forEach(e=>e.addEventListener('input',update));document.getElementById('reset').addEventListener('click',()=>{document.getElementById("passed").value=5;document.getElementById("verified").value=1;update()});update();</script></html>
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Fail-closed delivery gate</title
+  ><style>
+    body {
+      font: 17px system-ui;
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 16px;
+      color: #172554;
+      background: #f8fafc;
+    }
+    main {
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      background: white;
+      padding: 24px;
+    }
+    h1 {
+      font-size: 26px;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    input {
+      width: 100%;
+    }
+    output {
+      float: right;
+    }
+    pre {
+      white-space: pre-wrap;
+      background: #e0f2fe;
+      padding: 18px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 8px 14px;
+    }
+  </style>
+  <main>
+    <h1>Fail-closed delivery gate</h1>
+    <p>Missing scanner evidence is treated as failure rather than as a clean scan.</p>
+    <label for="passed">Successful required checks <output id="passedout"></output></label
+    ><input type="range" id="passed" min="0" max="7" step="1" value="5" /><label for="verified"
+      >Signature verification (0/1) <output id="verifiedout"></output></label
+    ><input type="range" id="verified" min="0" max="1" step="1" value="1" />
+    <pre id="result" aria-live="polite"></pre>
+    <button id="reset">Reset</button>
+  </main>
+  <script>
+    function update() {
+      const passed = Number(document.getElementById('passed').value);
+      document.getElementById('passedout').textContent = passed;
+      const verified = Number(document.getElementById('verified').value);
+      document.getElementById('verifiedout').textContent = verified;
+      document.getElementById('result').textContent = `Checks: ${passed}/7
+Signature: ${verified ? 'verified' : 'not verified'}
+${passed === 7 && verified ? 'ELIGIBLE: still requires environment approval' : 'BLOCKED: required evidence missing or failed'}`;
+    }
+    document.querySelectorAll('input').forEach((e) => e.addEventListener('input', update));
+    document.getElementById('reset').addEventListener('click', () => {
+      document.getElementById('passed').value = 5;
+      document.getElementById('verified').value = 1;
+      update();
+    });
+    update();
+  </script>
+</html>

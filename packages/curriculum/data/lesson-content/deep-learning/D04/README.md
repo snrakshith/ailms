@@ -1,6 +1,7 @@
 # D04: Advanced learning and generative models
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Clean sample"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Transfer learning, embeddings and self-supervised learning](D04-L01.md) — intermediate
 - [Autoencoders, VAEs and GANs](D04-L02.md) — advanced
 - [Diffusion and score-based generative models](D04-L03.md) — advanced

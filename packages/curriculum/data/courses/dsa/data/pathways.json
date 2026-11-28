@@ -45,15 +45,7 @@
   {
     "id": "DSA-PATH03",
     "title": "Advanced problem-solving revision",
-    "module_ids": [
-      "DSA08",
-      "DSA09",
-      "DSA10",
-      "DSA11",
-      "DSA12",
-      "DSA13",
-      "DSA14"
-    ],
+    "module_ids": ["DSA08", "DSA09", "DSA10", "DSA11", "DSA12", "DSA13", "DSA14"],
     "content_path": "pathways/DSA-PATH03.md",
     "estimated_minutes": 3255
   }

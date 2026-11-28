@@ -1,6 +1,7 @@
 # G03: RAG foundations
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Documents"]
@@ -23,6 +24,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Embeddings, similarity and vector databases](G03-L01.md) — beginner
 - [RAG ingestion, chunking and indexing](G03-L02.md) — intermediate
 - [RAG retrieval, reranking and answer grounding](G03-L03.md) — intermediate

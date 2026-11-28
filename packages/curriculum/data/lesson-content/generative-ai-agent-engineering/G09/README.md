@@ -1,6 +1,7 @@
 # G09: LLM APIs, gateways and guardrails
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Client"]
@@ -21,6 +22,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [FastAPI, Pydantic and async inference APIs](G09-L01.md) — intermediate
 - [Streaming responses: SSE, chunks and cancellation](G09-L02.md) — intermediate
 - [LiteLLM gateway, routing and fallback](G09-L03.md) — intermediate

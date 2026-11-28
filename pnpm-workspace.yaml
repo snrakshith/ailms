@@ -2,5 +2,9 @@ packages:
   - 'apps/*'
   - 'packages/*'
 
+overrides:
+  '@opentelemetry/propagator-jaeger': ^2.12.1
+  protobufjs: ^8.4.1
+
 # Allows pnpm deploy --filter @sapling/api --prod for small runtime Docker images.
 injectWorkspacePackages: true

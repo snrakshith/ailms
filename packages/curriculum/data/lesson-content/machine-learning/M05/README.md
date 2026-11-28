@@ -1,6 +1,7 @@
 # M05: Applied ML and experimentation
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Historical data"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Time series, forecasting and backtesting](M05-L01.md) — intermediate
 - [Recommendation and learning to rank](M05-L02.md) — intermediate
 - [Causal inference and experimentation](M05-L03.md) — advanced

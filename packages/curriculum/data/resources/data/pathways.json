@@ -2,17 +2,7 @@
   {
     "id": "ML-ENGINEER",
     "title": "Machine Learning Engineer",
-    "module_ids": [
-      "F01",
-      "F02",
-      "M01",
-      "M02",
-      "M03",
-      "M04",
-      "M05",
-      "P01",
-      "P02"
-    ],
+    "module_ids": ["F01", "F02", "M01", "M02", "M03", "M04", "M05", "P01", "P02"],
     "lesson_ids": [
       "F01-L01",
       "F01-L02",
@@ -51,9 +41,7 @@
       "P02-L02",
       "P02-L03"
     ],
-    "canonical_prerequisites_outside_path": [
-      "G11-L03"
-    ],
+    "canonical_prerequisites_outside_path": ["G11-L03"],
     "entry_policy": "Complete omitted prerequisites or pass instructor diagnostic; canonical prerequisites are unchanged.",
     "estimated_hours": 95.0,
     "capstone": "Build a validated tabular or forecasting system with a model card, threshold policy and release gate.",
@@ -161,12 +149,7 @@
       "P02-L02",
       "P02-L03"
     ],
-    "canonical_prerequisites_outside_path": [
-      "C04-L03",
-      "D02-L03",
-      "M02-L06",
-      "M05-L03"
-    ],
+    "canonical_prerequisites_outside_path": ["C04-L03", "D02-L03", "M02-L06", "M05-L03"],
     "entry_policy": "Complete omitted prerequisites or pass instructor diagnostic; canonical prerequisites are unchanged.",
     "estimated_hours": 205.8,
     "capstone": "Deliver a grounded tool-using assistant with bounded RAG, HITL and evaluation.",
@@ -245,11 +228,7 @@
       "P02-L02",
       "P02-L03"
     ],
-    "canonical_prerequisites_outside_path": [
-      "G11-L03",
-      "M02-L06",
-      "M05-L03"
-    ],
+    "canonical_prerequisites_outside_path": ["G11-L03", "M02-L06", "M05-L03"],
     "entry_policy": "Complete omitted prerequisites or pass instructor diagnostic; canonical prerequisites are unchanged.",
     "estimated_hours": 138.8,
     "capstone": "Deliver a visual quality inspection prototype with audited labels, detection or segmentation and deployment benchmark.",
@@ -325,12 +304,7 @@
       "P02-L02",
       "P02-L03"
     ],
-    "canonical_prerequisites_outside_path": [
-      "G02-L05",
-      "G08-L03",
-      "G11-L03",
-      "M05-L03"
-    ],
+    "canonical_prerequisites_outside_path": ["G02-L05", "G08-L03", "G11-L03", "M05-L03"],
     "entry_policy": "Complete omitted prerequisites or pass instructor diagnostic; canonical prerequisites are unchanged.",
     "estimated_hours": 132.2,
     "capstone": "Build a release pipeline with model/data versions, DevSecOps, rollback and drift alerts.",

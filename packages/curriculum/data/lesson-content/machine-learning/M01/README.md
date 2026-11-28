@@ -1,6 +1,7 @@
 # M01: ML lifecycle and data preparation
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Raw data"]
@@ -17,6 +18,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [ML problem framing and baselines](M01-L01.md) — beginner
 - [Train, validation, test and leakage](M01-L02.md) — beginner
 - [Preprocessing and feature pipelines](M01-L03.md) — intermediate

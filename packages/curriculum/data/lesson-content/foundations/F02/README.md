@@ -1,6 +1,7 @@
 # F02: Mathematics for AI
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Data vectors"]
@@ -15,6 +16,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Linear algebra: vectors, matrices and dot products](F02-L01.md) — beginner
 - [Eigenvalues, SVD and projections](F02-L02.md) — intermediate
 - [Probability, distributions and Bayes rule](F02-L03.md) — beginner

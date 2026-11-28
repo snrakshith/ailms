@@ -3,6 +3,7 @@
 **Expanded educational content pack; draft for independent review.** This is not an LMS application. The six original tracks, 28 modules, 106 stable lesson IDs and five capstones remain unchanged.
 
 ## What is new
+
 - 106 expanded lessons and 28 consolidated chapter-style module notes; three additional deep-dive guides. The content is expanded course material rather than exhaustive textbook-length lectures.
 - 106 written worked exercise solutions; 16 additional runnable lab solutions, matching starter scripts, lab guides, notebook wrappers and coding challenges.
 - 346 quiz questions (212 original plus 106 debugging scenarios and 28 MCQs); 212 original Anki cards; 106 interview prompts.
@@ -12,6 +13,7 @@
 - Validation evidence, dependency version snapshot, integration test plan and per-lesson review matrix.
 
 ## Start here
+
 1. [Roadmap](ROADMAP.md) and [syllabus](SYLLABUS.md).
 2. [Setup](SETUP.md), [code index](CODE_INDEX.md) and [lab index](LAB_INDEX.md).
 3. `chapters/`, `content/`, `labs/`, `cases/`, `visualizations/index.html`, `pathways/`.

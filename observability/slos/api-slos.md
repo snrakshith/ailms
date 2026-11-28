@@ -1,4 +1,5 @@
 # Initial SLOs
+
 - Availability target: 99.9% successful API requests excluding expected 4xx.
 - Latency target: p95 under 500ms for simple task operations, measured at server edge.
 - RUM: report p75 LCP <= 2.5s, INP <= 200ms, CLS <= 0.1.

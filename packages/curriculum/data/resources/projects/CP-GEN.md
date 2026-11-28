@@ -3,6 +3,7 @@
 Implement a knowledge assistant over synthetic policies.
 
 ## Deliverables
+
 - [ ] Ingestion and citations
 - [ ] sparse and dense retrieval
 - [ ] bounded corrective loop
@@ -15,9 +16,11 @@ Implement a knowledge assistant over synthetic policies.
 - [ ] evaluation gate
 
 ## Acceptance criteria
+
 Unanswerable queries abstain; unauthorized actions never execute; retries bounded; user isolation tested; offline and opt-in judge suites separate.
 
 ## Grading rubric (100 points)
+
 - Functional Correctness: 30
 - Evaluation And Evidence: 30
 - Reproducibility And Documentation: 20

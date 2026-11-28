@@ -1,1 +1,6 @@
-{"name":"Sapling Fullstack","image":"mcr.microsoft.com/devcontainers/typescript-node:22","forwardPorts":[4000,5173,27017,6379],"postCreateCommand":"npm install"}
+{
+  "name": "Sapling Fullstack",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "forwardPorts": [4000, 5173, 27017, 6379],
+  "postCreateCommand": "npm install"
+}

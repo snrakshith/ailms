@@ -9,71 +9,49 @@
       "id": "DSA-F",
       "title": "Programming foundations",
       "order": 1,
-      "module_ids": [
-        "DSA00"
-      ],
+      "module_ids": ["DSA00"],
       "estimated_minutes": 180
     },
     {
       "id": "DSA-A",
       "title": "Array patterns",
       "order": 2,
-      "module_ids": [
-        "DSA01",
-        "DSA02",
-        "DSA03"
-      ],
+      "module_ids": ["DSA01", "DSA02", "DSA03"],
       "estimated_minutes": 1365
     },
     {
       "id": "DSA-S",
       "title": "Linear data structures",
       "order": 3,
-      "module_ids": [
-        "DSA04",
-        "DSA05"
-      ],
+      "module_ids": ["DSA04", "DSA05"],
       "estimated_minutes": 735
     },
     {
       "id": "DSA-T",
       "title": "Trees, tries & heaps",
       "order": 4,
-      "module_ids": [
-        "DSA06",
-        "DSA07"
-      ],
+      "module_ids": ["DSA06", "DSA07"],
       "estimated_minutes": 945
     },
     {
       "id": "DSA-G",
       "title": "Graphs & search",
       "order": 5,
-      "module_ids": [
-        "DSA08",
-        "DSA09"
-      ],
+      "module_ids": ["DSA08", "DSA09"],
       "estimated_minutes": 1155
     },
     {
       "id": "DSA-D",
       "title": "Dynamic programming",
       "order": 6,
-      "module_ids": [
-        "DSA10",
-        "DSA11"
-      ],
+      "module_ids": ["DSA10", "DSA11"],
       "estimated_minutes": 1260
     },
     {
       "id": "DSA-X",
       "title": "Optimization & interview mastery",
       "order": 7,
-      "module_ids": [
-        "DSA12",
-        "DSA13",
-        "DSA14"
-      ],
+      "module_ids": ["DSA12", "DSA13", "DSA14"],
       "estimated_minutes": 840
     }
   ],
@@ -83,12 +61,7 @@
       "track_id": "DSA-F",
       "title": "Optional beginner prerequisites",
       "order": 1,
-      "lesson_ids": [
-        "DSA00-L01",
-        "DSA00-L02",
-        "DSA00-L03",
-        "DSA00-L04"
-      ],
+      "lesson_ids": ["DSA00-L01", "DSA00-L02", "DSA00-L03", "DSA00-L04"],
       "reference_urls": [
         "https://docs.python.org/3/library/collections.html",
         "https://docs.python.org/3/tutorial/"
@@ -106,103 +79,57 @@
       "track_id": "DSA-A",
       "title": "Arrays & hashing",
       "order": 2,
-      "lesson_ids": [
-        "DSA01-L01",
-        "DSA01-L02",
-        "DSA01-L03",
-        "DSA01-L04",
-        "DSA01-L05"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA00"
-      ],
+      "lesson_ids": ["DSA01-L01", "DSA01-L02", "DSA01-L03", "DSA01-L04", "DSA01-L05"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA00"],
       "content_path": "content/DSA-A/DSA01/README.md",
       "chapter_path": "chapters/DSA01.md",
       "cheatsheet_path": "cheatsheets/DSA01.md",
       "diagram_path": "diagrams/DSA01.mmd",
       "diagram_svg_path": "diagrams/DSA01.svg",
       "estimated_minutes": 525,
-      "concept_diagram_ids": [
-        "DSA-CD01"
-      ]
+      "concept_diagram_ids": ["DSA-CD01"]
     },
     {
       "id": "DSA02",
       "track_id": "DSA-A",
       "title": "Two pointers & sliding window",
       "order": 3,
-      "lesson_ids": [
-        "DSA02-L01",
-        "DSA02-L02",
-        "DSA02-L03",
-        "DSA02-L04"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA01"
-      ],
+      "lesson_ids": ["DSA02-L01", "DSA02-L02", "DSA02-L03", "DSA02-L04"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA01"],
       "content_path": "content/DSA-A/DSA02/README.md",
       "chapter_path": "chapters/DSA02.md",
       "cheatsheet_path": "cheatsheets/DSA02.md",
       "diagram_path": "diagrams/DSA02.mmd",
       "diagram_svg_path": "diagrams/DSA02.svg",
       "estimated_minutes": 420,
-      "concept_diagram_ids": [
-        "DSA-CD02"
-      ]
+      "concept_diagram_ids": ["DSA-CD02"]
     },
     {
       "id": "DSA03",
       "track_id": "DSA-A",
       "title": "Binary search",
       "order": 4,
-      "lesson_ids": [
-        "DSA03-L01",
-        "DSA03-L02",
-        "DSA03-L03",
-        "DSA03-L04"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA02"
-      ],
+      "lesson_ids": ["DSA03-L01", "DSA03-L02", "DSA03-L03", "DSA03-L04"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA02"],
       "content_path": "content/DSA-A/DSA03/README.md",
       "chapter_path": "chapters/DSA03.md",
       "cheatsheet_path": "cheatsheets/DSA03.md",
       "diagram_path": "diagrams/DSA03.mmd",
       "diagram_svg_path": "diagrams/DSA03.svg",
       "estimated_minutes": 420,
-      "concept_diagram_ids": [
-        "DSA-CD03"
-      ]
+      "concept_diagram_ids": ["DSA-CD03"]
     },
     {
       "id": "DSA04",
       "track_id": "DSA-S",
       "title": "Stack & monotonic stack",
       "order": 5,
-      "lesson_ids": [
-        "DSA04-L01",
-        "DSA04-L02",
-        "DSA04-L03"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA03"
-      ],
+      "lesson_ids": ["DSA04-L01", "DSA04-L02", "DSA04-L03"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA03"],
       "content_path": "content/DSA-S/DSA04/README.md",
       "chapter_path": "chapters/DSA04.md",
       "cheatsheet_path": "cheatsheets/DSA04.md",
@@ -215,19 +142,9 @@
       "track_id": "DSA-S",
       "title": "Linked lists & caches",
       "order": 6,
-      "lesson_ids": [
-        "DSA05-L01",
-        "DSA05-L02",
-        "DSA05-L03",
-        "DSA05-L04"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA04"
-      ],
+      "lesson_ids": ["DSA05-L01", "DSA05-L02", "DSA05-L03", "DSA05-L04"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA04"],
       "content_path": "content/DSA-S/DSA05/README.md",
       "chapter_path": "chapters/DSA05.md",
       "cheatsheet_path": "cheatsheets/DSA05.md",
@@ -249,39 +166,24 @@
         "DSA06-L06",
         "DSA06-L07"
       ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA05"
-      ],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA05"],
       "content_path": "content/DSA-T/DSA06/README.md",
       "chapter_path": "chapters/DSA06.md",
       "cheatsheet_path": "cheatsheets/DSA06.md",
       "diagram_path": "diagrams/DSA06.mmd",
       "diagram_svg_path": "diagrams/DSA06.svg",
       "estimated_minutes": 735,
-      "concept_diagram_ids": [
-        "DSA-CD04"
-      ]
+      "concept_diagram_ids": ["DSA-CD04"]
     },
     {
       "id": "DSA07",
       "track_id": "DSA-T",
       "title": "Tries & priority queues",
       "order": 8,
-      "lesson_ids": [
-        "DSA07-L01",
-        "DSA07-L02"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA06"
-      ],
+      "lesson_ids": ["DSA07-L01", "DSA07-L02"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA06"],
       "content_path": "content/DSA-T/DSA07/README.md",
       "chapter_path": "chapters/DSA07.md",
       "cheatsheet_path": "cheatsheets/DSA07.md",
@@ -303,41 +205,24 @@
         "DSA08-L06",
         "DSA08-L07"
       ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA07"
-      ],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA07"],
       "content_path": "content/DSA-G/DSA08/README.md",
       "chapter_path": "chapters/DSA08.md",
       "cheatsheet_path": "cheatsheets/DSA08.md",
       "diagram_path": "diagrams/DSA08.mmd",
       "diagram_svg_path": "diagrams/DSA08.svg",
       "estimated_minutes": 735,
-      "concept_diagram_ids": [
-        "DSA-CD05"
-      ]
+      "concept_diagram_ids": ["DSA-CD05"]
     },
     {
       "id": "DSA09",
       "track_id": "DSA-G",
       "title": "Backtracking",
       "order": 10,
-      "lesson_ids": [
-        "DSA09-L01",
-        "DSA09-L02",
-        "DSA09-L03",
-        "DSA09-L04"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA08"
-      ],
+      "lesson_ids": ["DSA09-L01", "DSA09-L02", "DSA09-L03", "DSA09-L04"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA08"],
       "content_path": "content/DSA-G/DSA09/README.md",
       "chapter_path": "chapters/DSA09.md",
       "cheatsheet_path": "cheatsheets/DSA09.md",
@@ -350,29 +235,16 @@
       "track_id": "DSA-D",
       "title": "DP foundations and grids",
       "order": 11,
-      "lesson_ids": [
-        "DSA10-L01",
-        "DSA10-L02",
-        "DSA10-L03",
-        "DSA10-L04",
-        "DSA10-L05"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA09"
-      ],
+      "lesson_ids": ["DSA10-L01", "DSA10-L02", "DSA10-L03", "DSA10-L04", "DSA10-L05"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA09"],
       "content_path": "content/DSA-D/DSA10/README.md",
       "chapter_path": "chapters/DSA10.md",
       "cheatsheet_path": "cheatsheets/DSA10.md",
       "diagram_path": "diagrams/DSA10.mmd",
       "diagram_svg_path": "diagrams/DSA10.svg",
       "estimated_minutes": 525,
-      "concept_diagram_ids": [
-        "DSA-CD06"
-      ]
+      "concept_diagram_ids": ["DSA-CD06"]
     },
     {
       "id": "DSA11",
@@ -388,13 +260,8 @@
         "DSA11-L06",
         "DSA11-L07"
       ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA10"
-      ],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA10"],
       "content_path": "content/DSA-D/DSA11/README.md",
       "chapter_path": "chapters/DSA11.md",
       "cheatsheet_path": "cheatsheets/DSA11.md",
@@ -407,18 +274,9 @@
       "track_id": "DSA-X",
       "title": "Greedy and intervals",
       "order": 13,
-      "lesson_ids": [
-        "DSA12-L01",
-        "DSA12-L02",
-        "DSA12-L03"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA11"
-      ],
+      "lesson_ids": ["DSA12-L01", "DSA12-L02", "DSA12-L03"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA11"],
       "content_path": "content/DSA-X/DSA12/README.md",
       "chapter_path": "chapters/DSA12.md",
       "cheatsheet_path": "cheatsheets/DSA12.md",
@@ -431,17 +289,9 @@
       "track_id": "DSA-X",
       "title": "Bit manipulation & math",
       "order": 14,
-      "lesson_ids": [
-        "DSA13-L01",
-        "DSA13-L02"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA12"
-      ],
+      "lesson_ids": ["DSA13-L01", "DSA13-L02"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA12"],
       "content_path": "content/DSA-X/DSA13/README.md",
       "chapter_path": "chapters/DSA13.md",
       "cheatsheet_path": "cheatsheets/DSA13.md",
@@ -454,18 +304,9 @@
       "track_id": "DSA-X",
       "title": "Interview sprint",
       "order": 15,
-      "lesson_ids": [
-        "DSA14-L01",
-        "DSA14-L02",
-        "DSA14-L03"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
-      "prerequisite_module_ids": [
-        "DSA13"
-      ],
+      "lesson_ids": ["DSA14-L01", "DSA14-L02", "DSA14-L03"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
+      "prerequisite_module_ids": ["DSA13"],
       "content_path": "content/DSA-X/DSA14/README.md",
       "chapter_path": "chapters/DSA14.md",
       "cheatsheet_path": "cheatsheets/DSA14.md",
@@ -505,15 +346,8 @@
       "content_path": "content/DSA-F/DSA00/DSA00-L01.md",
       "solution_path": "solutions/DSA00-L01.md",
       "prerequisite_ids": [],
-      "quiz_ids": [
-        "DSA00-L01-Q1",
-        "DSA00-L01-Q2",
-        "DSA00-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA00-L01-F1",
-        "DSA00-L01-F2"
-      ],
+      "quiz_ids": ["DSA00-L01-Q1", "DSA00-L01-Q2", "DSA00-L01-Q3"],
+      "flashcard_ids": ["DSA00-L01-F1", "DSA00-L01-F2"],
       "reference_urls": [
         "https://docs.python.org/3/tutorial/",
         "https://docs.python.org/3/library/collections.html"
@@ -549,18 +383,9 @@
       },
       "content_path": "content/DSA-F/DSA00/DSA00-L02.md",
       "solution_path": "solutions/DSA00-L02.md",
-      "prerequisite_ids": [
-        "DSA00-L01"
-      ],
-      "quiz_ids": [
-        "DSA00-L02-Q1",
-        "DSA00-L02-Q2",
-        "DSA00-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA00-L02-F1",
-        "DSA00-L02-F2"
-      ],
+      "prerequisite_ids": ["DSA00-L01"],
+      "quiz_ids": ["DSA00-L02-Q1", "DSA00-L02-Q2", "DSA00-L02-Q3"],
+      "flashcard_ids": ["DSA00-L02-F1", "DSA00-L02-F2"],
       "reference_urls": [
         "https://docs.python.org/3/tutorial/",
         "https://docs.python.org/3/library/collections.html"
@@ -596,18 +421,9 @@
       },
       "content_path": "content/DSA-F/DSA00/DSA00-L03.md",
       "solution_path": "solutions/DSA00-L03.md",
-      "prerequisite_ids": [
-        "DSA00-L02"
-      ],
-      "quiz_ids": [
-        "DSA00-L03-Q1",
-        "DSA00-L03-Q2",
-        "DSA00-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA00-L03-F1",
-        "DSA00-L03-F2"
-      ],
+      "prerequisite_ids": ["DSA00-L02"],
+      "quiz_ids": ["DSA00-L03-Q1", "DSA00-L03-Q2", "DSA00-L03-Q3"],
+      "flashcard_ids": ["DSA00-L03-F1", "DSA00-L03-F2"],
       "reference_urls": [
         "https://docs.python.org/3/tutorial/",
         "https://docs.python.org/3/library/collections.html"
@@ -643,18 +459,9 @@
       },
       "content_path": "content/DSA-F/DSA00/DSA00-L04.md",
       "solution_path": "solutions/DSA00-L04.md",
-      "prerequisite_ids": [
-        "DSA00-L03"
-      ],
-      "quiz_ids": [
-        "DSA00-L04-Q1",
-        "DSA00-L04-Q2",
-        "DSA00-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA00-L04-F1",
-        "DSA00-L04-F2"
-      ],
+      "prerequisite_ids": ["DSA00-L03"],
+      "quiz_ids": ["DSA00-L04-Q1", "DSA00-L04-Q2", "DSA00-L04-Q3"],
+      "flashcard_ids": ["DSA00-L04-F1", "DSA00-L04-F2"],
       "reference_urls": [
         "https://docs.python.org/3/tutorial/",
         "https://docs.python.org/3/library/collections.html"
@@ -690,22 +497,10 @@
       },
       "content_path": "content/DSA-A/DSA01/DSA01-L01.md",
       "solution_path": "solutions/DSA01-L01.md",
-      "prerequisite_ids": [
-        "DSA00-L04"
-      ],
-      "quiz_ids": [
-        "DSA01-L01-Q1",
-        "DSA01-L01-Q2",
-        "DSA01-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA01-L01-F1",
-        "DSA01-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA00-L04"],
+      "quiz_ids": ["DSA01-L01-Q1", "DSA01-L01-Q2", "DSA01-L01-Q3"],
+      "flashcard_ids": ["DSA01-L01-F1", "DSA01-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -769,9 +564,7 @@
         ]
       },
       "lab_id": "DSA-D01",
-      "code_example_paths": [
-        "labs/solutions/day_01.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_01.py"]
     },
     {
       "id": "DSA01-L02",
@@ -802,22 +595,10 @@
       },
       "content_path": "content/DSA-A/DSA01/DSA01-L02.md",
       "solution_path": "solutions/DSA01-L02.md",
-      "prerequisite_ids": [
-        "DSA01-L01"
-      ],
-      "quiz_ids": [
-        "DSA01-L02-Q1",
-        "DSA01-L02-Q2",
-        "DSA01-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA01-L02-F1",
-        "DSA01-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA01-L01"],
+      "quiz_ids": ["DSA01-L02-Q1", "DSA01-L02-Q2", "DSA01-L02-Q3"],
+      "flashcard_ids": ["DSA01-L02-F1", "DSA01-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -881,9 +662,7 @@
         ]
       },
       "lab_id": "DSA-D02",
-      "code_example_paths": [
-        "labs/solutions/day_02.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_02.py"]
     },
     {
       "id": "DSA01-L03",
@@ -914,22 +693,10 @@
       },
       "content_path": "content/DSA-A/DSA01/DSA01-L03.md",
       "solution_path": "solutions/DSA01-L03.md",
-      "prerequisite_ids": [
-        "DSA01-L02"
-      ],
-      "quiz_ids": [
-        "DSA01-L03-Q1",
-        "DSA01-L03-Q2",
-        "DSA01-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA01-L03-F1",
-        "DSA01-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA01-L02"],
+      "quiz_ids": ["DSA01-L03-Q1", "DSA01-L03-Q2", "DSA01-L03-Q3"],
+      "flashcard_ids": ["DSA01-L03-F1", "DSA01-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -993,9 +760,7 @@
         ]
       },
       "lab_id": "DSA-D03",
-      "code_example_paths": [
-        "labs/solutions/day_03.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_03.py"]
     },
     {
       "id": "DSA01-L04",
@@ -1026,22 +791,10 @@
       },
       "content_path": "content/DSA-A/DSA01/DSA01-L04.md",
       "solution_path": "solutions/DSA01-L04.md",
-      "prerequisite_ids": [
-        "DSA01-L03"
-      ],
-      "quiz_ids": [
-        "DSA01-L04-Q1",
-        "DSA01-L04-Q2",
-        "DSA01-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA01-L04-F1",
-        "DSA01-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA01-L03"],
+      "quiz_ids": ["DSA01-L04-Q1", "DSA01-L04-Q2", "DSA01-L04-Q3"],
+      "flashcard_ids": ["DSA01-L04-F1", "DSA01-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1105,9 +858,7 @@
         ]
       },
       "lab_id": "DSA-D04",
-      "code_example_paths": [
-        "labs/solutions/day_04.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_04.py"]
     },
     {
       "id": "DSA01-L05",
@@ -1138,22 +889,10 @@
       },
       "content_path": "content/DSA-A/DSA01/DSA01-L05.md",
       "solution_path": "solutions/DSA01-L05.md",
-      "prerequisite_ids": [
-        "DSA01-L04"
-      ],
-      "quiz_ids": [
-        "DSA01-L05-Q1",
-        "DSA01-L05-Q2",
-        "DSA01-L05-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA01-L05-F1",
-        "DSA01-L05-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA01-L04"],
+      "quiz_ids": ["DSA01-L05-Q1", "DSA01-L05-Q2", "DSA01-L05-Q3"],
+      "flashcard_ids": ["DSA01-L05-F1", "DSA01-L05-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1217,9 +956,7 @@
         ]
       },
       "lab_id": "DSA-D05",
-      "code_example_paths": [
-        "labs/solutions/day_05.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_05.py"]
     },
     {
       "id": "DSA02-L01",
@@ -1250,22 +987,10 @@
       },
       "content_path": "content/DSA-A/DSA02/DSA02-L01.md",
       "solution_path": "solutions/DSA02-L01.md",
-      "prerequisite_ids": [
-        "DSA01-L05"
-      ],
-      "quiz_ids": [
-        "DSA02-L01-Q1",
-        "DSA02-L01-Q2",
-        "DSA02-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA02-L01-F1",
-        "DSA02-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA01-L05"],
+      "quiz_ids": ["DSA02-L01-Q1", "DSA02-L01-Q2", "DSA02-L01-Q3"],
+      "flashcard_ids": ["DSA02-L01-F1", "DSA02-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1329,9 +1054,7 @@
         ]
       },
       "lab_id": "DSA-D06",
-      "code_example_paths": [
-        "labs/solutions/day_06.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_06.py"]
     },
     {
       "id": "DSA02-L02",
@@ -1362,22 +1085,10 @@
       },
       "content_path": "content/DSA-A/DSA02/DSA02-L02.md",
       "solution_path": "solutions/DSA02-L02.md",
-      "prerequisite_ids": [
-        "DSA02-L01"
-      ],
-      "quiz_ids": [
-        "DSA02-L02-Q1",
-        "DSA02-L02-Q2",
-        "DSA02-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA02-L02-F1",
-        "DSA02-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA02-L01"],
+      "quiz_ids": ["DSA02-L02-Q1", "DSA02-L02-Q2", "DSA02-L02-Q3"],
+      "flashcard_ids": ["DSA02-L02-F1", "DSA02-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1441,9 +1152,7 @@
         ]
       },
       "lab_id": "DSA-D07",
-      "code_example_paths": [
-        "labs/solutions/day_07.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_07.py"]
     },
     {
       "id": "DSA02-L03",
@@ -1474,22 +1183,10 @@
       },
       "content_path": "content/DSA-A/DSA02/DSA02-L03.md",
       "solution_path": "solutions/DSA02-L03.md",
-      "prerequisite_ids": [
-        "DSA02-L02"
-      ],
-      "quiz_ids": [
-        "DSA02-L03-Q1",
-        "DSA02-L03-Q2",
-        "DSA02-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA02-L03-F1",
-        "DSA02-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA02-L02"],
+      "quiz_ids": ["DSA02-L03-Q1", "DSA02-L03-Q2", "DSA02-L03-Q3"],
+      "flashcard_ids": ["DSA02-L03-F1", "DSA02-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1553,9 +1250,7 @@
         ]
       },
       "lab_id": "DSA-D08",
-      "code_example_paths": [
-        "labs/solutions/day_08.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_08.py"]
     },
     {
       "id": "DSA02-L04",
@@ -1586,22 +1281,10 @@
       },
       "content_path": "content/DSA-A/DSA02/DSA02-L04.md",
       "solution_path": "solutions/DSA02-L04.md",
-      "prerequisite_ids": [
-        "DSA02-L03"
-      ],
-      "quiz_ids": [
-        "DSA02-L04-Q1",
-        "DSA02-L04-Q2",
-        "DSA02-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA02-L04-F1",
-        "DSA02-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA02-L03"],
+      "quiz_ids": ["DSA02-L04-Q1", "DSA02-L04-Q2", "DSA02-L04-Q3"],
+      "flashcard_ids": ["DSA02-L04-F1", "DSA02-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1665,9 +1348,7 @@
         ]
       },
       "lab_id": "DSA-D09",
-      "code_example_paths": [
-        "labs/solutions/day_09.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_09.py"]
     },
     {
       "id": "DSA03-L01",
@@ -1698,22 +1379,10 @@
       },
       "content_path": "content/DSA-A/DSA03/DSA03-L01.md",
       "solution_path": "solutions/DSA03-L01.md",
-      "prerequisite_ids": [
-        "DSA02-L04"
-      ],
-      "quiz_ids": [
-        "DSA03-L01-Q1",
-        "DSA03-L01-Q2",
-        "DSA03-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA03-L01-F1",
-        "DSA03-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA02-L04"],
+      "quiz_ids": ["DSA03-L01-Q1", "DSA03-L01-Q2", "DSA03-L01-Q3"],
+      "flashcard_ids": ["DSA03-L01-F1", "DSA03-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1777,9 +1446,7 @@
         ]
       },
       "lab_id": "DSA-D10",
-      "code_example_paths": [
-        "labs/solutions/day_10.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_10.py"]
     },
     {
       "id": "DSA03-L02",
@@ -1810,22 +1477,10 @@
       },
       "content_path": "content/DSA-A/DSA03/DSA03-L02.md",
       "solution_path": "solutions/DSA03-L02.md",
-      "prerequisite_ids": [
-        "DSA03-L01"
-      ],
-      "quiz_ids": [
-        "DSA03-L02-Q1",
-        "DSA03-L02-Q2",
-        "DSA03-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA03-L02-F1",
-        "DSA03-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA03-L01"],
+      "quiz_ids": ["DSA03-L02-Q1", "DSA03-L02-Q2", "DSA03-L02-Q3"],
+      "flashcard_ids": ["DSA03-L02-F1", "DSA03-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -1889,9 +1544,7 @@
         ]
       },
       "lab_id": "DSA-D11",
-      "code_example_paths": [
-        "labs/solutions/day_11.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_11.py"]
     },
     {
       "id": "DSA03-L03",
@@ -1922,22 +1575,10 @@
       },
       "content_path": "content/DSA-A/DSA03/DSA03-L03.md",
       "solution_path": "solutions/DSA03-L03.md",
-      "prerequisite_ids": [
-        "DSA03-L02"
-      ],
-      "quiz_ids": [
-        "DSA03-L03-Q1",
-        "DSA03-L03-Q2",
-        "DSA03-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA03-L03-F1",
-        "DSA03-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA03-L02"],
+      "quiz_ids": ["DSA03-L03-Q1", "DSA03-L03-Q2", "DSA03-L03-Q3"],
+      "flashcard_ids": ["DSA03-L03-F1", "DSA03-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2001,9 +1642,7 @@
         ]
       },
       "lab_id": "DSA-D12",
-      "code_example_paths": [
-        "labs/solutions/day_12.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_12.py"]
     },
     {
       "id": "DSA03-L04",
@@ -2034,22 +1673,10 @@
       },
       "content_path": "content/DSA-A/DSA03/DSA03-L04.md",
       "solution_path": "solutions/DSA03-L04.md",
-      "prerequisite_ids": [
-        "DSA03-L03"
-      ],
-      "quiz_ids": [
-        "DSA03-L04-Q1",
-        "DSA03-L04-Q2",
-        "DSA03-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA03-L04-F1",
-        "DSA03-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA03-L03"],
+      "quiz_ids": ["DSA03-L04-Q1", "DSA03-L04-Q2", "DSA03-L04-Q3"],
+      "flashcard_ids": ["DSA03-L04-F1", "DSA03-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2113,9 +1740,7 @@
         ]
       },
       "lab_id": "DSA-D13",
-      "code_example_paths": [
-        "labs/solutions/day_13.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_13.py"]
     },
     {
       "id": "DSA04-L01",
@@ -2146,22 +1771,10 @@
       },
       "content_path": "content/DSA-S/DSA04/DSA04-L01.md",
       "solution_path": "solutions/DSA04-L01.md",
-      "prerequisite_ids": [
-        "DSA03-L04"
-      ],
-      "quiz_ids": [
-        "DSA04-L01-Q1",
-        "DSA04-L01-Q2",
-        "DSA04-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA04-L01-F1",
-        "DSA04-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA03-L04"],
+      "quiz_ids": ["DSA04-L01-Q1", "DSA04-L01-Q2", "DSA04-L01-Q3"],
+      "flashcard_ids": ["DSA04-L01-F1", "DSA04-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2225,9 +1838,7 @@
         ]
       },
       "lab_id": "DSA-D14",
-      "code_example_paths": [
-        "labs/solutions/day_14.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_14.py"]
     },
     {
       "id": "DSA04-L02",
@@ -2258,22 +1869,10 @@
       },
       "content_path": "content/DSA-S/DSA04/DSA04-L02.md",
       "solution_path": "solutions/DSA04-L02.md",
-      "prerequisite_ids": [
-        "DSA04-L01"
-      ],
-      "quiz_ids": [
-        "DSA04-L02-Q1",
-        "DSA04-L02-Q2",
-        "DSA04-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA04-L02-F1",
-        "DSA04-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA04-L01"],
+      "quiz_ids": ["DSA04-L02-Q1", "DSA04-L02-Q2", "DSA04-L02-Q3"],
+      "flashcard_ids": ["DSA04-L02-F1", "DSA04-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2337,9 +1936,7 @@
         ]
       },
       "lab_id": "DSA-D15",
-      "code_example_paths": [
-        "labs/solutions/day_15.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_15.py"]
     },
     {
       "id": "DSA04-L03",
@@ -2370,22 +1967,10 @@
       },
       "content_path": "content/DSA-S/DSA04/DSA04-L03.md",
       "solution_path": "solutions/DSA04-L03.md",
-      "prerequisite_ids": [
-        "DSA04-L02"
-      ],
-      "quiz_ids": [
-        "DSA04-L03-Q1",
-        "DSA04-L03-Q2",
-        "DSA04-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA04-L03-F1",
-        "DSA04-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA04-L02"],
+      "quiz_ids": ["DSA04-L03-Q1", "DSA04-L03-Q2", "DSA04-L03-Q3"],
+      "flashcard_ids": ["DSA04-L03-F1", "DSA04-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2449,9 +2034,7 @@
         ]
       },
       "lab_id": "DSA-D16",
-      "code_example_paths": [
-        "labs/solutions/day_16.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_16.py"]
     },
     {
       "id": "DSA05-L01",
@@ -2482,22 +2065,10 @@
       },
       "content_path": "content/DSA-S/DSA05/DSA05-L01.md",
       "solution_path": "solutions/DSA05-L01.md",
-      "prerequisite_ids": [
-        "DSA04-L03"
-      ],
-      "quiz_ids": [
-        "DSA05-L01-Q1",
-        "DSA05-L01-Q2",
-        "DSA05-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA05-L01-F1",
-        "DSA05-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA04-L03"],
+      "quiz_ids": ["DSA05-L01-Q1", "DSA05-L01-Q2", "DSA05-L01-Q3"],
+      "flashcard_ids": ["DSA05-L01-F1", "DSA05-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2561,9 +2132,7 @@
         ]
       },
       "lab_id": "DSA-D17",
-      "code_example_paths": [
-        "labs/solutions/day_17.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_17.py"]
     },
     {
       "id": "DSA05-L02",
@@ -2594,22 +2163,10 @@
       },
       "content_path": "content/DSA-S/DSA05/DSA05-L02.md",
       "solution_path": "solutions/DSA05-L02.md",
-      "prerequisite_ids": [
-        "DSA05-L01"
-      ],
-      "quiz_ids": [
-        "DSA05-L02-Q1",
-        "DSA05-L02-Q2",
-        "DSA05-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA05-L02-F1",
-        "DSA05-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA05-L01"],
+      "quiz_ids": ["DSA05-L02-Q1", "DSA05-L02-Q2", "DSA05-L02-Q3"],
+      "flashcard_ids": ["DSA05-L02-F1", "DSA05-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2673,9 +2230,7 @@
         ]
       },
       "lab_id": "DSA-D18",
-      "code_example_paths": [
-        "labs/solutions/day_18.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_18.py"]
     },
     {
       "id": "DSA05-L03",
@@ -2706,22 +2261,10 @@
       },
       "content_path": "content/DSA-S/DSA05/DSA05-L03.md",
       "solution_path": "solutions/DSA05-L03.md",
-      "prerequisite_ids": [
-        "DSA05-L02"
-      ],
-      "quiz_ids": [
-        "DSA05-L03-Q1",
-        "DSA05-L03-Q2",
-        "DSA05-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA05-L03-F1",
-        "DSA05-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA05-L02"],
+      "quiz_ids": ["DSA05-L03-Q1", "DSA05-L03-Q2", "DSA05-L03-Q3"],
+      "flashcard_ids": ["DSA05-L03-F1", "DSA05-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2785,9 +2328,7 @@
         ]
       },
       "lab_id": "DSA-D19",
-      "code_example_paths": [
-        "labs/solutions/day_19.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_19.py"]
     },
     {
       "id": "DSA05-L04",
@@ -2818,22 +2359,10 @@
       },
       "content_path": "content/DSA-S/DSA05/DSA05-L04.md",
       "solution_path": "solutions/DSA05-L04.md",
-      "prerequisite_ids": [
-        "DSA05-L03"
-      ],
-      "quiz_ids": [
-        "DSA05-L04-Q1",
-        "DSA05-L04-Q2",
-        "DSA05-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA05-L04-F1",
-        "DSA05-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA05-L03"],
+      "quiz_ids": ["DSA05-L04-Q1", "DSA05-L04-Q2", "DSA05-L04-Q3"],
+      "flashcard_ids": ["DSA05-L04-F1", "DSA05-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -2897,9 +2426,7 @@
         ]
       },
       "lab_id": "DSA-D20",
-      "code_example_paths": [
-        "labs/solutions/day_20.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_20.py"]
     },
     {
       "id": "DSA06-L01",
@@ -2930,22 +2457,10 @@
       },
       "content_path": "content/DSA-T/DSA06/DSA06-L01.md",
       "solution_path": "solutions/DSA06-L01.md",
-      "prerequisite_ids": [
-        "DSA05-L04"
-      ],
-      "quiz_ids": [
-        "DSA06-L01-Q1",
-        "DSA06-L01-Q2",
-        "DSA06-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA06-L01-F1",
-        "DSA06-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA05-L04"],
+      "quiz_ids": ["DSA06-L01-Q1", "DSA06-L01-Q2", "DSA06-L01-Q3"],
+      "flashcard_ids": ["DSA06-L01-F1", "DSA06-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3009,9 +2524,7 @@
         ]
       },
       "lab_id": "DSA-D21",
-      "code_example_paths": [
-        "labs/solutions/day_21.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_21.py"]
     },
     {
       "id": "DSA06-L02",
@@ -3042,22 +2555,10 @@
       },
       "content_path": "content/DSA-T/DSA06/DSA06-L02.md",
       "solution_path": "solutions/DSA06-L02.md",
-      "prerequisite_ids": [
-        "DSA06-L01"
-      ],
-      "quiz_ids": [
-        "DSA06-L02-Q1",
-        "DSA06-L02-Q2",
-        "DSA06-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA06-L02-F1",
-        "DSA06-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA06-L01"],
+      "quiz_ids": ["DSA06-L02-Q1", "DSA06-L02-Q2", "DSA06-L02-Q3"],
+      "flashcard_ids": ["DSA06-L02-F1", "DSA06-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3121,9 +2622,7 @@
         ]
       },
       "lab_id": "DSA-D22",
-      "code_example_paths": [
-        "labs/solutions/day_22.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_22.py"]
     },
     {
       "id": "DSA06-L03",
@@ -3154,22 +2653,10 @@
       },
       "content_path": "content/DSA-T/DSA06/DSA06-L03.md",
       "solution_path": "solutions/DSA06-L03.md",
-      "prerequisite_ids": [
-        "DSA06-L02"
-      ],
-      "quiz_ids": [
-        "DSA06-L03-Q1",
-        "DSA06-L03-Q2",
-        "DSA06-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA06-L03-F1",
-        "DSA06-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA06-L02"],
+      "quiz_ids": ["DSA06-L03-Q1", "DSA06-L03-Q2", "DSA06-L03-Q3"],
+      "flashcard_ids": ["DSA06-L03-F1", "DSA06-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3233,9 +2720,7 @@
         ]
       },
       "lab_id": "DSA-D23",
-      "code_example_paths": [
-        "labs/solutions/day_23.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_23.py"]
     },
     {
       "id": "DSA06-L04",
@@ -3266,22 +2751,10 @@
       },
       "content_path": "content/DSA-T/DSA06/DSA06-L04.md",
       "solution_path": "solutions/DSA06-L04.md",
-      "prerequisite_ids": [
-        "DSA06-L03"
-      ],
-      "quiz_ids": [
-        "DSA06-L04-Q1",
-        "DSA06-L04-Q2",
-        "DSA06-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA06-L04-F1",
-        "DSA06-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA06-L03"],
+      "quiz_ids": ["DSA06-L04-Q1", "DSA06-L04-Q2", "DSA06-L04-Q3"],
+      "flashcard_ids": ["DSA06-L04-F1", "DSA06-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3345,9 +2818,7 @@
         ]
       },
       "lab_id": "DSA-D24",
-      "code_example_paths": [
-        "labs/solutions/day_24.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_24.py"]
     },
     {
       "id": "DSA06-L05",
@@ -3378,22 +2849,10 @@
       },
       "content_path": "content/DSA-T/DSA06/DSA06-L05.md",
       "solution_path": "solutions/DSA06-L05.md",
-      "prerequisite_ids": [
-        "DSA06-L04"
-      ],
-      "quiz_ids": [
-        "DSA06-L05-Q1",
-        "DSA06-L05-Q2",
-        "DSA06-L05-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA06-L05-F1",
-        "DSA06-L05-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA06-L04"],
+      "quiz_ids": ["DSA06-L05-Q1", "DSA06-L05-Q2", "DSA06-L05-Q3"],
+      "flashcard_ids": ["DSA06-L05-F1", "DSA06-L05-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3457,9 +2916,7 @@
         ]
       },
       "lab_id": "DSA-D25",
-      "code_example_paths": [
-        "labs/solutions/day_25.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_25.py"]
     },
     {
       "id": "DSA06-L06",
@@ -3490,22 +2947,10 @@
       },
       "content_path": "content/DSA-T/DSA06/DSA06-L06.md",
       "solution_path": "solutions/DSA06-L06.md",
-      "prerequisite_ids": [
-        "DSA06-L05"
-      ],
-      "quiz_ids": [
-        "DSA06-L06-Q1",
-        "DSA06-L06-Q2",
-        "DSA06-L06-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA06-L06-F1",
-        "DSA06-L06-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA06-L05"],
+      "quiz_ids": ["DSA06-L06-Q1", "DSA06-L06-Q2", "DSA06-L06-Q3"],
+      "flashcard_ids": ["DSA06-L06-F1", "DSA06-L06-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3569,9 +3014,7 @@
         ]
       },
       "lab_id": "DSA-D26",
-      "code_example_paths": [
-        "labs/solutions/day_26.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_26.py"]
     },
     {
       "id": "DSA06-L07",
@@ -3602,22 +3045,10 @@
       },
       "content_path": "content/DSA-T/DSA06/DSA06-L07.md",
       "solution_path": "solutions/DSA06-L07.md",
-      "prerequisite_ids": [
-        "DSA06-L06"
-      ],
-      "quiz_ids": [
-        "DSA06-L07-Q1",
-        "DSA06-L07-Q2",
-        "DSA06-L07-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA06-L07-F1",
-        "DSA06-L07-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA06-L06"],
+      "quiz_ids": ["DSA06-L07-Q1", "DSA06-L07-Q2", "DSA06-L07-Q3"],
+      "flashcard_ids": ["DSA06-L07-F1", "DSA06-L07-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3681,9 +3112,7 @@
         ]
       },
       "lab_id": "DSA-D27",
-      "code_example_paths": [
-        "labs/solutions/day_27.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_27.py"]
     },
     {
       "id": "DSA07-L01",
@@ -3714,22 +3143,10 @@
       },
       "content_path": "content/DSA-T/DSA07/DSA07-L01.md",
       "solution_path": "solutions/DSA07-L01.md",
-      "prerequisite_ids": [
-        "DSA06-L07"
-      ],
-      "quiz_ids": [
-        "DSA07-L01-Q1",
-        "DSA07-L01-Q2",
-        "DSA07-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA07-L01-F1",
-        "DSA07-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA06-L07"],
+      "quiz_ids": ["DSA07-L01-Q1", "DSA07-L01-Q2", "DSA07-L01-Q3"],
+      "flashcard_ids": ["DSA07-L01-F1", "DSA07-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3793,9 +3210,7 @@
         ]
       },
       "lab_id": "DSA-D28",
-      "code_example_paths": [
-        "labs/solutions/day_28.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_28.py"]
     },
     {
       "id": "DSA07-L02",
@@ -3826,22 +3241,10 @@
       },
       "content_path": "content/DSA-T/DSA07/DSA07-L02.md",
       "solution_path": "solutions/DSA07-L02.md",
-      "prerequisite_ids": [
-        "DSA07-L01"
-      ],
-      "quiz_ids": [
-        "DSA07-L02-Q1",
-        "DSA07-L02-Q2",
-        "DSA07-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA07-L02-F1",
-        "DSA07-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA07-L01"],
+      "quiz_ids": ["DSA07-L02-Q1", "DSA07-L02-Q2", "DSA07-L02-Q3"],
+      "flashcard_ids": ["DSA07-L02-F1", "DSA07-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -3914,9 +3317,7 @@
         ]
       },
       "lab_id": "DSA-D29",
-      "code_example_paths": [
-        "labs/solutions/day_29.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_29.py"]
     },
     {
       "id": "DSA08-L01",
@@ -3947,22 +3348,10 @@
       },
       "content_path": "content/DSA-G/DSA08/DSA08-L01.md",
       "solution_path": "solutions/DSA08-L01.md",
-      "prerequisite_ids": [
-        "DSA07-L02"
-      ],
-      "quiz_ids": [
-        "DSA08-L01-Q1",
-        "DSA08-L01-Q2",
-        "DSA08-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA08-L01-F1",
-        "DSA08-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA07-L02"],
+      "quiz_ids": ["DSA08-L01-Q1", "DSA08-L01-Q2", "DSA08-L01-Q3"],
+      "flashcard_ids": ["DSA08-L01-F1", "DSA08-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4026,9 +3415,7 @@
         ]
       },
       "lab_id": "DSA-D30",
-      "code_example_paths": [
-        "labs/solutions/day_30.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_30.py"]
     },
     {
       "id": "DSA08-L02",
@@ -4059,22 +3446,10 @@
       },
       "content_path": "content/DSA-G/DSA08/DSA08-L02.md",
       "solution_path": "solutions/DSA08-L02.md",
-      "prerequisite_ids": [
-        "DSA08-L01"
-      ],
-      "quiz_ids": [
-        "DSA08-L02-Q1",
-        "DSA08-L02-Q2",
-        "DSA08-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA08-L02-F1",
-        "DSA08-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA08-L01"],
+      "quiz_ids": ["DSA08-L02-Q1", "DSA08-L02-Q2", "DSA08-L02-Q3"],
+      "flashcard_ids": ["DSA08-L02-F1", "DSA08-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4138,9 +3513,7 @@
         ]
       },
       "lab_id": "DSA-D31",
-      "code_example_paths": [
-        "labs/solutions/day_31.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_31.py"]
     },
     {
       "id": "DSA08-L03",
@@ -4171,22 +3544,10 @@
       },
       "content_path": "content/DSA-G/DSA08/DSA08-L03.md",
       "solution_path": "solutions/DSA08-L03.md",
-      "prerequisite_ids": [
-        "DSA08-L02"
-      ],
-      "quiz_ids": [
-        "DSA08-L03-Q1",
-        "DSA08-L03-Q2",
-        "DSA08-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA08-L03-F1",
-        "DSA08-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA08-L02"],
+      "quiz_ids": ["DSA08-L03-Q1", "DSA08-L03-Q2", "DSA08-L03-Q3"],
+      "flashcard_ids": ["DSA08-L03-F1", "DSA08-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4250,9 +3611,7 @@
         ]
       },
       "lab_id": "DSA-D32",
-      "code_example_paths": [
-        "labs/solutions/day_32.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_32.py"]
     },
     {
       "id": "DSA08-L04",
@@ -4283,22 +3642,10 @@
       },
       "content_path": "content/DSA-G/DSA08/DSA08-L04.md",
       "solution_path": "solutions/DSA08-L04.md",
-      "prerequisite_ids": [
-        "DSA08-L03"
-      ],
-      "quiz_ids": [
-        "DSA08-L04-Q1",
-        "DSA08-L04-Q2",
-        "DSA08-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA08-L04-F1",
-        "DSA08-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA08-L03"],
+      "quiz_ids": ["DSA08-L04-Q1", "DSA08-L04-Q2", "DSA08-L04-Q3"],
+      "flashcard_ids": ["DSA08-L04-F1", "DSA08-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4362,9 +3709,7 @@
         ]
       },
       "lab_id": "DSA-D33",
-      "code_example_paths": [
-        "labs/solutions/day_33.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_33.py"]
     },
     {
       "id": "DSA08-L05",
@@ -4395,22 +3740,10 @@
       },
       "content_path": "content/DSA-G/DSA08/DSA08-L05.md",
       "solution_path": "solutions/DSA08-L05.md",
-      "prerequisite_ids": [
-        "DSA08-L04"
-      ],
-      "quiz_ids": [
-        "DSA08-L05-Q1",
-        "DSA08-L05-Q2",
-        "DSA08-L05-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA08-L05-F1",
-        "DSA08-L05-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA08-L04"],
+      "quiz_ids": ["DSA08-L05-Q1", "DSA08-L05-Q2", "DSA08-L05-Q3"],
+      "flashcard_ids": ["DSA08-L05-F1", "DSA08-L05-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4474,9 +3807,7 @@
         ]
       },
       "lab_id": "DSA-D34",
-      "code_example_paths": [
-        "labs/solutions/day_34.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_34.py"]
     },
     {
       "id": "DSA08-L06",
@@ -4507,22 +3838,10 @@
       },
       "content_path": "content/DSA-G/DSA08/DSA08-L06.md",
       "solution_path": "solutions/DSA08-L06.md",
-      "prerequisite_ids": [
-        "DSA08-L05"
-      ],
-      "quiz_ids": [
-        "DSA08-L06-Q1",
-        "DSA08-L06-Q2",
-        "DSA08-L06-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA08-L06-F1",
-        "DSA08-L06-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA08-L05"],
+      "quiz_ids": ["DSA08-L06-Q1", "DSA08-L06-Q2", "DSA08-L06-Q3"],
+      "flashcard_ids": ["DSA08-L06-F1", "DSA08-L06-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4586,9 +3905,7 @@
         ]
       },
       "lab_id": "DSA-D35",
-      "code_example_paths": [
-        "labs/solutions/day_35.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_35.py"]
     },
     {
       "id": "DSA08-L07",
@@ -4619,22 +3936,10 @@
       },
       "content_path": "content/DSA-G/DSA08/DSA08-L07.md",
       "solution_path": "solutions/DSA08-L07.md",
-      "prerequisite_ids": [
-        "DSA08-L06"
-      ],
-      "quiz_ids": [
-        "DSA08-L07-Q1",
-        "DSA08-L07-Q2",
-        "DSA08-L07-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA08-L07-F1",
-        "DSA08-L07-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA08-L06"],
+      "quiz_ids": ["DSA08-L07-Q1", "DSA08-L07-Q2", "DSA08-L07-Q3"],
+      "flashcard_ids": ["DSA08-L07-F1", "DSA08-L07-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4698,9 +4003,7 @@
         ]
       },
       "lab_id": "DSA-D36",
-      "code_example_paths": [
-        "labs/solutions/day_36.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_36.py"]
     },
     {
       "id": "DSA09-L01",
@@ -4731,22 +4034,10 @@
       },
       "content_path": "content/DSA-G/DSA09/DSA09-L01.md",
       "solution_path": "solutions/DSA09-L01.md",
-      "prerequisite_ids": [
-        "DSA08-L07"
-      ],
-      "quiz_ids": [
-        "DSA09-L01-Q1",
-        "DSA09-L01-Q2",
-        "DSA09-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA09-L01-F1",
-        "DSA09-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA08-L07"],
+      "quiz_ids": ["DSA09-L01-Q1", "DSA09-L01-Q2", "DSA09-L01-Q3"],
+      "flashcard_ids": ["DSA09-L01-F1", "DSA09-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4810,9 +4101,7 @@
         ]
       },
       "lab_id": "DSA-D37",
-      "code_example_paths": [
-        "labs/solutions/day_37.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_37.py"]
     },
     {
       "id": "DSA09-L02",
@@ -4843,22 +4132,10 @@
       },
       "content_path": "content/DSA-G/DSA09/DSA09-L02.md",
       "solution_path": "solutions/DSA09-L02.md",
-      "prerequisite_ids": [
-        "DSA09-L01"
-      ],
-      "quiz_ids": [
-        "DSA09-L02-Q1",
-        "DSA09-L02-Q2",
-        "DSA09-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA09-L02-F1",
-        "DSA09-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA09-L01"],
+      "quiz_ids": ["DSA09-L02-Q1", "DSA09-L02-Q2", "DSA09-L02-Q3"],
+      "flashcard_ids": ["DSA09-L02-F1", "DSA09-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -4922,9 +4199,7 @@
         ]
       },
       "lab_id": "DSA-D38",
-      "code_example_paths": [
-        "labs/solutions/day_38.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_38.py"]
     },
     {
       "id": "DSA09-L03",
@@ -4955,22 +4230,10 @@
       },
       "content_path": "content/DSA-G/DSA09/DSA09-L03.md",
       "solution_path": "solutions/DSA09-L03.md",
-      "prerequisite_ids": [
-        "DSA09-L02"
-      ],
-      "quiz_ids": [
-        "DSA09-L03-Q1",
-        "DSA09-L03-Q2",
-        "DSA09-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA09-L03-F1",
-        "DSA09-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA09-L02"],
+      "quiz_ids": ["DSA09-L03-Q1", "DSA09-L03-Q2", "DSA09-L03-Q3"],
+      "flashcard_ids": ["DSA09-L03-F1", "DSA09-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5034,9 +4297,7 @@
         ]
       },
       "lab_id": "DSA-D39",
-      "code_example_paths": [
-        "labs/solutions/day_39.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_39.py"]
     },
     {
       "id": "DSA09-L04",
@@ -5067,22 +4328,10 @@
       },
       "content_path": "content/DSA-G/DSA09/DSA09-L04.md",
       "solution_path": "solutions/DSA09-L04.md",
-      "prerequisite_ids": [
-        "DSA09-L03"
-      ],
-      "quiz_ids": [
-        "DSA09-L04-Q1",
-        "DSA09-L04-Q2",
-        "DSA09-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA09-L04-F1",
-        "DSA09-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA09-L03"],
+      "quiz_ids": ["DSA09-L04-Q1", "DSA09-L04-Q2", "DSA09-L04-Q3"],
+      "flashcard_ids": ["DSA09-L04-F1", "DSA09-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5146,9 +4395,7 @@
         ]
       },
       "lab_id": "DSA-D40",
-      "code_example_paths": [
-        "labs/solutions/day_40.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_40.py"]
     },
     {
       "id": "DSA10-L01",
@@ -5179,22 +4426,10 @@
       },
       "content_path": "content/DSA-D/DSA10/DSA10-L01.md",
       "solution_path": "solutions/DSA10-L01.md",
-      "prerequisite_ids": [
-        "DSA09-L04"
-      ],
-      "quiz_ids": [
-        "DSA10-L01-Q1",
-        "DSA10-L01-Q2",
-        "DSA10-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA10-L01-F1",
-        "DSA10-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA09-L04"],
+      "quiz_ids": ["DSA10-L01-Q1", "DSA10-L01-Q2", "DSA10-L01-Q3"],
+      "flashcard_ids": ["DSA10-L01-F1", "DSA10-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5258,9 +4493,7 @@
         ]
       },
       "lab_id": "DSA-D41",
-      "code_example_paths": [
-        "labs/solutions/day_41.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_41.py"]
     },
     {
       "id": "DSA10-L02",
@@ -5291,22 +4524,10 @@
       },
       "content_path": "content/DSA-D/DSA10/DSA10-L02.md",
       "solution_path": "solutions/DSA10-L02.md",
-      "prerequisite_ids": [
-        "DSA10-L01"
-      ],
-      "quiz_ids": [
-        "DSA10-L02-Q1",
-        "DSA10-L02-Q2",
-        "DSA10-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA10-L02-F1",
-        "DSA10-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA10-L01"],
+      "quiz_ids": ["DSA10-L02-Q1", "DSA10-L02-Q2", "DSA10-L02-Q3"],
+      "flashcard_ids": ["DSA10-L02-F1", "DSA10-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5370,9 +4591,7 @@
         ]
       },
       "lab_id": "DSA-D42",
-      "code_example_paths": [
-        "labs/solutions/day_42.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_42.py"]
     },
     {
       "id": "DSA10-L03",
@@ -5403,22 +4622,10 @@
       },
       "content_path": "content/DSA-D/DSA10/DSA10-L03.md",
       "solution_path": "solutions/DSA10-L03.md",
-      "prerequisite_ids": [
-        "DSA10-L02"
-      ],
-      "quiz_ids": [
-        "DSA10-L03-Q1",
-        "DSA10-L03-Q2",
-        "DSA10-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA10-L03-F1",
-        "DSA10-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA10-L02"],
+      "quiz_ids": ["DSA10-L03-Q1", "DSA10-L03-Q2", "DSA10-L03-Q3"],
+      "flashcard_ids": ["DSA10-L03-F1", "DSA10-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5482,9 +4689,7 @@
         ]
       },
       "lab_id": "DSA-D43",
-      "code_example_paths": [
-        "labs/solutions/day_43.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_43.py"]
     },
     {
       "id": "DSA10-L04",
@@ -5515,22 +4720,10 @@
       },
       "content_path": "content/DSA-D/DSA10/DSA10-L04.md",
       "solution_path": "solutions/DSA10-L04.md",
-      "prerequisite_ids": [
-        "DSA10-L03"
-      ],
-      "quiz_ids": [
-        "DSA10-L04-Q1",
-        "DSA10-L04-Q2",
-        "DSA10-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA10-L04-F1",
-        "DSA10-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA10-L03"],
+      "quiz_ids": ["DSA10-L04-Q1", "DSA10-L04-Q2", "DSA10-L04-Q3"],
+      "flashcard_ids": ["DSA10-L04-F1", "DSA10-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5594,9 +4787,7 @@
         ]
       },
       "lab_id": "DSA-D44",
-      "code_example_paths": [
-        "labs/solutions/day_44.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_44.py"]
     },
     {
       "id": "DSA10-L05",
@@ -5627,22 +4818,10 @@
       },
       "content_path": "content/DSA-D/DSA10/DSA10-L05.md",
       "solution_path": "solutions/DSA10-L05.md",
-      "prerequisite_ids": [
-        "DSA10-L04"
-      ],
-      "quiz_ids": [
-        "DSA10-L05-Q1",
-        "DSA10-L05-Q2",
-        "DSA10-L05-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA10-L05-F1",
-        "DSA10-L05-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA10-L04"],
+      "quiz_ids": ["DSA10-L05-Q1", "DSA10-L05-Q2", "DSA10-L05-Q3"],
+      "flashcard_ids": ["DSA10-L05-F1", "DSA10-L05-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5706,9 +4885,7 @@
         ]
       },
       "lab_id": "DSA-D45",
-      "code_example_paths": [
-        "labs/solutions/day_45.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_45.py"]
     },
     {
       "id": "DSA11-L01",
@@ -5739,22 +4916,10 @@
       },
       "content_path": "content/DSA-D/DSA11/DSA11-L01.md",
       "solution_path": "solutions/DSA11-L01.md",
-      "prerequisite_ids": [
-        "DSA10-L05"
-      ],
-      "quiz_ids": [
-        "DSA11-L01-Q1",
-        "DSA11-L01-Q2",
-        "DSA11-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA11-L01-F1",
-        "DSA11-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA10-L05"],
+      "quiz_ids": ["DSA11-L01-Q1", "DSA11-L01-Q2", "DSA11-L01-Q3"],
+      "flashcard_ids": ["DSA11-L01-F1", "DSA11-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5818,9 +4983,7 @@
         ]
       },
       "lab_id": "DSA-D46",
-      "code_example_paths": [
-        "labs/solutions/day_46.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_46.py"]
     },
     {
       "id": "DSA11-L02",
@@ -5851,22 +5014,10 @@
       },
       "content_path": "content/DSA-D/DSA11/DSA11-L02.md",
       "solution_path": "solutions/DSA11-L02.md",
-      "prerequisite_ids": [
-        "DSA11-L01"
-      ],
-      "quiz_ids": [
-        "DSA11-L02-Q1",
-        "DSA11-L02-Q2",
-        "DSA11-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA11-L02-F1",
-        "DSA11-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA11-L01"],
+      "quiz_ids": ["DSA11-L02-Q1", "DSA11-L02-Q2", "DSA11-L02-Q3"],
+      "flashcard_ids": ["DSA11-L02-F1", "DSA11-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -5930,9 +5081,7 @@
         ]
       },
       "lab_id": "DSA-D47",
-      "code_example_paths": [
-        "labs/solutions/day_47.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_47.py"]
     },
     {
       "id": "DSA11-L03",
@@ -5963,22 +5112,10 @@
       },
       "content_path": "content/DSA-D/DSA11/DSA11-L03.md",
       "solution_path": "solutions/DSA11-L03.md",
-      "prerequisite_ids": [
-        "DSA11-L02"
-      ],
-      "quiz_ids": [
-        "DSA11-L03-Q1",
-        "DSA11-L03-Q2",
-        "DSA11-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA11-L03-F1",
-        "DSA11-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA11-L02"],
+      "quiz_ids": ["DSA11-L03-Q1", "DSA11-L03-Q2", "DSA11-L03-Q3"],
+      "flashcard_ids": ["DSA11-L03-F1", "DSA11-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6042,9 +5179,7 @@
         ]
       },
       "lab_id": "DSA-D48",
-      "code_example_paths": [
-        "labs/solutions/day_48.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_48.py"]
     },
     {
       "id": "DSA11-L04",
@@ -6075,22 +5210,10 @@
       },
       "content_path": "content/DSA-D/DSA11/DSA11-L04.md",
       "solution_path": "solutions/DSA11-L04.md",
-      "prerequisite_ids": [
-        "DSA11-L03"
-      ],
-      "quiz_ids": [
-        "DSA11-L04-Q1",
-        "DSA11-L04-Q2",
-        "DSA11-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA11-L04-F1",
-        "DSA11-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA11-L03"],
+      "quiz_ids": ["DSA11-L04-Q1", "DSA11-L04-Q2", "DSA11-L04-Q3"],
+      "flashcard_ids": ["DSA11-L04-F1", "DSA11-L04-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6154,9 +5277,7 @@
         ]
       },
       "lab_id": "DSA-D49",
-      "code_example_paths": [
-        "labs/solutions/day_49.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_49.py"]
     },
     {
       "id": "DSA11-L05",
@@ -6187,22 +5308,10 @@
       },
       "content_path": "content/DSA-D/DSA11/DSA11-L05.md",
       "solution_path": "solutions/DSA11-L05.md",
-      "prerequisite_ids": [
-        "DSA11-L04"
-      ],
-      "quiz_ids": [
-        "DSA11-L05-Q1",
-        "DSA11-L05-Q2",
-        "DSA11-L05-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA11-L05-F1",
-        "DSA11-L05-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA11-L04"],
+      "quiz_ids": ["DSA11-L05-Q1", "DSA11-L05-Q2", "DSA11-L05-Q3"],
+      "flashcard_ids": ["DSA11-L05-F1", "DSA11-L05-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6266,9 +5375,7 @@
         ]
       },
       "lab_id": "DSA-D50",
-      "code_example_paths": [
-        "labs/solutions/day_50.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_50.py"]
     },
     {
       "id": "DSA11-L06",
@@ -6299,22 +5406,10 @@
       },
       "content_path": "content/DSA-D/DSA11/DSA11-L06.md",
       "solution_path": "solutions/DSA11-L06.md",
-      "prerequisite_ids": [
-        "DSA11-L05"
-      ],
-      "quiz_ids": [
-        "DSA11-L06-Q1",
-        "DSA11-L06-Q2",
-        "DSA11-L06-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA11-L06-F1",
-        "DSA11-L06-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA11-L05"],
+      "quiz_ids": ["DSA11-L06-Q1", "DSA11-L06-Q2", "DSA11-L06-Q3"],
+      "flashcard_ids": ["DSA11-L06-F1", "DSA11-L06-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6378,9 +5473,7 @@
         ]
       },
       "lab_id": "DSA-D51",
-      "code_example_paths": [
-        "labs/solutions/day_51.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_51.py"]
     },
     {
       "id": "DSA11-L07",
@@ -6411,22 +5504,10 @@
       },
       "content_path": "content/DSA-D/DSA11/DSA11-L07.md",
       "solution_path": "solutions/DSA11-L07.md",
-      "prerequisite_ids": [
-        "DSA11-L06"
-      ],
-      "quiz_ids": [
-        "DSA11-L07-Q1",
-        "DSA11-L07-Q2",
-        "DSA11-L07-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA11-L07-F1",
-        "DSA11-L07-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA11-L06"],
+      "quiz_ids": ["DSA11-L07-Q1", "DSA11-L07-Q2", "DSA11-L07-Q3"],
+      "flashcard_ids": ["DSA11-L07-F1", "DSA11-L07-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6490,9 +5571,7 @@
         ]
       },
       "lab_id": "DSA-D52",
-      "code_example_paths": [
-        "labs/solutions/day_52.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_52.py"]
     },
     {
       "id": "DSA12-L01",
@@ -6523,22 +5602,10 @@
       },
       "content_path": "content/DSA-X/DSA12/DSA12-L01.md",
       "solution_path": "solutions/DSA12-L01.md",
-      "prerequisite_ids": [
-        "DSA11-L07"
-      ],
-      "quiz_ids": [
-        "DSA12-L01-Q1",
-        "DSA12-L01-Q2",
-        "DSA12-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA12-L01-F1",
-        "DSA12-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA11-L07"],
+      "quiz_ids": ["DSA12-L01-Q1", "DSA12-L01-Q2", "DSA12-L01-Q3"],
+      "flashcard_ids": ["DSA12-L01-F1", "DSA12-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6602,9 +5669,7 @@
         ]
       },
       "lab_id": "DSA-D53",
-      "code_example_paths": [
-        "labs/solutions/day_53.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_53.py"]
     },
     {
       "id": "DSA12-L02",
@@ -6635,22 +5700,10 @@
       },
       "content_path": "content/DSA-X/DSA12/DSA12-L02.md",
       "solution_path": "solutions/DSA12-L02.md",
-      "prerequisite_ids": [
-        "DSA12-L01"
-      ],
-      "quiz_ids": [
-        "DSA12-L02-Q1",
-        "DSA12-L02-Q2",
-        "DSA12-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA12-L02-F1",
-        "DSA12-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA12-L01"],
+      "quiz_ids": ["DSA12-L02-Q1", "DSA12-L02-Q2", "DSA12-L02-Q3"],
+      "flashcard_ids": ["DSA12-L02-F1", "DSA12-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6714,9 +5767,7 @@
         ]
       },
       "lab_id": "DSA-D54",
-      "code_example_paths": [
-        "labs/solutions/day_54.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_54.py"]
     },
     {
       "id": "DSA12-L03",
@@ -6747,22 +5798,10 @@
       },
       "content_path": "content/DSA-X/DSA12/DSA12-L03.md",
       "solution_path": "solutions/DSA12-L03.md",
-      "prerequisite_ids": [
-        "DSA12-L02"
-      ],
-      "quiz_ids": [
-        "DSA12-L03-Q1",
-        "DSA12-L03-Q2",
-        "DSA12-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA12-L03-F1",
-        "DSA12-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA12-L02"],
+      "quiz_ids": ["DSA12-L03-Q1", "DSA12-L03-Q2", "DSA12-L03-Q3"],
+      "flashcard_ids": ["DSA12-L03-F1", "DSA12-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6826,9 +5865,7 @@
         ]
       },
       "lab_id": "DSA-D55",
-      "code_example_paths": [
-        "labs/solutions/day_55.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_55.py"]
     },
     {
       "id": "DSA13-L01",
@@ -6859,22 +5896,10 @@
       },
       "content_path": "content/DSA-X/DSA13/DSA13-L01.md",
       "solution_path": "solutions/DSA13-L01.md",
-      "prerequisite_ids": [
-        "DSA12-L03"
-      ],
-      "quiz_ids": [
-        "DSA13-L01-Q1",
-        "DSA13-L01-Q2",
-        "DSA13-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA13-L01-F1",
-        "DSA13-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA12-L03"],
+      "quiz_ids": ["DSA13-L01-Q1", "DSA13-L01-Q2", "DSA13-L01-Q3"],
+      "flashcard_ids": ["DSA13-L01-F1", "DSA13-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -6947,9 +5972,7 @@
         ]
       },
       "lab_id": "DSA-D56",
-      "code_example_paths": [
-        "labs/solutions/day_56.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_56.py"]
     },
     {
       "id": "DSA13-L02",
@@ -6980,22 +6003,10 @@
       },
       "content_path": "content/DSA-X/DSA13/DSA13-L02.md",
       "solution_path": "solutions/DSA13-L02.md",
-      "prerequisite_ids": [
-        "DSA13-L01"
-      ],
-      "quiz_ids": [
-        "DSA13-L02-Q1",
-        "DSA13-L02-Q2",
-        "DSA13-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA13-L02-F1",
-        "DSA13-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA13-L01"],
+      "quiz_ids": ["DSA13-L02-Q1", "DSA13-L02-Q2", "DSA13-L02-Q3"],
+      "flashcard_ids": ["DSA13-L02-F1", "DSA13-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -7068,9 +6079,7 @@
         ]
       },
       "lab_id": "DSA-D57",
-      "code_example_paths": [
-        "labs/solutions/day_57.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_57.py"]
     },
     {
       "id": "DSA14-L01",
@@ -7101,22 +6110,10 @@
       },
       "content_path": "content/DSA-X/DSA14/DSA14-L01.md",
       "solution_path": "solutions/DSA14-L01.md",
-      "prerequisite_ids": [
-        "DSA13-L02"
-      ],
-      "quiz_ids": [
-        "DSA14-L01-Q1",
-        "DSA14-L01-Q2",
-        "DSA14-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA14-L01-F1",
-        "DSA14-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA13-L02"],
+      "quiz_ids": ["DSA14-L01-Q1", "DSA14-L01-Q2", "DSA14-L01-Q3"],
+      "flashcard_ids": ["DSA14-L01-F1", "DSA14-L01-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -7180,9 +6177,7 @@
         ]
       },
       "lab_id": "DSA-D58",
-      "code_example_paths": [
-        "labs/solutions/day_58.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_58.py"]
     },
     {
       "id": "DSA14-L02",
@@ -7213,22 +6208,10 @@
       },
       "content_path": "content/DSA-X/DSA14/DSA14-L02.md",
       "solution_path": "solutions/DSA14-L02.md",
-      "prerequisite_ids": [
-        "DSA14-L01"
-      ],
-      "quiz_ids": [
-        "DSA14-L02-Q1",
-        "DSA14-L02-Q2",
-        "DSA14-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA14-L02-F1",
-        "DSA14-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA14-L01"],
+      "quiz_ids": ["DSA14-L02-Q1", "DSA14-L02-Q2", "DSA14-L02-Q3"],
+      "flashcard_ids": ["DSA14-L02-F1", "DSA14-L02-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -7310,9 +6293,7 @@
         ]
       },
       "lab_id": "DSA-D59",
-      "code_example_paths": [
-        "labs/solutions/day_59.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_59.py"]
     },
     {
       "id": "DSA14-L03",
@@ -7343,22 +6324,10 @@
       },
       "content_path": "content/DSA-X/DSA14/DSA14-L03.md",
       "solution_path": "solutions/DSA14-L03.md",
-      "prerequisite_ids": [
-        "DSA14-L02"
-      ],
-      "quiz_ids": [
-        "DSA14-L03-Q1",
-        "DSA14-L03-Q2",
-        "DSA14-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "DSA14-L03-F1",
-        "DSA14-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.python.org/3/library/",
-        "https://leetcode.com/problemset/"
-      ],
+      "prerequisite_ids": ["DSA14-L02"],
+      "quiz_ids": ["DSA14-L03-Q1", "DSA14-L03-Q2", "DSA14-L03-Q3"],
+      "flashcard_ids": ["DSA14-L03-F1", "DSA14-L03-F2"],
+      "reference_urls": ["https://docs.python.org/3/library/", "https://leetcode.com/problemset/"],
       "status": "draft_review_required",
       "source_mapping": {
         "source_file": "DSA_60_Day_Mastery_Plan.pdf",
@@ -7449,9 +6418,7 @@
         ]
       },
       "lab_id": "DSA-D60",
-      "code_example_paths": [
-        "labs/solutions/day_60.py"
-      ]
+      "code_example_paths": ["labs/solutions/day_60.py"]
     }
   ],
   "projects": [

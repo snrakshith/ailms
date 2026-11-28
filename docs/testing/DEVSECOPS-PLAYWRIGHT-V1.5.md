@@ -4,16 +4,16 @@
 
 This change keeps the existing React/Node/TypeScript monorepo and its portable learning core. It **replaces Cypress** with Playwright, and adds real jobs and guard scripts for SAST, SCA, DAST, secrets, and container scans. These are source-level integrations: a passing security audit or running stack has **not** been demonstrated by the authoring environment. The npm registry and Docker daemon are unavailable here.
 
-| Pipeline / stage | Tool | Trigger | What fails a build |
-| --- | --- | --- | --- |
-| Quality | Prettier, ESLint, TypeScript, Vitest | PR / main | lint, formatting, compilation, unit or HTTP integration test failures |
-| Browser E2E | Playwright — Chromium, Firefox, WebKit | PR / main | public, auth, API protection, learning-flow failures |
-| SAST | GitHub CodeQL security-extended | PR / main / weekly | scan execution errors; security findings require code-scanning enforcement/triage |
-| SCA | pnpm audit and Trivy filesystem | PR / main / weekly | high and critical findings / scanner execution errors |
-| Dependency delta | GitHub Dependency Review | PR | new high/critical vulnerable dependency |
-| Container vulnerability scan | Trivy API + web images | PR / main | high and critical OS/library findings |
-| Secret scanning | staged detector, TruffleHog | pre-commit, pre-push, PR, main | suspected/verified secrets or tool failure |
-| DAST | OWASP ZAP baseline + active OpenAPI scan | PR / main / weekly | **medium/high** findings, missing JSON, scan execution failures |
+| Pipeline / stage             | Tool                                     | Trigger                        | What fails a build                                                                |
+| ---------------------------- | ---------------------------------------- | ------------------------------ | --------------------------------------------------------------------------------- |
+| Quality                      | Prettier, ESLint, TypeScript, Vitest     | PR / main                      | lint, formatting, compilation, unit or HTTP integration test failures             |
+| Browser E2E                  | Playwright — Chromium, Firefox, WebKit   | PR / main                      | public, auth, API protection, learning-flow failures                              |
+| SAST                         | GitHub CodeQL security-extended          | PR / main / weekly             | scan execution errors; security findings require code-scanning enforcement/triage |
+| SCA                          | pnpm audit and Trivy filesystem          | PR / main / weekly             | high and critical findings / scanner execution errors                             |
+| Dependency delta             | GitHub Dependency Review                 | PR                             | new high/critical vulnerable dependency                                           |
+| Container vulnerability scan | Trivy API + web images                   | PR / main                      | high and critical OS/library findings                                             |
+| Secret scanning              | staged detector, TruffleHog              | pre-commit, pre-push, PR, main | suspected/verified secrets or tool failure                                        |
+| DAST                         | OWASP ZAP baseline + active OpenAPI scan | PR / main / weekly             | **medium/high** findings, missing JSON, scan execution failures                   |
 
 ### Install and pin dependencies
 
@@ -32,11 +32,12 @@ Playwright config is in `apps/web/playwright.config.ts`, and tests are in `apps/
 
 ### Database isolation
 
-Both Playwright and Vitest integration tests write data. Local use requires a disposable DB at `MONGODB_URI=mongodb://localhost:27017/aiquest_playwright_local` and matching API test environment (e.g., `NODE_ENV=test`, `JWT_SECRET` and `METRICS_TOKEN` set to *local test-only* values, `WEB_ORIGIN=http://127.0.0.1:5173`). The CI Playwright job uses `aiquest_playwright_e2e` with separate credentials. **Never point test suites to production or a shared development database**.
+Both Playwright and Vitest integration tests write data. Local use requires a disposable DB at `MONGODB_URI=mongodb://localhost:27017/aiquest_playwright_local` and matching API test environment (e.g., `NODE_ENV=test`, `JWT_SECRET` and `METRICS_TOKEN` set to _local test-only_ values, `WEB_ORIGIN=http://127.0.0.1:5173`). The CI Playwright job uses `aiquest_playwright_e2e` with separate credentials. **Never point test suites to production or a shared development database**.
 
 ### ZAP: controlled dynamic tests
 
-`scripts/security/run-zap.sh` provisions the production-built web and API images with *test-only local* MongoDB and Redis through Docker Compose, then performs:
+`scripts/security/run-zap.sh` provisions the production-built web and API images with _test-only local_ MongoDB and Redis through Docker Compose, then performs:
+
 1. A **passive** web baseline scan at `http://127.0.0.1:8080`.
 2. An **active** OpenAPI scan at `http://127.0.0.1:4000/openapi.json`.
 3. A strict `zap-report-gate.mjs` check on both JSON results, blocking medium/high findings, malformed reports and operational failures.

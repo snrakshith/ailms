@@ -3,6 +3,7 @@
 Detect or segment synthetic defects or licensed images.
 
 ## Deliverables
+
 - [ ] Annotation contract
 - [ ] group-aware split
 - [ ] OpenCV baseline
@@ -11,9 +12,11 @@ Detect or segment synthetic defects or licensed images.
 - [ ] local inference demo
 
 ## Acceptance criteria
+
 Coordinate and mask tests pass; metric matching and latency are documented.
 
 ## Grading rubric (100 points)
+
 - Functional Correctness: 30
 - Evaluation And Evidence: 30
 - Reproducibility And Documentation: 20

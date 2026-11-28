@@ -1,9 +1,9 @@
 receivers:
   otlp:
     protocols:
-      grpc: {endpoint: "127.0.0.1:4317"}
+      grpc: { endpoint: '127.0.0.1:4317' }
 exporters:
-  debug: {verbosity: basic}
+  debug: { verbosity: basic }
 service:
   pipelines:
     traces:

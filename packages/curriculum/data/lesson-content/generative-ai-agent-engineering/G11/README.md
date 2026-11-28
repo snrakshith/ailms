@@ -1,6 +1,7 @@
 # G11: LLM adaptation and multimodal AI
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Licensed dataset"]
@@ -17,6 +18,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Fine-tuning datasets, SFT and PEFT/LoRA](G11-L01.md) — intermediate
 - [QLoRA, quantization, serving and model optimization](G11-L02.md) — advanced
 - [Multimodal LLMs, diffusion apps and fine-tuning decisions](G11-L03.md) — advanced

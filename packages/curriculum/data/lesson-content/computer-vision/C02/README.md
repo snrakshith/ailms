@@ -1,6 +1,7 @@
 # C02: Image classification and datasets
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Labeled images"]
@@ -17,6 +18,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Image datasets, augmentation and labeling](C02-L01.md) — intermediate
 - [Image classification and pretrained CNNs](C02-L02.md) — intermediate
 

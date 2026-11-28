@@ -25,23 +25,14 @@
       "id": "OPS-S",
       "title": "DevSecOps & supply chain",
       "order": 2,
-      "module_ids": [
-        "OPSS01",
-        "OPSS02",
-        "OPSS03",
-        "OPSS04",
-        "OPSS05",
-        "OPSS06"
-      ],
+      "module_ids": ["OPSS01", "OPSS02", "OPSS03", "OPSS04", "OPSS05", "OPSS06"],
       "estimated_minutes": 1920
     },
     {
       "id": "OPS-P",
       "title": "Production operations & platform engineering",
       "order": 3,
-      "module_ids": [
-        "OPSP01"
-      ],
+      "module_ids": ["OPSP01"],
       "estimated_minutes": 480
     }
   ],
@@ -51,11 +42,7 @@
       "track_id": "OPS-F",
       "title": "Linux & shell",
       "order": 1,
-      "lesson_ids": [
-        "OPSF01-L01",
-        "OPSF01-L02",
-        "OPSF01-L03"
-      ],
+      "lesson_ids": ["OPSF01-L01", "OPSF01-L02", "OPSF01-L03"],
       "reference_urls": [
         "https://curl.se/docs/manpage.html",
         "https://www.gnu.org/software/bash/manual/",
@@ -74,17 +61,12 @@
       "track_id": "OPS-F",
       "title": "Version control",
       "order": 2,
-      "lesson_ids": [
-        "OPSF02-L01",
-        "OPSF02-L02"
-      ],
+      "lesson_ids": ["OPSF02-L01", "OPSF02-L02"],
       "reference_urls": [
         "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository",
         "https://git-scm.com/docs"
       ],
-      "prerequisite_module_ids": [
-        "OPSF01"
-      ],
+      "prerequisite_module_ids": ["OPSF01"],
       "content_path": "content/OPS-F/OPSF02/README.md",
       "chapter_path": "chapters/OPSF02.md",
       "cheatsheet_path": "cheatsheets/OPSF02.md",
@@ -97,21 +79,14 @@
       "track_id": "OPS-F",
       "title": "Continuous integration",
       "order": 3,
-      "lesson_ids": [
-        "OPSF03-L01",
-        "OPSF03-L02",
-        "OPSF03-L03",
-        "OPSF03-L04"
-      ],
+      "lesson_ids": ["OPSF03-L01", "OPSF03-L02", "OPSF03-L03", "OPSF03-L04"],
       "reference_urls": [
         "https://docs.github.com/en/actions",
         "https://docs.github.com/en/actions/reference/security/secure-use",
         "https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts",
         "https://www.jenkins.io/doc/book/pipeline/"
       ],
-      "prerequisite_module_ids": [
-        "OPSF02"
-      ],
+      "prerequisite_module_ids": ["OPSF02"],
       "content_path": "content/OPS-F/OPSF03/README.md",
       "chapter_path": "chapters/OPSF03.md",
       "cheatsheet_path": "cheatsheets/OPSF03.md",
@@ -124,17 +99,12 @@
       "track_id": "OPS-F",
       "title": "Container engineering",
       "order": 4,
-      "lesson_ids": [
-        "OPSF04-L01",
-        "OPSF04-L02"
-      ],
+      "lesson_ids": ["OPSF04-L01", "OPSF04-L02"],
       "reference_urls": [
         "https://docs.docker.com/build/building/best-practices/",
         "https://docs.docker.com/compose/"
       ],
-      "prerequisite_module_ids": [
-        "OPSF03"
-      ],
+      "prerequisite_module_ids": ["OPSF03"],
       "content_path": "content/OPS-F/OPSF04/README.md",
       "chapter_path": "chapters/OPSF04.md",
       "cheatsheet_path": "cheatsheets/OPSF04.md",
@@ -147,43 +117,28 @@
       "track_id": "OPS-F",
       "title": "Cloud & infrastructure as code",
       "order": 5,
-      "lesson_ids": [
-        "OPSF05-L01",
-        "OPSF05-L02",
-        "OPSF05-L03",
-        "OPSF05-L04"
-      ],
+      "lesson_ids": ["OPSF05-L01", "OPSF05-L02", "OPSF05-L03", "OPSF05-L04"],
       "reference_urls": [
         "https://developer.hashicorp.com/terraform/language/state",
         "https://developer.hashicorp.com/terraform/tutorials",
         "https://docs.ansible.com/ansible/latest/playbook_guide/",
         "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
       ],
-      "prerequisite_module_ids": [
-        "OPSF04"
-      ],
+      "prerequisite_module_ids": ["OPSF04"],
       "content_path": "content/OPS-F/OPSF05/README.md",
       "chapter_path": "chapters/OPSF05.md",
       "cheatsheet_path": "cheatsheets/OPSF05.md",
       "diagram_path": "diagrams/OPSF05.mmd",
       "diagram_svg_path": "diagrams/OPSF05.svg",
       "estimated_minutes": 360,
-      "concept_diagram_ids": [
-        "OPS-CD02"
-      ]
+      "concept_diagram_ids": ["OPS-CD02"]
     },
     {
       "id": "OPSF06",
       "track_id": "OPS-F",
       "title": "Kubernetes",
       "order": 6,
-      "lesson_ids": [
-        "OPSF06-L01",
-        "OPSF06-L02",
-        "OPSF06-L03",
-        "OPSF06-L04",
-        "OPSF06-L05"
-      ],
+      "lesson_ids": ["OPSF06-L01", "OPSF06-L02", "OPSF06-L03", "OPSF06-L04", "OPSF06-L05"],
       "reference_urls": [
         "https://kubernetes.io/docs/concepts/architecture/",
         "https://kubernetes.io/docs/concepts/configuration/",
@@ -191,57 +146,37 @@
         "https://kubernetes.io/docs/concepts/workloads/pods/probes/",
         "https://kubernetes.io/docs/reference/access-authn-authz/rbac/"
       ],
-      "prerequisite_module_ids": [
-        "OPSF05"
-      ],
+      "prerequisite_module_ids": ["OPSF05"],
       "content_path": "content/OPS-F/OPSF06/README.md",
       "chapter_path": "chapters/OPSF06.md",
       "cheatsheet_path": "cheatsheets/OPSF06.md",
       "diagram_path": "diagrams/OPSF06.mmd",
       "diagram_svg_path": "diagrams/OPSF06.svg",
       "estimated_minutes": 450,
-      "concept_diagram_ids": [
-        "OPS-CD03"
-      ]
+      "concept_diagram_ids": ["OPS-CD03"]
     },
     {
       "id": "OPSF07",
       "track_id": "OPS-F",
       "title": "Helm & GitOps",
       "order": 7,
-      "lesson_ids": [
-        "OPSF07-L01",
-        "OPSF07-L02"
-      ],
-      "reference_urls": [
-        "https://argo-cd.readthedocs.io/en/stable/",
-        "https://helm.sh/docs/"
-      ],
-      "prerequisite_module_ids": [
-        "OPSF06"
-      ],
+      "lesson_ids": ["OPSF07-L01", "OPSF07-L02"],
+      "reference_urls": ["https://argo-cd.readthedocs.io/en/stable/", "https://helm.sh/docs/"],
+      "prerequisite_module_ids": ["OPSF06"],
       "content_path": "content/OPS-F/OPSF07/README.md",
       "chapter_path": "chapters/OPSF07.md",
       "cheatsheet_path": "cheatsheets/OPSF07.md",
       "diagram_path": "diagrams/OPSF07.mmd",
       "diagram_svg_path": "diagrams/OPSF07.svg",
       "estimated_minutes": 180,
-      "concept_diagram_ids": [
-        "OPS-CD04"
-      ]
+      "concept_diagram_ids": ["OPS-CD04"]
     },
     {
       "id": "OPSF08",
       "track_id": "OPS-F",
       "title": "Observability & SRE",
       "order": 8,
-      "lesson_ids": [
-        "OPSF08-L01",
-        "OPSF08-L02",
-        "OPSF08-L03",
-        "OPSF08-L04",
-        "OPSF08-L05"
-      ],
+      "lesson_ids": ["OPSF08-L01", "OPSF08-L02", "OPSF08-L03", "OPSF08-L04", "OPSF08-L05"],
       "reference_urls": [
         "https://docs.datadoghq.com/",
         "https://grafana.com/docs/grafana/latest/",
@@ -252,65 +187,49 @@
         "https://support.pagerduty.com/",
         "https://www.elastic.co/guide/index.html"
       ],
-      "prerequisite_module_ids": [
-        "OPSF07"
-      ],
+      "prerequisite_module_ids": ["OPSF07"],
       "content_path": "content/OPS-F/OPSF08/README.md",
       "chapter_path": "chapters/OPSF08.md",
       "cheatsheet_path": "cheatsheets/OPSF08.md",
       "diagram_path": "diagrams/OPSF08.mmd",
       "diagram_svg_path": "diagrams/OPSF08.svg",
       "estimated_minutes": 450,
-      "concept_diagram_ids": [
-        "OPS-CD05"
-      ]
+      "concept_diagram_ids": ["OPS-CD05"]
     },
     {
       "id": "OPSS01",
       "track_id": "OPS-S",
       "title": "Security foundations",
       "order": 9,
-      "lesson_ids": [
-        "OPSS01-L01",
-        "OPSS01-L02"
-      ],
+      "lesson_ids": ["OPSS01-L01", "OPSS01-L02"],
       "reference_urls": [
         "https://docs.github.com/en/actions/reference/security/secure-use",
         "https://eslint.org/docs/latest/",
         "https://owasp.org/www-project-threat-modeling/",
         "https://typicode.github.io/husky/"
       ],
-      "prerequisite_module_ids": [
-        "OPSF08"
-      ],
+      "prerequisite_module_ids": ["OPSF08"],
       "content_path": "content/OPS-S/OPSS01/README.md",
       "chapter_path": "chapters/OPSS01.md",
       "cheatsheet_path": "cheatsheets/OPSS01.md",
       "diagram_path": "diagrams/OPSS01.mmd",
       "diagram_svg_path": "diagrams/OPSS01.svg",
       "estimated_minutes": 240,
-      "concept_diagram_ids": [
-        "OPS-CD01"
-      ]
+      "concept_diagram_ids": ["OPS-CD01"]
     },
     {
       "id": "OPSS02",
       "track_id": "OPS-S",
       "title": "Static application security",
       "order": 10,
-      "lesson_ids": [
-        "OPSS02-L01",
-        "OPSS02-L02"
-      ],
+      "lesson_ids": ["OPSS02-L01", "OPSS02-L02"],
       "reference_urls": [
         "https://codeql.github.com/docs/",
         "https://docs.checkmarx.com/",
         "https://docs.sonarsource.com/sonarqube-server/",
         "https://semgrep.dev/docs/"
       ],
-      "prerequisite_module_ids": [
-        "OPSS01"
-      ],
+      "prerequisite_module_ids": ["OPSS01"],
       "content_path": "content/OPS-S/OPSS02/README.md",
       "chapter_path": "chapters/OPSS02.md",
       "cheatsheet_path": "cheatsheets/OPSS02.md",
@@ -323,11 +242,7 @@
       "track_id": "OPS-S",
       "title": "Dependency and secrets security",
       "order": 11,
-      "lesson_ids": [
-        "OPSS03-L01",
-        "OPSS03-L02",
-        "OPSS03-L03"
-      ],
+      "lesson_ids": ["OPSS03-L01", "OPSS03-L02", "OPSS03-L03"],
       "reference_urls": [
         "https://dependency-check.github.io/DependencyCheck/",
         "https://developer.hashicorp.com/vault/docs",
@@ -337,9 +252,7 @@
         "https://github.com/gitleaks/gitleaks",
         "https://github.com/trufflesecurity/trufflehog"
       ],
-      "prerequisite_module_ids": [
-        "OPSS02"
-      ],
+      "prerequisite_module_ids": ["OPSS02"],
       "content_path": "content/OPS-S/OPSS03/README.md",
       "chapter_path": "chapters/OPSS03.md",
       "cheatsheet_path": "cheatsheets/OPSS03.md",
@@ -352,19 +265,14 @@
       "track_id": "OPS-S",
       "title": "Artifact and infrastructure scanning",
       "order": 12,
-      "lesson_ids": [
-        "OPSS04-L01",
-        "OPSS04-L02"
-      ],
+      "lesson_ids": ["OPSS04-L01", "OPSS04-L02"],
       "reference_urls": [
         "https://oss.anchore.com/docs/overview/grype/",
         "https://trivy.dev/docs/",
         "https://trivy.dev/docs/latest/guide/scanner/misconfiguration/",
         "https://www.checkov.io/"
       ],
-      "prerequisite_module_ids": [
-        "OPSS03"
-      ],
+      "prerequisite_module_ids": ["OPSS03"],
       "content_path": "content/OPS-S/OPSS04/README.md",
       "chapter_path": "chapters/OPSS04.md",
       "cheatsheet_path": "cheatsheets/OPSS04.md",
@@ -377,20 +285,14 @@
       "track_id": "OPS-S",
       "title": "Dynamic and policy security",
       "order": 13,
-      "lesson_ids": [
-        "OPSS05-L01",
-        "OPSS05-L02",
-        "OPSS05-L03"
-      ],
+      "lesson_ids": ["OPSS05-L01", "OPSS05-L02", "OPSS05-L03"],
       "reference_urls": [
         "https://kyverno.io/docs/",
         "https://portswigger.net/burp/documentation",
         "https://www.openpolicyagent.org/docs/",
         "https://www.zaproxy.org/docs/docker/baseline-scan/"
       ],
-      "prerequisite_module_ids": [
-        "OPSS04"
-      ],
+      "prerequisite_module_ids": ["OPSS04"],
       "content_path": "content/OPS-S/OPSS05/README.md",
       "chapter_path": "chapters/OPSS05.md",
       "cheatsheet_path": "cheatsheets/OPSS05.md",
@@ -403,12 +305,7 @@
       "track_id": "OPS-S",
       "title": "Runtime & software supply chain",
       "order": 14,
-      "lesson_ids": [
-        "OPSS06-L01",
-        "OPSS06-L02",
-        "OPSS06-L03",
-        "OPSS06-L04"
-      ],
+      "lesson_ids": ["OPSS06-L01", "OPSS06-L02", "OPSS06-L03", "OPSS06-L04"],
       "reference_urls": [
         "https://docs.github.com/en/actions/reference/security/oidc",
         "https://docs.github.com/en/actions/reference/security/secure-use",
@@ -416,39 +313,28 @@
         "https://falco.org/docs/",
         "https://oss.anchore.com/docs/overview/syft/"
       ],
-      "prerequisite_module_ids": [
-        "OPSS05"
-      ],
+      "prerequisite_module_ids": ["OPSS05"],
       "content_path": "content/OPS-S/OPSS06/README.md",
       "chapter_path": "chapters/OPSS06.md",
       "cheatsheet_path": "cheatsheets/OPSS06.md",
       "diagram_path": "diagrams/OPSS06.mmd",
       "diagram_svg_path": "diagrams/OPSS06.svg",
       "estimated_minutes": 480,
-      "concept_diagram_ids": [
-        "OPS-CD06"
-      ]
+      "concept_diagram_ids": ["OPS-CD06"]
     },
     {
       "id": "OPSP01",
       "track_id": "OPS-P",
       "title": "Production operations",
       "order": 15,
-      "lesson_ids": [
-        "OPSP01-L01",
-        "OPSP01-L02",
-        "OPSP01-L03",
-        "OPSP01-L04"
-      ],
+      "lesson_ids": ["OPSP01-L01", "OPSP01-L02", "OPSP01-L03", "OPSP01-L04"],
       "reference_urls": [
         "https://argo-rollouts.readthedocs.io/en/stable/",
         "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
         "https://owasp.org/www-project-devsecops-guideline/",
         "https://tag-app-delivery.cncf.io/whitepapers/platforms/"
       ],
-      "prerequisite_module_ids": [
-        "OPSS06"
-      ],
+      "prerequisite_module_ids": ["OPSS06"],
       "content_path": "content/OPS-P/OPSP01/README.md",
       "chapter_path": "chapters/OPSP01.md",
       "cheatsheet_path": "cheatsheets/OPSP01.md",
@@ -488,23 +374,12 @@
       "content_path": "content/OPS-F/OPSF01/OPSF01-L01.md",
       "solution_path": "solutions/OPSF01-L01.md",
       "prerequisite_ids": [],
-      "quiz_ids": [
-        "OPSF01-L01-Q1",
-        "OPSF01-L01-Q2",
-        "OPSF01-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF01-L01-F1",
-        "OPSF01-L01-F2"
-      ],
-      "reference_urls": [
-        "https://www.gnu.org/software/coreutils/manual/"
-      ],
+      "quiz_ids": ["OPSF01-L01-Q1", "OPSF01-L01-Q2", "OPSF01-L01-Q3"],
+      "flashcard_ids": ["OPSF01-L01-F1", "OPSF01-L01-F2"],
+      "reference_urls": ["https://www.gnu.org/software/coreutils/manual/"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-permissions",
-      "code_example_paths": [
-        "labs/solutions/permissions.py"
-      ]
+      "code_example_paths": ["labs/solutions/permissions.py"]
     },
     {
       "id": "OPSF01-L02",
@@ -535,21 +410,10 @@
       },
       "content_path": "content/OPS-F/OPSF01/OPSF01-L02.md",
       "solution_path": "solutions/OPSF01-L02.md",
-      "prerequisite_ids": [
-        "OPSF01-L01"
-      ],
-      "quiz_ids": [
-        "OPSF01-L02-Q1",
-        "OPSF01-L02-Q2",
-        "OPSF01-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF01-L02-F1",
-        "OPSF01-L02-F2"
-      ],
-      "reference_urls": [
-        "https://www.gnu.org/software/bash/manual/"
-      ],
+      "prerequisite_ids": ["OPSF01-L01"],
+      "quiz_ids": ["OPSF01-L02-Q1", "OPSF01-L02-Q2", "OPSF01-L02-Q3"],
+      "flashcard_ids": ["OPSF01-L02-F1", "OPSF01-L02-F2"],
+      "reference_urls": ["https://www.gnu.org/software/bash/manual/"],
       "status": "draft_review_required"
     },
     {
@@ -581,21 +445,10 @@
       },
       "content_path": "content/OPS-F/OPSF01/OPSF01-L03.md",
       "solution_path": "solutions/OPSF01-L03.md",
-      "prerequisite_ids": [
-        "OPSF01-L02"
-      ],
-      "quiz_ids": [
-        "OPSF01-L03-Q1",
-        "OPSF01-L03-Q2",
-        "OPSF01-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF01-L03-F1",
-        "OPSF01-L03-F2"
-      ],
-      "reference_urls": [
-        "https://curl.se/docs/manpage.html"
-      ],
+      "prerequisite_ids": ["OPSF01-L02"],
+      "quiz_ids": ["OPSF01-L03-Q1", "OPSF01-L03-Q2", "OPSF01-L03-Q3"],
+      "flashcard_ids": ["OPSF01-L03-F1", "OPSF01-L03-F2"],
+      "reference_urls": ["https://curl.se/docs/manpage.html"],
       "status": "draft_review_required"
     },
     {
@@ -627,26 +480,13 @@
       },
       "content_path": "content/OPS-F/OPSF02/OPSF02-L01.md",
       "solution_path": "solutions/OPSF02-L01.md",
-      "prerequisite_ids": [
-        "OPSF01-L03"
-      ],
-      "quiz_ids": [
-        "OPSF02-L01-Q1",
-        "OPSF02-L01-Q2",
-        "OPSF02-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF02-L01-F1",
-        "OPSF02-L01-F2"
-      ],
-      "reference_urls": [
-        "https://git-scm.com/docs"
-      ],
+      "prerequisite_ids": ["OPSF01-L03"],
+      "quiz_ids": ["OPSF02-L01-Q1", "OPSF02-L01-Q2", "OPSF02-L01-Q3"],
+      "flashcard_ids": ["OPSF02-L01-F1", "OPSF02-L01-F2"],
+      "reference_urls": ["https://git-scm.com/docs"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-git_revert",
-      "code_example_paths": [
-        "labs/solutions/git_revert.py"
-      ]
+      "code_example_paths": ["labs/solutions/git_revert.py"]
     },
     {
       "id": "OPSF02-L02",
@@ -677,18 +517,9 @@
       },
       "content_path": "content/OPS-F/OPSF02/OPSF02-L02.md",
       "solution_path": "solutions/OPSF02-L02.md",
-      "prerequisite_ids": [
-        "OPSF02-L01"
-      ],
-      "quiz_ids": [
-        "OPSF02-L02-Q1",
-        "OPSF02-L02-Q2",
-        "OPSF02-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF02-L02-F1",
-        "OPSF02-L02-F2"
-      ],
+      "prerequisite_ids": ["OPSF02-L01"],
+      "quiz_ids": ["OPSF02-L02-Q1", "OPSF02-L02-Q2", "OPSF02-L02-Q3"],
+      "flashcard_ids": ["OPSF02-L02-F1", "OPSF02-L02-F2"],
       "reference_urls": [
         "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository"
       ],
@@ -723,21 +554,10 @@
       },
       "content_path": "content/OPS-F/OPSF03/OPSF03-L01.md",
       "solution_path": "solutions/OPSF03-L01.md",
-      "prerequisite_ids": [
-        "OPSF02-L02"
-      ],
-      "quiz_ids": [
-        "OPSF03-L01-Q1",
-        "OPSF03-L01-Q2",
-        "OPSF03-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF03-L01-F1",
-        "OPSF03-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.github.com/en/actions"
-      ],
+      "prerequisite_ids": ["OPSF02-L02"],
+      "quiz_ids": ["OPSF03-L01-Q1", "OPSF03-L01-Q2", "OPSF03-L01-Q3"],
+      "flashcard_ids": ["OPSF03-L01-F1", "OPSF03-L01-F2"],
+      "reference_urls": ["https://docs.github.com/en/actions"],
       "status": "draft_review_required"
     },
     {
@@ -769,21 +589,10 @@
       },
       "content_path": "content/OPS-F/OPSF03/OPSF03-L02.md",
       "solution_path": "solutions/OPSF03-L02.md",
-      "prerequisite_ids": [
-        "OPSF03-L01"
-      ],
-      "quiz_ids": [
-        "OPSF03-L02-Q1",
-        "OPSF03-L02-Q2",
-        "OPSF03-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF03-L02-F1",
-        "OPSF03-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.github.com/en/actions/reference/security/secure-use"
-      ],
+      "prerequisite_ids": ["OPSF03-L01"],
+      "quiz_ids": ["OPSF03-L02-Q1", "OPSF03-L02-Q2", "OPSF03-L02-Q3"],
+      "flashcard_ids": ["OPSF03-L02-F1", "OPSF03-L02-F2"],
+      "reference_urls": ["https://docs.github.com/en/actions/reference/security/secure-use"],
       "status": "draft_review_required"
     },
     {
@@ -815,21 +624,10 @@
       },
       "content_path": "content/OPS-F/OPSF03/OPSF03-L03.md",
       "solution_path": "solutions/OPSF03-L03.md",
-      "prerequisite_ids": [
-        "OPSF03-L02"
-      ],
-      "quiz_ids": [
-        "OPSF03-L03-Q1",
-        "OPSF03-L03-Q2",
-        "OPSF03-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF03-L03-F1",
-        "OPSF03-L03-F2"
-      ],
-      "reference_urls": [
-        "https://www.jenkins.io/doc/book/pipeline/"
-      ],
+      "prerequisite_ids": ["OPSF03-L02"],
+      "quiz_ids": ["OPSF03-L03-Q1", "OPSF03-L03-Q2", "OPSF03-L03-Q3"],
+      "flashcard_ids": ["OPSF03-L03-F1", "OPSF03-L03-F2"],
+      "reference_urls": ["https://www.jenkins.io/doc/book/pipeline/"],
       "status": "draft_review_required"
     },
     {
@@ -861,26 +659,15 @@
       },
       "content_path": "content/OPS-F/OPSF03/OPSF03-L04.md",
       "solution_path": "solutions/OPSF03-L04.md",
-      "prerequisite_ids": [
-        "OPSF03-L03"
-      ],
-      "quiz_ids": [
-        "OPSF03-L04-Q1",
-        "OPSF03-L04-Q2",
-        "OPSF03-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF03-L04-F1",
-        "OPSF03-L04-F2"
-      ],
+      "prerequisite_ids": ["OPSF03-L03"],
+      "quiz_ids": ["OPSF03-L04-Q1", "OPSF03-L04-Q2", "OPSF03-L04-Q3"],
+      "flashcard_ids": ["OPSF03-L04-F1", "OPSF03-L04-F2"],
       "reference_urls": [
         "https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts"
       ],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-artifact_hash",
-      "code_example_paths": [
-        "labs/solutions/artifact_hash.py"
-      ]
+      "code_example_paths": ["labs/solutions/artifact_hash.py"]
     },
     {
       "id": "OPSF04-L01",
@@ -911,21 +698,10 @@
       },
       "content_path": "content/OPS-F/OPSF04/OPSF04-L01.md",
       "solution_path": "solutions/OPSF04-L01.md",
-      "prerequisite_ids": [
-        "OPSF03-L04"
-      ],
-      "quiz_ids": [
-        "OPSF04-L01-Q1",
-        "OPSF04-L01-Q2",
-        "OPSF04-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF04-L01-F1",
-        "OPSF04-L01-F2"
-      ],
-      "reference_urls": [
-        "https://docs.docker.com/build/building/best-practices/"
-      ],
+      "prerequisite_ids": ["OPSF03-L04"],
+      "quiz_ids": ["OPSF04-L01-Q1", "OPSF04-L01-Q2", "OPSF04-L01-Q3"],
+      "flashcard_ids": ["OPSF04-L01-F1", "OPSF04-L01-F2"],
+      "reference_urls": ["https://docs.docker.com/build/building/best-practices/"],
       "status": "draft_review_required"
     },
     {
@@ -957,21 +733,10 @@
       },
       "content_path": "content/OPS-F/OPSF04/OPSF04-L02.md",
       "solution_path": "solutions/OPSF04-L02.md",
-      "prerequisite_ids": [
-        "OPSF04-L01"
-      ],
-      "quiz_ids": [
-        "OPSF04-L02-Q1",
-        "OPSF04-L02-Q2",
-        "OPSF04-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF04-L02-F1",
-        "OPSF04-L02-F2"
-      ],
-      "reference_urls": [
-        "https://docs.docker.com/compose/"
-      ],
+      "prerequisite_ids": ["OPSF04-L01"],
+      "quiz_ids": ["OPSF04-L02-Q1", "OPSF04-L02-Q2", "OPSF04-L02-Q3"],
+      "flashcard_ids": ["OPSF04-L02-F1", "OPSF04-L02-F2"],
+      "reference_urls": ["https://docs.docker.com/compose/"],
       "status": "draft_review_required"
     },
     {
@@ -1003,26 +768,15 @@
       },
       "content_path": "content/OPS-F/OPSF05/OPSF05-L01.md",
       "solution_path": "solutions/OPSF05-L01.md",
-      "prerequisite_ids": [
-        "OPSF04-L02"
-      ],
-      "quiz_ids": [
-        "OPSF05-L01-Q1",
-        "OPSF05-L01-Q2",
-        "OPSF05-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF05-L01-F1",
-        "OPSF05-L01-F2"
-      ],
+      "prerequisite_ids": ["OPSF04-L02"],
+      "quiz_ids": ["OPSF05-L01-Q1", "OPSF05-L01-Q2", "OPSF05-L01-Q3"],
+      "flashcard_ids": ["OPSF05-L01-F1", "OPSF05-L01-F2"],
       "reference_urls": [
         "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
       ],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-network_model",
-      "code_example_paths": [
-        "labs/solutions/network_model.py"
-      ]
+      "code_example_paths": ["labs/solutions/network_model.py"]
     },
     {
       "id": "OPSF05-L02",
@@ -1053,21 +807,10 @@
       },
       "content_path": "content/OPS-F/OPSF05/OPSF05-L02.md",
       "solution_path": "solutions/OPSF05-L02.md",
-      "prerequisite_ids": [
-        "OPSF05-L01"
-      ],
-      "quiz_ids": [
-        "OPSF05-L02-Q1",
-        "OPSF05-L02-Q2",
-        "OPSF05-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF05-L02-F1",
-        "OPSF05-L02-F2"
-      ],
-      "reference_urls": [
-        "https://developer.hashicorp.com/terraform/tutorials"
-      ],
+      "prerequisite_ids": ["OPSF05-L01"],
+      "quiz_ids": ["OPSF05-L02-Q1", "OPSF05-L02-Q2", "OPSF05-L02-Q3"],
+      "flashcard_ids": ["OPSF05-L02-F1", "OPSF05-L02-F2"],
+      "reference_urls": ["https://developer.hashicorp.com/terraform/tutorials"],
       "status": "draft_review_required"
     },
     {
@@ -1099,21 +842,10 @@
       },
       "content_path": "content/OPS-F/OPSF05/OPSF05-L03.md",
       "solution_path": "solutions/OPSF05-L03.md",
-      "prerequisite_ids": [
-        "OPSF05-L02"
-      ],
-      "quiz_ids": [
-        "OPSF05-L03-Q1",
-        "OPSF05-L03-Q2",
-        "OPSF05-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF05-L03-F1",
-        "OPSF05-L03-F2"
-      ],
-      "reference_urls": [
-        "https://developer.hashicorp.com/terraform/language/state"
-      ],
+      "prerequisite_ids": ["OPSF05-L02"],
+      "quiz_ids": ["OPSF05-L03-Q1", "OPSF05-L03-Q2", "OPSF05-L03-Q3"],
+      "flashcard_ids": ["OPSF05-L03-F1", "OPSF05-L03-F2"],
+      "reference_urls": ["https://developer.hashicorp.com/terraform/language/state"],
       "status": "draft_review_required"
     },
     {
@@ -1145,21 +877,10 @@
       },
       "content_path": "content/OPS-F/OPSF05/OPSF05-L04.md",
       "solution_path": "solutions/OPSF05-L04.md",
-      "prerequisite_ids": [
-        "OPSF05-L03"
-      ],
-      "quiz_ids": [
-        "OPSF05-L04-Q1",
-        "OPSF05-L04-Q2",
-        "OPSF05-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF05-L04-F1",
-        "OPSF05-L04-F2"
-      ],
-      "reference_urls": [
-        "https://docs.ansible.com/ansible/latest/playbook_guide/"
-      ],
+      "prerequisite_ids": ["OPSF05-L03"],
+      "quiz_ids": ["OPSF05-L04-Q1", "OPSF05-L04-Q2", "OPSF05-L04-Q3"],
+      "flashcard_ids": ["OPSF05-L04-F1", "OPSF05-L04-F2"],
+      "reference_urls": ["https://docs.ansible.com/ansible/latest/playbook_guide/"],
       "status": "draft_review_required"
     },
     {
@@ -1191,21 +912,10 @@
       },
       "content_path": "content/OPS-F/OPSF06/OPSF06-L01.md",
       "solution_path": "solutions/OPSF06-L01.md",
-      "prerequisite_ids": [
-        "OPSF05-L04"
-      ],
-      "quiz_ids": [
-        "OPSF06-L01-Q1",
-        "OPSF06-L01-Q2",
-        "OPSF06-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF06-L01-F1",
-        "OPSF06-L01-F2"
-      ],
-      "reference_urls": [
-        "https://kubernetes.io/docs/concepts/architecture/"
-      ],
+      "prerequisite_ids": ["OPSF05-L04"],
+      "quiz_ids": ["OPSF06-L01-Q1", "OPSF06-L01-Q2", "OPSF06-L01-Q3"],
+      "flashcard_ids": ["OPSF06-L01-F1", "OPSF06-L01-F2"],
+      "reference_urls": ["https://kubernetes.io/docs/concepts/architecture/"],
       "status": "draft_review_required"
     },
     {
@@ -1237,21 +947,10 @@
       },
       "content_path": "content/OPS-F/OPSF06/OPSF06-L02.md",
       "solution_path": "solutions/OPSF06-L02.md",
-      "prerequisite_ids": [
-        "OPSF06-L01"
-      ],
-      "quiz_ids": [
-        "OPSF06-L02-Q1",
-        "OPSF06-L02-Q2",
-        "OPSF06-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF06-L02-F1",
-        "OPSF06-L02-F2"
-      ],
-      "reference_urls": [
-        "https://kubernetes.io/docs/concepts/services-networking/service/"
-      ],
+      "prerequisite_ids": ["OPSF06-L01"],
+      "quiz_ids": ["OPSF06-L02-Q1", "OPSF06-L02-Q2", "OPSF06-L02-Q3"],
+      "flashcard_ids": ["OPSF06-L02-F1", "OPSF06-L02-F2"],
+      "reference_urls": ["https://kubernetes.io/docs/concepts/services-networking/service/"],
       "status": "draft_review_required"
     },
     {
@@ -1283,21 +982,10 @@
       },
       "content_path": "content/OPS-F/OPSF06/OPSF06-L03.md",
       "solution_path": "solutions/OPSF06-L03.md",
-      "prerequisite_ids": [
-        "OPSF06-L02"
-      ],
-      "quiz_ids": [
-        "OPSF06-L03-Q1",
-        "OPSF06-L03-Q2",
-        "OPSF06-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF06-L03-F1",
-        "OPSF06-L03-F2"
-      ],
-      "reference_urls": [
-        "https://kubernetes.io/docs/concepts/configuration/"
-      ],
+      "prerequisite_ids": ["OPSF06-L02"],
+      "quiz_ids": ["OPSF06-L03-Q1", "OPSF06-L03-Q2", "OPSF06-L03-Q3"],
+      "flashcard_ids": ["OPSF06-L03-F1", "OPSF06-L03-F2"],
+      "reference_urls": ["https://kubernetes.io/docs/concepts/configuration/"],
       "status": "draft_review_required"
     },
     {
@@ -1329,26 +1017,13 @@
       },
       "content_path": "content/OPS-F/OPSF06/OPSF06-L04.md",
       "solution_path": "solutions/OPSF06-L04.md",
-      "prerequisite_ids": [
-        "OPSF06-L03"
-      ],
-      "quiz_ids": [
-        "OPSF06-L04-Q1",
-        "OPSF06-L04-Q2",
-        "OPSF06-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF06-L04-F1",
-        "OPSF06-L04-F2"
-      ],
-      "reference_urls": [
-        "https://kubernetes.io/docs/concepts/workloads/pods/probes/"
-      ],
+      "prerequisite_ids": ["OPSF06-L03"],
+      "quiz_ids": ["OPSF06-L04-Q1", "OPSF06-L04-Q2", "OPSF06-L04-Q3"],
+      "flashcard_ids": ["OPSF06-L04-F1", "OPSF06-L04-F2"],
+      "reference_urls": ["https://kubernetes.io/docs/concepts/workloads/pods/probes/"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-probe_model",
-      "code_example_paths": [
-        "labs/solutions/probe_model.py"
-      ]
+      "code_example_paths": ["labs/solutions/probe_model.py"]
     },
     {
       "id": "OPSF06-L05",
@@ -1379,21 +1054,10 @@
       },
       "content_path": "content/OPS-F/OPSF06/OPSF06-L05.md",
       "solution_path": "solutions/OPSF06-L05.md",
-      "prerequisite_ids": [
-        "OPSF06-L04"
-      ],
-      "quiz_ids": [
-        "OPSF06-L05-Q1",
-        "OPSF06-L05-Q2",
-        "OPSF06-L05-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF06-L05-F1",
-        "OPSF06-L05-F2"
-      ],
-      "reference_urls": [
-        "https://kubernetes.io/docs/reference/access-authn-authz/rbac/"
-      ],
+      "prerequisite_ids": ["OPSF06-L04"],
+      "quiz_ids": ["OPSF06-L05-Q1", "OPSF06-L05-Q2", "OPSF06-L05-Q3"],
+      "flashcard_ids": ["OPSF06-L05-F1", "OPSF06-L05-F2"],
+      "reference_urls": ["https://kubernetes.io/docs/reference/access-authn-authz/rbac/"],
       "status": "draft_review_required"
     },
     {
@@ -1425,21 +1089,10 @@
       },
       "content_path": "content/OPS-F/OPSF07/OPSF07-L01.md",
       "solution_path": "solutions/OPSF07-L01.md",
-      "prerequisite_ids": [
-        "OPSF06-L05"
-      ],
-      "quiz_ids": [
-        "OPSF07-L01-Q1",
-        "OPSF07-L01-Q2",
-        "OPSF07-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF07-L01-F1",
-        "OPSF07-L01-F2"
-      ],
-      "reference_urls": [
-        "https://helm.sh/docs/"
-      ],
+      "prerequisite_ids": ["OPSF06-L05"],
+      "quiz_ids": ["OPSF07-L01-Q1", "OPSF07-L01-Q2", "OPSF07-L01-Q3"],
+      "flashcard_ids": ["OPSF07-L01-F1", "OPSF07-L01-F2"],
+      "reference_urls": ["https://helm.sh/docs/"],
       "status": "draft_review_required"
     },
     {
@@ -1471,21 +1124,10 @@
       },
       "content_path": "content/OPS-F/OPSF07/OPSF07-L02.md",
       "solution_path": "solutions/OPSF07-L02.md",
-      "prerequisite_ids": [
-        "OPSF07-L01"
-      ],
-      "quiz_ids": [
-        "OPSF07-L02-Q1",
-        "OPSF07-L02-Q2",
-        "OPSF07-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF07-L02-F1",
-        "OPSF07-L02-F2"
-      ],
-      "reference_urls": [
-        "https://argo-cd.readthedocs.io/en/stable/"
-      ],
+      "prerequisite_ids": ["OPSF07-L01"],
+      "quiz_ids": ["OPSF07-L02-Q1", "OPSF07-L02-Q2", "OPSF07-L02-Q3"],
+      "flashcard_ids": ["OPSF07-L02-F1", "OPSF07-L02-F2"],
+      "reference_urls": ["https://argo-cd.readthedocs.io/en/stable/"],
       "status": "draft_review_required"
     },
     {
@@ -1517,26 +1159,13 @@
       },
       "content_path": "content/OPS-F/OPSF08/OPSF08-L01.md",
       "solution_path": "solutions/OPSF08-L01.md",
-      "prerequisite_ids": [
-        "OPSF07-L02"
-      ],
-      "quiz_ids": [
-        "OPSF08-L01-Q1",
-        "OPSF08-L01-Q2",
-        "OPSF08-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF08-L01-F1",
-        "OPSF08-L01-F2"
-      ],
-      "reference_urls": [
-        "https://prometheus.io/docs/prometheus/latest/querying/basics/"
-      ],
+      "prerequisite_ids": ["OPSF07-L02"],
+      "quiz_ids": ["OPSF08-L01-Q1", "OPSF08-L01-Q2", "OPSF08-L01-Q3"],
+      "flashcard_ids": ["OPSF08-L01-F1", "OPSF08-L01-F2"],
+      "reference_urls": ["https://prometheus.io/docs/prometheus/latest/querying/basics/"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-error_ratio",
-      "code_example_paths": [
-        "labs/solutions/error_ratio.py"
-      ]
+      "code_example_paths": ["labs/solutions/error_ratio.py"]
     },
     {
       "id": "OPSF08-L02",
@@ -1567,21 +1196,10 @@
       },
       "content_path": "content/OPS-F/OPSF08/OPSF08-L02.md",
       "solution_path": "solutions/OPSF08-L02.md",
-      "prerequisite_ids": [
-        "OPSF08-L01"
-      ],
-      "quiz_ids": [
-        "OPSF08-L02-Q1",
-        "OPSF08-L02-Q2",
-        "OPSF08-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF08-L02-F1",
-        "OPSF08-L02-F2"
-      ],
-      "reference_urls": [
-        "https://grafana.com/docs/grafana/latest/"
-      ],
+      "prerequisite_ids": ["OPSF08-L01"],
+      "quiz_ids": ["OPSF08-L02-Q1", "OPSF08-L02-Q2", "OPSF08-L02-Q3"],
+      "flashcard_ids": ["OPSF08-L02-F1", "OPSF08-L02-F2"],
+      "reference_urls": ["https://grafana.com/docs/grafana/latest/"],
       "status": "draft_review_required"
     },
     {
@@ -1613,26 +1231,13 @@
       },
       "content_path": "content/OPS-F/OPSF08/OPSF08-L03.md",
       "solution_path": "solutions/OPSF08-L03.md",
-      "prerequisite_ids": [
-        "OPSF08-L02"
-      ],
-      "quiz_ids": [
-        "OPSF08-L03-Q1",
-        "OPSF08-L03-Q2",
-        "OPSF08-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF08-L03-F1",
-        "OPSF08-L03-F2"
-      ],
-      "reference_urls": [
-        "https://www.elastic.co/guide/index.html"
-      ],
+      "prerequisite_ids": ["OPSF08-L02"],
+      "quiz_ids": ["OPSF08-L03-Q1", "OPSF08-L03-Q2", "OPSF08-L03-Q3"],
+      "flashcard_ids": ["OPSF08-L03-F1", "OPSF08-L03-F2"],
+      "reference_urls": ["https://www.elastic.co/guide/index.html"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-log_correlation",
-      "code_example_paths": [
-        "labs/solutions/log_correlation.py"
-      ]
+      "code_example_paths": ["labs/solutions/log_correlation.py"]
     },
     {
       "id": "OPSF08-L04",
@@ -1663,22 +1268,10 @@
       },
       "content_path": "content/OPS-F/OPSF08/OPSF08-L04.md",
       "solution_path": "solutions/OPSF08-L04.md",
-      "prerequisite_ids": [
-        "OPSF08-L03"
-      ],
-      "quiz_ids": [
-        "OPSF08-L04-Q1",
-        "OPSF08-L04-Q2",
-        "OPSF08-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF08-L04-F1",
-        "OPSF08-L04-F2"
-      ],
-      "reference_urls": [
-        "https://opentelemetry.io/docs/collector/",
-        "https://docs.datadoghq.com/"
-      ],
+      "prerequisite_ids": ["OPSF08-L03"],
+      "quiz_ids": ["OPSF08-L04-Q1", "OPSF08-L04-Q2", "OPSF08-L04-Q3"],
+      "flashcard_ids": ["OPSF08-L04-F1", "OPSF08-L04-F2"],
+      "reference_urls": ["https://opentelemetry.io/docs/collector/", "https://docs.datadoghq.com/"],
       "status": "draft_review_required"
     },
     {
@@ -1710,18 +1303,9 @@
       },
       "content_path": "content/OPS-F/OPSF08/OPSF08-L05.md",
       "solution_path": "solutions/OPSF08-L05.md",
-      "prerequisite_ids": [
-        "OPSF08-L04"
-      ],
-      "quiz_ids": [
-        "OPSF08-L05-Q1",
-        "OPSF08-L05-Q2",
-        "OPSF08-L05-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSF08-L05-F1",
-        "OPSF08-L05-F2"
-      ],
+      "prerequisite_ids": ["OPSF08-L04"],
+      "quiz_ids": ["OPSF08-L05-Q1", "OPSF08-L05-Q2", "OPSF08-L05-Q3"],
+      "flashcard_ids": ["OPSF08-L05-F1", "OPSF08-L05-F2"],
       "reference_urls": [
         "https://sre.google/workbook/alerting-on-slos/",
         "https://support.pagerduty.com/",
@@ -1729,9 +1313,7 @@
       ],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-slo_budget",
-      "code_example_paths": [
-        "labs/solutions/slo_budget.py"
-      ]
+      "code_example_paths": ["labs/solutions/slo_budget.py"]
     },
     {
       "id": "OPSS01-L01",
@@ -1762,18 +1344,9 @@
       },
       "content_path": "content/OPS-S/OPSS01/OPSS01-L01.md",
       "solution_path": "solutions/OPSS01-L01.md",
-      "prerequisite_ids": [
-        "OPSF08-L05"
-      ],
-      "quiz_ids": [
-        "OPSS01-L01-Q1",
-        "OPSS01-L01-Q2",
-        "OPSS01-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS01-L01-F1",
-        "OPSS01-L01-F2"
-      ],
+      "prerequisite_ids": ["OPSF08-L05"],
+      "quiz_ids": ["OPSS01-L01-Q1", "OPSS01-L01-Q2", "OPSS01-L01-Q3"],
+      "flashcard_ids": ["OPSS01-L01-F1", "OPSS01-L01-F2"],
       "reference_urls": [
         "https://owasp.org/www-project-threat-modeling/",
         "https://docs.github.com/en/actions/reference/security/secure-use"
@@ -1809,22 +1382,10 @@
       },
       "content_path": "content/OPS-S/OPSS01/OPSS01-L02.md",
       "solution_path": "solutions/OPSS01-L02.md",
-      "prerequisite_ids": [
-        "OPSS01-L01"
-      ],
-      "quiz_ids": [
-        "OPSS01-L02-Q1",
-        "OPSS01-L02-Q2",
-        "OPSS01-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS01-L02-F1",
-        "OPSS01-L02-F2"
-      ],
-      "reference_urls": [
-        "https://typicode.github.io/husky/",
-        "https://eslint.org/docs/latest/"
-      ],
+      "prerequisite_ids": ["OPSS01-L01"],
+      "quiz_ids": ["OPSS01-L02-Q1", "OPSS01-L02-Q2", "OPSS01-L02-Q3"],
+      "flashcard_ids": ["OPSS01-L02-F1", "OPSS01-L02-F2"],
+      "reference_urls": ["https://typicode.github.io/husky/", "https://eslint.org/docs/latest/"],
       "status": "draft_review_required"
     },
     {
@@ -1856,21 +1417,10 @@
       },
       "content_path": "content/OPS-S/OPSS02/OPSS02-L01.md",
       "solution_path": "solutions/OPSS02-L01.md",
-      "prerequisite_ids": [
-        "OPSS01-L02"
-      ],
-      "quiz_ids": [
-        "OPSS02-L01-Q1",
-        "OPSS02-L01-Q2",
-        "OPSS02-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS02-L01-F1",
-        "OPSS02-L01-F2"
-      ],
-      "reference_urls": [
-        "https://semgrep.dev/docs/"
-      ],
+      "prerequisite_ids": ["OPSS01-L02"],
+      "quiz_ids": ["OPSS02-L01-Q1", "OPSS02-L01-Q2", "OPSS02-L01-Q3"],
+      "flashcard_ids": ["OPSS02-L01-F1", "OPSS02-L01-F2"],
+      "reference_urls": ["https://semgrep.dev/docs/"],
       "status": "draft_review_required"
     },
     {
@@ -1902,18 +1452,9 @@
       },
       "content_path": "content/OPS-S/OPSS02/OPSS02-L02.md",
       "solution_path": "solutions/OPSS02-L02.md",
-      "prerequisite_ids": [
-        "OPSS02-L01"
-      ],
-      "quiz_ids": [
-        "OPSS02-L02-Q1",
-        "OPSS02-L02-Q2",
-        "OPSS02-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS02-L02-F1",
-        "OPSS02-L02-F2"
-      ],
+      "prerequisite_ids": ["OPSS02-L01"],
+      "quiz_ids": ["OPSS02-L02-Q1", "OPSS02-L02-Q2", "OPSS02-L02-Q3"],
+      "flashcard_ids": ["OPSS02-L02-F1", "OPSS02-L02-F2"],
       "reference_urls": [
         "https://codeql.github.com/docs/",
         "https://docs.sonarsource.com/sonarqube-server/",
@@ -1950,18 +1491,9 @@
       },
       "content_path": "content/OPS-S/OPSS03/OPSS03-L01.md",
       "solution_path": "solutions/OPSS03-L01.md",
-      "prerequisite_ids": [
-        "OPSS02-L02"
-      ],
-      "quiz_ids": [
-        "OPSS03-L01-Q1",
-        "OPSS03-L01-Q2",
-        "OPSS03-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS03-L01-F1",
-        "OPSS03-L01-F2"
-      ],
+      "prerequisite_ids": ["OPSS02-L02"],
+      "quiz_ids": ["OPSS03-L01-Q1", "OPSS03-L01-Q2", "OPSS03-L01-Q3"],
+      "flashcard_ids": ["OPSS03-L01-F1", "OPSS03-L01-F2"],
       "reference_urls": [
         "https://docs.snyk.io/",
         "https://docs.github.com/en/code-security/dependabot",
@@ -1969,9 +1501,7 @@
       ],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-sca_triage",
-      "code_example_paths": [
-        "labs/solutions/sca_triage.py"
-      ]
+      "code_example_paths": ["labs/solutions/sca_triage.py"]
     },
     {
       "id": "OPSS03-L02",
@@ -2002,27 +1532,16 @@
       },
       "content_path": "content/OPS-S/OPSS03/OPSS03-L02.md",
       "solution_path": "solutions/OPSS03-L02.md",
-      "prerequisite_ids": [
-        "OPSS03-L01"
-      ],
-      "quiz_ids": [
-        "OPSS03-L02-Q1",
-        "OPSS03-L02-Q2",
-        "OPSS03-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS03-L02-F1",
-        "OPSS03-L02-F2"
-      ],
+      "prerequisite_ids": ["OPSS03-L01"],
+      "quiz_ids": ["OPSS03-L02-Q1", "OPSS03-L02-Q2", "OPSS03-L02-Q3"],
+      "flashcard_ids": ["OPSS03-L02-F1", "OPSS03-L02-F2"],
       "reference_urls": [
         "https://github.com/gitleaks/gitleaks",
         "https://github.com/trufflesecurity/trufflehog"
       ],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-fake_secret",
-      "code_example_paths": [
-        "labs/solutions/fake_secret.py"
-      ]
+      "code_example_paths": ["labs/solutions/fake_secret.py"]
     },
     {
       "id": "OPSS03-L03",
@@ -2053,18 +1572,9 @@
       },
       "content_path": "content/OPS-S/OPSS03/OPSS03-L03.md",
       "solution_path": "solutions/OPSS03-L03.md",
-      "prerequisite_ids": [
-        "OPSS03-L02"
-      ],
-      "quiz_ids": [
-        "OPSS03-L03-Q1",
-        "OPSS03-L03-Q2",
-        "OPSS03-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS03-L03-F1",
-        "OPSS03-L03-F2"
-      ],
+      "prerequisite_ids": ["OPSS03-L02"],
+      "quiz_ids": ["OPSS03-L03-Q1", "OPSS03-L03-Q2", "OPSS03-L03-Q3"],
+      "flashcard_ids": ["OPSS03-L03-F1", "OPSS03-L03-F2"],
       "reference_urls": [
         "https://developer.hashicorp.com/vault/docs",
         "https://docs.aws.amazon.com/secretsmanager/"
@@ -2100,22 +1610,10 @@
       },
       "content_path": "content/OPS-S/OPSS04/OPSS04-L01.md",
       "solution_path": "solutions/OPSS04-L01.md",
-      "prerequisite_ids": [
-        "OPSS03-L03"
-      ],
-      "quiz_ids": [
-        "OPSS04-L01-Q1",
-        "OPSS04-L01-Q2",
-        "OPSS04-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS04-L01-F1",
-        "OPSS04-L01-F2"
-      ],
-      "reference_urls": [
-        "https://trivy.dev/docs/",
-        "https://oss.anchore.com/docs/overview/grype/"
-      ],
+      "prerequisite_ids": ["OPSS03-L03"],
+      "quiz_ids": ["OPSS04-L01-Q1", "OPSS04-L01-Q2", "OPSS04-L01-Q3"],
+      "flashcard_ids": ["OPSS04-L01-F1", "OPSS04-L01-F2"],
+      "reference_urls": ["https://trivy.dev/docs/", "https://oss.anchore.com/docs/overview/grype/"],
       "status": "draft_review_required"
     },
     {
@@ -2147,18 +1645,9 @@
       },
       "content_path": "content/OPS-S/OPSS04/OPSS04-L02.md",
       "solution_path": "solutions/OPSS04-L02.md",
-      "prerequisite_ids": [
-        "OPSS04-L01"
-      ],
-      "quiz_ids": [
-        "OPSS04-L02-Q1",
-        "OPSS04-L02-Q2",
-        "OPSS04-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS04-L02-F1",
-        "OPSS04-L02-F2"
-      ],
+      "prerequisite_ids": ["OPSS04-L01"],
+      "quiz_ids": ["OPSS04-L02-Q1", "OPSS04-L02-Q2", "OPSS04-L02-Q3"],
+      "flashcard_ids": ["OPSS04-L02-F1", "OPSS04-L02-F2"],
       "reference_urls": [
         "https://www.checkov.io/",
         "https://trivy.dev/docs/latest/guide/scanner/misconfiguration/"
@@ -2194,18 +1683,9 @@
       },
       "content_path": "content/OPS-S/OPSS05/OPSS05-L01.md",
       "solution_path": "solutions/OPSS05-L01.md",
-      "prerequisite_ids": [
-        "OPSS04-L02"
-      ],
-      "quiz_ids": [
-        "OPSS05-L01-Q1",
-        "OPSS05-L01-Q2",
-        "OPSS05-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS05-L01-F1",
-        "OPSS05-L01-F2"
-      ],
+      "prerequisite_ids": ["OPSS04-L02"],
+      "quiz_ids": ["OPSS05-L01-Q1", "OPSS05-L01-Q2", "OPSS05-L01-Q3"],
+      "flashcard_ids": ["OPSS05-L01-F1", "OPSS05-L01-F2"],
       "reference_urls": [
         "https://www.zaproxy.org/docs/docker/baseline-scan/",
         "https://portswigger.net/burp/documentation"
@@ -2241,26 +1721,13 @@
       },
       "content_path": "content/OPS-S/OPSS05/OPSS05-L02.md",
       "solution_path": "solutions/OPSS05-L02.md",
-      "prerequisite_ids": [
-        "OPSS05-L01"
-      ],
-      "quiz_ids": [
-        "OPSS05-L02-Q1",
-        "OPSS05-L02-Q2",
-        "OPSS05-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS05-L02-F1",
-        "OPSS05-L02-F2"
-      ],
-      "reference_urls": [
-        "https://www.openpolicyagent.org/docs/"
-      ],
+      "prerequisite_ids": ["OPSS05-L01"],
+      "quiz_ids": ["OPSS05-L02-Q1", "OPSS05-L02-Q2", "OPSS05-L02-Q3"],
+      "flashcard_ids": ["OPSS05-L02-F1", "OPSS05-L02-F2"],
+      "reference_urls": ["https://www.openpolicyagent.org/docs/"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-policy_model",
-      "code_example_paths": [
-        "labs/solutions/policy_model.py"
-      ]
+      "code_example_paths": ["labs/solutions/policy_model.py"]
     },
     {
       "id": "OPSS05-L03",
@@ -2291,21 +1758,10 @@
       },
       "content_path": "content/OPS-S/OPSS05/OPSS05-L03.md",
       "solution_path": "solutions/OPSS05-L03.md",
-      "prerequisite_ids": [
-        "OPSS05-L02"
-      ],
-      "quiz_ids": [
-        "OPSS05-L03-Q1",
-        "OPSS05-L03-Q2",
-        "OPSS05-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS05-L03-F1",
-        "OPSS05-L03-F2"
-      ],
-      "reference_urls": [
-        "https://kyverno.io/docs/"
-      ],
+      "prerequisite_ids": ["OPSS05-L02"],
+      "quiz_ids": ["OPSS05-L03-Q1", "OPSS05-L03-Q2", "OPSS05-L03-Q3"],
+      "flashcard_ids": ["OPSS05-L03-F1", "OPSS05-L03-F2"],
+      "reference_urls": ["https://kyverno.io/docs/"],
       "status": "draft_review_required"
     },
     {
@@ -2337,21 +1793,10 @@
       },
       "content_path": "content/OPS-S/OPSS06/OPSS06-L01.md",
       "solution_path": "solutions/OPSS06-L01.md",
-      "prerequisite_ids": [
-        "OPSS05-L03"
-      ],
-      "quiz_ids": [
-        "OPSS06-L01-Q1",
-        "OPSS06-L01-Q2",
-        "OPSS06-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS06-L01-F1",
-        "OPSS06-L01-F2"
-      ],
-      "reference_urls": [
-        "https://falco.org/docs/"
-      ],
+      "prerequisite_ids": ["OPSS05-L03"],
+      "quiz_ids": ["OPSS06-L01-Q1", "OPSS06-L01-Q2", "OPSS06-L01-Q3"],
+      "flashcard_ids": ["OPSS06-L01-F1", "OPSS06-L01-F2"],
+      "reference_urls": ["https://falco.org/docs/"],
       "status": "draft_review_required"
     },
     {
@@ -2383,26 +1828,13 @@
       },
       "content_path": "content/OPS-S/OPSS06/OPSS06-L02.md",
       "solution_path": "solutions/OPSS06-L02.md",
-      "prerequisite_ids": [
-        "OPSS06-L01"
-      ],
-      "quiz_ids": [
-        "OPSS06-L02-Q1",
-        "OPSS06-L02-Q2",
-        "OPSS06-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS06-L02-F1",
-        "OPSS06-L02-F2"
-      ],
-      "reference_urls": [
-        "https://oss.anchore.com/docs/overview/syft/"
-      ],
+      "prerequisite_ids": ["OPSS06-L01"],
+      "quiz_ids": ["OPSS06-L02-Q1", "OPSS06-L02-Q2", "OPSS06-L02-Q3"],
+      "flashcard_ids": ["OPSS06-L02-F1", "OPSS06-L02-F2"],
+      "reference_urls": ["https://oss.anchore.com/docs/overview/syft/"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-sbom_inventory",
-      "code_example_paths": [
-        "labs/solutions/sbom_inventory.py"
-      ]
+      "code_example_paths": ["labs/solutions/sbom_inventory.py"]
     },
     {
       "id": "OPSS06-L03",
@@ -2433,21 +1865,10 @@
       },
       "content_path": "content/OPS-S/OPSS06/OPSS06-L03.md",
       "solution_path": "solutions/OPSS06-L03.md",
-      "prerequisite_ids": [
-        "OPSS06-L02"
-      ],
-      "quiz_ids": [
-        "OPSS06-L03-Q1",
-        "OPSS06-L03-Q2",
-        "OPSS06-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS06-L03-F1",
-        "OPSS06-L03-F2"
-      ],
-      "reference_urls": [
-        "https://docs.sigstore.dev/cosign/"
-      ],
+      "prerequisite_ids": ["OPSS06-L02"],
+      "quiz_ids": ["OPSS06-L03-Q1", "OPSS06-L03-Q2", "OPSS06-L03-Q3"],
+      "flashcard_ids": ["OPSS06-L03-F1", "OPSS06-L03-F2"],
+      "reference_urls": ["https://docs.sigstore.dev/cosign/"],
       "status": "draft_review_required"
     },
     {
@@ -2479,27 +1900,16 @@
       },
       "content_path": "content/OPS-S/OPSS06/OPSS06-L04.md",
       "solution_path": "solutions/OPSS06-L04.md",
-      "prerequisite_ids": [
-        "OPSS06-L03"
-      ],
-      "quiz_ids": [
-        "OPSS06-L04-Q1",
-        "OPSS06-L04-Q2",
-        "OPSS06-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSS06-L04-F1",
-        "OPSS06-L04-F2"
-      ],
+      "prerequisite_ids": ["OPSS06-L03"],
+      "quiz_ids": ["OPSS06-L04-Q1", "OPSS06-L04-Q2", "OPSS06-L04-Q3"],
+      "flashcard_ids": ["OPSS06-L04-F1", "OPSS06-L04-F2"],
       "reference_urls": [
         "https://docs.github.com/en/actions/reference/security/secure-use",
         "https://docs.github.com/en/actions/reference/security/oidc"
       ],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-exceptions",
-      "code_example_paths": [
-        "labs/solutions/exceptions.py"
-      ]
+      "code_example_paths": ["labs/solutions/exceptions.py"]
     },
     {
       "id": "OPSP01-L01",
@@ -2530,18 +1940,9 @@
       },
       "content_path": "content/OPS-P/OPSP01/OPSP01-L01.md",
       "solution_path": "solutions/OPSP01-L01.md",
-      "prerequisite_ids": [
-        "OPSS06-L04"
-      ],
-      "quiz_ids": [
-        "OPSP01-L01-Q1",
-        "OPSP01-L01-Q2",
-        "OPSP01-L01-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSP01-L01-F1",
-        "OPSP01-L01-F2"
-      ],
+      "prerequisite_ids": ["OPSS06-L04"],
+      "quiz_ids": ["OPSP01-L01-Q1", "OPSP01-L01-Q2", "OPSP01-L01-Q3"],
+      "flashcard_ids": ["OPSP01-L01-F1", "OPSP01-L01-F2"],
       "reference_urls": [
         "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html"
       ],
@@ -2576,26 +1977,13 @@
       },
       "content_path": "content/OPS-P/OPSP01/OPSP01-L02.md",
       "solution_path": "solutions/OPSP01-L02.md",
-      "prerequisite_ids": [
-        "OPSP01-L01"
-      ],
-      "quiz_ids": [
-        "OPSP01-L02-Q1",
-        "OPSP01-L02-Q2",
-        "OPSP01-L02-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSP01-L02-F1",
-        "OPSP01-L02-F2"
-      ],
-      "reference_urls": [
-        "https://argo-rollouts.readthedocs.io/en/stable/"
-      ],
+      "prerequisite_ids": ["OPSP01-L01"],
+      "quiz_ids": ["OPSP01-L02-Q1", "OPSP01-L02-Q2", "OPSP01-L02-Q3"],
+      "flashcard_ids": ["OPSP01-L02-F1", "OPSP01-L02-F2"],
+      "reference_urls": ["https://argo-rollouts.readthedocs.io/en/stable/"],
       "status": "draft_review_required",
       "lab_id": "OPS-LAB-release_gate",
-      "code_example_paths": [
-        "labs/solutions/release_gate.py"
-      ]
+      "code_example_paths": ["labs/solutions/release_gate.py"]
     },
     {
       "id": "OPSP01-L03",
@@ -2626,21 +2014,10 @@
       },
       "content_path": "content/OPS-P/OPSP01/OPSP01-L03.md",
       "solution_path": "solutions/OPSP01-L03.md",
-      "prerequisite_ids": [
-        "OPSP01-L02"
-      ],
-      "quiz_ids": [
-        "OPSP01-L03-Q1",
-        "OPSP01-L03-Q2",
-        "OPSP01-L03-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSP01-L03-F1",
-        "OPSP01-L03-F2"
-      ],
-      "reference_urls": [
-        "https://tag-app-delivery.cncf.io/whitepapers/platforms/"
-      ],
+      "prerequisite_ids": ["OPSP01-L02"],
+      "quiz_ids": ["OPSP01-L03-Q1", "OPSP01-L03-Q2", "OPSP01-L03-Q3"],
+      "flashcard_ids": ["OPSP01-L03-F1", "OPSP01-L03-F2"],
+      "reference_urls": ["https://tag-app-delivery.cncf.io/whitepapers/platforms/"],
       "status": "draft_review_required"
     },
     {
@@ -2672,21 +2049,10 @@
       },
       "content_path": "content/OPS-P/OPSP01/OPSP01-L04.md",
       "solution_path": "solutions/OPSP01-L04.md",
-      "prerequisite_ids": [
-        "OPSP01-L03"
-      ],
-      "quiz_ids": [
-        "OPSP01-L04-Q1",
-        "OPSP01-L04-Q2",
-        "OPSP01-L04-Q3"
-      ],
-      "flashcard_ids": [
-        "OPSP01-L04-F1",
-        "OPSP01-L04-F2"
-      ],
-      "reference_urls": [
-        "https://owasp.org/www-project-devsecops-guideline/"
-      ],
+      "prerequisite_ids": ["OPSP01-L03"],
+      "quiz_ids": ["OPSP01-L04-Q1", "OPSP01-L04-Q2", "OPSP01-L04-Q3"],
+      "flashcard_ids": ["OPSP01-L04-F1", "OPSP01-L04-F2"],
+      "reference_urls": ["https://owasp.org/www-project-devsecops-guideline/"],
       "status": "draft_review_required"
     }
   ],

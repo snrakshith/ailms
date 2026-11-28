@@ -15,25 +15,25 @@ type LearnerOnboarding = {
 
 `LessonAttempt` is a historically durable submission result:
 
-| Field | Type | Notes |
-|---|---|---|
-| `userId`, `lessonId`, `lessonVersion` | string, string, number | Owner/content revision |
-| `idempotencyKey` | UUID string | Unique with `userId` |
-| `answers` | map of question → chosen option | Never trusted for scoring |
-| `correctCount`, `totalQuestions`, `scorePercent`, `passed` | number / boolean | Server-calculated |
-| `feedback` | question results | Snapshot of explanations and correct option |
-| `attemptedAt` | UTC date | Set by server |
+| Field                                                      | Type                            | Notes                                       |
+| ---------------------------------------------------------- | ------------------------------- | ------------------------------------------- |
+| `userId`, `lessonId`, `lessonVersion`                      | string, string, number          | Owner/content revision                      |
+| `idempotencyKey`                                           | UUID string                     | Unique with `userId`                        |
+| `answers`                                                  | map of question → chosen option | Never trusted for scoring                   |
+| `correctCount`, `totalQuestions`, `scorePercent`, `passed` | number / boolean                | Server-calculated                           |
+| `feedback`                                                 | question results                | Snapshot of explanations and correct option |
+| `attemptedAt`                                              | UTC date                        | Set by server                               |
 
 Unique compound index: `(userId, idempotencyKey)`.
 
 `LessonCompletion` is the authoritative reward record:
 
-| Field | Type | Notes |
-|---|---|---|
-| `userId`, `lessonId` | string | Unique compound index |
-| `lessonVersion` | number | Version when first mastered |
-| `xp` | number | XP awarded once |
-| `completedAt` | UTC date | Drives streak projection |
+| Field                | Type     | Notes                       |
+| -------------------- | -------- | --------------------------- |
+| `userId`, `lessonId` | string   | Unique compound index       |
+| `lessonVersion`      | number   | Version when first mastered |
+| `xp`                 | number   | XP awarded once             |
+| `completedAt`        | UTC date | Drives streak projection    |
 
 Unique index `(userId, lessonId)` means a retry or concurrent submission cannot award duplicate XP. Total XP is computed as `sum(completion.xp)`; no shared mutable counter.
 
@@ -49,24 +49,24 @@ Each path's first lesson is unlocked; lesson N requires completion of lesson N�
 
 All routes are prefixed `/api/v1`. Mutation requests require an `x-csrf-token` matching the issued signed CSRF cookie; all learning routes require a valid signed session.
 
-| Method | Path | Response and constraints |
-|---|---|---|
-| `POST` | `/auth/register` | Creates user and session; 201 |
-| `POST` | `/auth/login` | Valid session cookie |
-| `GET` | `/auth/me` | Public learner profile |
-| `PUT` | `/auth/onboarding` | Validated `LearnerOnboarding`; responds `{user}` |
-| `GET` | `/learning/overview` | Stats, recommended path, path list, last five completions |
-| `GET` | `/learning/paths` | `{data: LearningPath[]}` with lesson completion status |
-| `GET` | `/learning/paths/:id` | `{data: LearningPath}` or 404 |
-| `GET` | `/learning/lessons/:id` | `{data: LessonDetail}`; 403 if locked; no answer key |
+| Method | Path                           | Response and constraints                                                   |
+| ------ | ------------------------------ | -------------------------------------------------------------------------- |
+| `POST` | `/auth/register`               | Creates user and session; 201                                              |
+| `POST` | `/auth/login`                  | Valid session cookie                                                       |
+| `GET`  | `/auth/me`                     | Public learner profile                                                     |
+| `PUT`  | `/auth/onboarding`             | Validated `LearnerOnboarding`; responds `{user}`                           |
+| `GET`  | `/learning/overview`           | Stats, recommended path, path list, last five completions                  |
+| `GET`  | `/learning/paths`              | `{data: LearningPath[]}` with lesson completion status                     |
+| `GET`  | `/learning/paths/:id`          | `{data: LearningPath}` or 404                                              |
+| `GET`  | `/learning/lessons/:id`        | `{data: LessonDetail}`; 403 if locked; no answer key                       |
 | `POST` | `/learning/lessons/:id/submit` | `{data: SubmissionResult}`; 403 if locked; 409 conflicting idempotency key |
-| `GET` | `/learning/progress` | `LearningStats` |
+| `GET`  | `/learning/progress`           | `LearningStats`                                                            |
 
 ### Submission request
 
 ```json
 {
-  "answers": {"q1":"a", "q2":"b", "q3":"c"},
+  "answers": { "q1": "a", "q2": "b", "q3": "c" },
   "idempotencyKey": "f155697c-ac0c-4b44-a47e-cc5e1e8217fe"
 }
 ```
@@ -136,7 +136,6 @@ Formative Python labs use a sandboxed `iframe` with an opaque origin and a dispo
 `CapstoneProject` (`userId`, `slug`, `status=draft|submitted|published`, title, summary, HTTPS URLs, track, skills, reflection, timestamps). All mutation queries filter by the authenticated user. Public `GET` requires `status=published`; showcase warns that it is self-published, not assessed. Users may unpublish and delete. Privacy export omits password hash; deletion verifies password and explicit phrase, then deletes live learner records, quotas, projects and native refresh records, and anonymizes content-release author attribution. Logs and operator backups require separate retention controls.
 
 `NativeRefreshToken` stores only a SHA-256 digest of the opaque refresh token with 30-day expiry. Refresh atomically revokes the old digest and issues a new access/refresh pair. Web cookie CSRF remains enforced; native endpoints return no cookie and authenticated native writes require a verified mobile-audience bearer token.
-
 
 ## Billing LLD
 

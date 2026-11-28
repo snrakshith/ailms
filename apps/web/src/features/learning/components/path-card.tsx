@@ -34,7 +34,7 @@ export function PathCard({ path }: { path: LearningPath }) {
       <p className="aq-path-subtitle">{path.subtitle}</p>
       <p className="aq-card-description">{path.description}</p>
       <div className="aq-progress-track">
-        <div style={{ width: `${path.progressPercent}%` }} />
+        <progress value={path.progressPercent} max="100" aria-label={`${path.title} progress`} />
       </div>
       <div className="aq-path-footer">
         <span>

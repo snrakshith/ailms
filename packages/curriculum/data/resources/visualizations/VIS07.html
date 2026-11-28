@@ -1,1 +1,121 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LoRA parameter budget</title><style>body{font:16px system-ui;max-width:800px;margin:24px auto;padding:0 20px;background:#f7f8fa;color:#162438}h1{font-size:25px}section{background:white;border:1px solid #d9e1e9;border-radius:12px;padding:20px;margin:16px 0}input{width:100%}.row{display:grid;grid-template-columns:115px 1fr 100px;align-items:center;gap:8px;margin:10px 0}.bar{background:#15768b;height:18px;border-radius:3px}.track{background:#e9edf2}#note{font-weight:bold}svg{max-width:100%;height:150px}small{color:#526172}</style><h1>LoRA parameter budget</h1><p>Compare the adapter parameter count at different ranks for a 4096×4096 weight matrix. Bias and optimizer overhead excluded.</p><section><label for="s">Rank: <output id="val">8</output></label><input id="s" type="range" min="1" max="128" step="1" value="8"><button id="reset">Reset</button></section><section id="chart" aria-label="Computed values"></section><div id="boxes"></div><p id="note" aria-live="polite"></p><small>Learning simulation • values are calculated locally • no external service</small><script>function calculate(v){const base=4096*4096,adapter=v*8192;return {labels:['Full matrix','LoRA adapter'],values:[base,adapter],note:adapter.toLocaleString()+' adapter weights; '+(100*adapter/base).toFixed(2)+'% of full matrix'};} const s=document.getElementById('s');function render(){let v=Number(s.value),r=calculate(v);document.getElementById('val').textContent=v;let max=Math.max(...r.values,1e-10);let chart=document.getElementById('chart');chart.replaceChildren();r.labels.forEach((label,i)=>{let row=document.createElement('div');row.className='row';let a=document.createElement('span');a.textContent=label;let t=document.createElement('div');t.className='track';let b=document.createElement('div');b.className='bar';b.style.width=(100*r.values[i]/max)+'%';t.append(b);let c=document.createElement('span');c.textContent=Number(r.values[i].toPrecision(5)).toLocaleString();row.append(a,t,c);chart.append(row)});document.getElementById('note').textContent=r.note;if(r.boxes!==undefined){document.getElementById('boxes').innerHTML=`<svg viewBox="0 0 300 150" role="img" aria-label="overlapping rectangles"><rect x="25" y="25" width="100" height="100" fill="#15768b" fill-opacity=".3" stroke="#15768b"/><rect x="${25+r.boxes*50}" y="25" width="100" height="100" fill="#d97819" fill-opacity=".35" stroke="#d97819"/></svg>`}}s.addEventListener('input',render);document.getElementById('reset').addEventListener('click',()=>{s.value=8;render()});render();</script></html>
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>LoRA parameter budget</title
+  ><style>
+    body {
+      font: 16px system-ui;
+      max-width: 800px;
+      margin: 24px auto;
+      padding: 0 20px;
+      background: #f7f8fa;
+      color: #162438;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    section {
+      background: white;
+      border: 1px solid #d9e1e9;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+    input {
+      width: 100%;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 115px 1fr 100px;
+      align-items: center;
+      gap: 8px;
+      margin: 10px 0;
+    }
+    .bar {
+      background: #15768b;
+      height: 18px;
+      border-radius: 3px;
+    }
+    .track {
+      background: #e9edf2;
+    }
+    #note {
+      font-weight: bold;
+    }
+    svg {
+      max-width: 100%;
+      height: 150px;
+    }
+    small {
+      color: #526172;
+    }
+  </style>
+  <h1>LoRA parameter budget</h1>
+  <p>
+    Compare the adapter parameter count at different ranks for a 4096×4096 weight matrix. Bias and
+    optimizer overhead excluded.
+  </p>
+  <section>
+    <label for="s">Rank: <output id="val">8</output></label
+    ><input id="s" type="range" min="1" max="128" step="1" value="8" /><button id="reset">
+      Reset
+    </button>
+  </section>
+  <section id="chart" aria-label="Computed values"></section>
+  <div id="boxes"></div>
+  <p id="note" aria-live="polite"></p>
+  <small>Learning simulation • values are calculated locally • no external service</small>
+  <script>
+    function calculate(v) {
+      const base = 4096 * 4096,
+        adapter = v * 8192;
+      return {
+        labels: ['Full matrix', 'LoRA adapter'],
+        values: [base, adapter],
+        note:
+          adapter.toLocaleString() +
+          ' adapter weights; ' +
+          ((100 * adapter) / base).toFixed(2) +
+          '% of full matrix',
+      };
+    }
+    const s = document.getElementById('s');
+    function render() {
+      let v = Number(s.value),
+        r = calculate(v);
+      document.getElementById('val').textContent = v;
+      let max = Math.max(...r.values, 1e-10);
+      let chart = document.getElementById('chart');
+      chart.replaceChildren();
+      r.labels.forEach((label, i) => {
+        let row = document.createElement('div');
+        row.className = 'row';
+        let a = document.createElement('span');
+        a.textContent = label;
+        let t = document.createElement('div');
+        t.className = 'track';
+        let b = document.createElement('div');
+        b.className = 'bar';
+        b.style.width = (100 * r.values[i]) / max + '%';
+        t.append(b);
+        let c = document.createElement('span');
+        c.textContent = Number(r.values[i].toPrecision(5)).toLocaleString();
+        row.append(a, t, c);
+        chart.append(row);
+      });
+      document.getElementById('note').textContent = r.note;
+      if (r.boxes !== undefined) {
+        document.getElementById('boxes').innerHTML =
+          `<svg viewBox="0 0 300 150" role="img" aria-label="overlapping rectangles"><rect x="25" y="25" width="100" height="100" fill="#15768b" fill-opacity=".3" stroke="#15768b"/><rect x="${25 + r.boxes * 50}" y="25" width="100" height="100" fill="#d97819" fill-opacity=".35" stroke="#d97819"/></svg>`;
+      }
+    }
+    s.addEventListener('input', render);
+    document.getElementById('reset').addEventListener('click', () => {
+      s.value = 8;
+      render();
+    });
+    render();
+  </script>
+</html>

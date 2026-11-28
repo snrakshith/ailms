@@ -27,19 +27,40 @@
     };
   `;
   let active = null;
-  window.addEventListener('message', event => {
+  window.addEventListener('message', (event) => {
     if (event.source !== parent || event.data?.type !== 'aiquest:python:run') return;
-    const {nonce,code,tests}=event.data;
-    if(typeof nonce!=='string'||nonce.length>90)return;
-    if(active){active.terminate();active=null;}
-    const blob=new Blob([SCRIPT],{type:'text/javascript'});
-    const url=URL.createObjectURL(blob);
-    try{
-      active=new Worker(url);
-      active.onmessage=e=>{if(e.data?.nonce===nonce)parent.postMessage({type:'aiquest:python:result',...e.data},event.origin);};
-      active.onerror=()=>parent.postMessage({type:'aiquest:python:result',nonce,ok:false,error:'Python runtime could not load'},event.origin);
-      active.postMessage({code,tests,nonce});
-    }catch(error){parent.postMessage({type:'aiquest:python:result',nonce,ok:false,error:String(error)},event.origin);}
-    finally{URL.revokeObjectURL(url);}
+    const { nonce, code, tests } = event.data;
+    if (typeof nonce !== 'string' || nonce.length > 90) return;
+    if (active) {
+      active.terminate();
+      active = null;
+    }
+    const blob = new Blob([SCRIPT], { type: 'text/javascript' });
+    const url = URL.createObjectURL(blob);
+    try {
+      active = new Worker(url);
+      active.onmessage = (e) => {
+        if (e.data?.nonce === nonce)
+          parent.postMessage({ type: 'aiquest:python:result', ...e.data }, event.origin);
+      };
+      active.onerror = () =>
+        parent.postMessage(
+          {
+            type: 'aiquest:python:result',
+            nonce,
+            ok: false,
+            error: 'Python runtime could not load',
+          },
+          event.origin,
+        );
+      active.postMessage({ code, tests, nonce });
+    } catch (error) {
+      parent.postMessage(
+        { type: 'aiquest:python:result', nonce, ok: false, error: String(error) },
+        event.origin,
+      );
+    } finally {
+      URL.revokeObjectURL(url);
+    }
   });
 })();

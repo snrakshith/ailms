@@ -1,6 +1,7 @@
 # D02: Deep learning training engineering
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Batched data"]
@@ -17,6 +18,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Datasets, DataLoaders and training loops](D02-L01.md) — intermediate
 - [Normalization, dropout and early stopping](D02-L02.md) — intermediate
 - [Mixed precision, GPUs and distributed training](D02-L03.md) — advanced

@@ -4,12 +4,12 @@ For ground truth box [0,0,4,4] and prediction [2,2,6,6], using continuous xyxy c
 
 For binary masks with 100 predicted positive pixels, 80 ground-truth positive pixels and 60 intersecting, IoU=60/120=0.5 and Dice=120/180=0.667. Include per-class metrics and state how empty masks and ignored pixels are handled.
 
-| Task | Output | Typical metrics |
-|---|---|---|
-| Classification | Class logits | Macro F1, accuracy, calibration |
-| Detection | Boxes, classes, scores | AP, recall, latency |
-| Semantic segmentation | Per-pixel classes | mIoU, Dice |
-| Instance segmentation | Separate object masks | Mask AP |
-| Tracking | Identity over frames | IDF1, HOTA, identity switches |
+| Task                  | Output                 | Typical metrics                 |
+| --------------------- | ---------------------- | ------------------------------- |
+| Classification        | Class logits           | Macro F1, accuracy, calibration |
+| Detection             | Boxes, classes, scores | AP, recall, latency             |
+| Semantic segmentation | Per-pixel classes      | mIoU, Dice                      |
+| Instance segmentation | Separate object masks  | Mask AP                         |
+| Tracking              | Identity over frames   | IDF1, HOTA, identity switches   |
 
 **Exercise:** construct five predictions including duplicate, wrong-class, low-confidence, poor-overlap and correct cases; implement class-aware matching on a fixed IoU threshold, then explain how AP differs from precision at one threshold.

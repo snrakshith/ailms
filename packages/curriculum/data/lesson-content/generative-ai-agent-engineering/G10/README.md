@@ -1,6 +1,7 @@
 # G10: LLM and agent evaluation
 
 ## Module map
+
 ```mermaid
 flowchart TD
     N1["Golden fixtures"]
@@ -18,6 +19,7 @@ flowchart TD
 ```
 
 ## Lessons
+
 - [Agent evaluation, datasets and LLM-as-judge](G10-L01.md) — intermediate
 - [DeepEval for LLM and agent regression tests](G10-L02.md) — intermediate
 - [Ragas for RAG evaluation](G10-L03.md) — intermediate
@@ -27,4 +29,5 @@ flowchart TD
 Complete each exercise and demonstrate the related module examples.
 
 ## Extended study guide
+
 [ Evaluation design and release gates ](../../../guides/G10-deep-dive.md)

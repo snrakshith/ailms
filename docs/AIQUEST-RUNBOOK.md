@@ -11,17 +11,17 @@
 
 ## Diagnosing common failures
 
-| Symptom | Likely cause | Check/action |
-|---|---|---|
-| App stays on loading | API not running, CORS origin or Mongo unavailable | Check browser Network, API logs and `/health/ready` |
-| 503 readiness | Mongo disconnected, optional Redis unavailable | `docker compose -f docker/compose.yaml ps`; verify `MONGODB_URI` |
-| 403 CSRF | Missing CSRF cookie/header or wrong origin | Fetch `/auth/csrf`, inspect cookies, match `WEB_ORIGIN` |
-| 401 after login | Session cookie rejected or expired | Confirm same-site origin, JWT secret and cookie settings |
-| New account redirected to onboarding | Normal: profile not yet saved | Complete onboarding, refresh if needed |
-| Lesson returns 403 | Prior lesson in that path not mastered | Visit roadmap, pass prerequisite |
-| Duplicate XP concern | Retry succeeded or race | Verify unique `(userId,lessonId)` index and completion count |
-| Browser shows stale other learner data | React Query cache issue | Clear query cache on all authentication changes; code does this |
-| GitHub Actions fail to install | Missing registry access or dependency problem | `pnpm install` and commit lockfile after success |
+| Symptom                                | Likely cause                                      | Check/action                                                     |
+| -------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------- |
+| App stays on loading                   | API not running, CORS origin or Mongo unavailable | Check browser Network, API logs and `/health/ready`              |
+| 503 readiness                          | Mongo disconnected, optional Redis unavailable    | `docker compose -f docker/compose.yaml ps`; verify `MONGODB_URI` |
+| 403 CSRF                               | Missing CSRF cookie/header or wrong origin        | Fetch `/auth/csrf`, inspect cookies, match `WEB_ORIGIN`          |
+| 401 after login                        | Session cookie rejected or expired                | Confirm same-site origin, JWT secret and cookie settings         |
+| New account redirected to onboarding   | Normal: profile not yet saved                     | Complete onboarding, refresh if needed                           |
+| Lesson returns 403                     | Prior lesson in that path not mastered            | Visit roadmap, pass prerequisite                                 |
+| Duplicate XP concern                   | Retry succeeded or race                           | Verify unique `(userId,lessonId)` index and completion count     |
+| Browser shows stale other learner data | React Query cache issue                           | Clear query cache on all authentication changes; code does this  |
+| GitHub Actions fail to install         | Missing registry access or dependency problem     | `pnpm install` and commit lockfile after success                 |
 
 ## Data recovery and operations
 
