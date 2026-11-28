@@ -21,18 +21,18 @@ assert.match(app, /createReferralRouter/);
 const invoice = await read('apps/api/src/modules/billing/billing.routes.ts');
 assert.match(invoice, /buildPaymentReceipt/);
 const receipt = await read('apps/api/src/modules/billing/invoice.service.ts');
-assert.match(receipt, /order.status!=='paid'/);
+assert.match(receipt, /order\.status\s*!==\s*'paid'/);
 const billing = await read('apps/api/src/modules/billing/billing.service.ts');
-assert.match(billing, /settled.modifiedCount===1/);
+assert.match(billing, /settled\.modifiedCount\s*===\s*1/);
 const signup = await read('apps/api/src/modules/users/users.service.ts');
 assert.match(signup, /validateReferral/);
 assert.match(signup, /attributeReferral/);
 const learn = await read('apps/api/src/modules/learning/learning.service.ts');
 assert.match(learn, /markReferralQualified/);
 const consent = await read('apps/web/src/core/analytics/analytics.ts');
-assert.match(consent, /analyticsConsent\(\)!=='yes'/);
-assert.match(consent, /autocapture:false/);
-assert.match(consent, /disable_session_recording:true/);
+assert.match(consent, /analyticsConsent\(\)\s*!==\s*'yes'/);
+assert.match(consent, /autocapture:\s*false/);
+assert.match(consent, /disable_session_recording:\s*true/);
 assert.match(
   await read('apps/api/src/modules/notifications/notifications.service.ts'),
   /SESv2Client/,
@@ -54,7 +54,7 @@ const purchase = renderEmail('purchase-confirmation', { name: 'Example' }, 'http
 assert.match(purchase.text, /\/billing/);
 assert.match(purchase.subject, /learning pass/);
 const google = await read('apps/api/src/modules/referrals/referral.routes.ts');
-assert.match(google, /24\*60\*60\*1000/);
+assert.match(google, /24\s*\*\s*60\s*\*\s*60\s*\*\s*1000/);
 console.log(
   'PASS: pnpm workspace, portable integration contracts, referral lifecycle, paid receipt gate, opt-in analytics and transactional email templates',
 );
