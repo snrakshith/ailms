@@ -1,0 +1,9 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata: {name: learning-api-ingress, namespace: learning}
+spec:
+  podSelector: {matchLabels: {app: learning-api}}
+  policyTypes: [Ingress]
+  ingress:
+    - from: [{podSelector: {matchLabels: {role: lab-client}}}]
+      ports: [{protocol: TCP, port: 8080}]

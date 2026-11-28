@@ -1,0 +1,17 @@
+[
+  {
+    "id": "DSA-CASE01",
+    "title": "Autocomplete service",
+    "content_path": "cases/DSA-CASE01.md"
+  },
+  {
+    "id": "DSA-CASE02",
+    "title": "Dependency build planner",
+    "content_path": "cases/DSA-CASE02.md"
+  },
+  {
+    "id": "DSA-CASE03",
+    "title": "Streaming statistics and cache",
+    "content_path": "cases/DSA-CASE03.md"
+  }
+]

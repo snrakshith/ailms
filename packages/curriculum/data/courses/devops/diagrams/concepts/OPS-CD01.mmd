@@ -1,0 +1,14 @@
+flowchart TD
+  a["Reviewed commit"]
+  b["PR tests and scans"]
+  c["Block / remediate"]
+  d["Trusted build and digest"]
+  e["Image scan + SBOM + sign"]
+  f["Staging DAST + approval"]
+  g["Promote same digest"]
+  a --> b
+  b -->|fail| c
+  b -->|pass| d
+  d --> e
+  e -->|pass| f
+  f -->|pass| g

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "OPS-CD01",
+    "title": "Secure delivery gates",
+    "module_id": "OPSS01",
+    "svg_path": "diagrams/concepts/OPS-CD01.svg",
+    "mermaid_path": "diagrams/concepts/OPS-CD01.mmd"
+  },
+  {
+    "id": "OPS-CD02",
+    "title": "AWS private workload design",
+    "module_id": "OPSF05",
+    "svg_path": "diagrams/concepts/OPS-CD02.svg",
+    "mermaid_path": "diagrams/concepts/OPS-CD02.mmd"
+  },
+  {
+    "id": "OPS-CD03",
+    "title": "Kubernetes desired state",
+    "module_id": "OPSF06",
+    "svg_path": "diagrams/concepts/OPS-CD03.svg",
+    "mermaid_path": "diagrams/concepts/OPS-CD03.mmd"
+  },
+  {
+    "id": "OPS-CD04",
+    "title": "GitOps reconciliation",
+    "module_id": "OPSF07",
+    "svg_path": "diagrams/concepts/OPS-CD04.svg",
+    "mermaid_path": "diagrams/concepts/OPS-CD04.mmd"
+  },
+  {
+    "id": "OPS-CD05",
+    "title": "Telemetry and incident flow",
+    "module_id": "OPSF08",
+    "svg_path": "diagrams/concepts/OPS-CD05.svg",
+    "mermaid_path": "diagrams/concepts/OPS-CD05.mmd"
+  },
+  {
+    "id": "OPS-CD06",
+    "title": "Software supply chain evidence",
+    "module_id": "OPSS06",
+    "svg_path": "diagrams/concepts/OPS-CD06.svg",
+    "mermaid_path": "diagrams/concepts/OPS-CD06.mmd"
+  }
+]

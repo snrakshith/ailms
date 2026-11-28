@@ -1,0 +1,11 @@
+flowchart TD
+  a["Instrumented app"]
+  b["OpenTelemetry collector"]
+  c["Metrics / dashboard"]
+  d["Traces and logs"]
+  e["SLO alert and triage"]
+  a -->|OTLP| b
+  b --> c
+  b --> d
+  c -->|alert| e
+  d -->|correlate| e

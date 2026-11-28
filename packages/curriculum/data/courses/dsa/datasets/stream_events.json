@@ -1,0 +1,26 @@
+[
+  {
+    "key": "a",
+    "latency_ms": 20
+  },
+  {
+    "key": "b",
+    "latency_ms": 11
+  },
+  {
+    "key": "a",
+    "latency_ms": 25
+  },
+  {
+    "key": "c",
+    "latency_ms": 50
+  },
+  {
+    "key": "b",
+    "latency_ms": 13
+  },
+  {
+    "key": "a",
+    "latency_ms": 18
+  }
+]

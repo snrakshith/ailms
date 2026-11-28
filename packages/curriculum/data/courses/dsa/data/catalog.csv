@@ -1,0 +1,65 @@
+id,track_id,module_id,order,title,level,estimated_minutes,content_path,solution_path
+DSA00-L01,DSA-F,DSA00,1,Python for problem solving,beginner,45,content/DSA-F/DSA00/DSA00-L01.md,solutions/DSA00-L01.md
+DSA00-L02,DSA-F,DSA00,2,Big-O and amortized analysis,beginner,45,content/DSA-F/DSA00/DSA00-L02.md,solutions/DSA00-L02.md
+DSA00-L03,DSA-F,DSA00,3,"Recursion, invariants and correctness",beginner,45,content/DSA-F/DSA00/DSA00-L03.md,solutions/DSA00-L03.md
+DSA00-L04,DSA-F,DSA00,4,Testing and interview habits,beginner,45,content/DSA-F/DSA00/DSA00-L04.md,solutions/DSA00-L04.md
+DSA01-L01,DSA-A,DSA01,5,Day 1 — Arrays Basics & HashMap Introduction,beginner,105,content/DSA-A/DSA01/DSA01-L01.md,solutions/DSA01-L01.md
+DSA01-L02,DSA-A,DSA01,6,Day 2 — HashMap Deep Dive & Prefix Sums,beginner,105,content/DSA-A/DSA01/DSA01-L02.md,solutions/DSA01-L02.md
+DSA01-L03,DSA-A,DSA01,7,Day 3 — Sorting Tricks & Counting Patterns,beginner,105,content/DSA-A/DSA01/DSA01-L03.md,solutions/DSA01-L03.md
+DSA01-L04,DSA-A,DSA01,8,Day 4 — Matrix & 2D Array Patterns,beginner,105,content/DSA-A/DSA01/DSA01-L04.md,solutions/DSA01-L04.md
+DSA01-L05,DSA-A,DSA01,9,Day 5 — Arrays Review & Hard Problems,beginner,105,content/DSA-A/DSA01/DSA01-L05.md,solutions/DSA01-L05.md
+DSA02-L01,DSA-A,DSA02,10,Day 6 — Two Pointers Fundamentals,beginner,105,content/DSA-A/DSA02/DSA02-L01.md,solutions/DSA02-L01.md
+DSA02-L02,DSA-A,DSA02,11,Day 7 — Two Pointers: In-Place Modifications,beginner,105,content/DSA-A/DSA02/DSA02-L02.md,solutions/DSA02-L02.md
+DSA02-L03,DSA-A,DSA02,12,Day 8 — Sliding Window: Fixed Size,beginner,105,content/DSA-A/DSA02/DSA02-L03.md,solutions/DSA02-L03.md
+DSA02-L04,DSA-A,DSA02,13,Day 9 — Sliding Window: Variable Size,beginner,105,content/DSA-A/DSA02/DSA02-L04.md,solutions/DSA02-L04.md
+DSA03-L01,DSA-A,DSA03,14,Day 10 — Binary Search Fundamentals,beginner,105,content/DSA-A/DSA03/DSA03-L01.md,solutions/DSA03-L01.md
+DSA03-L02,DSA-A,DSA03,15,Day 11 — Binary Search on Answers,intermediate,105,content/DSA-A/DSA03/DSA03-L02.md,solutions/DSA03-L02.md
+DSA03-L03,DSA-A,DSA03,16,Day 12 — Binary Search: Advanced Variants,intermediate,105,content/DSA-A/DSA03/DSA03-L03.md,solutions/DSA03-L03.md
+DSA03-L04,DSA-A,DSA03,17,Day 13 — Binary Search + Prefix Sums,intermediate,105,content/DSA-A/DSA03/DSA03-L04.md,solutions/DSA03-L04.md
+DSA04-L01,DSA-S,DSA04,18,Day 14 — Stack Fundamentals,intermediate,105,content/DSA-S/DSA04/DSA04-L01.md,solutions/DSA04-L01.md
+DSA04-L02,DSA-S,DSA04,19,Day 15 — Monotonic Stack,intermediate,105,content/DSA-S/DSA04/DSA04-L02.md,solutions/DSA04-L02.md
+DSA04-L03,DSA-S,DSA04,20,Day 16 — Monotonic Stack: Advanced Applications,intermediate,105,content/DSA-S/DSA04/DSA04-L03.md,solutions/DSA04-L03.md
+DSA05-L01,DSA-S,DSA05,21,Day 17 — Linked Lists: Fundamentals,intermediate,105,content/DSA-S/DSA05/DSA05-L01.md,solutions/DSA05-L01.md
+DSA05-L02,DSA-S,DSA05,22,Day 18 — Linked Lists: Reversal Patterns,intermediate,105,content/DSA-S/DSA05/DSA05-L02.md,solutions/DSA05-L02.md
+DSA05-L03,DSA-S,DSA05,23,Day 19 — Linked Lists: Merging & Advanced,intermediate,105,content/DSA-S/DSA05/DSA05-L03.md,solutions/DSA05-L03.md
+DSA05-L04,DSA-S,DSA05,24,Day 20 — Linked Lists: Review + LRU/LFU,intermediate,105,content/DSA-S/DSA05/DSA05-L04.md,solutions/DSA05-L04.md
+DSA06-L01,DSA-T,DSA06,25,Day 21 — Tree Traversals & Basics,intermediate,105,content/DSA-T/DSA06/DSA06-L01.md,solutions/DSA06-L01.md
+DSA06-L02,DSA-T,DSA06,26,Day 22 — Tree BFS — Level-by-Level Processing,intermediate,105,content/DSA-T/DSA06/DSA06-L02.md,solutions/DSA06-L02.md
+DSA06-L03,DSA-T,DSA06,27,Day 23 — Tree DFS — Path and Sum Problems,intermediate,105,content/DSA-T/DSA06/DSA06-L03.md,solutions/DSA06-L03.md
+DSA06-L04,DSA-T,DSA06,28,Day 24 — Tree: Lowest Common Ancestor & Construction,intermediate,105,content/DSA-T/DSA06/DSA06-L04.md,solutions/DSA06-L04.md
+DSA06-L05,DSA-T,DSA06,29,Day 25 — Binary Search Trees,intermediate,105,content/DSA-T/DSA06/DSA06-L05.md,solutions/DSA06-L05.md
+DSA06-L06,DSA-T,DSA06,30,Day 26 — Tree: Advanced DFS Patterns,intermediate,105,content/DSA-T/DSA06/DSA06-L06.md,solutions/DSA06-L06.md
+DSA06-L07,DSA-T,DSA06,31,Day 27 — Trees: Revision & Hard Problems,intermediate,105,content/DSA-T/DSA06/DSA06-L07.md,solutions/DSA06-L07.md
+DSA07-L01,DSA-T,DSA07,32,Day 28 — Tries,intermediate,105,content/DSA-T/DSA07/DSA07-L01.md,solutions/DSA07-L01.md
+DSA07-L02,DSA-T,DSA07,33,Day 29 — Heaps & Priority Queues,intermediate,105,content/DSA-T/DSA07/DSA07-L02.md,solutions/DSA07-L02.md
+DSA08-L01,DSA-G,DSA08,34,Day 30 — Graph BFS & DFS Fundamentals,intermediate,105,content/DSA-G/DSA08/DSA08-L01.md,solutions/DSA08-L01.md
+DSA08-L02,DSA-G,DSA08,35,Day 31 — Graph BFS: Shortest Path (Unweighted),intermediate,105,content/DSA-G/DSA08/DSA08-L02.md,solutions/DSA08-L02.md
+DSA08-L03,DSA-G,DSA08,36,Day 32 — Graph: Union Find (Disjoint Set Union),intermediate,105,content/DSA-G/DSA08/DSA08-L03.md,solutions/DSA08-L03.md
+DSA08-L04,DSA-G,DSA08,37,Day 33 — Graph: Topological Sort,intermediate,105,content/DSA-G/DSA08/DSA08-L04.md,solutions/DSA08-L04.md
+DSA08-L05,DSA-G,DSA08,38,Day 34 — Graph: Dijkstra & Shortest Weighted Path,intermediate,105,content/DSA-G/DSA08/DSA08-L05.md,solutions/DSA08-L05.md
+DSA08-L06,DSA-G,DSA08,39,"Day 35 — Graph: Advanced — Cycles, Bridges, Components",intermediate,105,content/DSA-G/DSA08/DSA08-L06.md,solutions/DSA08-L06.md
+DSA08-L07,DSA-G,DSA08,40,Day 36 — Graph: Grid-Based Problems & Review,intermediate,105,content/DSA-G/DSA08/DSA08-L07.md,solutions/DSA08-L07.md
+DSA09-L01,DSA-G,DSA09,41,Day 37 — Backtracking Fundamentals,advanced,105,content/DSA-G/DSA09/DSA09-L01.md,solutions/DSA09-L01.md
+DSA09-L02,DSA-G,DSA09,42,Day 38 — Backtracking: Permutations & String Problems,advanced,105,content/DSA-G/DSA09/DSA09-L02.md,solutions/DSA09-L02.md
+DSA09-L03,DSA-G,DSA09,43,Day 39 — Backtracking: Grid and Board Problems,advanced,105,content/DSA-G/DSA09/DSA09-L03.md,solutions/DSA09-L03.md
+DSA09-L04,DSA-G,DSA09,44,"Day 40 — Backtracking: Palindromes, Partitions & IP Addresses",advanced,105,content/DSA-G/DSA09/DSA09-L04.md,solutions/DSA09-L04.md
+DSA10-L01,DSA-D,DSA10,45,Day 41 — 1D DP: Linear State,advanced,105,content/DSA-D/DSA10/DSA10-L01.md,solutions/DSA10-L01.md
+DSA10-L02,DSA-D,DSA10,46,Day 42 — 1D DP: Subsequences,advanced,105,content/DSA-D/DSA10/DSA10-L02.md,solutions/DSA10-L02.md
+DSA10-L03,DSA-D,DSA10,47,Day 43 — DP: 0/1 Knapsack Pattern,advanced,105,content/DSA-D/DSA10/DSA10-L03.md,solutions/DSA10-L03.md
+DSA10-L04,DSA-D,DSA10,48,Day 44 — 2D DP: Strings,advanced,105,content/DSA-D/DSA10/DSA10-L04.md,solutions/DSA10-L04.md
+DSA10-L05,DSA-D,DSA10,49,Day 45 — 2D DP: Grids and Paths,advanced,105,content/DSA-D/DSA10/DSA10-L05.md,solutions/DSA10-L05.md
+DSA11-L01,DSA-D,DSA11,50,Day 46 — DP: Interval DP,advanced,105,content/DSA-D/DSA11/DSA11-L01.md,solutions/DSA11-L01.md
+DSA11-L02,DSA-D,DSA11,51,Day 47 — DP: Decision Making (Stock Problems),advanced,105,content/DSA-D/DSA11/DSA11-L02.md,solutions/DSA11-L02.md
+DSA11-L03,DSA-D,DSA11,52,Day 48 — DP: Counting and Probability,advanced,105,content/DSA-D/DSA11/DSA11-L03.md,solutions/DSA11-L03.md
+DSA11-L04,DSA-D,DSA11,53,Day 49 — DP: Advanced String Patterns,advanced,105,content/DSA-D/DSA11/DSA11-L04.md,solutions/DSA11-L04.md
+DSA11-L05,DSA-D,DSA11,54,Day 50 — DP: Trees and DAGs,advanced,105,content/DSA-D/DSA11/DSA11-L05.md,solutions/DSA11-L05.md
+DSA11-L06,DSA-D,DSA11,55,Day 51 — DP: Bitmask DP,advanced,105,content/DSA-D/DSA11/DSA11-L06.md,solutions/DSA11-L06.md
+DSA11-L07,DSA-D,DSA11,56,Day 52 — DP: Mixed Review & Hard Consolidation,advanced,105,content/DSA-D/DSA11/DSA11-L07.md,solutions/DSA11-L07.md
+DSA12-L01,DSA-X,DSA12,57,Day 53 — Greedy Fundamentals,advanced,105,content/DSA-X/DSA12/DSA12-L01.md,solutions/DSA12-L01.md
+DSA12-L02,DSA-X,DSA12,58,Day 54 — Intervals,advanced,105,content/DSA-X/DSA12/DSA12-L02.md,solutions/DSA12-L02.md
+DSA12-L03,DSA-X,DSA12,59,Day 55 — Greedy: Advanced Scheduling & Task Problems,advanced,105,content/DSA-X/DSA12/DSA12-L03.md,solutions/DSA12-L03.md
+DSA13-L01,DSA-X,DSA13,60,Day 56 — Bit Manipulation,advanced,105,content/DSA-X/DSA13/DSA13-L01.md,solutions/DSA13-L01.md
+DSA13-L02,DSA-X,DSA13,61,Day 57 — Math & Number Theory,advanced,105,content/DSA-X/DSA13/DSA13-L02.md,solutions/DSA13-L02.md
+DSA14-L01,DSA-X,DSA14,62,Day 58 — Mixed Hard Problems: Pattern Identification Under Pressure,advanced,105,content/DSA-X/DSA14/DSA14-L01.md,solutions/DSA14-L01.md
+DSA14-L02,DSA-X,DSA14,63,"Day 59 — Company-Specific Problems: Google, Microsoft, Adobe Focus",advanced,105,content/DSA-X/DSA14/DSA14-L02.md,solutions/DSA14-L02.md
+DSA14-L03,DSA-X,DSA14,64,"Day 60 — Final Review: Booking.com, Intuit, MoEngage Focus + Revision",advanced,105,content/DSA-X/DSA14/DSA14-L03.md,solutions/DSA14-L03.md

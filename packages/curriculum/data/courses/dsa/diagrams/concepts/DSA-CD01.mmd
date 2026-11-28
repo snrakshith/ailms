@@ -1,0 +1,10 @@
+flowchart TD
+  a["Read next item"]
+  b["Check target - item"]
+  c["Return pair of indices"]
+  d["Store value and index"]
+  e["Advance scan"]
+  a --> b
+  b -->|found| c
+  b -->|missing| d
+  d --> e

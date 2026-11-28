@@ -1,0 +1,15 @@
+- name: Local sandbox configuration
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Ensure learning directory exists
+      ansible.builtin.file:
+        path: "{{ playbook_dir }}/sandbox"
+        state: directory
+        mode: '0700'
+    - name: Converge configuration
+      ansible.builtin.copy:
+        dest: "{{ playbook_dir }}/sandbox/app.conf"
+        content: "environment=learning
+"
+        mode: '0600'

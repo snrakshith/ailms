@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { catalog, findLesson, publicQuestions } from '../src/modules/learning/catalog.js';
-import { course } from '@aiquest/curriculum';
+import { course, courses, devopsCourse, dsaCourse } from '@aiquest/curriculum';
 import {
   calculateStreak,
   formatPaths,
@@ -14,9 +14,10 @@ describe('catalog contracts', () => {
   it('uses the complete canonical curriculum with stable lesson IDs', () => {
     const lessons = catalog.flatMap((path) => path.lessons);
     expect(new Set(lessons.map((x) => x.id)).size).toBe(lessons.length);
-    expect(catalog).toHaveLength(6);
-    expect(lessons).toHaveLength(106);
-    expect(lessons.every((x) => /^[FMDCPG]\d{2}-L\d{2}$/.test(x.id))).toBe(true);
+    expect(catalog).toHaveLength(16);
+    expect(lessons).toHaveLength(217);
+    expect(lessons).toContainEqual(expect.objectContaining({ id: 'OPSF01-L01' }));
+    expect(lessons).toContainEqual(expect.objectContaining({ id: 'DSA01-L01' }));
   });
   it('keeps instructor-only answer keys out of the learner catalog', () => {
     const lesson = findLesson('F01-L01')!;
@@ -30,6 +31,14 @@ describe('catalog contracts', () => {
     expect(course.assets.some((asset) => asset.kind === 'visualization')).toBe(true);
     expect(course.assets.some((asset) => asset.path.includes('instructor-material'))).toBe(false);
     expect(course.flashcards).toHaveLength(212);
+    expect(devopsCourse.lessons).toHaveLength(47);
+    expect(dsaCourse.lessons).toHaveLength(64);
+    expect(courses.flatMap((subject) => subject.flashcards)).toHaveLength(434);
+    expect(
+      courses
+        .flatMap((subject) => subject.assets)
+        .some((asset) => asset.path.includes('solutions')),
+    ).toBe(false);
   });
 });
 describe('assessment and progression', () => {

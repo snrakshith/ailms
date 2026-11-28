@@ -1,0 +1,60 @@
+[
+  {
+    "id": "DSA-PATH01",
+    "title": "Interview preparation",
+    "module_ids": [
+      "DSA00",
+      "DSA01",
+      "DSA02",
+      "DSA03",
+      "DSA04",
+      "DSA05",
+      "DSA06",
+      "DSA07",
+      "DSA08",
+      "DSA09",
+      "DSA10",
+      "DSA11",
+      "DSA12",
+      "DSA13",
+      "DSA14"
+    ],
+    "content_path": "pathways/DSA-PATH01.md",
+    "estimated_minutes": 6480
+  },
+  {
+    "id": "DSA-PATH02",
+    "title": "Algorithm foundations for application engineers",
+    "module_ids": [
+      "DSA00",
+      "DSA01",
+      "DSA02",
+      "DSA03",
+      "DSA04",
+      "DSA05",
+      "DSA06",
+      "DSA07",
+      "DSA08",
+      "DSA09",
+      "DSA12",
+      "DSA13"
+    ],
+    "content_path": "pathways/DSA-PATH02.md",
+    "estimated_minutes": 4905
+  },
+  {
+    "id": "DSA-PATH03",
+    "title": "Advanced problem-solving revision",
+    "module_ids": [
+      "DSA08",
+      "DSA09",
+      "DSA10",
+      "DSA11",
+      "DSA12",
+      "DSA13",
+      "DSA14"
+    ],
+    "content_path": "pathways/DSA-PATH03.md",
+    "estimated_minutes": 3255
+  }
+]

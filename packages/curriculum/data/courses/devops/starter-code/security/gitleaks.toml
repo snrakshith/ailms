@@ -1,0 +1,5 @@
+title = "Synthetic training rule only"
+[[rules]]
+id = "training-token"
+description = "Fake training token, never a credential"
+regex = '''TRAINING_TOKEN_[A-Z0-9]{8}'''

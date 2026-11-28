@@ -1,0 +1,44 @@
+[
+  {
+    "id": "DSA-CD01",
+    "title": "Complement lookup",
+    "module_id": "DSA01",
+    "svg_path": "diagrams/concepts/DSA-CD01.svg",
+    "mermaid_path": "diagrams/concepts/DSA-CD01.mmd"
+  },
+  {
+    "id": "DSA-CD02",
+    "title": "Window invariant",
+    "module_id": "DSA02",
+    "svg_path": "diagrams/concepts/DSA-CD02.svg",
+    "mermaid_path": "diagrams/concepts/DSA-CD02.mmd"
+  },
+  {
+    "id": "DSA-CD03",
+    "title": "Lower bound search",
+    "module_id": "DSA03",
+    "svg_path": "diagrams/concepts/DSA-CD03.svg",
+    "mermaid_path": "diagrams/concepts/DSA-CD03.mmd"
+  },
+  {
+    "id": "DSA-CD04",
+    "title": "Tree recursion contract",
+    "module_id": "DSA06",
+    "svg_path": "diagrams/concepts/DSA-CD04.svg",
+    "mermaid_path": "diagrams/concepts/DSA-CD04.mmd"
+  },
+  {
+    "id": "DSA-CD05",
+    "title": "Dijkstra relaxation",
+    "module_id": "DSA08",
+    "svg_path": "diagrams/concepts/DSA-CD05.svg",
+    "mermaid_path": "diagrams/concepts/DSA-CD05.mmd"
+  },
+  {
+    "id": "DSA-CD06",
+    "title": "Dynamic programming design",
+    "module_id": "DSA10",
+    "svg_path": "diagrams/concepts/DSA-CD06.svg",
+    "mermaid_path": "diagrams/concepts/DSA-CD06.mmd"
+  }
+]

@@ -1,0 +1,10 @@
+flowchart TD
+  a["Pop minimum cost"]
+  b["Stale entry?"]
+  c["Discard entry"]
+  d["Relax outgoing edges"]
+  e["Push improved distances"]
+  a --> b
+  b -->|yes| c
+  b -->|no| d
+  d -->|if improved| e

@@ -1,0 +1,17 @@
+[
+  {
+    "path": "datasets/canary_metrics.json",
+    "format": "json",
+    "synthetic": true
+  },
+  {
+    "path": "datasets/service_outage.json",
+    "format": "json",
+    "synthetic": true
+  },
+  {
+    "path": "datasets/synthetic_advisory.json",
+    "format": "json",
+    "synthetic": true
+  }
+]

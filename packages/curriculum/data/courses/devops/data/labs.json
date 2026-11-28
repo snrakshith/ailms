@@ -1,0 +1,156 @@
+[
+  {
+    "id": "OPS-LAB-permissions",
+    "title": "Processes, files and permissions",
+    "starter_path": "labs/starters/permissions.py",
+    "solution_path": "labs/solutions/permissions.py",
+    "notebook_path": "notebooks/permissions.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Create a local temporary config, set owner-only permissions and verify them.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF01-L01"
+  },
+  {
+    "id": "OPS-LAB-git_revert",
+    "title": "Git branching, commits and recovery",
+    "starter_path": "labs/starters/git_revert.py",
+    "solution_path": "labs/solutions/git_revert.py",
+    "notebook_path": "notebooks/git_revert.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Create a disposable Git repository, commit a change, inspect diff and revert it.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF02-L01"
+  },
+  {
+    "id": "OPS-LAB-artifact_hash",
+    "title": "Artifacts, caching and dependency locking",
+    "starter_path": "labs/starters/artifact_hash.py",
+    "solution_path": "labs/solutions/artifact_hash.py",
+    "notebook_path": "notebooks/artifact_hash.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Hash a build artifact and detect a changed copy.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF03-L04"
+  },
+  {
+    "id": "OPS-LAB-network_model",
+    "title": "AWS IAM, networking and compute",
+    "starter_path": "labs/starters/network_model.py",
+    "solution_path": "labs/solutions/network_model.py",
+    "notebook_path": "notebooks/network_model.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Design a two-AZ VPC with public load balancer, private app subnets and least-privilege role.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF05-L01"
+  },
+  {
+    "id": "OPS-LAB-probe_model",
+    "title": "Health probes, scaling and rolling releases",
+    "starter_path": "labs/starters/probe_model.py",
+    "solution_path": "labs/solutions/probe_model.py",
+    "notebook_path": "notebooks/probe_model.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Add distinct health probes and inspect rolling update behavior.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF06-L04"
+  },
+  {
+    "id": "OPS-LAB-error_ratio",
+    "title": "Prometheus metrics and PromQL",
+    "starter_path": "labs/starters/error_ratio.py",
+    "solution_path": "labs/solutions/error_ratio.py",
+    "notebook_path": "notebooks/error_ratio.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Compute request error ratio and design a latency histogram query.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF08-L01"
+  },
+  {
+    "id": "OPS-LAB-log_correlation",
+    "title": "ELK and structured logging",
+    "starter_path": "labs/starters/log_correlation.py",
+    "solution_path": "labs/solutions/log_correlation.py",
+    "notebook_path": "notebooks/log_correlation.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Parse synthetic JSON logs and locate error requests by correlation ID.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF08-L03"
+  },
+  {
+    "id": "OPS-LAB-slo_budget",
+    "title": "SLOs, incidents, Jira and PagerDuty",
+    "starter_path": "labs/starters/slo_budget.py",
+    "solution_path": "labs/solutions/slo_budget.py",
+    "notebook_path": "notebooks/slo_budget.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Run a tabletop exercise for an API error spike and calculate budget consumption.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSF08-L05"
+  },
+  {
+    "id": "OPS-LAB-sca_triage",
+    "title": "SCA: Snyk, Dependabot and OWASP Dependency-Check",
+    "starter_path": "labs/starters/sca_triage.py",
+    "solution_path": "labs/solutions/sca_triage.py",
+    "notebook_path": "notebooks/sca_triage.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Triage a synthetic dependency report and propose upgrade plus regression tests.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSS03-L01"
+  },
+  {
+    "id": "OPS-LAB-fake_secret",
+    "title": "Gitleaks and TruffleHog secrets detection",
+    "starter_path": "labs/starters/fake_secret.py",
+    "solution_path": "labs/solutions/fake_secret.py",
+    "notebook_path": "notebooks/fake_secret.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Detect a deliberately fake token with a local custom rule and document incident response.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSS03-L02"
+  },
+  {
+    "id": "OPS-LAB-policy_model",
+    "title": "OPA and Rego policy as code",
+    "starter_path": "labs/starters/policy_model.py",
+    "solution_path": "labs/solutions/policy_model.py",
+    "notebook_path": "notebooks/policy_model.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Write a deny policy for privileged containers and evaluate safe and unsafe manifests.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSS05-L02"
+  },
+  {
+    "id": "OPS-LAB-sbom_inventory",
+    "title": "Syft SBOM and dependency inventory",
+    "starter_path": "labs/starters/sbom_inventory.py",
+    "solution_path": "labs/solutions/sbom_inventory.py",
+    "notebook_path": "notebooks/sbom_inventory.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Generate a CycloneDX SBOM for a verified image and compare with a fixture inventory.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSS06-L02"
+  },
+  {
+    "id": "OPS-LAB-exceptions",
+    "title": "Secure scanners, CI identities and exceptions",
+    "starter_path": "labs/starters/exceptions.py",
+    "solution_path": "labs/solutions/exceptions.py",
+    "notebook_path": "notebooks/exceptions.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Create a security gate policy with fail-closed scanner errors and time-bound risk exceptions.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSS06-L04"
+  },
+  {
+    "id": "OPS-LAB-release_gate",
+    "title": "Progressive delivery and quality gates",
+    "starter_path": "labs/starters/release_gate.py",
+    "solution_path": "labs/solutions/release_gate.py",
+    "notebook_path": "notebooks/release_gate.ipynb",
+    "execution_status": "passed_offline_reference",
+    "task": "Apply a release gate to synthetic metrics with both healthy and unhealthy candidates.",
+    "scope": "local exercise or abstract model; not vendor integration",
+    "lesson_id": "OPSP01-L02"
+  }
+]

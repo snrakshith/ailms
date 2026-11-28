@@ -1,0 +1,11 @@
+flowchart TD
+  a["Candidate interval [lo,hi)"]
+  b["Inspect midpoint"]
+  c["lo = mid + 1"]
+  d["hi = mid"]
+  e["Return lo when empty"]
+  a --> b
+  b -->|value < target| c
+  b -->|value ≥ target| d
+  c -->|repeat until empty| e
+  d -->|repeat until empty| e

@@ -1,0 +1,1474 @@
+[
+  {
+    "id": "DSA00-L01-Q1",
+    "lesson_id": "DSA00-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Python for problem solving using the worked scenario."
+  },
+  {
+    "id": "DSA00-L01-Q2",
+    "lesson_id": "DSA00-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Python for problem solving, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA00-L01-Q3",
+    "lesson_id": "DSA00-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A queue uses deque.popleft rather than list.pop(0).",
+    "options": [
+      "Use Counter, deque and heapq; assert the expected order.",
+      "Mutating a list while iterating can skip items.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA00-L02-Q1",
+    "lesson_id": "DSA00-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Big-O and amortized analysis using the worked scenario."
+  },
+  {
+    "id": "DSA00-L02-Q2",
+    "lesson_id": "DSA00-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Big-O and amortized analysis, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA00-L02-Q3",
+    "lesson_id": "DSA00-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Doubling n roughly doubles a linear scan but quadruples a full pair enumeration.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Linear counts are 10,20; pair counts 45,190. Explain dominant term n(n-1)/2.",
+      "Time measurements alone cannot prove asymptotic bounds."
+    ]
+  },
+  {
+    "id": "DSA00-L03-Q1",
+    "lesson_id": "DSA00-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Recursion, invariants and correctness using the worked scenario."
+  },
+  {
+    "id": "DSA00-L03-Q2",
+    "lesson_id": "DSA00-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Recursion, invariants and correctness, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA00-L03-Q3",
+    "lesson_id": "DSA00-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: For sum of prefix, recurse on length n-1, base n=0.",
+    "options": [
+      "Missing base case or nondecreasing argument can overflow the stack.",
+      "Skip verification and accept the initial result.",
+      "Use index n to avoid slicing; recursion O(n) stack, iteration O(1) auxiliary."
+    ]
+  },
+  {
+    "id": "DSA00-L04-Q1",
+    "lesson_id": "DSA00-L04",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Testing and interview habits using the worked scenario."
+  },
+  {
+    "id": "DSA00-L04-Q2",
+    "lesson_id": "DSA00-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Testing and interview habits, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA00-L04-Q3",
+    "lesson_id": "DSA00-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Two-sum with repeated values tests whether the same index is reused.",
+    "options": [
+      "Assert each expected outcome; separate failing tests from implementation errors.",
+      "Only testing the example misses empty, duplicate and boundary inputs.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA01-L01-Q1",
+    "lesson_id": "DSA01-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `two_sum` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA01-L01-Q2",
+    "lesson_id": "DSA01-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 1 — Arrays Basics & HashMap Introduction, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA01-L01-Q3",
+    "lesson_id": "DSA01-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: For [4,1,7] and target 8, seeing 7 matches the earlier 1.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Hash maps trade memory for expected constant-time membership; look up the complement before inserting the current value so an index is never reused. Implement `two_sum` with the contract in the exercise. Trace For [4,1,7] and target 8, seeing 7 matches the earlier 1. Complexity: O(n) expected time, O(n) space. Run `labs/tests/day_01.py` and add a new boundary test.",
+      "Store indices rather than just values; duplicate values may be necessary."
+    ]
+  },
+  {
+    "id": "DSA01-L02-Q1",
+    "lesson_id": "DSA01-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `subarray_count` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA01-L02-Q2",
+    "lesson_id": "DSA01-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 2 — HashMap Deep Dive & Prefix Sums, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA01-L02-Q3",
+    "lesson_id": "DSA01-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [2,-2,2] has three subarrays summing to 2.",
+    "options": [
+      "A sliding window is not valid for arbitrary signed sums.",
+      "Skip verification and accept the initial result.",
+      "Prefix totals encode sums of contiguous ranges as differences. Count earlier prefixes equal to current total minus target; initialize the empty prefix once. Implement `subarray_count` with the contract in the exercise. Trace [2,-2,2] has three subarrays summing to 2. Complexity: O(n) expected time, O(n) space. Run `labs/tests/day_02.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA01-L03-Q1",
+    "lesson_id": "DSA01-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `sort_colors` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA01-L03-Q2",
+    "lesson_id": "DSA01-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 3 — Sorting Tricks & Counting Patterns, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA01-L03-Q3",
+    "lesson_id": "DSA01-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: For [2,0,1,2,0], swap 2 to the end, then re-examine the incoming value.",
+    "options": [
+      "Sorting groups duplicates and introduces order. A three-way partition instead maintains less-than, equal-to and unknown regions. Implement `sort_colors` with the contract in the exercise. Trace For [2,0,1,2,0], swap 2 to the end, then re-examine the incoming value. Complexity: O(n) time, O(1) auxiliary space. Run `labs/tests/day_03.py` and add a new boundary test.",
+      "Advancing after swapping from the unknown right region skips data.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA01-L04-Q1",
+    "lesson_id": "DSA01-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `rotate` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA01-L04-Q2",
+    "lesson_id": "DSA01-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 4 — Matrix & 2D Array Patterns, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA01-L04-Q3",
+    "lesson_id": "DSA01-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [[1,2],[3,4]] becomes [[3,1],[4,2]].",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "For square matrices, transposition swaps coordinates and reversing rows performs a clockwise rotation. Rectangular matrices need a different shape. Implement `rotate` with the contract in the exercise. Trace [[1,2],[3,4]] becomes [[3,1],[4,2]]. Complexity: O(n²) time, O(1) auxiliary space. Run `labs/tests/day_04.py` and add a new boundary test.",
+      "Swapping every pair twice undoes the transpose."
+    ]
+  },
+  {
+    "id": "DSA01-L05-Q1",
+    "lesson_id": "DSA01-L05",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `histogram` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA01-L05-Q2",
+    "lesson_id": "DSA01-L05",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 5 — Arrays Review & Hard Problems, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA01-L05-Q3",
+    "lesson_id": "DSA01-L05",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Heights [2,1,2] have maximum rectangle area 3.",
+    "options": [
+      "Flush remaining bars at the end and handle equal heights consistently.",
+      "Skip verification and accept the initial result.",
+      "An unresolved histogram bar can remain on a monotone stack until a shorter bar defines its right boundary. The new stack top defines the left boundary. Implement `histogram` with the contract in the exercise. Trace Heights [2,1,2] have maximum rectangle area 3. Complexity: O(n) time, O(n) space. Run `labs/tests/day_05.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA02-L01-Q1",
+    "lesson_id": "DSA02-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `sorted_pair` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA02-L01-Q2",
+    "lesson_id": "DSA02-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 6 — Two Pointers Fundamentals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA02-L01-Q3",
+    "lesson_id": "DSA02-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [1,3,5,8], target 8: 1+8 too high; 1+5 low; 3+5 works.",
+    "options": [
+      "For a sorted pair sum, a sum below target eliminates the left value paired with any remaining right value; a high sum eliminates the right value. Implement `sorted_pair` with the contract in the exercise. Trace [1,3,5,8], target 8: 1+8 too high; 1+5 low; 3+5 works. Complexity: O(n) time, O(1) space. Run `labs/tests/day_06.py` and add a new boundary test.",
+      "Sorting destroys original indices unless tracked.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA02-L02-Q1",
+    "lesson_id": "DSA02-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `move_zeroes` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA02-L02-Q2",
+    "lesson_id": "DSA02-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 7 — Two Pointers: In-Place Modifications, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA02-L02-Q3",
+    "lesson_id": "DSA02-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [0,1,0,3] becomes [1,3,0,0].",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Maintain a write index for the accepted prefix while a read index scans all values. The unprocessed suffix is irrelevant. Implement `move_zeroes` with the contract in the exercise. Trace [0,1,0,3] becomes [1,3,0,0]. Complexity: O(n) time, O(1) space. Run `labs/tests/day_07.py` and add a new boundary test.",
+      "Avoid losing the original order of nonzero values."
+    ]
+  },
+  {
+    "id": "DSA02-L03-Q1",
+    "lesson_id": "DSA02-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `fixed_window` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA02-L03-Q2",
+    "lesson_id": "DSA02-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 8 — Sliding Window: Fixed Size, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA02-L03-Q3",
+    "lesson_id": "DSA02-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [1,4,2,8] with k=2 gives sums 5,6,10.",
+    "options": [
+      "Validate 1 <= k <= n before taking the first window.",
+      "Skip verification and accept the initial result.",
+      "A fixed-width window changes by one outgoing and one incoming value each step. Updating a running sum avoids recomputation. Implement `fixed_window` with the contract in the exercise. Trace [1,4,2,8] with k=2 gives sums 5,6,10. Complexity: O(n) time, O(1) space. Run `labs/tests/day_08.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA02-L04-Q1",
+    "lesson_id": "DSA02-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `unique_window` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA02-L04-Q2",
+    "lesson_id": "DSA02-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 9 — Sliding Window: Variable Size, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA02-L04-Q3",
+    "lesson_id": "DSA02-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: abba: the second b advances left to 2; final a must not move left backwards.",
+    "options": [
+      "A variable window maintains a constraint. For unique characters, jump the left boundary past a duplicate only if it lies in the current window. Implement `unique_window` with the contract in the exercise. Trace abba: the second b advances left to 2; final a must not move left backwards. Complexity: O(n) expected time, O(min(n, alphabet)) space. Run `labs/tests/day_09.py` and add a new boundary test.",
+      "Stale last-seen indices must not shrink left backwards.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA03-L01-Q1",
+    "lesson_id": "DSA03-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `lower_bound` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA03-L01-Q2",
+    "lesson_id": "DSA03-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 10 — Binary Search Fundamentals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA03-L01-Q3",
+    "lesson_id": "DSA03-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [1,3,3,7], target 3 returns 1; target 9 returns 4.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "A half-open search range [lo,hi) preserves the first possible index with value >= target. When empty, lo is the insertion boundary. Implement `lower_bound` with the contract in the exercise. Trace [1,3,3,7], target 3 returns 1; target 9 returns 4. Complexity: O(log n) time, O(1) space. Run `labs/tests/day_10.py` and add a new boundary test.",
+      "Do not read a[len(a)] when target is larger than all values."
+    ]
+  },
+  {
+    "id": "DSA03-L02-Q1",
+    "lesson_id": "DSA03-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `min_speed` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA03-L02-Q2",
+    "lesson_id": "DSA03-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 11 — Binary Search on Answers, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA03-L02-Q3",
+    "lesson_id": "DSA03-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Piles [3,6,7,11], 8 hours: speed 4 is feasible, 3 is not.",
+    "options": [
+      "Use integer ceiling arithmetic and ensure a feasible upper bound.",
+      "Skip verification and accept the initial result.",
+      "Search a monotonic feasibility predicate rather than array indices. A higher processing speed never needs more time. Implement `min_speed` with the contract in the exercise. Trace Piles [3,6,7,11], 8 hours: speed 4 is feasible, 3 is not. Complexity: O(n log max(pile)) time, O(1) space. Run `labs/tests/day_11.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA03-L03-Q1",
+    "lesson_id": "DSA03-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `peak` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA03-L03-Q2",
+    "lesson_id": "DSA03-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 12 — Binary Search: Advanced Variants, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA03-L03-Q3",
+    "lesson_id": "DSA03-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [1,4,3,2] moves left toward index 1.",
+    "options": [
+      "A peak exists on the uphill side of a strict adjacent slope under the no-equal-neighbors assumption. Implement `peak` with the contract in the exercise. Trace [1,4,3,2] moves left toward index 1. Complexity: O(log n) time, O(1) space. Run `labs/tests/day_12.py` and add a new boundary test.",
+      "The loop must stop before reading mid+1 beyond the range.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA03-L04-Q1",
+    "lesson_id": "DSA03-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `lis` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA03-L04-Q2",
+    "lesson_id": "DSA03-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 13 — Binary Search + Prefix Sums, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA03-L04-Q3",
+    "lesson_id": "DSA03-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [3,5,2,4,6] ends with tails [2,4,6].",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "A tails array records the smallest possible final value for each length of increasing subsequence. Binary search replaces tails without claiming tails itself is a subsequence. Implement `lis` with the contract in the exercise. Trace [3,5,2,4,6] ends with tails [2,4,6]. Complexity: O(n log n) time, O(n) space. Run `labs/tests/day_13.py` and add a new boundary test.",
+      "Use lower bound for strictly increasing, upper bound for nondecreasing."
+    ]
+  },
+  {
+    "id": "DSA04-L01-Q1",
+    "lesson_id": "DSA04-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `brackets` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA04-L01-Q2",
+    "lesson_id": "DSA04-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 14 — Stack Fundamentals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA04-L01-Q3",
+    "lesson_id": "DSA04-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: ([)] fails because ) appears while [ is on top.",
+    "options": [
+      "Check for an empty stack before popping and require emptiness at finish.",
+      "Skip verification and accept the initial result.",
+      "A stack holds unmatched opening symbols. A closing symbol must match the most recent opening. Implement `brackets` with the contract in the exercise. Trace ([)] fails because ) appears while [ is on top. Complexity: O(n) time, O(n) space. Run `labs/tests/day_14.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA04-L02-Q1",
+    "lesson_id": "DSA04-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `warmer` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA04-L02-Q2",
+    "lesson_id": "DSA04-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 15 — Monotonic Stack, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA04-L02-Q3",
+    "lesson_id": "DSA04-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [73,74,72,76] yields waits [1,2,1,0].",
+    "options": [
+      "A decreasing stack stores indices whose next strictly greater value is unknown. Each index is pushed and popped at most once. Implement `warmer` with the contract in the exercise. Trace [73,74,72,76] yields waits [1,2,1,0]. Complexity: O(n) time, O(n) space. Run `labs/tests/day_15.py` and add a new boundary test.",
+      "Store indices, not values, to compute distances; equal values are not warmer.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA04-L03-Q1",
+    "lesson_id": "DSA04-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `sum_mins` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA04-L03-Q2",
+    "lesson_id": "DSA04-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 16 — Monotonic Stack: Advanced Applications, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA04-L03-Q3",
+    "lesson_id": "DSA04-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [2,2] has total minimum sum 6, not 8.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Subarray-minimum contribution counts choices of left and right boundary for which each element is the designated minimum. Break ties asymmetrically. Implement `sum_mins` with the contract in the exercise. Trace [2,2] has total minimum sum 6, not 8. Complexity: O(n) time, O(n) space. Run `labs/tests/day_16.py` and add a new boundary test.",
+      "Using strict comparisons on both sides double counts duplicates."
+    ]
+  },
+  {
+    "id": "DSA05-L01-Q1",
+    "lesson_id": "DSA05-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `reverse_list` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA05-L01-Q2",
+    "lesson_id": "DSA05-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 17 — Linked Lists: Fundamentals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA05-L01-Q3",
+    "lesson_id": "DSA05-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: 1→2→3 becomes 3→2→1.",
+    "options": [
+      "Changing next before saving it loses the remaining list.",
+      "Skip verification and accept the initial result.",
+      "A linked-list reversal preserves the next pointer before changing the current link; the reversed prefix and untouched suffix form a partition. Implement `reverse_list` with the contract in the exercise. Trace 1→2→3 becomes 3→2→1. Complexity: O(n) time, O(1) auxiliary space. Run `labs/tests/day_17.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA05-L02-Q1",
+    "lesson_id": "DSA05-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `reverse_between` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA05-L02-Q2",
+    "lesson_id": "DSA05-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 18 — Linked Lists: Reversal Patterns, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA05-L02-Q3",
+    "lesson_id": "DSA05-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: 1→2→3→4, reverse positions 2..3: 1→3→2→4.",
+    "options": [
+      "A dummy node allows uniform rewiring even when the segment begins at the head. Move each node after the segment head to the front of the segment. Implement `reverse_between` with the contract in the exercise. Trace 1→2→3→4, reverse positions 2..3: 1→3→2→4. Complexity: O(n) time, O(1) space. Run `labs/tests/day_18.py` and add a new boundary test.",
+      "Keep the segment tail fixed during head insertion.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA05-L03-Q1",
+    "lesson_id": "DSA05-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `merge_k` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA05-L03-Q2",
+    "lesson_id": "DSA05-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 19 — Linked Lists: Merging & Advanced, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA05-L03-Q3",
+    "lesson_id": "DSA05-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [[1,4],[2,3],[]] becomes [1,2,3,4].",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "A heap provides the smallest current head among k sorted streams. After extracting it, advance only that stream. Implement `merge_k` with the contract in the exercise. Trace [[1,4],[2,3],[]] becomes [1,2,3,4]. Complexity: O(N log(k+1)) time, O(k) auxiliary space plus output. Run `labs/tests/day_19.py` and add a new boundary test.",
+      "Heap entries need a tie-breaker when payloads are not comparable."
+    ]
+  },
+  {
+    "id": "DSA05-L04-Q1",
+    "lesson_id": "DSA05-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `lru` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA05-L04-Q2",
+    "lesson_id": "DSA05-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 20 — Linked Lists: Review + LRU/LFU, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA05-L04-Q3",
+    "lesson_id": "DSA05-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Capacity 2: insert a,b, read a, insert c; b is evicted.",
+    "options": [
+      "Updates also count as accesses; handle capacity zero.",
+      "Skip verification and accept the initial result.",
+      "Recency ordering and key lookup are independent responsibilities. An ordered map can model LRU with fast lookup and move-to-end. Implement `lru` with the contract in the exercise. Trace Capacity 2: insert a,b, read a, insert c; b is evicted. Complexity: O(1) expected per operation, O(capacity) space. Run `labs/tests/day_20.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA06-L01-Q1",
+    "lesson_id": "DSA06-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `depth` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA06-L01-Q2",
+    "lesson_id": "DSA06-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 21 — Tree Traversals & Basics, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA06-L01-Q3",
+    "lesson_id": "DSA06-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A root with one leaf has depth two.",
+    "options": [
+      "Tree DFS defines what a node returns to its parent. Depth is one plus maximum child depth; empty has depth zero. Implement `depth` with the contract in the exercise. Trace A root with one leaf has depth two. Complexity: O(n) time, O(h) stack. Run `labs/tests/day_21.py` and add a new boundary test.",
+      "Count nodes versus edges explicitly; recursion may exceed stack limit.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA06-L02-Q1",
+    "lesson_id": "DSA06-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `levels` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA06-L02-Q2",
+    "lesson_id": "DSA06-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 22 — Tree BFS — Level-by-Level Processing, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA06-L02-Q3",
+    "lesson_id": "DSA06-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Root 1 with children 2 and 3 gives [[1],[2,3]].",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Snapshot the queue length before processing a level; appended children belong to the next level. Implement `levels` with the contract in the exercise. Trace Root 1 with children 2 and 3 gives [[1],[2,3]]. Complexity: O(n) time, O(w) queue plus output. Run `labs/tests/day_22.py` and add a new boundary test.",
+      "Iterating until the queue is empty mixes levels."
+    ]
+  },
+  {
+    "id": "DSA06-L03-Q1",
+    "lesson_id": "DSA06-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `path_sum` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA06-L03-Q2",
+    "lesson_id": "DSA06-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 23 — Tree DFS — Path and Sum Problems, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA06-L03-Q3",
+    "lesson_id": "DSA06-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Root 1 with child 2: target 1 fails, target 3 succeeds.",
+    "options": [
+      "Treat a missing child as failure, not as a zero-valued leaf.",
+      "Skip verification and accept the initial result.",
+      "Root-to-leaf paths require a leaf check; pass remaining target downward. A matching internal node alone is not enough. Implement `path_sum` with the contract in the exercise. Trace Root 1 with child 2: target 1 fails, target 3 succeeds. Complexity: O(n) time, O(h) stack. Run `labs/tests/day_23.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA06-L04-Q1",
+    "lesson_id": "DSA06-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `build_tree` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA06-L04-Q2",
+    "lesson_id": "DSA06-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 24 — Tree: Lowest Common Ancestor & Construction, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA06-L04-Q3",
+    "lesson_id": "DSA06-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Preorder [2,1,3], inorder [1,2,3] gives root 2.",
+    "options": [
+      "For distinct node values, preorder identifies the root and an inorder position splits the subtree. Index bounds avoid slicing. Implement `build_tree` with the contract in the exercise. Trace Preorder [2,1,3], inorder [1,2,3] gives root 2. Complexity: O(n) expected time, O(n) index map and stack. Run `labs/tests/day_24.py` and add a new boundary test.",
+      "Duplicate values make this reconstruction ambiguous without identity data.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA06-L05-Q1",
+    "lesson_id": "DSA06-L05",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `valid_bst` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA06-L05-Q2",
+    "lesson_id": "DSA06-L05",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 25 — Binary Search Trees, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA06-L05-Q3",
+    "lesson_id": "DSA06-L05",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Root 5 with left child 3 whose right child is 6 is invalid.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "BST validity is global: each node must satisfy every ancestral lower and upper bound, not only its immediate parent. Implement `valid_bst` with the contract in the exercise. Trace Root 5 with left child 3 whose right child is 6 is invalid. Complexity: O(n) time, O(h) stack. Run `labs/tests/day_25.py` and add a new boundary test.",
+      "Use strict bounds if duplicates are disallowed."
+    ]
+  },
+  {
+    "id": "DSA06-L06-Q1",
+    "lesson_id": "DSA06-L06",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `good_nodes` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA06-L06-Q2",
+    "lesson_id": "DSA06-L06",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 26 — Tree: Advanced DFS Patterns, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA06-L06-Q3",
+    "lesson_id": "DSA06-L06",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Root 3, left 1, right 4: two good nodes.",
+    "options": [
+      "Do not share one mutable maximum across sibling paths.",
+      "Skip verification and accept the initial result.",
+      "A top-down DFS carries the maximum value on the root-to-node path. A node is good if its value is at least that maximum. Implement `good_nodes` with the contract in the exercise. Trace Root 3, left 1, right 4: two good nodes. Complexity: O(n) time, O(h) stack. Run `labs/tests/day_26.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA06-L07-Q1",
+    "lesson_id": "DSA06-L07",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `rob_tree` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA06-L07-Q2",
+    "lesson_id": "DSA06-L07",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 27 — Trees: Revision & Hard Problems, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA06-L07-Q3",
+    "lesson_id": "DSA06-L07",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Root 3 with children 4,5: best is 9.",
+    "options": [
+      "Tree DP returns mutually exclusive states. If a node is selected, its children must be skipped; otherwise choose the better state for each child. Implement `rob_tree` with the contract in the exercise. Trace Root 3 with children 4,5: best is 9. Complexity: O(n) time, O(h) stack. Run `labs/tests/day_27.py` and add a new boundary test.",
+      "Using a global visited flag loses independent subtree choices.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA07-L01-Q1",
+    "lesson_id": "DSA07-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `trie` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA07-L01-Q2",
+    "lesson_id": "DSA07-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 28 — Tries, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA07-L01-Q3",
+    "lesson_id": "DSA07-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Insert cat: ca is a prefix but is not a stored word.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "A trie shares prefix paths and records terminal markers separately from child maps. Implement `trie` with the contract in the exercise. Trace Insert cat: ca is a prefix but is not a stored word. Complexity: O(m) per operation, O(total characters) space. Run `labs/tests/day_28.py` and add a new boundary test.",
+      "An empty dictionary at a leaf is not sufficient to represent terminal status."
+    ]
+  },
+  {
+    "id": "DSA07-L02-Q1",
+    "lesson_id": "DSA07-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `median_stream` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA07-L02-Q2",
+    "lesson_id": "DSA07-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 29 — Heaps & Priority Queues, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA07-L02-Q3",
+    "lesson_id": "DSA07-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Insert 3,1,2: medians 3,2,2.",
+    "options": [
+      "Python heapq is a min-heap; negate lower-half values.",
+      "Skip verification and accept the initial result.",
+      "Two heaps partition a stream into lower and upper halves, with sizes differing by at most one and ordered boundary values. Implement `median_stream` with the contract in the exercise. Trace Insert 3,1,2: medians 3,2,2. Complexity: O(log n) insert, O(1) median, O(n) space. Run `labs/tests/day_29.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA08-L01-Q1",
+    "lesson_id": "DSA08-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `islands` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA08-L01-Q2",
+    "lesson_id": "DSA08-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 30 — Graph BFS & DFS Fundamentals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA08-L01-Q3",
+    "lesson_id": "DSA08-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Grid [[1,0],[0,1]] has two 4-connected islands.",
+    "options": [
+      "A flood fill marks each grid cell when discovered. Restart only from an unvisited land cell to count components. Implement `islands` with the contract in the exercise. Trace Grid [[1,0],[0,1]] has two 4-connected islands. Complexity: O(rc) time, O(rc) space. Run `labs/tests/day_30.py` and add a new boundary test.",
+      "Marking after dequeue allows duplicate enqueues.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA08-L02-Q1",
+    "lesson_id": "DSA08-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `multi_bfs` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA08-L02-Q2",
+    "lesson_id": "DSA08-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 31 — Graph BFS: Shortest Path (Unweighted), and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA08-L02-Q3",
+    "lesson_id": "DSA08-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Sources 0 and 4 on a chain yield distances [0,1,2,1,0].",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Multi-source BFS seeds all sources at distance zero and expands layer by layer. First discovery is shortest in an unweighted graph. Implement `multi_bfs` with the contract in the exercise. Trace Sources 0 and 4 on a chain yield distances [0,1,2,1,0]. Complexity: O(V+E) time, O(V) space. Run `labs/tests/day_31.py` and add a new boundary test.",
+      "Do not run independent BFS from every target."
+    ]
+  },
+  {
+    "id": "DSA08-L03-Q1",
+    "lesson_id": "DSA08-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `dsu` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA08-L03-Q2",
+    "lesson_id": "DSA08-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 32 — Graph: Union Find (Disjoint Set Union), and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA08-L03-Q3",
+    "lesson_id": "DSA08-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Union (0,1), then (1,2); find(0)==find(2).",
+    "options": [
+      "Only roots should be linked; duplicate unions must not decrement components.",
+      "Skip verification and accept the initial result.",
+      "Disjoint sets store parent forests. Path compression flattens search paths; union by size limits height. Implement `dsu` with the contract in the exercise. Trace Union (0,1), then (1,2); find(0)==find(2). Complexity: Amortized O(α(n)) per operation, O(n) space. Run `labs/tests/day_32.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA08-L04-Q1",
+    "lesson_id": "DSA08-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `topo` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA08-L04-Q2",
+    "lesson_id": "DSA08-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 33 — Graph: Topological Sort, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA08-L04-Q3",
+    "lesson_id": "DSA08-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: 0→1→2 gives [0,1,2]; 0↔1 fails.",
+    "options": [
+      "Kahn's algorithm starts with zero indegree vertices and removes outgoing edges. Remaining vertices after the queue empties imply a cycle. Implement `topo` with the contract in the exercise. Trace 0→1→2 gives [0,1,2]; 0↔1 fails. Complexity: O(V+E) time, O(V+E) space including adjacency. Run `labs/tests/day_33.py` and add a new boundary test.",
+      "Include isolated vertices and count duplicate edges consistently.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA08-L05-Q1",
+    "lesson_id": "DSA08-L05",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `dijkstra` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA08-L05-Q2",
+    "lesson_id": "DSA08-L05",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 34 — Graph: Dijkstra & Shortest Weighted Path, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA08-L05-Q3",
+    "lesson_id": "DSA08-L05",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: 0→1 weight 5, 0→2 weight 1, 2→1 weight 1 gives distance 2 to 1.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Dijkstra settles the smallest tentative distance when weights are nonnegative. Lazy heap entries with stale distances are ignored. Implement `dijkstra` with the contract in the exercise. Trace 0→1 weight 5, 0→2 weight 1, 2→1 weight 1 gives distance 2 to 1. Complexity: O((V+E) log(V+E)) time, O(V+E) auxiliary worst case. Run `labs/tests/day_34.py` and add a new boundary test.",
+      "Negative weights break the settled-distance proof."
+    ]
+  },
+  {
+    "id": "DSA08-L06-Q1",
+    "lesson_id": "DSA08-L06",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `bridges` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA08-L06-Q2",
+    "lesson_id": "DSA08-L06",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 35 — Graph: Advanced — Cycles, Bridges, Components, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA08-L06-Q3",
+    "lesson_id": "DSA08-L06",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Triangle plus tail edge 2-3: only 2-3 is a bridge.",
+    "options": [
+      "Parent edge IDs matter in multigraphs; the lab assumes simple graph.",
+      "Skip verification and accept the initial result.",
+      "DFS discovery time and low-link track whether a descendant can reach an ancestor without the parent edge. A tree edge is a bridge if low[child] > tin[parent]. Implement `bridges` with the contract in the exercise. Trace Triangle plus tail edge 2-3: only 2-3 is a bridge. Complexity: O(V+E) time, O(V+E) space including adjacency. Run `labs/tests/day_35.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA08-L07-Q1",
+    "lesson_id": "DSA08-L07",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `grid_budget` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA08-L07-Q2",
+    "lesson_id": "DSA08-L07",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 36 — Graph: Grid-Based Problems & Review, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA08-L07-Q3",
+    "lesson_id": "DSA08-L07",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A blocked direct route can be valid with one elimination.",
+    "options": [
+      "A grid search may need state beyond coordinates. For obstacle elimination, remaining budget is part of the vertex. Implement `grid_budget` with the contract in the exercise. Trace A blocked direct route can be valid with one elimination. Complexity: O(rc(k+1)) time and space. Run `labs/tests/day_36.py` and add a new boundary test.",
+      "Visited keyed only by cell may discard a better remaining-budget state.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA09-L01-Q1",
+    "lesson_id": "DSA09-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `subsets` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA09-L01-Q2",
+    "lesson_id": "DSA09-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 37 — Backtracking Fundamentals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA09-L01-Q3",
+    "lesson_id": "DSA09-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [1,2] produces [],[2],[1],[1,2] in exclude-first order.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Each subset branches on inclusion or exclusion; copying the current path at a leaf isolates output from later mutations. Implement `subsets` with the contract in the exercise. Trace [1,2] produces [],[2],[1],[1,2] in exclude-first order. Complexity: O(n 2^n) output time and space; O(n) stack. Run `labs/tests/day_37.py` and add a new boundary test.",
+      "Appending the same list object corrupts earlier answers."
+    ]
+  },
+  {
+    "id": "DSA09-L02-Q1",
+    "lesson_id": "DSA09-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `permutations` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA09-L02-Q2",
+    "lesson_id": "DSA09-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 38 — Backtracking: Permutations & String Problems, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA09-L02-Q3",
+    "lesson_id": "DSA09-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [1,2,3] has six orderings.",
+    "options": [
+      "Duplicate values require a separate skip strategy; this lab assumes distinct values.",
+      "Skip verification and accept the initial result.",
+      "Permutations choose an unused index each level. Backtracking restores both path and used status. Implement `permutations` with the contract in the exercise. Trace [1,2,3] has six orderings. Complexity: O(n·n!) output time and space; O(n) working space. Run `labs/tests/day_38.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA09-L03-Q1",
+    "lesson_id": "DSA09-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `word_search` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA09-L03-Q2",
+    "lesson_id": "DSA09-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 39 — Backtracking: Grid and Board Problems, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA09-L03-Q3",
+    "lesson_id": "DSA09-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Board AB/CD contains ABD along adjacent cells.",
+    "options": [
+      "Board search marks cells on the current path, not globally. Undo the mark on return so other starts remain possible. Implement `word_search` with the contract in the exercise. Trace Board AB/CD contains ABD along adjacent cells. Complexity: O(rc·4^L) upper bound, O(L) recursion/visited. Run `labs/tests/day_39.py` and add a new boundary test.",
+      "Failure to restore visited on return rejects valid alternate paths.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA09-L04-Q1",
+    "lesson_id": "DSA09-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `pal_parts` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA09-L04-Q2",
+    "lesson_id": "DSA09-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 40 — Backtracking: Palindromes, Partitions & IP Addresses, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA09-L04-Q3",
+    "lesson_id": "DSA09-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: aab gives [a,a,b] and [aa,b].",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Partitioning considers every next cut; palindrome checks prune invalid pieces before recursion. Implement `pal_parts` with the contract in the exercise. Trace aab gives [a,a,b] and [aa,b]. Complexity: O(n²·2^n) loose upper bound, O(n) stack plus output. Run `labs/tests/day_40.py` and add a new boundary test.",
+      "Memoizing solely by index is fine for decision/count but not a mutable output path."
+    ]
+  },
+  {
+    "id": "DSA10-L01-Q1",
+    "lesson_id": "DSA10-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `rob_line` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA10-L01-Q2",
+    "lesson_id": "DSA10-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 41 — 1D DP: Linear State, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA10-L01-Q3",
+    "lesson_id": "DSA10-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [2,7,9,3,1] yields 12.",
+    "options": [
+      "Updating the previous state too early changes the recurrence.",
+      "Skip verification and accept the initial result.",
+      "Linear DP summarizes the best solution up to a position. Nonadjacent choices compare skipping current versus taking current plus best two positions back. Implement `rob_line` with the contract in the exercise. Trace [2,7,9,3,1] yields 12. Complexity: O(n) time, O(1) space. Run `labs/tests/day_41.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA10-L02-Q1",
+    "lesson_id": "DSA10-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `lis_dp` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA10-L02-Q2",
+    "lesson_id": "DSA10-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 42 — 1D DP: Subsequences, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA10-L02-Q3",
+    "lesson_id": "DSA10-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [3,1,2,4] has length 3.",
+    "options": [
+      "Subsequence DP asks which earlier indices can precede the current item; the best predecessor determines dp[i]. Implement `lis_dp` with the contract in the exercise. Trace [3,1,2,4] has length 3. Complexity: O(n²) time, O(n) space. Run `labs/tests/day_42.py` and add a new boundary test.",
+      "A subsequence need not be contiguous; use strict comparison.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA10-L03-Q1",
+    "lesson_id": "DSA10-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `knapsack` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA10-L03-Q2",
+    "lesson_id": "DSA10-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 43 — DP: 0/1 Knapsack Pattern, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA10-L03-Q3",
+    "lesson_id": "DSA10-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Weights [2,3], values [3,4], capacity 4: best 4.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "0/1 knapsack uses each item at most once. Descending capacity order prevents reusing a newly updated state in the same iteration. Implement `knapsack` with the contract in the exercise. Trace Weights [2,3], values [3,4], capacity 4: best 4. Complexity: O(nW) time, O(W) space. Run `labs/tests/day_43.py` and add a new boundary test.",
+      "Ascending capacity turns the recurrence into unbounded knapsack."
+    ]
+  },
+  {
+    "id": "DSA10-L04-Q1",
+    "lesson_id": "DSA10-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `edit_distance` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA10-L04-Q2",
+    "lesson_id": "DSA10-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 44 — 2D DP: Strings, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA10-L04-Q3",
+    "lesson_id": "DSA10-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: cat→cut needs one substitution.",
+    "options": [
+      "Initialize empty-prefix costs; substitution cost is zero for equal characters.",
+      "Skip verification and accept the initial result.",
+      "Edit distance uses prefixes as states. Each cell compares insertion, deletion, substitution or a free match. Implement `edit_distance` with the contract in the exercise. Trace cat→cut needs one substitution. Complexity: O(mn) time, O(n) space. Run `labs/tests/day_44.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA10-L05-Q1",
+    "lesson_id": "DSA10-L05",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `grid_paths` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA10-L05-Q2",
+    "lesson_id": "DSA10-L05",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 45 — 2D DP: Grids and Paths, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA10-L05-Q3",
+    "lesson_id": "DSA10-L05",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: 2×2 open grid has two paths; block top-right and one remains.",
+    "options": [
+      "Grid path DP adds paths from top and left, resetting blocked cells to zero. One row is enough because previous row values persist. Implement `grid_paths` with the contract in the exercise. Trace 2×2 open grid has two paths; block top-right and one remains. Complexity: O(rc) time, O(c) space. Run `labs/tests/day_45.py` and add a new boundary test.",
+      "If start is blocked the initial value must become zero.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA11-L01-Q1",
+    "lesson_id": "DSA11-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `burst` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA11-L01-Q2",
+    "lesson_id": "DSA11-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 46 — DP: Interval DP, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA11-L01-Q3",
+    "lesson_id": "DSA11-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [3,1,5,8] yields 167.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Interval DP chooses a final action whose neighbors are known after the interior is solved. In burst balloons, the last balloon splits independent intervals. Implement `burst` with the contract in the exercise. Trace [3,1,5,8] yields 167. Complexity: O(n³) time, O(n²) space. Run `labs/tests/day_46.py` and add a new boundary test.",
+      "Choosing the first burst does not preserve fixed interval neighbors."
+    ]
+  },
+  {
+    "id": "DSA11-L02-Q1",
+    "lesson_id": "DSA11-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `stock_fee` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA11-L02-Q2",
+    "lesson_id": "DSA11-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 47 — DP: Decision Making (Stock Problems), and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA11-L02-Q3",
+    "lesson_id": "DSA11-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Prices [1,3,2,8,4,9], fee 2 yields 8.",
+    "options": [
+      "Avoid unintended same-day state dependencies by saving old values.",
+      "Skip verification and accept the initial result.",
+      "Stock DP describes held and cash states, with transitions using the previous day's values. Fees apply only to a sale in this convention. Implement `stock_fee` with the contract in the exercise. Trace Prices [1,3,2,8,4,9], fee 2 yields 8. Complexity: O(n) time, O(1) space. Run `labs/tests/day_47.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA11-L03-Q1",
+    "lesson_id": "DSA11-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `catalan` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA11-L03-Q2",
+    "lesson_id": "DSA11-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 48 — DP: Counting and Probability, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA11-L03-Q3",
+    "lesson_id": "DSA11-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: n=3 has five distinct BST shapes.",
+    "options": [
+      "Catalan counting multiplies independent left and right subtree choices for each root then sums over roots. Implement `catalan` with the contract in the exercise. Trace n=3 has five distinct BST shapes. Complexity: O(n²) time, O(n) space. Run `labs/tests/day_48.py` and add a new boundary test.",
+      "Use dp[0]=1 for the empty tree; otherwise all products vanish.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA11-L04-Q1",
+    "lesson_id": "DSA11-L04",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `wildcard` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA11-L04-Q2",
+    "lesson_id": "DSA11-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 49 — DP: Advanced String Patterns, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA11-L04-Q3",
+    "lesson_id": "DSA11-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: abef matches a*f; ab does not match a?c.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Glob wildcard DP distinguishes ? (one character) and * (zero or more arbitrary characters). Regex star has different semantics. Implement `wildcard` with the contract in the exercise. Trace abef matches a*f; ab does not match a?c. Complexity: O(mn) time, O(n) space. Run `labs/tests/day_49.py` and add a new boundary test.",
+      "Do not use a regex recurrence for glob wildcard matching."
+    ]
+  },
+  {
+    "id": "DSA11-L05-Q1",
+    "lesson_id": "DSA11-L05",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `diameter` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA11-L05-Q2",
+    "lesson_id": "DSA11-L05",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 50 — DP: Trees and DAGs, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA11-L05-Q3",
+    "lesson_id": "DSA11-L05",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Three-node chain has diameter 2.",
+    "options": [
+      "Returning diameter instead of height breaks parent computation.",
+      "Skip verification and accept the initial result.",
+      "Tree DP combines child heights and records the best diameter crossing any node. Height counts nodes; diameter counts edges. Implement `diameter` with the contract in the exercise. Trace Three-node chain has diameter 2. Complexity: O(n) time, O(h) stack. Run `labs/tests/day_50.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA11-L06-Q1",
+    "lesson_id": "DSA11-L06",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `visit_all` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA11-L06-Q2",
+    "lesson_id": "DSA11-L06",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 51 — DP: Bitmask DP, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA11-L06-Q3",
+    "lesson_id": "DSA11-L06",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A chain of 3 nodes requires two edges to visit all nodes.",
+    "options": [
+      "A bitmask encodes visited vertices and BFS explores (vertex,mask). All starting vertices can seed distance zero. Implement `visit_all` with the contract in the exercise. Trace A chain of 3 nodes requires two edges to visit all nodes. Complexity: O((V+E)2^V) time, O(V2^V) space. Run `labs/tests/day_51.py` and add a new boundary test.",
+      "Do not mark only vertices; same vertex with different mask is distinct.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA11-L07-Q1",
+    "lesson_id": "DSA11-L07",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `longest_parens` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA11-L07-Q2",
+    "lesson_id": "DSA11-L07",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 52 — DP: Mixed Review & Hard Consolidation, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA11-L07-Q3",
+    "lesson_id": "DSA11-L07",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: )()()) yields length 4.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "A stack of unmatched opening indices and a sentinel for the last invalid boundary can compute longest valid parentheses. Implement `longest_parens` with the contract in the exercise. Trace )()()) yields length 4. Complexity: O(n) time, O(n) space. Run `labs/tests/day_52.py` and add a new boundary test.",
+      "When popping empties the stack, current index becomes new boundary."
+    ]
+  },
+  {
+    "id": "DSA12-L01-Q1",
+    "lesson_id": "DSA12-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `can_jump` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA12-L01-Q2",
+    "lesson_id": "DSA12-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 53 — Greedy Fundamentals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA12-L01-Q3",
+    "lesson_id": "DSA12-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [3,2,1,0,4] fails; [2,0,1] succeeds.",
+    "options": [
+      "Do not extend reach from unreachable positions.",
+      "Skip verification and accept the initial result.",
+      "Greedy reachability maintains farthest reachable index; if next index is beyond it no future index can be reached. Implement `can_jump` with the contract in the exercise. Trace [3,2,1,0,4] fails; [2,0,1] succeeds. Complexity: O(n) time, O(1) space. Run `labs/tests/day_53.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA12-L02-Q1",
+    "lesson_id": "DSA12-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `merge_intervals` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA12-L02-Q2",
+    "lesson_id": "DSA12-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 54 — Intervals, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA12-L02-Q3",
+    "lesson_id": "DSA12-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [1,3],[2,4],[6,7] yields [1,4],[6,7].",
+    "options": [
+      "Sort intervals by start; merge when next start is at most current end for closed intervals. Implement `merge_intervals` with the contract in the exercise. Trace [1,3],[2,4],[6,7] yields [1,4],[6,7]. Complexity: O(n log n) time, O(n) output and sort space. Run `labs/tests/day_54.py` and add a new boundary test.",
+      "Meeting scheduling usually uses half-open intervals, so touching semantics differ.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA12-L03-Q1",
+    "lesson_id": "DSA12-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `schedule_courses` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA12-L03-Q2",
+    "lesson_id": "DSA12-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 55 — Greedy: Advanced Scheduling & Task Problems, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA12-L03-Q3",
+    "lesson_id": "DSA12-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: (3,3),(2,4),(1,5): replacing 3 allows two courses.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "For maximum number of courses by deadline, process deadlines in order and remove longest duration if total exceeds deadline. Implement `schedule_courses` with the contract in the exercise. Trace (3,3),(2,4),(1,5): replacing 3 allows two courses. Complexity: O(n log n) time, O(n) space. Run `labs/tests/day_55.py` and add a new boundary test.",
+      "Heap stores durations, not deadlines; justify exchange argument."
+    ]
+  },
+  {
+    "id": "DSA13-L01-Q1",
+    "lesson_id": "DSA13-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `single_number` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA13-L01-Q2",
+    "lesson_id": "DSA13-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 56 — Bit Manipulation, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA13-L01-Q3",
+    "lesson_id": "DSA13-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [4,1,4,2,2] returns 1.",
+    "options": [
+      "The guarantee fails for arbitrary occurrence counts.",
+      "Skip verification and accept the initial result.",
+      "XOR is associative, commutative and cancels equal pairs. A unique value remains if every other value appears exactly twice. Implement `single_number` with the contract in the exercise. Trace [4,1,4,2,2] returns 1. Complexity: O(n) time, O(1) space. Run `labs/tests/day_56.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA13-L02-Q1",
+    "lesson_id": "DSA13-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `power` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA13-L02-Q2",
+    "lesson_id": "DSA13-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 57 — Math & Number Theory, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA13-L02-Q3",
+    "lesson_id": "DSA13-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: 3^13 = 3^8 · 3^4 · 3.",
+    "options": [
+      "Binary exponentiation squares the base while consuming exponent bits, multiplying the accumulator on set bits. Implement `power` with the contract in the exercise. Trace 3^13 = 3^8 · 3^4 · 3. Complexity: O(log exponent) multiplications, O(1) variables (big-int cost excluded). Run `labs/tests/day_57.py` and add a new boundary test.",
+      "Negative exponents require reciprocal handling; the lab uses nonnegative exponents.",
+      "Skip verification and accept the initial result."
+    ]
+  },
+  {
+    "id": "DSA14-L01-Q1",
+    "lesson_id": "DSA14-L01",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `missing_positive` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA14-L01-Q2",
+    "lesson_id": "DSA14-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 58 — Mixed Hard Problems: Pattern Identification Under Pressure, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA14-L01-Q3",
+    "lesson_id": "DSA14-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [3,4,-1,1] returns 2.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Cyclic placement maps each positive value v in 1..n to index v-1. Each successful swap permanently places at least one value. Implement `missing_positive` with the contract in the exercise. Trace [3,4,-1,1] returns 2. Complexity: O(n) time, O(1) auxiliary space. Run `labs/tests/day_58.py` and add a new boundary test.",
+      "Duplicate values can cause infinite swaps without an equality guard."
+    ]
+  },
+  {
+    "id": "DSA14-L02-Q1",
+    "lesson_id": "DSA14-L02",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `job_profit` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA14-L02-Q2",
+    "lesson_id": "DSA14-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 59 — Company-Specific Problems: Google, Microsoft, Adobe Focus, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA14-L02-Q3",
+    "lesson_id": "DSA14-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Jobs (1,3,5),(2,5,7),(3,6,8) yield 13.",
+    "options": [
+      "For half-open jobs, end <= start is compatible; ensure search only earlier jobs.",
+      "Skip verification and accept the initial result.",
+      "Weighted interval scheduling sorts by finish time; binary search finds the count of compatible earlier jobs; DP chooses take or skip. Implement `job_profit` with the contract in the exercise. Trace Jobs (1,3,5),(2,5,7),(3,6,8) yield 13. Complexity: O(n log n) time, O(n) space. Run `labs/tests/day_59.py` and add a new boundary test."
+    ]
+  },
+  {
+    "id": "DSA14-L03-Q1",
+    "lesson_id": "DSA14-L03",
+    "type": "short_answer",
+    "question": "What invariant or recurrence makes `top_frequency` correct, and what are its time and space costs?"
+  },
+  {
+    "id": "DSA14-L03-Q2",
+    "lesson_id": "DSA14-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Day 60 — Final Review: Booking.com, Intuit, MoEngage Focus + Revision, and how would you detect or prevent it?"
+  },
+  {
+    "id": "DSA14-L03-Q3",
+    "lesson_id": "DSA14-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: [4,4,3,3,2], k=1 returns 3 using smaller-value tie break.",
+    "options": [
+      "Top-k frequency combines counting with a size-k heap or bucket grouping; ties need a declared rule. Implement `top_frequency` with the contract in the exercise. Trace [4,4,3,3,2], k=1 returns 3 using smaller-value tie break. Complexity: O(n+u log u) time, O(u) space for sort-based solution. Run `labs/tests/day_60.py` and add a new boundary test.",
+      "Do not assume the order of equal-frequency elements is unique.",
+      "Skip verification and accept the initial result."
+    ]
+  }
+]

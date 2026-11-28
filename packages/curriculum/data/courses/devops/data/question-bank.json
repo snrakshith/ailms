@@ -1,0 +1,1412 @@
+[
+  {
+    "id": "OPSF01-L01-Q1",
+    "lesson_id": "OPSF01-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Processes, files and permissions using the worked scenario.",
+    "answer": "Linux exposes process state through PID, parent PID, signals and open descriptors. Permissions apply to owner/group/other; directory execute grants traversal. Prefer graceful SIGTERM and inspect before stopping processes.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF01-L01-Q2",
+    "lesson_id": "OPSF01-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Processes, files and permissions, and how would you detect or prevent it?",
+    "answer": "chmod 777 hides the root cause and broadens access. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF01-L01-Q3",
+    "lesson_id": "OPSF01-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A service cannot read a config with mode 600 owned by another account. Check identity and path permissions before changing modes.",
+    "options": [
+      "Use mktemp, chmod 600 and stat; delete only the created temp directory.",
+      "chmod 777 hides the root cause and broadens access.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Use mktemp, chmod 600 and stat; delete only the created temp directory.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF01-L02-Q1",
+    "lesson_id": "OPSF01-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Shell scripting and automation using the worked scenario.",
+    "answer": "Shell exit codes are part of a command contract. Quote expansions, validate inputs, use a deliberate working directory and handle temporary files with traps. pipefail prevents upstream failures being masked in Bash.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF01-L02-Q2",
+    "lesson_id": "OPSF01-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Shell scripting and automation, and how would you detect or prevent it?",
+    "answer": "set -e does not replace explicit checks and has exceptions in conditional contexts. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF01-L02-Q3",
+    "lesson_id": "OPSF01-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A build piped through tee can appear successful when the build failed; pipefail preserves the failed pipeline status.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use explicit argument checks and return nonzero on invalid input; test both branches.",
+      "set -e does not replace explicit checks and has exceptions in conditional contexts."
+    ],
+    "correct_option": 1,
+    "answer": "Use explicit argument checks and return nonzero on invalid input; test both branches.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF01-L03-Q1",
+    "lesson_id": "OPSF01-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Networking, DNS, HTTP and TLS using the worked scenario.",
+    "answer": "DNS resolves names, TCP establishes transport, TLS authenticates endpoints and encrypts traffic, HTTP carries requests. Separate name lookup, connectivity, TLS and app status when debugging.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF01-L03-Q2",
+    "lesson_id": "OPSF01-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Networking, DNS, HTTP and TLS, and how would you detect or prevent it?",
+    "answer": "Do not disable certificate verification to fix trust errors. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF01-L03-Q3",
+    "lesson_id": "OPSF01-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A 502 from a proxy indicates it answered HTTP, unlike a DNS failure or TCP timeout.",
+    "options": [
+      "Do not disable certificate verification to fix trust errors.",
+      "Skip verification and accept the initial result.",
+      "Start python http.server on loopback in one terminal; inspect headers from another; stop the server afterwards."
+    ],
+    "correct_option": 2,
+    "answer": "Start python http.server on loopback in one terminal; inspect headers from another; stop the server afterwards.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF02-L01-Q1",
+    "lesson_id": "OPSF02-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Git branching, commits and recovery using the worked scenario.",
+    "answer": "Commits are immutable snapshots with parent links; branches are movable refs. Merge preserves branch history; rebase rewrites commits. Revert creates a compensating commit; reset moves refs and can discard work.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF02-L01-Q2",
+    "lesson_id": "OPSF02-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Git branching, commits and recovery, and how would you detect or prevent it?",
+    "answer": "Avoid destructive reset on shared branches or unsaved working trees. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF02-L01-Q3",
+    "lesson_id": "OPSF02-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A faulty shared commit should usually be reverted, not force-pushed away.",
+    "options": [
+      "Commit a baseline, commit a change, then git revert HEAD and verify file state.",
+      "Avoid destructive reset on shared branches or unsaved working trees.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Commit a baseline, commit a change, then git revert HEAD and verify file state.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF02-L02-Q1",
+    "lesson_id": "OPSF02-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of GitHub pull requests and governance using the worked scenario.",
+    "answer": "A PR proposes a merge; required checks, CODEOWNERS review, protected branches and restricted bypass enforce server-side policy. Hooks are feedback, not a trust boundary.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF02-L02-Q2",
+    "lesson_id": "OPSF02-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in GitHub pull requests and governance, and how would you detect or prevent it?",
+    "answer": "Do not allow unreviewed workflows or broad write access to protected branches. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF02-L02-Q3",
+    "lesson_id": "OPSF02-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A developer skips a pre-commit hook, but required CI still blocks a failing change.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Require PR, one approval and successful CI; verify a failed check blocks merge.",
+      "Do not allow unreviewed workflows or broad write access to protected branches."
+    ],
+    "correct_option": 1,
+    "answer": "Require PR, one approval and successful CI; verify a failed check blocks merge.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF03-L01-Q1",
+    "lesson_id": "OPSF03-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of CI/CD fundamentals and release strategies using the worked scenario.",
+    "answer": "CI integrates changes with repeatable builds and tests. Delivery keeps artifacts deployable; deployment releases automatically when gates pass. Build once, promote the same immutable artifact. Canary and blue-green reduce release risk but require health criteria.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF03-L01-Q2",
+    "lesson_id": "OPSF03-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in CI/CD fundamentals and release strategies, and how would you detect or prevent it?",
+    "answer": "Rebuilding per environment can change dependencies and invalidate earlier evidence. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF03-L01-Q3",
+    "lesson_id": "OPSF03-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A candidate receives 5% of traffic; compare error rates and latency against baseline before promotion.",
+    "options": [
+      "Rebuilding per environment can change dependencies and invalidate earlier evidence.",
+      "Skip verification and accept the initial result.",
+      "Require passing gates; promote a digest; roll back to a known-good digest if health thresholds fail."
+    ],
+    "correct_option": 2,
+    "answer": "Require passing gates; promote a digest; roll back to a known-good digest if health thresholds fail.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF03-L02-Q1",
+    "lesson_id": "OPSF03-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of GitHub Actions workflows using the worked scenario.",
+    "answer": "Events trigger workflows containing jobs and steps. Jobs can depend on others through needs; workflow permissions define token scope. Separate untrusted PR jobs from deployment and avoid interpolating untrusted text into shell scripts.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF03-L02-Q2",
+    "lesson_id": "OPSF03-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in GitHub Actions workflows, and how would you detect or prevent it?",
+    "answer": "Mutable action tags and privileged pull_request_target can expose secrets to untrusted code. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF03-L02-Q3",
+    "lesson_id": "OPSF03-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Run tests on pull_request with read-only token and no production secrets. Deployment runs from approved main commits.",
+    "options": [
+      "Use the provided workflow template, fill verified SHA and require the CI status check.",
+      "Mutable action tags and privileged pull_request_target can expose secrets to untrusted code.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Use the provided workflow template, fill verified SHA and require the CI status check.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF03-L03-Q1",
+    "lesson_id": "OPSF03-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Jenkins declarative pipeline using the worked scenario.",
+    "answer": "Jenkins controller schedules agents; declarative stages specify ordered work. Isolate build agents, constrain credentials and install only reviewed pinned plugins. Store Jenkinsfile alongside code.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF03-L03-Q2",
+    "lesson_id": "OPSF03-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Jenkins declarative pipeline, and how would you detect or prevent it?",
+    "answer": "Printing secrets or reusing a workspace across trust levels leaks data. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF03-L03-Q3",
+    "lesson_id": "OPSF03-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A controller should orchestrate rather than execute arbitrary PR builds on itself.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use pipeline agent label for a trusted lab runner, sh tests, archiveArtifacts only on success.",
+      "Printing secrets or reusing a workspace across trust levels leaks data."
+    ],
+    "correct_option": 1,
+    "answer": "Use pipeline agent label for a trusted lab runner, sh tests, archiveArtifacts only on success.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF03-L04-Q1",
+    "lesson_id": "OPSF03-L04",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Artifacts, caching and dependency locking using the worked scenario.",
+    "answer": "An artifact is an immutable build output; a cache is an optimization and must not determine correctness. Lock dependencies and verify hashes for reproducibility. Separate caches across trust boundaries.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF03-L04-Q2",
+    "lesson_id": "OPSF03-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Artifacts, caching and dependency locking, and how would you detect or prevent it?",
+    "answer": "A branch-name tag is not immutable and cached dependencies are not release evidence. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF03-L04-Q3",
+    "lesson_id": "OPSF03-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A PR cache poisoned with a malicious binary must never be consumed by a privileged release job.",
+    "options": [
+      "A branch-name tag is not immutable and cached dependencies are not release evidence.",
+      "Skip verification and accept the initial result.",
+      "Generate a SHA-256 manifest and verify it before promotion; intentionally change a copy to confirm rejection."
+    ],
+    "correct_option": 2,
+    "answer": "Generate a SHA-256 manifest and verify it before promotion; intentionally change a copy to confirm rejection.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF04-L01-Q1",
+    "lesson_id": "OPSF04-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Docker images and containers using the worked scenario.",
+    "answer": "Images are layered filesystems and configuration; containers are running processes isolated by OS mechanisms. Multi-stage builds separate tooling from runtime; use nonroot users and small trusted base images.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF04-L01-Q2",
+    "lesson_id": "OPSF04-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Docker images and containers, and how would you detect or prevent it?",
+    "answer": "A container is not a VM-level security boundary; never bake secrets into layers. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF04-L01-Q3",
+    "lesson_id": "OPSF04-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A Python service can run from an image with only application files and runtime dependencies.",
+    "options": [
+      "Pin the verified base digest, build with docker build, run with --read-only and verify /health.",
+      "A container is not a VM-level security boundary; never bake secrets into layers.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Pin the verified base digest, build with docker build, run with --read-only and verify /health.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF04-L02-Q1",
+    "lesson_id": "OPSF04-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Container networking, volumes and Compose using the worked scenario.",
+    "answer": "Container network namespaces isolate interfaces; service discovery resolves names on shared networks. Volumes survive container replacement while writable layers do not. Compose models local multi-service dependencies.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF04-L02-Q2",
+    "lesson_id": "OPSF04-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Container networking, volumes and Compose, and how would you detect or prevent it?",
+    "answer": "depends_on alone does not guarantee readiness; publishing all ports broadens exposure. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF04-L02-Q3",
+    "lesson_id": "OPSF04-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: An app inside a container reaches another service by its Compose service name, not localhost.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use the starter compose.yaml and docker compose config before up; remove lab containers with down.",
+      "depends_on alone does not guarantee readiness; publishing all ports broadens exposure."
+    ],
+    "correct_option": 1,
+    "answer": "Use the starter compose.yaml and docker compose config before up; remove lab containers with down.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF05-L01-Q1",
+    "lesson_id": "OPSF05-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of AWS IAM, networking and compute using the worked scenario.",
+    "answer": "A VPC spans subnets; route tables determine paths and security groups are stateful controls. IAM policies authorize actions; prefer workload roles and short-lived credentials. Public IP plus an internet route does not automatically imply permitted ingress.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF05-L01-Q2",
+    "lesson_id": "OPSF05-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in AWS IAM, networking and compute, and how would you detect or prevent it?",
+    "answer": "An unrestricted SSH rule and static access keys are avoidable risk. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF05-L01-Q3",
+    "lesson_id": "OPSF05-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: An ALB in public subnets can forward to private EC2 or EKS workloads without public workload IPs.",
+    "options": [
+      "An unrestricted SSH rule and static access keys are avoidable risk.",
+      "Skip verification and accept the initial result.",
+      "Draw route tables, security group flows, NAT or endpoints, health checks, budget and cleanup plan; no apply needed."
+    ],
+    "correct_option": 2,
+    "answer": "Draw route tables, security group flows, NAT or endpoints, health checks, budget and cleanup plan; no apply needed.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF05-L02-Q1",
+    "lesson_id": "OPSF05-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Terraform configuration and lifecycle using the worked scenario.",
+    "answer": "Providers implement resource APIs; desired resource graph is derived from HCL references. init downloads providers, plan previews changes, apply executes. Validate and review plan before apply. OpenTofu is an alternative, with version compatibility checked separately.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF05-L02-Q2",
+    "lesson_id": "OPSF05-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Terraform configuration and lifecycle, and how would you detect or prevent it?",
+    "answer": "A plan can contain sensitive values; do not upload it publicly. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF05-L02-Q3",
+    "lesson_id": "OPSF05-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A local terraform_data resource can demonstrate plan and apply without cloud charges.",
+    "options": [
+      "Use only terraform_data, review plan, apply explicit plan in sandbox and clean up.",
+      "A plan can contain sensitive values; do not upload it publicly.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Use only terraform_data, review plan, apply explicit plan in sandbox and clean up.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF05-L03-Q1",
+    "lesson_id": "OPSF05-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Terraform modules, state and environments using the worked scenario.",
+    "answer": "State maps resource addresses to remote IDs; protect and version remote state with locking where supported. Modules expose inputs and outputs. Separate state per environment and promote reviewed versions.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF05-L03-Q2",
+    "lesson_id": "OPSF05-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Terraform modules, state and environments, and how would you detect or prevent it?",
+    "answer": "Do not commit state, plans or credentials; sensitive output masks display but not state contents. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF05-L03-Q3",
+    "lesson_id": "OPSF05-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Moving a resource into a module without a moved block may propose replacement.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use variable validation, pin provider constraints and commit dependency lock file; test a local plan.",
+      "Do not commit state, plans or credentials; sensitive output masks display but not state contents."
+    ],
+    "correct_option": 1,
+    "answer": "Use variable validation, pin provider constraints and commit dependency lock file; test a local plan.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF05-L04-Q1",
+    "lesson_id": "OPSF05-L04",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Ansible configuration management using the worked scenario.",
+    "answer": "Inventory identifies hosts; playbooks declare tasks using modules. Idempotent tasks converge to desired state with no extra changes on repeated runs. Use check mode as preview where supported.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF05-L04-Q2",
+    "lesson_id": "OPSF05-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Ansible configuration management, and how would you detect or prevent it?",
+    "answer": "Check mode is not a guarantee for every module; avoid ad hoc shell where a module exists. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF05-L04-Q3",
+    "lesson_id": "OPSF05-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: The copy module ensures file content and mode, unlike repeatedly appending shell output.",
+    "options": [
+      "Check mode is not a guarantee for every module; avoid ad hoc shell where a module exists.",
+      "Skip verification and accept the initial result.",
+      "Use ansible.builtin.copy with explicit path and mode; second run should report no changes."
+    ],
+    "correct_option": 2,
+    "answer": "Use ansible.builtin.copy with explicit path and mode; second run should report no changes.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF06-L01-Q1",
+    "lesson_id": "OPSF06-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Cluster architecture and workloads using the worked scenario.",
+    "answer": "API server validates resources, controllers reconcile desired state, scheduler selects nodes and kubelet manages pods. Deployments own ReplicaSets and replaceable Pods. StatefulSets provide stable identities, Jobs run finite work.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF06-L01-Q2",
+    "lesson_id": "OPSF06-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Cluster architecture and workloads, and how would you detect or prevent it?",
+    "answer": "A Pod IP is ephemeral; route clients through Services. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF06-L01-Q3",
+    "lesson_id": "OPSF06-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Deleting a Deployment-managed Pod causes a controller to create a replacement.",
+    "options": [
+      "Confirm Deployment available, desired replicas and replacement after deleting only its lab Pod.",
+      "A Pod IP is ephemeral; route clients through Services.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Confirm Deployment available, desired replicas and replacement after deleting only its lab Pod.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF06-L02-Q1",
+    "lesson_id": "OPSF06-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Services, ingress and DNS using the worked scenario.",
+    "answer": "ClusterIP exposes stable service discovery; selectors map Services to EndpointSlices. Ingress or Gateway API requires an implementation to route external traffic. Network policy requires a supporting CNI.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF06-L02-Q2",
+    "lesson_id": "OPSF06-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Services, ingress and DNS, and how would you detect or prevent it?",
+    "answer": "An Ingress resource without a controller does not route traffic. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF06-L02-Q3",
+    "lesson_id": "OPSF06-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A service with no matching selector has no ready endpoints even if pods are healthy.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Compare pod labels with selector, fix in source manifests and verify endpoints.",
+      "An Ingress resource without a controller does not route traffic."
+    ],
+    "correct_option": 1,
+    "answer": "Compare pod labels with selector, fix in source manifests and verify endpoints.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF06-L03-Q1",
+    "lesson_id": "OPSF06-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of ConfigMap, Secret, storage and resources using the worked scenario.",
+    "answer": "ConfigMaps hold nonsecret settings; Secrets require encryption at rest, RBAC and careful delivery, as base64 is not encryption. Requests inform scheduling; limits constrain consumption. PersistentVolumeClaims request durable storage.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF06-L03-Q2",
+    "lesson_id": "OPSF06-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in ConfigMap, Secret, storage and resources, and how would you detect or prevent it?",
+    "answer": "Secrets in Git are exposed even when base64 encoded. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF06-L03-Q3",
+    "lesson_id": "OPSF06-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A Pod pending due to excessive requests differs from an OOMKilled process exceeding its memory limit.",
+    "options": [
+      "Secrets in Git are exposed even when base64 encoded.",
+      "Skip verification and accept the initial result.",
+      "Set explicit requests/limits, avoid plaintext secret manifests, and choose storage class only when persistence required."
+    ],
+    "correct_option": 2,
+    "answer": "Set explicit requests/limits, avoid plaintext secret manifests, and choose storage class only when persistence required.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF06-L04-Q1",
+    "lesson_id": "OPSF06-L04",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Health probes, scaling and rolling releases using the worked scenario.",
+    "answer": "Startup protects slow initialization; readiness controls eligibility for service traffic; liveness restarts unhealthy containers. HPA adjusts replicas based on metrics, assuming suitable requests/metrics. PDB limits voluntary disruptions.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF06-L04-Q2",
+    "lesson_id": "OPSF06-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Health probes, scaling and rolling releases, and how would you detect or prevent it?",
+    "answer": "Using the same dependency-sensitive liveness and readiness can create restart storms. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF06-L04-Q3",
+    "lesson_id": "OPSF06-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A database outage may cause readiness to fail without requiring every app process to restart.",
+    "options": [
+      "Validate rollout, verify readiness removes a failed pod from service, and restore last known good manifest.",
+      "Using the same dependency-sensitive liveness and readiness can create restart storms.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Validate rollout, verify readiness removes a failed pod from service, and restore last known good manifest.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF06-L05-Q1",
+    "lesson_id": "OPSF06-L05",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Debugging, RBAC and network policy using the worked scenario.",
+    "answer": "Start with desired/current state, events, logs and endpoints. RBAC scopes API verbs/resources; default-deny network policy then explicit allowed flows reduces lateral movement when enforced by CNI.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF06-L05-Q2",
+    "lesson_id": "OPSF06-L05",
+    "type": "debugging",
+    "question": "What failure should you watch for in Debugging, RBAC and network policy, and how would you detect or prevent it?",
+    "answer": "Do not grant cluster-admin to fix a narrow permission error. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF06-L05-Q3",
+    "lesson_id": "OPSF06-L05",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A 403 means authentication succeeded but authorization denied; inspect role bindings before changing permissions.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use auth can-i, inspect RoleBinding and allow only required verb/resource; confirm both allow and deny cases.",
+      "Do not grant cluster-admin to fix a narrow permission error."
+    ],
+    "correct_option": 1,
+    "answer": "Use auth can-i, inspect RoleBinding and allow only required verb/resource; confirm both allow and deny cases.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF07-L01-Q1",
+    "lesson_id": "OPSF07-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Helm chart structure and release management using the worked scenario.",
+    "answer": "Chart.yaml describes metadata; values.yaml provides defaults; templates render manifests. Validate rendered output, not only templates. Helm releases track revisions; avoid secrets in values.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF07-L01-Q2",
+    "lesson_id": "OPSF07-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Helm chart structure and release management, and how would you detect or prevent it?",
+    "answer": "helm template renders locally but does not prove cluster acceptance. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF07-L01-Q3",
+    "lesson_id": "OPSF07-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A wrong selector in a template can make an upgrade impossible or break routing.",
+    "options": [
+      "helm template renders locally but does not prove cluster acceptance.",
+      "Skip verification and accept the initial result.",
+      "Use helm lint/template, review manifests, server dry-run in sandbox and optionally upgrade --install."
+    ],
+    "correct_option": 2,
+    "answer": "Use helm lint/template, review manifests, server dry-run in sandbox and optionally upgrade --install.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF07-L02-Q1",
+    "lesson_id": "OPSF07-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Argo CD reconciliation and GitOps using the worked scenario.",
+    "answer": "Git defines desired state; Argo CD compares desired with live resources and synchronizes through Kubernetes API. Automated prune/self-heal have consequences; choose explicitly and use restricted projects.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF07-L02-Q2",
+    "lesson_id": "OPSF07-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Argo CD reconciliation and GitOps, and how would you detect or prevent it?",
+    "answer": "CI should not simultaneously apply manifests that GitOps owns. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF07-L02-Q3",
+    "lesson_id": "OPSF07-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Manual edits create drift; a reviewed Git revert restores desired state without fighting the controller.",
+    "options": [
+      "Replace repository/path placeholders, review diff, sync in sandbox and observe drift; revert Git for rollback.",
+      "CI should not simultaneously apply manifests that GitOps owns.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Replace repository/path placeholders, review diff, sync in sandbox and observe drift; revert Git for rollback.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF08-L01-Q1",
+    "lesson_id": "OPSF08-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Prometheus metrics and PromQL using the worked scenario.",
+    "answer": "Counters monotonically increase except resets; gauges represent current values; histograms bucket observations. Rates over counter windows support error ratios. Avoid high-cardinality labels such as request IDs.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF08-L01-Q2",
+    "lesson_id": "OPSF08-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Prometheus metrics and PromQL, and how would you detect or prevent it?",
+    "answer": "Averages obscure tail latency; dividing by zero needs explicit no-traffic handling. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF08-L01-Q3",
+    "lesson_id": "OPSF08-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Calculate 5xx fraction as sum(rate(errors[5m])) / sum(rate(requests[5m])) on consistent counters.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use rate on counters, sum by service if needed and define no-data behavior.",
+      "Averages obscure tail latency; dividing by zero needs explicit no-traffic handling."
+    ],
+    "correct_option": 1,
+    "answer": "Use rate on counters, sum by service if needed and define no-data behavior.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF08-L02-Q1",
+    "lesson_id": "OPSF08-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Grafana dashboards and alerting using the worked scenario.",
+    "answer": "Dashboards combine query panels with labels, time ranges and drilldowns. Alert rules evaluate signals for duration; route notifications with ownership and action links.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF08-L02-Q2",
+    "lesson_id": "OPSF08-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Grafana dashboards and alerting, and how would you detect or prevent it?",
+    "answer": "Dashboards are not alert policies; alert on user impact rather than every CPU spike. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF08-L02-Q3",
+    "lesson_id": "OPSF08-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A 5-minute sustained error-rate alert is less noisy than one transient failure.",
+    "options": [
+      "Dashboards are not alert policies; alert on user impact rather than every CPU spike.",
+      "Skip verification and accept the initial result.",
+      "Add links to runbook, deployment version and trace/log correlation; test a synthetic breach."
+    ],
+    "correct_option": 2,
+    "answer": "Add links to runbook, deployment version and trace/log correlation; test a synthetic breach.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF08-L03-Q1",
+    "lesson_id": "OPSF08-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of ELK and structured logging using the worked scenario.",
+    "answer": "Elasticsearch indexes events, Logstash transforms/ships data and Kibana queries/visualizes it. Structured JSON logs should include timestamp, severity, service and trace ID; redact personal and secret data.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF08-L03-Q2",
+    "lesson_id": "OPSF08-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in ELK and structured logging, and how would you detect or prevent it?",
+    "answer": "Do not log authorization headers or unbounded payloads; index retention matters. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF08-L03-Q3",
+    "lesson_id": "OPSF08-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A 500 error can be connected to a trace ID across services.",
+    "options": [
+      "Filter severity ERROR, group by service and use trace ID to correlate sanitized records.",
+      "Do not log authorization headers or unbounded payloads; index retention matters.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Filter severity ERROR, group by service and use trace ID to correlate sanitized records.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF08-L04-Q1",
+    "lesson_id": "OPSF08-L04",
+    "type": "short_answer",
+    "question": "Explain the mechanism of OpenTelemetry and Datadog using the worked scenario.",
+    "answer": "OpenTelemetry instrumentation emits vendor-neutral traces, metrics and logs via SDK/collector pipelines. Datadog provides a managed observability platform; exporters and agents route telemetry. Sampling and attributes control cost and privacy.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF08-L04-Q2",
+    "lesson_id": "OPSF08-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in OpenTelemetry and Datadog, and how would you detect or prevent it?",
+    "answer": "Never put secrets in span attributes; avoid baggage with sensitive data. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF08-L04-Q3",
+    "lesson_id": "OPSF08-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: An inbound span and database child span expose where latency accumulates.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use starter collector YAML with loopback receiver; validate with chosen pinned collector and inspect sanitized spans.",
+      "Never put secrets in span attributes; avoid baggage with sensitive data."
+    ],
+    "correct_option": 1,
+    "answer": "Use starter collector YAML with loopback receiver; validate with chosen pinned collector and inspect sanitized spans.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSF08-L05-Q1",
+    "lesson_id": "OPSF08-L05",
+    "type": "short_answer",
+    "question": "Explain the mechanism of SLOs, incidents, Jira and PagerDuty using the worked scenario.",
+    "answer": "SLI measures service behavior, SLO targets it, error budget is allowed unreliability. PagerDuty routes on-call alerts; Jira tracks incident follow-up. Incident command coordinates mitigation, communication and blameless review.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSF08-L05-Q2",
+    "lesson_id": "OPSF08-L05",
+    "type": "debugging",
+    "question": "What failure should you watch for in SLOs, incidents, Jira and PagerDuty, and how would you detect or prevent it?",
+    "answer": "A severity label without an owner and response procedure is not incident management. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSF08-L05-Q3",
+    "lesson_id": "OPSF08-L05",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: 99.9% monthly success allows 0.1% unsuccessful requests; budget exhaustion can pause risky releases.",
+    "options": [
+      "A severity label without an owner and response procedure is not incident management.",
+      "Skip verification and accept the initial result.",
+      "Declare incident, assign commander, mitigate via rollback, update timeline and file action items with owners/dates."
+    ],
+    "correct_option": 2,
+    "answer": "Declare incident, assign commander, mitigate via rollback, update timeline and file action items with owners/dates.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS01-L01-Q1",
+    "lesson_id": "OPSS01-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Threat modeling and secure pipeline design using the worked scenario.",
+    "answer": "Identify assets, actors, trust boundaries and threats before selecting scanners. SAST examines source, SCA known dependency issues, DAST running behavior; each is incomplete. Use least privilege, OIDC, isolated runners and auditable gates.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS01-L01-Q2",
+    "lesson_id": "OPSS01-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Threat modeling and secure pipeline design, and how would you detect or prevent it?",
+    "answer": "Passing scans cannot establish absence of vulnerabilities. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS01-L01-Q3",
+    "lesson_id": "OPSS01-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A fork PR can run hostile code; it must not receive deployment credentials.",
+    "options": [
+      "Mark trust boundaries, secrets, artifact identities and attack paths; add prevention/detection/recovery controls.",
+      "Passing scans cannot establish absence of vulnerabilities.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Mark trust boundaries, secrets, artifact identities and attack paths; add prevention/detection/recovery controls.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS01-L02-Q1",
+    "lesson_id": "OPSS01-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Hooks, Husky, linting and local feedback using the worked scenario.",
+    "answer": "Pre-commit checks shorten feedback; pre-push may run tests or scans. Husky manages Git hooks for Node projects; ESLint/Prettier improve quality. CI repeats required checks because local hooks are bypassable.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS01-L02-Q2",
+    "lesson_id": "OPSS01-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Hooks, Husky, linting and local feedback, and how would you detect or prevent it?",
+    "answer": "Do not store secrets in hook configs or assume hooks are mandatory security gates. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS01-L02-Q3",
+    "lesson_id": "OPSS01-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A staged file with formatting errors is fixed before commit; CI independently enforces the same standard.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Set a hook to run lint/tests for a local repository; verify CI fails when skipped.",
+      "Do not store secrets in hook configs or assume hooks are mandatory security gates."
+    ],
+    "correct_option": 1,
+    "answer": "Set a hook to run lint/tests for a local repository; verify CI fails when skipped.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS02-L01-Q1",
+    "lesson_id": "OPSS02-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Semgrep and rule-based SAST using the worked scenario.",
+    "answer": "Semgrep matches structural code patterns and can track dataflow depending on engine/rules. Select trusted rule packs, distinguish false positives and define blocking severity with exceptions.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS02-L01-Q2",
+    "lesson_id": "OPSS02-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Semgrep and rule-based SAST, and how would you detect or prevent it?",
+    "answer": "Scanning only changed files misses contextual findings; do periodic full scans. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS02-L01-Q3",
+    "lesson_id": "OPSS02-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A rule detects unsafe string concatenation in query construction; parameter binding is the fix.",
+    "options": [
+      "Scanning only changed files misses contextual findings; do periodic full scans.",
+      "Skip verification and accept the initial result.",
+      "Use the supplied rule and fixture; require nonzero exit on findings and rerun after parameterization."
+    ],
+    "correct_option": 2,
+    "answer": "Use the supplied rule and fixture; require nonzero exit on findings and rerun after parameterization.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS02-L02-Q1",
+    "lesson_id": "OPSS02-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of CodeQL, SonarQube and Checkmarx using the worked scenario.",
+    "answer": "CodeQL builds queryable code databases and finds semantic flows; SonarQube combines quality/security analysis and quality gates; Checkmarx offers enterprise SAST and related capabilities. Language/build coverage and licensing differ.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS02-L02-Q2",
+    "lesson_id": "OPSS02-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in CodeQL, SonarQube and Checkmarx, and how would you detect or prevent it?",
+    "answer": "A green quality gate does not replace review or threat modeling. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS02-L02-Q3",
+    "lesson_id": "OPSS02-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A tainted request parameter reaches an unsafe sink; triage by reachability and validate the fix.",
+    "options": [
+      "Configure CodeQL for supported language and build mode or use approved SonarQube/Checkmarx environment; normalize findings by rule/location.",
+      "A green quality gate does not replace review or threat modeling.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Configure CodeQL for supported language and build mode or use approved SonarQube/Checkmarx environment; normalize findings by rule/location.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS03-L01-Q1",
+    "lesson_id": "OPSS03-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of SCA: Snyk, Dependabot and OWASP Dependency-Check using the worked scenario.",
+    "answer": "SCA maps dependency versions to advisory data; direct and transitive dependencies matter. Dependabot alerts/updates automate maintenance; Snyk and Dependency-Check provide scans with differing ecosystem coverage.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS03-L01-Q2",
+    "lesson_id": "OPSS03-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in SCA: Snyk, Dependabot and OWASP Dependency-Check, and how would you detect or prevent it?",
+    "answer": "CVSS alone ignores reachability, exposure and available fix; avoid permanent blanket ignores. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS03-L01-Q3",
+    "lesson_id": "OPSS03-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A vulnerable transitive library can require updating the parent dependency or constrained override.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Document affected component, version, severity, exposure, fix, owner and expiration of accepted risk.",
+      "CVSS alone ignores reachability, exposure and available fix; avoid permanent blanket ignores."
+    ],
+    "correct_option": 1,
+    "answer": "Document affected component, version, severity, exposure, fix, owner and expiration of accepted risk.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS03-L02-Q1",
+    "lesson_id": "OPSS03-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Gitleaks and TruffleHog secrets detection using the worked scenario.",
+    "answer": "Pattern and entropy scanning find likely credentials; verification can improve precision but may contact providers. Scan history and staged changes; rotate/revoke leaked keys first, then remediate history and prevent recurrence.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS03-L02-Q2",
+    "lesson_id": "OPSS03-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Gitleaks and TruffleHog secrets detection, and how would you detect or prevent it?",
+    "answer": "Deleting a secret from the latest commit does not revoke it or remove older copies. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS03-L02-Q3",
+    "lesson_id": "OPSS03-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A fake fixture matches a training rule, demonstrating detection without real credentials.",
+    "options": [
+      "Deleting a secret from the latest commit does not revoke it or remove older copies.",
+      "Skip verification and accept the initial result.",
+      "Use the synthetic Gitleaks config; never create real leaked keys. For TruffleHog disable verification in local practice."
+    ],
+    "correct_option": 2,
+    "answer": "Use the synthetic Gitleaks config; never create real leaked keys. For TruffleHog disable verification in local practice.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS03-L03-Q1",
+    "lesson_id": "OPSS03-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Vault and AWS Secrets Manager using the worked scenario.",
+    "answer": "A secret manager centralizes versioning, authorization, auditing and rotation. Vault can issue dynamic credentials with leases; AWS Secrets Manager manages versions and rotation integrations. Workloads authenticate with identities rather than embedded keys.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS03-L03-Q2",
+    "lesson_id": "OPSS03-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Vault and AWS Secrets Manager, and how would you detect or prevent it?",
+    "answer": "Do not log secret values or store them in Terraform state/CI artifacts. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS03-L03-Q3",
+    "lesson_id": "OPSS03-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A compromised static password is replaced by a short-lived credential or rotated version with controlled rollout.",
+    "options": [
+      "Design IAM/role permissions for one secret, rotation schedule, audit and fallback plan; do not retrieve production secrets.",
+      "Do not log secret values or store them in Terraform state/CI artifacts.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Design IAM/role permissions for one secret, rotation schedule, audit and fallback plan; do not retrieve production secrets.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS04-L01-Q1",
+    "lesson_id": "OPSS04-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Trivy and Grype image scanning using the worked scenario.",
+    "answer": "Scan the exact digest that will be deployed. Trivy supports vulnerabilities and several other target-dependent scanners; Grype identifies vulnerable packages from images/SBOMs. Database freshness and distribution advisory backports influence results.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS04-L01-Q2",
+    "lesson_id": "OPSS04-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Trivy and Grype image scanning, and how would you detect or prevent it?",
+    "answer": "Scanner exit defaults can be zero on findings; explicitly configure gate and handle tool errors. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS04-L01-Q3",
+    "lesson_id": "OPSS04-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: An image tagged latest may resolve differently between scan and deployment; digest binds evidence to artifact.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Record DB age and scan target; block according to approved severity policy; rescan after rebuilding with patched base.",
+      "Scanner exit defaults can be zero on findings; explicitly configure gate and handle tool errors."
+    ],
+    "correct_option": 1,
+    "answer": "Record DB age and scan target; block according to approved severity policy; rescan after rebuilding with patched base.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS04-L02-Q1",
+    "lesson_id": "OPSS04-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Checkov and Trivy infrastructure scanning using the worked scenario.",
+    "answer": "IaC scanning detects risky configurations before provisioning. Checkov analyzes Terraform and other IaC; Trivy misconfiguration scanning includes functionality historically associated with tfsec. Findings need context and runtime verification.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS04-L02-Q2",
+    "lesson_id": "OPSS04-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Checkov and Trivy infrastructure scanning, and how would you detect or prevent it?",
+    "answer": "Scanning source alone can miss dynamic values; evaluate plan/rendered manifests as appropriate and protect sensitive plans. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS04-L02-Q3",
+    "lesson_id": "OPSS04-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A storage resource marked public or a privileged container is identified before deployment.",
+    "options": [
+      "Scanning source alone can miss dynamic values; evaluate plan/rendered manifests as appropriate and protect sensitive plans.",
+      "Skip verification and accept the initial result.",
+      "Use checkov -d and trivy config on lab files; compare rules, document justified exceptions with expiry."
+    ],
+    "correct_option": 2,
+    "answer": "Use checkov -d and trivy config on lab files; compare rules, document justified exceptions with expiry.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS05-L01-Q1",
+    "lesson_id": "OPSS05-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of OWASP ZAP and Burp Suite DAST using the worked scenario.",
+    "answer": "DAST examines running application behavior with HTTP traffic. ZAP baseline is passive-oriented plus spidering; active scanning can change state. Burp Suite supports manual proxy-based testing and licensed scanning. Test only owned authorized labs.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS05-L01-Q2",
+    "lesson_id": "OPSS05-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in OWASP ZAP and Burp Suite DAST, and how would you detect or prevent it?",
+    "answer": "Do not point scanners at production or public third-party hosts without authorization. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS05-L01-Q3",
+    "lesson_id": "OPSS05-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: Missing security headers can be found via passive analysis; authenticated checks need test users and scoped sessions.",
+    "options": [
+      "Review scope, exclude destructive routes, use pinned ZAP image, capture report and verify fixes; inspect local requests in Burp proxy.",
+      "Do not point scanners at production or public third-party hosts without authorization.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Review scope, exclude destructive routes, use pinned ZAP image, capture report and verify fixes; inspect local requests in Burp proxy.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS05-L02-Q1",
+    "lesson_id": "OPSS05-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of OPA and Rego policy as code using the worked scenario.",
+    "answer": "OPA evaluates structured input against declarative policies; it is a decision engine, not an automatic enforcement point. Integrate policy evaluation in CI or admission and test explicit allow/deny cases.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS05-L02-Q2",
+    "lesson_id": "OPSS05-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in OPA and Rego policy as code, and how would you detect or prevent it?",
+    "answer": "A missing field can yield undefined instead of true/false; define defaults and test shape errors. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS05-L02-Q3",
+    "lesson_id": "OPSS05-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A deployment manifest requesting privileged=true violates an organization rule.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use starter Rego v1 policy, opa test and explicit gate on a nonempty deny set.",
+      "A missing field can yield undefined instead of true/false; define defaults and test shape errors."
+    ],
+    "correct_option": 1,
+    "answer": "Use starter Rego v1 policy, opa test and explicit gate on a nonempty deny set.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS05-L03-Q1",
+    "lesson_id": "OPSS05-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Kyverno Kubernetes admission policies using the worked scenario.",
+    "answer": "Kyverno validates, mutates, generates and verifies Kubernetes resources with Kubernetes-native policies. Start in Audit where appropriate, inspect reports then enforce with explicit exceptions.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS05-L03-Q2",
+    "lesson_id": "OPSS05-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Kyverno Kubernetes admission policies, and how would you detect or prevent it?",
+    "answer": "A broad cluster-wide enforce rollout can break system workloads; scope and test before enforcement. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS05-L03-Q3",
+    "lesson_id": "OPSS05-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A policy rejects Pods without runAsNonRoot in a controlled namespace.",
+    "options": [
+      "A broad cluster-wide enforce rollout can break system workloads; scope and test before enforcement.",
+      "Skip verification and accept the initial result.",
+      "Run policy CLI test or sandbox admission; confirm only intended resources are denied."
+    ],
+    "correct_option": 2,
+    "answer": "Run policy CLI test or sandbox admission; confirm only intended resources are denied.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS06-L01-Q1",
+    "lesson_id": "OPSS06-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Falco runtime detection using the worked scenario.",
+    "answer": "Falco evaluates event streams such as system calls against rules to detect suspicious runtime behavior. Deploy with documented sensor privileges and route alerts; tune rules to workload behavior.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS06-L01-Q2",
+    "lesson_id": "OPSS06-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Falco runtime detection, and how would you detect or prevent it?",
+    "answer": "Runtime detection does not automatically prevent behavior; false positives need context. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS06-L01-Q3",
+    "lesson_id": "OPSS06-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A shell started inside an application container may be unusual and warrants triage.",
+    "options": [
+      "Verify workload identity, compare expected behavior, contain only authorized sandbox workload if required, preserve evidence.",
+      "Runtime detection does not automatically prevent behavior; false positives need context.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Verify workload identity, compare expected behavior, contain only authorized sandbox workload if required, preserve evidence.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS06-L02-Q1",
+    "lesson_id": "OPSS06-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Syft SBOM and dependency inventory using the worked scenario.",
+    "answer": "An SBOM is an inventory of components and metadata, not a vulnerability report. Syft generates SPDX or CycloneDX from images/filesystems. Store SBOM linked to immutable artifact digest.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS06-L02-Q2",
+    "lesson_id": "OPSS06-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Syft SBOM and dependency inventory, and how would you detect or prevent it?",
+    "answer": "SBOM completeness depends on package recognition; do not claim it proves absence of dependencies. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS06-L02-Q3",
+    "lesson_id": "OPSS06-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A newly disclosed CVE can be mapped to a stored SBOM without rebuilding the image.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use Syft, archive JSON and digest, then feed SBOM to Grype for vulnerability analysis.",
+      "SBOM completeness depends on package recognition; do not claim it proves absence of dependencies."
+    ],
+    "correct_option": 1,
+    "answer": "Use Syft, archive JSON and digest, then feed SBOM to Grype for vulnerability analysis.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS06-L03-Q1",
+    "lesson_id": "OPSS06-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Cosign signing, verification and provenance using the worked scenario.",
+    "answer": "Signatures bind artifact identity to a signing identity; verify digest, certificate identity and issuer or trusted key. Provenance describes build inputs and builder. Sign only after approved build and scans; verify admission policy.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS06-L03-Q2",
+    "lesson_id": "OPSS06-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Cosign signing, verification and provenance, and how would you detect or prevent it?",
+    "answer": "Do not verify with broad identity regex or mutable tags; signature alone does not assert vulnerability-free. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS06-L03-Q3",
+    "lesson_id": "OPSS06-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: An image signed by an unrelated identity is not acceptable even if signature cryptographically valid.",
+    "options": [
+      "Do not verify with broad identity regex or mutable tags; signature alone does not assert vulnerability-free.",
+      "Skip verification and accept the initial result.",
+      "Use sandbox registry and approved keyless CI identity or managed key. Verify exact expected issuer and identity before deploy."
+    ],
+    "correct_option": 2,
+    "answer": "Use sandbox registry and approved keyless CI identity or managed key. Verify exact expected issuer and identity before deploy.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSS06-L04-Q1",
+    "lesson_id": "OPSS06-L04",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Secure scanners, CI identities and exceptions using the worked scenario.",
+    "answer": "Scanners, plugins and actions are dependencies in the trust chain. Pin actions to verified full SHAs, binaries/images to verified release hashes/digests; constrain token scope, separate PR/release trust, use OIDC and log evidence. Expire exceptions.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSS06-L04-Q2",
+    "lesson_id": "OPSS06-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in Secure scanners, CI identities and exceptions, and how would you detect or prevent it?",
+    "answer": "A pinned malicious version is still malicious; review provenance and advisories, rotate when compromised. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSS06-L04-Q3",
+    "lesson_id": "OPSS06-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A compromised scanner can exfiltrate CI secrets; run untrusted scanning without deployment credentials and isolate permissions.",
+    "options": [
+      "Use supplied offline gate script; test missing evidence, failed scan and expired exception cases.",
+      "A pinned malicious version is still malicious; review provenance and advisories, rotate when compromised.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Use supplied offline gate script; test missing evidence, failed scan and expired exception cases.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSP01-L01-Q1",
+    "lesson_id": "OPSP01-L01",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Disaster recovery, backup and rollback using the worked scenario.",
+    "answer": "RPO bounds data loss; RTO bounds recovery time. Backups need restoration tests; rollback may not reverse database schema changes. Use backward-compatible expand/contract migrations.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSP01-L01-Q2",
+    "lesson_id": "OPSP01-L01",
+    "type": "debugging",
+    "question": "What failure should you watch for in Disaster recovery, backup and rollback, and how would you detect or prevent it?",
+    "answer": "Snapshots without tested restoration give false confidence. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSP01-L01-Q3",
+    "lesson_id": "OPSP01-L01",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A deployment rolls back but destructive schema change remains; the migration plan must support old and new versions.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Identify backup timestamp, restore sandbox, validate invariants and measure elapsed time; record recovery gaps.",
+      "Snapshots without tested restoration give false confidence."
+    ],
+    "correct_option": 1,
+    "answer": "Identify backup timestamp, restore sandbox, validate invariants and measure elapsed time; record recovery gaps.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSP01-L02-Q1",
+    "lesson_id": "OPSP01-L02",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Progressive delivery and quality gates using the worked scenario.",
+    "answer": "Canary decisions compare candidate error rate/latency against baseline with minimum sample size. Promotion requires approved metrics, signature and scan evidence; rollback has predefined triggers.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSP01-L02-Q2",
+    "lesson_id": "OPSP01-L02",
+    "type": "debugging",
+    "question": "What failure should you watch for in Progressive delivery and quality gates, and how would you detect or prevent it?",
+    "answer": "Do not promote solely because no alerts fired; unknown evidence fails closed. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSP01-L02-Q3",
+    "lesson_id": "OPSP01-L02",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A candidate with 1 error in 2 requests is too small a sample for confident promotion.",
+    "options": [
+      "Do not promote solely because no alerts fired; unknown evidence fails closed.",
+      "Skip verification and accept the initial result.",
+      "Run offline gate with passing and failing samples; require minimum traffic, error threshold and all evidence."
+    ],
+    "correct_option": 2,
+    "answer": "Run offline gate with passing and failing samples; require minimum traffic, error threshold and all evidence.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSP01-L03-Q1",
+    "lesson_id": "OPSP01-L03",
+    "type": "short_answer",
+    "question": "Explain the mechanism of Platform engineering and golden paths using the worked scenario.",
+    "answer": "A golden path combines reusable templates, secure defaults, documentation and ownership. Self-service interfaces expose a supported contract; exceptions are governed rather than copying pipelines across teams.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSP01-L03-Q2",
+    "lesson_id": "OPSP01-L03",
+    "type": "debugging",
+    "question": "What failure should you watch for in Platform engineering and golden paths, and how would you detect or prevent it?",
+    "answer": "Overly rigid templates encourage bypasses; version and support migration paths. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSP01-L03-Q3",
+    "lesson_id": "OPSP01-L03",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A service scaffold provides health probes, resource defaults, CI tests and security gates with team-specific configuration.",
+    "options": [
+      "Use the starter app, Helm and CI scaffold; specify what is required vs configurable and document upgrade rollback.",
+      "Overly rigid templates encourage bypasses; version and support migration paths.",
+      "Skip verification and accept the initial result."
+    ],
+    "correct_option": 0,
+    "answer": "Use the starter app, Helm and CI scaffold; specify what is required vs configurable and document upgrade rollback.",
+    "rubric": "1 point for correct option."
+  },
+  {
+    "id": "OPSP01-L04-Q1",
+    "lesson_id": "OPSP01-L04",
+    "type": "short_answer",
+    "question": "Explain the mechanism of End-to-end DevSecOps capstone using the worked scenario.",
+    "answer": "Integrate code review, tests, build, SAST/SCA/secrets, SBOM and signing, GitOps deploy, DAST, metrics and incident response. Each gate must have evidence, identity, owner and failure handling.",
+    "rubric": "2 points: mechanism + rationale; 1 partial; 0 incorrect."
+  },
+  {
+    "id": "OPSP01-L04-Q2",
+    "lesson_id": "OPSP01-L04",
+    "type": "debugging",
+    "question": "What failure should you watch for in End-to-end DevSecOps capstone, and how would you detect or prevent it?",
+    "answer": "A monolithic privileged job defeats separation of duties and makes rollback ambiguous. Verify with a boundary or failure test rather than a successful happy-path run alone.",
+    "rubric": "2 points: root cause + mitigation/evidence."
+  },
+  {
+    "id": "OPSP01-L04-Q3",
+    "lesson_id": "OPSP01-L04",
+    "type": "mcq",
+    "question": "For this scenario, which response is technically appropriate: A patched version passes scans, gets signed, is deployed to staging and promoted only after health and DAST checks.",
+    "options": [
+      "Skip verification and accept the initial result.",
+      "Use project rubric, prove failing checks block promotion, demonstrate rollback and provide runbook; no production deployment required.",
+      "A monolithic privileged job defeats separation of duties and makes rollback ambiguous."
+    ],
+    "correct_option": 1,
+    "answer": "Use project rubric, prove failing checks block promotion, demonstrate rollback and provide runbook; no production deployment required.",
+    "rubric": "1 point for correct option."
+  }
+]

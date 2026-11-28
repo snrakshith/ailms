@@ -1,0 +1,11 @@
+flowchart TD
+  a["Expand right boundary"]
+  b["Constraint valid?"]
+  c["Update best answer"]
+  d["Shrink left boundary"]
+  e["Continue scan"]
+  a --> b
+  b -->|yes| c
+  b -->|no| d
+  d -->|recheck| b
+  c --> e

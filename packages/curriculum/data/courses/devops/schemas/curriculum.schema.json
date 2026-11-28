@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DevOps & DevSecOps — Beginner to Advanced schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "curriculum_id",
+    "tracks",
+    "modules",
+    "lessons",
+    "projects",
+    "assets"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "curriculum_id": {
+      "type": "string"
+    },
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "module_ids",
+          "order"
+        ]
+      }
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "track_id",
+          "title",
+          "lesson_ids",
+          "content_path",
+          "diagram_path",
+          "cheatsheet_path"
+        ]
+      }
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "module_id",
+          "track_id",
+          "order",
+          "title",
+          "level",
+          "estimated_minutes",
+          "learning_objectives",
+          "concepts",
+          "worked_example",
+          "common_pitfall",
+          "exercise",
+          "content_path",
+          "prerequisite_ids",
+          "quiz_ids",
+          "flashcard_ids",
+          "reference_urls",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z]+[0-9]{2}-L[0-9]{2}$"
+          },
+          "level": {
+            "enum": [
+              "beginner",
+              "intermediate",
+              "advanced"
+            ]
+          },
+          "estimated_minutes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "learning_objectives": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "exercise": {
+            "type": "object",
+            "required": [
+              "id",
+              "task",
+              "acceptance_criteria"
+            ]
+          }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "track_id",
+          "title",
+          "rubric",
+          "content_path"
+        ]
+      }
+    },
+    "assets": {
+      "type": "object"
+    }
+  }
+}

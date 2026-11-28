@@ -1,0 +1,66 @@
+# Source mapping
+
+PDF source: 60 study days, 15 named core patterns; 368 scheduled entries, 343 distinct problem IDs. The source footer reports 357 problems, which differs from the extracted schedule; repeated entries are retained. Source week headings extend through Week 16 despite the 60-day title, so daily numbering is authoritative. Company labels are from the source and are not verified hiring-frequency claims.
+
+Day mapping preserves source titles, day order, printed difficulty and IDs. New lessons and implementations are original study additions. Source practice statements and hints are not reproduced; use problem IDs and the original PDF.
+
+- Day 1: PDF p. 8, 6 practice entries
+- Day 2: PDF p. 8, 6 practice entries
+- Day 3: PDF p. 9, 6 practice entries
+- Day 4: PDF p. 10, 6 practice entries
+- Day 5: PDF p. 10, 6 practice entries
+- Day 6: PDF p. 11, 6 practice entries
+- Day 7: PDF p. 12, 6 practice entries
+- Day 8: PDF p. 13, 6 practice entries
+- Day 9: PDF p. 13, 6 practice entries
+- Day 10: PDF p. 14, 6 practice entries
+- Day 11: PDF p. 15, 6 practice entries
+- Day 12: PDF p. 16, 6 practice entries
+- Day 13: PDF p. 16, 6 practice entries
+- Day 14: PDF p. 17, 6 practice entries
+- Day 15: PDF p. 18, 6 practice entries
+- Day 16: PDF p. 19, 6 practice entries
+- Day 17: PDF p. 19, 6 practice entries
+- Day 18: PDF p. 20, 6 practice entries
+- Day 19: PDF p. 21, 6 practice entries
+- Day 20: PDF p. 21, 6 practice entries
+- Day 21: PDF p. 22, 6 practice entries
+- Day 22: PDF p. 23, 6 practice entries
+- Day 23: PDF p. 23, 6 practice entries
+- Day 24: PDF p. 24, 6 practice entries
+- Day 25: PDF p. 25, 6 practice entries
+- Day 26: PDF p. 25, 6 practice entries
+- Day 27: PDF p. 26, 6 practice entries
+- Day 28: PDF p. 27, 6 practice entries
+- Day 29: PDF p. 28, 7 practice entries
+- Day 30: PDF p. 29, 6 practice entries
+- Day 31: PDF p. 29, 6 practice entries
+- Day 32: PDF p. 30, 6 practice entries
+- Day 33: PDF p. 31, 6 practice entries
+- Day 34: PDF p. 32, 6 practice entries
+- Day 35: PDF p. 32, 6 practice entries
+- Day 36: PDF p. 33, 6 practice entries
+- Day 37: PDF p. 34, 6 practice entries
+- Day 38: PDF p. 35, 6 practice entries
+- Day 39: PDF p. 35, 6 practice entries
+- Day 40: PDF p. 36, 6 practice entries
+- Day 41: PDF p. 37, 6 practice entries
+- Day 42: PDF p. 38, 6 practice entries
+- Day 43: PDF p. 38, 6 practice entries
+- Day 44: PDF p. 39, 6 practice entries
+- Day 45: PDF p. 40, 6 practice entries
+- Day 46: PDF p. 41, 6 practice entries
+- Day 47: PDF p. 41, 6 practice entries
+- Day 48: PDF p. 42, 6 practice entries
+- Day 49: PDF p. 43, 6 practice entries
+- Day 50: PDF p. 43, 6 practice entries
+- Day 51: PDF p. 44, 6 practice entries
+- Day 52: PDF p. 45, 6 practice entries
+- Day 53: PDF p. 46, 6 practice entries
+- Day 54: PDF p. 46, 6 practice entries
+- Day 55: PDF p. 47, 6 practice entries
+- Day 56: PDF p. 48, 7 practice entries
+- Day 57: PDF p. 49, 7 practice entries
+- Day 58: PDF p. 50, 6 practice entries
+- Day 59: PDF p. 50, 8 practice entries
+- Day 60: PDF p. 51, 9 practice entries

@@ -33,7 +33,7 @@ import {
 import { markReferralQualified } from '../referrals/referral.service.js';
 import { queueEmail } from '../notifications/notifications.service.js';
 import { UserModel } from '../../infrastructure/database/mongodb/models.js';
-import { course } from '@aiquest/curriculum';
+import { courses } from '@aiquest/curriculum';
 
 async function completionsFor(userId: string): Promise<CompletedRecord[]> {
   const rows = await LessonCompletionModel.find({ userId }).lean();
@@ -133,7 +133,8 @@ export async function dueFlashcards(userId: string): Promise<Flashcard[]> {
   const reviews = await FlashcardReviewModel.find({ userId }).lean();
   const byId = new Map(reviews.map((review) => [review.flashcardId, review]));
   const now = new Date();
-  return course.flashcards
+  return courses
+    .flatMap((subject) => subject.flashcards)
     .filter((card) => !byId.get(card.id) || byId.get(card.id)!.dueAt <= now)
     .slice(0, 30)
     .map((card) => {
@@ -150,7 +151,7 @@ export async function reviewFlashcard(
   flashcardId: string,
   input: FlashcardReviewInput,
 ): Promise<void> {
-  if (!course.flashcards.some((card) => card.id === flashcardId))
+  if (!courses.some((subject) => subject.flashcards.some((card) => card.id === flashcardId)))
     throw new HttpError(404, 'Flashcard not found', 'not_found');
   const previous = await FlashcardReviewModel.findOne({ userId, flashcardId }).lean();
   const base = previous?.intervalDays ?? 0;

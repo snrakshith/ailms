@@ -1,0 +1,48 @@
+id,track_id,module_id,order,title,level,estimated_minutes,content_path,solution_path
+OPSF01-L01,OPS-F,OPSF01,1,"Processes, files and permissions",beginner,90,content/OPS-F/OPSF01/OPSF01-L01.md,solutions/OPSF01-L01.md
+OPSF01-L02,OPS-F,OPSF01,2,Shell scripting and automation,beginner,90,content/OPS-F/OPSF01/OPSF01-L02.md,solutions/OPSF01-L02.md
+OPSF01-L03,OPS-F,OPSF01,3,"Networking, DNS, HTTP and TLS",beginner,90,content/OPS-F/OPSF01/OPSF01-L03.md,solutions/OPSF01-L03.md
+OPSF02-L01,OPS-F,OPSF02,4,"Git branching, commits and recovery",beginner,90,content/OPS-F/OPSF02/OPSF02-L01.md,solutions/OPSF02-L01.md
+OPSF02-L02,OPS-F,OPSF02,5,GitHub pull requests and governance,beginner,90,content/OPS-F/OPSF02/OPSF02-L02.md,solutions/OPSF02-L02.md
+OPSF03-L01,OPS-F,OPSF03,6,CI/CD fundamentals and release strategies,beginner,90,content/OPS-F/OPSF03/OPSF03-L01.md,solutions/OPSF03-L01.md
+OPSF03-L02,OPS-F,OPSF03,7,GitHub Actions workflows,beginner,90,content/OPS-F/OPSF03/OPSF03-L02.md,solutions/OPSF03-L02.md
+OPSF03-L03,OPS-F,OPSF03,8,Jenkins declarative pipeline,beginner,90,content/OPS-F/OPSF03/OPSF03-L03.md,solutions/OPSF03-L03.md
+OPSF03-L04,OPS-F,OPSF03,9,"Artifacts, caching and dependency locking",beginner,90,content/OPS-F/OPSF03/OPSF03-L04.md,solutions/OPSF03-L04.md
+OPSF04-L01,OPS-F,OPSF04,10,Docker images and containers,beginner,90,content/OPS-F/OPSF04/OPSF04-L01.md,solutions/OPSF04-L01.md
+OPSF04-L02,OPS-F,OPSF04,11,"Container networking, volumes and Compose",beginner,90,content/OPS-F/OPSF04/OPSF04-L02.md,solutions/OPSF04-L02.md
+OPSF05-L01,OPS-F,OPSF05,12,"AWS IAM, networking and compute",intermediate,90,content/OPS-F/OPSF05/OPSF05-L01.md,solutions/OPSF05-L01.md
+OPSF05-L02,OPS-F,OPSF05,13,Terraform configuration and lifecycle,intermediate,90,content/OPS-F/OPSF05/OPSF05-L02.md,solutions/OPSF05-L02.md
+OPSF05-L03,OPS-F,OPSF05,14,"Terraform modules, state and environments",intermediate,90,content/OPS-F/OPSF05/OPSF05-L03.md,solutions/OPSF05-L03.md
+OPSF05-L04,OPS-F,OPSF05,15,Ansible configuration management,intermediate,90,content/OPS-F/OPSF05/OPSF05-L04.md,solutions/OPSF05-L04.md
+OPSF06-L01,OPS-F,OPSF06,16,Cluster architecture and workloads,intermediate,90,content/OPS-F/OPSF06/OPSF06-L01.md,solutions/OPSF06-L01.md
+OPSF06-L02,OPS-F,OPSF06,17,"Services, ingress and DNS",intermediate,90,content/OPS-F/OPSF06/OPSF06-L02.md,solutions/OPSF06-L02.md
+OPSF06-L03,OPS-F,OPSF06,18,"ConfigMap, Secret, storage and resources",intermediate,90,content/OPS-F/OPSF06/OPSF06-L03.md,solutions/OPSF06-L03.md
+OPSF06-L04,OPS-F,OPSF06,19,"Health probes, scaling and rolling releases",intermediate,90,content/OPS-F/OPSF06/OPSF06-L04.md,solutions/OPSF06-L04.md
+OPSF06-L05,OPS-F,OPSF06,20,"Debugging, RBAC and network policy",intermediate,90,content/OPS-F/OPSF06/OPSF06-L05.md,solutions/OPSF06-L05.md
+OPSF07-L01,OPS-F,OPSF07,21,Helm chart structure and release management,intermediate,90,content/OPS-F/OPSF07/OPSF07-L01.md,solutions/OPSF07-L01.md
+OPSF07-L02,OPS-F,OPSF07,22,Argo CD reconciliation and GitOps,intermediate,90,content/OPS-F/OPSF07/OPSF07-L02.md,solutions/OPSF07-L02.md
+OPSF08-L01,OPS-F,OPSF08,23,Prometheus metrics and PromQL,intermediate,90,content/OPS-F/OPSF08/OPSF08-L01.md,solutions/OPSF08-L01.md
+OPSF08-L02,OPS-F,OPSF08,24,Grafana dashboards and alerting,intermediate,90,content/OPS-F/OPSF08/OPSF08-L02.md,solutions/OPSF08-L02.md
+OPSF08-L03,OPS-F,OPSF08,25,ELK and structured logging,intermediate,90,content/OPS-F/OPSF08/OPSF08-L03.md,solutions/OPSF08-L03.md
+OPSF08-L04,OPS-F,OPSF08,26,OpenTelemetry and Datadog,intermediate,90,content/OPS-F/OPSF08/OPSF08-L04.md,solutions/OPSF08-L04.md
+OPSF08-L05,OPS-F,OPSF08,27,"SLOs, incidents, Jira and PagerDuty",intermediate,90,content/OPS-F/OPSF08/OPSF08-L05.md,solutions/OPSF08-L05.md
+OPSS01-L01,OPS-S,OPSS01,28,Threat modeling and secure pipeline design,intermediate,120,content/OPS-S/OPSS01/OPSS01-L01.md,solutions/OPSS01-L01.md
+OPSS01-L02,OPS-S,OPSS01,29,"Hooks, Husky, linting and local feedback",intermediate,120,content/OPS-S/OPSS01/OPSS01-L02.md,solutions/OPSS01-L02.md
+OPSS02-L01,OPS-S,OPSS02,30,Semgrep and rule-based SAST,intermediate,120,content/OPS-S/OPSS02/OPSS02-L01.md,solutions/OPSS02-L01.md
+OPSS02-L02,OPS-S,OPSS02,31,"CodeQL, SonarQube and Checkmarx",intermediate,120,content/OPS-S/OPSS02/OPSS02-L02.md,solutions/OPSS02-L02.md
+OPSS03-L01,OPS-S,OPSS03,32,"SCA: Snyk, Dependabot and OWASP Dependency-Check",intermediate,120,content/OPS-S/OPSS03/OPSS03-L01.md,solutions/OPSS03-L01.md
+OPSS03-L02,OPS-S,OPSS03,33,Gitleaks and TruffleHog secrets detection,intermediate,120,content/OPS-S/OPSS03/OPSS03-L02.md,solutions/OPSS03-L02.md
+OPSS03-L03,OPS-S,OPSS03,34,Vault and AWS Secrets Manager,intermediate,120,content/OPS-S/OPSS03/OPSS03-L03.md,solutions/OPSS03-L03.md
+OPSS04-L01,OPS-S,OPSS04,35,Trivy and Grype image scanning,intermediate,120,content/OPS-S/OPSS04/OPSS04-L01.md,solutions/OPSS04-L01.md
+OPSS04-L02,OPS-S,OPSS04,36,Checkov and Trivy infrastructure scanning,intermediate,120,content/OPS-S/OPSS04/OPSS04-L02.md,solutions/OPSS04-L02.md
+OPSS05-L01,OPS-S,OPSS05,37,OWASP ZAP and Burp Suite DAST,advanced,120,content/OPS-S/OPSS05/OPSS05-L01.md,solutions/OPSS05-L01.md
+OPSS05-L02,OPS-S,OPSS05,38,OPA and Rego policy as code,advanced,120,content/OPS-S/OPSS05/OPSS05-L02.md,solutions/OPSS05-L02.md
+OPSS05-L03,OPS-S,OPSS05,39,Kyverno Kubernetes admission policies,advanced,120,content/OPS-S/OPSS05/OPSS05-L03.md,solutions/OPSS05-L03.md
+OPSS06-L01,OPS-S,OPSS06,40,Falco runtime detection,advanced,120,content/OPS-S/OPSS06/OPSS06-L01.md,solutions/OPSS06-L01.md
+OPSS06-L02,OPS-S,OPSS06,41,Syft SBOM and dependency inventory,advanced,120,content/OPS-S/OPSS06/OPSS06-L02.md,solutions/OPSS06-L02.md
+OPSS06-L03,OPS-S,OPSS06,42,"Cosign signing, verification and provenance",advanced,120,content/OPS-S/OPSS06/OPSS06-L03.md,solutions/OPSS06-L03.md
+OPSS06-L04,OPS-S,OPSS06,43,"Secure scanners, CI identities and exceptions",advanced,120,content/OPS-S/OPSS06/OPSS06-L04.md,solutions/OPSS06-L04.md
+OPSP01-L01,OPS-P,OPSP01,44,"Disaster recovery, backup and rollback",advanced,120,content/OPS-P/OPSP01/OPSP01-L01.md,solutions/OPSP01-L01.md
+OPSP01-L02,OPS-P,OPSP01,45,Progressive delivery and quality gates,advanced,120,content/OPS-P/OPSP01/OPSP01-L02.md,solutions/OPSP01-L02.md
+OPSP01-L03,OPS-P,OPSP01,46,Platform engineering and golden paths,advanced,120,content/OPS-P/OPSP01/OPSP01-L03.md,solutions/OPSP01-L03.md
+OPSP01-L04,OPS-P,OPSP01,47,End-to-end DevSecOps capstone,advanced,120,content/OPS-P/OPSP01/OPSP01-L04.md,solutions/OPSP01-L04.md

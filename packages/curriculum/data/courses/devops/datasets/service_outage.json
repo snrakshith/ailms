@@ -1,0 +1,10 @@
+{
+  "service_selector": {
+    "app": "wrong"
+  },
+  "pod_labels": {
+    "app": "learning-api"
+  },
+  "pods_ready": 2,
+  "ready_endpoints": 0
+}

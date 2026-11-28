@@ -1,0 +1,26 @@
+[
+  {
+    "id": "DSA-V01",
+    "title": "Binary search boundary",
+    "content_path": "visualizations/DSA-V01.html",
+    "offline": true
+  },
+  {
+    "id": "DSA-V02",
+    "title": "Fixed sliding window",
+    "content_path": "visualizations/DSA-V02.html",
+    "offline": true
+  },
+  {
+    "id": "DSA-V03",
+    "title": "Multi-source BFS on a line",
+    "content_path": "visualizations/DSA-V03.html",
+    "offline": true
+  },
+  {
+    "id": "DSA-V04",
+    "title": "0/1 knapsack DP",
+    "content_path": "visualizations/DSA-V04.html",
+    "offline": true
+  }
+]
