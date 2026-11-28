@@ -10,7 +10,11 @@ assert.ok(
 const core = await readFile('packages/learning-core/src/index.ts', 'utf8');
 assert.ok(!core.includes('catalog.js'), 'Private answer keys must not ship in core exports');
 const studio = await readFile('apps/api/src/modules/content/content.service.ts', 'utf8');
-assert.match(studio, /authorId:\{\$ne:userId\}/, 'Require an independent editor/reviewer');
+assert.match(
+  studio,
+  /authorId:\s*\{\s*\$ne:\s*userId\s*\}/,
+  'Require an independent editor/reviewer',
+);
 const native = await readFile('apps/api/src/infrastructure/security/csrf.ts', 'utf8');
 assert.match(
   native,
@@ -23,7 +27,7 @@ assert.match(
   /iframe\.sandbox\.add\('allow-scripts'\)/,
   'Python lab must load only inside sandbox iframe',
 );
-assert.match(client, /event\.origin!==['"]null['"]/, 'Python lab must verify opaque origin');
+assert.match(client, /event\.origin\s*!==\s*['"]null['"]/, 'Python lab must verify opaque origin');
 const csp = await readFile('docker/nginx.conf', 'utf8');
 assert.match(csp, /worker-src 'self' blob:/, 'CSP must allow blob workers inside isolated sandbox');
 assert.match(csp, /frame-ancestors 'none'/, 'Prevent clickjacking');
@@ -41,7 +45,7 @@ assert.match(
 const google = await readFile('apps/api/src/modules/users/google-identity.ts', 'utf8');
 assert.match(
   google,
-  /jwtVerify\(credential,googleKeys/,
+  /jwtVerify\(credential,\s*googleKeys/,
   'Google ID tokens must be verified server-side',
 );
 assert.match(
@@ -51,7 +55,7 @@ assert.match(
 );
 assert.match(
   google,
-  /payload\.email_verified!==true/,
+  /payload\.email_verified\s*!==\s*true/,
   'Federated identities require verified emails',
 );
 assert.match(csp, /https:\/\/accounts\.google\.com/, 'Google login requires CSP allowlisting');
