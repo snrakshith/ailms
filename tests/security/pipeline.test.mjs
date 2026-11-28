@@ -13,7 +13,9 @@ test('Cypress is fully removed and Playwright is wired', () => {
 });
 test('security jobs include explicit SAST, SCA, DAST and credential scanning', () => {
   assert.match(get('.github/workflows/codeql.yml'), /security-extended/);
-  assert.match(get('.github/workflows/sca.yml'), /trivy-action/);
+  // Use the pinned container instead of a third-party action. This keeps the
+  // scanner version explicit while avoiding action supply-chain drift.
+  assert.match(get('.github/workflows/sca.yml'), /aquasec\/trivy:0\.67\.2/);
   assert.match(get('.github/workflows/sca.yml'), /pnpm audit/);
   assert.match(get('.github/workflows/dast.yml'), /run-zap\.sh/);
   assert.match(get('.github/workflows/secrets.yml'), /trufflehog-check/);
