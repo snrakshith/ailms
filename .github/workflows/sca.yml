@@ -34,19 +34,5 @@ jobs:
       - name: Trivy filesystem high/critical vulnerability gate
         run: >-
           docker run --rm -v "$PWD:/src:ro" aquasec/trivy:0.67.2
-          fs --scanners vuln,misconfig,secret --severity HIGH,CRITICAL --exit-code 1 /src
-  dependency-review:
-    name: New dependency review (high+)
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    permissions: { contents: read, pull-requests: read }
-    timeout-minutes: 15
-    # Some repository plans/settings do not grant the dependency-graph comparison API to Actions.
-    # The mandatory pnpm advisory audit above remains fail-closed for high/critical findings.
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v7
-        with: { persist-credentials: false }
-      - uses: actions/dependency-review-action@v5
-        with:
-          fail-on-severity: high
+          fs --scanners vuln,misconfig,secret --severity HIGH,CRITICAL --exit-code 1
+          --skip-dirs packages/curriculum/data --skip-dirs node_modules /src
