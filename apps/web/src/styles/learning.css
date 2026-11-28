@@ -2288,6 +2288,43 @@
   padding: 30px 0 15px;
   border-bottom: 1px solid var(--aq-border);
 }
+.aq-lesson-visual {
+  margin: 30px 0;
+  border: 1px solid var(--aq-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--aq-panel);
+}
+.aq-lesson-visual-frame {
+  padding: clamp(12px, 3vw, 28px);
+  background: #f5fbf8;
+}
+.aq-lesson-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.aq-lesson-visual figcaption {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--aq-muted);
+}
+.aq-lesson-visual figcaption strong {
+  color: var(--aq-text);
+}
+.aq-lesson-visual figcaption a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--aq-mint-dark, #087f5b);
+  font-weight: 700;
+  text-decoration: none;
+}
 .aq-resource-section h2 {
   font-size: 23px;
   margin: 9px 0;

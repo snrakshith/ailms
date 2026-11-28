@@ -1,5 +1,5 @@
 import {
-  course,
+  aiCourse,
   devopsCourse,
   dsaCourse,
   type CourseAssetKind,
@@ -12,6 +12,9 @@ export type CatalogResource = {
   title: string;
   kind: CourseAssetKind;
   filename: string;
+  altText?: string;
+  caption?: string;
+  primaryVisual?: boolean;
   source: string;
 };
 
@@ -98,10 +101,20 @@ const toCodeSection = (heading: string, code: string, callout: string): LessonSe
   code,
   callout,
 });
+const resourceFrom = (asset: CurriculumCourse['assets'][number]): CatalogResource => ({
+  id: asset.id,
+  title: asset.title,
+  kind: asset.kind,
+  filename: asset.path.split('/').at(-1)!,
+  altText: asset.altText,
+  caption: asset.caption,
+  primaryVisual: asset.primaryVisual,
+  source: asset.source,
+});
 
-const aiCatalog: CatalogPath[] = course.tracks.map((track) => {
+const aiCatalog: CatalogPath[] = aiCourse.tracks.map((track) => {
   const meta = presentation[track.id];
-  const lessons = course.lessons
+  const lessons = aiCourse.lessons
     .filter((lesson) => lesson.trackId === track.id)
     .map<CatalogLesson>((lesson) => ({
       id: lesson.id,
@@ -135,20 +148,14 @@ const aiCatalog: CatalogPath[] = course.tracks.map((track) => {
           : []),
       ],
       questions: [],
-      resources: course.assets
+      resources: aiCourse.assets
         .filter(
           (asset) =>
             asset.lessonId === lesson.id ||
             asset.moduleId === lesson.moduleId ||
             (asset.kind === 'notebook' && asset.trackId === lesson.trackId),
         )
-        .map((asset) => ({
-          id: asset.id,
-          title: asset.title,
-          kind: asset.kind,
-          filename: asset.path.split('/').at(-1)!,
-          source: asset.source,
-        })),
+        .map(resourceFrom),
     }));
   return {
     id: meta.id,
@@ -218,13 +225,7 @@ function externalCatalog(subject: CurriculumCourse): CatalogPath[] {
                 track.order === 1 &&
                 lesson.moduleId === track.moduleIds[0]),
           )
-          .map((asset) => ({
-            id: asset.id,
-            title: asset.title,
-            kind: asset.kind,
-            filename: asset.path.split('/').at(-1)!,
-            source: asset.source,
-          })),
+          .map(resourceFrom),
       })),
   }));
 }

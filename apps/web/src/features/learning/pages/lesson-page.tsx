@@ -126,6 +126,9 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
   const [notebook, setNotebook] = useState<{ id: string; title: string } | null>(null);
   useDocumentTitle(data?.data.title ?? 'Lesson');
   const lesson = data?.data;
+  const primaryVisual = lesson?.resources.find(
+    (resource) => resource.kind === 'diagram' && resource.primaryVisual,
+  );
   const answered = useMemo(
     () => lesson?.questions.filter((q) => Boolean(answers[q.id])).length ?? 0,
     [answers, lesson],
@@ -212,6 +215,27 @@ function LessonScreen({ lessonId }: { lessonId: string }) {
               )}
             </section>
           ))}
+          {primaryVisual && (
+            <figure className="aq-lesson-visual" aria-labelledby="lesson-visual-caption">
+              <div className="aq-lesson-visual-frame">
+                <img
+                  src={`/api/v1/learning/resources/${encodeURIComponent(primaryVisual.id)}/view`}
+                  alt={primaryVisual.altText ?? primaryVisual.title}
+                />
+              </div>
+              <figcaption id="lesson-visual-caption">
+                <strong>Visualise the concept</strong>
+                <span>{primaryVisual.caption ?? primaryVisual.title}</span>
+                <a
+                  href={`/api/v1/learning/resources/${encodeURIComponent(primaryVisual.id)}/view`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Eye size={15} /> Open larger
+                </a>
+              </figcaption>
+            </figure>
+          )}
           {lesson.id === 'gradient-descent' && <GradientDescentLab />}
           {lesson.resources.length > 0 && (
             <section className="aq-resource-section" aria-labelledby="resource-title">

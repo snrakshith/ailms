@@ -40,6 +40,20 @@ describe('catalog contracts', () => {
         .some((asset) => asset.path.includes('solutions')),
     ).toBe(false);
   });
+  it('provides one accessible primary SVG visual for every lesson', () => {
+    for (const subject of courses) {
+      const visuals = subject.assets.filter((asset) => asset.primaryVisual);
+      expect(visuals).toHaveLength(subject.lessons.length);
+      expect(new Set(visuals.map((asset) => asset.lessonId)).size).toBe(subject.lessons.length);
+      for (const visual of visuals) {
+        expect(visual.kind).toBe('diagram');
+        expect(visual.source).toMatch(/^<svg /);
+        expect(visual.mermaidSource).toContain('flowchart');
+        expect(visual.altText).toBeTruthy();
+        expect(visual.caption).toBeTruthy();
+      }
+    }
+  });
 });
 describe('assessment and progression', () => {
   const lesson = findLesson('F01-L01')!;

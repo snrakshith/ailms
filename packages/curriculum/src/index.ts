@@ -1,4 +1,5 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { lessonVisualAssets } from './lesson-visuals.js';
 
 export type CourseQuestion = {
   id: string;
@@ -62,6 +63,10 @@ export type CourseAsset = {
   trackId?: string;
   moduleId?: string;
   lessonId?: string;
+  altText?: string;
+  caption?: string;
+  primaryVisual?: boolean;
+  mermaidSource?: string;
   source: string;
 };
 export type CourseFlashcard = {
@@ -465,6 +470,12 @@ export const course: CurriculumCourse = {
     codeExamples: codeExamples.filter((example) => example.moduleId === lesson.module_id),
   })),
 };
-export const devopsCourse = loadExternalCourse('devops');
-export const dsaCourse = loadExternalCourse('dsa');
-export const courses = [course, devopsCourse, dsaCourse] as const;
+const withLessonVisuals = (subject: CurriculumCourse): CurriculumCourse => ({
+  ...subject,
+  assets: [...subject.assets, ...lessonVisualAssets(subject)],
+});
+
+export const aiCourse = withLessonVisuals(course);
+export const devopsCourse = withLessonVisuals(loadExternalCourse('devops'));
+export const dsaCourse = withLessonVisuals(loadExternalCourse('dsa'));
+export const courses = [aiCourse, devopsCourse, dsaCourse] as const;

@@ -109,6 +109,9 @@ export type LessonResource = {
     | 'capstone'
     | 'other';
   filename: string;
+  altText?: string;
+  caption?: string;
+  primaryVisual?: boolean;
 };
 export type LibraryResource = LessonResource & {
   pathId: string;

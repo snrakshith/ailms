@@ -109,6 +109,11 @@ export function ResourceLibraryPage() {
                 {item.pathId.replaceAll('-', ' ')}
                 {item.moduleId ? ` · ${item.moduleId}` : ''}
               </p>
+              {item.kind === 'diagram' && item.lessonId && (
+                <Link className="aq-text-link" to={`/learn/${item.lessonId}`}>
+                  Open in lesson
+                </Link>
+              )}
               {item.kind === 'visualization' ? (
                 <a
                   className="aq-primary"
